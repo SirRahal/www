@@ -79,7 +79,14 @@ body
 	background-color:#EFF4FA;
 	text-decoration:none;
 }
-
+.main_container{
+    float: left;
+    width:75%;
+}
+.right_ads{
+    float: left;
+    width:25%;
+}
 div.flash-error, div.flash-notice, div.flash-success
 {
 	padding:.8em;

@@ -32,7 +32,12 @@
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                array('label'=>'Auctions', 'url'=>array('/site/auctions')),
+                array('label'=>'Media Guide', 'url'=>array('/site/media_guide')),
+                array('label'=>'Publications', 'url'=>array('/site/publications')),
+                array('label'=>'Advertisers', 'url'=>array('/site/advertisers')),
+                array('label'=>'Frequent Q&A', 'url'=>array('/site/questions')),
+                array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
