@@ -10,16 +10,11 @@ $this->pageTitle=Yii::app()->name;
 
 <div><!--left Col-->
     <?php
-        echo $this->renderPartial('container/home');
-    ?>
+        echo $this->renderPartial('container/home');?>
+
 </div>
 <div><!--right Col-->
     <?php
     echo $this->renderPartial('container/right_ads');
     ?>
 </div>
-
-<ul>
-    <li>View file: <code><?php echo __FILE__; ?></code></li>
-    <li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>

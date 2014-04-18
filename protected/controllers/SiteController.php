@@ -2,6 +2,8 @@
 
 class SiteController extends Controller
 {
+
+    public $info = '';
 	/**
 	 * Declares class-based actions.
 	 */
@@ -27,9 +29,11 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+        // renders the view file 'protected/views/site/index.php'
+        // using the default layout 'protected/views/layouts/main.php'
+        $info = Issues::model()->findByPK(1);
+        $this->info = $info->info;
+        $this->render('index', array('info'=>$this->info));
 	}
 
 	/**
@@ -106,4 +110,16 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+    /**
+     * Media guide
+     */
+    public function actionMedia_guide()
+    {
+        // renders the view file 'protected/views/site/index.php'
+        // using the default layout 'protected/views/layouts/main.php'
+        $this->render('media_guide');
+    }
+
+
 }

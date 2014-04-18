@@ -10,7 +10,10 @@
 <html>
 <body>
 <div class="main_container">
-    test
+    Info<br>
+    <?php
+    echo $this->info;
+    ?>
 </div>
 </body>
 </html>
