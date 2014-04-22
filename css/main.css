@@ -79,13 +79,16 @@ body
 	background-color:#EFF4FA;
 	text-decoration:none;
 }
+.clear{
+    clear: both;
+}
 .main_container{
     float: left;
-    width:75%;
+    width:78%;
 }
 .right_ads{
     float: left;
-    width:25%;
+    width:22%;
 }
 div.flash-error, div.flash-notice, div.flash-success
 {
@@ -159,7 +162,9 @@ div.search-form
 	margin: 10px 0;
 	background: #eee;
 }
-
+div.ad img{
+    width:200px;
+}
 .portlet
 {
 

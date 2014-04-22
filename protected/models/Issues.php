@@ -104,4 +104,13 @@ class Issues extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function latest_issue()
+    {
+        $qry_str = "SELECT * FROM issues ORDER BY date DESC limit 1";
+
+        $latest_issue = Yii::app()->db->createCommand($qry_str)->queryAll();
+
+        return $latest_issue[0];
+    }
 }

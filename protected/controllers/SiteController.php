@@ -4,6 +4,13 @@ class SiteController extends Controller
 {
 
     public $info = '';
+    public $img = '';
+    public $back_img = '';
+    public $url = '';
+    public $date = '';
+    public $Ads_normal = '';
+    public $model = '';
+
 	/**
 	 * Declares class-based actions.
 	 */
@@ -31,9 +38,38 @@ class SiteController extends Controller
 	{
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/main.php'
-        $info = Issues::model()->findByPK(1);
-        $this->info = $info->info;
-        $this->render('index', array('info'=>$this->info));
+        $latest_issue = Issues::model()->latest_issue();
+
+        $this->info = $latest_issue['info'];
+
+        $this->img = '/images/covers/'.$latest_issue['img'];
+
+        $temp = strlen($latest_issue['img']);
+        $back_img = substr($latest_issue['img'],0,$temp-4);
+        $back_img = '/images/covers/'.$back_img . '_back'.substr($latest_issue['img'],$temp-4);
+
+        $this->date = $latest_issue['date'];
+        $this->url = $latest_issue['url'];
+        $this->back_img = $back_img;
+        $this->url = '/issues/'.$this->url;
+
+
+        /*right side ads*/
+        $model = new Ads;
+        $Ads_normal = Ads::model()->select_ads(4,'normal');
+
+
+        /*$this->img_name = $Ads_normal['img_name'];*/
+        $this->render('index', array(
+            'info'=>$this->info,
+            'img'=>$this->img,
+            'date'=>$this->date,
+            'url'=>$this->url,
+            'back_img'=>$this->back_img,
+            'model'=>new Ads
+        ));
+
+
 	}
 
 	/**

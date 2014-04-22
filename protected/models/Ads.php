@@ -105,4 +105,15 @@ class Ads extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function select_ads($amount,$type){
+
+
+        $qry_str = "SELECT * FROM ads WHERE ad_type = '".$type."' AND end_date < CURDATE() ORDER BY RAND() LIMIT ".$amount;
+
+        $ads = Yii::app()->db->createCommand($qry_str)->queryAll();
+
+        return $ads;
+}
+
 }

@@ -1,0 +1,7 @@
+/************** Cart *****************/
+.cartIconShadow:hover{
+    -moz-box-shadow: 0 0 4px rgba(28,117,32,0.5);
+    -o-box-shadow: 0 0 4px rgba(28,117,32,0.5);
+    -webkit-box-shadow: 0 0 4px rgba(28,117,32,0.5);
+    box-shadow: 0 0 4px rgba(28,117,32,0.5);
+}
