@@ -22,9 +22,12 @@
 
 <div class="container" id="page">
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
+    <img src="/images/banner/website_banner.jpg" width='950'/>
+	<!--<div id="header">
+		<div id="logo">
+           <?php /*echo CHtml::encode(Yii::app()->name); */?>
+        </div>
+	</div>--><!-- header -->
 
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(

@@ -12,6 +12,7 @@
     .covers{
         float: left;
         width: 500px;
+        height: 260px;
     }
     .cover_info{
         float: left;
@@ -19,7 +20,7 @@
     }
 </style>
 <body>
-<div class="main_container">
+<div >
     <div class="covers">
         <a href="<?php echo $this->url;?>">
             <img src="<?php echo $this->img;?>"/>
@@ -34,9 +35,7 @@
     </div>
     <div class="clear"></div>
     <div>
-        <div class="header">
-            <p>Upcoming events</p>
-        </div>
+        <h1>Upcoming events</h1>
     </div>
 </div>
 

@@ -5,12 +5,12 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('ID')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->ID), array('view', 'id'=>$data->ID)); ?>
+	<!--<b><?php /*echo CHtml::encode($data->getAttributeLabel('ID')); */?>:</b>
+	<?php /*echo CHtml::link(CHtml::encode($data->ID), array('view', 'id'=>$data->ID)); */?>
 	<br />
-
+-->
 	<b><?php echo CHtml::encode($data->getAttributeLabel('company')); ?>:</b>
-	<?php echo CHtml::encode($data->company); ?>
+	<?php echo CHtml::link(CHtml::encode($data->company), array('view', 'id'=>$data->ID)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('state')); ?>:</b>
@@ -48,6 +48,10 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('phone3')); ?>:</b>
 	<?php echo CHtml::encode($data->phone3); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('phone')); ?>:</b>
+	<?php echo CHtml::encode($data->phone); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('url')); ?>:</b>

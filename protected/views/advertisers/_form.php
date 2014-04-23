@@ -80,6 +80,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'phone'); ?>
+		<?php echo $form->textField($model,'phone'); ?>
+		<?php echo $form->error($model,'phone'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'url'); ?>
 		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'url'); ?>

@@ -67,6 +67,11 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'phone'); ?>
+		<?php echo $form->textField($model,'phone'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'url'); ?>
 		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>100)); ?>
 	</div>

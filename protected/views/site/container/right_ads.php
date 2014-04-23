@@ -8,17 +8,18 @@
 ?>
 <html>
 <body>
-<div class="right_ads">
+<div>
     <?php
-    $temp = Ads::model()->select_ads(4,'normal');
-    for($i=0;$i<4;$i++){?>
+    $temp = Ads::model()->select_ads($amount,$type);
+    $i = 0;
+    while(isset($temp[$i])){?>
         <div class="ad">
             <a href="<?php echo $temp[$i]['url'];?>">
                 <img src="/images/ad_images/<?php echo $temp[$i]['img_name'];?>">
             </a>
         </div>
     <br/>
-    <?php
+    <?php $i++;
     }
     ?>
 </div>

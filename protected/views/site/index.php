@@ -6,15 +6,14 @@ $this->pageTitle=Yii::app()->name;
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-
-
-<div><!--left Col-->
+<div class="main_container"><!--left Col-->
     <?php
-        echo $this->renderPartial('container/home');?>
-
+        echo $this->renderPartial('container/home');?> <br/><?php
+        echo $this->renderPartial('container/auctions');
+    ?>
 </div>
-<div><!--right Col-->
+<div class="right_ads"><!--right Col-->
     <?php
-    echo $this->renderPartial('container/right_ads');
+        echo $this->renderPartial('container/right_ads', array('type' => 'normal','amount' => 5));
     ?>
 </div>

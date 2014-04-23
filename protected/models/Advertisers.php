@@ -15,6 +15,7 @@
  * @property integer $phone1
  * @property integer $phone2
  * @property integer $phone3
+ * @property integer $phone
  * @property string $url
  */
 class Advertisers extends CActiveRecord
@@ -35,14 +36,14 @@ class Advertisers extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('company, state, zip, email, category, first, last, phone1, phone2, phone3, url', 'required'),
-			array('phone1, phone2, phone3', 'numerical', 'integerOnly'=>true),
+			array('company, state, zip, email, category, first, last, phone1, phone2, phone3, phone, url', 'required'),
+			array('phone1, phone2, phone3, phone', 'numerical', 'integerOnly'=>true),
 			array('company, email, category, first, last, url', 'length', 'max'=>100),
 			array('state', 'length', 'max'=>2),
 			array('zip', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, company, state, zip, email, category, first, last, phone1, phone2, phone3, url', 'safe', 'on'=>'search'),
+			array('ID, company, state, zip, email, category, first, last, phone1, phone2, phone3, phone, url', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -74,6 +75,7 @@ class Advertisers extends CActiveRecord
 			'phone1' => 'Phone1',
 			'phone2' => 'Phone2',
 			'phone3' => 'Phone3',
+			'phone' => 'Phone',
 			'url' => 'Url',
 		);
 	}
@@ -107,6 +109,7 @@ class Advertisers extends CActiveRecord
 		$criteria->compare('phone1',$this->phone1);
 		$criteria->compare('phone2',$this->phone2);
 		$criteria->compare('phone3',$this->phone3);
+		$criteria->compare('phone',$this->phone);
 		$criteria->compare('url',$this->url,true);
 
 		return new CActiveDataProvider($this, array(

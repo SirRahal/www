@@ -82,13 +82,17 @@ body
 .clear{
     clear: both;
 }
+.ad:hover{
+    box-shadow: #494949 7px 7px 7px ;
+}
 .main_container{
     float: left;
     width:78%;
 }
 .right_ads{
     float: left;
-    width:22%;
+    width:20%;
+    margin-left: 10px;
 }
 div.flash-error, div.flash-notice, div.flash-success
 {

@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Advertisers'=>array('index'),
-	$model->ID,
+	$model->company,
 );
 
 $this->menu=array(
@@ -16,22 +16,18 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Advertisers #<?php echo $model->ID; ?></h1>
+<h1><b>View Advertiser:</b> <i><?php echo $model->company; ?></i></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'ID',
-		'company',
 		'state',
 		'zip',
 		'email',
 		'category',
 		'first',
 		'last',
-		'phone1',
-		'phone2',
-		'phone3',
+		'phone',
 		'url',
 	),
 )); ?>

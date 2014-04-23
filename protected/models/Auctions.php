@@ -111,4 +111,12 @@ class Auctions extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function select_upcoming_auctions(){
+        $qry_str = "SELECT *  FROM `auctions` WHERE `date` >= CURRENT_DATE ORDER BY date ASC";
+
+        $auctions = Yii::app()->db->createCommand($qry_str)->queryAll();
+
+        return $auctions;
+    }
 }

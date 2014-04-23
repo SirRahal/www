@@ -55,18 +55,19 @@ class SiteController extends Controller
 
 
         /*right side ads*/
-        $model = new Ads;
+        $ads_model = new Ads;
         $Ads_normal = Ads::model()->select_ads(4,'normal');
 
+        /*upcoming auctions*/
 
-        /*$this->img_name = $Ads_normal['img_name'];*/
+
         $this->render('index', array(
             'info'=>$this->info,
             'img'=>$this->img,
             'date'=>$this->date,
             'url'=>$this->url,
             'back_img'=>$this->back_img,
-            'model'=>new Ads
+            'ads_model'=>new Ads
         ));
 
 
