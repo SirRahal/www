@@ -19,11 +19,26 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
+
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'company'); ?>
-		<?php echo $form->textField($model,'company',array('size'=>60,'maxlength'=>100)); ?>
+        <?php
+        $role_list = CHtml::listData(Auctioneer::model()->findAll(), 'auctioneer', 'auctioneer');
+        $options = array(
+            'tabindex' => '0',
+            'empty' => '(Select a Company)',
+        );
+        ?>
+        <?php echo $form->dropDownList($model,'company', $role_list, $options); ?>
 		<?php echo $form->error($model,'company'); ?>
 	</div>
+
+    <div class="row">
+        <?php echo $form->labelEx($model,'company_ID'); ?>
+        <?php echo $form->textField($model,'company_ID'); ?>
+        <?php echo $form->error($model,'company_ID'); ?>
+    </div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'url'); ?>
@@ -42,7 +57,6 @@
 		<?php echo $form->textField($model,'date'); ?>
 		<?php echo $form->error($model,'date'); ?>
 	</div>
-
 	<div class="row">
 		<?php echo $form->labelEx($model,'location'); ?>
 		<?php echo $form->textField($model,'location',array('size'=>60,'maxlength'=>100)); ?>
@@ -68,3 +82,6 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+
+

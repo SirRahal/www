@@ -5,6 +5,7 @@
  *
  * The followings are the available columns in table 'auctions':
  * @property integer $ID
+ * @property integer $company_ID
  * @property string $company
  * @property string $url
  * @property string $info
@@ -12,6 +13,9 @@
  * @property string $location
  * @property string $title
  * @property integer $clicks
+ *
+ * The followings are the available model relations:
+ * @property Auctioneer $company0
  */
 class Auctions extends CActiveRecord
 {
@@ -31,13 +35,13 @@ class Auctions extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('company, url, info, date, location, title', 'required'),
-			array('clicks', 'numerical', 'integerOnly'=>true),
+			array('company_ID, company, url, info, date, location, title', 'required'),
+			array('company_ID, clicks', 'numerical', 'integerOnly'=>true),
 			array('company, url, location, title', 'length', 'max'=>100),
 			array('info', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, company, url, info, date, location, title, clicks', 'safe', 'on'=>'search'),
+			array('ID, company_ID, company, url, info, date, location, title, clicks', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,6 +53,7 @@ class Auctions extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'company0' => array(self::BELONGS_TO, 'Auctioneer', 'company_ID'),
 		);
 	}
 
@@ -59,6 +64,7 @@ class Auctions extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
+			'company_ID' => 'Company ID',
 			'company' => 'Company',
 			'url' => 'Url',
 			'info' => 'Info',
@@ -88,6 +94,7 @@ class Auctions extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ID',$this->ID);
+		$criteria->compare('company_ID',$this->company_ID);
 		$criteria->compare('company',$this->company,true);
 		$criteria->compare('url',$this->url,true);
 		$criteria->compare('info',$this->info,true);

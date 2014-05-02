@@ -72,6 +72,9 @@ body
 	text-decoration:none;
 	padding:5px 8px;
 }
+button{
+    cursor: pointer;
+}
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
@@ -82,17 +85,18 @@ body
 .clear{
     clear: both;
 }
-.ad:hover{
+.ads:hover{
     box-shadow: #494949 7px 7px 7px ;
 }
 .main_container{
     float: left;
     width:78%;
 }
-.right_ads{
+.right_side{
     float: left;
     width:20%;
     margin-left: 10px;
+
 }
 div.flash-error, div.flash-notice, div.flash-success
 {
@@ -147,6 +151,7 @@ div.view
 	padding: 10px;
 	margin: 10px 0;
 	border: 1px solid #C9E0ED;
+    background: #eaeae3;
 }
 
 div.breadcrumbs
@@ -166,7 +171,7 @@ div.search-form
 	margin: 10px 0;
 	background: #eee;
 }
-div.ad img{
+div.ads img{
     width:200px;
 }
 .portlet
@@ -242,4 +247,45 @@ div.ad img{
 .operations li a:hover
 {
 	background: #80CFFF;
+}
+
+.tab_background{
+    background: #eaeae3;
+    border-top-left-radius: 10px;
+    border: solid #519bc5;
+}
+
+.tabContent{
+    display: none;
+    borcer: 1px solid #eaeae3;
+    padding: 10px 20px 20px 20px;
+}
+
+.activeTab{
+    display: block;
+}
+.tabs a{
+    display: inline-block;
+    padding: 10px;
+    width: auto;
+    background: #eaeae3;
+    border-bottom: none;
+    height: 18px;
+    color: #519bc5;
+    text-decoration: none;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    margin-left: -3px;
+    font-weight: bold;
+}
+.tabs a:hover{
+    color: #ffffff;
+    background: #519bc5;
+}
+.tabs a.activeTab{
+    position: relative;
+    background: #519bc5;
+    z-index: 5;
+    height: 20px;
+    color: #ffffff;
 }
