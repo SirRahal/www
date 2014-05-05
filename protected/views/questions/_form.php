@@ -33,7 +33,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'category'); ?>
-		<?php echo $form->textField($model,'category',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->dropDownList($model,'category',array('publication'=>'Publication','Email Marketing'=>'Email Marketing' )); ?>
+
 		<?php echo $form->error($model,'category'); ?>
 	</div>
 

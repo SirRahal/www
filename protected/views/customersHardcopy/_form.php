@@ -130,7 +130,7 @@
 	</div>
 
     <div class="row">
-        <?php echo $form->textField($model,'signed_up',array('value'=> date('Y-m-d',time()) )); ?>
+        <?php echo $form->hiddenField($model,'signed_up',array('value'=> date('Y-m-d',time()) )); ?>
         <?php echo $form->error($model,'signed_up'); ?>
     </div>
 

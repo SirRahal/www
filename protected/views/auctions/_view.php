@@ -12,7 +12,7 @@ if (isset(Yii::app()->session['last_date']))
     }else{
         Yii::app()->session['last_date'] = $data->date;
 ?>
-<div style="font-size: 15px;">
+<div>
         <b><?php echo  date("l, m/d/Y", strtotime($data->date)) ?></b>
 </div>
     <?php
@@ -20,13 +20,13 @@ if (isset(Yii::app()->session['last_date']))
 }else{
     Yii::app()->session['last_date'] = $data->date;
     ?>
-    <div style="text-align: center; width: 100%; color: white; font-size: 24px;">
-        Date: <?php echo  date("l, m/d/Y", strtotime($data->date));?>
+    <div>
+        <?php echo  date("l, m/d/Y", strtotime($data->date));?>
     </div>
 <?php } ?>
 
 <div class="view">
-    <div style="position: absolute;float: left; margin-left: 625px;">
+    <div style="position: absolute;float: left; margin-left: 615px;">
         <b> <?php echo CHtml::encode($data->getAttributeLabel('clicks')); ?>:</b>
         <?php echo CHtml::encode($data->clicks); ?>
         <br />
@@ -35,8 +35,7 @@ if (isset(Yii::app()->session['last_date']))
 
     <div style="float: left; width: 80%;">
 
-        <b><?php echo CHtml::encode($data->getAttributeLabel('company')); ?>:</b>
-        <?php echo CHtml::link(CHtml::encode($data->company), array('auctioneer/view', 'id'=>$data->company_ID)); ?>
+        <b><?php echo CHtml::link(CHtml::encode($data->company), array('auctioneer/view', 'id'=>$data->company_ID)); ?></b>
         <br />
 
         <b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>

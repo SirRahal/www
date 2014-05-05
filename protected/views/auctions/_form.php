@@ -24,7 +24,8 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'company'); ?>
         <?php
-        $role_list = CHtml::listData(Auctioneer::model()->findAll(), 'auctioneer', 'auctioneer');
+        $role_list = CHtml::listData(Auctioneer::model()->findAll(), 'auctioneer', 'auctioneer', 'ID' , 'ID');
+        $role_list2 = CHtml::listData(Auctioneer::model()->findAll(), 'ID' , 'ID', 'auctioneer', 'auctioneer');
         $options = array(
             'tabindex' => '0',
             'empty' => '(Select a Company)',
@@ -36,8 +37,14 @@
 
     <div class="row">
         <?php echo $form->labelEx($model,'company_ID'); ?>
-        <?php echo $form->textField($model,'company_ID'); ?>
+        <?php echo $form->dropDownList($model,'company_ID', $role_list2, $options); ?>
         <?php echo $form->error($model,'company_ID'); ?>
+    </div>
+
+    <div class="row">
+        <?php echo $form->labelEx($model,'title'); ?>
+        <?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>100)); ?>
+        <?php echo $form->error($model,'title'); ?>
     </div>
 
 	<div class="row">
@@ -54,7 +61,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'date'); ?>
-		<?php echo $form->textField($model,'date'); ?>
+		<?php echo $form->dateField($model,'date'); ?>
 		<?php echo $form->error($model,'date'); ?>
 	</div>
 	<div class="row">
@@ -63,15 +70,10 @@
 		<?php echo $form->error($model,'location'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'title'); ?>
-	</div>
+
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'clicks'); ?>
-		<?php echo $form->textField($model,'clicks'); ?>
+		<?php echo $form->hiddenField($model,'clicks'); ?>
 		<?php echo $form->error($model,'clicks'); ?>
 	</div>
 

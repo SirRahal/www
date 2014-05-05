@@ -12,20 +12,14 @@ $this->breadcrumbs=array(
 <div class="" style="margin-top: 10px; padding:20px; font-size: 20px;">
     <img src="/images/icons/logo.png" width="100px" style="float:left; margin-left: 10px; margin-top: 5px; ">
     <div style="float:left; width:750px; padding-left: 10px;">
-        Hello,<br/>
-        We are excited to inform you of the launch of our new publication, INDUSTRIAL TIMES.
-        We are a monthly magazine that is exclusively geared to the Metalworking Community (forming and cutting) in the Midwest/Great Lakes Region of the U.S.
-        <br/><br/>
-
+        Welcome to Industrial Times. <br/><br/>
+        We are a monthly mailed and digitally delivered magazine geared specifically for the metalworking industry. Our goals are to serve as a link for metalworking buyers and sellers throughout the United States. Our publication features advertisers directly <br/>
     </div>
-
     <div class="clear"></div>
     <div >
-        We will feature ads promoting new machine tools, distributors, new and used machinery dealers and industrial auctioneers.  We are different than some of the other publications—if something does not apply to our demographics (metalworking industry), you won't see it in our publication!<br/><br/>
-
-        What also sets us apart is our unique distribution methods which include mailing our publication via First Class postage to ensure timely delivery to our audience, as well as distributing copies each month to select restaurants and retailers.<br/><br/>
-
-        We look forward to partnering with you to increase your sales and brand awareness across the Midwest! <br/><br/>
+        related to either the metal cutting or metal forming industry. We offer competitive pricing, giving businesses large and small the opportunity to market their products and services.
+        Give us a call anytime and we will discuss how we can help you market your business and increase your sales.
+        <br/><br/>
 
         Thank You,<br/><br/>
 

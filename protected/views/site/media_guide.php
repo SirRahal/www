@@ -15,7 +15,14 @@ $this->breadcrumbs=array(
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script src="/js/tab_scripts_function.js"></script>
-
+<style>
+    .page_pricing{
+        font-size: 18px;
+        float: left;
+        width:30%;
+        text-align: center;
+    }
+</style>
 
 <!--4 tabs section-->
 <section id="container">
@@ -29,7 +36,7 @@ $this->breadcrumbs=array(
         <div class="tabContent activeTab" id="tab1">
             <div style="width:50%; float:left;">
                 <br/>
-                <h3>Circulation</h3>
+                <h3 class="h3_margin_bot">Circulation</h3>
                 <span>Industrial Times is a monthly publication serving the Midwest’s Metalworking Community. The Midwest Region has long been the cornerstone of the United States manufacturing industry.  Our publication is distributed to over 28,000 qualified decision makers in Michigan, Illinois, Indiana, Ohio, Wisconsin, and parts of Missouri, Minnesota, Pennsylvania, Kentucky and Iowa.  We have developed our direct mailing list to include the decision makers in companies primarily engaged in either metal cutting or the metal forming segments.</span>
                 <br/><br/>
                 <h3>This includes:</h3>
@@ -95,17 +102,13 @@ $this->breadcrumbs=array(
 
             <div class="indent">
                 <p>
-                    At the moment we offer three different types of advertisements on our website.  With the rapid grown of the company, there is more to come.
-                    <br/>
+                    At the moment we offer three different types of advertisements on our website.  With the rapid growth of the company, there is more to come.
                     <br/>
                     <h3>1) Auctioneer and Auction Listing</h3>
-                    First is our most popular <a href="/index.php/auctioneer">Auctioneers</a> and <a href="/index.php/auctions">Upcoming Auctions</a> listing.  This allows companies to reach out to customers that enjoy auctions.  Users can search for auctioneers in their area and see what events are going on.
-                    This listing goes on our Home and Auction page as well as two email blasts.  The two emails go out at the beginning of the new issue with a list of the auctions for the month, and the other is week of the event.
-
-                    Below is an example of an auctioneers and auction listings.
+                        First is our most popular, <a href="/index.php/auctioneer">Auctioneers</a> and <a href="/index.php/auctions">Upcoming Auctions</a> listing. This provides an organized list of upcoming auctions, giving potential bidders a resource to find metalworking auctions. This listing is displayed on our Home and Auction page as well as email blasted the week of the auction.  A digital copy of Industrial Times is emailed blasted at the beginning of each month, giving more exposure to the auction listings. Below is an example of an auctioneer and auction listing.
                     <br/>
                 <!--view of the auctioneer-->
-                    <div class="view">
+                    <div class="view" style="border: dashed #519bc5">
                         <b>Auctioneer:</b><a href="/index.php/auctioneer/0">Industrial Times Inc</a>
                         <br>
                         <div style="float: left; width: 59%;">
@@ -122,7 +125,7 @@ $this->breadcrumbs=array(
                     </div>
                 <!--view of the auctioneer-->
                 <!--view of auction-->
-                <div class="view">
+                <div class="view" style="border: dashed #519bc5">
                     <div style="position: absolute;float: left; margin-left: 509px;">
                         <b> Clicks:</b>98
                         <br>
@@ -158,19 +161,12 @@ $this->breadcrumbs=array(
                         <img class="round_edges shadow" src="/images/ad_images/place_your_ad_here.jpg" width="216" >
                     </div>
                     <div style="width: 400px; float: left;">
-                        These ads show up on the right side of all our pages.  The advertisements are categorized to display on the corresponding pages.  These ads are buttons that send the user to your site, upcoming event, or even a specific lot you have for sale.<br/>
-                        These ads can be submitted or our in house designer can create one with the proper information and images.
+                        These ads are displayed on the right side of all our pages. The advertisements are categorized to display on the corresponding pages. These ads are buttons that send the user to your site, upcoming event, or even a specific lot you have for sale.
+                        These ads can be submitted, or our in-house designer can create one with the proper information and images.
                     </div>
                 </div>
                 <div class="clear"></div>
-                <style>
-                    .page_pricing{
-                        font-size: 18px;
-                        float: left;
-                        width:30%;
-                        text-align: center;
-                    }
-                </style>
+
                 <br/>
                 <h3 style="text-align: center;">
                     Price Per Month
@@ -196,8 +192,8 @@ $this->breadcrumbs=array(
                 <div class="clear"></div>
                 <p>
                     <h3>3) Banner Ad</h3>
-                    Our banner ads are limited to one per page.  They are located only at the bottom and can be designed by you or our in house designer.  For example please look at the bottom of this page.
-                    <br/>
+                    Our banner ads are limited to one per page.  They are located at the bottom of each page and can be designed by you or our in-house designer. Please see the bottom of this page for an example.
+                <br/>
                 </p>
                 <div class="clear" style="height: 10px;"></div>
                 <div>
@@ -222,17 +218,15 @@ $this->breadcrumbs=array(
         <!--tab 3-->
         <div class="tabContent" id="tab3">
 
-            <style>
-                .email_example{
-                    width:200px;
-                }
-            </style>
+
             <div >
                 <h3>
                     What We Offer
                 </h3>
+                <div>
                 We offer email marketing through our industrial clientele list.  You can create an ad, or have our in house designer create an ad for your company to be sent out to 8,000 of our customers.  Our ads are directed strictly to the Industrial market place to ensure that our customers get only what they want.  We offer our customers as much control over their advertisement as possible including the body of the email, subject line, from email, and reply email address.
-                <br/>
+                </div>
+                    <br/>
                 <br/>
                 <div style="width:300px;">
                     <h3>
@@ -259,6 +253,7 @@ $this->breadcrumbs=array(
                 </div>
 
                 <div class="clear"></div>
+                <br/>
                 <h3>
                     Our Results
                 </h3>
@@ -268,9 +263,8 @@ $this->breadcrumbs=array(
                     <h3>
                         Pricing
                     </h3>
-                    Standard one time email to all of our customers are
+                    Standard one time email to all of our customers is
                     <h3  style="text-align: center; margin-top: 10px; color: #324990">$600</h3>
-                    <br/>
                     <h3>
                         Get Started
                     </h3>
@@ -278,8 +272,8 @@ $this->breadcrumbs=array(
 
                     <div class="clear"></div>
                 </div>
-                <div style="float:right; width: 500px;">
-                    <img width="500" src="../../images/media_kit/emails_sent.png">
+                <div style="float:right; width: 500px;  ">
+                    <img style="border-top-left-radius:40px; border-top-right-radius:40px;" width="500" src="../../images/media_kit/emails_sent.png">
                     <img width="500" src="../../images/media_kit/emails_opened.png">
                     <img width="500" src="../../images/media_kit/emails_clicks.png">
                 </div>
