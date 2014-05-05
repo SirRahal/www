@@ -43,7 +43,7 @@
 				array('label'=>'Home', 'url'=>array('/site/index')),
                 array('label'=>'Auctions', 'url'=>array('/auctions')),
                 array('label'=>'Auctioneers', 'url'=>array('/auctioneer')),
-                array('label'=>'Publications', 'url'=>array('/issues')),
+                array('label'=>'Publications', 'url'=>array('index.php/issues')),
                 array('label'=>'Advertisers', 'url'=>array('/advertisers')),
                 array('label'=>'Media Guide', 'url'=>array('/site/media_guide')),
                 array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
