@@ -24,8 +24,8 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'company'); ?>
         <?php
-        $role_list = CHtml::listData(Auctioneer::model()->findAll(), 'auctioneer', 'auctioneer', 'ID' , 'ID');
-        $role_list2 = CHtml::listData(Auctioneer::model()->findAll(), 'ID' , 'ID', 'auctioneer', 'auctioneer');
+        $role_list = CHtml::listData(Auctioneer::model()->findAll(array('order'=>'auctioneer ASC')), 'auctioneer', 'auctioneer', 'ID' , 'ID');
+        $role_list2 = CHtml::listData(Auctioneer::model()->findAll(array('order'=>'ID ASC')), 'ID' , 'ID', 'auctioneer', 'auctioneer');
         $options = array(
             'tabindex' => '0',
             'empty' => '(Select a Company)',
