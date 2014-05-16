@@ -27,9 +27,30 @@
 </head>
 
 <body>
+<style>
+    .left_outer{
+        z-index: 100;
+        position: absolute;
+        margin-left: -70px ;
+        height: 125%;
+        width:70px;
+        background-image: url('/images/steel_border_flip.jpg');
+    }
+    .right_outer{
+        z-index: 100;
+        position: absolute;
+        margin-left: 950px ;
+        height: 125%;
+        width:70px;
+        background-image: url('/images/steel_border.jpg');
+    }
+</style>
+
+
 
 <div class="container" id="page">
-
+    <!--<div class="left_outer"></div>
+    <div class="right_outer"></div>-->
     <img src="/images/banner/website_banner.jpg" width='950'/>
 	<!--<div id="header">
 		<div id="logo">
@@ -43,7 +64,7 @@
 				array('label'=>'Home', 'url'=>array('/site/index')),
                 array('label'=>'Auctions', 'url'=>array('/auctions')),
                 array('label'=>'Auctioneers', 'url'=>array('/auctioneer')),
-                array('label'=>'Publications', 'url'=>array('index.php/issues')),
+                array('label'=>'Publications', 'url'=>array('/index.php/issues')),
                 array('label'=>'Advertisers', 'url'=>array('/advertisers')),
                 array('label'=>'Media Guide', 'url'=>array('/site/media_guide')),
                 array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
@@ -69,6 +90,7 @@
 		<?php /*echo Yii::powered(); */?>
         Designed & Programmed by Sari Rahal
 	</div><!-- footer -->
+
 
 </div><!-- page -->
 

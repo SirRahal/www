@@ -5,7 +5,7 @@
 
 $this->pageTitle=Yii::app()->name . ' - Contact Us';
 $this->breadcrumbs=array(
-	'Contact',
+	'Contact Us',
 );
 ?>
 <style>
@@ -13,7 +13,7 @@ $this->breadcrumbs=array(
         position: absolute;
         margin-left: 550px;
         Margin-top:-100px;
-        padding:10px 10px 0px 10px;
+        padding:20px 20px 0px 20px;
         background: #eaeae3;
         border-radius: 10px;
     }
@@ -31,7 +31,8 @@ $this->breadcrumbs=array(
 </div>
 
 <?php else: ?>
-<div style="width:50%;">
+
+<div style="width:40%;">
     <p>
     If you have business inquiries or other questions, please fill out the following form to contact us or give us a call.  <br/>Thank you.
     </p>
@@ -104,6 +105,9 @@ $this->breadcrumbs=array(
     <div class="clear"></div>
 <div class="form">
 
+
+
+
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'contact-form',
 	'enableClientValidation'=>true,
@@ -130,13 +134,13 @@ $this->breadcrumbs=array(
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'subject'); ?>
-		<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->textField($model,'subject',array('size'=>65,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'subject'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'body'); ?>
-		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>60)); ?>
 		<?php echo $form->error($model,'body'); ?>
 	</div>
 
@@ -145,10 +149,10 @@ $this->breadcrumbs=array(
 		<?php echo $form->labelEx($model,'verifyCode'); ?>
 		<div>
 		<?php $this->widget('CCaptcha'); ?>
-		<?php echo $form->textField($model,'verifyCode'); ?>
+		<?php echo $form->textField($model,'verifyCode',array('size'=>15)); ?>
 		</div>
-		<div class="hint">Please enter the letters as they are shown in the image above.
-		<br/>Letters are not case-sensitive.</div>
+		<div class="hint">Please enter the letters as they are shown in the<br/> image above.
+		Letters are not case-sensitive.</div>
 		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
 	<?php endif; ?>

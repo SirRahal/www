@@ -26,9 +26,12 @@
         <br />
 
     </div>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('info')); ?>:</b>
-	<?php echo CHtml::encode($data->info); ?>
-	<br />
+	<b><?php if($data->info != 'N/A') {
+            echo CHtml::encode($data->getAttributeLabel('info')); ?>:</b>
+	        <?php echo CHtml::encode($data->info);?>
+    <br/>
+    <?php }else{?> </b> <?php } ?>
+
 
 
 </div>

@@ -105,6 +105,12 @@ button:hover{
 .clear{
     clear: both;
 }
+.banner{
+    position: absolute;
+    margin-left: 720px;
+    width: 200px;
+    margin-top: 0px;
+}
 .ads:hover{
     box-shadow: #519bc5 7px 7px 7px ;
 }

@@ -43,7 +43,7 @@ if (isset(Yii::app()->session['last_date']))
         <br />
 
         <b><?php echo CHtml::encode($data->getAttributeLabel('url')); ?>:</b>
-        <div class="auction" style="position: absolute; margin-top: -17px; margin-left: 27px;" url="<?php echo $data->url; ?>">
+        <div class="auction" style="position: absolute; margin-top: -17px; margin-left: 27px; width: 690px; height: 19px; overflow:hidden;" url="<?php echo $data->url; ?>">
             <?php echo CHtml::link(CHtml::encode($data->url), $data->url, array("target"=>"_blank")); ?>
         </div>
         <br />

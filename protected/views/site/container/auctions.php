@@ -49,6 +49,7 @@
         $date = $row['date'];
         $location = $row['location'];
         $company_ID = $row['company_ID'];
+        $clicks = $row['clicks'];
         if( $date != $last_date){?>
             <div style="width: 100%; padding: 5px; font-size: 22px; text-align: center; color:#ededed; background: gray;">
                 <?php $originalDate = $date; $newDate = date("l, m/d/Y", strtotime($originalDate)); echo $newDate;?>
@@ -61,6 +62,8 @@
                         <a href="<?php echo '/index.php/auctioneer/'.$company_ID;?>">
                             <?php echo $company;?>
                         </a>
+                        <br/>
+                        <b>Clicks </b><?php echo $clicks;?>
                     </div>
                 </td>
                 <td class="table_ele_2 auction" url="<?php echo $url;?>"><b><a href="<?php echo $url;?>"><?php echo $title;?></a></b>
