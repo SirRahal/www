@@ -49,7 +49,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'url'); ?>
-		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'url'); ?>
 	</div>
 

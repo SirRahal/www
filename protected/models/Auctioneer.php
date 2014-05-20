@@ -34,7 +34,7 @@ class Auctioneer extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('auctioneer, address, city, state, zip, info', 'required'),
+			array('auctioneer, address, city, state, zip, info , url', 'required'),
 			array('zip', 'numerical', 'integerOnly'=>true),
 			array('auctioneer, address, city', 'length', 'max'=>100),
 			array('state', 'length', 'max'=>2),

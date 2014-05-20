@@ -25,6 +25,12 @@
 		<?php echo $form->error($model,'auctioneer'); ?>
 	</div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model,'url'); ?>
+        <?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>200)); ?>
+        <?php echo $form->error($model,'url'); ?>
+    </div>
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'address'); ?>
 		<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>100)); ?>

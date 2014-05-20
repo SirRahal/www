@@ -37,7 +37,7 @@ class Auctions extends CActiveRecord
 		return array(
 			array('company_ID, company, url, info, date, location, title', 'required'),
 			array('company_ID, clicks', 'numerical', 'integerOnly'=>true),
-			array('company, url, location, title', 'length', 'max'=>100),
+			array('company, url, location, title', 'length', 'max'=>200),
 			array('info', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
