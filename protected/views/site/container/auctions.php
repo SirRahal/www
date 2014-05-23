@@ -42,7 +42,7 @@
 
         $row=$temp[$i];
         $company = $row['company'];
-        $url = '/index.php/auctions/'.$row['ID'];
+        $url = $row['url'];
         //$email = $row['email'];
         $title = $row['title'];
         $info = $row['info'];
@@ -66,7 +66,7 @@
                         <b>Clicks </b><?php echo $clicks;?>
                     </div>
                 </td>
-                <td class="table_ele_2 auction" url="<?php echo $url;?>"><b><a href="<?php echo $url;?>"><?php echo $title;?></a></b>
+                <td class="table_ele_2 auction" url="<?php echo $url;?>"><b><a href="<?php echo $url;?>" target="_blank"><?php echo $title;?></a></b>
                     <br/>
                     <?php echo $info;?>
                 </td>

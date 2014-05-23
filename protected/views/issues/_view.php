@@ -16,7 +16,7 @@
 <?php
 $temp = strlen($data->img);
 $back_img = substr($data->img,0,$temp-4);
-$back_img = $back_img . '_back'.substr($data->img['img'],$temp-4).'.jpg';
+$back_img = $back_img . '_back.jpg';
 $date = $data->date;
 $date = date("M Y",strtotime($date));
 ?>
