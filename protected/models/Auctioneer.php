@@ -35,7 +35,7 @@ class Auctioneer extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('auctioneer, address, city, state, zip, info , url', 'required'),
-			array('zip', 'numerical', 'integerOnly'=>true),
+            array('zip', 'length', 'max'=>8),
 			array('auctioneer, address, city', 'length', 'max'=>100),
 			array('state', 'length', 'max'=>2),
 			array('info', 'length', 'max'=>500),
