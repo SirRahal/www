@@ -17,8 +17,23 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'tournament_ID'); ?>
+		<?php echo $form->textField($model,'tournament_ID'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'date'); ?>
 		<?php echo $form->textField($model,'date'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'time'); ?>
+		<?php echo $form->textField($model,'time'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'location'); ?>
+		<?php echo $form->textField($model,'location',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
 	<div class="row">

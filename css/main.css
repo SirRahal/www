@@ -227,3 +227,26 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
+.bracket_box{
+    font-size:.8em;
+    background: #e7e7e7;
+    margin-top: 5px;
+    width:110px;
+    max-height: 15px;
+    padding:3px;
+    overflow: hidden;
+}
+.roster{
+    width: 110px;
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.align_right{
+    text-align: right;
+}
+.spacer{
+    height: 5px;
+}

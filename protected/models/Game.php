@@ -5,15 +5,19 @@
  *
  * The followings are the available columns in table 'game':
  * @property integer $ID
+ * @property integer $tournament_ID
  * @property string $date
+ * @property string $time
+ * @property string $location
  * @property integer $team_1_ID
  * @property integer $team_2_ID
  * @property integer $team_1_score
  * @property integer $team_2_score
  *
  * The followings are the available model relations:
- * @property Team $team2
+ * @property Tournament $tournament
  * @property Team $team1
+ * @property Team $team2
  */
 class Game extends CActiveRecord
 {
@@ -33,11 +37,12 @@ class Game extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('date, team_1_ID, team_2_ID, team_1_score, team_2_score', 'required'),
-			array('team_1_ID, team_2_ID, team_1_score, team_2_score', 'numerical', 'integerOnly'=>true),
+			array('tournament_ID, date, time, location, team_1_ID, team_2_ID, team_1_score, team_2_score', 'required'),
+			array('tournament_ID, team_1_ID, team_2_ID, team_1_score, team_2_score', 'numerical', 'integerOnly'=>true),
+			array('location', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, date, team_1_ID, team_2_ID, team_1_score, team_2_score', 'safe', 'on'=>'search'),
+			array('ID, tournament_ID, date, time, location, team_1_ID, team_2_ID, team_1_score, team_2_score', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,8 +54,9 @@ class Game extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'team2' => array(self::BELONGS_TO, 'Team', 'team_2_ID'),
+			'tournament' => array(self::BELONGS_TO, 'Tournament', 'tournament_ID'),
 			'team1' => array(self::BELONGS_TO, 'Team', 'team_1_ID'),
+			'team2' => array(self::BELONGS_TO, 'Team', 'team_2_ID'),
 		);
 	}
 
@@ -61,7 +67,10 @@ class Game extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
+			'tournament_ID' => 'Tournament',
 			'date' => 'Date',
+			'time' => 'Time',
+			'location' => 'Location',
 			'team_1_ID' => 'Team 1',
 			'team_2_ID' => 'Team 2',
 			'team_1_score' => 'Team 1 Score',
@@ -88,7 +97,10 @@ class Game extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ID',$this->ID);
+		$criteria->compare('tournament_ID',$this->tournament_ID);
 		$criteria->compare('date',$this->date,true);
+		$criteria->compare('time',$this->time,true);
+		$criteria->compare('location',$this->location,true);
 		$criteria->compare('team_1_ID',$this->team_1_ID);
 		$criteria->compare('team_2_ID',$this->team_2_ID);
 		$criteria->compare('team_1_score',$this->team_1_score);
@@ -109,4 +121,9 @@ class Game extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function games_in_tournament($tournament_ID){
+        $games = Game::model()->findAllByAttributes(array('tournament_ID'=>$tournament_ID));
+        return $games;
+    }
 }

@@ -22,7 +22,10 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'ID',
+		'tournament_ID',
 		'date',
+		'time',
+		'location',
 		'team_1_ID',
 		'team_2_ID',
 		'team_1_score',
