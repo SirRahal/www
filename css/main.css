@@ -240,6 +240,7 @@ div.search-form
 .roster{
     width: 110px;
     float: left;
+    padding-bottom: 20px;
 }
 .float_right{
     float: right;
@@ -249,4 +250,33 @@ div.search-form
 }
 .spacer{
     height: 5px;
+}
+.score_box{
+    position: absolute;
+    margin-top: -37px;
+    color: #8a1f11
+}
+.reagion_title{
+    color:#8a1f11;
+    margin-bottom: .1em;
+}
+.reagion_title_div_south{
+    position: absolute;
+    margin-left: 250px;
+    margin-top:210px;
+}
+.reagion_title_div_west{
+    position: absolute;
+    margin-left: -250px;
+    margin-top:190px;
+}
+.reagion_title_div_east{
+    position: absolute;
+    margin-left: 270px;
+    margin-top:610px;
+}
+.reagion_title_div_midwest{
+    position: absolute;
+    margin-left: -250px;
+    margin-top:615px;
 }

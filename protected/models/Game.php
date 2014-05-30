@@ -126,4 +126,15 @@ class Game extends CActiveRecord
         $games = Game::model()->findAllByAttributes(array('tournament_ID'=>$tournament_ID));
         return $games;
     }
+
+    public static function get_scores($tournament_ID,$team_1_ID,$team_2_ID){
+
+        $game = Game::model()->findByAttributes(array('tournament_ID'=>$tournament_ID, 'team_1_ID'=>$team_1_ID, 'team_2_ID'=>$team_2_ID));
+        if(isset($game)){
+            return $game;
+        }else{
+            return '';
+        }
+
+    }
 }

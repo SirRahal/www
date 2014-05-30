@@ -12,10 +12,6 @@
 
 <?php
 $roster = TeamTournamentRegion::model()->select_tournament_roster($region);
-$games = Game::model()->games_in_tournament(1);
-foreach($games as $reagionGames){
-    echo $reagionGames->team_1_score;
-}
 $spacer = 0;
 foreach($roster as $teamRegion)
 {
@@ -23,6 +19,7 @@ foreach($roster as $teamRegion)
     $seed = $teamRegion->seed;
     $team = $teamRegion->team->name;
     ?>
+
     <div class="bracket_box">
         <?php
             if($region%2 == 1){
@@ -32,11 +29,19 @@ foreach($roster as $teamRegion)
             }
         ?>
     </div>
-
-    <?php  if($spacer%2 == 0){?>
+    <?php  if($spacer%2 == 0){
+    $team2_ID = $teamRegion->team_ID;
+    $games = Game::model()->get_scores(1,$team1_ID,$team2_ID);
+    if($games != ''){?>
+        <div class="score_box" style="margin-left:<?php if($region%2==1){echo '120px;';}else{echo '-20px;';}?>">
+            <?php echo $games->team_1_score.'<br/>'.$games->team_2_score;?>
+        </div>
+        <?php
+        } ?>
     <div class="spacer"></div>
 <?php
 }
+    $team1_ID = $teamRegion->team_ID;
 }?>
 
 </div>
