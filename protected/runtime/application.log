@@ -1977,3 +1977,885 @@ REQUEST_URI=/
 in C:\wamp\www\protected\views\site\container\round_2_bracket.php (26)
 in C:\wamp\www\protected\views\site\index.php (14)
 in C:\wamp\www\protected\controllers\SiteController.php (32)
+2014/05/30 17:30:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "teamturnamentregion".' in C:\wamp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('teamturnamentre...')
+#1 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/teamturnamentregion
+---
+2014/05/30 17:59:20 [error] [php] Object of class TournamentResults could not be converted to string (C:\wamp\www\protected\views\site\container\round_3_bracket.php:15)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\index.php(21): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/index
+in C:\wamp\www\protected\views\site\container\round_3_bracket.php (15)
+in C:\wamp\www\protected\views\site\index.php (21)
+in C:\wamp\www\protected\controllers\SiteController.php (32)
+2014/05/30 18:14:40 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "region".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/game/create
+---
+2014/05/30 18:15:15 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "region".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/game/create
+---
+2014/05/30 18:19:26 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/game/create
+---
+2014/05/30 18:19:47 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "TeamTournamentRegion".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/game/create
+---
+2014/05/30 18:23:07 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/game/create
+---
+2014/05/30 18:29:23 [error] [exception.CException] exception 'CException' with message 'TeamTournamentRegion and its behaviors do not have a method or closure named "select_tournament_roster".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('select_tourname...', Array)
+#1 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): CActiveRecord->__call('select_tourname...', Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion->select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:30:38 [error] [exception.CException] exception 'CException' with message 'TeamTournamentRegion and its behaviors do not have a method or closure named "select_tournament_roster".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('select_tourname...', Array)
+#1 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): CActiveRecord->__call('select_tourname...', Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion->select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:30:42 [error] [exception.CException] exception 'CException' with message 'TeamTournamentRegion and its behaviors do not have a method or closure named "select_tournament_roster".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('select_tourname...', Array)
+#1 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): CActiveRecord->__call('select_tourname...', Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion->select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:31:02 [error] [exception.CException] exception 'CException' with message 'TeamTournamentRegion and its behaviors do not have a method or closure named "select_tournament_roster".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('select_tourname...', Array)
+#1 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): CActiveRecord->__call('select_tourname...', Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion->select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:31:03 [error] [exception.CException] exception 'CException' with message 'TeamTournamentRegion and its behaviors do not have a method or closure named "select_tournament_roster".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('select_tourname...', Array)
+#1 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): CActiveRecord->__call('select_tourname...', Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion->select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:33:06 [error] [exception.CDbException] exception 'CDbException' with message 'Table "team_tournament_region" does not have a column named "tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1535): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TeamTournamentRegion.php(119): CActiveRecord->findAllByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion::select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:33:32 [error] [exception.CDbException] exception 'CDbException' with message 'Table "team_tournament_region" does not have a column named "tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1535): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TeamTournamentRegion.php(119): CActiveRecord->findAllByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion::select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:33:33 [error] [exception.CDbException] exception 'CDbException' with message 'Table "team_tournament_region" does not have a column named "tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1535): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TeamTournamentRegion.php(119): CActiveRecord->findAllByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion::select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:34:48 [error] [exception.CDbException] exception 'CDbException' with message 'Table "team_tournament_region" does not have a column named "tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1535): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TeamTournamentRegion.php(119): CActiveRecord->findAllByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion::select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:35:03 [error] [exception.CDbException] exception 'CDbException' with message 'Table "team_tournament_region" does not have a column named "tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1535): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TeamTournamentRegion.php(119): CActiveRecord->findAllByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_2_bracket.php(14): TeamTournamentRegion::select_tournament_roster(1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(14): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:38:13 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(15): TournamentResults::get_round_results(3, 1, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:38:14 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(15): TournamentResults::get_round_results(3, 1, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:48:07 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 18:48:14 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:02:59 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:03:43 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion->tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:03:44 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion->tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:03:45 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion->tournament_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:11:42 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion->tournament_region_ID_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:12:01 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion->tournament_region_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:13:31 [error] [php] Undefined variable: region (C:\wamp\www\protected\views\site\container\round_2_bracket.php:25)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\index.php(14): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/index
+in C:\wamp\www\protected\views\site\container\round_2_bracket.php (25)
+in C:\wamp\www\protected\views\site\index.php (14)
+in C:\wamp\www\protected\controllers\SiteController.php (32)
+2014/05/30 19:13:48 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion->tournament_region_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:37:57 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_region_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:37:58 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_region_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 19:39:23 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_region_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(103): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 20:16:15 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_region_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(104): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 20:16:32 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_region_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(104): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---
+2014/05/30 20:17:37 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tournament_results" does not have a column named "teamTournamentRegion.tournament_region_ID".' in C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\protected\models\TournamentResults.php(104): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\protected\views\site\container\round_3_bracket.php(14): TournamentResults::get_round_results(3, 1)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\www\protected\views\site\index.php(21): CController->renderPartial('container/round...', Array)
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#12 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/tournamentresults
+---

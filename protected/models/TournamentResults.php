@@ -98,4 +98,12 @@ class TournamentResults extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function get_round_results($round,$region_ID){
+//http://www.yiiframework.com/doc/guide/1.1/en/database.arr
+        //look there
+        $round_results = TournamentResults::model()->findByAttributes(array('placement'=>$round, 'teamTournamentRegion.tournament_region_ID'=>$region_ID));
+        if(isset($round_results))
+            return $round_results;
+    }
 }

@@ -22,8 +22,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'tournament_ID'); ?>
-		<?php echo $form->textField($model,'tournament_ID'); ?>
+		<?php echo $form->label($model,'tournament_region_ID'); ?>
+		<?php echo $form->textField($model,'tournament_region_ID'); ?>
 	</div>
 
 	<div class="row">

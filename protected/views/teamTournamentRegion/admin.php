@@ -47,7 +47,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'ID',
 		'team_ID',
-		'tournament_ID',
+		'tournament_region_ID',
 		'seed',
 		'overall_seed',
 		'starting_placement',

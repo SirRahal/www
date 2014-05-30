@@ -11,22 +11,22 @@ $this->pageTitle=Yii::app()->name;
 <div class="roster">
     <div class="reagion_title_div_south"><h1 class="reagion_title">South</h1></div>
     <p class="reagion_title">Second Round</p>
-<?php echo $this->renderPartial('container/round_2_bracket', array('region' => 1)); ?>
+<?php echo $this->renderPartial('container/round_2_bracket', array('region_ID' => 1)); ?>
     <div class="reagion_title_div_east"><h1 class="reagion_title">East</h1></div>
-    <?php echo $this->renderPartial('container/round_2_bracket', array('region' => 3)); ?>
+    <?php echo $this->renderPartial('container/round_2_bracket', array('region_ID' => 3)); ?>
 </div>
 <!--round 3 left-->
 <div class="roster" style="margin-left: 32px; margin-top: 10px;">
     <p class="reagion_title">Third Round</p>
-    <?php echo $this->renderPartial('container/round_3_bracket', array('region' => 1)); ?>
+    <?php echo $this->renderPartial('container/round_3_bracket', array('region_ID' => 1)); ?>
 </div>
 <!--round 2 right-->
 <div class="roster float_right align_right">
     <p class="reagion_title">Second Round</p>
     <div class="reagion_title_div_west"><h1 class="reagion_title">West</h1></div>
-    <?php echo $this->renderPartial('container/round_2_bracket', array('region' => 2)); ?>
+    <?php echo $this->renderPartial('container/round_2_bracket', array('region_ID' => 2)); ?>
     <div class="reagion_title_div_midwest"><h1 class="reagion_title">Midwest</h1></div>
-    <?php echo $this->renderPartial('container/round_2_bracket', array('region' => 4)); ?>
+    <?php echo $this->renderPartial('container/round_2_bracket', array('region_ID' => 4)); ?>
 </div>
 <!--round 3 right-->
 <div class="roster float_right align_right" style="margin-right: 32px; margin-top: 10px;">

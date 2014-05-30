@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 29, 2014 at 09:16 PM
+-- Generation Time: May 30, 2014 at 08:26 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.3.13
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `game` (
   KEY `team_1_ID` (`team_1_ID`),
   KEY `team_2_ID` (`team_2_ID`),
   KEY `tournament_ID` (`tournament_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `game`
@@ -48,7 +48,9 @@ CREATE TABLE IF NOT EXISTS `game` (
 
 INSERT INTO `game` (`ID`, `tournament_ID`, `date`, `time`, `location`, `team_1_ID`, `team_2_ID`, `team_1_score`, `team_2_score`) VALUES
 (1, 1, '2014-03-20', '13:00:00', 'Memphis', 17, 1, 67, 55),
-(7, 1, '2014-05-01', '12:59:00', 'home', 10, 45, 44, 45);
+(7, 1, '2014-05-01', '12:59:00', 'home', 10, 45, 44, 45),
+(9, 1, '0000-00-00', '00:00:00', 'TBA', 70, 70, 0, 0),
+(10, 1, '2014-05-01', '00:00:00', 'TBA', 70, 70, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -113,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `team` (
   `name` varchar(100) NOT NULL,
   `logo` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=70 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=71 ;
 
 --
 -- Dumping data for table `team`
@@ -188,7 +190,8 @@ INSERT INTO `team` (`ID`, `name`, `logo`) VALUES
 (66, 'Wisconsin', ''),
 (67, 'Wofford', ''),
 (68, 'Xavier', ''),
-(69, 'LA-Lafayette', '');
+(69, 'LA-Lafayette', ''),
+(70, 'TBA', '');
 
 -- --------------------------------------------------------
 
@@ -199,20 +202,21 @@ INSERT INTO `team` (`ID`, `name`, `logo`) VALUES
 CREATE TABLE IF NOT EXISTS `team_tournament_region` (
   `ID` int(100) NOT NULL AUTO_INCREMENT,
   `team_ID` int(100) NOT NULL,
-  `tournament_ID` int(100) NOT NULL,
+  `tournament_region_ID` int(100) NOT NULL,
   `seed` int(2) NOT NULL,
   `overall_seed` int(2) NOT NULL,
   `starting_placement` int(2) NOT NULL,
   PRIMARY KEY (`ID`),
-  KEY `team_ID` (`team_ID`,`tournament_ID`),
-  KEY `tournament_ID` (`tournament_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=131 ;
+  KEY `team_ID` (`team_ID`,`tournament_region_ID`),
+  KEY `tournament_ID` (`tournament_region_ID`),
+  KEY `tournament_region_ID` (`tournament_region_ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=65 ;
 
 --
 -- Dumping data for table `team_tournament_region`
 --
 
-INSERT INTO `team_tournament_region` (`ID`, `team_ID`, `tournament_ID`, `seed`, `overall_seed`, `starting_placement`) VALUES
+INSERT INTO `team_tournament_region` (`ID`, `team_ID`, `tournament_region_ID`, `seed`, `overall_seed`, `starting_placement`) VALUES
 (1, 17, 1, 1, 1, 1),
 (2, 1, 1, 16, 63, 2),
 (3, 10, 1, 8, 49, 3),
@@ -353,6 +357,76 @@ CREATE TABLE IF NOT EXISTS `tournament_results` (
   KEY `team_tournament_region_ID` (`team_tournament_region_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `tournament_results`
+--
+
+INSERT INTO `tournament_results` (`ID`, `team_tournament_region_ID`, `placement`) VALUES
+(1, 1, 3),
+(2, 2, 2),
+(3, 3, 2),
+(4, 4, 3),
+(5, 5, 2),
+(6, 6, 2),
+(7, 7, 2),
+(8, 8, 2),
+(9, 9, 2),
+(10, 10, 2),
+(11, 11, 2),
+(12, 12, 2),
+(13, 13, 2),
+(14, 14, 2),
+(15, 15, 2),
+(16, 16, 2),
+(17, 17, 2),
+(18, 18, 2),
+(19, 19, 2),
+(20, 20, 2),
+(21, 21, 2),
+(22, 22, 2),
+(23, 23, 2),
+(24, 24, 2),
+(25, 25, 2),
+(26, 26, 2),
+(27, 27, 2),
+(28, 28, 2),
+(29, 29, 2),
+(30, 30, 2),
+(31, 31, 2),
+(32, 32, 2),
+(33, 33, 2),
+(34, 34, 2),
+(35, 35, 2),
+(36, 36, 2),
+(37, 37, 2),
+(38, 38, 2),
+(39, 39, 2),
+(40, 40, 2),
+(41, 41, 2),
+(42, 42, 2),
+(43, 43, 2),
+(44, 44, 2),
+(45, 45, 2),
+(46, 46, 2),
+(47, 47, 2),
+(48, 48, 2),
+(49, 49, 2),
+(50, 50, 2),
+(51, 51, 2),
+(52, 52, 2),
+(53, 53, 2),
+(54, 54, 2),
+(55, 55, 2),
+(56, 56, 2),
+(57, 57, 2),
+(58, 58, 2),
+(59, 59, 2),
+(60, 60, 2),
+(61, 61, 2),
+(62, 62, 2),
+(63, 63, 2),
+(64, 64, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -382,9 +456,9 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Constraints for table `game`
 --
 ALTER TABLE `game`
-  ADD CONSTRAINT `game_ibfk_3` FOREIGN KEY (`tournament_ID`) REFERENCES `tournament` (`ID`),
   ADD CONSTRAINT `game_ibfk_1` FOREIGN KEY (`team_1_ID`) REFERENCES `team` (`ID`),
-  ADD CONSTRAINT `game_ibfk_2` FOREIGN KEY (`team_2_ID`) REFERENCES `team` (`ID`);
+  ADD CONSTRAINT `game_ibfk_2` FOREIGN KEY (`team_2_ID`) REFERENCES `team` (`ID`),
+  ADD CONSTRAINT `game_ibfk_3` FOREIGN KEY (`tournament_ID`) REFERENCES `tournament` (`ID`);
 
 --
 -- Constraints for table `placement`
@@ -397,7 +471,7 @@ ALTER TABLE `placement`
 -- Constraints for table `team_tournament_region`
 --
 ALTER TABLE `team_tournament_region`
-  ADD CONSTRAINT `team_tournament_region_ibfk_3` FOREIGN KEY (`tournament_ID`) REFERENCES `tournament_region` (`ID`),
+  ADD CONSTRAINT `team_tournament_region_ibfk_2` FOREIGN KEY (`tournament_region_ID`) REFERENCES `tournament_region` (`ID`),
   ADD CONSTRAINT `team_tournament_region_ibfk_1` FOREIGN KEY (`team_ID`) REFERENCES `team` (`ID`);
 
 --

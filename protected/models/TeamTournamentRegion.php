@@ -6,14 +6,15 @@
  * The followings are the available columns in table 'team_tournament_region':
  * @property integer $ID
  * @property integer $team_ID
- * @property integer $tournament_ID
+ * @property integer $tournament_region_ID
  * @property integer $seed
  * @property integer $overall_seed
  * @property integer $starting_placement
  *
  * The followings are the available model relations:
- * @property TournamentRegion $tournament
+ * @property TournamentRegion $tournamentRegion
  * @property Team $team
+ * @property TournamentResults[] $tournamentResults
  */
 class TeamTournamentRegion extends CActiveRecord
 {
@@ -33,11 +34,11 @@ class TeamTournamentRegion extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('team_ID, tournament_ID, seed, overall_seed, starting_placement', 'required'),
-			array('team_ID, tournament_ID, seed, overall_seed, starting_placement', 'numerical', 'integerOnly'=>true),
+			array('team_ID, tournament_region_ID, seed, overall_seed, starting_placement', 'required'),
+			array('team_ID, tournament_region_ID, seed, overall_seed, starting_placement', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, team_ID, tournament_ID, seed, overall_seed, starting_placement', 'safe', 'on'=>'search'),
+			array('ID, team_ID, tournament_region_ID, seed, overall_seed, starting_placement', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,8 +50,9 @@ class TeamTournamentRegion extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'tournament' => array(self::BELONGS_TO, 'TournamentRegion', 'tournament_ID'),
+			'tournamentRegion' => array(self::BELONGS_TO, 'TournamentRegion', 'tournament_region_ID'),
 			'team' => array(self::BELONGS_TO, 'Team', 'team_ID'),
+			'tournamentResults' => array(self::HAS_MANY, 'TournamentResults', 'team_tournament_region_ID'),
 		);
 	}
 
@@ -62,7 +64,7 @@ class TeamTournamentRegion extends CActiveRecord
 		return array(
 			'ID' => 'ID',
 			'team_ID' => 'Team',
-			'tournament_ID' => 'Tournament',
+			'tournament_region_ID' => 'Tournament Region',
 			'seed' => 'Seed',
 			'overall_seed' => 'Overall Seed',
 			'starting_placement' => 'Starting Placement',
@@ -89,7 +91,7 @@ class TeamTournamentRegion extends CActiveRecord
 
 		$criteria->compare('ID',$this->ID);
 		$criteria->compare('team_ID',$this->team_ID);
-		$criteria->compare('tournament_ID',$this->tournament_ID);
+		$criteria->compare('tournament_region_ID',$this->tournament_region_ID);
 		$criteria->compare('seed',$this->seed);
 		$criteria->compare('overall_seed',$this->overall_seed);
 		$criteria->compare('starting_placement',$this->starting_placement);
@@ -114,15 +116,14 @@ class TeamTournamentRegion extends CActiveRecord
     {
         /*$qry_str = "SELECT * FROM `team_tournament_region` WHERE `tournament_ID` = ".$tounament_ID;
         $roster = Yii::app()->db->createCommand($qry_str)->queryAll();*/
-        $roster = TeamTournamentRegion::model()->findAllByAttributes(array('tournament_ID'=>$tournament_ID));
+        $roster = TeamTournamentRegion::model()->findAllByAttributes(array('tournament_region_ID'=>$tournament_ID));
         return $roster;
 
     }
 
     public static function slect_tournament_placement($tournament_ID)
     {
-        $postion = TeamTournamentRegion::model()->findByAttributes(array('tournament_ID'=>$tournament_ID));
+        $postion = TeamTournamentRegion::model()->findByAttributes(array('tournament_region_ID'=>$tournament_ID));
         return $postion;
     }
-
 }

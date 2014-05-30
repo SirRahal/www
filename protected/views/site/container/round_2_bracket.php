@@ -11,7 +11,7 @@
 <div class="roster">
 
 <?php
-$roster = TeamTournamentRegion::model()->select_tournament_roster($region);
+$roster = TeamTournamentRegion::model()->select_tournament_roster($region_ID);
 $spacer = 0;
 foreach($roster as $teamRegion)
 {
@@ -22,7 +22,7 @@ foreach($roster as $teamRegion)
 
     <div class="bracket_box">
         <?php
-            if($region%2 == 1){
+            if($region_ID%2 == 1){
                 echo $seed.' '.$team;
             }else{
                 echo $team.' '.$seed;
@@ -33,7 +33,7 @@ foreach($roster as $teamRegion)
     $team2_ID = $teamRegion->team_ID;
     $games = Game::model()->get_scores(1,$team1_ID,$team2_ID);
     if($games != ''){?>
-        <div class="score_box" style="margin-left:<?php if($region%2==1){echo '120px;';}else{echo '-20px;';}?>">
+        <div class="score_box" style="margin-left:<?php if($region_ID%2==1){echo '120px;';}else{echo '-20px;';}?>">
             <?php echo $games->team_1_score.'<br/>'.$games->team_2_score;?>
         </div>
         <?php

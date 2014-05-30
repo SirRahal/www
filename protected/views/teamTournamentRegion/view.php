@@ -23,7 +23,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'ID',
 		'team_ID',
-		'tournament_ID',
+		'tournament_region_ID',
 		'seed',
 		'overall_seed',
 		'starting_placement',

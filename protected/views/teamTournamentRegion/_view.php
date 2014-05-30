@@ -13,8 +13,8 @@
 	<?php echo CHtml::encode($data->team_ID); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('tournament_ID')); ?>:</b>
-	<?php echo CHtml::encode($data->tournament_ID); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('tournament_region_ID')); ?>:</b>
+	<?php echo CHtml::encode($data->tournament_region_ID); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('seed')); ?>:</b>

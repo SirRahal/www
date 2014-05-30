@@ -26,9 +26,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'tournament_ID'); ?>
-		<?php echo $form->textField($model,'tournament_ID'); ?>
-		<?php echo $form->error($model,'tournament_ID'); ?>
+		<?php echo $form->labelEx($model,'tournament_region_ID'); ?>
+		<?php echo $form->textField($model,'tournament_region_ID'); ?>
+		<?php echo $form->error($model,'tournament_region_ID'); ?>
 	</div>
 
 	<div class="row">
