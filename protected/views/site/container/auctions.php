@@ -41,6 +41,7 @@
     {
 
         $row=$temp[$i];
+        $ID = $row['ID'];
         $company = $row['company'];
         $url = $row['url'];
         //$email = $row['email'];
@@ -58,12 +59,12 @@
         <table style="margin-bottom: 0px;">
             <tr class="<?php if($num_row%2==1){$num_row++; echo "odd";}else{$num_row++;}?>">
                 <td class="table_ele_1">
-                    <div class="auction" url="<?php echo $url?>">
+                    <div class="auction" url="<?php echo $url;?>">
                         <a href="<?php echo '/index.php/auctioneer/'.$company_ID;?>">
                             <?php echo $company;?>
                         </a>
                         <br/>
-                        <b>Clicks </b><?php echo $clicks;?>
+                        <!--<b>Clicks </b>--><?php /*echo $clicks;*/?>
                     </div>
                 </td>
                 <td class="table_ele_2 auction" url="<?php echo $url;?>"><b><a href="<?php echo $url;?>" target="_blank"><?php echo $title;?></a></b>

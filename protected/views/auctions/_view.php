@@ -26,12 +26,12 @@ if (isset(Yii::app()->session['last_date']))
 <?php } ?>
 
 <div class="view">
-    <div style="position: absolute;float: left; margin-left: 615px;">
-        <b> <?php echo CHtml::encode($data->getAttributeLabel('clicks')); ?>:</b>
-        <?php echo CHtml::encode($data->clicks); ?>
+    <!--<div style="position: absolute;float: left; margin-left: 615px;">
+        <b> <?php /*echo CHtml::encode($data->getAttributeLabel('clicks')); */?>:</b>
+        <?php /*echo CHtml::encode($data->clicks); */?>
         <br />
     </div>
-
+-->
 
     <div style="float: left; width: 80%;">
 

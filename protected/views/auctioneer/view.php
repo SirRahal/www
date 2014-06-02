@@ -16,7 +16,7 @@ $this->menu=array(
 );}
 ?>
 
-<h1>View Auctioneer <i><?php echo $model->auctioneer; ?></i></h1>
+<h1>Auctioneer: <i><?php echo $model->auctioneer; ?></i></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -36,20 +36,20 @@ $this->menu=array(
 
 
 <br/>
-<h2>Auctions listed below</h2>
+<h2><?php echo $model->auctioneer; ?>'s Upcoming Auctions</h2>
 
 <?php
 $current_date = time()-(60*60*24);
 $i=0;
 while(isset($model->auctions[$i]['title'])){
-    /*if($current_date < strtotime($model->auctions[$i]['date']))
-    {*/?>
+    if($current_date < strtotime($model->auctions[$i]['date']))
+    {?>
     <div class="auction" url="<?php echo $model->auctions[$i]['url'];?>" style="margin-bottom: -15px; text-align: center;">
         <h4><a href="<?php echo $model->auctions[$i]['url'];?>" target="_blank"><?php echo $model->auctions[$i]['title'] ;?></a></h4>
     </div>
-    <div style="position: absolute; margin-left: 625px;margin-top: 3px;">
-        <b>Clicks </b><?php echo $model->auctions[$i]['clicks'];?>
-    </div>
+    <!--<div style="position: absolute; margin-left: 625px;margin-top: 3px;">
+        <b>Clicks </b><?php /*echo $model->auctions[$i]['clicks'];*/?>
+    </div>-->
     <?php
 $this->widget('zii.widgets.CDetailView', array(
     'data'=>$model->auctions[$i],
@@ -60,7 +60,7 @@ $this->widget('zii.widgets.CDetailView', array(
     ),
 ));?>
         <br/>
-    <?php /*}*/
+    <?php }
     $i++;}
     ?>
 

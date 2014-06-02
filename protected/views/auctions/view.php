@@ -26,6 +26,5 @@ $this->menu=array(
         'url',
         'location',
         'info',
-        'clicks',
     ),
 )); ?>

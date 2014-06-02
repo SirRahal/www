@@ -1,5 +1,4 @@
 <?php
-$clicks = 0;
 $auction_url='';
 $auction_url = $_POST['url'];
 
@@ -14,4 +13,14 @@ if($result){
         $qry = "UPDATE auctions SET clicks=$clicks WHERE url = '".$auction_url."'";
         $result2 = mysqli_query($connect, $qry);
     }
+}
+
+
+$ad_url='';
+$ad_url = $_POST['url'];
+
+$auction = Auctions::model()->findByAttributes(array('url'=>$auction_url));
+if(isset($auction)){
+    $auction->clicks +=1;
+    $auction->save();
 }
