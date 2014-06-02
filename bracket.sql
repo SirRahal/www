@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 30, 2014 at 08:26 PM
+-- Generation Time: Jun 02, 2014 at 02:43 AM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.3.13
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `game` (
   KEY `team_1_ID` (`team_1_ID`),
   KEY `team_2_ID` (`team_2_ID`),
   KEY `tournament_ID` (`tournament_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `game`
@@ -50,7 +50,11 @@ INSERT INTO `game` (`ID`, `tournament_ID`, `date`, `time`, `location`, `team_1_I
 (1, 1, '2014-03-20', '13:00:00', 'Memphis', 17, 1, 67, 55),
 (7, 1, '2014-05-01', '12:59:00', 'home', 10, 45, 44, 45),
 (9, 1, '0000-00-00', '00:00:00', 'TBA', 70, 70, 0, 0),
-(10, 1, '2014-05-01', '00:00:00', 'TBA', 70, 70, 0, 0);
+(10, 1, '2014-05-01', '00:00:00', 'TBA', 70, 70, 0, 0),
+(11, 1, '2014-05-16', '12:59:00', 'Michigan', 17, 45, 100, 92),
+(12, 1, '2014-05-01', '01:00:00', 'grand rapids', 3, 63, 91, 81),
+(13, 1, '2014-01-01', '01:00:00', 'fgh', 19, 43, 50, 49),
+(14, 1, '2014-05-23', '01:00:00', 'sdfg', 23, 16, 100, 40);
 
 -- --------------------------------------------------------
 
@@ -362,7 +366,7 @@ CREATE TABLE IF NOT EXISTS `tournament_results` (
 --
 
 INSERT INTO `tournament_results` (`ID`, `team_tournament_region_ID`, `placement`) VALUES
-(1, 1, 3),
+(1, 1, 6),
 (2, 2, 2),
 (3, 3, 2),
 (4, 4, 3),
@@ -376,11 +380,11 @@ INSERT INTO `tournament_results` (`ID`, `team_tournament_region_ID`, `placement`
 (12, 12, 2),
 (13, 13, 2),
 (14, 14, 2),
-(15, 15, 2),
+(15, 15, 3),
 (16, 16, 2),
-(17, 17, 2),
+(17, 17, 3),
 (18, 18, 2),
-(19, 19, 2),
+(19, 19, 3),
 (20, 20, 2),
 (21, 21, 2),
 (22, 22, 2),
@@ -471,8 +475,8 @@ ALTER TABLE `placement`
 -- Constraints for table `team_tournament_region`
 --
 ALTER TABLE `team_tournament_region`
-  ADD CONSTRAINT `team_tournament_region_ibfk_2` FOREIGN KEY (`tournament_region_ID`) REFERENCES `tournament_region` (`ID`),
-  ADD CONSTRAINT `team_tournament_region_ibfk_1` FOREIGN KEY (`team_ID`) REFERENCES `team` (`ID`);
+  ADD CONSTRAINT `team_tournament_region_ibfk_1` FOREIGN KEY (`team_ID`) REFERENCES `team` (`ID`),
+  ADD CONSTRAINT `team_tournament_region_ibfk_2` FOREIGN KEY (`tournament_region_ID`) REFERENCES `tournament_region` (`ID`);
 
 --
 -- Constraints for table `ticket`
