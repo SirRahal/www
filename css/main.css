@@ -263,20 +263,20 @@ div.search-form
 .reagion_title_div_south{
     position: absolute;
     margin-left: 250px;
-    margin-top:210px;
+    margin-top:225px;
 }
 .reagion_title_div_west{
     position: absolute;
-    margin-left: -250px;
-    margin-top:190px;
+    margin-left: -198px;
+    margin-top:205px;
 }
 .reagion_title_div_east{
     position: absolute;
-    margin-left: 270px;
-    margin-top:610px;
+    margin-left: 250px;
+    margin-top:660px;
 }
 .reagion_title_div_midwest{
     position: absolute;
-    margin-left: -250px;
-    margin-top:615px;
+    margin-left: -230px;
+    margin-top:660px;
 }
