@@ -100,15 +100,24 @@ class TournamentResults extends CActiveRecord
 	}
 
     public static function get_round_results($round,$region_ID){
-        //http://www.yiiframework.com/doc/guide/1.1/en/database.arr
-
-
-
-
         $round_results=TournamentResults::model()->with(array(
             'teamTournamentRegion'=>array( 'select'=>false,
                 'alias' => 'teamTournamentRegion',
                 'condition'=>"placement>=$round AND teamTournamentRegion.tournament_region_ID=$region_ID",
+                'order'=>'teamTournamentRegion.starting_placement ASC'
+            ),
+        ))->findAll();
+
+        if(isset($round_results) && $round_results!='')
+            return $round_results;
+    }
+
+    public  static function get_final_four($tournament_ID){
+
+        $round_results=TournamentResults::model()->with(array(
+            'teamTournamentRegion'=>array( 'select'=>false,
+                'alias' => 'teamTournamentRegion',
+                'condition'=>"placement>=6",
                 'order'=>'teamTournamentRegion.starting_placement ASC'
             ),
         ))->findAll();

@@ -2,28 +2,32 @@
 /**
  * Created by PhpStorm.
  * User: Sari
- * Date: 5/30/14
- * Time: 10:46 AM
+ * Date: 6/2/14
+ * Time: 1:16 PM
  */
+
 $team1_ID = 0;
 $team2_ID = 0;
 $skip = 0;
+
+$round_6 = TournamentResults::model()->get_final_four(1);
+        ?>
+<?php
+
 ?>
-<div style="margin-top: -43px;">
+<div >
     <?php
-    $round_4 = TournamentResults::model()->get_round_results(4,$region_ID);
     $skip = 0;
     for ($i = 0; $i < 4; $i++) {
-
-            ?>
-            <div style="height: 47px;"></div>
-
-
-        <div class="bracket_box" style="margin-bottom: 35px;">
-            <?php if (empty($round_4[$i-$skip]['ID'])){
+        if($i == 2){ ?>
+            <div style="height: 460px;"></div>
+        <?php }
+        ?>
+        <div class="bracket_box" style="float: left; margin-left: 50px;">
+            <?php if (empty($round_6[$i-$skip]['ID'])){
                 echo 'TBA';
             }else {
-                $team = TeamTournamentRegion::model()->findByPk($round_4[$i-$skip]['ID']);
+                $team = TeamTournamentRegion::model()->findByPk($round_6[$i-$skip]['ID']);
                 if($team->starting_placement ==(($i+1)*2-1 +16*$region_ID - 16)|| $team->starting_placement ==($i+1)*2 +16*$region_ID - 16)
                 {
                     $skip = 0;
@@ -36,7 +40,7 @@ $skip = 0;
                 }
             }?>
         </div>
-        <?php if($i%2 == 1 && !empty($round_4[$i-$skip]['ID'])){
+        <?php if($i%2 == 1 && !empty($round_6[$i-$skip]['ID'])){
             $team2_ID = $team->ID;
             $games = Game::model()->get_scores($region_ID,$team1_ID,$team2_ID);
             if($games != ''){?>
@@ -48,7 +52,7 @@ $skip = 0;
             } ?>
         <?php
         }
-        if (!empty($round_4[$i-$skip]['ID']))
+        if (!empty($round_6[$i-$skip]['ID']))
             $team1_ID = $team->ID;
     }?>
 </div>

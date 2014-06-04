@@ -237,6 +237,13 @@ div.search-form
     padding:3px;
     overflow: hidden;
 }
+
+.final_four{
+    position: absolute;
+    float: left;
+    margin-left: 400px;
+    width: 400px;
+}
 .roster{
     width: 110px;
     float: left;
@@ -262,21 +269,25 @@ div.search-form
 }
 .reagion_title_div_south{
     position: absolute;
-    margin-left: 250px;
-    margin-top:225px;
+    margin-left: 297px;
+    margin-top: 217px;
+    font-size: 20px;
 }
 .reagion_title_div_west{
     position: absolute;
-    margin-left: -198px;
-    margin-top:205px;
+    margin-left: -275px;
+    margin-top: 197px;
+    font-size: 20px;
 }
 .reagion_title_div_east{
     position: absolute;
-    margin-left: 250px;
-    margin-top:660px;
+    margin-left: 305px;
+    margin-top:655px;
+    font-size: 20px;
 }
 .reagion_title_div_midwest{
     position: absolute;
-    margin-left: -230px;
-    margin-top:660px;
+    margin-left: -305px;
+    margin-top:655px;
+    font-size: 20px;
 }

@@ -40,6 +40,12 @@ $this->pageTitle=Yii::app()->name;
         <?php echo $this->renderPartial('container/round_5_bracket', array('region_ID' => 3)); ?>
     </div>
 </div>
+<!--round 6 middle-->
+<div  class="final_four" style="margin-top: 200px;">
+    <p class="reagion_title" style="margin-left: 50px;">Sixth Round</p>
+    <?php echo $this->renderPartial('container/round_6_bracket', array('region_ID' => 1)); ?>
+
+</div>
 <!--round 2 right-->
 <div class="roster float_right align_right">
     <p class="reagion_title">Second Round</p>
