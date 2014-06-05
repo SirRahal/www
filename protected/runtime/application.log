@@ -4275,3 +4275,53 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/index.php/site/test
 ---
+2014/06/04 22:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "game".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('game')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('game')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/game')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/game
+HTTP_REFERER=http://localhost/index.php
+---
+2014/06/04 22:09:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "game".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('game')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('game')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/game')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/game
+HTTP_REFERER=http://localhost/index.php/game
+---
+2014/06/05 13:20:53 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in C:\wamp\yii\framework\zii\widgets\CDetailView.php:183
+Stack trace:
+#0 C:\wamp\yii\framework\web\CBaseController.php(173): CDetailView->run()
+#1 C:\wamp\www\protected\views\game\view.php(34): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\wamp\www\protected\controllers\GameController.php(56): CController->render('view', Array)
+#7 [internal function]: GameController->actionView('1')
+#8 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GameController), Array)
+#9 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GameController), Object(ReflectionMethod), Array)
+#10 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('game/view')
+#20 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/game/1
+HTTP_REFERER=http://localhost/index.php/game
+---
