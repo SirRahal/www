@@ -23,28 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="create.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/game/create.php">
+      <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/school/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="63" selection-start="348" selection-end="348" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/views/game/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="20" selection-start="776" selection-end="776" vertical-scroll-proportion="0.51570964" vertical-offset="0" max-vertical-offset="923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/game/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="81" selection-start="595" selection-end="595" vertical-scroll-proportion="-7.1923075" vertical-offset="102" max-vertical-offset="1632">
+            <state line="43" column="19" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.5947996" vertical-offset="182" max-vertical-offset="1666">
               <folding />
             </state>
           </provider>
@@ -61,6 +43,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/protected/views/game/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/school/_form.php" />
       </list>
     </option>
   </component>
@@ -141,23 +124,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/game/create.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/school/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="63" selection-start="348" selection-end="348" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/game/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="81" selection-start="595" selection-end="595" vertical-scroll-proportion="-7.1923075" vertical-offset="102" max-vertical-offset="1632">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/game/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="20" selection-start="776" selection-end="776" vertical-scroll-proportion="0.51570964" vertical-offset="0" max-vertical-offset="923">
+        <state line="43" column="19" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.5947996" vertical-offset="182" max-vertical-offset="1666">
           <folding />
         </state>
       </provider>
