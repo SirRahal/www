@@ -291,3 +291,9 @@ div.search-form
     margin-top:655px;
     font-size: 20px;
 }
+
+.regional_div{
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
