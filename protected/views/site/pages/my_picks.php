@@ -9,13 +9,15 @@ $this->pageTitle=Yii::app()->name . ' - My Picks';
 $this->breadcrumbs=array(
     'My Picks',
 );
+
+$my_picks = array('TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA');
 ?>
 
 <h1>My Picks</h1>
 
 <p>Please fill out the following form with your login credentials:</p>
-<div style="position: absolute; width: 200px;z-index: 50; margin-left: 450px;">
-    <?php echo $this->renderPartial('container/my_picks_div', array('picks' => array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16)));?>
+<div id="my_picks" style="position: absolute; width: 200px;z-index: 50; margin-left: 450px;">
+    <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks));?>
 </div>
 <div class="clear"></div>
 <div style="float: left;  z-index: 100;">
@@ -41,6 +43,4 @@ $this->breadcrumbs=array(
 
 <script>
     $('.picks').buttonset();
-
-
 </script>

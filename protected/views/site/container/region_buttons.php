@@ -8,6 +8,9 @@
 
 $teams = TeamTournamentRegion::model()->select_tournament_roster_by_seed($region_ID);
 ?>
+
+
+
 <div class="picks" >
     <?php
     foreach($teams as $teamRegion)
@@ -15,13 +18,14 @@ $teams = TeamTournamentRegion::model()->select_tournament_roster_by_seed($region
     $seed = $teamRegion->seed;
     $team = $teamRegion->team->name;
     $team_ID = $teamRegion->team_ID;
+    $triger_ID = $seed* ($region_ID*16 -15);
     ?>
     <div>
         <div style="float: left; width:20px; padding-top: 7px;">
-            <?php echo  $seed ;?>
+            <?php echo $seed ;?>
         </div>
-        <input type="radio" name="radio_button<?php echo $seed;?>" id="trigger<?php echo $seed* ($region_ID*16 -15);?>" value="<?php echo $team_ID;?>" />
-        <label for="trigger<?php echo $seed* ($region_ID*16 -15);?>"><?php echo "&nbsp;&nbsp;&nbsp;&nbsp;".$team; ?></label>
+        <input type="radio" name="radio_button<?php echo $seed;?>" id="trigger<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="new ajax('/games'),{update:$('my_picks')}); "/>
+        <label for="trigger<?php echo $triger_ID; ?>"><?php echo $team; ?></label>
     </div>
     <?php } ?>
 </div>

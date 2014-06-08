@@ -4979,3 +4979,431 @@ REQUEST_URI=/index.php/site/page?view=my_picks
 in C:\wamp\www\protected\views\site\container\my_picks_div.php (17)
 in C:\wamp\www\protected\views\site\pages\my_picks.php (18)
 in C:\wamp\www\index.php (13)
+2014/06/08 13:49:49 [error] [php] Undefined offset: 15 (C:\wamp\www\protected\views\site\container\my_picks_div.php:17)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(20): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\my_picks_div.php (17)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (20)
+in C:\wamp\www\index.php (13)
+2014/06/08 14:14:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/cro...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/cross.png
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:14:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:14:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:14:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:14:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:14:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:14:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:15:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:15:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:15:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:15:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:15:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:15:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:15:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:15:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:15:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:16:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:16:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:16:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:16:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:18:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:19:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:19:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:19:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:19:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:19:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:19:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/08 14:19:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('test.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('test.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.php')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/test.php?q=3
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
