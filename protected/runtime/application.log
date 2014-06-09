@@ -5407,3 +5407,260 @@ Stack trace:
 REQUEST_URI=/index.php/site/test.php?q=3
 HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
 ---
+2014/06/09 13:56:34 [error] [php] Undefined index: my_picks (C:\wamp\www\protected\views\site\container\my_picks_div.php:11)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(43): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\my_picks_div.php (11)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (43)
+in C:\wamp\www\index.php (13)
+2014/06/09 13:56:49 [error] [php] Undefined index: my_picks (C:\wamp\www\protected\views\site\container\my_picks_div.php:11)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(43): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\my_picks_div.php (11)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (43)
+in C:\wamp\www\index.php (13)
+2014/06/09 13:57:23 [error] [php] Undefined index: picks (C:\wamp\www\protected\views\site\container\my_picks_div.php:11)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(43): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\my_picks_div.php (11)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (43)
+in C:\wamp\www\index.php (13)
+2014/06/09 13:57:34 [error] [php] Undefined index: my_picks (C:\wamp\www\protected\views\site\container\my_picks_div.php:11)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(43): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\my_picks_div.php (11)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (43)
+in C:\wamp\www\index.php (13)
+2014/06/09 13:58:13 [error] [php] Undefined index: my_picks (C:\wamp\www\protected\views\site\container\my_picks_div.php:11)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(43): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\my_picks_div.php (11)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (43)
+in C:\wamp\www\index.php (13)
+2014/06/09 13:58:14 [error] [php] Undefined index: my_picks (C:\wamp\www\protected\views\site\container\my_picks_div.php:11)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(43): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\my_picks_div.php (11)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (43)
+in C:\wamp\www\index.php (13)
+2014/06/09 13:58:37 [error] [php] Undefined index: my_picks (C:\wamp\www\protected\views\site\container\my_picks_div.php:11)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(43): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\my_picks_div.php (11)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (43)
+in C:\wamp\www\index.php (13)
+2014/06/09 14:00:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "container".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('container')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('container')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/container/...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/container/my_picks_div?my_picks=%5B%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%5D
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/09 14:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/about
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/09 14:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "container".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('container')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('container')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/container/...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/container/my_picks_div?my_picks=%5B%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%5D
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/09 14:05:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "container".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('container')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('container')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/container/...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/container/my_picks_div?my_picks=%5B%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%2C%22TBA%22%5D
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/09 14:19:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "container".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('container')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('container')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/container/...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/container/my_picks_div
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/09 14:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "container".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('container')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('container')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/container/...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/container/my_picks_div.php
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/09 14:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('site')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('site')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/site/index')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/site/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/09 14:20:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('site')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('site')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/site/index')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/site/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/09 14:20:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('site')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('site')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/site/index')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/site/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---
+2014/06/09 14:33:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "container".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('container')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('container')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/container/...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/container/my_picks_div
+HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
+---

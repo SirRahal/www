@@ -24,7 +24,7 @@ $teams = TeamTournamentRegion::model()->select_tournament_roster_by_seed($region
         <div style="float: left; width:20px; padding-top: 7px;">
             <?php echo $seed ;?>
         </div>
-        <input type="radio" name="radio_button<?php echo $seed;?>" id="trigger<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="new ajax('/games'),{update:$('my_picks')}); "/>
+        <input type="radio" name="radio_button<?php echo $seed;?>" id="trigger<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="new ajax('container_here'),{update:$('my_picks')}); "/>
         <label for="trigger<?php echo $triger_ID; ?>"><?php echo $team; ?></label>
     </div>
     <?php } ?>

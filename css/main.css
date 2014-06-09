@@ -297,3 +297,19 @@ div.search-form
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
+.regional_div_south{
+  background: #324990;
+}
+.regional_div_east{
+    background: #7eb9ef;
+}
+.regional_div_west{
+    background: #c57d7a;
+}
+.regional_div_midwest{
+    background: #60ff6a;
+}
+.my_picks_div{
+    position: absolute; width: 200px;z-index: 50; margin-left: 450px;
+}
