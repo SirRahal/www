@@ -4,18 +4,27 @@
  * User: Sari
  * Date: 6/7/14
  * Time: 7:58 PM
- */
+ *
+ * $picks[] : array of 16 of the set/selected radio buttons for the seeds
+*/
 
 ?>
-<div style="width:200px; margin:0 auto; margin-top: 300px;">
-    <h3 style="">My Picks</h3>
-</div>
-<div class="regional_div" style="width:200px; margin:0 auto; margin-top: 10px; background: #ee666d;">
+
     <table>
+        <!-- $i is the seed -->
         <?php for ($i = 1;$i<17; $i++){ ?>
             <tr>
+                <!--echo out the selected radio buttons-->
                 <td id="radio<?php echo $i;?>"><?php echo $i.' '.$picks[$i-1]; ?> </td>
             </tr>
         <?php } ?>
     </table>
+<!--add the three buttons as an example-->
+<div class="picks">
+    <!--save-->
+        <a style="width:100%;" href="#">Save</a>
+    <!--radom select all seeds-->
+        <a style="width:100%;" href="#">Random</a>
+    <!--reset all seeds-->
+        <a style="width:100%;" href="#">Reset</a>
 </div>

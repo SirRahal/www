@@ -5664,3 +5664,91 @@ Stack trace:
 REQUEST_URI=/index.php/site/container/my_picks_div
 HTTP_REFERER=http://localhost/index.php/site/page?view=my_picks
 ---
+2014/06/10 15:22:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('user')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('user')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/user
+---
+2014/06/10 15:35:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index.php/...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/index.php/user/register
+HTTP_REFERER=http://localhost/index.php/user/register
+---
+2014/06/10 15:35:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sari@btmindustrial.com-sirrahal' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`first_name`, `last_name`, `email`, `city`, `state`, `zip`, `phone`, `user_name`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8).
+in C:\wamp\www\protected\controllers\UserController.php (92)
+in C:\wamp\www\index.php (13)
+2014/06/10 15:35:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sari@btmindustrial.com-sirrahal' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`first_name`, `last_name`, `email`, `city`, `state`, `zip`, `phone`, `user_name`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)' in C:\wamp\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\protected\controllers\UserController.php(92): CActiveRecord->save()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/user/register
+HTTP_REFERER=http://localhost/index.php/user/register
+---
+2014/06/10 20:39:52 [error] [php] Undefined variable: trigger_ID (C:\wamp\www\protected\views\site\container\region_buttons.php:23)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(56): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\region_buttons.php (23)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (56)
+in C:\wamp\www\index.php (13)
+2014/06/10 20:40:13 [error] [php] Undefined variable: trigger_ID (C:\wamp\www\protected\views\site\container\region_buttons.php:23)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\protected\views\site\pages\my_picks.php(56): SiteController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\wamp\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#9 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/page?view=my_picks
+in C:\wamp\www\protected\views\site\container\region_buttons.php (23)
+in C:\wamp\www\protected\views\site\pages\my_picks.php (56)
+in C:\wamp\www\index.php (13)

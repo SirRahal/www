@@ -32,7 +32,7 @@ class UserController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','register'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -78,6 +78,25 @@ class UserController extends Controller
 			'model'=>$model,
 		));
 	}
+
+    public function actionRegister()
+    {
+        $model=new User;
+
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+
+        if(isset($_POST['User']))
+        {
+            $model->attributes=$_POST['User'];
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->ID));
+        }
+
+        $this->render('register',array(
+            'model'=>$model,
+        ));
+    }
 
 	/**
 	 * Updates a particular model.
