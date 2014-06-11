@@ -291,3 +291,43 @@ div.search-form
     margin-top:655px;
     font-size: 20px;
 }
+
+.regional_div{
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+
+.regional_div_south{
+  background: #765890;
+}
+.regional_div_east{
+    background: #7eb9ef;
+}
+.regional_div_west{
+    background: #c57d7a;
+}
+.regional_div_midwest{
+    background: #28662c;
+}
+.centered_div{
+    position: absolute;
+    width: 240px;
+    margin-left: 450px;
+}
+.regional_div_my_picks{
+    width:240px;
+    background: #ee666d;
+}
+.center_div{
+    margin:0 auto;
+}
+.boxed{
+    border:solid #000000 3px;
+    margin-top: -3px;
+    text-align: center;
+}
+.text_center{
+    text-align: center;
+}

@@ -120,6 +120,13 @@ class TeamTournamentRegion extends CActiveRecord
         return $roster;
 
     }
+    public static function select_tournament_roster_by_seed($tournament_ID)
+    {
+        /*$qry_str = "SELECT * FROM `team_tournament_region` WHERE `tournament_ID` = ".$tounament_ID;
+        $roster = Yii::app()->db->createCommand($qry_str)->queryAll();*/
+        $roster = TeamTournamentRegion::model()->findAllByAttributes(array('tournament_region_ID'=>$tournament_ID ),array('order' => 'seed ASC'));
+        return $roster;
+    }
 
     public static function slect_tournament_placement($tournament_ID)
     {
