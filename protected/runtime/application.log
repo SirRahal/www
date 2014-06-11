@@ -5752,3 +5752,13 @@ REQUEST_URI=/index.php/site/page?view=my_picks
 in C:\wamp\www\protected\views\site\container\region_buttons.php (23)
 in C:\wamp\www\protected\views\site\pages\my_picks.php (56)
 in C:\wamp\www\index.php (13)
+2014/06/11 00:29:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('user')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('user')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/user
+---
