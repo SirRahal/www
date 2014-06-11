@@ -35,7 +35,8 @@ $this->breadcrumbs=array(
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
 		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
+            Don't have an account? <a href="/index.php/user/register">Register Now</a>!<br/>
+            Reset your account/password? <a href="#">Here</a>!
 		</p>
 	</div>
 
