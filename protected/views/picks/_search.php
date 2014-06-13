@@ -1,6 +1,6 @@
 <?php
-/* @var $this TicketController */
-/* @var $model Ticket */
+/* @var $this PicksController */
+/* @var $model Picks */
 /* @var $form CActiveForm */
 ?>
 
@@ -17,18 +17,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'user_ID'); ?>
-		<?php echo $form->textField($model,'user_ID'); ?>
+		<?php echo $form->label($model,'ticket_ID'); ?>
+		<?php echo $form->textField($model,'ticket_ID'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'tournament_ID'); ?>
-		<?php echo $form->textField($model,'tournament_ID'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'code'); ?>
-		<?php echo $form->textField($model,'code',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->label($model,'team_ID'); ?>
+		<?php echo $form->textField($model,'team_ID'); ?>
 	</div>
 
 	<div class="row buttons">

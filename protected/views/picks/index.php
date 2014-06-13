@@ -1,29 +1,24 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Sari
- * Date: 6/6/14
- * Time: 9:29 AM
- */
-$this->pageTitle=Yii::app()->name . ' - My Picks';
+/* @var $this PicksController */
+/* @var $dataProvider CActiveDataProvider */
+
 $this->breadcrumbs=array(
-    'My Picks',
+	'Picks',
 );
 
 //this is a temp array to see if the data is being passed correctly
 $my_picks = array('TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA');
 ?>
 
-<div id="content"></div>
-<script src="/js/general.js"></script>
+<h1>Picks</h1>
 
-<h1>My Picks</h1>
+<script src="/js/general.js"></script>
 
 <p>Please fill out the following form with your login credentials:</p>
 <!--centered info needs to be updated by the user table-->
 <div class="centered_div text_center">
     <div class="boxed">
-        Tammy Finster <!--echo out user-->
+        <?php echo Yii::app()->user->ID; ?> <!--echo out user-->
     </div>
     <div class="boxed">
         Entry 002-0123 <!--echo out ticket number-->

@@ -1,13 +1,13 @@
 <?php
-/* @var $this TicketController */
-/* @var $model Ticket */
+/* @var $this PicksController */
+/* @var $model Picks */
 /* @var $form CActiveForm */
 ?>
 
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'ticket-form',
+	'id'=>'picks-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
@@ -20,21 +20,15 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'user_ID'); ?>
-		<?php echo $form->textField($model,'user_ID'); ?>
-		<?php echo $form->error($model,'user_ID'); ?>
+		<?php echo $form->labelEx($model,'ticket_ID'); ?>
+		<?php echo $form->textField($model,'ticket_ID'); ?>
+		<?php echo $form->error($model,'ticket_ID'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'tournament_ID'); ?>
-		<?php echo $form->textField($model,'tournament_ID'); ?>
-		<?php echo $form->error($model,'tournament_ID'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'code'); ?>
-		<?php echo $form->textField($model,'code',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'code'); ?>
+		<?php echo $form->labelEx($model,'team_ID'); ?>
+		<?php echo $form->textField($model,'team_ID'); ?>
+		<?php echo $form->error($model,'team_ID'); ?>
 	</div>
 
 	<div class="row buttons">

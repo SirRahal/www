@@ -1,28 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "ticket".
+ * This is the model class for table "picks".
  *
- * The followings are the available columns in table 'ticket':
+ * The followings are the available columns in table 'picks':
  * @property integer $ID
- * @property integer $user_ID
- * @property integer $tournament_ID
- * @property string $code
+ * @property integer $ticket_ID
+ * @property integer $team_ID
  *
  * The followings are the available model relations:
- * @property Picks[] $picks
- * @property Placement[] $placements
- * @property Tournament $tournament
- * @property User $user
+ * @property Team $team
+ * @property Ticket $ticket
  */
-class Ticket extends CActiveRecord
+class Picks extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'ticket';
+		return 'picks';
 	}
 
 	/**
@@ -33,12 +30,11 @@ class Ticket extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_ID, tournament_ID, code', 'required'),
-			array('user_ID, tournament_ID', 'numerical', 'integerOnly'=>true),
-			array('code', 'length', 'max'=>100),
+			array('ID, ticket_ID, team_ID', 'required'),
+			array('ID, ticket_ID, team_ID', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, user_ID, tournament_ID, code', 'safe', 'on'=>'search'),
+			array('ID, ticket_ID, team_ID', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,10 +46,8 @@ class Ticket extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'picks' => array(self::HAS_MANY, 'Picks', 'ticket_ID'),
-			'placements' => array(self::HAS_MANY, 'Placement', 'ticket_ID'),
-			'tournament' => array(self::BELONGS_TO, 'Tournament', 'tournament_ID'),
-			'user' => array(self::BELONGS_TO, 'User', 'user_ID'),
+			'team' => array(self::BELONGS_TO, 'Team', 'team_ID'),
+			'ticket' => array(self::BELONGS_TO, 'Ticket', 'ticket_ID'),
 		);
 	}
 
@@ -64,9 +58,8 @@ class Ticket extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'user_ID' => 'User',
-			'tournament_ID' => 'Tournament',
-			'code' => 'Code',
+			'ticket_ID' => 'Ticket',
+			'team_ID' => 'Team',
 		);
 	}
 
@@ -89,9 +82,8 @@ class Ticket extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ID',$this->ID);
-		$criteria->compare('user_ID',$this->user_ID);
-		$criteria->compare('tournament_ID',$this->tournament_ID);
-		$criteria->compare('code',$this->code,true);
+		$criteria->compare('ticket_ID',$this->ticket_ID);
+		$criteria->compare('team_ID',$this->team_ID);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -102,7 +94,7 @@ class Ticket extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Ticket the static model class
+	 * @return Picks the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

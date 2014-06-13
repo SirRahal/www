@@ -13,8 +13,8 @@
 	<?php echo CHtml::encode($data->user_ID); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('tournament_region_ID')); ?>:</b>
-	<?php echo CHtml::encode($data->tournament_region_ID); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('tournament_ID')); ?>:</b>
+	<?php echo CHtml::encode($data->tournament_ID); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('code')); ?>:</b>

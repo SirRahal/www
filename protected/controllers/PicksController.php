@@ -1,6 +1,6 @@
 <?php
 
-class TicketController extends Controller
+class PicksController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -27,22 +27,20 @@ class TicketController extends Controller
 	public function accessRules()
 	{
 		return array(
+            array('allow', // allow admin user to perform 'admin' and 'delete' actions
+                'actions'=>array('admin','delete','index','view','create','update'),
+                'users'=>array('admin'),
+            ),
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('index','view','create','update'),
 				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
-		);
+
+
+        );
 	}
 
 	/**
@@ -62,14 +60,14 @@ class TicketController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Ticket;
+		$model=new Picks;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Ticket']))
+		if(isset($_POST['Picks']))
 		{
-			$model->attributes=$_POST['Ticket'];
+			$model->attributes=$_POST['Picks'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
@@ -91,9 +89,9 @@ class TicketController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Ticket']))
+		if(isset($_POST['Picks']))
 		{
-			$model->attributes=$_POST['Ticket'];
+			$model->attributes=$_POST['Picks'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
@@ -122,7 +120,7 @@ class TicketController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Ticket');
+		$dataProvider=new CActiveDataProvider('Picks');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +131,10 @@ class TicketController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Ticket('search');
+		$model=new Picks('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Ticket']))
-			$model->attributes=$_GET['Ticket'];
+		if(isset($_GET['Picks']))
+			$model->attributes=$_GET['Picks'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +145,12 @@ class TicketController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Ticket the loaded model
+	 * @return Picks the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Ticket::model()->findByPk($id);
+		$model=Picks::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,11 +158,11 @@ class TicketController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Ticket $model the model to be validated
+	 * @param Picks $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='ticket-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='picks-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

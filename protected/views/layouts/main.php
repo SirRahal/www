@@ -34,7 +34,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-                array('label'=>'My Picks', 'url'=>array('/site/page', 'view'=>'my_picks')),
+                array('label'=>'My Picks', 'url'=>array('/picks'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
                 array('label'=>'My Account', 'url'=>array('/user/'.Yii::app()->user->ID), 'visible'=>!Yii::app()->user->isGuest),
