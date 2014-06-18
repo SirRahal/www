@@ -50,9 +50,7 @@
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="29" column="75" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1343">
-              <folding>
-                <marker date="1402691243426" expanded="true" signature="3153:3189" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,12 +68,7 @@
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/column2.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="29" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="459">
-              <folding>
-                <marker date="1402691062124" expanded="true" signature="105:182" placeholder="..." />
-                <marker date="1402691062124" expanded="true" signature="125:159" placeholder="..." />
-                <marker date="1402691062124" expanded="true" signature="208:499" placeholder="..." />
-                <marker date="1402691062124" expanded="true" signature="228:476" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,7 +112,7 @@
       <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/screen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="23" selection-start="4185" selection-end="4185" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="4148">
+            <state line="100" column="23" selection-start="4185" selection-end="4185" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="4148">
               <folding />
             </state>
           </provider>
@@ -394,7 +387,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -438,12 +431,7 @@
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/column2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="29" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="459">
-          <folding>
-            <marker date="1402691062124" expanded="true" signature="105:182" placeholder="..." />
-            <marker date="1402691062124" expanded="true" signature="125:159" placeholder="..." />
-            <marker date="1402691062124" expanded="true" signature="208:499" placeholder="..." />
-            <marker date="1402691062124" expanded="true" signature="228:476" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -485,9 +473,7 @@
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="107" selection-start="2286" selection-end="2286" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1343">
-          <folding>
-            <marker date="1402691243426" expanded="true" signature="3153:3189" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -699,21 +685,14 @@
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/column2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="29" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="459">
-          <folding>
-            <marker date="1402691062124" expanded="true" signature="105:182" placeholder="..." />
-            <marker date="1402691062124" expanded="true" signature="125:159" placeholder="..." />
-            <marker date="1402691062124" expanded="true" signature="208:499" placeholder="..." />
-            <marker date="1402691062124" expanded="true" signature="228:476" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="75" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1343">
-          <folding>
-            <marker date="1402691243426" expanded="true" signature="3153:3189" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
