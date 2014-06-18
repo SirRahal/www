@@ -7,7 +7,8 @@ $this->breadcrumbs=array(
 );
 
 //this is a temp array to see if the data is being passed correctly
-$my_picks = array('TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA');
+
+$my_picks = Picks::model()->find_tickets_by_ID("2");
 ?>
 
 <h1>Picks</h1>

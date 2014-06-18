@@ -100,4 +100,20 @@ class Picks extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function find_tickets_by_ID($ticket_ID){
+
+        $my_picks = Picks::model()->findAllByAttributes(array('ticket_ID'=>$ticket_ID ),array('order' => 'ID ASC'));
+        $i=0;
+        foreach($my_picks as $pick){
+            $team = Team::model()->findByAttributes(array('ID'=>$pick['team_ID']));
+            $my_picks_array[$i] =  $team['name'];
+            $i++;
+        }
+        for ($j=$i; $j<16; $j++){
+            $my_picks_array[$j] = 'TBA';
+        }
+        return $my_picks_array;
+
+    }
 }
