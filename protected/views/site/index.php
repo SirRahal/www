@@ -79,4 +79,3 @@ $this->pageTitle=Yii::app()->name;
     </div>
 </div>
 <div class="clear"></div>
-<img src="/images/bracket.png" width="920"/>

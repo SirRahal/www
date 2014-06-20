@@ -15,9 +15,11 @@ $this->menu=array(
 	array('label'=>'Manage Ticket', 'url'=>array('admin')),
 );
 ?>
-
+<?php echo
+'id = ' .$_GET['id']. ', AND ownsTicket returned : '.
+ User::model()->ownsTicket(Yii::app()->user->id,$_GET['id']);
+?>
 <h1>View Ticket #<?php echo $model->ID; ?></h1>
-
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(

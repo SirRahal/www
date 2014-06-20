@@ -6,9 +6,9 @@ $this->breadcrumbs=array(
 	'Picks',
 );
 
-//this is a temp array to see if the data is being passed correctly
-
-$my_picks = Picks::model()->find_tickets_by_ID("2");
+//needs to replace the ticket ID from hard coded to entered in belowe
+$ticket_ID = 1;
+$my_picks = Picks::model()->find_tickets_by_ID($ticket_ID);
 ?>
 
 <h1>Picks</h1>
@@ -38,7 +38,7 @@ $my_picks = Picks::model()->find_tickets_by_ID("2");
     </div>
     <!--this div should be updated whenever a button is clicked on the page-->
     <div class="regional_div regional_div_my_picks" id="my_picks" >
-        <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks));?>
+        <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket_ID));?>
     </div>
 </div>
 

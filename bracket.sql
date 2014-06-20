@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 02, 2014 at 02:43 AM
+-- Generation Time: Jun 20, 2014 at 08:47 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.3.13
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `game` (
   KEY `team_1_ID` (`team_1_ID`),
   KEY `team_2_ID` (`team_2_ID`),
   KEY `tournament_ID` (`tournament_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `game`
@@ -50,11 +50,44 @@ INSERT INTO `game` (`ID`, `tournament_ID`, `date`, `time`, `location`, `team_1_I
 (1, 1, '2014-03-20', '13:00:00', 'Memphis', 17, 1, 67, 55),
 (7, 1, '2014-05-01', '12:59:00', 'home', 10, 45, 44, 45),
 (9, 1, '0000-00-00', '00:00:00', 'TBA', 70, 70, 0, 0),
-(10, 1, '2014-05-01', '00:00:00', 'TBA', 70, 70, 0, 0),
-(11, 1, '2014-05-16', '12:59:00', 'Michigan', 17, 45, 100, 92),
-(12, 1, '2014-05-01', '01:00:00', 'grand rapids', 3, 63, 91, 81),
-(13, 1, '2014-01-01', '01:00:00', 'fgh', 19, 43, 50, 49),
-(14, 1, '2014-05-23', '01:00:00', 'sdfg', 23, 16, 100, 40);
+(10, 1, '2014-05-01', '00:00:00', 'TBA', 70, 70, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `picks`
+--
+
+CREATE TABLE IF NOT EXISTS `picks` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ticket_ID` int(11) NOT NULL,
+  `team_ID` int(11) NOT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `ticket_ID` (`ticket_ID`),
+  KEY `team_ID` (`team_ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+
+--
+-- Dumping data for table `picks`
+--
+
+INSERT INTO `picks` (`ID`, `ticket_ID`, `team_ID`) VALUES
+(1, 1, 17),
+(2, 1, 60),
+(3, 1, 12),
+(4, 1, 26),
+(5, 1, 59),
+(6, 1, 39),
+(7, 1, 44),
+(8, 1, 25),
+(9, 1, 18),
+(10, 1, 51),
+(11, 1, 53),
+(12, 1, 40),
+(13, 1, 14),
+(14, 1, 62),
+(15, 1, 67),
+(16, 1, 63);
 
 -- --------------------------------------------------------
 
@@ -106,7 +139,14 @@ CREATE TABLE IF NOT EXISTS `school` (
   `name` varchar(100) NOT NULL,
   `state` varchar(2) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `school`
+--
+
+INSERT INTO `school` (`ID`, `name`, `state`) VALUES
+(1, 'sari', 'MI');
 
 -- --------------------------------------------------------
 
@@ -259,7 +299,7 @@ INSERT INTO `team_tournament_region` (`ID`, `team_ID`, `tournament_region_ID`, `
 (36, 18, 3, 9, 36, 36),
 (37, 8, 3, 5, 14, 37),
 (38, 20, 3, 12, 64, 38),
-(39, 31, 3, 2, 19, 39),
+(39, 31, 4, 2, 19, 39),
 (40, 14, 3, 13, 50, 40),
 (41, 39, 3, 6, 31, 41),
 (42, 46, 3, 11, 47, 42),
@@ -283,7 +323,7 @@ INSERT INTO `team_tournament_region` (`ID`, `team_ID`, `tournament_region_ID`, `
 (60, 30, 4, 14, 58, 60),
 (61, 54, 4, 7, 42, 61),
 (62, 4, 4, 10, 38, 62),
-(63, 32, 4, 4, 15, 63),
+(63, 32, 3, 4, 15, 63),
 (64, 67, 4, 15, 56, 64);
 
 -- --------------------------------------------------------
@@ -295,12 +335,22 @@ INSERT INTO `team_tournament_region` (`ID`, `team_ID`, `tournament_region_ID`, `
 CREATE TABLE IF NOT EXISTS `ticket` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `user_ID` int(100) NOT NULL,
-  `tournament_region_ID` int(100) NOT NULL,
+  `tournament_ID` int(100) NOT NULL,
   `code` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`),
-  KEY `tournament_region_ID` (`tournament_region_ID`,`code`),
-  KEY `user_ID` (`user_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  KEY `tournament_region_ID` (`tournament_ID`,`code`),
+  KEY `user_ID` (`user_ID`),
+  KEY `tournament_ID` (`tournament_ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `ticket`
+--
+
+INSERT INTO `ticket` (`ID`, `user_ID`, `tournament_ID`, `code`) VALUES
+(1, 1, 1, '1_1'),
+(2, 3, 1, '1_2'),
+(3, 3, 1, '1_3');
 
 -- --------------------------------------------------------
 
@@ -366,7 +416,7 @@ CREATE TABLE IF NOT EXISTS `tournament_results` (
 --
 
 INSERT INTO `tournament_results` (`ID`, `team_tournament_region_ID`, `placement`) VALUES
-(1, 1, 6),
+(1, 1, 7),
 (2, 2, 2),
 (3, 3, 2),
 (4, 4, 3),
@@ -380,11 +430,11 @@ INSERT INTO `tournament_results` (`ID`, `team_tournament_region_ID`, `placement`
 (12, 12, 2),
 (13, 13, 2),
 (14, 14, 2),
-(15, 15, 3),
+(15, 15, 2),
 (16, 16, 2),
-(17, 17, 3),
+(17, 17, 2),
 (18, 18, 2),
-(19, 19, 3),
+(19, 19, 2),
 (20, 20, 2),
 (21, 21, 2),
 (22, 22, 2),
@@ -450,7 +500,16 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `email` (`email`,`user_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`ID`, `first_name`, `last_name`, `email`, `city`, `state`, `zip`, `phone`, `user_name`, `password`) VALUES
+(1, 'Admin', 'Admin_last', 'admin@industrialtimesinc.com', 'grand rapids', 'MI', '49418', '3133848369', 'admin', 'sari'),
+(3, 'mike', 'b', 'biggyistheman@yahoo.com', 'grand rapids', 'mi', '49534', '3133848369', 'sirrahal', 'bjc4400'),
+(4, 'mike', 'b', 'sari@btmindustrial.com', 'grand rapids', 'mi', '49534', '3133848369', 'sirrahal2', 'bjc4400');
 
 --
 -- Constraints for dumped tables
@@ -463,6 +522,13 @@ ALTER TABLE `game`
   ADD CONSTRAINT `game_ibfk_1` FOREIGN KEY (`team_1_ID`) REFERENCES `team` (`ID`),
   ADD CONSTRAINT `game_ibfk_2` FOREIGN KEY (`team_2_ID`) REFERENCES `team` (`ID`),
   ADD CONSTRAINT `game_ibfk_3` FOREIGN KEY (`tournament_ID`) REFERENCES `tournament` (`ID`);
+
+--
+-- Constraints for table `picks`
+--
+ALTER TABLE `picks`
+  ADD CONSTRAINT `picks_ibfk_1` FOREIGN KEY (`ticket_ID`) REFERENCES `ticket` (`ID`),
+  ADD CONSTRAINT `picks_ibfk_2` FOREIGN KEY (`team_ID`) REFERENCES `team` (`ID`);
 
 --
 -- Constraints for table `placement`
@@ -482,8 +548,8 @@ ALTER TABLE `team_tournament_region`
 -- Constraints for table `ticket`
 --
 ALTER TABLE `ticket`
-  ADD CONSTRAINT `ticket_ibfk_1` FOREIGN KEY (`tournament_region_ID`) REFERENCES `tournament_region` (`ID`),
-  ADD CONSTRAINT `ticket_ibfk_2` FOREIGN KEY (`user_ID`) REFERENCES `user` (`ID`);
+  ADD CONSTRAINT `ticket_ibfk_2` FOREIGN KEY (`user_ID`) REFERENCES `user` (`ID`),
+  ADD CONSTRAINT `ticket_ibfk_3` FOREIGN KEY (`tournament_ID`) REFERENCES `tournament` (`ID`);
 
 --
 -- Constraints for table `tournament_region`

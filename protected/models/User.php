@@ -123,4 +123,28 @@ class User extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function get_user_ID(){
+        //user user_name to return user ID
+        $user_name = Yii::app()->user->id;
+        $user = User::model()->findByAttributes(array('user_name'=>$user_name));
+        $ID = $user['ID'];
+        return $ID;
+    }
+
+    public static function ownsTicket($ticket_ID){
+        //get user ID
+        $user_ID = User::model()->get_user_ID();
+        //get ticket user ID
+        $ticket_user_ID = Ticket::model()->get_ticket_user_ID($ticket_ID);
+        //if ticket_user_ID == user_ID return true to view the page if not reject
+        if($ticket_user_ID == $user_ID){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+
+    }
 }
