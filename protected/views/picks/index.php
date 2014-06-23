@@ -8,7 +8,13 @@ $this->breadcrumbs=array(
 
 //needs to replace the ticket ID from hard coded to entered in belowe
 $ticket_ID = 1;
+$ticket = Ticket::model()->find_ticket_by_ID($ticket_ID);
+$ticket_code = $ticket['code'];
 $my_picks = Picks::model()->find_tickets_by_ID($ticket_ID);
+
+$string_exploded = explode("_", $ticket_code);
+$school_ID = $string_exploded[1];
+$school = School::model()->get_name_by_ID($school_ID);
 ?>
 
 <h1>Picks</h1>
@@ -22,10 +28,10 @@ $my_picks = Picks::model()->find_tickets_by_ID($ticket_ID);
         <?php echo Yii::app()->user->ID; ?> <!--echo out user-->
     </div>
     <div class="boxed">
-        Entry 002-0123 <!--echo out ticket number-->
+        Entry <?php echo $ticket_code; ?> <!--echo out ticket number-->
     </div>
     <div class="boxed" style="margin-top: 10px;">
-        Harrison HS Basketball <!--echo out school-->
+        <?php echo $school; ?> <!--echo out school-->
     </div>
     <br/>
     <div>

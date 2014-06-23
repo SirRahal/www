@@ -114,4 +114,9 @@ class Ticket extends CActiveRecord
         $ticket_ID = $ticket['user_ID'];
         return $ticket_ID;
     }
+
+    public static function find_ticket_by_ID($ticket_ID){
+        $ticket = Ticket::model()->findByAttributes(array('ID'=>$ticket_ID));
+        return $ticket;
+    }
 }
