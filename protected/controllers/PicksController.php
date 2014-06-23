@@ -28,11 +28,11 @@ class PicksController extends Controller
 	{
 		return array(
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete','index','view','create','update'),
+                'actions'=>array('admin','delete','index','view','create','update','picks_selector'),
                 'users'=>array('admin'),
             ),
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','create','update'),
+				'actions'=>array('index','view','create','update','picks_selector'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users

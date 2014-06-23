@@ -23,11 +23,3 @@
         <?php } ?>
     </table>
 <!--add the three buttons as an example-->
-<div class="picks">
-    <!--save-->
-        <a style="width:100%;" href="#">Save</a>
-    <!--radom select all seeds-->
-        <a style="width:100%;" href="#">Random</a>
-    <!--reset all seeds-->
-        <a style="width:100%;" href="#">Reset</a>
-</div>

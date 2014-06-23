@@ -34,17 +34,16 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-                array('label'=>'My Picks', 'url'=>array('/picks'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'My Tickets', 'url'=>array('/ticket/mytickets'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
-                array('label'=>'My Account', 'url'=>array('/user/'.Yii::app()->user->ID), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Schools', 'url'=>array('/school'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Teams', 'url'=>array('/team'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Schools', 'url'=>array('/school'), 'visible'=>Yii::app()->user->id == 'admin'),
+                array('label'=>'Teams', 'url'=>array('/team'), 'visible'=>Yii::app()->user->id == 'admin'),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-                array('label'=>'Games', 'url'=>array('/game'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Users', 'url'=>array('/user'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Tickets', 'url'=>array('/ticket'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Team Placement', 'url'=>array('/tournamentresults'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Games', 'url'=>array('/game'), 'visible'=>Yii::app()->user->id == 'admin'),
+                array('label'=>'Users', 'url'=>array('/user'), 'visible'=>Yii::app()->user->id == 'admin'),
+                array('label'=>'Tickets', 'url'=>array('/ticket'), 'visible'=>Yii::app()->user->id == 'admin'),
+                array('label'=>'Team Placement', 'url'=>array('/tournamentresults'), 'visible'=>Yii::app()->user->id == 'admin'),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 			),
 		)); ?>
@@ -60,7 +59,7 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by Sari Rahal.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by Bracket Fanatic.<br/>
 		All Rights Reserved.<br/>
 		Author By Sari Rahal
 	</div><!-- footer -->

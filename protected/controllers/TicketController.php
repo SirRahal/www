@@ -32,13 +32,18 @@ class TicketController extends Controller
                 'users'=>array(Yii::app()->user->name),
                 'expression' => 'User::model()->ownsTicket($_GET[\'id\'])'
             ),
+            array('allow',
+                'actions'=>array('myTickets'),
+                'users'=>array('*'),
+            ),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','index','create','view','update'),
+				'actions'=>array('admin','delete','index','create','view','update','myTickets'),
 				'users'=>array('admin'),
 			),
-			array('deny',  // deny all users
+            array('deny',  // deny all users
 				'users'=>array('*'),
 			),
+
 		);
 	}
 
@@ -113,6 +118,9 @@ class TicketController extends Controller
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
+    public function actionMyTickets(){
+        $this->render('my_tickets');
+    }
 
 	/**
 	 * Lists all models.
