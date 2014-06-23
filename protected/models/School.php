@@ -95,4 +95,9 @@ class School extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function get_name_by_ID($school_ID){
+        $school = School::model()->findByAttributes(array('ID'=>$school_ID));
+        return $school['name'];
+    }
 }
