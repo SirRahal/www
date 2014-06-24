@@ -25,7 +25,7 @@ $this->breadcrumbs=array(
     $school = School::model()->get_name_by_ID($school_ID);
     ?>
     <div class="regional_div regional_div_my_picks" id="my_picks" style="float:left; margin-left: 20px; background: #acacac;">
-        <span style="color: black;"><b>School : </b><a href="#"><?php echo $school;?></a></span><br/>
+        <span style="color: black;"><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span><br/>
         <span style="color: black;"><b>Ticket # : </b><?php echo $ticket['code']; ?></span>
         <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket['ID']));?>
         <a style="text-align: center" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" >Edit Ticket</a>

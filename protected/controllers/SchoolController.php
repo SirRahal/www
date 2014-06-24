@@ -31,6 +31,10 @@ class SchoolController extends Controller
                 'actions'=>array('admin','delete','index','view','create','update'),
                 'users'=>array('admin'),
             ),
+            array('allow', // allow everyone to view schools
+                'actions'=>array('view'),
+                'users'=>array('*'),
+            ),
             array('deny',  // deny all users
                 'users'=>array('*'),
             ),

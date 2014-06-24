@@ -20,7 +20,7 @@
         $my_picks = Picks::model()->find_tickets_by_ID($ticket['ID']);
         $total_total = 0;
         ?>
-        <div><span><b>Ticket # </b><?php echo $ticket['code']; ?><br/><b>School : </b><a href="#"><?php echo $school;?></a></span></div>
+        <div><span><b>Ticket # </b><?php echo $ticket['code']; ?><br/><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span></div>
         <table style="border: solid #acacac; ">
             <tbody>
                 <tr>

@@ -12881,3 +12881,115 @@ REQUEST_URI=/index.php/ticket/mytickets
 in C:\wamp\www\protected\views\ticket\container\score_table.php (51)
 in C:\wamp\www\protected\views\ticket\my_tickets.php (39)
 in C:\wamp\www\protected\controllers\TicketController.php (122)
+2014/06/24 16:04:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school')
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/school
+---
+2014/06/24 16:06:00 [error] [php] array_map() [<a href='function.array-map'>function.array-map</a>]: Argument #2 should be an array (C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#4 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#5 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school
+in C:\wamp\www\index.php (13)
+2014/06/24 16:06:24 [error] [php] array_map() [<a href='function.array-map'>function.array-map</a>]: Argument #2 should be an array (C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#4 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#5 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school
+in C:\wamp\www\index.php (13)
+2014/06/24 16:06:47 [error] [php] array_map() [<a href='function.array-map'>function.array-map</a>]: Argument #2 should be an array (C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#4 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#5 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school
+in C:\wamp\www\index.php (13)
+2014/06/24 16:06:56 [error] [php] array_map() [<a href='function.array-map'>function.array-map</a>]: Argument #2 should be an array (C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#4 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#5 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school
+in C:\wamp\www\index.php (13)
+2014/06/24 16:07:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school')
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/school
+---
+2014/06/24 16:07:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school')
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/school
+---
+2014/06/24 19:18:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/update')
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/ticket/update/6
+---

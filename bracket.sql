@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 20, 2014 at 08:47 PM
+-- Generation Time: Jun 24, 2014 at 09:07 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.3.13
 
@@ -36,21 +36,22 @@ CREATE TABLE IF NOT EXISTS `game` (
   `team_2_ID` int(100) NOT NULL,
   `team_1_score` int(11) NOT NULL,
   `team_2_score` int(11) NOT NULL,
+  `round` int(1) NOT NULL,
   PRIMARY KEY (`ID`),
   KEY `team_1_ID` (`team_1_ID`),
   KEY `team_2_ID` (`team_2_ID`),
   KEY `tournament_ID` (`tournament_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `game`
 --
 
-INSERT INTO `game` (`ID`, `tournament_ID`, `date`, `time`, `location`, `team_1_ID`, `team_2_ID`, `team_1_score`, `team_2_score`) VALUES
-(1, 1, '2014-03-20', '13:00:00', 'Memphis', 17, 1, 67, 55),
-(7, 1, '2014-05-01', '12:59:00', 'home', 10, 45, 44, 45),
-(9, 1, '0000-00-00', '00:00:00', 'TBA', 70, 70, 0, 0),
-(10, 1, '2014-05-01', '00:00:00', 'TBA', 70, 70, 0, 0);
+INSERT INTO `game` (`ID`, `tournament_ID`, `date`, `time`, `location`, `team_1_ID`, `team_2_ID`, `team_1_score`, `team_2_score`, `round`) VALUES
+(1, 1, '2014-03-20', '13:00:00', 'Memphis', 17, 1, 67, 55, 1),
+(7, 1, '2014-05-01', '12:59:00', 'home', 10, 45, 48, 77, 1),
+(11, 1, '2015-01-01', '01:00:00', 'florida', 17, 45, 61, 45, 2),
+(12, 1, '2014-06-25', '12:01:00', 'va st', 59, 50, 75, 78, 1);
 
 -- --------------------------------------------------------
 
@@ -139,14 +140,15 @@ CREATE TABLE IF NOT EXISTS `school` (
   `name` varchar(100) NOT NULL,
   `state` varchar(2) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `school`
 --
 
 INSERT INTO `school` (`ID`, `name`, `state`) VALUES
-(1, 'sari', 'MI');
+(1, 'Dearborn High School', 'MI'),
+(2, 'Forest Hills Northern', 'MI');
 
 -- --------------------------------------------------------
 
@@ -341,16 +343,18 @@ CREATE TABLE IF NOT EXISTS `ticket` (
   KEY `tournament_region_ID` (`tournament_ID`,`code`),
   KEY `user_ID` (`user_ID`),
   KEY `tournament_ID` (`tournament_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `ticket`
 --
 
 INSERT INTO `ticket` (`ID`, `user_ID`, `tournament_ID`, `code`) VALUES
-(1, 1, 1, '1_1'),
-(2, 3, 1, '1_2'),
-(3, 3, 1, '1_3');
+(1, 3, 1, '1-29td3'),
+(2, 3, 1, '1-48rc'),
+(3, 3, 1, '2-chj3'),
+(5, 3, 1, '2-zfr5'),
+(6, 4, 1, '1-adm2');
 
 -- --------------------------------------------------------
 
@@ -500,7 +504,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `email` (`email`,`user_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `user`

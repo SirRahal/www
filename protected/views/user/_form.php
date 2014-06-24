@@ -21,6 +21,12 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
+    <div class="row">
+
+        <inputlable><b>Ticket</b></inputlable><br/>
+        <input>
+    </div>
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'first_name'); ?>
 		<?php echo $form->textField($model,'first_name',array('size'=>60,'maxlength'=>100)); ?>
