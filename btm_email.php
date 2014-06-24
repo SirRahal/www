@@ -3,22 +3,22 @@
 
 
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/Paramount-Tool-SURPLUS_as32084';
-$date = 'May 22nd';
-$auction_title = 'Paramount Tool - SURPLUS';
+$auction_url = 'http://auctions.btmindustrial.com/CNC-Parts-Auction_as32603';
+$date = 'Jun 25th';
+$auction_title = 'CNC Parts Auction';
 
-
-$url1="http://auctions.btmindustrial.com/Rexroth-Indramat-ECO-Drive-DKC01-3-100-7-FW_i19578944";$img1="http://media.liveauctiongroup.net/i/20612/19578944_1s.jpg?v=8D138B0EF980EB0";$title1="Rexroth Indramat ECO Drive DKC01.3-100-7-FW";
-$url2="http://auctions.btmindustrial.com/SLC500-Allen-Bradley-Processor-unit-1747-L30C-Ser-C_i19580903";$img2="http://media.liveauctiongroup.net/i/20612/19580903_1s.jpg?v=8D138B0EF980EB0";$title2="Allen Bradley Processor unit, #1747-L30C";
-$url3="http://auctions.btmindustrial.com/Allen-Bradley-Module_i19578914";$img3="http://media.liveauctiongroup.net/i/20612/19578914_1s.jpg?v=8D138B0EF980EB0";$title3="Allen Bradley Modules";
-$url4="http://auctions.btmindustrial.com/Allen-Bradley-Drive-1398-DDM-019X-Rev-P-P-N-9101-1553_i19578924";$img4="http://media.liveauctiongroup.net/i/20612/19578924_1s.jpg?v=8D138B0EF980EB0";$title4="Allen Bradley Drive 1398-DDM-019X, Rev P";
-$url5="http://auctions.btmindustrial.com/Allen-Bradley-Powerflex-70-Drive-20A-D-2PIA-0-AYNANNN-Series-A_i19578926";$img5="http://media.liveauctiongroup.net/i/20612/19578926_1s.jpg?v=8D138B0EF980EB0";$title5="Allen Bradley Powerflex 70 Drive #20A D 2PIA 0 ";
-$url6="http://auctions.btmindustrial.com/Allen-Bradley-Reliance-Electric-Servo-Motor-N-3406-2-H00AA_i19578932";$img6="http://media.liveauctiongroup.net/i/20612/19578932_1s.jpg?v=8D138B0EF980EB0";$title6="AB Reliance Electric Servo Motor N-3406-2-H00AA";
-$url7="http://auctions.btmindustrial.com/Allen-Bradley-PanelView-550-2711-B5A2-Ser-F-Rev-K-FRN-4-0_i19578939";$img7="http://media.liveauctiongroup.net/i/20612/19580911_1s.jpg?v=8D138B0EF980EB0";$title7="Allen Bradley PanelView 550 #2711-B5A2";
-$url8="http://auctions.btmindustrial.com/Yaskawa-SMC-2000-Motion-Controller-SMC-2000-1M-Rev-B_i19580914";$img8="http://media.liveauctiongroup.net/i/20612/19580914_1s.jpg?v=8D138B0EF980EB0";$title8="Yaskawa SMC-2000 Motion Controller";
-$url9="http://auctions.btmindustrial.com/Baldor-Adjustable-Speed-Drive-ID15J401-ER_i19580917";$img9="http://media.liveauctiongroup.net/i/20612/19580917_1s.jpg?v=8D138B0EF980EB0";$title9="Baldor Adjustable Speed Drive #ID15J401";
-$url10="http://auctions.btmindustrial.com/Lot-of-Bearings_i19580431";$img10="http://media.liveauctiongroup.net/i/20612/19580431_1s.jpg?v=8D138B0EF980EB0";$title10="Lot of Bearings";
-$url11="http://auctions.btmindustrial.com/Rexroth-Indramat-Permanent-Magnet-Servo-Motor-MKD090B-058-KPI-KN-P-N-277393_i19578949";$img11="http://media.liveauctiongroup.net/i/20612/19578949_1s.jpg?v=8D138B0EF980EB0";$title11="Rexroth Indramat Servo Motor MKD090B-058-KPI";
+$url1="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19878278";$img1="http://media.liveauctiongroup.net/i/21051/19878278_1s.jpg?v=8D14D1ED48BA5F0";$title1="Fanuc Servo Amplifier A06B-6096-H105";
+$url2="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19878347";$img2="http://media.liveauctiongroup.net/i/21051/19878347_1s.jpg?v=8D14D1F4FA5A010";$title2="Fanuc Power Supply Module A06B-6087-H130";
+$url3="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19902711";$img3="http://media.liveauctiongroup.net/i/21051/19902711_1s.jpg?v=8D151BCC59EC9D0";$title3="Fanuc AC Spindle Motor A06B-0855-B192#3000";
+$url4="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19902725";$img4="http://media.liveauctiongroup.net/i/21051/19902725_1s.jpg?v=8D151BCF7CC8D70";$title4="Fanuc AC Servo Motor A06B-0158-B175#7008";
+$url5="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19902746";$img5="http://media.liveauctiongroup.net/i/21051/19902746_1s.jpg?v=8D151BD255BE9C0";$title5="Fanuc AC Servo Motor A06B-0158-B175#7008";
+$url6="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19937625";$img6="http://media.liveauctiongroup.net/i/21051/19937625_1s.jpg?v=8D151E924EA1120";$title6="I/O PSU Fanuc Module Model: A16B-2202-0985";
+$url7="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=2&ps=50#i19937638";$img7="http://media.liveauctiongroup.net/i/21051/19937638_1s.jpg?v=8D151E98C2DEB40";$title7="Fanuc Servo Amplifier Unit B Series";
+$url8="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=2&ps=50#i19937661";$img8="http://media.liveauctiongroup.net/i/21051/19937661_1s.jpg?v=8D151EA5729B9A0";$title8="Fanuc LCD/MDI Unit A02B-200-C06MBR";
+$url9="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=2&ps=50#i19938810";$img9="http://media.liveauctiongroup.net/i/21051/19938810_1s.jpg?v=8D15289C881D660";$title9="Fanuc Daughter Board A20B-2900-0292";
+$url10="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=4&ps=50#i19973350";$img10="http://media.liveauctiongroup.net/i/21051/19973350_1s.jpg?v=8D15CCE3CDDAE50";$title10="Lot of (3) Fanuc AIF01A A03B-0807-C011";
+$url11="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=4&ps=50#i19975171";$img11="http://media.liveauctiongroup.net/i/21051/19975171_1s.jpg?v=8D158411F9DBBA0";$title11="Fanuc Velocity Control Unit A06B-6047-H003";
+$url12="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=4&ps=50#i19989319";$img12="http://media.liveauctiongroup.net/i/21051/19989319_1s.jpg?v=8D15A82589EC8C0";$title12="Fanuc A06B-6050-H401 Velocity Control Unit";
 
 
 
@@ -31,7 +31,7 @@ $url11="http://auctions.btmindustrial.com/Rexroth-Indramat-Permanent-Magnet-Serv
 <strong><font color="#ffffff">
     </font></strong>
 <div style="margin: 0px auto; background-color: #494949; color: #008000; font-size: 27px;">
-        <span contenteditable="false" c2f="true" id="0" type="LINK" ><a href="<?php echo $auction_url; ?>" style="color: #cccccc;" target="_blank">Click here for auction listing</a></span> </p>
+        <span contenteditable="false" c2f="true" id="0" type="LINK" ><a href="<?php echo $auction_url; ?>" style="color: #cccccc;" target="_blank">Click Here for Auction Listing</a></span> </p>
 </div>
 <table width="600" border="0" cellspacing="0" cellpadding="0" style="border: 2px solid #dcdcdc; top: 86px; width: 615px; height: 564px; margin: 0px auto; background-color: #ffffff;">
 <tbody style="text-align: center;">
@@ -54,11 +54,20 @@ $url11="http://auctions.btmindustrial.com/Rexroth-Indramat-Permanent-Magnet-Serv
 </td>
 
     <!--lot 2-->
-<td>
-    <div style="font-size: 18px; color: #ffffff; background: #494949; padding: 10px; border-radius: 10px;">
-        Have a machine for sale? Contact us to get it in our auction!<br/>(616) 745-5953<br/>Info@btmindustrial.com
-    </div>
-</td>
+    <td>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url2;?>' shape='rect'><?php echo $title2;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url2;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img2;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
 
 <!--lot 3-->
 <td>
@@ -221,11 +230,11 @@ $url11="http://auctions.btmindustrial.com/Rexroth-Indramat-Permanent-Magnet-Serv
             <tbody>
             <tr>
                 <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
-                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url2;?>' shape='rect'><?php echo $title2;?></a></b></td>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url12;?>' shape='rect'><?php echo $title12;?></a></b></td>
             </tr>
             <tr>
-                <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url2;?>' shape='rect'>
-                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img2;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+                <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url12;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img12;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
             </tr>
             </tbody>
         </table>
