@@ -37,11 +37,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="score_table.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="score_table.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/score_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="62" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.6868906" vertical-offset="284" max-vertical-offset="1207">
-              <folding />
+            <state line="66" column="70" selection-start="3058" selection-end="3058" vertical-scroll-proportion="-39.884617" vertical-offset="0" max-vertical-offset="1207">
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_create.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/ticket/_create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="6" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.60780066" vertical-offset="0" max-vertical-offset="923">
+              <folding>
+                <element signature="e#6#86#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,7 +117,6 @@
         <option value="$PROJECT_DIR$/protected/views/picks/picks_selector.php" />
         <option value="$PROJECT_DIR$/protected/views/picks/_form.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/create.php" />
-        <option value="$PROJECT_DIR$/protected/views/ticket/_create.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/_view.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/view.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/index.php" />
@@ -123,6 +135,7 @@
         <option value="$PROJECT_DIR$/protected/views/game/_view.php" />
         <option value="$PROJECT_DIR$/protected/models/Team.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/container/score_table.php" />
+        <option value="$PROJECT_DIR$/protected/views/ticket/_create.php" />
       </list>
     </option>
   </component>
@@ -436,7 +449,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -498,11 +511,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/ticket/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/TeamTournamentRegionController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="10" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="2907" />
@@ -756,8 +764,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/score_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="62" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.6868906" vertical-offset="284" max-vertical-offset="1207">
-          <folding />
+        <state line="66" column="70" selection-start="3058" selection-end="3058" vertical-scroll-proportion="-39.884617" vertical-offset="0" max-vertical-offset="1207">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/_create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="6" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.60780066" vertical-offset="0" max-vertical-offset="923">
+          <folding>
+            <element signature="e#6#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
