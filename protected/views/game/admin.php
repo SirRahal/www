@@ -55,6 +55,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'team_2_ID',
 		'team_1_score',
 		'team_2_score',
+		'round',
 		*/
 		array(
 			'class'=>'CButtonColumn',
