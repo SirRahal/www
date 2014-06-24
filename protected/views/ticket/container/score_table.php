@@ -41,17 +41,23 @@
                 for ($i = 1;$i<17; $i++){
                 $team = Team::model()->findByAttributes(array('name'=>$picks[$i-1] ));
                 $team_ID = $team['ID'];
+                $score_1 = Team::model()->get_scores($team_ID,1);
+                $score_2 = Team::model()->get_scores($team_ID,2);
+                $score_3 = Team::model()->get_scores($team_ID,3);
+                $score_4 = Team::model()->get_scores($team_ID,4);
+                $score_5 = Team::model()->get_scores($team_ID,5);
+                $score_6 = Team::model()->get_scores($team_ID,6);
                 ?>
             <tr>
                 <!--echo out the selected radio buttons-->
                 <td style="width: 20px;"><?php echo $i; ?></td>
-                <td Style="width: 130px;" id="radio<?php echo $i;?>" team_ID='<?php echo $team_ID;?>' ticket_ID='<?php echo $ticket_ID;?>'><?php echo $picks[$i-1]; ?></td>
-                <td><!--echo out round 1--></td>
-                <td><!--echo out round 2--></td>
-                <td><!--echo out round 3--></td>
-                <td><!--echo out round 4--></td>
-                <td><!--echo out round 5--></td>
-                <td><!--echo out round 6--></td>
+                <td Style="width: 130px;"><?php echo $picks[$i-1]; ?></td>
+                <td><!--echo out round 1--><?php echo $score_1; ?></td>
+                <td><!--echo out round 2--><?php echo $score_2; ?></td>
+                <td><!--echo out round 3--><?php echo $score_3; ?></td>
+                <td><!--echo out round 4--><?php echo $score_4; ?></td>
+                <td><!--echo out round 5--><?php echo $score_5; ?></td>
+                <td><!--echo out round 6--><?php echo $score_6; ?></td>
                 <td><!--echo out total  --></td>
             </tr>
             <?php } ?>

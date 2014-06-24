@@ -104,4 +104,23 @@ class Team extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function get_scores($team_ID,$round){
+
+        /*try one*/
+        $game = Game::model()->find('(team_1_ID=:team_ID OR team_2_ID=:team_ID) AND round=:round', array(
+            ':team_ID' => $team_ID,
+            ':round' => $round,
+        ));
+        if($team_ID == $game['team_1_ID']){
+            $score = $game['team_1_score'];
+        }
+        else if  ($team_ID == $game['team_2_ID']){
+            $score = $game['team_2_score'];
+        }else{
+            $score = 0;
+        }
+
+        return $score;
+}
 }

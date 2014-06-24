@@ -56,6 +56,11 @@
 		<?php echo $form->textField($model,'team_2_score'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'round'); ?>
+		<?php echo $form->textField($model,'round'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

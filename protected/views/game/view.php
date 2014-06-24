@@ -30,5 +30,6 @@ $this->menu=array(
 		'team_2_ID',
 		'team_1_score',
 		'team_2_score',
+		'round',
 	),
 )); ?>

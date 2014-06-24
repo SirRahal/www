@@ -13,11 +13,12 @@
  * @property integer $team_2_ID
  * @property integer $team_1_score
  * @property integer $team_2_score
+ * @property integer $round
  *
  * The followings are the available model relations:
- * @property Tournament $tournament
  * @property Team $team1
  * @property Team $team2
+ * @property Tournament $tournament
  */
 class Game extends CActiveRecord
 {
@@ -37,12 +38,12 @@ class Game extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('tournament_ID, date, time, location, team_1_ID, team_2_ID, team_1_score, team_2_score', 'required'),
-			array('tournament_ID, team_1_ID, team_2_ID, team_1_score, team_2_score', 'numerical', 'integerOnly'=>true),
+			array('tournament_ID, date, time, location, team_1_ID, team_2_ID, team_1_score, team_2_score, round', 'required'),
+			array('tournament_ID, team_1_ID, team_2_ID, team_1_score, team_2_score, round', 'numerical', 'integerOnly'=>true),
 			array('location', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, tournament_ID, date, time, location, team_1_ID, team_2_ID, team_1_score, team_2_score', 'safe', 'on'=>'search'),
+			array('ID, tournament_ID, date, time, location, team_1_ID, team_2_ID, team_1_score, team_2_score, round', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,9 +55,9 @@ class Game extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'tournament' => array(self::BELONGS_TO, 'Tournament', 'tournament_ID'),
 			'team1' => array(self::BELONGS_TO, 'Team', 'team_1_ID'),
 			'team2' => array(self::BELONGS_TO, 'Team', 'team_2_ID'),
+			'tournament' => array(self::BELONGS_TO, 'Tournament', 'tournament_ID'),
 		);
 	}
 
@@ -75,6 +76,7 @@ class Game extends CActiveRecord
 			'team_2_ID' => 'Team 2',
 			'team_1_score' => 'Team 1 Score',
 			'team_2_score' => 'Team 2 Score',
+			'round' => 'Round',
 		);
 	}
 
@@ -105,6 +107,7 @@ class Game extends CActiveRecord
 		$criteria->compare('team_2_ID',$this->team_2_ID);
 		$criteria->compare('team_1_score',$this->team_1_score);
 		$criteria->compare('team_2_score',$this->team_2_score);
+		$criteria->compare('round',$this->round);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -137,4 +140,6 @@ class Game extends CActiveRecord
         }
 
     }
+
+
 }

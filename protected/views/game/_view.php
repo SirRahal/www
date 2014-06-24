@@ -42,6 +42,10 @@
 	<?php echo CHtml::encode($data->team_2_score); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('round')); ?>:</b>
+	<?php echo CHtml::encode($data->round); ?>
+	<br />
+
 	*/ ?>
 
 </div>
