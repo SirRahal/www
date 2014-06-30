@@ -159,6 +159,14 @@ class SiteController extends Controller
     }
 
     /**
+     * Media guide
+     */
+    public function actionSummer_special()
+    {
+        $this->render('summer_special');
+    }
+
+    /**
      * Thank you page
      */
     public function actionThank_you()
