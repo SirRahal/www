@@ -21,6 +21,8 @@
         $total_total = 0;
         ?>
         <div><span><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span></div>
+        <b>Total Points : </b><?php echo $ticket['total_points'];?><br/>
+        <b>League Placement : </b> --<!--echo out league placement-->
         <table style="border: solid #acacac; ">
             <tbody >
                 <tr>
@@ -45,8 +47,7 @@
                         $score_4 = Team::model()->get_scores($team_ID,4);
                         $score_5 = Team::model()->get_scores($team_ID,5);
                         $score_6 = Team::model()->get_scores($team_ID,6);
-                        $total   = $score_1 + $score_2 + $score_3 + $score_4 + $score_5 + $score_6;
-                        $total_total +=$total;
+                        $total = TeamTournamentRegion::model()->select_team_total_points($team_ID);
                         ?>
                         <tr>
                         <!--echo out the selected radio buttons-->
@@ -62,16 +63,19 @@
                         </tr>
                 <?php } ?>
                 </tr>
+                <tr style="background: #acacac;">
+                    <td></td>
+                    <td style="text-align: center;"><b>Total</b></td>
+                    <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
+                    <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
+                    <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>
+                    <td style="text-align: center;"><?php echo $ticket['rd_4']; ?></td>
+                    <td style="text-align: center;"><?php echo $ticket['rd_5']; ?></td>
+                    <td></td>
+                    <td style="text-align: center;"><?php echo $ticket['total_points']; ?></td>
+                </tr>
             </tbody>
-            <b>Total Points : </b><?php echo $total_total;?><br/>
-            <b>League Placement : </b> --<!--echo out league placement-->
+
         </table>
-        <table>
-            <tbody>
-            <tr>
-                <td></td>
-                <tf
-            </tr>
-            </tbody>
-        </table>
+
 </div>

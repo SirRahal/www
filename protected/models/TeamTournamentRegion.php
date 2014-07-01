@@ -10,10 +10,11 @@
  * @property integer $seed
  * @property integer $overall_seed
  * @property integer $starting_placement
+ * @property integer $total_points
  *
  * The followings are the available model relations:
- * @property TournamentRegion $tournamentRegion
  * @property Team $team
+ * @property TournamentRegion $tournamentRegion
  * @property TournamentResults[] $tournamentResults
  */
 class TeamTournamentRegion extends CActiveRecord
@@ -35,10 +36,10 @@ class TeamTournamentRegion extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('team_ID, tournament_region_ID, seed, overall_seed, starting_placement', 'required'),
-			array('team_ID, tournament_region_ID, seed, overall_seed, starting_placement', 'numerical', 'integerOnly'=>true),
+			array('team_ID, tournament_region_ID, seed, overall_seed, starting_placement, total_points', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, team_ID, tournament_region_ID, seed, overall_seed, starting_placement', 'safe', 'on'=>'search'),
+			array('ID, team_ID, tournament_region_ID, seed, overall_seed, starting_placement, total_points', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,8 +51,8 @@ class TeamTournamentRegion extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'tournamentRegion' => array(self::BELONGS_TO, 'TournamentRegion', 'tournament_region_ID'),
 			'team' => array(self::BELONGS_TO, 'Team', 'team_ID'),
+			'tournamentRegion' => array(self::BELONGS_TO, 'TournamentRegion', 'tournament_region_ID'),
 			'tournamentResults' => array(self::HAS_MANY, 'TournamentResults', 'team_tournament_region_ID'),
 		);
 	}
@@ -68,6 +69,7 @@ class TeamTournamentRegion extends CActiveRecord
 			'seed' => 'Seed',
 			'overall_seed' => 'Overall Seed',
 			'starting_placement' => 'Starting Placement',
+			'total_points' => 'Total Points',
 		);
 	}
 
@@ -95,6 +97,7 @@ class TeamTournamentRegion extends CActiveRecord
 		$criteria->compare('seed',$this->seed);
 		$criteria->compare('overall_seed',$this->overall_seed);
 		$criteria->compare('starting_placement',$this->starting_placement);
+		$criteria->compare('total_points',$this->total_points);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -132,5 +135,10 @@ class TeamTournamentRegion extends CActiveRecord
     {
         $postion = TeamTournamentRegion::model()->findByAttributes(array('tournament_region_ID'=>$tournament_ID));
         return $postion;
+    }
+
+    public static function select_team_total_points($team_ID){
+        $row = TeamTournamentRegion::model()->findByAttributes(array('team_ID'=>$team_ID));
+        return $row['total_points'];
     }
 }

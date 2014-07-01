@@ -8,12 +8,18 @@
  * @property integer $user_ID
  * @property integer $tournament_ID
  * @property string $code
+ * @property integer $rd_1
+ * @property integer $rd_2
+ * @property integer $rd_3
+ * @property integer $rd_4
+ * @property integer $rd_5
+ * @property integer $total_points
  *
  * The followings are the available model relations:
  * @property Picks[] $picks
  * @property Placement[] $placements
- * @property Tournament $tournament
  * @property User $user
+ * @property Tournament $tournament
  */
 class Ticket extends CActiveRecord
 {
@@ -34,11 +40,11 @@ class Ticket extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('user_ID, tournament_ID, code', 'required'),
-			array('user_ID, tournament_ID', 'numerical', 'integerOnly'=>true),
+			array('user_ID, tournament_ID, rd_1, rd_2, rd_3, rd_4, rd_5, total_points', 'numerical', 'integerOnly'=>true),
 			array('code', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, user_ID, tournament_ID, code', 'safe', 'on'=>'search'),
+			array('ID, user_ID, tournament_ID, code, rd_1, rd_2, rd_3, rd_4, rd_5, total_points', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,8 +58,8 @@ class Ticket extends CActiveRecord
 		return array(
 			'picks' => array(self::HAS_MANY, 'Picks', 'ticket_ID'),
 			'placements' => array(self::HAS_MANY, 'Placement', 'ticket_ID'),
-			'tournament' => array(self::BELONGS_TO, 'Tournament', 'tournament_ID'),
 			'user' => array(self::BELONGS_TO, 'User', 'user_ID'),
+			'tournament' => array(self::BELONGS_TO, 'Tournament', 'tournament_ID'),
 		);
 	}
 
@@ -67,6 +73,12 @@ class Ticket extends CActiveRecord
 			'user_ID' => 'User',
 			'tournament_ID' => 'Tournament',
 			'code' => 'Code',
+			'rd_1' => 'Rd 1',
+			'rd_2' => 'Rd 2',
+			'rd_3' => 'Rd 3',
+			'rd_4' => 'Rd 4',
+			'rd_5' => 'Rd 5',
+			'total_points' => 'Total Points',
 		);
 	}
 
@@ -92,6 +104,12 @@ class Ticket extends CActiveRecord
 		$criteria->compare('user_ID',$this->user_ID);
 		$criteria->compare('tournament_ID',$this->tournament_ID);
 		$criteria->compare('code',$this->code,true);
+		$criteria->compare('rd_1',$this->rd_1);
+		$criteria->compare('rd_2',$this->rd_2);
+		$criteria->compare('rd_3',$this->rd_3);
+		$criteria->compare('rd_4',$this->rd_4);
+		$criteria->compare('rd_5',$this->rd_5);
+		$criteria->compare('total_points',$this->total_points);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
