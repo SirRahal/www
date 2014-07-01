@@ -102,15 +102,15 @@ class School extends CActiveRecord
     }
 
     public static function get_round_placements($school_ID, $round){
-
-
-
         $first = array('first','second');
         $second = array(1,2);
         $third = array('one','two');
 
         $placment_array = array_merge($first, $second, $third);
         return ($placment_array);
+    }
 
+    public static function get_tickets($ticket_ID){
+        $tickets = Tickets::model()->findAllByAttributes(array('code'=> 1));
     }
 }
