@@ -41,7 +41,7 @@ $this->breadcrumbs=array(
 
     $school = School::model()->get_name_by_ID($school_ID);
     ?>
-    <div class="regional_div regional_div_my_picks" id="my_picks" style="float:left; margin-left: 20px; background: #acacac;">
+    <div class="regional_div ticket" id="my_picks" style="float:left; margin-left: 20px;">
         <span style="color: black;"><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span><br/>
         <span style="color: black;"><b>Ticket # : </b><?php echo $ticket['code']; ?></span>
         <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket['ID']));?>
@@ -55,7 +55,7 @@ $this->breadcrumbs=array(
 <?php
     $mytickets = Ticket::model()->get_tickets_by_user_ID();
     foreach($mytickets as $ticket){?>
-        <h3><?php echo $ticket['code']; ?></h3>
+        <h3><b>Ticket : </b><?php echo $ticket['code']; ?></h3>
         <div>
             <?php echo $this->renderPartial('container/score_table', array('ticket' => $ticket)); ?>
         </div>

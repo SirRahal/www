@@ -17,7 +17,7 @@
 
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/jquery_ui.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/redmond/jquery-ui-1.10.4.custom.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-custom/jquery-ui.css" />
 
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>

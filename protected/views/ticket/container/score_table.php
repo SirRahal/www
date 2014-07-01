@@ -20,19 +20,19 @@
         $my_picks = Picks::model()->find_tickets_by_ID($ticket['ID']);
         $total_total = 0;
         ?>
-        <div><span><b>Ticket # </b><?php echo $ticket['code']; ?><br/><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span></div>
+        <div><span><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span></div>
         <table style="border: solid #acacac; ">
-            <tbody>
+            <tbody >
                 <tr>
-                    <td>Seed</td>
-                    <td>Team</td>
-                    <td>Rd 1</td>
-                    <td>Rd 2</td>
-                    <td>Rd 3</td>
-                    <td>Rd 4</td>
-                    <td>Rd 5</td>
-                    <td>Rd 6</td>
-                    <td>Total</td>
+                    <td><b>Seed</b></td>
+                    <td style="width: 160px;;"><b>Team</b></td>
+                    <td style="text-align: center;"><b>Rd 1</b></td>
+                    <td style="text-align: center;"><b>Rd 2</b></td>
+                    <td style="text-align: center;"><b>Rd 3</b></td>
+                    <td style="text-align: center;"><b>Rd 4</b></td>
+                    <td style="text-align: center;"><b>Rd 5</b></td>
+                    <td style="text-align: center;"><b>Rd 6</b></td>
+                    <td style="text-align: center;"><b>Total</b></td>
                 </tr>
                 <tr>
                     <?php
@@ -50,15 +50,15 @@
                         ?>
                         <tr>
                         <!--echo out the selected radio buttons-->
-                            <td style="width: 20px;"><?php echo $i; ?></td>
+                            <td style="width: 20px; text-align: center;"><b><?php echo $i; ?></b></td>
                             <td Style="width: 130px;"><?php echo $picks[$i-1]; ?></td>
-                            <td><!--echo out round 1--><?php echo $score_1; ?></td>
-                            <td><!--echo out round 2--><?php echo $score_2; ?></td>
-                            <td><!--echo out round 3--><?php echo $score_3; ?></td>
-                            <td><!--echo out round 4--><?php echo $score_4; ?></td>
-                            <td><!--echo out round 5--><?php echo $score_5; ?></td>
-                            <td><!--echo out round 6--><?php echo $score_6; ?></td>
-                            <td><!--echo out total  --><?php echo $total; ?></td>
+                            <td style="text-align: center;"><!--echo out round 1--><?php echo $score_1; ?></td>
+                            <td style="text-align: center;"><!--echo out round 2--><?php echo $score_2; ?></td>
+                            <td style="text-align: center;"><!--echo out round 3--><?php echo $score_3; ?></td>
+                            <td style="text-align: center;"><!--echo out round 4--><?php echo $score_4; ?></td>
+                            <td style="text-align: center;"><!--echo out round 5--><?php echo $score_5; ?></td>
+                            <td style="text-align: center;"><!--echo out round 6--><?php echo $score_6; ?></td>
+                            <td style="text-align: center;"><!--echo out total  --><?php echo $total; ?></td>
                         </tr>
                 <?php } ?>
                 </tr>
@@ -66,5 +66,12 @@
             <b>Total Points : </b><?php echo $total_total;?><br/>
             <b>League Placement : </b> --<!--echo out league placement-->
         </table>
-
+        <table>
+            <tbody>
+            <tr>
+                <td></td>
+                <tf
+            </tr>
+            </tbody>
+        </table>
 </div>

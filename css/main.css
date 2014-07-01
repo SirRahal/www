@@ -4,15 +4,15 @@ body
 	padding: 0;
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+	background: #555555;
 }
 
 #page
 {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	background: white;
-	border: 1px solid #C9E0ED;
+	background: #acacac;
+	border: 1px solid #f48a0d;
 }
 
 #header
@@ -330,4 +330,10 @@ div.search-form
 }
 .text_center{
     text-align: center;
+}
+.ticket{
+    width:240px;
+    background: #e6e6e6;
+    border: 1px solid #f48a0d;
+    color:#000000;
 }
