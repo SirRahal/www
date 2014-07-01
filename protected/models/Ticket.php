@@ -143,4 +143,9 @@ class Ticket extends CActiveRecord
         $tickets = Ticket::model()->findAllByAttributes(array('user_ID'=>$user_ID));
         return $tickets;
     }
+
+    public static function select_ticket_total_points($ticket_ID){
+        $total_points = Ticket::model()->findByAttributes(array('ID'=>$ticket_ID));
+        return $total_points['total_points'];
+    }
 }
