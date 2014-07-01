@@ -100,4 +100,17 @@ class School extends CActiveRecord
         $school = School::model()->findByAttributes(array('ID'=>$school_ID));
         return $school['name'];
     }
+
+    public static function get_round_placements($school_ID, $round){
+
+
+
+        $first = array('first','second');
+        $second = array(1,2);
+        $third = array('one','two');
+
+        $placment_array = array_merge($first, $second, $third);
+        return ($placment_array);
+
+    }
 }

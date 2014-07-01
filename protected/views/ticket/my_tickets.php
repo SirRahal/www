@@ -10,6 +10,23 @@ $this->breadcrumbs=array(
 );
     $mytickets = Ticket::model()->get_tickets_by_user_ID();
 ?>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Accordion - No auto height</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion({
+                heightStyle: "content"
+            });
+        });
+    </script>
+</head>
+
+
 <h1>My Tickets</h1>
 
 <div>
@@ -33,10 +50,15 @@ $this->breadcrumbs=array(
 <?php }?>
 
 <div class="clear"></div>
+
+<div id="accordion">
 <?php
     $mytickets = Ticket::model()->get_tickets_by_user_ID();
-    foreach($mytickets as $ticket){
-        echo $this->renderPartial('container/score_table', array('ticket' => $ticket));
-    }
-?>
+    foreach($mytickets as $ticket){?>
+        <h3><?php echo $ticket['code']; ?></h3>
+        <div>
+            <?php echo $this->renderPartial('container/score_table', array('ticket' => $ticket)); ?>
+        </div>
+    <?php } ?>
+</div>
 
