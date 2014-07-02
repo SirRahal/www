@@ -4,7 +4,7 @@
 
 
 $this->breadcrumbs=array(
-	'Schools'=>array('index'),
+	'My Tickets'=>array('ticket/mytickets'),
 	$model->name,
 );
 ?>
@@ -46,7 +46,7 @@ $placement = 0;
         if($i < 6)
         {
             $round = 'rd_'.$i;
-            $header= "Final ".$i." Winners";
+            $header= "Final Round ".$i." Winners";
         } else{
             $round = 'total_points';
             $header= "Final Round Winners";
@@ -55,17 +55,22 @@ $placement = 0;
         ?>
     <h1><?php echo $header; ?></h1>
         <div>
+
+
         <table style="background: #e6e6e6; color:#555555;">
             <tbody>
+            <tr>
                 <?php foreach ($placement_round as $finalest){
-                    $placement++; $user_name = User::model()->findByAttributes(array('ID'=>$finalest['user_ID'])); $user_name = $user_name['user_name'];
+                    $placement++;
+                    $user_name = User::model()->findByAttributes(array('ID'=>$finalest['user_ID'])); $user_name = $user_name['user_name'];
+                    $picks = Picks::model()->find_tickets_by_ID($finalest['ID']);
                     ?>
-                    <tr>
-                        <td style="width:20px;"><?php if($placement == 1){echo '1st';} elseif($placement == 2){echo '2nd';} else{ echo 'Last';} ?></td>
-                        <td style="width:120px;"><?php echo $user_name; ?></td>
-                        <td><?php echo $finalest[$round];?></td>
-                    </tr>
-                    <?php  } $placement = 0; ?>
+                        <td>
+                            <b>User : </b><i><?php echo $user_name;?></i><br/>
+                            <b>Spot : </b><i><?php if ($placement == 1) { echo '1st'; }elseif($placement == 2) { echo '2nd'; }else { echo 'Dead Last'; } ?></i><br/>
+                            <?php echo $this->renderPartial('/ticket/container/my_picks_div_round_display', array('picks' => $picks,'ticket_ID' => $finalest['ID'],'round' => $i));?>
+                        </td>
+                    <?php  } $placement = 0; ?></tr>
             </tbody>
         </table>
         </div>

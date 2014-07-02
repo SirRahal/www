@@ -6,7 +6,7 @@
  * Time: 1:02 PM
  */
 $this->breadcrumbs=array(
-    'Tickets',
+    'My Tickets',
 );
     $mytickets = Ticket::model()->get_tickets_by_user_ID();
 ?>

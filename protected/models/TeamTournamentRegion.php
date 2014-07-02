@@ -141,4 +141,6 @@ class TeamTournamentRegion extends CActiveRecord
         $row = TeamTournamentRegion::model()->findByAttributes(array('team_ID'=>$team_ID));
         return $row['total_points'];
     }
+
+
 }
