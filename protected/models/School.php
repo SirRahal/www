@@ -102,26 +102,40 @@ class School extends CActiveRecord
     }
 
     //http://www.yiiframework.com/wiki/199/creating-a-parameterized-like-query/
-    public static function get_tickets($ticket_ID){
-        $ticket_ID = intval($ticket_ID);
-        if (!$ticket_ID)
+    public static function get_tickets($school_ID){
+        $school_ID = intval($school_ID);
+        if (!$school_ID)
             return null;
 
         $q = new CDbCriteria( array(
             'condition' => "code LIKE :match",
-            'params'    => array(':match' => $ticket_ID . "-%")
+            'params'    => array(':match' => $school_ID . "-%")
         ) );
+        $q->order = "total_points DESC";
 
         $rows = Ticket::model()->findAll( $q );
         return $rows;
     }
 
     public static function get_round_placements($school_ID, $round){
-        $first = array('first','second');
-        $second = array(1,2);
-        $third = array('one','two');
 
-        $placment_array = array_merge($first, $second, $third);
+        $school_ID = intval($school_ID);
+        if (!$school_ID)
+            return null;
+
+        $q = new CDbCriteria( array(
+            'condition' => "code LIKE :match",
+            'params'    => array(':match' => $school_ID . "-%")
+        ) );
+        $q->order = "$round DESC";
+
+        $rows = Ticket::model()->findAll( $q );
+
+        $count = count($rows)-1;
+        $first = array($rows[0]);
+        $second = array($rows[1]);
+        $last = array($rows[$count]);
+        $placment_array = array_merge($first, $second, $last);
         return ($placment_array);
     }
 

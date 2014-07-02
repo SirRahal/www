@@ -7,6 +7,12 @@ body
 	background: #555555;
 }
 
+a{
+    color:#555555;
+}
+a:hover{
+    color: #f48a0d;
+}
 #page
 {
 	margin-top: 5px;
@@ -19,7 +25,6 @@ body
 {
 	margin: 0;
 	padding: 0;
-	border-top: 3px solid #C9E0ED;
 }
 
 #content
@@ -38,7 +43,7 @@ body
 	margin: 10px 20px;
 	font-size: 0.8em;
 	text-align: center;
-	border-top: 1px solid #C9E0ED;
+	border-top: 1px solid #f48a0d;
 }
 
 #logo
@@ -49,7 +54,8 @@ body
 
 #mainmenu
 {
-	background:white url(bg.gif) repeat-x left top;
+    background: #555555 url("/css/jquery-ui-custom/images/ui-bg_inset-soft_25_000000_1x100.png") 50% bottom repeat-x;;
+	/*background:white url(bg.gif) repeat-x left top;    /images/ui-bg_inset-soft_25_000000_1x100.png*/
 }
 
 #mainmenu ul
@@ -65,7 +71,7 @@ body
 
 #mainmenu ul li a
 {
-	color:#ffffff;
+	color:#f48a0d;
 	background-color:transparent;
 	font-size:12px;
 	font-weight:bold;
@@ -75,8 +81,8 @@ body
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #6399cd;
-	background-color:#EFF4FA;
+	color: #555555;
+	background-color:#acacac;
 	text-decoration:none;
 }
 

@@ -7,10 +7,16 @@ $this->breadcrumbs=array(
 	'Schools'=>array('index'),
 	$model->name,
 );
-
-
-
 ?>
+<head>
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion({
+                heightStyle: "content"
+            });
+        });
+    </script>
+</head>
 
 <h1>Organization : <i><?php echo $model->name; ?></i></h1>
 
@@ -23,7 +29,8 @@ $this->breadcrumbs=array(
 ));
 
 $tickets = $model->get_tickets($model->ID);
-$placment = 0;
+$placement = 0;
+
 ?>
 
 <style>
@@ -32,21 +39,39 @@ $placment = 0;
     }
 </style>
 <br/>
-<h1>Round 1 Finalest</h1>
-<br/>
-<h1>Round 2 Finalest</h1>
-<br/>
-<h1>Round 3 Finalest</h1>
-<br/>
-<h1>Round 4 Finalest</h1>
-<br/>
-<h1>Round 5 Finalest</h1>
-<br/>
-<h1>Final Round Winners</h1>
+<div class="clear"></div>
 
+<div id="accordion">
+    <?php for($i=1;$i<7;$i++){
+        if($i < 6)
+        {
+            $round = 'rd_'.$i;
+            $header= "Final ".$i." Winners";
+        } else{
+            $round = 'total_points';
+            $header= "Final Round Winners";
+        }
+        $placement_round = $model->get_round_placements($model->ID, $round);
+        ?>
+    <h1><?php echo $header; ?></h1>
+        <div>
+        <table style="background: #e6e6e6; color:#555555;">
+            <tbody>
+                <?php foreach ($placement_round as $finalest){
+                    $placement++; $user_name = User::model()->findByAttributes(array('ID'=>$finalest['user_ID'])); $user_name = $user_name['user_name'];
+                    ?>
+                    <tr>
+                        <td style="width:20px;"><?php if($placement == 1){echo '1st';} elseif($placement == 2){echo '2nd';} else{ echo 'Last';} ?></td>
+                        <td style="width:120px;"><?php echo $user_name; ?></td>
+                        <td><?php echo $finalest[$round];?></td>
+                    </tr>
+                    <?php  } $placement = 0; ?>
+            </tbody>
+        </table>
+        </div>
+    <?php } ?>
 
-
-
+</div>
 
 <br/>
 <h1>All Tickets</h1>
@@ -64,9 +89,9 @@ $placment = 0;
             <td style="text-align: center;"><b>Final Total</b></td>
         </tr>
         <?php foreach($tickets as $ticket){
-            $placment++; $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID'])); $user_name = $user_name['user_name'] ?>
+            $placement++; $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID'])); $user_name = $user_name['user_name']; ?>
             <tr>
-                <td style="text-align: center; width:20px;"><?php echo $placment; ?></td>
+                <td style="text-align: center; width:20px;"><?php echo $placement; ?></td>
                 <td><?php echo $user_name; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
