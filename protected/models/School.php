@@ -103,16 +103,17 @@ class School extends CActiveRecord
 
     //http://www.yiiframework.com/wiki/199/creating-a-parameterized-like-query/
     public static function get_tickets($ticket_ID){
-        $match = '';
-        $match = addcslashes($match, "$ticket_ID".'_%');
+        $ticket_ID = intval($ticket_ID);
+        if (!$ticket_ID)
+            return null;
+
         $q = new CDbCriteria( array(
             'condition' => "code LIKE :match",
-            'params'    => array(':match' => "$match%")
+            'params'    => array(':match' => $ticket_ID . "-%")
         ) );
 
         $rows = Ticket::model()->findAll( $q );
         return $rows;
-
     }
 
     public static function get_round_placements($school_ID, $round){
