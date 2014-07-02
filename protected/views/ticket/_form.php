@@ -9,8 +9,10 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
+    'My Tickets'=>array('ticket/mytickets'),
     'Edit Ticket',
 );
+
 
 //needs to replace the ticket ID from hard coded to entered in belowe
 $ticket_ID = $model->ID;
