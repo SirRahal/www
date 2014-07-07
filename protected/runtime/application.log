@@ -14370,3 +14370,35 @@ Stack trace:
 REQUEST_URI=/index.php/school/1
 HTTP_REFERER=http://localhost/index.php/ticket/mytickets
 ---
+2014/07/05 13:49:31 [error] [exception.CException] exception 'CException' with message 'Property "TeamTournamentRegion.total_points" is not defined.' in C:\wamp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('total_points')
+#1 C:\wamp\yii\framework\base\CModel.php(596): CActiveRecord->__get('total_points')
+#2 C:\wamp\www\protected\models\TeamTournamentRegion.php(142): CModel->offsetGet('total_points')
+#3 C:\wamp\www\protected\views\ticket\container\my_picks_div.php(17): TeamTournamentRegion::select_team_total_points('17')
+#4 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#5 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#7 C:\wamp\www\protected\views\ticket\my_tickets.php(41): CController->renderPartial('container/my_pi...', Array)
+#8 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#9 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#10 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#11 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('my_tickets', NULL, true)
+#12 C:\wamp\www\protected\controllers\TicketController.php(148): CController->render('my_tickets')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): TicketController->actionMyTickets()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('mytickets')
+#23 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/myticket...')
+#24 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/ticket/mytickets
+HTTP_REFERER=http://localhost/index.php/site/login
+---

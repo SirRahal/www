@@ -57,10 +57,20 @@ $school = School::model()->get_name_by_ID($school_ID);
             <!--radom select all seeds-->
             <a style="width:100%;" href="#">Random</a>
             <!--reset all seeds-->
-            <a style="width:100%;" href="#">Reset</a>
+            <a style="width:100%;" onclick="my_picks_reset()" id="my_picks_reset">Reset</a>
         </div>
     </div>
 </div>
+
+<script>
+    $(function() {
+        /*set var picks = array of 16 to TBA and reset th my_picks div*/
+        $("#my_picks_reset").click(function() {
+            var picks = array('TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA')
+            $("#my_picks").load('container/my_picks_div', array('picks' => picks,'ticket_ID' => $ticket_ID))
+        })
+    })
+</script>
 
 <div class="clear"></div>
 
