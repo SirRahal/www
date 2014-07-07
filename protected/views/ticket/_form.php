@@ -53,11 +53,11 @@ $school = School::model()->get_name_by_ID($school_ID);
         <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket_ID));?>
         <div class="picks">
             <!--save-->
-            <a style="width:100%;" href="#">Save</a>
+            <a style="width:100%;" href="#">Save</a>                                            <!--save my picks and go back to my tickets page-->
             <!--radom select all seeds-->
-            <a style="width:100%;" href="#">Random</a>
+            <a style="width:100%;" href="#">Random</a>                                          <!--onclick $picks = Ticket::model()->easy_pick(); and refresh my_picks div-->
             <!--reset all seeds-->
-            <a style="width:100%;" onclick="my_picks_reset()" id="my_picks_reset">Reset</a>
+            <a style="width:100%;" onclick="my_picks_reset()" id="my_picks_reset">Reset</a>     <!--reset all picks to TBA and refresh the div-->
         </div>
     </div>
 </div>

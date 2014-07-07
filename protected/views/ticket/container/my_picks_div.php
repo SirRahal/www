@@ -11,7 +11,10 @@
 ?>
     <table>
         <!-- $i is the seed -->
-        <?php for ($i = 1;$i<17; $i++){
+        <?php
+
+        for ($i = 1;$i<17; $i++){
+
             $team = Team::model()->findByAttributes(array('name'=>$picks[$i-1] ));
             $team_ID = $team['ID'];
             $total_points = TeamTournamentRegion::model()->select_team_total_points($team_ID);

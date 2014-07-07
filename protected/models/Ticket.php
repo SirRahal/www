@@ -148,4 +148,23 @@ class Ticket extends CActiveRecord
         $total_points = Ticket::model()->findByAttributes(array('ID'=>$ticket_ID));
         return $total_points['total_points'];
     }
+
+    public static function easy_pick(){
+       $m =0;
+        for($j=0;$j<4;$j++){
+            for($k=1;$k<5;$k++){
+                $start_array[$m]=$k;
+                $m++;
+            }
+        }
+        $start_array[18] = shuffle($start_array);
+        $i=0;
+        foreach($start_array as $region_selected){
+            $i++;
+            $team = TeamTournamentRegion::model()->findByAttributes(array('tournament_region_ID' => $region_selected, 'seed' => $i));
+            $team_name = Team::model()->findByAttributes(array('ID' => $team['team_ID']));
+            $team_array[$i-1]=$team_name['name'];
+        }
+        return $team_array;
+    }
 }

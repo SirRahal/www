@@ -135,7 +135,12 @@ class School extends CActiveRecord
         $first = array($rows[0]);
         $second = array($rows[1]);
         $last = array($rows[$count]);
-        $placment_array = array_merge($first, $second, $last);
+        if($round == 'total_points'){
+            $third = array($rows[2]);
+            $placment_array = array_merge($first, $second, $third, $last);
+        }else{
+            $placment_array = array_merge($first, $second, $last);
+        }
         return ($placment_array);
     }
 

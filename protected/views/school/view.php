@@ -67,7 +67,7 @@ $placement = 0;
                     ?>
                         <td>
                             <b>User : </b><i><?php echo $user_name;?></i><br/>
-                            <b>Spot : </b><i><?php if ($placement == 1) { echo '1st'; }elseif($placement == 2) { echo '2nd'; }else { echo 'Dead Last'; } ?></i><br/>
+                            <b>Spot : </b><i><?php if ($placement == 1) { echo '1st'; }elseif($placement == 2) { echo '2nd'; }elseif($i==6 && $placement ==3){echo '3rd';}else { echo 'Dead Last'; } ?></i><br/>
                             <?php echo $this->renderPartial('/ticket/container/my_picks_div_round_display', array('picks' => $picks,'ticket_ID' => $finalest['ID'],'round' => $i));?>
                         </td>
                     <?php  } $placement = 0; ?></tr>
