@@ -4,7 +4,7 @@ body
 	padding: 0;
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+	background: #58585a;
 }
 
 #page
@@ -12,14 +12,14 @@ body
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background: white;
-	border: 1px solid #C9E0ED;
+	border: 1px solid #e2342f;
 }
 
 #header
 {
 	margin: 0;
 	padding: 0;
-	border-top: 3px solid #C9E0ED;
+	border-top: 3px solid #e2342f;
 }
 
 #content
@@ -38,7 +38,7 @@ body
 	margin: 10px 20px;
 	font-size: 0.8em;
 	text-align: center;
-	border-top: 1px solid #C9E0ED;
+	border-top: 1px solid #e2342f;
 }
 
 #logo
@@ -132,7 +132,7 @@ div.view
 {
 	padding: 10px;
 	margin: 10px 0;
-	border: 1px solid #C9E0ED;
+	border: 1px solid #e2342f;
 }
 
 div.breadcrumbs
