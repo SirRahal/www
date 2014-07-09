@@ -6,15 +6,18 @@ $this->pageTitle=Yii::app()->name;
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
+<h3>Machinery Moving & Rigging</h3>
+<p>
+    We are plant move specialists, whether you are moving your operation down the street or across the globe! If you are within a 30 mile radius of Grand Rapids, we also offer after hours services.  This allows you to have machinery moved after 5 p.m. and on the weekends, eliminating the non-productive time for your first shift workers.
+</p>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<h3>We Offer</h3>
+<lu>
+    <li>Auction Site Specialist</li>
+    <li>Plant Moving</li>
+    <li>Forklift Rental (5,000 - 100,000 lbs. Capacity)</li>
+    <li>Specialized Heavy Hauling</li>
+    <li>After Hours Rigging Services</li>
+    <li>And Much more</li>
+</lu>
