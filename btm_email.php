@@ -3,22 +3,22 @@
 
 
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/CNC-Parts-Auction_as32603';
-$date = 'Jun 25th';
-$auction_title = 'CNC Parts Auction';
+$auction_url = 'http://auctions.btmindustrial.com/Monthly-Machinery-Auction_as32812';
+$date = 'July 17th';
+$auction_title = 'Monthly Machinery Auction';
 
-$url1="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19878278";$img1="http://media.liveauctiongroup.net/i/21051/19878278_1s.jpg?v=8D14D1ED48BA5F0";$title1="Fanuc Servo Amplifier A06B-6096-H105";
-$url2="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19878347";$img2="http://media.liveauctiongroup.net/i/21051/19878347_1s.jpg?v=8D14D1F4FA5A010";$title2="Fanuc Power Supply Module A06B-6087-H130";
-$url3="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19902711";$img3="http://media.liveauctiongroup.net/i/21051/19902711_1s.jpg?v=8D151BCC59EC9D0";$title3="Fanuc AC Spindle Motor A06B-0855-B192#3000";
-$url4="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19902725";$img4="http://media.liveauctiongroup.net/i/21051/19902725_1s.jpg?v=8D151BCF7CC8D70";$title4="Fanuc AC Servo Motor A06B-0158-B175#7008";
-$url5="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19902746";$img5="http://media.liveauctiongroup.net/i/21051/19902746_1s.jpg?v=8D151BD255BE9C0";$title5="Fanuc AC Servo Motor A06B-0158-B175#7008";
-$url6="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=1&ps=50#i19937625";$img6="http://media.liveauctiongroup.net/i/21051/19937625_1s.jpg?v=8D151E924EA1120";$title6="I/O PSU Fanuc Module Model: A16B-2202-0985";
-$url7="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=2&ps=50#i19937638";$img7="http://media.liveauctiongroup.net/i/21051/19937638_1s.jpg?v=8D151E98C2DEB40";$title7="Fanuc Servo Amplifier Unit B Series";
-$url8="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=2&ps=50#i19937661";$img8="http://media.liveauctiongroup.net/i/21051/19937661_1s.jpg?v=8D151EA5729B9A0";$title8="Fanuc LCD/MDI Unit A02B-200-C06MBR";
-$url9="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=2&ps=50#i19938810";$img9="http://media.liveauctiongroup.net/i/21051/19938810_1s.jpg?v=8D15289C881D660";$title9="Fanuc Daughter Board A20B-2900-0292";
-$url10="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=4&ps=50#i19973350";$img10="http://media.liveauctiongroup.net/i/21051/19973350_1s.jpg?v=8D15CCE3CDDAE50";$title10="Lot of (3) Fanuc AIF01A A03B-0807-C011";
-$url11="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=4&ps=50#i19975171";$img11="http://media.liveauctiongroup.net/i/21051/19975171_1s.jpg?v=8D158411F9DBBA0";$title11="Fanuc Velocity Control Unit A06B-6047-H003";
-$url12="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=4&ps=50#i19989319";$img12="http://media.liveauctiongroup.net/i/21051/19989319_1s.jpg?v=8D15A82589EC8C0";$title12="Fanuc A06B-6050-H401 Velocity Control Unit";
+$url1="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20052341";$img1="http://media.liveauctiongroup.net/i/21250/20052341_1s.jpg?v=8D163CE948CF870";$title1="34x96in Gap Lathe";
+$url2="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20058987";$img2="http://media.liveauctiongroup.net/i/21250/20058987_1s.jpg?v=8D16332B77392F0";$title2="BOKO Univ Mill";
+$url3="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006560";$img3="http://media.liveauctiongroup.net/i/21250/20006560_1s.jpg?v=8D1601417E33810";$title3="Tongil ID & OD Grinder";
+$url4="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006562";$img4="http://media.liveauctiongroup.net/i/21250/20006562_1s.jpg?v=8D16013F2FA84E0";$title4="Hor Production Mill";
+$url5="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006563";$img5="http://media.liveauctiongroup.net/i/21250/20006563_1s.jpg?v=8D1601774C173A0";$title5="Macc Cutoff Saw";
+$url6="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006566";$img6="http://media.liveauctiongroup.net/i/21250/20006566_1s.jpg?v=8D1601C8768E560";$title6="Bridgeport Mill w/ DRO";
+$url7="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006564";$img7="http://media.liveauctiongroup.net/i/21250/20006564_1s.jpg?v=8D16958F0AF2800";$title7="125 HP Atlas Air Compressor";
+$url8="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006565";$img8="http://media.liveauctiongroup.net/i/21250/20006565_1s.jpg?v=8D1601A22F63E90";$title8="25 HP Ingersoll Air Compressor";
+$url9="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006567";$img9="http://media.liveauctiongroup.net/i/21250/20006567_1s.jpg?v=8D1601504DCA7A0";$title9="Natco Miltiple Spindle Drill Press";
+$url10="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20060956";$img10="http://media.liveauctiongroup.net/i/21250/20060956_1s.jpg?v=8D16339F7C83750";$title10="6 Spindle Clausing Drill Press";
+$url11="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20060957";$img11="http://media.liveauctiongroup.net/i/21250/20060957_1s.jpg?v=8D16339FBD0C740";$title11="6 Ton Schuler Hydraulic C Frame Press";
+$url12="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20060958";$img12="http://media.liveauctiongroup.net/i/21250/20060958_1s.jpg?v=8D16339F7C83750";$title12="Americal Broach";
 
 
 
@@ -27,12 +27,19 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21051&as=32603&p=4&ps=5
 <div style="background-color: #333333; text-align: center; margin: 0px auto;">
 <p style="text-align: center;"><img alt="" src="https://media.campaigner.com/accountsmedia/43/437480/e44b703963d1447dbbd582b624092692.png" style="text-align: center; width: 615px; height: 78px; border-width: 0px; border-style: solid;"></p>
 <p style="text-align: center; font-size: 26px;"><font color="#ffffff"><?php echo $auction_title;?></font><font color="#ffffff"> Ending <?php echo $date;?> @ 1pm EST</font><font color="#ffffff"><br>
-        No Reserves, Everything Will Sell To The Highest Bidder.</font></p>
+        No Reserves, Everything Will Sell To The Highest Bidder.<br/>Nice selection of manual machinery and CNC Machines!</font></p>
+
 <strong><font color="#ffffff">
     </font></strong>
 <div style="margin: 0px auto; background-color: #494949; color: #008000; font-size: 27px;">
-        <span contenteditable="false" c2f="true" id="0" type="LINK" ><a href="<?php echo $auction_url; ?>" style="color: #cccccc;" target="_blank">Click Here for Auction Listing</a></span> </p>
+        <span contenteditable="false" c2f="true" id="0" type="LINK" ><a href="<?php echo $auction_url; ?>" style="color: #cccccc;" target="_blank">Click Here for Auction Listing</a></span>
+    <br/>
+        <span contenteditable="false" c2f="true" id="0" type="LINK" ><a href="http://auctions.btmindustrial.com/auctionlist.aspx" style="color: #cccccc;" target="_blank">Click Here for All Upcoming Auctions</a></span>
+    </p>
+    </p>
 </div>
+<div style="margin: 0px auto; background-color: #494949; color: #008000; font-size: 27px;">
+    </div>
 <table width="600" border="0" cellspacing="0" cellpadding="0" style="border: 2px solid #dcdcdc; top: 86px; width: 615px; height: 564px; margin: 0px auto; background-color: #ffffff;">
 <tbody style="text-align: center;">
 <tr>
