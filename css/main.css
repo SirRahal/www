@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	color: #555;
+	color: #58585a;
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	background: #58585a;
 }
@@ -12,14 +12,14 @@ body
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background: white;
-	border: 1px solid #e2342f;
+	border: 1px solid #e1322d;
 }
 
 #header
 {
 	margin: 0;
 	padding: 0;
-	border-top: 3px solid #e2342f;
+	border-top: 3px solid #e1322d;
 }
 
 #content
@@ -38,7 +38,7 @@ body
 	margin: 10px 20px;
 	font-size: 0.8em;
 	text-align: center;
-	border-top: 1px solid #e2342f;
+	border-top: 1px solid #e1322d;
 }
 
 #logo
@@ -49,7 +49,7 @@ body
 
 #mainmenu
 {
-	background:white url(bg.gif) repeat-x left top;
+	background:#58585a;
 }
 
 #mainmenu ul
@@ -65,7 +65,7 @@ body
 
 #mainmenu ul li a
 {
-	color:#ffffff;
+	color: #ffffff;
 	background-color:transparent;
 	font-size:12px;
 	font-weight:bold;
@@ -75,7 +75,7 @@ body
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #6399cd;
+	color: #e1322d;
 	background-color:#EFF4FA;
 	text-decoration:none;
 }
@@ -132,7 +132,7 @@ div.view
 {
 	padding: 10px;
 	margin: 10px 0;
-	border: 1px solid #e2342f;
+	border: 1px solid #e1322d;
 }
 
 div.breadcrumbs

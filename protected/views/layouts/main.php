@@ -22,8 +22,10 @@
 
 <div class="container" id="page">
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+	<div id="header" style="background: #58585a;">
+		<div id="logo"><img src="/images/logo.png" width="250"/>
+
+            <?php /*echo CHtml::encode(Yii::app()->name); */?></div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
@@ -31,7 +33,6 @@
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-                array('label'=>'Insurance', 'url'=>array('/site/page', 'view'=>'insurance')),
                 array('label'=>'Recommended Links', 'url'=>array('/site/page', 'view'=>'recommended_links')),
                 array('label'=>'Specials', 'url'=>array('/site/page', 'view'=>'specials')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
