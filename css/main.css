@@ -4,7 +4,7 @@ body
 	padding: 0;
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #555555;
+	background: #303131;
 }
 
 a{
@@ -25,6 +25,7 @@ a:hover{
 {
 	margin: 0;
 	padding: 0;
+    background: #303131;
 }
 
 #content
@@ -54,7 +55,7 @@ a:hover{
 
 #mainmenu
 {
-    background: #555555 url("/css/jquery-ui-custom/images/ui-bg_inset-soft_25_000000_1x100.png") 50% bottom repeat-x;;
+    background: #303131 url("/css/jquery-ui-custom/images/ui-bg_inset-soft_25_000000_1x100.png") 50% bottom repeat-x;;
 	/*background:white url(bg.gif) repeat-x left top;    /images/ui-bg_inset-soft_25_000000_1x100.png*/
 }
 
@@ -81,7 +82,7 @@ a:hover{
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #555555;
+	color: #303131;
 	background-color:#acacac;
 	text-decoration:none;
 }
