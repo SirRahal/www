@@ -18,7 +18,13 @@ $this->breadcrumbs=array(
 $ticket_ID = $model->ID;
 $ticket = Ticket::model()->find_ticket_by_ID($ticket_ID);
 $ticket_code = $ticket['code'];
-$my_picks = Picks::model()->find_tickets_by_ID($ticket_ID);
+if(isset($_GET['my_picks']))
+{
+    $my_picks = $_GET['my_picks'];
+}
+if(!isset($my_picks)){
+    $my_picks = Picks::model()->find_tickets_by_ID($ticket_ID);
+}
 
 $string_exploded = explode("-", $ticket_code);
 $school_ID = $string_exploded[0];
@@ -64,10 +70,11 @@ $school = School::model()->get_name_by_ID($school_ID);
 
 <script>
     $(function() {
-        /*set var picks = array of 16 to TBA and reset th my_picks div*/
+        /*set var picks = array of TBA and reset th my_picks div*/
         $("#my_picks_reset").click(function() {
-            var picks = array('TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA')
-            $("#my_picks").load('container/my_picks_div', array('picks' => picks,'ticket_ID' => $ticket_ID))
+            var my_picks = ['TBA','TBA','TBA','TBA','TBA','TBA','TBA','TBA'];
+            var url = document.URL;
+            $(location).attr('href',url,'my_picks',my_picks);
         })
     })
 </script>
