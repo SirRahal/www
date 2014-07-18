@@ -22,7 +22,47 @@ $this->breadcrumbs=array(
 <p>
 If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
 </p>
+<div class="contact_info">
+    <div class="contact_title">
+        Contact Info
+    </div>
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                Address :
+            </td>
+            <td>
+                3227 3 Mile Road NW, Grand Rapids, Mi 49534
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email :
+            </td>
+            <td>
 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone :
+            </td>
+            <td>
+                (616) 608-7606
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Fax :
+            </td>
+            <td>
+                (616) 608-7607
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(

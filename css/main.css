@@ -34,7 +34,7 @@ body
 
 #footer
 {
-	padding: 10px;
+	padding: 10px 10px 0px 10px;
 	margin: 10px 20px;
 	font-size: 0.8em;
 	text-align: center;
@@ -43,7 +43,7 @@ body
 
 #logo
 {
-	padding: 10px 20px;
+	padding: 0px 20px;
 	font-size: 200%;
 }
 
@@ -226,4 +226,32 @@ div.search-form
 .operations li a:hover
 {
 	background: #80CFFF;
+}
+
+.sub_li{
+    margin-left: 20px;
+}
+li{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact_title{
+    text-align: center;
+    color: #58585a;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    margin-top: -20px;
+}
+
+.contact_info{
+    position: absolute;
+    border: solid 1px #e1322d;
+    right:200px;
+    margin-top: 30px;
+}
+
+.border_red{
+    border: solid 1px #e1322d;
 }

@@ -31,7 +31,7 @@
       <file leaf-file-name="specials.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/pages/specials.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="86" selection-end="86" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+            <state line="16" column="4" selection-start="254" selection-end="254" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
@@ -40,7 +40,7 @@
       <file leaf-file-name="recommended_links.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/pages/recommended_links.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="8" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="765">
+            <state line="32" column="51" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="765">
               <folding>
                 <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
               </folding>
@@ -51,22 +51,20 @@
       <file leaf-file-name="about.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/pages/about.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="50" selection-start="865" selection-end="865" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="935">
+            <state line="37" column="0" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-23.23077" vertical-offset="25" max-vertical-offset="969">
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="64" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.27302274" vertical-offset="173" max-vertical-offset="1139">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="26" column="39" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-10.346154" vertical-offset="173" max-vertical-offset="1173">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,16 +72,25 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="22" selection-start="187" selection-end="187" vertical-scroll-proportion="-2.581818" vertical-offset="79" max-vertical-offset="3978">
+            <state line="251" column="21" selection-start="2934" selection-end="2934" vertical-scroll-proportion="0.0" vertical-offset="3454" max-vertical-offset="4454">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="10" selection-start="587" selection-end="587" vertical-scroll-proportion="-8.038462" vertical-offset="250" max-vertical-offset="2210">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="442">
+            <state line="9" column="35" selection-start="192" selection-end="192" vertical-scroll-proportion="0.16813187" vertical-offset="0" max-vertical-offset="910">
               <folding />
             </state>
           </provider>
@@ -116,10 +123,12 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/protected/views/site/pages/insurance.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/views/site/pages/recommended_links.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/pages/about.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/pages/specials.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/pages/about.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
@@ -369,7 +378,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -409,33 +418,72 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/config/console.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/specials.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+        <state line="6" column="4" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/recommended_links.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1615">
-          <folding />
+        <state line="39" column="8" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="765">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/ContactForm.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-          <folding />
+        <state line="21" column="50" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="935">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="64" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="3978">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/console.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="22" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1615" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/ContactForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="1122">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -457,8 +505,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="39" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -491,23 +539,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/console.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/ContactForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1615">
-          <folding />
-        </state>
+        <state line="34" column="22" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/truck_2.jpg">
@@ -547,50 +589,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/pages/specials.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="86" selection-end="86" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="442">
+        <state line="16" column="4" selection-start="254" selection-end="254" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/pages/recommended_links.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="765">
+        <state line="32" column="51" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="765">
           <folding>
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="39" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-10.346154" vertical-offset="173" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="10" selection-start="587" selection-end="587" vertical-scroll-proportion="-8.038462" vertical-offset="250" max-vertical-offset="2210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/pages/about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="50" selection-start="865" selection-end="865" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="935">
+        <state line="37" column="0" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-23.23077" vertical-offset="25" max-vertical-offset="969">
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="187" selection-end="187" vertical-scroll-proportion="-2.581818" vertical-offset="79" max-vertical-offset="3978">
+        <state line="251" column="21" selection-start="2934" selection-end="2934" vertical-scroll-proportion="0.0" vertical-offset="3454" max-vertical-offset="4454">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="64" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.27302274" vertical-offset="173" max-vertical-offset="1139">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="9" column="35" selection-start="192" selection-end="192" vertical-scroll-proportion="0.16813187" vertical-offset="0" max-vertical-offset="910">
+          <folding />
         </state>
       </provider>
     </entry>

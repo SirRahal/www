@@ -23,8 +23,9 @@
 <div class="container" id="page">
 
 	<div id="header" style="background: #58585a;">
-		<div id="logo"><img src="/images/logo.png" width="250"/>
-
+		<div id="logo">
+            <img src="/images/logo.png" />
+            <img src="/images/banner.png"/>
             <?php /*echo CHtml::encode(Yii::app()->name); */?></div>
 	</div><!-- header -->
 
@@ -51,6 +52,7 @@
 
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by Midway Machinery Movers.<br/>
+        3227 3 Mile Road NW, Grand Rapids MI 49534<br/>
 		All Rights Reserved.<br/>
 		Powered by Sari Rahal
 	</div><!-- footer -->
