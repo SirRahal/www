@@ -53,8 +53,8 @@
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by Midway Machinery Movers.<br/>
         3227 3 Mile Road NW, Grand Rapids MI 49534<br/>
-		All Rights Reserved.<br/>
-		Powered by Sari Rahal
+		All Rights Reserved By Midway Machinery Movers.<br/>
+		Designed & Programmed by Sari Rahal
 	</div><!-- footer -->
 
 </div><!-- page -->

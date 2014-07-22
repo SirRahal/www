@@ -9,14 +9,14 @@ $this->breadcrumbs=array(
 <h1>About Us</h1>
 
 <p>
-    Our company is based on the belief that our customers' needs are of the utmost importance. Our entire team is committed to meeting those needs. As a result, a high percentage of our business is from repeat customers and referrals.<br/>
+    Our company is based on the belief that our customers' needs are of the utmost importance. Our entire team is committed to meeting your needs. As a result, a high percentage of our business is from repeat customers and referrals.<br/>
     <br/>
     We would welcome the opportunity to earn your trust and deliver you the best service in the industry.
 </p>
 <h3>Insurance</h3>
 <div style="float: left; width: 50%;">
     <p>
-        We are dedicated to providing great service as well as insuring safety.  We provide great service and low rates where insurance is where we focus.  We provide a certificate of liability with every job insured by <a href="https://ssl.gwccnet.com/truck-insurance/portal/Home/Home/!ut/p/b1/hc3NCsIwEATgZ_EJdjc2aXqMQprWfxG1e5EIUqppcxGf3yhe1bkNfMMAQ5NJgaiVLuAIPPhH1_p7FwcfXp3VaUUozIQMaityrKR1er6xhDhOoEkAv8Tgv30N3IZ4TlcH4DfeT2u1nZWEpcs1Vmupit3CEJL6gB9nSxf7C_Qc9O2ajZ4It_Nh/dl4/d5/L2dBISEvZ0FBIS9nQSEh/">Great West</a>.
+        We are dedicated to providing great service as well as insuring safety.  We provide a certificate of liability with every job insured by <a href="https://ssl.gwccnet.com/truck-insurance/portal/Home/Home/!ut/p/b1/hc3NCsIwEATgZ_EJdjc2aXqMQprWfxG1e5EIUqppcxGf3yhe1bkNfMMAQ5NJgaiVLuAIPPhH1_p7FwcfXp3VaUUozIQMaityrKR1er6xhDhOoEkAv8Tgv30N3IZ4TlcH4DfeT2u1nZWEpcs1Vmupit3CEJL6gB9nSxf7C_Qc9O2ajZ4It_Nh/dl4/d5/L2dBISEvZ0FBIS9nQSEh/">Great West</a>.
     </p>
 </div>
 <div style="float: left;width: 50%; margin-top:-40px;">
@@ -32,21 +32,22 @@ $this->breadcrumbs=array(
         At Great West Casualty Company, The Difference is Service ®.
     </div>
 </div>
-
-<h3>Hours</h3>
-<div style="width:400px;">
-    <table class="border_red">
-        <tr>
-            <td>Mon-Fri</td>
-            <td>8AM - 5PM (After Hours Rates Available)</td>
-        </tr>
-        <tr>
-            <td>Sat</td>
-            <td>9AM - 5PM By Appointment</td>
-        </tr>
-        <tr>
-            <td>Sun</td>
-            <td>Closed</td>
-        </tr>
-    </table>
+<div style="position:absolute; margin-top: 50px;">
+    <h3>Hours</h3>
+    <div style="width:400px;">
+        <table class="border_red">
+            <tr>
+                <td>Mon-Fri</td>
+                <td>8AM - 5PM (After Hours Rates Available)</td>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>9AM - 5PM By Appointment</td>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+    </div>
 </div>

@@ -18,23 +18,23 @@ $this->breadcrumbs=array(
     <tbody>
     <tr>
         <td><a href="http://www.btmindustrial.com/" target="_blank">BTM Industrial</a></td>
-        <td>: For commercial industrial auctions</td>
+        <td>: Industrial Auctions</td>
     </tr>
     <tr>
         <td><a href="http://www.btmbroker.com/index.php?ac=machine" target="_blank">BTM Broker</a></td>
-        <td>: For industrial machine sales</td>
+        <td>: Industrial Machine Aales</td>
     </tr>
     <tr>
         <td><a href="http://stores.ebay.com/Nu-Tek-Sales" target="_blank">Nu Tek Sales</a></td>
-        <td>: For Ebay auctioning replacment CNC parts</td>
+        <td>: Replacement CNC Parts</td>
     </tr>
     <tr>
         <td><a href="http://www.usaindustrialscrap.com/" target="_blank">USA Industrial Scrap</a></td>
-        <td>: For all scraping metal machinery</td>
+        <td>: Specialist In Outdated & Problem CNC Machinery </td>
     </tr>
     <tr>
         <td><a href="http://www.industrialtimesinc.com/" target="_blank">Industrial Times</a></td>
-        <td>: For advertising in the industrial industry</td>
+        <td>: For Advertising In The Industrial Community</td>
     </tr>
     </tbody>
 </table>
