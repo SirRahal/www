@@ -15,3 +15,7 @@ $this->breadcrumbs=array(
 ?>
     <h1>Register</h1>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+
+<div style="position: absolute; right:100px; top:300px;">
+    <img src="/images/faq-ticket-codes.png"/>
+</div>

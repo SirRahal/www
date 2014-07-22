@@ -24,24 +24,24 @@
     <div class="row">
 
         <inputlable><b>Ticket</b></inputlable><br/>
-        <input>
+        <input title="This can be found in the bottom right of your ticket">
     </div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'first_name'); ?>
-		<?php echo $form->textField($model,'first_name',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'first_name',array('size'=>60,'maxlength'=>100,'title'=>'Please type carefully, this is whom the checks will be made out to.')); ?>
 		<?php echo $form->error($model,'first_name'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'last_name'); ?>
-		<?php echo $form->textField($model,'last_name',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'last_name',array('size'=>60,'maxlength'=>100,'title'=>'Please type carefully, this is whom the checks will be made out to.')); ?>
 		<?php echo $form->error($model,'last_name'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution')); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
