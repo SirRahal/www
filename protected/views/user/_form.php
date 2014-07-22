@@ -4,6 +4,14 @@
 /* @var $form CActiveForm */
 ?>
 
+<script>
+    function inputFocus(i){
+        if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+    }
+    function inputBlur(i){
+        if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
+    }
+</script>
 <div class="form">
 
 <?php
@@ -24,7 +32,7 @@
     <div class="row">
 
         <inputlable><b>Ticket</b></inputlable><br/>
-        <input title="This can be found in the bottom right of your ticket">
+        <input title="This can be found in the bottom right of your ticket" placeholder="000-0000" />
     </div>
 
 	<div class="row">
@@ -41,7 +49,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution')); ?>
+		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution', 'placeholder'=>'Someone@BracketFanatic.com')); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
@@ -53,7 +61,59 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'state'); ?>
-		<?php echo $form->textField($model,'state',array('size'=>2,'maxlength'=>2)); ?>
+        <?php echo $form->dropDownList($model,'state',array('status'=>'--',
+                                                            'AL'=>'AL'
+                                                            ,'AK'=>'AK'
+                                                            ,'AZ'=>'AZ'
+                                                            ,'AR'=>'AR'
+                                                            ,'CA'=>'CA'
+                                                            ,'CO'=>'CO'
+                                                            ,'CT'=>'CT'
+                                                            ,'DE'=>'DE'
+                                                            ,'DC'=>'DC'
+                                                            ,'FL'=>'FL'
+                                                            ,'GA'=>'GA'
+                                                            ,'HI'=>'HI'
+                                                            ,'ID'=>'ID'
+                                                            ,'IL'=>'IL'
+                                                            ,'IN'=>'IN'
+                                                            ,'IA'=>'IA'
+                                                            ,'KS'=>'KS'
+                                                            ,'KY'=>'KY'
+                                                            ,'LA'=>'LA'
+                                                            ,'ME'=>'ME'
+                                                            ,'MD'=>'MD'
+                                                            ,'MA'=>'MA'
+                                                            ,'MI'=>'MI'
+                                                            ,'MN'=>'MN'
+                                                            ,'MS'=>'MS'
+                                                            ,'MO'=>'MO'
+                                                            ,'MT'=>'MT'
+                                                            ,'NE'=>'NE'
+                                                            ,'NV'=>'NV'
+                                                            ,'NH'=>'NH'
+                                                            ,'NJ'=>'NJ'
+                                                            ,'NM'=>'NM'
+                                                            ,'NY'=>'NY'
+                                                            ,'NC'=>'NC'
+                                                            ,'ND'=>'ND'
+                                                            ,'OH'=>'OH'
+                                                            ,'OK'=>'OK'
+                                                            ,'OR'=>'OR'
+                                                            ,'PA'=>'PA'
+                                                            ,'RI'=>'RI'
+                                                            ,'SC'=>'SC'
+                                                            ,'SD'=>'SD'
+                                                            ,'TN'=>'TN'
+                                                            ,'TX'=>'TX'
+                                                            ,'UT'=>'UT'
+                                                            ,'VT'=>'VT'
+                                                            ,'VA'=>'VA'
+                                                            ,'WA'=>'WA'
+                                                            ,'WV'=>'WV'
+                                                            ,'WI'=>'WI'
+                                                            ,'WY'=>'WY'
+                                                        )); ?>
 		<?php echo $form->error($model,'state'); ?>
 	</div>
 
@@ -65,19 +125,19 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'phone'); ?>
-		<?php echo $form->textField($model,'phone',array('size'=>18,'maxlength'=>18)); ?>
+		<?php echo $form->textField($model,'phone',array('size'=>18,'maxlength'=>18, 'placeholder'=>'1(555)-555-5555')); ?>
 		<?php echo $form->error($model,'phone'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'user_name'); ?>
-		<?php echo $form->textField($model,'user_name',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'user_name',array('size'=>60,'maxlength'=>100,'minlength'=>5,'title'=>'Must be at least 5 characters long.', 'placeholder'=>'JonJackup')); ?>
 		<?php echo $form->error($model,'user_name'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>100,'minlength'=>5,'title'=>'Must be at least 5 characters long.')); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
 

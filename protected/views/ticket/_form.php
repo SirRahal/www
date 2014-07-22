@@ -14,7 +14,6 @@ $this->breadcrumbs=array(
 );
 
 
-//needs to replace the ticket ID from hard coded to entered in belowe
 $ticket_ID = $model->ID;
 $ticket = Ticket::model()->find_ticket_by_ID($ticket_ID);
 $ticket_code = $ticket['code'];
@@ -33,7 +32,7 @@ $school = School::model()->get_name_by_ID($school_ID);
 
 <script src="/js/general.js"></script>
 
-<p>Please fill out the following form with your login credentials:</p>
+<p>Please select a team from each seed.  The center column is your ticket, and don't forget to hit the save button when you are finished.<br/>This ticket can be edited up until noon of the first game EST.</p>
 <!--centered info needs to be updated by the user table-->
 <div class="centered_div text_center">
     <div class="boxed">
@@ -59,11 +58,11 @@ $school = School::model()->get_name_by_ID($school_ID);
         <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket_ID));?>
         <div class="picks">
             <!--save-->
-            <a style="width:100%;" href="#">Save</a>                                            <!--save my picks and go back to my tickets page-->
+            <button style="width:100%; border-radius: 0px;" href="#">Save</button>                                            <!--save my picks and go back to my tickets page-->
             <!--radom select all seeds-->
-            <a style="width:100%;" href="#">Random</a>                                          <!--onclick $picks = Ticket::model()->easy_pick(); and refresh my_picks div-->
+            <button style="width:100%;" href="#">Easy Pick</button>                                         <!--onclick $picks = Ticket::model()->easy_pick(); and refresh my_picks div-->
             <!--reset all seeds-->
-            <a style="width:100%;" onclick="my_picks_reset()" id="my_picks_reset">Reset</a>     <!--reset all picks to TBA and refresh the div-->
+            <button style="width:100%; border-radius: 0px;" onclick="my_picks_reset()" id="my_picks_reset">Reset</button>             <!--reset all picks to TBA and refresh the div-->
         </div>
     </div>
 </div>

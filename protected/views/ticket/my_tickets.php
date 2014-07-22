@@ -90,7 +90,7 @@ $this->breadcrumbs=array(
     <form>
         <fieldset>
             <label for="ticket_ID">Ticket ID #</label>
-            <input type="text" name="ticket_ID" id="ticket_ID" value="123-d3SIR" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your ticket">
+            <input type="text" name="ticket_ID" id="ticket_ID" placeholder="000-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your ticket">
             <img src="/images/faq-ticket-codes.png" width="150";/>
             <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
         </fieldset>

@@ -34,7 +34,7 @@ $this->breadcrumbs=array(
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
+		<p >
             Don't have an account? <a href="/index.php/user/register">Register Now</a>!<br/>
             Reset your account/password? <a href="#">Here</a>!
 		</p>

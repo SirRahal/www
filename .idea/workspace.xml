@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="my_tickets.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="my_tickets.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="195" selection-start="2910" selection-end="2910" vertical-scroll-proportion="-10.384615" vertical-offset="1024" max-vertical-offset="2380">
+            <state line="94" column="86" selection-start="3071" selection-end="3071" vertical-scroll-proportion="1.8179749" vertical-offset="0" max-vertical-offset="2380">
               <folding>
                 <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
@@ -50,11 +50,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/user/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="87" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.8077348" vertical-offset="204" max-vertical-offset="1615">
+            <state line="133" column="177" selection-start="6838" selection-end="6847" vertical-scroll-proportion="-31.384615" vertical-offset="1445" max-vertical-offset="2635">
+              <folding>
+                <marker date="1406046823812" expanded="true" signature="2048:2084" placeholder="..." />
+                <marker date="1406046823812" expanded="true" signature="2252:2288" placeholder="..." />
+                <marker date="1406046823812" expanded="true" signature="6184:6220" placeholder="..." />
+                <marker date="1406046823812" expanded="true" signature="6382:6418" placeholder="..." />
+                <marker date="1406046823812" expanded="true" signature="6622:6658" placeholder="..." />
+                <marker date="1406046823812" expanded="true" signature="6931:6967" placeholder="..." />
+                <marker date="1406046823812" expanded="true" signature="7221:7277" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="28" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-34.0" vertical-offset="0" max-vertical-offset="1020">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="8" selection-start="1687" selection-end="1687" vertical-scroll-proportion="-19.115385" vertical-offset="625" max-vertical-offset="1530">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/ticket/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/ticket/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="46" selection-start="597" selection-end="597" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="2006">
+              <folding>
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#2;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="region_buttons.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="55" selection-start="765" selection-end="765" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="901">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,10 +130,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/protected/views/ticket/_form.php" />
-        <option value="$PROJECT_DIR$/protected/views/ticket/my_tickets.php" />
         <option value="$PROJECT_DIR$/protected/views/user/register.php" />
         <option value="$PROJECT_DIR$/protected/views/user/_form.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/login.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
+        <option value="$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php" />
+        <option value="$PROJECT_DIR$/protected/views/ticket/_form.php" />
+        <option value="$PROJECT_DIR$/protected/views/ticket/my_tickets.php" />
       </list>
     </option>
   </component>
@@ -143,7 +206,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1918" height="1038" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -193,20 +256,6 @@
         <state line="192" column="0" selection-start="11423" selection-end="11423" vertical-scroll-proportion="1.8061117" vertical-offset="1550" max-vertical-offset="3366" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="195" selection-start="2910" selection-end="2910" vertical-scroll-proportion="-10.384615" vertical-offset="1024" max-vertical-offset="2380">
-          <folding>
-            <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/user/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="45" selection-start="405" selection-end="405" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="323">
@@ -218,8 +267,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/user/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="87" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.8077348" vertical-offset="204" max-vertical-offset="1615">
+        <state line="133" column="177" selection-start="6838" selection-end="6847" vertical-scroll-proportion="-31.384615" vertical-offset="1445" max-vertical-offset="2635">
+          <folding>
+            <marker date="1406046823812" expanded="true" signature="2048:2084" placeholder="..." />
+            <marker date="1406046823812" expanded="true" signature="2252:2288" placeholder="..." />
+            <marker date="1406046823812" expanded="true" signature="6184:6220" placeholder="..." />
+            <marker date="1406046823812" expanded="true" signature="6382:6418" placeholder="..." />
+            <marker date="1406046823812" expanded="true" signature="6622:6658" placeholder="..." />
+            <marker date="1406046823812" expanded="true" signature="6931:6967" placeholder="..." />
+            <marker date="1406046823812" expanded="true" signature="7221:7277" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="28" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-34.0" vertical-offset="0" max-vertical-offset="1020">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="8" selection-start="1687" selection-end="1687" vertical-scroll-proportion="-19.115385" vertical-offset="625" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="55" selection-start="765" selection-end="765" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="901">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="46" selection-start="597" selection-end="597" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="2006">
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#2;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="86" selection-start="3071" selection-end="3071" vertical-scroll-proportion="1.8179749" vertical-offset="0" max-vertical-offset="2380">
+          <folding>
+            <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
