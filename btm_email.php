@@ -3,22 +3,22 @@
 
 
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/Monthly-Machinery-Auction_as32812';
-$date = 'July 17th';
-$auction_title = 'Monthly Machinery Auction';
+$auction_url = 'http://auctions.btmindustrial.com/CNC-Replacement-Parts_a21372';
+$date = 'July 23rd';
+$auction_title = 'CNC Replacement Parts';
 
-$url1="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20052341";$img1="http://media.liveauctiongroup.net/i/21250/20052341_1s.jpg?v=8D163CE948CF870";$title1="34x96in Gap Lathe";
-$url2="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20058987";$img2="http://media.liveauctiongroup.net/i/21250/20058987_1s.jpg?v=8D16332B77392F0";$title2="BOKO Univ Mill";
-$url3="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006560";$img3="http://media.liveauctiongroup.net/i/21250/20006560_1s.jpg?v=8D1601417E33810";$title3="Tongil ID & OD Grinder";
-$url4="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006562";$img4="http://media.liveauctiongroup.net/i/21250/20006562_1s.jpg?v=8D16013F2FA84E0";$title4="Hor Production Mill";
-$url5="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006563";$img5="http://media.liveauctiongroup.net/i/21250/20006563_1s.jpg?v=8D1601774C173A0";$title5="Macc Cutoff Saw";
-$url6="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006566";$img6="http://media.liveauctiongroup.net/i/21250/20006566_1s.jpg?v=8D1601C8768E560";$title6="Bridgeport Mill w/ DRO";
-$url7="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006564";$img7="http://media.liveauctiongroup.net/i/21250/20006564_1s.jpg?v=8D16958F0AF2800";$title7="125 HP Atlas Air Compressor";
-$url8="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006565";$img8="http://media.liveauctiongroup.net/i/21250/20006565_1s.jpg?v=8D1601A22F63E90";$title8="25 HP Ingersoll Air Compressor";
-$url9="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20006567";$img9="http://media.liveauctiongroup.net/i/21250/20006567_1s.jpg?v=8D1601504DCA7A0";$title9="Natco Miltiple Spindle Drill Press";
-$url10="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20060956";$img10="http://media.liveauctiongroup.net/i/21250/20060956_1s.jpg?v=8D16339F7C83750";$title10="6 Spindle Clausing Drill Press";
-$url11="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20060957";$img11="http://media.liveauctiongroup.net/i/21250/20060957_1s.jpg?v=8D16339FBD0C740";$title11="6 Ton Schuler Hydraulic C Frame Press";
-$url12="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=50#i20060958";$img12="http://media.liveauctiongroup.net/i/21250/20060958_1s.jpg?v=8D16339F7C83750";$title12="Americal Broach";
+$url1="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20120632";$img1="http://media.liveauctiongroup.net/i/21372/20120632_1s.jpg?v=8D172C31B8F0EA0";$title1="Allen Bradley Racks";
+$url4="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20120637";$img4="http://media.liveauctiongroup.net/i/21372/20120637_1s.jpg?v=8D172C31B8F0EA0";$title4="AB Panelviewers";
+$url3="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20126444";$img3="http://media.liveauctiongroup.net/i/21372/20126444_1s.jpg?v=8D172C31B8F0EA0";$title3="AB Controllers";
+$url2="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20126458";$img2="http://media.liveauctiongroup.net/i/21372/20126458_1s.jpg?v=8D172C31B8F0EA0";$title2="Fanuc Servo Amplifiers";
+$url5="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20129294";$img5="http://media.liveauctiongroup.net/i/21372/20129294_1s.jpg?v=8D172C31B8F0EA0";$title5="Fanuc 16i & 18i Display Units";
+$url6="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20129295";$img6="http://media.liveauctiongroup.net/i/21372/20129295_1s.jpg?v=8D172C31B8F0EA0";$title6="Fanuc Servo Amplifiers";
+$url7="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20140457";$img7="http://media.liveauctiongroup.net/i/21372/20140457_1s.jpg?v=8D172C31B8F0EA0";$title7="Fanuc Servo Motors";
+$url8="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=2&ps=50#i20140486";$img8="http://media.liveauctiongroup.net/i/21372/20140486_1s.jpg?v=8D172C31B8F0EA0";$title8="AB Servo Motors";
+$url9="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=2&ps=50#i20144135";$img9="http://media.liveauctiongroup.net/i/21372/20144135_1s.jpg?v=8D172C31B8F0EA0";$title9="Indramat Permanent Magnet Motors";
+$url10="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=2&ps=50#i20161672";$img10="http://media.liveauctiongroup.net/i/21372/20161672_1s.jpg?v=8D172D4BE99BC10";$title10="AB Frequency Drivers";
+$url11="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=50#i20161684";$img11="http://media.liveauctiongroup.net/i/21372/20161684_1s.jpg?v=8D172D70AF8E750";$title11="Indramat AC Controller";
+$url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=50#i20161700";$img12="http://media.liveauctiongroup.net/i/21372/20161700_1s.jpg?v=8D172D70693B870";$title12="Fanuc Spindle Motor";
 
 
 
@@ -26,10 +26,12 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21250&as=32812&p=1&ps=5
 <!--banner part-->
 <div style="background-color: #333333; text-align: center; margin: 0px auto;">
 <p style="text-align: center;"><img alt="" src="https://media.campaigner.com/accountsmedia/43/437480/e44b703963d1447dbbd582b624092692.png" style="text-align: center; width: 615px; height: 78px; border-width: 0px; border-style: solid;"></p>
-<p style="text-align: center; font-size: 26px;"><font color="#ffffff"><?php echo $auction_title;?></font><font color="#ffffff"> Ending <?php echo $date;?> @ 1pm EST</font><font color="#ffffff"><br>
-        No Reserves, Everything Will Sell To The Highest Bidder.<br/>Nice selection of manual machinery and CNC Machines!</font></p>
-
-<strong><font color="#ffffff">
+<p style="text-align: center; font-size: 26px;">
+    <font color="#ffffff">
+        <?php echo $auction_title;?> Ending <?php echo $date;?> @ 1pm EST<br>
+        No Reserves, Everything Will Sell To The Highest Bidder.<br/>Over 200 Lots!
+</p>
+<strong>
     </font></strong>
 <div style="margin: 0px auto; background-color: #494949; color: #008000; font-size: 27px;">
         <span contenteditable="false" c2f="true" id="0" type="LINK" ><a href="<?php echo $auction_url; ?>" style="color: #cccccc;" target="_blank">Click Here for Auction Listing</a></span>
