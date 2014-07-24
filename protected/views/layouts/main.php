@@ -21,6 +21,25 @@
 
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
+
+
+
+<!--once they chose what they want and finalized, move to js folder -->
+    <script>
+        $(function() {
+            $( document ).tooltip({
+                items: " [div_popup]",
+                content: function() {
+                    var element = $( this );
+                    if ( element.is( "[div_popup]" ) ) {
+                        return "<img src='/images/ncaa-bracket.jpg'/>";
+                    }
+                }
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -29,6 +48,24 @@
 	<div id="header">
         <img src="/images/logo.png" width="500"/>
 		<!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
+        <!--bracket button-->
+        <div style="position:relative;">
+            <div class="ribbon-wrapper">
+                <a div_popup="">
+                    <div class="ribbon">
+                        BRACKET
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--bracket buttons example-->
+        <div class="display_bracket_button">
+            <a div_popup="">
+                <div class="bracket_button">
+                    <h3>Display Bracket</h3>
+                </div>
+            </a>
+        </div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
@@ -66,6 +103,7 @@
 	</div><!-- footer -->
 
 </div><!-- page -->
+
 
 </body>
 </html>

@@ -16227,3 +16227,927 @@ REQUEST_URI=/index.php/ticket/update/1
 in C:\wamp\www\protected\views\ticket\_form.php (21)
 in C:\wamp\www\protected\views\ticket\update.php (16)
 in C:\wamp\www\protected\controllers\TicketController.php (105)
+2014/07/24 14:26:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:26:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/s...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/st-stephens.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:26:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:26:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/s...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/st-stephens.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:27:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/s...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/st-stephens.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:27:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:27:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:28:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:29:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:29:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:29:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:30:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:32:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:32:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:32:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:33:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:33:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:35:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:38:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:38:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:41:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/images/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/07/24 14:43:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:43:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:44:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:45:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:46:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:46:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:46:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:47:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:48:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:48:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:49:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:51:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 14:53:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/tow...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/images/tower-bridge.jpg
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 16:53:12 [error] [exception.CException] exception 'CException' with message 'TicketController cannot find the requested view "container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('container/brack...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\TicketController.php(148): CController->render('my_tickets')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): TicketController->actionMyTickets()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('mytickets')
+#23 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/myticket...')
+#24 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/ticket/mytickets
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 16:53:20 [error] [exception.CException] exception 'CException' with message 'TicketController cannot find the requested view "container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('container/brack...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\TicketController.php(148): CController->render('my_tickets')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): TicketController->actionMyTickets()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('mytickets')
+#23 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/myticket...')
+#24 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/ticket/mytickets
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2014/07/24 16:53:38 [error] [exception.CException] exception 'CException' with message 'TicketController cannot find the requested view "/container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('/container/brac...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\TicketController.php(148): CController->render('my_tickets')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): TicketController->actionMyTickets()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('mytickets')
+#23 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/myticket...')
+#24 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/ticket/mytickets
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2014/07/24 16:53:39 [error] [exception.CException] exception 'CException' with message 'TicketController cannot find the requested view "/container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('/container/brac...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\TicketController.php(148): CController->render('my_tickets')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): TicketController->actionMyTickets()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('mytickets')
+#23 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/myticket...')
+#24 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/ticket/mytickets
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2014/07/24 16:53:41 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('/container/brac...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\yii\framework\web\actions\CViewAction.php(140): CController->render('pages/about')
+#13 C:\wamp\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#14 C:\wamp\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#16 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/page?view=about
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 16:53:42 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('/container/brac...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2014/07/24 16:53:44 [error] [exception.CException] exception 'CException' with message 'TicketController cannot find the requested view "/container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('/container/brac...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\TicketController.php(148): CController->render('my_tickets')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): TicketController->actionMyTickets()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('mytickets')
+#23 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/myticket...')
+#24 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/ticket/mytickets
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 16:53:49 [error] [exception.CException] exception 'CException' with message 'TicketController cannot find the requested view "container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('container/brack...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\TicketController.php(148): CController->render('my_tickets')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): TicketController->actionMyTickets()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('mytickets')
+#23 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/myticket...')
+#24 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/ticket/mytickets
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 16:54:02 [error] [exception.CException] exception 'CException' with message 'TicketController cannot find the requested view "container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('container/brack...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\TicketController.php(148): CController->render('my_tickets')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): TicketController->actionMyTickets()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('mytickets')
+#23 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/myticket...')
+#24 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/ticket/mytickets
+HTTP_REFERER=http://localhost/
+---
+2014/07/24 16:54:41 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/protected/views/site/container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('/protected/view...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2014/07/24 16:55:19 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/protected/views/site/container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('/protected/view...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2014/07/24 16:55:40 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/protected/views/site/container/bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\layouts\main.php(36): CController->renderPartial('/protected/view...')
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#10 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#11 C:\wamp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#12 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#13 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2014/07/24 17:33:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "icons.png".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('icons.png')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('icons.png')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/icons.png')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/icons.png
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/07/24 17:33:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "icons.png".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('icons.png')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('icons.png')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/icons.png')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/icons.png
+HTTP_REFERER=http://localhost/index.php/site/
+---
+2014/07/24 17:33:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "icons.png".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('icons.png')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('icons.png')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/icons.png')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/icons.png
+HTTP_REFERER=http://localhost/index.php/site/
+---
+2014/07/24 17:33:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "icons.png".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('icons.png')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('icons.png')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/icons.png')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/icons.png
+HTTP_REFERER=http://localhost/index.php/site/
+---
+2014/07/24 17:44:39 [error] [php] Use of undefined constant ip - assumed 'ip' (C:\wamp\www\protected\views\layouts\main.php:113)
+Stack trace:
+#0 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): TicketController->renderFile()
+#1 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\wamp\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\wamp\yii\framework\web\CBaseController.php(300): TicketController->endWidget()
+#5 C:\wamp\www\protected\views\layouts\column2.php(22): TicketController->endContent()
+#6 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\yii\framework\web\CBaseController.php(95): TicketController->renderInternal()
+#8 C:\wamp\yii\framework\web\CController.php(784): TicketController->renderFile()
+#9 C:\wamp\www\protected\controllers\TicketController.php(148): TicketController->render()
+#10 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): TicketController->actionMyTickets()
+#11 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): TicketController->runAction()
+#13 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#16 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\wamp\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#19 C:\wamp\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#20 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/mytickets
+in C:\wamp\www\protected\views\layouts\main.php (113)
+in C:\wamp\www\protected\views\layouts\column2.php (22)
+in C:\wamp\www\protected\controllers\TicketController.php (148)
