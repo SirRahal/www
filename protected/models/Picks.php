@@ -30,8 +30,8 @@ class Picks extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ID, ticket_ID, team_ID', 'required'),
-			array('ID, ticket_ID, team_ID', 'numerical', 'integerOnly'=>true),
+			array('ticket_ID, team_ID', 'required'),
+			array('ticket_ID, team_ID', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ID, ticket_ID, team_ID', 'safe', 'on'=>'search'),

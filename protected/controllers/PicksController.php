@@ -28,11 +28,11 @@ class PicksController extends Controller
 	{
 		return array(
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete','index','view','create','update','picks_selector'),
+                'actions'=>array('admin','delete','index','view','create','update','picks_selector','savepicks'),
                 'users'=>array('admin'),
             ),
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','create','update','picks_selector'),
+				'actions'=>array('index','view','create','update','picks_selector','savepicks'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -168,4 +168,23 @@ class PicksController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionSavepicks(){
+        $picks = $_POST['team_IDs'];
+
+        $ticket_ID = $_POST['ticket_ID'];
+
+        /** @var Ticket $ticket */
+        $ticket = Ticket::model()->findByPk($ticket_ID);
+        foreach($ticket->picks as $p){
+            $p->delete();
+        }
+        foreach($picks as $pick){
+            $new_pick = new Picks;
+            $new_pick->ticket_ID=$ticket_ID;
+            $new_pick->team_ID=$pick;
+            $new_pick->save();
+        }
+    var_dump ($new_pick);
+    }
 }

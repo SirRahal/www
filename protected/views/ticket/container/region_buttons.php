@@ -35,7 +35,7 @@ $picks = Picks::model()->find_tickets_by_ID($ticket_ID);
         <div style="float: left; width:20px; padding-top: 7px;" >
             <?php echo $seed ;?>
         </div>
-        <input type="radio" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
+        <input type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
         <label style="border-radius: 0px;" for="<?php echo $triger_ID; ?>"><?php echo $team; ?></label>
     </div>
     <?php } ?>
@@ -47,6 +47,6 @@ $picks = Picks::model()->find_tickets_by_ID($ticket_ID);
         var team_ID = $(ID).parent('div').attr('team_ID');
         $('#radio'+seed).text(team);
         $('#radio'+seed).attr('team_ID',team_ID);
-        $('#radio'+seed).attr('ticket',ticket_ID);
+        $('#radio'+seed).attr('ticket',<?php echo $ticket_ID;?> );
     }
 </script>

@@ -58,7 +58,7 @@ $school = School::model()->get_name_by_ID($school_ID);
         <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket_ID));?>
         <div class="picks">
             <!--save-->
-            <button style="width:100%; border-radius: 0px;" href="#">Save</button>                                            <!--save my picks and go back to my tickets page-->
+            <button style="width:100%; border-radius: 0px;" onclick="save_pic()">Save</button>                                            <!--save my picks and go back to my tickets page-->
             <!--radom select all seeds-->
             <button style="width:100%;" href="#">Easy Pick</button>                                         <!--onclick $picks = Ticket::model()->easy_pick(); and refresh my_picks div-->
             <!--reset all seeds-->
@@ -68,6 +68,30 @@ $school = School::model()->get_name_by_ID($school_ID);
 </div>
 
 <script>
+    function save_pic(){
+        var data = {};
+        var url = '/index.php/picks/savepicks'
+        var count = 0;
+        $('input:checked').each(function(){
+            var team_ID = $(this).val();
+            var seed = $(this).attr('seed');
+            data[seed] = team_ID;
+            count++;
+        })
+        if(count<16){
+            alert("please pick all 16 teams");
+            return false;
+        }
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: { team_IDs : data , ticket_ID : <?php echo $ticket_ID; ?>},
+            success: function(){
+                window.location.reload()
+            }
+        });
+
+    }
     $(function() {
         /*set var picks = array of TBA and reset th my_picks div*/
         $("#my_picks_reset").click(function() {
