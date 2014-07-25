@@ -79,14 +79,14 @@ div.form .note
 
 div.form span.required
 {
-	color: red;
+	color: #03e709;
 }
 
 div.form div.error label:first-child,
 div.form label.error,
 div.form span.error
 {
-	color: #C00;
+	color: #303131;
 }
 
 div.form div.error input,
@@ -96,8 +96,8 @@ div.form input.error,
 div.form textarea.error,
 div.form select.error
 {
-	background: #FEE;
-	border-color: #C00;
+	background: rgb(214, 250, 255);
+	border-color: #303131;
 }
 
 div.form div.success input,
@@ -118,17 +118,18 @@ div.form div.success label
 
 div.form .errorSummary
 {
-	border: 2px solid #C00;
+	border: 2px solid #f2890d;
 	padding: 7px 7px 12px 7px;
 	margin: 0 0 20px 0;
 	background: #FEE;
 	font-size: 0.9em;
+    width:400px;
 }
 
 div.form .errorMessage
 {
-	color: red;
-	font-size: 0.9em;
+	color: #ba5e0d;
+	font-size: 1em;
 }
 
 div.form .errorSummary p

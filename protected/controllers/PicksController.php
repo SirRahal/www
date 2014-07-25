@@ -185,6 +185,5 @@ class PicksController extends Controller
             $new_pick->team_ID=$pick;
             $new_pick->save();
         }
-    var_dump ($new_pick);
     }
 }

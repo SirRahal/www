@@ -19,6 +19,11 @@
     <script type="text/javascript" src="/js/jquery_ui.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/jquery-ui-custom/jquery-ui.css" />
 
+    <script type="text/javascript" src="/js/jquery.toastmessage.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/jquery.toastmessage.css"/>
+
+    <script type="text/javascript" src="/js/jquery.freeow.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/freeow.css"/>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
@@ -43,6 +48,8 @@
 </head>
 
 <body>
+<!--pop up notification box-->
+<div id="freeow" class="freeow freeow-top-middle smokey"></div>
 <div class="container" id="page">
 
 	<div id="header">

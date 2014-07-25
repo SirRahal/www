@@ -1,0 +1,86 @@
+/*
+
+/* Outermost Container */
+.freeow {
+    position: fixed;
+    width: 300px;
+    z-index: 9999;
+}
+
+.freeow-top-middle {
+    top:30px;
+    left:40%;
+}
+/* Message */
+.freeow > div {
+    position: relative;
+    margin-bottom: 5px;
+	cursor: pointer;
+}
+.freeow .content {
+    margin: 5px 5px 5px 69px;
+}
+.freeow h2,
+.freeow p {
+    margin: 0;
+    padding: 0;
+
+}
+.freeow .icon {
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    top: 5px;
+    left: 10px;
+    background: transparent url(../images/freeow_images/notice.png) no-repeat 0 0;
+    z-index: 1;
+}
+.freeow .close {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 8px;
+    background: none;
+    z-index: 2;
+}
+.freeow div:hover .close {
+    background: transparent url(../images/freeow_images/close.png) no-repeat 0 0;
+}
+
+
+/* Icons -------------------------------------------------------------------- */
+
+.freeow .slide .icon   { background-image: url(../images/freeow_images/slide.png); }
+.freeow .pushpin .icon { background-image: url(../images/freeow_images/pushpin.png); }
+.freeow .error .icon   { background-image: url(../images/freeow_images/error.png); }
+
+
+/* Specific Styles ---------------------------------------------------------- */
+
+/* Smokey */
+.smokey {
+	color: white;
+    background: #000;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background: #000;
+    opacity: .85;
+    -moz-box-shadow: 2px 2px 3px #888;
+    -webkit-box-shadow: 2px 2px 3px #888;
+    box-shadow: 2px 2px 3px #888;
+}
+
+.smokey:hover {
+    background: #494949;
+    border: solid #ff910d 1px;
+}
+ .smokey h2 {
+     color: #ffbe08;
+    font-family: "Lucida Grande", Helvetica, arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
