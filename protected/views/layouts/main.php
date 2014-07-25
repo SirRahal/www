@@ -19,9 +19,6 @@
     <script type="text/javascript" src="/js/jquery_ui.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/jquery-ui-custom/jquery-ui.css" />
 
-    <script type="text/javascript" src="/js/jquery.toastmessage.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/jquery.toastmessage.css"/>
-
     <script type="text/javascript" src="/js/jquery.freeow.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/freeow.css"/>
 

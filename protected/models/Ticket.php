@@ -157,13 +157,13 @@ class Ticket extends CActiveRecord
                 $m++;
             }
         }
-        $start_array[18] = shuffle($start_array);
+        $start_array[14] = shuffle($start_array);
         $i=0;
         foreach($start_array as $region_selected){
             $i++;
             $team = TeamTournamentRegion::model()->findByAttributes(array('tournament_region_ID' => $region_selected, 'seed' => $i));
             $team_name = Team::model()->findByAttributes(array('ID' => $team['team_ID']));
-            $team_array[$i-1]=$team_name['name'];
+            $team_array[$i-1]=$team_name['ID'];
         }
         return $team_array;
     }

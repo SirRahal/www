@@ -17,9 +17,10 @@ $this->breadcrumbs=array(
 $ticket_ID = $model->ID;
 $ticket = Ticket::model()->find_ticket_by_ID($ticket_ID);
 $ticket_code = $ticket['code'];
-if(isset($_GET['my_picks']))
+if(isset($_POST['my_picks']))
 {
-    $my_picks = $_GET['my_picks'];
+    $my_picks = json_decode($_POST['my_picks']);
+    var_dump($my_picks);
 }
 if(!isset($my_picks)){
     $my_picks = Picks::model()->find_tickets_by_ID($ticket_ID);
@@ -93,10 +94,22 @@ $school = School::model()->get_name_by_ID($school_ID);
 
     }
     function reset_picks(){
+            $("#freeow").freeow("Resetting!", "One moment as we reset your picks.  Please note that it will go back to your last saved entries");
             window.location.reload();
     }
     function easy_picks(){
-
+        $("#freeow").freeow("Easy picking!", "One moment as we easy pick for you!  If these picks are not good enough for you, you can reset or pick other teams.");
+        var url = '/index.php/ticket/easypicks/'+<?php echo $ticket_ID; ?>;
+        <?php $easy_picks = Ticket::model()->easy_pick(); ?>
+        var data = <?php echo json_encode($easy_picks); ?>;
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {my_picks : data },
+            success: function(){
+                alert("got here");
+            }
+        });
     }
 </script>
 

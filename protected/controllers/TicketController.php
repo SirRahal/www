@@ -28,16 +28,16 @@ class TicketController extends Controller
     {
         return array(
             array('allow',
-                'actions'=>array('view','update'),
+                'actions'=>array('view','update','easypicks'),
                 'users'=>array(Yii::app()->user->name),
                 'expression' => 'User::model()->ownsTicket($_GET[\'id\'])'
             ),
             array('allow',
-                'actions'=>array('myTickets'),
+                'actions'=>array('myTickets','easypicks'),
                 'users'=>array('*'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete','index','create','view','update','myTickets'),
+                'actions'=>array('admin','delete','index','create','view','update','myTickets','easypicks'),
                 'users'=>array('admin'),
             ),
             array('deny',  // deny all users
@@ -93,6 +93,8 @@ class TicketController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+
+
 		if(isset($_POST['Ticket']))
 		{
 			$model->attributes=$_POST['Ticket'];
@@ -104,6 +106,15 @@ class TicketController extends Controller
 			'model'=>$model,
 		));
 	}
+
+    public function actionEasypicks($id){
+        $model=$this->loadModel($id);
+        if(isset($_POST['my_picks']))
+        {
+            $my_picks = $_POST['my_picks'];
+            $this->redirect(array('update', 'id'=>$model->ID, 'my_picks'=>$my_picks));
+        }
+    }
 
 	/**
 	 * Deletes a particular model.
