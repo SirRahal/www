@@ -93,27 +93,32 @@ class TicketController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+        if(isset( $_POST['easy_picks']))
+        {
+            $my_picks = Ticket::model()->easy_pick(); // returns an array of 16
+            $model->attributes = $my_picks;
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->ID));
+        }
 
+        if(isset($_POST['Ticket']))
+        {
+            $model->attributes=$_POST['Ticket'];
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->ID));
+        }
 
-		if(isset($_POST['Ticket']))
-		{
-			$model->attributes=$_POST['Ticket'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
-		}
-
-		$this->render('update',array(
-			'model'=>$model,
-		));
+        $this->render('update',array(
+            'model'=>$model,
+        ));
 	}
 
     public function actionEasypicks($id){
         $model=$this->loadModel($id);
-        if(isset($_POST['my_picks']))
-        {
-            $my_picks = $_POST['my_picks'];
-            $this->redirect(array('update', 'id'=>$model->ID, 'my_picks'=>$my_picks));
-        }
+
+        $my_picks = Ticket::model()->easy_pick();
+        $url = 'localhost/index.php/ticket/update/3';
+        $this->redirect($_POST[$url],$my_picks = $my_picks);
     }
 
 	/**

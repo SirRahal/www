@@ -19,8 +19,8 @@ $ticket = Ticket::model()->find_ticket_by_ID($ticket_ID);
 $ticket_code = $ticket['code'];
 if(isset($_POST['my_picks']))
 {
-    $my_picks = json_decode($_POST['my_picks']);
-    var_dump($my_picks);
+    $my_picks =$_POST['my_picks'];
+
 }
 if(!isset($my_picks)){
     $my_picks = Picks::model()->find_tickets_by_ID($ticket_ID);
@@ -61,7 +61,7 @@ $school = School::model()->get_name_by_ID($school_ID);
             <!--save-->
             <button style="width:100%; border-radius: 0px;" onclick="save_picks()">Save</button>                                            <!--save my picks and go back to my tickets page-->
             <!--radom select all seeds-->
-            <button style="width:100%;" onclick="easy_picks()">Easy Pick</button>                                         <!--onclick $picks = Ticket::model()->easy_pick(); and refresh my_picks div-->
+            <button style="width:100%; border-radius: 0px;" onclick="easy_picks()">Easy Pick</button>                                         <!--onclick $picks = Ticket::model()->easy_pick(); and refresh my_picks div-->
             <!--reset all seeds-->
             <button style="width:100%; border-radius: 0px;" onclick="reset_picks()">Reset</button>             <!--reset all picks to TBA and refresh the div-->
         </div>
@@ -98,16 +98,14 @@ $school = School::model()->get_name_by_ID($school_ID);
             window.location.reload();
     }
     function easy_picks(){
-        $("#freeow").freeow("Easy picking!", "One moment as we easy pick for you!  If these picks are not good enough for you, you can reset or pick other teams.");
-        var url = '/index.php/ticket/easypicks/'+<?php echo $ticket_ID; ?>;
-        <?php $easy_picks = Ticket::model()->easy_pick(); ?>
-        var data = <?php echo json_encode($easy_picks); ?>;
+        var url = '/index.php/ticket/update/'+<?php echo $ticket_ID; ?>;
+        var easy_picks = ''+<?php $easy_picks = Ticket::model()->easy_pick(); ?>
         $.ajax({
             type: "POST",
             url: url,
-            data: {my_picks : data },
+            data: { easy_picks : easy_picks},
             success: function(){
-                alert("got here");
+                window.location.reload();
             }
         });
     }
