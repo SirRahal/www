@@ -71,7 +71,7 @@ $school = School::model()->get_name_by_ID($school_ID);
 <script>
     function save_picks(){
         var data = {};
-        var url = '/index.php/picks/savepicks'
+        var url = '/index.php/picks/savepicks';
         var count = 0;
         $('input:checked').each(function(){
             var team_ID = $(this).val();
@@ -99,13 +99,12 @@ $school = School::model()->get_name_by_ID($school_ID);
     }
     function easy_picks(){
         var url = '/index.php/ticket/update/'+<?php echo $ticket_ID; ?>;
-        var easy_picks = ''+<?php $easy_picks = Ticket::model()->easy_pick(); ?>
         $.ajax({
             type: "POST",
             url: url,
-            data: { easy_picks : easy_picks},
+            data: { easy_picks : 1},
             success: function(){
-                window.location.reload();
+                //do something here like a refresh or redirect
             }
         });
     }

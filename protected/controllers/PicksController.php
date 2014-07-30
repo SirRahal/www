@@ -171,9 +171,7 @@ class PicksController extends Controller
 
     public function actionSavepicks(){
         $picks = $_POST['team_IDs'];
-
         $ticket_ID = $_POST['ticket_ID'];
-
         /** @var Ticket $ticket */
         $ticket = Ticket::model()->findByPk($ticket_ID);
         foreach($ticket->picks as $p){

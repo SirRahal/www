@@ -157,7 +157,7 @@ class Ticket extends CActiveRecord
                 $m++;
             }
         }
-        $start_array[14] = shuffle($start_array);
+        $start_array[16] = shuffle($start_array);
         $i=0;
         foreach($start_array as $region_selected){
             $i++;

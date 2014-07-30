@@ -93,12 +93,12 @@ class TicketController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-        if(isset( $_POST['easy_picks']))
-        {
+        if(isset($_POST['easy_picks']) && $_POST['easy_picks']){
             $my_picks = Ticket::model()->easy_pick(); // returns an array of 16
             $model->attributes = $my_picks;
-            if($model->save())
+            if($model->save()){
                 $this->redirect(array('view','id'=>$model->ID));
+            }
         }
 
         if(isset($_POST['Ticket']))
@@ -111,7 +111,7 @@ class TicketController extends Controller
         $this->render('update',array(
             'model'=>$model,
         ));
-	}
+    }
 
     public function actionEasypicks($id){
         $model=$this->loadModel($id);
@@ -191,4 +191,12 @@ class TicketController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionAddTicket(){
+        if(isset($_POST['ticket_code'])){
+            return true;
+        }
+        return false;
+    }
+
 }
