@@ -33,7 +33,7 @@ class TicketController extends Controller
                 'expression' => 'User::model()->ownsTicket($_GET[\'id\'])'
             ),
             array('allow',
-                'actions'=>array('myTickets','easypicks'),
+                'actions'=>array('myTickets','easypicks','addTicket'),
                 'users'=>array('*'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -192,10 +192,20 @@ class TicketController extends Controller
 		}
 	}
 
+
     public function actionAddTicket(){
+        //get the ticket_code, check to see if it is set
         if(isset($_POST['ticket_code'])){
-            return true;
+            //set ticket code
+            $ticket_code = $_POST['ticket_code'];
+            //get ticket that is owned by me with that ticket code
+            $ticket = Ticket::model()->find_ticket_by_code($ticket_code);
+            //see if the ticket exists
+            if($ticket instanceof Ticket){
+                return $ticket->reassign($ticket);
+            }
         }
+        //if anything fails, return false.
         return false;
     }
 

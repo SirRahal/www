@@ -167,4 +167,15 @@ class Ticket extends CActiveRecord
         }
         return $team_array;
     }
+
+    public static function find_ticket_by_code($ticket_code){
+        return Ticket::model()->findByAttributes(array('user_ID' => 1, 'code' => $ticket_code));
+    }
+
+    public static function reassign($ticket){
+        $ticket->user_ID = User::model()->get_user_ID();
+        $ticket->save();
+    }
+
+
 }

@@ -10,7 +10,6 @@ $this->breadcrumbs=array(
 );
     $mytickets = Ticket::model()->get_tickets_by_user_ID();
 ?>
-
 <head>
     <style>
         .no-close .ui-dialog-titlebar-close {
@@ -23,10 +22,6 @@ $this->breadcrumbs=array(
                 heightStyle: "content"
             });
         });
-
-
-
-        <!--------------------------------------------------------------------------------------------------------------------------------------------------------Working on this code-->
         $(function() {
             var dialog, form,
                 ticket_code = $( "#ticket_code"),
@@ -35,25 +30,20 @@ $this->breadcrumbs=array(
 
             function addTicket() {
                 var valid = false;
-                //call action controller to locate ticket
-                //if true return true
-                alert('before ajax');
                 $.ajax({
                     type: "POST",
-                    url: '/index.php/ticket/addTicket',
-                    data: {ticket_code : ticket_code},
+                    url: '<?php echo Yii::app()->createUrl('ticket/addTicket'); ?>',
+                    data: {ticket_code : ticket_code.val()},
                     success: function(){
-                        alert('got here');
-                        valid = true;
-                    }
-                });
-                alert("after ajax");
-                if ( valid ) {
-                    dialog.dialog( "close" );
-                    alert('yay');
+                        $("#freeow").freeow("Ticket Code Correct!", "The ticket will now be added to your ticket collection.  One Moment!");
+                        dialog.dialog( "close" );
+                        window.location.href='/index.php/ticket/mytickets';
+                    }, error : function(){
+                            $("#freeow").freeow("Ticket Code Incorrect!", "The ticket code entered is incorrect.  Please check the code and try again.", {classes : ["error"]});
+                        }
                 }
+            );
             }
-
             dialog = $( "#dialog-form" ).dialog({
                 autoOpen: false,
                 height: 350,
@@ -81,20 +71,8 @@ $this->breadcrumbs=array(
     </script>
 </head>
 
-<div id="dialog-form" title="Add a Ticket">
-    <p class="validateTips">Please Enter Ticket Number</p>
 
-    <form>
-        <fieldset>
-            <label for="ticket_ID">Ticket Code #</label>
-            <input type="text" name="ticket_code" id="ticket_code" placeholder="000-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your ticket">
-            <img src="/images/faq-ticket-codes.png" width="150";/>
-            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-        </fieldset>
-    </form>
-</div>
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------Working on this code-->
 
 
 <h1>My Tickets</h1>
@@ -129,3 +107,14 @@ $this->breadcrumbs=array(
     <?php } ?>
 </div>
 
+<div id="dialog-form" title="Add a Ticket">
+    <p class="validateTips">Please Enter Ticket Number</p>
+    <form>
+        <fieldset>
+            <label for="ticket_code">Ticket Code #</label>
+            <input type="text" name="ticket_code" id="ticket_code" placeholder="000-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your ticket">
+            <img src="/images/faq-ticket-codes.png" width="150";/>
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+    </form>
+</div>
