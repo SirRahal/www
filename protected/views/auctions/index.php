@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 
 
 ?>
-
+<?php echo $this->renderPartial('/site/container/auction_posting'); ?>
 <h1>Upcoming Auctions</h1>
+
 <div style="position: absolute; color: #519bc5; margin-left: 250px; margin-top: 10px; text-align: center;">
-    <b >Coming Soon!</b>
-    <div >Search Function & Post Your Own Auctions</div>
+    <button id="post_auction">Post Your Auctions</button>
 </div>
 <div class="main_container" style="width:100%; ">
 
@@ -38,3 +38,5 @@ $this->breadcrumbs=array(
     </div>
 
 <?php } ?>
+
+

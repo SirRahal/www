@@ -8,9 +8,11 @@
 
 ?>
 <html>
+
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src="/js/tab_scripts_function.js"></script>
+
     <style>
         .covers{
             float: left;
@@ -52,6 +54,7 @@
     </style>
 </head>
 <body>
+
 <!--latest issue with information about it-->
 <div>
     <div class="covers issue" url="<?php echo substr($this->url,8);?>">
@@ -84,6 +87,7 @@
         <?php echo $this->renderPartial('container/auctions');?>
     <div style="margin-top: 15px;">
         <button onClick="location.href='/index.php/auctions'">Click Here For Auctions</button>
+        <button id="post_auction">Post Your Auctions</button>
     </div>
 </div>
     <!--tab 2-->
@@ -226,7 +230,6 @@
 
 </div>
 </section>
-
 
 
 

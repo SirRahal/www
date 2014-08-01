@@ -28,7 +28,7 @@ class AuctionsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','registerClick'),
+				'actions'=>array('index','view','registerClick','post_auction'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -184,5 +184,37 @@ class AuctionsController extends Controller
         }else{
             //error statement
         }
+    }
+
+    public function actionPost_auction(){
+        $name = $_POST['name'];
+        $email= $_POST['email'];
+        $phone = $_POST['phone'];
+        $auctioneer = $_POST['auctioneer'];
+        $title = $_POST['title'];
+        $location = $_POST['location'];
+        $date = $_POST['date'];
+        $url = $_POST['url'];
+        $info = $_POST['info'];
+
+        $body = "name : ".$name . "\r".
+                "email : ".$email . "\r".
+                "phone : ".$phone . "\r".
+                "auctioneer : ".$auctioneer . "\r".
+                "title : ".$title . "\r".
+                "location : ".$location . "\r".
+                "date : ".$date . "\r".
+                "url : ".$url . "\r".
+                "info : ".$info . "\r";
+
+        $name='=?UTF-8?B?'.base64_encode($name).'?=';
+        $subject='=?UTF-8?B?'.base64_encode('AUCTION POSTING!').'?=';
+        $headers="From: $name <{$email}>\r\n".
+            "Reply-To: {$email}\r\n".
+            "MIME-Version: 1.0\r\n".
+            "Content-Type: text/plain; charset=UTF-8";
+
+        mail(Yii::app()->params['adminEmail'],$subject,$body,$headers);
+        return true;
     }
 }

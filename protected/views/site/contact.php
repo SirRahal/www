@@ -104,10 +104,6 @@ $this->breadcrumbs=array(
     </div>
     <div class="clear"></div>
 <div class="form">
-
-
-
-
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'contact-form',
 	'enableClientValidation'=>true,
