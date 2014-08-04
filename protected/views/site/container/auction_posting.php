@@ -28,34 +28,53 @@
             tips = $( ".validateTips" );
 
         function addUser() {
-            var valid = true;
-            allFields.removeClass( "ui-state-error" );
-            $.ajax({
-                    type: "POST",
-                    url: '<?php echo Yii::app()->createUrl('auctions/post_auction'); ?>',
-                    data: {
-                        name : name.val(),
-                        email: email.val(),
-                        phone : phone.val(),
-                        auctioneer : auctioneer.val(),
-                        title : title.val(),
-                        location : location.val(),
-                        date : date.val(),
-                        url : url.val(),
-                        info : info.val()
-                    },
-                    success: function(){
-                        alert('Thank you for posting your auction.  Someone will be contacting you soon!');
-                        dialog.dialog( "close" );
-                    }, error : function(){
-                        alert('sorry there is an error with your form, please try again')
+            if(checkValid())
+            {
+                var valid = true;
+                allFields.removeClass( "ui-state-error" );
+                $.ajax({
+                        type: "POST",
+                        url: '<?php echo Yii::app()->createUrl('auctions/post_auction'); ?>',
+                        data: {
+                            name : name.val(),
+                            email: email.val(),
+                            phone : phone.val(),
+                            auctioneer : auctioneer.val(),
+                            title : title.val(),
+                            location : location.val(),
+                            date : date.val(),
+                            url : url.val(),
+                            info : info.val()
+                        },
+                        success: function(){
+                            alert('Thank you for posting your auction.  Someone will be contacting you soon!');
+                            dialog.dialog( "close" );
+                        }, error : function(){
+                            alert('Sorry there is an error with your form, please try again.  If the issue happens again, please contact us to assist you')
+                        }
                     }
-                }
-            );
-            if ( valid ) {
-                dialog.dialog( "close" );
+                );
+            }else{
+                alert('Please fill out the whole form before submitting.');
             }
             return valid;
+        }
+
+        function checkValid(){
+            if( name.val() < 1 ||
+                email.val() < 1 ||
+                phone.val() < 1 ||
+                auctioneer.val() < 1 ||
+                title.val() < 1 ||
+                location.val() < 1 ||
+                date.val() < 1 ||
+                url.val() < 1 ||
+                info.val() < 1 ){
+                return false;
+            }else{
+                return true;
+            }
+
         }
 
         dialog = $( "#dialog-form" ).dialog({
@@ -96,10 +115,10 @@
     <p class="validateTips">All form fields are required.</p>
     <div style="position: absolute; right:10px; width:300px;">
         <div class="note-box">
-            Please not that the information to the left will not be shared to the public.  This is for Industrial Times to contact you about your auction.
+            Please note that the information to the left will not be shared to the public.  This is for Industrial Times to contact you about your auction.
         </div>
         <div class="note-box">
-            The Auction information will be posting on our home page, auction page, as well as sent out in 2 email blasts.  The auctioneer will also recieve his own page with listing off all upcoming auctions.
+            The Auction information will be posting on our home page, auction page, as well as sent out in 2 email blasts.  The auctioneer will also receive his own page with listing off all upcoming auctions.
         </div>
     </div>
 
