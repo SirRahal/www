@@ -142,5 +142,9 @@ class TeamTournamentRegion extends CActiveRecord
         return $row['total_points'];
     }
 
+    public static function update_total_points($team_1_ID, $team_2_ID, $team_1_score, $team_2_score){
+        return true;
+    }
+
 
 }

@@ -63,8 +63,14 @@ class GameController extends Controller
 		if(isset($_POST['Game']))
 		{
 			$model->attributes=$_POST['Game'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+			if($model->save()){
+                //update team_tournament_region total points for both teams
+                TeamTournamentRegion::model()->update_total_points($model->team_1_ID,$model->team_2_ID,$model->team_1_score,$model->team_2_score);
+                //update ticket rd_ points, and total points for both teams
+                Ticket::model()->update_ticket_points($model->team_1_ID,$model->team_2_ID,$model->team_1_score,$model->team_2_score,$model->round);
+                $this->redirect(array('view','id'=>$model->ID));
+            }
+
 		}
 
 		$this->render('create',array(

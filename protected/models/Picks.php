@@ -116,4 +116,9 @@ class Picks extends CActiveRecord
         return $my_picks_array;
 
     }
+
+    public static function get_tickets_pick($team_ID){
+        $picks = Picks::model()->findAllByAttributes(array('team_ID'=>$team_ID));
+        return Ticket::model()->
+    }
 }
