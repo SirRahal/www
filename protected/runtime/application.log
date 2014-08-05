@@ -21046,3 +21046,308 @@ Stack trace:
 REQUEST_URI=/index.php/ticket/addTicket
 HTTP_REFERER=http://localhost/index.php/ticket/mytickets
 ---
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "0" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "1" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "2" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "3" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "4" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "5" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "6" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "7" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "8" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "9" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "10" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "11" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "12" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "13" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "14" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "15" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:12 [warning] [application] Failed to set unsafe attribute "16" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "0" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "1" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "2" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "3" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "4" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "5" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "6" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "7" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "8" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "9" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "10" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "11" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "12" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "13" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "14" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "15" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:25:31 [warning] [application] Failed to set unsafe attribute "16" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "0" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "1" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "2" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "3" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "4" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "5" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "6" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "7" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "8" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "9" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "10" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "11" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "12" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "13" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "14" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "15" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 13:28:18 [warning] [application] Failed to set unsafe attribute "16" of "Ticket".
+in C:\wamp\www\protected\controllers\TicketController.php (98)
+in C:\wamp\www\index.php (13)
+2014/08/05 14:06:28 [error] [php] Use of undefined constant my_picks - assumed 'my_picks' (C:\wamp\www\protected\views\ticket\_form.php:20)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): TicketController->renderFile()
+#1 C:\wamp\www\protected\views\ticket\update.php(16): TicketController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): TicketController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): TicketController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): TicketController->renderPartial()
+#6 C:\wamp\www\protected\controllers\TicketController.php(112): TicketController->render()
+#7 unknown(0): TicketController->actionUpdate()
+#8 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): TicketController->runAction()
+#12 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#15 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#18 C:\wamp\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#19 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/5
+in C:\wamp\www\protected\views\ticket\_form.php (20)
+in C:\wamp\www\protected\views\ticket\update.php (16)
+in C:\wamp\www\protected\controllers\TicketController.php (112)
+2014/08/05 14:06:59 [error] [php] A session had already been started - ignoring session_start() (C:\wamp\www\protected\controllers\TicketController.php:96)
+Stack trace:
+#0 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): TicketController->runAction()
+#4 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#7 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#10 C:\wamp\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/5
+in C:\wamp\www\protected\controllers\TicketController.php (96)
+in C:\wamp\www\index.php (13)
+2014/08/05 14:07:21 [error] [php] A session had already been started - ignoring session_start() (C:\wamp\www\protected\controllers\TicketController.php:96)
+Stack trace:
+#0 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): TicketController->runAction()
+#4 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#7 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#10 C:\wamp\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/5
+in C:\wamp\www\protected\controllers\TicketController.php (96)
+in C:\wamp\www\index.php (13)
+2014/08/05 14:09:04 [error] [php] A session had already been started - ignoring session_start() (C:\wamp\www\protected\views\ticket\_form.php:20)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CBaseController.php(95): TicketController->renderInternal()
+#1 C:\wamp\yii\framework\web\CController.php(869): TicketController->renderFile()
+#2 C:\wamp\www\protected\views\ticket\update.php(16): TicketController->renderPartial()
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): TicketController->renderInternal()
+#5 C:\wamp\yii\framework\web\CController.php(869): TicketController->renderFile()
+#6 C:\wamp\yii\framework\web\CController.php(782): TicketController->renderPartial()
+#7 C:\wamp\www\protected\controllers\TicketController.php(112): TicketController->render()
+#8 unknown(0): TicketController->actionUpdate()
+#9 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#10 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): TicketController->runAction()
+#13 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#16 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\wamp\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#19 C:\wamp\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#20 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/5
+in C:\wamp\www\protected\views\ticket\_form.php (20)
+in C:\wamp\www\protected\views\ticket\update.php (16)
+in C:\wamp\www\protected\controllers\TicketController.php (112)
+2014/08/05 14:09:53 [error] [php] A session had already been started - ignoring session_start() (C:\wamp\www\protected\controllers\TicketController.php:96)
+Stack trace:
+#0 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): TicketController->runAction()
+#4 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#7 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#10 C:\wamp\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#11 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/5
+in C:\wamp\www\protected\controllers\TicketController.php (96)
+in C:\wamp\www\index.php (13)
+2014/08/05 14:40:10 [error] [php] Object of class Team could not be converted to string (C:\wamp\yii\framework\db\CDbCommand.php:275)
+Stack trace:
+#0 C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php(100): CMysqlCommandBuilder->bindValues()
+#1 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1350): CMysqlCommandBuilder->createFindCommand()
+#2 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1519): Team->query()
+#3 C:\wamp\www\protected\views\ticket\container\my_picks_div.php(18): Team->findByAttributes()
+#4 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\yii\framework\web\CBaseController.php(95): TicketController->renderInternal()
+#6 C:\wamp\yii\framework\web\CController.php(869): TicketController->renderFile()
+#7 C:\wamp\www\protected\views\ticket\_form.php(59): TicketController->renderPartial()
+#8 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#9 C:\wamp\yii\framework\web\CBaseController.php(95): TicketController->renderInternal()
+#10 C:\wamp\yii\framework\web\CController.php(869): TicketController->renderFile()
+#11 C:\wamp\www\protected\views\ticket\update.php(16): TicketController->renderPartial()
+#12 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#13 C:\wamp\yii\framework\web\CBaseController.php(95): TicketController->renderInternal()
+#14 C:\wamp\yii\framework\web\CController.php(869): TicketController->renderFile()
+#15 C:\wamp\yii\framework\web\CController.php(782): TicketController->renderPartial()
+#16 C:\wamp\www\protected\controllers\TicketController.php(114): TicketController->render()
+#17 unknown(0): TicketController->actionUpdate()
+#18 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#19 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#20 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#21 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): TicketController->runAction()
+#22 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#24 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#25 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#26 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\wamp\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#28 C:\wamp\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#29 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#30 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/5
+in C:\wamp\www\protected\views\ticket\container\my_picks_div.php (18)
+in C:\wamp\www\protected\views\ticket\_form.php (59)
+in C:\wamp\www\protected\views\ticket\update.php (16)

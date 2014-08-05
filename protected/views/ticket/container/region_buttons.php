@@ -10,7 +10,14 @@
 $teams = TeamTournamentRegion::model()->select_tournament_roster_by_seed($region_ID);
 $url = explode ('/',$_SERVER['REQUEST_URI']);
 $ticket_ID = $url[4];
-$picks = Picks::model()->find_tickets_by_ID($ticket_ID);
+
+if(Yii::app()->user->hasState('my_picks'))
+{
+    $picks =Yii::app()->user->getState('my_picks');
+}
+if(!isset($picks)){
+    $picks = Picks::model()->find_tickets_by_ID($ticket_ID);
+}
 ?>
 
 <!--class picks changed radio buttons into jquery css radio buttons-->

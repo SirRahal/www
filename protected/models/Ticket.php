@@ -163,7 +163,7 @@ class Ticket extends CActiveRecord
             $i++;
             $team = TeamTournamentRegion::model()->findByAttributes(array('tournament_region_ID' => $region_selected, 'seed' => $i));
             $team_name = Team::model()->findByAttributes(array('ID' => $team['team_ID']));
-            $team_array[$i-1]=$team_name['ID'];
+            $team_array[$i-1]=$team_name['name'];
         }
         return $team_array;
     }

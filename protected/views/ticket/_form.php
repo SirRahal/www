@@ -17,10 +17,9 @@ $this->breadcrumbs=array(
 $ticket_ID = $model->ID;
 $ticket = Ticket::model()->find_ticket_by_ID($ticket_ID);
 $ticket_code = $ticket['code'];
-if(isset($_POST['my_picks']))
+if(Yii::app()->user->hasState('my_picks'))
 {
-    $my_picks =$_POST['my_picks'];
-
+    $my_picks =Yii::app()->user->getState('my_picks');
 }
 if(!isset($my_picks)){
     $my_picks = Picks::model()->find_tickets_by_ID($ticket_ID);
@@ -98,13 +97,14 @@ $school = School::model()->get_name_by_ID($school_ID);
             window.location.reload();
     }
     function easy_picks(){
+        $("#freeow").freeow("Easy Picking!", "One moment as we pick for you!.  Please note that you will need to save these picks if you like them.");
         var url = '/index.php/ticket/update/'+<?php echo $ticket_ID; ?>;
         $.ajax({
             type: "POST",
             url: url,
             data: { easy_picks : 1},
             success: function(){
-                //do something here like a refresh or redirect
+                window.location.reload();
             }
         });
     }
@@ -144,4 +144,7 @@ $school = School::model()->get_name_by_ID($school_ID);
 
 </script>
 
-
+<?php
+//clear out the easy pick if it was picked
+Yii::app()->user->setState('my_picks',null);
+?>

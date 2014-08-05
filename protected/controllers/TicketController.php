@@ -89,15 +89,16 @@ class TicketController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
+        //if easy_picks is '1' than retrieve an array of 16 IDs and add them to the session
         if(isset($_POST['easy_picks']) && $_POST['easy_picks']){
             $my_picks = Ticket::model()->easy_pick(); // returns an array of 16
-            $model->attributes = $my_picks;
-            if($model->save()){
-                $this->redirect(array('view','id'=>$model->ID));
+            //save the attribute and refresh
+            Yii::app()->user->setState('my_picks', $my_picks);
+            $test = Yii::app()->user->getState('my_picks');
+            if(isset($test))
+            {
+                return true;/*
+                $this->redirect(array('view','id'=>$model->ID));*/
             }
         }
 
@@ -111,14 +112,6 @@ class TicketController extends Controller
         $this->render('update',array(
             'model'=>$model,
         ));
-    }
-
-    public function actionEasypicks($id){
-        $model=$this->loadModel($id);
-
-        $my_picks = Ticket::model()->easy_pick();
-        $url = 'localhost/index.php/ticket/update/3';
-        $this->redirect($_POST[$url],$my_picks = $my_picks);
     }
 
 	/**
