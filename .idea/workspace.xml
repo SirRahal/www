@@ -81,10 +81,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="score_table.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="score_table.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/score_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="73" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.77356446" vertical-offset="0" max-vertical-offset="1394">
+            <state line="47" column="73" selection-start="2132" selection-end="2132" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="1394">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/user/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="47" selection-start="349" selection-end="349" vertical-scroll-proportion="0.2061742" vertical-offset="0" max-vertical-offset="907">
               <folding />
             </state>
           </provider>
@@ -119,7 +128,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/protected/views/user/register.php" />
         <option value="$PROJECT_DIR$/protected/views/user/_form.php" />
         <option value="$PROJECT_DIR$/protected/views/site/login.php" />
         <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
@@ -142,15 +150,16 @@
         <option value="$PROJECT_DIR$/protected/models/TeamTournamentRegion.php" />
         <option value="$PROJECT_DIR$/protected/models/Ticket.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/container/score_table.php" />
+        <option value="$PROJECT_DIR$/protected/views/user/register.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1296" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -238,7 +247,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="-8" width="1296" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -450,7 +459,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/score_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="73" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.77356446" vertical-offset="0" max-vertical-offset="1394">
+        <state line="47" column="73" selection-start="2132" selection-end="2132" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="47" selection-start="349" selection-end="349" vertical-scroll-proportion="0.2061742" vertical-offset="0" max-vertical-offset="907">
           <folding />
         </state>
       </provider>
