@@ -143,8 +143,13 @@ class TeamTournamentRegion extends CActiveRecord
     }
 
     public static function update_total_points($team_1_ID, $team_2_ID, $team_1_score, $team_2_score){
-        return true;
+        TeamTournamentRegion::model()->update_team_points($team_1_ID,$team_1_score);//pass in tickets, points, round
+        TeamTournamentRegion::model()->update_team_points($team_2_ID,$team_2_score);//pass in tickets, points, round
     }
 
-
+    public static function update_team_points($team_ID,$team_score){
+        $team_tournament_Region = TeamTournamentRegion::model()->findByPk($team_ID);
+        $team_tournament_Region->total_points +=$team_score;
+        $team_tournament_Region->save();
+    }
 }

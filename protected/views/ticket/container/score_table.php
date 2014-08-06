@@ -41,13 +41,13 @@
                     for ($i = 1;$i<17; $i++){
                         $team = Team::model()->findByAttributes(array('name'=>$picks[$i-1] ));
                         $team_ID = $team['ID'];
-                        $score_1 = Team::model()->get_scores($team_ID,1);
-                        $score_2 = Team::model()->get_scores($team_ID,2);
-                        $score_3 = Team::model()->get_scores($team_ID,3);
-                        $score_4 = Team::model()->get_scores($team_ID,4);
-                        $score_5 = Team::model()->get_scores($team_ID,5);
-                        $score_6 = Team::model()->get_scores($team_ID,6);
-                        $total = TeamTournamentRegion::model()->select_team_total_points($team_ID);
+                        $score_1 = Team::model()->get_scores($team_ID,2);
+                        $score_2 = Team::model()->get_scores($team_ID,3);
+                        $score_3 = Team::model()->get_scores($team_ID,4);
+                        $score_4 = Team::model()->get_scores($team_ID,5);
+                        $score_5 = Team::model()->get_scores($team_ID,6);
+                        $score_6 = Team::model()->get_scores($team_ID,7);
+                        $total = $score_1 + $score_2 + $score_3 + $score_4 + $score_5 + $score_6;
                         ?>
                         <tr>
                         <!--echo out the selected radio buttons-->
