@@ -2,46 +2,48 @@
 /**
  * Created by PhpStorm.
  * User: Sari
- * Date: 5/29/14
- * Time: 4:55 PM
- *
- * pass in: region ID
-*/
+ * Date: 5/30/14
+ * Time: 10:46 AM
+ */
+$team1_ID = 0;
+$team2_ID = 0;
+$skip = 0;
 ?>
-<div class="roster">
-
-<?php
-$roster = TeamTournamentRegion::model()->select_tournament_roster($region_ID);
-$spacer = 0;
-foreach($roster as $teamRegion)
-{
-    $spacer++;
-    $seed = $teamRegion->seed;
-    $team = $teamRegion->team->name;
-    ?>
-
-    <div class="bracket_box">
-        <?php
-            if($region_ID%2 == 1){
-                echo $seed.' '.$team;
+<div style="margin-top: 10px;">
+    <?php
+    $round_3 = TournamentResults::model()->get_round_results(3,$region_ID);
+    $skip = 0;
+    for ($i = 0; $i < 8; $i++) {?>
+        <div class="bracket_box" style="margin-bottom: 35px;">
+        <?php if (empty($round_3[$i-$skip]['ID'])){
+            echo 'TBA';
+        }else {
+            $team = TeamTournamentRegion::model()->findByPk($round_3[$i-$skip]['ID']);
+            if($team->starting_placement ==(($i+1)*2-1 +16*$region_ID - 16)|| $team->starting_placement ==($i+1)*2 +16*$region_ID - 16)
+            {
+                $skip = 0;
+                $team = $team->team_ID;
+                $team = Team::model()->findByPk($team);
+                echo $team->name;
             }else{
-                echo $team.' '.$seed;
+                $skip++;
+                echo 'TBA';
             }
-        ?>
+        }?>
     </div>
-    <?php  if($spacer%2 == 0){
-    $team2_ID = $teamRegion->team_ID;
-    $games = Game::model()->get_scores(1,$team1_ID,$team2_ID);
-    if($games != ''){?>
-        <div class="score_box" style="margin-left:<?php if($region_ID%2==1){echo '120px;';}else{echo '-20px;';}?>">
-            <?php echo $games->team_1_score.'<br/>'.$games->team_2_score;?>
-        </div>
+    <?php if($i%2 == 1 && !empty($round_3[$i-$skip]['ID'])){
+        $team2_ID = $team->ID;
+        $games = Game::model()->get_scores($region_ID,$team1_ID,$team2_ID);
+        if($games != ''){?>
+            <div class="score_box" style="margin-top: -107px;  margin-left:<?php if($region_ID%2==1){echo '118px;';}else{echo '-20px;';}?>">
+                <?php echo $games->team_1_score; ?>
+            </div>
+            <div class="score_box" style="margin-top: -52px; margin-left:120px;"><?php echo $games->team_2_score;?></div>
         <?php
         } ?>
-    <div class="spacer"></div>
-<?php
-}
-    $team1_ID = $teamRegion->team_ID;
-}?>
-
+    <?php
+    }
+        if (!empty($round_3[$i-$skip]['ID']))
+            $team1_ID = $team->ID;
+ }?>
 </div>

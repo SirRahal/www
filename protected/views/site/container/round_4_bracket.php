@@ -9,21 +9,18 @@ $team1_ID = 0;
 $team2_ID = 0;
 $skip = 0;
 ?>
-<div style="margin-top: -43px;">
+<div style="margin-top: -150px;">
     <?php
-    $round_4 = TournamentResults::model()->get_round_results(4,$region_ID);
+    $round_5 = TournamentResults::model()->get_round_results(5,$region_ID);
     $skip = 0;
-    for ($i = 0; $i < 4; $i++) {
-
-            ?>
-            <div style="height: 47px;"></div>
-
-
+    for ($i = 0; $i < 2; $i++) {
+        ?>
+        <div style="height: 151px;"></div>
         <div class="bracket_box" style="margin-bottom: 35px;">
-            <?php if (empty($round_4[$i-$skip]['ID'])){
+            <?php if (empty($round_5[$i-$skip]['ID'])){
                 echo 'TBA';
             }else {
-                $team = TeamTournamentRegion::model()->findByPk($round_4[$i-$skip]['ID']);
+                $team = TeamTournamentRegion::model()->findByPk($round_5[$i-$skip]['ID']);
                 if($team->starting_placement ==(($i+1)*2-1 +16*$region_ID - 16)|| $team->starting_placement ==($i+1)*2 +16*$region_ID - 16)
                 {
                     $skip = 0;
@@ -36,7 +33,7 @@ $skip = 0;
                 }
             }?>
         </div>
-        <?php if($i%2 == 1 && !empty($round_4[$i-$skip]['ID'])){
+        <?php if($i%2 == 1 && !empty($round_5[$i-$skip]['ID'])){
             $team2_ID = $team->ID;
             $games = Game::model()->get_scores($region_ID,$team1_ID,$team2_ID);
             if($games != ''){?>
@@ -48,7 +45,7 @@ $skip = 0;
             } ?>
         <?php
         }
-        if (!empty($round_4[$i-$skip]['ID']))
+        if (!empty($round_5[$i-$skip]['ID']))
             $team1_ID = $team->ID;
     }?>
 </div>
