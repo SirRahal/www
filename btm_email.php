@@ -3,22 +3,21 @@
 
 
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/CNC-Replacement-Parts_a21372';
-$date = 'July 23rd';
-$auction_title = 'CNC Replacement Parts';
+$auction_url = 'http://auctions.btmindustrial.com/Monthly-Machinery-Auction_as32962';
+$date = 'August 20th';
+$auction_title = 'Monthly Machinery Auction';
 
-$url1="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20120632";$img1="http://media.liveauctiongroup.net/i/21372/20120632_1s.jpg?v=8D172C31B8F0EA0";$title1="Allen Bradley Racks";
-$url4="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20120637";$img4="http://media.liveauctiongroup.net/i/21372/20120637_1s.jpg?v=8D172C31B8F0EA0";$title4="AB Panelviewers";
-$url3="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20126444";$img3="http://media.liveauctiongroup.net/i/21372/20126444_1s.jpg?v=8D172C31B8F0EA0";$title3="AB Controllers";
-$url2="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20126458";$img2="http://media.liveauctiongroup.net/i/21372/20126458_1s.jpg?v=8D172C31B8F0EA0";$title2="Fanuc Servo Amplifiers";
-$url5="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20129294";$img5="http://media.liveauctiongroup.net/i/21372/20129294_1s.jpg?v=8D172C31B8F0EA0";$title5="Fanuc 16i & 18i Display Units";
-$url6="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20129295";$img6="http://media.liveauctiongroup.net/i/21372/20129295_1s.jpg?v=8D172C31B8F0EA0";$title6="Fanuc Servo Amplifiers";
-$url7="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=1&ps=50#i20140457";$img7="http://media.liveauctiongroup.net/i/21372/20140457_1s.jpg?v=8D172C31B8F0EA0";$title7="Fanuc Servo Motors";
-$url8="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=2&ps=50#i20140486";$img8="http://media.liveauctiongroup.net/i/21372/20140486_1s.jpg?v=8D172C31B8F0EA0";$title8="AB Servo Motors";
-$url9="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=2&ps=50#i20144135";$img9="http://media.liveauctiongroup.net/i/21372/20144135_1s.jpg?v=8D172C31B8F0EA0";$title9="Indramat Permanent Magnet Motors";
-$url10="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=2&ps=50#i20161672";$img10="http://media.liveauctiongroup.net/i/21372/20161672_1s.jpg?v=8D172D4BE99BC10";$title10="AB Frequency Drivers";
-$url11="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=50#i20161684";$img11="http://media.liveauctiongroup.net/i/21372/20161684_1s.jpg?v=8D172D70AF8E750";$title11="Indramat AC Controller";
-$url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=50#i20161700";$img12="http://media.liveauctiongroup.net/i/21372/20161700_1s.jpg?v=8D172D70693B870";$title12="Fanuc Spindle Motor";
+$url1="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20127718";$img1="http://media.liveauctiongroup.net/i/21371/20127718_1s.jpg?v=8D17AA4F7100CC0";$title1="Mazak VTC-20B";
+$url2="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20171384";$img2="http://media.liveauctiongroup.net/i/21371/20171384_1s.jpg?v=8D17F8EB5829C70";$title2="Haas VF3";
+$url3="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20266917";$img3="http://media.liveauctiongroup.net/i/21371/20266917_1s.jpg?v=8D1802EAFE12750";$title3="(2) 2005 Ex-cell-O #XHC-241";
+$url4="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20171383";$img4="http://media.liveauctiongroup.net/i/21371/20171383_1s.jpg?v=8D174724FBB7690";$title4="Monarch 10EE Lathe";
+$url5="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20171382";$img5="http://media.liveauctiongroup.net/i/21371/20171382_1s.jpg?v=8D17470FA5FEBA0";$title5="Mitsubishi CX-20 EDM";
+$url6="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20136536";$img6="http://media.liveauctiongroup.net/i/21371/20136536_1s.jpg?v=8D17AA4FDA82130";$title6="LNS Quick Load Serve Barfood";
+$url7="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20140488";$img7="http://media.liveauctiongroup.net/i/21371/20140488_1s.jpg?v=8D17AA50465E610";$title7="Mazak QT-15N";
+$url8="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20206689";$img8="http://media.liveauctiongroup.net/i/21371/20206689_1s.jpg?v=8D1794B28A71FE0";$title8="Guyson Wash System";
+$url9="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20183084";$img9="http://media.liveauctiongroup.net/i/21371/20183084_1s.jpg?v=8D1755DE985F7F0";$title9="Komatsu Diesel Lift Truck";
+$url10="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20206690";$img10="http://media.liveauctiongroup.net/i/21371/20206690_1s.jpg?v=8D1802A4355D170";$title10="Henry Filtration System";
+$url11="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20171463";$img11="http://media.liveauctiongroup.net/i/21371/20171463_1s.jpg?v=8D17F8EB5829C70";$title11="Hass 4th Axis Rotary Table";
 
 
 
@@ -29,16 +28,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 <p style="text-align: center; font-size: 26px;">
     <font color="#ffffff">
         <?php echo $auction_title;?> Ending <?php echo $date;?> @ 1pm EST<br>
-        No Reserves, Everything Will Sell To The Highest Bidder.<br/>Over 200 Lots!
+        No Reserves, Everything Will Sell To The Highest Bidder.<br/>PARTIAL LIST, go to Website for complete catalog
 </p>
 <strong>
     </font></strong>
 <div style="margin: 0px auto; background-color: #494949; color: #008000; font-size: 27px;">
-        <span contenteditable="false" c2f="true" id="0" type="LINK" ><a href="<?php echo $auction_url; ?>" style="color: #cccccc;" target="_blank">Click Here for Auction Listing</a></span>
+        <span contenteditable="false" c2f="true"  type="LINK" ><a href="<?php echo $auction_url; ?>" style="color: #cccccc;" target="_blank">Click Here for Auction Listing</a></span>
     <br/>
-        <span contenteditable="false" c2f="true" id="0" type="LINK" ><a href="http://auctions.btmindustrial.com/auctionlist.aspx" style="color: #cccccc;" target="_blank">Click Here for All Upcoming Auctions</a></span>
-    </p>
-    </p>
+        <span contenteditable="false" c2f="true"  type="LINK" ><a href="http://auctions.btmindustrial.com/auctionlist.aspx" style="color: #cccccc;" target="_blank">Click Here for All Upcoming Auctions</a></span>
 </div>
 <div style="margin: 0px auto; background-color: #494949; color: #008000; font-size: 27px;">
     </div>
@@ -48,14 +45,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 
     <!--lot 1-->
 <td>
-    <table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+    <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
         <tbody>
         <tr>
             <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
                 <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url1;?>' shape='rect'><?php echo $title1;?></a></b></td>
         </tr>
         <tr>
-            <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url1;?>' shape='rect'>
+            <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url1;?>' shape='rect'>
                     <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img1;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
         </tr>
         </tbody>
@@ -64,14 +61,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 
     <!--lot 2-->
     <td>
-        <table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
             <tbody>
             <tr>
                 <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
                     <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url2;?>' shape='rect'><?php echo $title2;?></a></b></td>
             </tr>
             <tr>
-                <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url2;?>' shape='rect'>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url2;?>' shape='rect'>
                         <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img2;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
             </tr>
             </tbody>
@@ -80,14 +77,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 
 <!--lot 3-->
 <td>
-    <table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+    <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
         <tbody>
         <tr>
             <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
                 <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url3;?>' shape='rect'><?php echo $title3;?></a></b></td>
         </tr>
         <tr>
-            <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url3;?>' shape='rect'>
+            <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url3;?>' shape='rect'>
                     <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img3;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
         </tr>
         </tbody>
@@ -97,14 +94,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 <!--lot 4-->
 <tr>
 <td>
-<table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+<table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
     <tbody>
     <tr>
         <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
             <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url4;?>' shape='rect'><?php echo $title4;?></a></b></td>
     </tr>
     <tr>
-        <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url4;?>' shape='rect'>
+        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url4;?>' shape='rect'>
                 <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img4;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
     </tr>
     </tbody>
@@ -113,14 +110,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 
     <!--lot 5-->
 <td>
-<table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+<table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
     <tbody>
     <tr>
         <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
             <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url5;?>' shape='rect'><?php echo $title5;?></a></b></td>
     </tr>
     <tr>
-        <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url5;?>' shape='rect'>
+        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url5;?>' shape='rect'>
                 <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img5;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
     </tr>
     </tbody>
@@ -129,14 +126,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 
     <!--lot 6-->
 <td>
-    <table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+    <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
         <tbody>
         <tr>
             <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
                 <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url6;?>' shape='rect'><?php echo $title6;?></a></b></td>
         </tr>
         <tr>
-            <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url6;?>' shape='rect'>
+            <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url6;?>' shape='rect'>
                     <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img6;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
         </tr>
         </tbody>
@@ -148,14 +145,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 <tr>
 <td>
     <!--lot 7-->
- <table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+ <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
     <tbody>
     <tr>
         <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
             <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url7;?>' shape='rect'><?php echo $title7;?></a></b></td>
     </tr>
     <tr>
-        <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url7;?>' shape='rect'>
+        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url7;?>' shape='rect'>
                 <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img7;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
     </tr>
     </tbody>
@@ -164,14 +161,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 
 <!--lot 8-->
 <td>
- <table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+ <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
     <tbody>
     <tr>
         <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
             <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url8;?>' shape='rect'><?php echo $title8;?></a></b></td>
     </tr>
     <tr>
-        <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url8;?>' shape='rect'>
+        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url8;?>' shape='rect'>
                 <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img8;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
     </tr>
     </tbody>
@@ -181,14 +178,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 
 <!--lot 9-->
 <td>
-        <table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
         <tbody>
         <tr>
             <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
                 <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url9;?>' shape='rect'><?php echo $title9;?></a></b></td>
         </tr>
         <tr>
-            <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url9;?>' shape='rect'>
+            <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url9;?>' shape='rect'>
                     <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img9;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
         </tr>
         </tbody>
@@ -199,14 +196,14 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 <tr>
 <td>
 <!--lot:  10-->
-<table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+<table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
     <tbody>
     <tr>
         <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
             <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url10;?>' shape='rect'><?php echo $title10;?></a></b></td>
     </tr>
     <tr>
-        <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url10;?>' shape='rect'>
+        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url10;?>' shape='rect'>
                 <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img10;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
     </tr>
     </tbody>
@@ -214,40 +211,30 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21372&as=32963&p=3&ps=5
 </td>
 
 
-
+<td>
+    <div style="background:#acacac; padding:5px; border-radius: 5px;">
+        <span><b>HAVE A MACHINE FOR SALE?</b><BR/>There In No Better Time Than<br/><span style="color:red; font-size: 24px;">NOW</span><br/>Send Email With Machine Photos & Description to Dougw@BTMIndustrial.com</span>
+    </div>
+</td>
 
     <td>
 <!--lot 11-->
 
-<table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
+<table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
     <tbody>
     <tr>
         <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
             <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url11;?>' shape='rect'><?php echo $title11;?></a></b></td>
     </tr>
     <tr>
-        <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url11;?>' shape='rect'>
+        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url11;?>' shape='rect'>
                 <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img11;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
     </tr>
     </tbody>
 </table>
 
     </td>
-    <!--lot 12-->
-    <td>
-        <table border='0' cellpadding='5' cellspacing='0' width='100%' id='textEdit' style='display: table;'>
-            <tbody>
-            <tr>
-                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
-                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url12;?>' shape='rect'><?php echo $title12;?></a></b></td>
-            </tr>
-            <tr>
-                <td style='color: #000000;  text-align: center; background- background-repeat: initial initial;' align='center'><a style='cursor: pointer;' href='<?php echo $url12;?>' shape='rect'>
-                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img12;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
-            </tr>
-            </tbody>
-        </table>
-    </td>
+
 
     </tr>
 
