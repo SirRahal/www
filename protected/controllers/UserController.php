@@ -64,10 +64,14 @@ class UserController extends Controller
 	public function actionCreate()
 	{
 		$model=new User;
-        return false;
+        $valid = false;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-		if(isset($_POST['User']))
+        //check to see if valid
+        if(isset($_POST['User'])){
+            $valid = $this->checkValid();
+        }
+		if($valid)
 		{
 			$model->attributes=$_POST['User'];
 			if($model->save())
@@ -82,11 +86,12 @@ class UserController extends Controller
     public function actionRegister()
     {
         $model=new User;
-
+        $valid = false;
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
 
-        if(isset($_POST['User']))
+
+        if($valid)
         {
             $model->attributes=$_POST['User'];
             if($model->save())

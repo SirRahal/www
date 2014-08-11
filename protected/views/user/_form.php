@@ -3,7 +3,9 @@
 /* @var $model User */
 /* @var $form CActiveForm */
 ?>
-
+<head>
+    <script type="text/javascript" src="/js/verifynotify.js"></script>
+</head>
 <script>
     function inputFocus(i){
         if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
@@ -11,139 +13,170 @@
     function inputBlur(i){
         if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
     }
+    function create(){
+        var valid = false;
+        var errorNote = '';
+        var ticket = $( "#ticket");
+        var first_name = $( "#first_name");
+        var last_name = $( "#last_name");
+        var email = $( "#email");
+        var city = $( "#city");
+        var state = $( "#state");
+        var zip = $( "#zip");
+        var phone = $( "#phone");
+        var user_name = $( "#user_name");
+        var password1 = $( "#password1");
+        var password2 = $( "#password2");
+        valid = validate();
+
+        if(valid){
+            $("#freeow").freeow("Error!", errorNote);
+        }
+        function validate(){
+            /*validate ticket number*/
+            if(ticket.val()<1){
+                errorNote = errorNote+"Ticket code is mandatory \n\n";
+            }
+            /*validate first name*/
+            if(first_name.val()<1){
+                errorNote = errorNote+"First name is required";
+            }
+            /*validate last name*/
+            /*validate email*/
+            /*validate city*/
+            /*validate state*/
+            /*validate zip*/
+            /*validate phone*/
+            /*validate user name*/
+            /*validate password*/
+            return true;
+        }
+    }
+
 </script>
 <div class="form">
-
-<?php
-    $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'user-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
-	'enableAjaxValidation'=>false,
-)); ?>
-
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<?php echo $form->errorSummary($model); ?>
-
+	<p class="note">All fields are required.</p>
+</div><!-- form -->
+<form name="user_form">
+<div>
     <div class="row">
         <inputlable><b>Ticket</b></inputlable><br/>
-        <input title="This can be found in the bottom right of your ticket" placeholder="000-0000" />
+        <input type="text" id="ticket" name="ticket" title="This can be found in the bottom right of your ticket" placeholder="000-0000" size="9"/>
     </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'first_name'); ?>
-		<?php echo $form->textField($model,'first_name',array('size'=>60,'maxlength'=>100,'title'=>'Please type carefully, this is whom the checks will be made out to.')); ?>
-		<?php echo $form->error($model,'first_name'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'last_name'); ?>
-		<?php echo $form->textField($model,'last_name',array('size'=>60,'maxlength'=>100,'title'=>'Please type carefully, this is whom the checks will be made out to.')); ?>
-		<?php echo $form->error($model,'last_name'); ?>
-	</div>
+    <div class="row">
+        <inputlable><b>First Name</b></inputlable><br/>
+        <input type="text" id="first_name" name="first_name" title="" placeholder="" size="60">
+    </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution', 'placeholder'=>'Someone@BracketFanatic.com')); ?>
-		<?php echo $form->error($model,'email'); ?>
-	</div>
+    <div class="row">
+        <inputlable><b>Last Name</b></inputlable><br/>
+        <input type="text" id="last_name" name="last_name" title="" placeholder="" size="60">
+    </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'city'); ?>
-		<?php echo $form->textField($model,'city',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'city'); ?>
-	</div>
+    <div class="row">
+        <inputlable><b>Email</b></inputlable><br/>
+        <input type="text" id="email" name="email" title="" placeholder="Someone@BracketFanatic.com" type="email" size="60">
+    </div>
+    <div class="row">
+        <inputlable><b>City</b></inputlable><br/>
+        <input type="text" id="city" name="city" title="" placeholder="" size="60">
+    </div>
+    <div class="row">
+        <inputlable><b>State</b></inputlable><br/>
+        <select id="state" name="state">
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="DC">DC</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+        </select>
+    </div>
+    <div class="row">
+        <inputlable><b>Zip code</b></inputlable><br/>
+        <input type="text" id="zip" name="zip" title="" placeholder="" size="8">
+    </div>
+    <div class="row">
+        <inputlable><b>Phone #</b></inputlable><br/>
+        <input type="text" id="phone" name="phone" title="" placeholder="1(555)-555-5555" size="13">
+    </div>
+    <div class="row">
+        <inputlable><b>User Name</b></inputlable><br/>
+        <input type="text" id="user_name" name="user_name" title="" placeholder="" size="30">
+    </div
+    <div class="row">
+        <inputlable><b>Password</b></inputlable><br/>
+        <input type="password" name="password1" onkeyup="verify.check()">
+    </div>
+    <div class="row">
+        <inputlable><b>Re-enter Password</b></inputlable><br/>
+        <input type="password" name="password2" onkeyup="verify.check()">
+    </div>
+    <div id="password_result"><span style="color:red">Please make sure your passwords match.</span></div>
+    <DIV ID="password_result">&nbsp;</DIV>
+</div>
+</form>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'state'); ?>
-        <?php echo $form->dropDownList($model,'state',array('status'=>'--',
-                                                            'AL'=>'AL'
-                                                            ,'AK'=>'AK'
-                                                            ,'AZ'=>'AZ'
-                                                            ,'AR'=>'AR'
-                                                            ,'CA'=>'CA'
-                                                            ,'CO'=>'CO'
-                                                            ,'CT'=>'CT'
-                                                            ,'DE'=>'DE'
-                                                            ,'DC'=>'DC'
-                                                            ,'FL'=>'FL'
-                                                            ,'GA'=>'GA'
-                                                            ,'HI'=>'HI'
-                                                            ,'ID'=>'ID'
-                                                            ,'IL'=>'IL'
-                                                            ,'IN'=>'IN'
-                                                            ,'IA'=>'IA'
-                                                            ,'KS'=>'KS'
-                                                            ,'KY'=>'KY'
-                                                            ,'LA'=>'LA'
-                                                            ,'ME'=>'ME'
-                                                            ,'MD'=>'MD'
-                                                            ,'MA'=>'MA'
-                                                            ,'MI'=>'MI'
-                                                            ,'MN'=>'MN'
-                                                            ,'MS'=>'MS'
-                                                            ,'MO'=>'MO'
-                                                            ,'MT'=>'MT'
-                                                            ,'NE'=>'NE'
-                                                            ,'NV'=>'NV'
-                                                            ,'NH'=>'NH'
-                                                            ,'NJ'=>'NJ'
-                                                            ,'NM'=>'NM'
-                                                            ,'NY'=>'NY'
-                                                            ,'NC'=>'NC'
-                                                            ,'ND'=>'ND'
-                                                            ,'OH'=>'OH'
-                                                            ,'OK'=>'OK'
-                                                            ,'OR'=>'OR'
-                                                            ,'PA'=>'PA'
-                                                            ,'RI'=>'RI'
-                                                            ,'SC'=>'SC'
-                                                            ,'SD'=>'SD'
-                                                            ,'TN'=>'TN'
-                                                            ,'TX'=>'TX'
-                                                            ,'UT'=>'UT'
-                                                            ,'VT'=>'VT'
-                                                            ,'VA'=>'VA'
-                                                            ,'WA'=>'WA'
-                                                            ,'WV'=>'WV'
-                                                            ,'WI'=>'WI'
-                                                            ,'WY'=>'WY'
-                                                        )); ?>
-		<?php echo $form->error($model,'state'); ?>
-	</div>
+<script type="text/javascript">
+    <!--
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'zip'); ?>
-		<?php echo $form->textField($model,'zip',array('size'=>8,'maxlength'=>8)); ?>
-		<?php echo $form->error($model,'zip'); ?>
-	</div>
+    verify = new verifynotify();
+    verify.field1 = document.user_form.password1;
+    verify.field2 = document.user_form.password2;
+    verify.result_id = "password_result";
+    verify.match_html = "<SPAN STYLE=\"color:blue\">Thank you, your passwords match!<\/SPAN>";
+    verify.nomatch_html = "<SPAN STYLE=\"color:red\">Please make sure your passwords match.<\/SPAN>";
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'phone'); ?>
-		<?php echo $form->textField($model,'phone',array('size'=>18,'maxlength'=>18, 'placeholder'=>'1(555)-555-5555')); ?>
-		<?php echo $form->error($model,'phone'); ?>
-	</div>
+    // Update the result message
+    verify.check();
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'user_name'); ?>
-		<?php echo $form->textField($model,'user_name',array('size'=>60,'maxlength'=>100,'minlength'=>5,'title'=>'Must be at least 5 characters long.', 'placeholder'=>'JonJackup')); ?>
-		<?php echo $form->error($model,'user_name'); ?>
-	</div>
+    // -->
+</script>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>100,'minlength'=>5,'title'=>'Must be at least 5 characters long.')); ?>
-		<?php echo $form->error($model,'password'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-
-</div><!-- form -->
+<button onclick="create()">Add Ticket</button>

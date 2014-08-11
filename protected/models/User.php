@@ -147,4 +147,9 @@ class User extends CActiveRecord
 
 
     }
+
+    public static function checkValid(){
+
+        return false;
+    }
 }
