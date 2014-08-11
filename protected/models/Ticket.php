@@ -180,10 +180,10 @@ class Ticket extends CActiveRecord
     public static function update_ticket_points($team_1_ID, $team_2_ID, $team_1_score, $team_2_score,$round){
         //grab all the tickets that have team_1_ID selected
         $tickets = Picks::model()->get_tickets_pick($team_1_ID);
-        Ticket::model()->update_ticket($tickets,$team_1_score,$round-1);//pass in tickets, points, round
+        Ticket::model()->update_ticket($tickets,$team_1_score,$round);//pass in tickets, points, round
         //grab all the tickets that have team_2_ID selected
         $tickets = Picks::model()->get_tickets_pick($team_2_ID);
-        Ticket::model()->update_ticket($tickets,$team_2_score,$round-1);//pass in tickets, points, round
+        Ticket::model()->update_ticket($tickets,$team_2_score,$round);//pass in tickets, points, round
         return true;
     }
 

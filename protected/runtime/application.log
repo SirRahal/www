@@ -21529,3 +21529,27 @@ Stack trace:
 REQUEST_URI=/index.php/ticket/mytickets
 HTTP_REFERER=http://localhost/index.php/site/index
 ---
+2014/08/09 16:20:50 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "container/round_6_bracket".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\protected\views\site\container\bracket.php(48): CController->renderPartial('container/round...', Array)
+#1 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#3 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#4 C:\wamp\www\protected\views\site\index.php(9): CController->renderPartial('container/brack...')
+#5 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#6 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', NULL, true)
+#7 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', NULL, true)
+#8 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 C:\wamp\www\protected\controllers\SiteController.php(32): CController->render('index')
+#10 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#16 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://localhost/index.php/game/13
+---
