@@ -30,7 +30,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
     <div class="row">
-
         <inputlable><b>Ticket</b></inputlable><br/>
         <input title="This can be found in the bottom right of your ticket" placeholder="000-0000" />
     </div>
