@@ -33,7 +33,7 @@ class TicketController extends Controller
                 'expression' => 'User::model()->ownsTicket($_GET[\'id\'])'
             ),
             array('allow',
-                'actions'=>array('myTickets','easypicks','addTicket'),
+                'actions'=>array('myTickets','easypicks','addTicket','validateTicket'),
                 'users'=>array('*'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -202,4 +202,14 @@ class TicketController extends Controller
         return false;
     }
 
+    public function actionValidateTicket(){
+        if(isset($_POST['ticket'])){
+            $code = $_POST['ticket'];
+            if ($code == 'test'){
+                echo '1';
+            }
+        }else{
+            echo '0';
+        }
+    }
 }
