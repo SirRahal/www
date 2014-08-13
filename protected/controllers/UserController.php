@@ -69,7 +69,7 @@ class UserController extends Controller
 		// $this->performAjaxValidation($model);
         //check to see if valid
         if(isset($_POST['User'])){
-            $valid = $this->checkValid();
+            $valid = $model->checkValid();
         }
 		if($valid)
 		{
@@ -89,18 +89,25 @@ class UserController extends Controller
         $valid = false;
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
-
-
+        //check to see if valid
+        if(isset($_POST['User'])){
+            $valid = $model->checkValid();
+        }
         if($valid)
         {
             $model->attributes=$_POST['User'];
-            if($model->save())
+            if($model->save()){
+                //save ticket to user
+                //redirect to mytickets
                 $this->redirect(array('view','id'=>$model->ID));
+            }
+
         }
 
         $this->render('register',array(
             'model'=>$model,
         ));
+
     }
 
 	/**

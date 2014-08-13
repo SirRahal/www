@@ -205,7 +205,9 @@ class TicketController extends Controller
     public function actionValidateTicket(){
         if(isset($_POST['ticket'])){
             $code = $_POST['ticket'];
-            if ($code == 'test'){
+            $ticket = Ticket::model()->find_ticket_by_code($code);
+            if (isset($ticket) && $ticket->user_ID == 1){
+                $_SESSION['ticket_ID'] = $ticket->ID;
                 echo '1';
             }
         }else{

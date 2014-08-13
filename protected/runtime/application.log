@@ -22098,3 +22098,152 @@ REQUEST_URI=/index.php/user/register
 in C:\wamp\www\protected\views\user\register.php (50)
 in C:\wamp\www\protected\controllers\UserController.php (103)
 in C:\wamp\www\index.php (13)
+2014/08/13 15:01:30 [error] [php] Undefined index: ticket_code (C:\wamp\www\protected\views\user\register.php:18)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(103): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/register
+in C:\wamp\www\protected\views\user\register.php (18)
+in C:\wamp\www\protected\controllers\UserController.php (103)
+in C:\wamp\www\index.php (13)
+2014/08/13 15:01:32 [error] [php] Undefined index: ticket_code (C:\wamp\www\protected\views\user\register.php:18)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(103): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/register
+in C:\wamp\www\protected\views\user\register.php (18)
+in C:\wamp\www\protected\controllers\UserController.php (103)
+in C:\wamp\www\index.php (13)
+2014/08/13 16:33:30 [error] [exception.CException] exception 'CException' with message 'UserController and its behaviors do not have a method or closure named "checkValid".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\protected\controllers\UserController.php(94): CComponent->__call('checkValid', Array)
+#1 C:\wamp\www\protected\controllers\UserController.php(94): UserController->checkValid()
+#2 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#3 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/user/register
+HTTP_REFERER=http://localhost/index.php/user/register
+---
+2014/08/13 16:34:30 [error] [exception.CException] exception 'CException' with message 'UserController and its behaviors do not have a method or closure named "checkValid".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\protected\controllers\UserController.php(94): CComponent->__call('checkValid', Array)
+#1 C:\wamp\www\protected\controllers\UserController.php(94): UserController->checkValid()
+#2 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#3 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/user/register
+HTTP_REFERER=http://localhost/index.php/user/register
+---
+2014/08/13 16:37:18 [error] [exception.CException] exception 'CException' with message 'UserController and its behaviors do not have a method or closure named "checkValid".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\protected\controllers\UserController.php(94): CComponent->__call('checkValid', Array)
+#1 C:\wamp\www\protected\controllers\UserController.php(94): UserController->checkValid()
+#2 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#3 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/user/register
+HTTP_REFERER=http://localhost/index.php/user/register
+---
+2014/08/13 16:38:34 [error] [exception.CException] exception 'CException' with message 'UserController and its behaviors do not have a method or closure named "checkValid".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\protected\controllers\UserController.php(94): CComponent->__call('checkValid', Array)
+#1 C:\wamp\www\protected\controllers\UserController.php(94): UserController->checkValid()
+#2 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#3 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/user/register
+HTTP_REFERER=http://localhost/index.php/user/register
+---
+2014/08/13 16:39:48 [error] [exception.CException] exception 'CException' with message 'UserController and its behaviors do not have a method or closure named "checkValid".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\protected\controllers\UserController.php(72): CComponent->__call('checkValid', Array)
+#1 C:\wamp\www\protected\controllers\UserController.php(72): UserController->checkValid()
+#2 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#3 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/user/create
+HTTP_REFERER=http://localhost/index.php/user/create
+---

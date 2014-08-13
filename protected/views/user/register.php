@@ -9,7 +9,7 @@
  **/
 
 $this->breadcrumbs=array(
-    'Users'=>array('index'),
+    'Users',
     'Register',
 );
 ?>
@@ -73,7 +73,7 @@ $this->breadcrumbs=array(
         }
 
         dialog = $( "#dialog-form" ).dialog({
-            autoOpen: true,
+            autoOpen: <?php if(isset($_SESSION['ticket_code'])) echo 'false'; else echo'true'; ?>,
             width: 350,
             modal: true,
             buttons: {
