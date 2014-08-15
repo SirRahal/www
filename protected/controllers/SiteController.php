@@ -2,15 +2,6 @@
 
 class SiteController extends Controller
 {
-
-    public $info = '';
-    public $img = '';
-    public $back_img = '';
-    public $url = '';
-    public $date = '';
-    public $Ads_normal = '';
-    public $model = '';
-
 	/**
 	 * Declares class-based actions.
 	 */
@@ -36,41 +27,9 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layout 'protected/views/layouts/main.php'
-        $latest_issue = Issues::model()->latest_issue();
-
-        $this->info = $latest_issue['info'];
-
-        $this->img = '/images/covers/'.$latest_issue['img'];
-
-        $temp = strlen($latest_issue['img']);
-        $back_img = substr($latest_issue['img'],0,$temp-4);
-        $back_img = '/images/covers/'.$back_img . '_back'.substr($latest_issue['img'],$temp-4);
-
-        $this->date = $latest_issue['date'];
-        $this->url = $latest_issue['url'];
-        $this->back_img = $back_img;
-        $this->url = '/issues/'.$this->url;
-
-
-        /*right side ads*/
-        $ads_model = new Ads;
-        $Ads_normal = Ads::model()->select_ads(4,'normal');
-
-        /*upcoming auctions*/
-
-
-        $this->render('index', array(
-            'info'=>$this->info,
-            'img'=>$this->img,
-            'date'=>$this->date,
-            'url'=>$this->url,
-            'back_img'=>$this->back_img,
-            'ads_model'=>new Ads
-        ));
-
-
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('index');
 	}
 
 	/**
@@ -113,9 +72,6 @@ class SiteController extends Controller
 		$this->render('contact',array('model'=>$model));
 	}
 
-
-
-
 	/**
 	 * Displays the login page
 	 */
@@ -150,33 +106,4 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
-
-    /**
-     * Media guide
-     */
-    public function actionMedia_guide()
-    {
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layout 'protected/views/layouts/main.php'
-        $this->render('media_guide');
-    }
-
-    /**
-     * Media guide
-     */
-    public function actionSummer_special()
-    {
-        $this->render('summer_special');
-    }
-
-    /**
-     * Thank you page
-     */
-    public function actionThank_you()
-    {
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layout 'protected/views/layouts/main.php'
-        $this->render('thank_you');
-    }
-
 }
