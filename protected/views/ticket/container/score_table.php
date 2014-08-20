@@ -25,16 +25,16 @@
         <b>League Placement : </b> --<!--echo out league placement-->
         <table style="border: solid #acacac; ">
             <tbody >
-                <tr>
-                    <td><b>Seed</b></td>
-                    <td style="width: 160px;;"><b>Team</b></td>
-                    <td style="text-align: center;"><b>Rd 1</b></td>
-                    <td style="text-align: center;"><b>Rd 2</b></td>
-                    <td style="text-align: center;"><b>Rd 3</b></td>
-                    <td style="text-align: center;"><b>Rd 4</b></td>
-                    <td style="text-align: center;"><b>Rd 5</b></td>
-                    <td style="text-align: center;"><b>Rd 6</b></td>
-                    <td style="text-align: center;"><b>Total</b></td>
+                <tr style="background:#acacac; color:#000000; font-weight: bold;">
+                    <td>Seed</td>
+                    <td style="width: 160px;;">Team</td>
+                    <td style="text-align: center;">Rd 1</td>
+                    <td style="text-align: center;">Rd 2</td>
+                    <td style="text-align: center;">Rd 3</td>
+                    <td style="text-align: center;">Rd 4</td>
+                    <td style="text-align: center;">Rd 5</td>
+                    <td style="text-align: center;">Rd 6</td>
+                    <td style="text-align: center;">Total</td>
                 </tr>
                 <tr>
                     <?php
@@ -49,7 +49,7 @@
                         $score_6 = Team::model()->get_scores($team_ID,6);
                         $total = $score_1 + $score_2 + $score_3 + $score_4 + $score_5 + $score_6;
                         ?>
-                        <tr>
+                        <tr <?php if ($i%2 == 0){echo 'style="background : #cdd2db;"';} else { echo 'style="background : #f9f1e0;"';} ?>>
                         <!--echo out the selected radio buttons-->
                             <td style="width: 20px; text-align: center;"><b><?php echo $i; ?></b></td>
                             <td Style="width: 130px;"><?php echo $picks[$i-1]; ?></td>

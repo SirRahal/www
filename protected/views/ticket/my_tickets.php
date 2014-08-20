@@ -11,11 +11,6 @@ $this->breadcrumbs=array(
     $mytickets = Ticket::model()->get_tickets_by_user_ID();
 ?>
 <head>
-    <style>
-        .no-close .ui-dialog-titlebar-close {
-            display: none;
-        }
-    </style>
     <script>
         $(function() {
             $( "#accordion" ).accordion({
@@ -75,13 +70,17 @@ $this->breadcrumbs=array(
 
 
 
+
 <h1>My Tickets</h1>
 
+<div class="clear"></div>
 <div>
     <p>Belowe are your tickets</p>
-    <button id="add_ticket">Add Ticket</button>
+    <div style="float: right; margin-top: -50px; margin-right: 50px;">
+        <button id="add_ticket">Add Ticket</button>
+    </div>
 </div>
-<br/>
+
 <?php foreach($mytickets as $ticket){
     $my_picks = Picks::model()->find_tickets_by_ID($ticket['ID']);
     $string_exploded = explode("-", $ticket['code']);
@@ -96,12 +95,14 @@ $this->breadcrumbs=array(
     </div>
 <?php }?>
 <div class="clear"></div>
+
+
 <div id="accordion">
 <?php
     $mytickets = Ticket::model()->get_tickets_by_user_ID();
     foreach($mytickets as $ticket){?>
         <h3><b>Ticket : </b><?php echo $ticket['code']; ?></h3>
-        <div style="background: #e6e6e6; color: #555555;">
+        <div style="background: #f3911e; color: #000000;">
             <?php echo $this->renderPartial('container/score_table', array('ticket' => $ticket)); ?>
         </div>
     <?php } ?>

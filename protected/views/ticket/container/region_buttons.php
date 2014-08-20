@@ -22,6 +22,11 @@ if(!isset($picks)){
 
 <!--class picks changed radio buttons into jquery css radio buttons-->
 <div class="picks" >
+    <div style="text-align: center; padding-bottom: 5px;">
+        <span style="font-size: 18px; font-weight: bold;">
+            <?php if($region_ID == 1){ echo "South";}elseif($region_ID == 2){ echo "West";}elseif($region_ID == 3){ echo "East";}elseif($region_ID == 4){ echo "Midwest";};?> Region
+        </span>
+    </div>
     <?php
     foreach($teams as $teamRegion)
     {

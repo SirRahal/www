@@ -93,9 +93,10 @@ $placement = 0;
             <td style="text-align: center;"><b>Round 5 Total</b></td>
             <td style="text-align: center;"><b>Final Total</b></td>
         </tr>
-        <?php foreach($tickets as $ticket){
+        <?php $i=0; foreach($tickets as $ticket){
+            $i++;
             $placement++; $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID'])); $user_name = $user_name['user_name']; ?>
-            <tr>
+            <tr <?php if ($i%2 == 0){echo 'style="background : #cdd2db;"';} else { echo 'style="background : #f9f1e0;"';} ?> >
                 <td style="text-align: center; width:20px;"><?php echo $placement; ?></td>
                 <td><?php echo $user_name; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>

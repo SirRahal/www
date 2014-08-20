@@ -50,23 +50,13 @@
 <div class="container" id="page">
 
 	<div id="header">
-        <img src="/images/logo.png" width="500"/>
+        <img src="/images/bflogo.png" width="700"/>
 		<!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
-        <!--bracket button-->
-        <div style="position:relative;">
-            <div class="ribbon-wrapper">
-                <a div_popup="">
-                    <div class="ribbon">
-                        BRACKET
-                    </div>
-                </a>
-            </div>
-        </div>
         <!--bracket buttons example-->
         <div class="display_bracket_button">
-            <a div_popup="">
+            <a div_popup="" style=" text-decoration: none !important;">
                 <div class="bracket_button">
-                    <h3>Display Bracket</h3>
+                    <h3 style="color:#ffffff;">Display Bracket</h3>
                 </div>
             </a>
         </div>
@@ -100,14 +90,14 @@
 
 	<div class="clear"></div>
 
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by Bracket Fanatic.<br/>
-		All Rights Reserved.<br/>
-		Author By Sari Rahal
-	</div><!-- footer -->
+
 
 </div><!-- page -->
-
+<div id="footer">
+    Copyright &copy; <?php echo date('Y'); ?> by Bracket Fanatic.<br/>
+    All Rights Reserved.<br/>
+    Author By Sari Rahal
+</div><!-- footer -->
 
 </body>
 </html>

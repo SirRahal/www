@@ -22247,3 +22247,20 @@ Stack trace:
 REQUEST_URI=/index.php/user/create
 HTTP_REFERER=http://localhost/index.php/user/create
 ---
+2014/08/20 20:14:59 [error] [exception.CException] exception 'CException' with message 'SiteController contains improperly nested widget tags in its view "C:\wamp\www\protected\views\site\login.php". A CActiveForm widget does not have an endWidget() call.' in C:\wamp\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#1 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#2 C:\wamp\www\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://localhost/index.php/user/register
+---
