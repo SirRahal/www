@@ -3,21 +3,20 @@
 
 
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/Monthly-Machinery-Auction_as32962';
-$date = 'August 20th';
-$auction_title = 'Monthly Machinery Auction';
+$auction_url = 'http://auctions.btmindustrial.com/CNC-Parts-Auction_as33292';
+$date = 'August 26th';
+$auction_title = 'CNC Parts Auction';
 
-$url1="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20127718";$img1="http://media.liveauctiongroup.net/i/21371/20127718_1s.jpg?v=8D17AA4F7100CC0";$title1="Mazak VTC-20B";
-$url2="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20171384";$img2="http://media.liveauctiongroup.net/i/21371/20171384_1s.jpg?v=8D17F8EB5829C70";$title2="Haas VF3";
-$url3="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20266917";$img3="http://media.liveauctiongroup.net/i/21371/20266917_1s.jpg?v=8D1802EAFE12750";$title3="(2) 2005 Ex-cell-O #XHC-241";
-$url4="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20171383";$img4="http://media.liveauctiongroup.net/i/21371/20171383_1s.jpg?v=8D174724FBB7690";$title4="Monarch 10EE Lathe";
-$url5="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20171382";$img5="http://media.liveauctiongroup.net/i/21371/20171382_1s.jpg?v=8D17470FA5FEBA0";$title5="Mitsubishi CX-20 EDM";
-$url6="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20136536";$img6="http://media.liveauctiongroup.net/i/21371/20136536_1s.jpg?v=8D17AA4FDA82130";$title6="LNS Quick Load Serve Barfood";
-$url7="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20140488";$img7="http://media.liveauctiongroup.net/i/21371/20140488_1s.jpg?v=8D17AA50465E610";$title7="Mazak QT-15N";
-$url8="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20206689";$img8="http://media.liveauctiongroup.net/i/21371/20206689_1s.jpg?v=8D1794B28A71FE0";$title8="Guyson Wash System";
-$url9="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20183084";$img9="http://media.liveauctiongroup.net/i/21371/20183084_1s.jpg?v=8D1755DE985F7F0";$title9="Komatsu Diesel Lift Truck";
-$url10="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20206690";$img10="http://media.liveauctiongroup.net/i/21371/20206690_1s.jpg?v=8D1802A4355D170";$title10="Henry Filtration System";
-$url11="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=50#i20171463";$img11="http://media.liveauctiongroup.net/i/21371/20171463_1s.jpg?v=8D17F8EB5829C70";$title11="Hass 4th Axis Rotary Table";
+$url1="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252120";$img1="http://media.liveauctiongroup.net/i/21585/20252120_1s.jpg?v=8D17E0B13F1BBE0";$title1="Fanuc A03B-0819-C001 w/Modules";
+$url2="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252123";$img2="http://media.liveauctiongroup.net/i/21585/20252123_1s.jpg?v=8D17E0B299FD030";$title2="Fanuc Servo Amplifiers";
+$url3="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252124";$img3="http://media.liveauctiongroup.net/i/21585/20252124_1s.jpg?v=8D17E0B2EF181F0";$title3="Fanuc Spindle Amplifiers";
+$url4="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252128";$img4="http://media.liveauctiongroup.net/i/21585/20252128_1s.jpg?v=8D17E0B44EBE180";$title4="Fanuc AC Servo Motors";
+$url5="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252135";$img5="http://media.liveauctiongroup.net/i/21585/20252135_1s.jpg?v=8D17E0B749AE980";$title5="Fanuc Power Supply Module";
+$url6="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20255599";$img6="http://media.liveauctiongroup.net/i/21585/20255599_1s.jpg?v=8D17E953672CA30";$title6="Fanuc Circuit Boards";
+$url7="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20256318";$img7="http://media.liveauctiongroup.net/i/21585/20256318_1s.jpg?v=8D17EB4955158E0";$title7="Fanuc Servo Amplifier";
+$url8="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=2&ps=50#i20260472";$img8="http://media.liveauctiongroup.net/i/21585/20260472_1s.jpg?v=8D17ECAF0F285F0";$title8="Fanuc 21iM CNC Control Operator Interface";
+$url9="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=2&ps=50#i20304988";$img9="http://media.liveauctiongroup.net/i/21585/20304988_1s.jpg?v=8D185C654DE6370";$title9="Mitsubishi TR-15A Drive Power Supply";
+$url10="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=3&ps=50#i20363997";$img10="http://media.liveauctiongroup.net/i/21585/20363997_1s.jpg?v=8D18B2F8F6BA1B0";$title10="AB Bulletin 1391 AC Servo Controller";
 
 
 
@@ -211,29 +210,13 @@ $url11="http://auctions.btmindustrial.com/auction.aspx?a=21371&as=32962&p=1&ps=5
 </td>
 
 
-<td>
-    <div style="background:#acacac; padding:5px; border-radius: 5px;">
+<td colspan="2">
+    <div style="background:#333333; padding:5px; border-top-left-radius: 15px;border-bottom-left-radius: 15px; color: #ffffff; margin-right: -5px;" >
         <span><b>HAVE A MACHINE FOR SALE?</b><BR/>There In No Better Time Than<br/><span style="color:red; font-size: 24px;">NOW</span><br/>Send Email With Machine Photos & Description to Dougw@BTMIndustrial.com</span>
     </div>
 </td>
 
-    <td>
-<!--lot 11-->
 
-<table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
-    <tbody>
-    <tr>
-        <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
-            <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url11;?>' shape='rect'><?php echo $title11;?></a></b></td>
-    </tr>
-    <tr>
-        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url11;?>' shape='rect'>
-                <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img11;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
-    </tr>
-    </tbody>
-</table>
-
-    </td>
 
 
     </tr>
