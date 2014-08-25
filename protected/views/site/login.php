@@ -14,17 +14,19 @@
                 allFields = $( [] ).add( email ),
                 tips = $( ".validateTips" );
 
-            function addTicket() {
+            function resetPassword() {
                 var valid = false;
+
                 $.ajax({
                         type: "POST",
-                        url: '<?php echo Yii::app()->createUrl('ticket/addTicket'); ?>',
+                        url: '<?php echo Yii::app()->createUrl('user/resetPassword'); ?>',
                         data: {email : email.val()},
                         success: function(){
+                            alert('resetingg');
                             $("#freeow").freeow("Notification!", "An email has been sent containing your new password.");
                             dialog.dialog( "close" );
-                            window.location.href='/index.php/ticket/mytickets';
                         }, error : function(){
+                            alert('error');
                             $("#freeow").freeow("Email Error!", "The email you entered is incorrect.  Please check the email and try again.", {classes : ["error"]});
                         }
                     }
@@ -32,11 +34,9 @@
             }
             dialog = $( "#dialog-form" ).dialog({
                 autoOpen: false,
-                height: 350,
-                width: 350,
                 modal: true,
                 buttons: {
-                    "Add Ticket": addTicket,
+                    "Reset Password": resetPassword,
                     Cancel: function() {
                         dialog.dialog( "close" );
                     }
@@ -47,10 +47,10 @@
             });
 
             form = dialog.find( "form" ).on( "submit", function( event ) {
-                addTicket();
+                resetPassword();
             });
 
-            $( "#add_ticket" ).button().on( "click", function() {
+            $( "#reset_password" ).button().on( "click", function() {
                 dialog.dialog( "open" );
             });
         });
@@ -100,24 +100,15 @@ $this->breadcrumbs=array(
 	</div>
 
 	<div class="row buttons" >
-		<?php echo CHtml::submitButton('Login'); ?>
+        <?php echo CHtml::submitButton('Login'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->
-
-
-<div style="width: 500px; position: absolute;" class="right" >
-    <p>
-        Don't have an account? <button onclick="location.href='/index.php/user/register'">Register Now</button><br/>
-        Reset your account/password?
-        <button id="add_ticket">Reset Password</button>
-    </p>
-</div>
-
-
-<div id="dialog-form" title="Add a Ticket">
-    <p class="validateTips">Please Enter Ticket Number</p>
+<button onclick="location.href='/index.php/user/register'">Register Now</button>
+<button id="reset_password">Forgot Name or Password</button>
+<div id="dialog-form" title="Reset Password">
+    <p class="validateTips">Please Enter Your Email Address that is registered to your account.  After resetting your password, you will relieve an email with your account and new password. </p>
     <form>
         <fieldset>
             <label for="email">Email</label>

@@ -28,7 +28,7 @@ class UserController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('register'),
+				'actions'=>array('register','resetPassword'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -201,4 +201,26 @@ class UserController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionResetPassword(){
+        if(isset($_POST['email'])){
+            $email = $_POST['email'];
+            $user=User::model()->findByAttributes(array('email'=>$email));
+            if(isset($user) && $user->ID > 1){
+                $new_password = User::model()->password_reset($user->ID);
+            }
+            if(isset($new_password) && $new_password != 'error'){
+                $name='=?UTF-8?B?'.base64_encode('Bracket Fanatic').'?=';
+                $subject='=?UTF-8?B?'.base64_encode('Account Details').'?=';
+                $headers="From: $name <{admin@bracketfanatic.com}>\r\n".
+                    "Reply-To: {admin@bracketfanatic.com}\r\n".
+                    "MIME-Version: 1.0\r\n".
+                    "Content-Type: text/plain; charset=UTF-8";
+                $body = "You account has been reset.  Your account name is : $user->user_name and your new password is $new_password";
+                mail($email,$subject,$body,$headers);
+                Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+                return true;
+            }
+        }
+    }
 }

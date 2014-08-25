@@ -151,4 +151,27 @@ class User extends CActiveRecord
     public static function checkValid(){
         return true;
     }
+
+    public static function password_reset($ID){
+        $user = User::model()->findByPk($ID);
+        if(isset($user) && $user->ID > 1){
+            $newPassword = randomPassword();
+            $user->password = $newPassword;
+            $user->save();
+            return $newPassword;
+        }else{
+            return 'error';
+        }
+    }
+
+    public static function randomPassword() {
+        $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+        $pass = array(); //remember to declare $pass as an array
+        $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+        for ($i = 0; $i < 8; $i++) {
+            $n = rand(0, $alphaLength);
+            $pass[] = $alphabet[$n];
+        }
+        return implode($pass); //turn the array into a string
+    }
 }

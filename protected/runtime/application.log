@@ -22264,3 +22264,212 @@ Stack trace:
 REQUEST_URI=/index.php/site/login
 HTTP_REFERER=http://localhost/index.php/user/register
 ---
+2014/08/25 20:14:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login
+---
+2014/08/25 20:14:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login
+---
+2014/08/25 20:14:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login
+---
+2014/08/25 21:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:01:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:01:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:01:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:02:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:03:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:03:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset_password".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('reset_password')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('reset_password')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/reset_pass...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/reset_password
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:04:29 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "findByAttribute".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('findByAttribute', Array)
+#1 C:\wamp\www\protected\controllers\UserController.php(208): CActiveRecord->__call('findByAttribute', Array)
+#2 C:\wamp\www\protected\controllers\UserController.php(208): User->findByAttribute(Array)
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionResetPassword()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('resetPassword')
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/resetPassw...')
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/user/resetPassword
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:05:44 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "findByAttribute".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('findByAttribute', Array)
+#1 C:\wamp\www\protected\controllers\UserController.php(208): CActiveRecord->__call('findByAttribute', Array)
+#2 C:\wamp\www\protected\controllers\UserController.php(208): User->findByAttribute(Array)
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionResetPassword()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('resetPassword')
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/resetPassw...')
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/user/resetPassword
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
+2014/08/25 21:06:12 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "findByAttribute".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('findByAttribute', Array)
+#1 C:\wamp\www\protected\controllers\UserController.php(208): CActiveRecord->__call('findByAttribute', Array)
+#2 C:\wamp\www\protected\controllers\UserController.php(208): User->findByAttribute(Array)
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionResetPassword()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('resetPassword')
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/resetPassw...')
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/user/resetPassword
+HTTP_REFERER=http://localhost/index.php/site/login?email=sari%40btmindustrial.com
+---
