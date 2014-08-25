@@ -74,7 +74,17 @@
 			),
 		)); ?>
 	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
+    <div id="mainmenu">
+        <?php $this->widget('zii.widgets.CMenu',array(
+            'items'=>array(
+                array('label'=>'Edit Auctioneer', 'url'=>array('/auctioneer/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
+                array('label'=>'Edit Auctions', 'url'=>array('/auctions/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
+                array('label'=>'Auctions Of The Week', 'url'=>array('/auctions/week_auctions'), 'visible'=>Yii::app()->user->id == 'admin'),
+            ),
+        )); ?>
+    </div><!-- mainmenu -->
+
+    <?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->

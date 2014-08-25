@@ -126,4 +126,15 @@ class Auctions extends CActiveRecord
 
         return $auctions;
     }
+
+    public static function get_this_weeks_auctions(){
+        $current_date = date('Y-m-d');
+        $auctions = Auctions::model()->findAll(array(
+            'condition'=>'date >= :date',
+            'params'=>array(':date'=>$current_date),
+            'order' => 'date ASC'));
+        if(isset($auctions))
+            return $auctions;
+        return $current_date;
+    }
 }

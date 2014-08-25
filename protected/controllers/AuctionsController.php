@@ -36,7 +36,7 @@ class AuctionsController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','week_auctions'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -216,5 +216,17 @@ class AuctionsController extends Controller
 
         mail(Yii::app()->params['adminEmail'],$subject,$body,$headers);
         return true;
+    }
+
+    public function actionWeek_auctions()
+    {
+        $dataProvider=new CActiveDataProvider('Auctions', array(
+            'criteria'=>array(
+                'condition'=>'date >= CURRENT_DATE',
+                'order'=>'date ASC'
+            )));
+        $this->render('week_auctions',array(
+            'dataProvider'=>$dataProvider,
+        ));
     }
 }
