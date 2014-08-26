@@ -3,20 +3,22 @@
 
 
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/CNC-Parts-Auction_as33292';
-$date = 'August 26th';
-$auction_title = 'CNC Parts Auction';
+$auction_url = 'http://auctions.btmindustrial.com/Hydraulic-and-Mechanical-Spares_as33188';
+$date = 'August 27th';
+$auction_title = 'Hydraulic And Machanical Spares';
 
-$url1="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252120";$img1="http://media.liveauctiongroup.net/i/21585/20252120_1s.jpg?v=8D17E0B13F1BBE0";$title1="Fanuc A03B-0819-C001 w/Modules";
-$url2="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252123";$img2="http://media.liveauctiongroup.net/i/21585/20252123_1s.jpg?v=8D17E0B299FD030";$title2="Fanuc Servo Amplifiers";
-$url3="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252124";$img3="http://media.liveauctiongroup.net/i/21585/20252124_1s.jpg?v=8D17E0B2EF181F0";$title3="Fanuc Spindle Amplifiers";
-$url4="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252128";$img4="http://media.liveauctiongroup.net/i/21585/20252128_1s.jpg?v=8D17E0B44EBE180";$title4="Fanuc AC Servo Motors";
-$url5="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20252135";$img5="http://media.liveauctiongroup.net/i/21585/20252135_1s.jpg?v=8D17E0B749AE980";$title5="Fanuc Power Supply Module";
-$url6="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20255599";$img6="http://media.liveauctiongroup.net/i/21585/20255599_1s.jpg?v=8D17E953672CA30";$title6="Fanuc Circuit Boards";
-$url7="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=1&ps=50#i20256318";$img7="http://media.liveauctiongroup.net/i/21585/20256318_1s.jpg?v=8D17EB4955158E0";$title7="Fanuc Servo Amplifier";
-$url8="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=2&ps=50#i20260472";$img8="http://media.liveauctiongroup.net/i/21585/20260472_1s.jpg?v=8D17ECAF0F285F0";$title8="Fanuc 21iM CNC Control Operator Interface";
-$url9="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=2&ps=50#i20304988";$img9="http://media.liveauctiongroup.net/i/21585/20304988_1s.jpg?v=8D185C654DE6370";$title9="Mitsubishi TR-15A Drive Power Supply";
-$url10="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=3&ps=50#i20363997";$img10="http://media.liveauctiongroup.net/i/21585/20363997_1s.jpg?v=8D18B2F8F6BA1B0";$title10="AB Bulletin 1391 AC Servo Controller";
+$url1="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20161668";$img1="http://media.liveauctiongroup.net/i/21528/20161668_1s.jpg?v=8D172C91D118130";$title1="Parker Pumps";
+$url2="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20161670";$img2="http://media.liveauctiongroup.net/i/21528/20161670_1s.jpg?v=8D172C933F35A90";$title2="Vickers Pumps";
+$url3="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20161720";$img3="http://media.liveauctiongroup.net/i/21528/20161720_1s.jpg?v=8D172DEA04E1AD0";$title3="Gearboxes";
+$url4="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20161723";$img4="http://media.liveauctiongroup.net/i/21528/20161723_1s.jpg?v=8D172DEA04E1AD0";$title4="Setco Precision Spindles";
+$url5="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20188859";$img5="http://media.liveauctiongroup.net/i/21528/20188859_1s.jpg?v=8D176250131F7B0";$title5="Gusher Style Pumps";
+$url6="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20189314";$img6="http://media.liveauctiongroup.net/i/21528/20189314_1s.jpg?v=8D176255CCF2F20";$title6="Ebara Pumps";
+$url7="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20191654";$img7="http://media.liveauctiongroup.net/i/21528/20191654_1s.jpg?v=8D17625E9ABD290";$title7="100's Valves";
+$url8="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=50#i20204011";$img8="http://media.liveauctiongroup.net/i/21528/20204011_1s.jpg?v=8D1787658E61BA0";$title8="Lubrication Units";
+$url9="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=50#i20204285";$img9="http://media.liveauctiongroup.net/i/21528/20204285_1s.jpg?v=8D178765790C4D0";$title9="Hypoid Motors";
+$url10="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=50#i20204292";$img10="http://media.liveauctiongroup.net/i/21528/20204292_1s.jpg?v=8D178765A449A30";$title10="Parker / Denison Pumps";
+$url11="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=50#i20204293";$img11="http://media.liveauctiongroup.net/i/21528/20204293_1s.jpg?v=8D1787658E61BA0";$title11="HAWE Lubrication Units";
+$url12="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=100#i20271167";$img12="http://media.liveauctiongroup.net/i/21528/20271167_1s.jpg?v=8D1803EE17528B0";$title12="Bijur Lubrication Units";
 
 
 
@@ -36,8 +38,6 @@ $url10="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=3&ps=5
     <br/>
         <span contenteditable="false" c2f="true"  type="LINK" ><a href="http://auctions.btmindustrial.com/auctionlist.aspx" style="color: #cccccc;" target="_blank">Click Here for All Upcoming Auctions</a></span>
 </div>
-<div style="margin: 0px auto; background-color: #494949; color: #008000; font-size: 27px;">
-    </div>
 <table width="600" border="0" cellspacing="0" cellpadding="0" style="border: 2px solid #dcdcdc; top: 86px; width: 615px; height: 564px; margin: 0px auto; background-color: #ffffff;">
 <tbody style="text-align: center;">
 <tr>
@@ -210,14 +210,36 @@ $url10="http://auctions.btmindustrial.com/auction.aspx?a=21585&as=33292&p=3&ps=5
 </td>
 
 
-<td colspan="2">
-    <div style="background:#333333; padding:5px; border-top-left-radius: 15px;border-bottom-left-radius: 15px; color: #ffffff; margin-right: -5px;" >
-        <span><b>HAVE A MACHINE FOR SALE?</b><BR/>There In No Better Time Than<br/><span style="color:red; font-size: 24px;">NOW</span><br/>Send Email With Machine Photos & Description to Dougw@BTMIndustrial.com</span>
-    </div>
-</td>
-
-
-
+    <!--lot 11-->
+    <td>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url11;?>' shape='rect'><?php echo $title11;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url11;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img11;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+    <!--lot 12-->
+    <td>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url12;?>' shape='rect'><?php echo $title12;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url12;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img12;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
 
     </tr>
 
