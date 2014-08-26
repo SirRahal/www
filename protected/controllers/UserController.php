@@ -208,6 +208,8 @@ class UserController extends Controller
             $user=User::model()->findByAttributes(array('email'=>$email));
             if(isset($user) && $user->ID > 1){
                 $new_password = User::model()->password_reset($user->ID);
+            }else{
+                return false;
             }
             if(isset($new_password) && $new_password != 'error'){
                 $name='=?UTF-8?B?'.base64_encode('Bracket Fanatic').'?=';
@@ -219,8 +221,14 @@ class UserController extends Controller
                 $body = "You account has been reset.  Your account name is : $user->user_name and your new password is $new_password";
                 mail($email,$subject,$body,$headers);
                 Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-                return true;
+
+            }else{
+                return false;
             }
+        }else{
+            return false;
         }
+        return true;
+
     }
 }

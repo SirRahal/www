@@ -5,8 +5,7 @@ body
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
     background: #262223;
-    background-image: url("/images/bbbackground.jpg");
-    background-size: 100% 50%;
+    background-image: url("/images/bbbackground2.jpg");
     background-repeat: no-repeat;
 }
 
@@ -71,19 +70,18 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 #mainmenu
 {
    background: #fbf3e1;
-	/*background:white url(bg.gif) repeat-x left top;    /images/ui-bg_inset-soft_25_000000_1x100.png*/
+    text-align:center;
 }
 
 #mainmenu ul
 {
 	padding:6px 20px 5px 20px;
 	margin:0px;
-
 }
 
 #mainmenu ul li
 {
-	display: inline;
+	display: inline;text-align:center;
 }
 
 #mainmenu ul li a
@@ -92,7 +90,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 	background-color:transparent;
 	font-size:14px;
 	text-decoration:none;
-	padding:5px 25px;
+	padding:5px 84px;
     background: #33332c;
 }
 

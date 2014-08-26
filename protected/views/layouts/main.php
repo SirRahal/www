@@ -50,7 +50,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-        <img src="/images/bflogo.png" width="700"/>
+        <img src="/images/logo.png" width="700"/>
 		<!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
         <!--bracket buttons example-->
         <div class="display_bracket_button">

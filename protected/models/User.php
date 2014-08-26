@@ -154,8 +154,9 @@ class User extends CActiveRecord
 
     public static function password_reset($ID){
         $user = User::model()->findByPk($ID);
+
         if(isset($user) && $user->ID > 1){
-            $newPassword = randomPassword();
+            $newPassword = $user->randomPassword();
             $user->password = $newPassword;
             $user->save();
             return $newPassword;

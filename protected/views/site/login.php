@@ -1,6 +1,7 @@
 <head>
     <title>jQuery UI Dialog - Default functionality</title>
     <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="/js/jquery.freeow.js"></script>
     <script>
         $(function() { $( "input[type=submit],button" ) .button(); });
         $(function() {
@@ -22,11 +23,9 @@
                         url: '<?php echo Yii::app()->createUrl('user/resetPassword'); ?>',
                         data: {email : email.val()},
                         success: function(){
-                            alert('resetingg');
                             $("#freeow").freeow("Notification!", "An email has been sent containing your new password.");
                             dialog.dialog( "close" );
                         }, error : function(){
-                            alert('error');
                             $("#freeow").freeow("Email Error!", "The email you entered is incorrect.  Please check the email and try again.", {classes : ["error"]});
                         }
                     }
