@@ -66,15 +66,12 @@ $this->breadcrumbs=array(
     </script>
 </head>
 
-
-
-
-
-
 <h1>My Tickets</h1>
 
 <div class="clear"></div>
 <div>
+    <span>Tickets can be edited and updated until the cut off date</span><br/>
+    <span style="color: #f1901e">March 5th 12pm EST</span>
     <p>Belowe are your tickets</p>
     <div style="float: right; margin-top: -50px; margin-right: 50px;">
         <button id="add_ticket">Add Ticket</button>
