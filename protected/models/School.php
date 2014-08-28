@@ -118,7 +118,6 @@ class School extends CActiveRecord
     }
 
     public static function get_round_placements($school_ID, $round){
-
         $school_ID = intval($school_ID);
         if (!$school_ID)
             return null;
@@ -130,18 +129,39 @@ class School extends CActiveRecord
         $q->order = "$round DESC";
 
         $rows = Ticket::model()->findAll( $q );
-
         $count = count($rows)-1;
         $first = array($rows[0]);
         $second = array($rows[1]);
+        $third = array($rows[2]);
         $last = array($rows[$count]);
         if($round == 'total_points'){
-            $third = array($rows[2]);
-            $placment_array = array_merge($first, $second, $third, $last);
+            $fourth = array($rows[3]);
+            $fifth = array($rows[4]);
+            $sixth = array($rows[5]);
+            $placment_array = array_merge($first, $second, $third, $fourth, $fifth, $sixth, $last);
         }else{
-            $placment_array = array_merge($first, $second, $last);
+            $placment_array = array_merge($first, $second, $third, $last);
         }
         return ($placment_array);
+    }
+
+    public static function get_placement_title($round, $placement){
+        if ($placement == 1) {
+            return '1 st';
+        }elseif($placement == 2) {
+            return '2 nd';
+        }elseif($placement == 3) {
+            return '3 rd';
+        }
+        elseif($round=="total_points" && $placement ==4){
+            return '4 th';
+        } elseif($round=="total_points" && $placement ==5){
+            return '5 th';
+        } elseif($round=="total_points" && $placement ==6){
+            return '6 th';
+        }else{
+            return 'Dead Last';
+        }
     }
 
 }

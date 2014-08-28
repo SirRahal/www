@@ -34,13 +34,11 @@ $placement = 0;
 ?>
 
 <style>
-    tr, td {
-        border: 1px solid #acacac;
-    }
 </style>
 <br/>
 <div class="clear"></div>
-
+<h3>Please note that Winners are subject to change all the way up to the finals.</h3>
+<div class="hint" style="margin-top:-15px;">Ties will be determined by final score of the whole tournament.</div>
 <div id="accordion">
     <?php for($i=1;$i<7;$i++){
         if($i < 6)
@@ -62,15 +60,70 @@ $placement = 0;
             <tr>
                 <?php foreach ($placement_round as $finalest){
                     $placement++;
+                    if($placement == 1 && $round=="total_points"){ ?>
+                        <td style="background: black;">
+                            <div>
+                                <p>Congratulations to all final winners.</p>
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>$350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dead Last</td>
+                                        <td>10</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td style="width:0px; background: black; border-style: none;"></td>
+                    <?php }
                     $user_name = User::model()->findByAttributes(array('ID'=>$finalest['user_ID'])); $user_name = $user_name['user_name'];
                     $picks = Picks::model()->find_tickets_by_ID($finalest['ID']);
                     ?>
                         <td>
-                            <b>User : </b><i><?php echo $user_name;?></i><br/>
-                            <b>Spot : </b><i><?php if ($placement == 1) { echo '1st'; }elseif($placement == 2) { echo '2nd'; }elseif($i==6 && $placement ==3){echo '3rd';}else { echo 'Dead Last'; } ?></i><br/>
+                            <!--Ribbon-->
+                            <div style="position:relative;">
+                                <div class="ribbon-wrapper">
+                                    <div class="ribbon">
+                                        <?php echo $model->get_placement_title($round,$placement); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3><b>User : </b><i><?php echo $user_name;?></i></h3>
                             <?php echo $this->renderPartial('/ticket/container/my_picks_div_round_display', array('picks' => $picks,'ticket_ID' => $finalest['ID'],'round' => $i));?>
                         </td>
-                    <?php  } $placement = 0; ?></tr>
+                        <td style="width:0px; background: black; border-style: none;"></td>
+                        <?php if($placement == 3 && $round=="total_points"){ ?>
+                        </tr>
+            <?php if($placement == 3){ ?>
+            <tr><td colspan="8" style="height: 5px; background: black"></td></tr>
+
+            <?php } ?> <tr>
+                        <?php }
+                     } $placement = 0; ?></tr>
             </tbody>
         </table>
         </div>
@@ -84,20 +137,20 @@ $placement = 0;
     <table>
         <tbody>
         <tr style="background: #acacac;">
-            <td style="text-align: center;"><b>Placement</b></td>
-            <td style="text-align: center;"><b>User</b></td>
-            <td style="text-align: center;"><b>Round 1 Total</b></td>
-            <td style="text-align: center;"><b>Round 2 Total</b></td>
-            <td style="text-align: center;"><b>Round 3 Total</b></td>
-            <td style="text-align: center;"><b>Round 4 Total</b></td>
-            <td style="text-align: center;"><b>Round 5 Total</b></td>
-            <td style="text-align: center;"><b>Final Total</b></td>
+            <td class="text_center"><b>Place</b></td>
+            <td class="text_center"><b>User</b></td>
+            <td class="text_center"><b>Round 1 Total</b></td>
+            <td class="text_center"><b>Round 2 Total</b></td>
+            <td class="text_center"><b>Round 3 Total</b></td>
+            <td class="text_center"><b>Round 4 Total</b></td>
+            <td class="text_center"><b>Round 5 Total</b></td>
+            <td class="text_center"><b>Final Total</b></td>
         </tr>
         <?php $i=0; foreach($tickets as $ticket){
             $i++;
             $placement++; $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID'])); $user_name = $user_name['user_name']; ?>
             <tr <?php if ($i%2 == 0){echo 'style="background : #cdd2db;"';} else { echo 'style="background : #f9f1e0;"';} ?> >
-                <td style="text-align: center; width:20px;"><?php echo $placement; ?></td>
+                <td class="text_center" style="width:20px;"><?php echo $placement; ?></td>
                 <td><?php echo $user_name; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>

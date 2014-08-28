@@ -441,3 +441,53 @@ input[type=password]:focus, textarea:focus {
 
 
 
+.ribbon-wrapper {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -8px;
+    right: -13px;
+}
+
+.ribbon {
+    font: bold 15px Sans-Serif;
+    color: #333;
+    text-align: center;
+    text-shadow: rgba(186, 94, 13, 0.50) 0px 1px 0px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -5px;
+    top: 15px;
+    width: 120px;
+    background-color: #f48a0d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f48a0d), to(#ba5e0d));
+    background-image: -webkit-linear-gradient(top, #f48a0d, #ba5e0d);
+    background-image:    -moz-linear-gradient(top, #f48a0d, #ba5e0d);
+    background-image:     -ms-linear-gradient(top, #f48a0d, #ba5e0d);
+    background-image:      -o-linear-gradient(top, #f48a0d, #ba5e0d);
+    color: #303131;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon:before, .ribbon:after {
+    content: "";
+    border-top:   3px solid #f48a0d;
+    border-left:  3px solid transparent;
+    border-right: 3px solid transparent;
+    position:absolute;
+    bottom: -3px;
+}
+
+.ribbon:before {
+    left: 0;
+}
+.ribbon:after {
+    right: 0;
+}
