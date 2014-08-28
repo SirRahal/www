@@ -426,6 +426,16 @@ input[type=password]:focus, textarea:focus {
     text-decoration: none;
 }
 
+.bracket_button:hover{
+    background-color: #f48a0d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f4890b), to(#cbd0d9));
+    background-image: -webkit-linear-gradient(top, #f4890b, #cbd0d9);
+    background-image:    -moz-linear-gradient(top, #f4890b, #cbd0d9);
+    background-image:     -ms-linear-gradient(top, #f4890b, #cbd0d9);
+    background-image:      -o-linear-gradient(top, #f4890b, #cbd0d9);
+    cursor: pointer;
+}
+
 .wrapper {
     margin: 50px auto;
     width: 280px;

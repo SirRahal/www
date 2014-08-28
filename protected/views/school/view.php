@@ -33,9 +33,28 @@ $placement = 0;
 
 ?>
 
-<style>
-</style>
-<br/>
+
+<div>
+    <h3>23 Chances To Win!</h3>
+    <table>
+        <tr>
+            <td>1st Place</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2nd Place</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3rd Place</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Last Place</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
 <div class="clear"></div>
 <h3>Please note that Winners are subject to change all the way up to the finals.</h3>
 <div class="hint" style="margin-top:-15px;">Ties will be determined by final score of the whole tournament.</div>
