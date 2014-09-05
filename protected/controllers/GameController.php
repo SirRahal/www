@@ -68,6 +68,8 @@ class GameController extends Controller
                 TeamTournamentRegion::model()->update_total_points($model->team_1_ID,$model->team_2_ID,$model->team_1_score,$model->team_2_score);
                 //update ticket rd_ points, and total points for both teams
                 Ticket::model()->update_ticket_points($model->team_1_ID,$model->team_2_ID,$model->team_1_score,$model->team_2_score,$model->round);
+                //figure out new positions for each ticket
+                Ticket::model()->set_positions();
                 $this->redirect(array('view','id'=>$model->ID));
             }
 

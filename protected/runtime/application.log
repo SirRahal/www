@@ -23224,3 +23224,546 @@ Stack trace:
 REQUEST_URI=/index.php/user/resetPassword
 HTTP_REFERER=http://localhost/index.php/site/login
 ---
+2014/09/05 14:15:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('game/delete')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/game/delete/25
+HTTP_REFERER=http://localhost/index.php/game/admin
+---
+2014/09/05 14:16:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('game/delete')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/game/delete/25
+HTTP_REFERER=http://localhost/index.php/game/admin
+---
+2014/09/05 19:17:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "[this".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('[this')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('[this')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/[this')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/[this
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:17:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "[this".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('[this')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('[this')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/[this')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/[this
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "[this".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('[this')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('[this')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/[this')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/[this
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:23:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ticket".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('ticket')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticket')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticket/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/ticket/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:23:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ticket".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('ticket')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticket')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticket/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/ticket/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:24:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ticket".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('ticket')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticket')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticket/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/ticket/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:30:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ticket".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('ticket')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticket')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticket/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/ticket/ticketPopup/7
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ticket".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('ticket')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticket')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticket/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/ticket/ticketPopup/7
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:30:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ticket".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('ticket')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticket')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticket/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/ticket/ticketPopup/1
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:30:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ticket".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('ticket')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticket')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticket/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/ticket/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:31:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ticket".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('ticket')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticket')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticket/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/ticket/ticketPopup/7
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:39:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "school".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('school')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('school')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/school/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/school/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "school".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('school')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('school')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/school/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/school/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:39:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "school".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('school')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('school')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/school/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/school/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:39:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticketPopup')
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticketPo...')
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/school/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:40:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('ticketPopup')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/ticketPo...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/school/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:43:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "school".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('school')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('school')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/school/t...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/school/ticketPopup
+HTTP_REFERER=http://localhost/index.php/school/1
+---
+2014/09/05 19:51:40 [error] [php] Undefined variable: id (C:\wamp\www\protected\views\school\ticketPopup.php:9)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (9)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 19:52:30 [error] [php] Undefined variable: _Post (C:\wamp\www\protected\views\school\ticketPopup.php:9)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (9)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 19:52:43 [error] [php] Undefined variable: _Post (C:\wamp\www\protected\views\school\ticketPopup.php:9)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (9)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 19:53:40 [error] [php] Undefined variable: round (C:\wamp\www\protected\views\ticket\container\my_picks_div_round_display.php:16)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\views\school\ticketPopup.php(15): SchoolController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SchoolController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#5 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#6 unknown(0): SchoolController->actionTicketPopup()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#8 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#11 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#14 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\ticket\container\my_picks_div_round_display.php (16)
+in C:\wamp\www\protected\views\school\ticketPopup.php (15)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+2014/09/05 19:54:02 [error] [php] Undefined variable: round (C:\wamp\www\protected\views\ticket\container\my_picks_div_round_display.php:16)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\views\school\ticketPopup.php(16): SchoolController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): SchoolController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#5 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#6 unknown(0): SchoolController->actionTicketPopup()
+#7 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#8 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#11 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#14 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\ticket\container\my_picks_div_round_display.php (16)
+in C:\wamp\www\protected\views\school\ticketPopup.php (16)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+2014/09/05 19:54:30 [error] [php] Undefined index: id (C:\wamp\www\protected\views\school\ticketPopup.php:13)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (13)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 19:55:16 [error] [php] Undefined index: id (C:\wamp\www\protected\views\school\ticketPopup.php:13)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (13)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 19:55:23 [error] [php] Undefined index: id (C:\wamp\www\protected\views\school\ticketPopup.php:13)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (13)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 20:00:45 [error] [php] Undefined variable: my_picks (C:\wamp\www\protected\views\school\ticketPopup.php:16)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (16)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 20:01:00 [error] [php] Undefined variable: my_picks (C:\wamp\www\protected\views\school\ticketPopup.php:16)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (16)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 20:01:10 [error] [php] Undefined variable: my_picks (C:\wamp\www\protected\views\school\ticketPopup.php:16)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (16)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 20:02:14 [error] [php] Undefined variable: my_picks (C:\wamp\www\protected\views\school\ticketPopup.php:16)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (16)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)
+2014/09/05 20:09:16 [error] [php] Undefined variable: my_picks (C:\wamp\www\protected\views\school\ticketPopup.php:14)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\protected\controllers\SchoolController.php(172): SchoolController->renderPartial()
+#2 unknown(0): SchoolController->actionTicketPopup()
+#3 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#7 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/ticketPopup/7
+in C:\wamp\www\protected\views\school\ticketPopup.php (14)
+in C:\wamp\www\protected\controllers\SchoolController.php (172)
+in C:\wamp\www\index.php (13)

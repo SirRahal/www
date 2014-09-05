@@ -19,21 +19,30 @@
         $school = School::model()->get_name_by_ID($school_ID);
         $my_picks = Picks::model()->find_tickets_by_ID($ticket['ID']);
         $total_total = 0;
+        $placement = $ticket['placement'];
+        $prev_placement = $ticket['prev_placement'];
+        $placement_difference = $prev_placement - $placement;
         ?>
         <div><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></div>
         <b>Total Points : </b><?php echo $ticket['total_points'];?><br/>
-        <b>League Placement : </b> --<!--echo out league placement-->
+        <b>League Placement : </b><?php echo $ticket['placement'];?>
+        <?php if ($placement_difference > 0){
+                    echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
+                <?php }elseif($placement_difference < 0){
+                    echo $placement_difference; ?> <img src="/images/red_arrow_down.png" width="10"/>
+                <?php } ?>
+     <!--echo out league placement-->
         <table style="border: solid #acacac; ">
             <tbody >
                 <tr style="background:#acacac; color:#000000; font-weight: bold;">
                     <td>Seed</td>
                     <td style="width: 160px;;">Team</td>
-                    <td style="text-align: center;">Rd 1</td>
-                    <td style="text-align: center;">Rd 2</td>
-                    <td style="text-align: center;">Rd 3</td>
-                    <td style="text-align: center;">Rd 4</td>
-                    <td style="text-align: center;">Rd 5</td>
-                    <td style="text-align: center;">Rd 6</td>
+                    <td style="text-align: center;">Round 1</td>
+                    <td style="text-align: center;">Round 2</td>
+                    <td style="text-align: center;">Round 3</td>
+                    <td style="text-align: center;">Round 4</td>
+                    <td style="text-align: center;">Round 5</td>
+                    <td style="text-align: center;">Round 6</td>
                     <td style="text-align: center;">Total</td>
                 </tr>
                 <tr>

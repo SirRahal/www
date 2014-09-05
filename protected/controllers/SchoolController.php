@@ -28,11 +28,11 @@ class SchoolController extends Controller
 	{
         return array(
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete','index','view','create','update'),
+                'actions'=>array('admin','delete','index','view','create','update','ticketPopup'),
                 'users'=>array('admin'),
             ),
             array('allow', // allow everyone to view schools
-                'actions'=>array('view'),
+                'actions'=>array('view','ticketPopup'),
                 'users'=>array('*'),
             ),
             array('deny',  // deny all users
@@ -166,4 +166,9 @@ class SchoolController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionTicketPopup($id){
+        $ticket = Ticket::model()->findByPk($id);
+        $this->renderPartial('ticketpopup',array('ticket'=>$ticket));
+    }
 }

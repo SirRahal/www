@@ -15,6 +15,26 @@ $this->breadcrumbs=array(
                 heightStyle: "content"
             });
         });
+        $(function() {
+            $( "#ticket_view" ).dialog({
+                autoOpen: false,
+                show: {
+                    effect: "drop",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "scale",
+                    duration: 1000
+                }
+            });
+
+            $( ".ticket_viewer" ).click(function() {
+                var ticket_id = $(this).attr('id');
+                $('#ticket_view').load('ticketPopup/'+ticket_id);
+                $( "#ticket_view" ).dialog( "open" );
+            });
+
+        });
     </script>
 </head>
 
@@ -156,7 +176,7 @@ $placement = 0;
     <table>
         <tbody>
         <tr style="background: #acacac;">
-            <td class="text_center"><b>Place</b></td>
+            <td class="text_center" colspan="2"><b>Place</b></td>
             <td class="text_center"><b>User</b></td>
             <td class="text_center"><b>Round 1 Total</b></td>
             <td class="text_center"><b>Round 2 Total</b></td>
@@ -167,10 +187,24 @@ $placement = 0;
         </tr>
         <?php $i=0; foreach($tickets as $ticket){
             $i++;
-            $placement++; $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID'])); $user_name = $user_name['user_name']; ?>
+            $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
+            $user_name = $user_name['user_name'];
+            $placement = $ticket['placement'];
+            $prev_placement = $ticket['prev_placement'];
+            $placement_difference = $prev_placement - $placement;
+            ?>
             <tr <?php if ($i%2 == 0){echo 'style="background : #cdd2db;"';} else { echo 'style="background : #f9f1e0;"';} ?> >
-                <td class="text_center" style="width:20px;"><?php echo $placement; ?></td>
-                <td><?php echo $user_name; ?></td>
+                <td class="text_center" ><?php echo $placement; ?>
+                <td><i>
+                    <?php if ($placement_difference > 0){
+                        echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
+                    <?php }elseif($placement_difference < 0){
+                        echo "&nbsp;".$placement_difference; ?> <img src="/images/red_arrow_down.png" width="10"/>
+                    <?php } ?>
+                    </i>
+                </td>
+                </td>
+                <td><div class="ticket_viewer" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>"><?php echo $user_name; ?></div></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>
@@ -184,3 +218,7 @@ $placement = 0;
 </div>
 
 
+<div id="ticket_view" title="admins ticket">
+    <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    <!--put renerpartial here calling action ticket view passing in ticket ID-->
+</div>

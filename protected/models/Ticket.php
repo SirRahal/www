@@ -198,4 +198,17 @@ class Ticket extends CActiveRecord
         }
     }
 
+    public static function set_positions(){
+        $schools = School::model()->findAll();
+        foreach($schools as $school){
+            $tickets = $school->get_tickets($school['ID']);
+            $placement = 0;
+            foreach ($tickets as $ticket) {
+                $placement++;
+                $ticket['prev_placement'] = $ticket['placement'];
+                $ticket['placement'] = $placement;
+                $ticket->save();
+            }
+        }
+    }
 }

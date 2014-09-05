@@ -214,4 +214,6 @@ class TicketController extends Controller
             echo '0';
         }
     }
+
+
 }
