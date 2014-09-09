@@ -218,7 +218,7 @@ $placement = 0;
 </div>
 
 
-<div id="ticket_view" title="admins ticket">
-    <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-    <!--put renerpartial here calling action ticket view passing in ticket ID-->
+<div id="ticket_view" title="Ticket Preview">
+    <p>This is not available yet</p>
+    
 </div>

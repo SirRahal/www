@@ -63,6 +63,14 @@
 	</div><!-- header -->
 
 	<div id="mainmenu">
+        <?php
+        if(Yii::app()->user->name)
+        $display_name = Yii::app()->user->name;
+        if(strlen($display_name) > 11){
+            $display_name = substr($display_name,0,9);
+            $display_name =$display_name.'...';
+        }
+        ?>
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
@@ -76,7 +84,7 @@
                 array('label'=>'Users', 'url'=>array('/user'), 'visible'=>Yii::app()->user->id == 'admin'),
                 array('label'=>'Tickets', 'url'=>array('/ticket'), 'visible'=>Yii::app()->user->id == 'admin'),
                 array('label'=>'Team Placement', 'url'=>array('/tournamentresults'), 'visible'=>Yii::app()->user->id == 'admin'),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.$display_name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 			),
 		)); ?>
 	</div><!-- mainmenu -->

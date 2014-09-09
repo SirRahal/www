@@ -69,19 +69,19 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 #mainmenu
 {
-   background: #fbf3e1;
     text-align:center;
+    margin-left: -20px;
 }
 
 #mainmenu ul
 {
-	padding:6px 20px 5px 20px;
 	margin:0px;
 }
 
 #mainmenu ul li
 {
-	display: inline;text-align:center;
+	display: inline;
+    text-align:center;
 }
 
 #mainmenu ul li a
