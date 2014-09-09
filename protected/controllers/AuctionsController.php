@@ -36,7 +36,7 @@ class AuctionsController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','week_auctions'),
+				'actions'=>array('admin','delete','week_auctions','month_auctions'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -229,4 +229,17 @@ class AuctionsController extends Controller
             'dataProvider'=>$dataProvider,
         ));
     }
+
+    public function actionMonth_auctions()
+    {
+        $dataProvider=new CActiveDataProvider('Auctions', array(
+            'criteria'=>array(
+                'condition'=>'date >= CURRENT_DATE',
+                'order'=>'date ASC'
+            )));
+        $this->render('month_auctions',array(
+            'dataProvider'=>$dataProvider,
+        ));
+    }
+
 }
