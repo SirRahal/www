@@ -81,6 +81,7 @@
                 array('label'=>'Edit Auctions', 'url'=>array('/auctions/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
                 array('label'=>'Auctions Of The Week', 'url'=>array('/auctions/week_auctions'), 'visible'=>Yii::app()->user->id == 'admin'),
                 array('label'=>'Auctions Of The Month', 'url'=>array('/auctions/month_auctions'), 'visible'=>Yii::app()->user->id == 'admin'),
+                array('label'=>'Derek, dont tuch', 'url'=>array('/contacts'), 'visible'=>Yii::app()->user->id == 'admin'),
             ),
         )); ?>
     </div><!-- mainmenu -->

@@ -3,22 +3,22 @@
 
 
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/Hydraulic-and-Mechanical-Spares_as33188';
-$date = 'August 27th';
-$auction_title = 'Hydraulic And Machanical Spares';
+$auction_url = 'http://auctions.btmindustrial.com/FORTUNE-500-Company-SURPLUS_a21750';
+$date = 'September 24th';
+$auction_title = 'FORTUNE 500 Company - SURPLUS';
 
-$url1="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20161668";$img1="http://media.liveauctiongroup.net/i/21528/20161668_1s.jpg?v=8D172C91D118130";$title1="Parker Pumps";
-$url2="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20161670";$img2="http://media.liveauctiongroup.net/i/21528/20161670_1s.jpg?v=8D172C933F35A90";$title2="Vickers Pumps";
-$url3="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20161720";$img3="http://media.liveauctiongroup.net/i/21528/20161720_1s.jpg?v=8D172DEA04E1AD0";$title3="Gearboxes";
-$url4="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20161723";$img4="http://media.liveauctiongroup.net/i/21528/20161723_1s.jpg?v=8D172DEA04E1AD0";$title4="Setco Precision Spindles";
-$url5="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20188859";$img5="http://media.liveauctiongroup.net/i/21528/20188859_1s.jpg?v=8D176250131F7B0";$title5="Gusher Style Pumps";
-$url6="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20189314";$img6="http://media.liveauctiongroup.net/i/21528/20189314_1s.jpg?v=8D176255CCF2F20";$title6="Ebara Pumps";
-$url7="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=1&ps=50#i20191654";$img7="http://media.liveauctiongroup.net/i/21528/20191654_1s.jpg?v=8D17625E9ABD290";$title7="100's Valves";
-$url8="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=50#i20204011";$img8="http://media.liveauctiongroup.net/i/21528/20204011_1s.jpg?v=8D1787658E61BA0";$title8="Lubrication Units";
-$url9="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=50#i20204285";$img9="http://media.liveauctiongroup.net/i/21528/20204285_1s.jpg?v=8D178765790C4D0";$title9="Hypoid Motors";
-$url10="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=50#i20204292";$img10="http://media.liveauctiongroup.net/i/21528/20204292_1s.jpg?v=8D178765A449A30";$title10="Parker / Denison Pumps";
-$url11="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=50#i20204293";$img11="http://media.liveauctiongroup.net/i/21528/20204293_1s.jpg?v=8D1787658E61BA0";$title11="HAWE Lubrication Units";
-$url12="http://auctions.btmindustrial.com/auction.aspx?a=21528&as=33188&p=2&ps=100#i20271167";$img12="http://media.liveauctiongroup.net/i/21528/20271167_1s.jpg?v=8D1803EE17528B0";$title12="Bijur Lubrication Units";
+$url1="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322666";$img1="http://media.liveauctiongroup.net/i/21750/20322666_1s.jpg?v=8D1890ADD93A670";$title1="2005 Mazak Variaxis 630 5x";
+$url2="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322668";$img2="http://media.liveauctiongroup.net/i/21750/20322668_1s.jpg?v=8D188E23B3EABE0";$title2="(2)2002 Mazak PFH-4800's";
+$url3="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322664";$img3="http://media.liveauctiongroup.net/i/21750/20322664_1s.jpg?v=8D1890482F2B810";$title3="(2)Makino J66 HMC's";
+$url4="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20361110";$img4="http://media.liveauctiongroup.net/i/21750/20361110_1s.jpg?v=8D189ECA3A46DE0";$title4="(2)2005 Excello XHC-241";
+$url5="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20538911";$img5="http://media.liveauctiongroup.net/i/21750/20538911_1s.jpg?v=8D19B190B21C200";$title5="2005 Friflex u50";
+$url6="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322663";$img6="http://media.liveauctiongroup.net/i/21750/20322663_1s.jpg?v=8D18F7376A42330";$title6="1997 Toyoda FA550II HMC";
+$url7="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20300327";$img7="http://media.liveauctiongroup.net/i/21750/20300327_1s.jpg?v=8D1882B74AAC330";$title7="Fanuc Gantry System w/2 M-710's";
+$url8="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20300328";$img8="http://media.liveauctiongroup.net/i/21750/20300328_1s.jpg?v=8D19B1002C27130";$title8="Fanuc R-2000iA 165 Robot W/Control";
+$url9="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20426392";$img9="http://media.liveauctiongroup.net/i/21750/20426392_1s.jpg?v=8D19589864EF410";$title9="Tinius Olsen DML 5000 Tensile Tester";
+$url10="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20298759";$img10="http://media.liveauctiongroup.net/i/21750/20298759_1s.jpg?v=8D1847818D5FE50";$title10="(2) Large Hydraulic Units";
+$url11="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322669";$img11="http://media.liveauctiongroup.net/i/21750/20322669_1s.jpg?v=8D195983F806FA0";$title11="12' x 3/8'' Hercules Shear";
+$url12="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=2&ps=50#i20322673";$img12="http://media.liveauctiongroup.net/i/21750/20322673_1s.jpg?v=8D197E82649D3D0";$title12="(4) Toyota Lift Trucks";
 
 
 
