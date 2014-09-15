@@ -96,9 +96,11 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #fbf3e1;
-	background-color: #f5921e;
+	color: #f5921e;
+	border-bottom: solid 5px #f5921e;
 	text-decoration:none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 div.flash-error, div.flash-notice, div.flash-success
@@ -359,37 +361,38 @@ div.search-form
 }
 
 input[type=text], textarea {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
-    border: 1px solid #DDDDDD;
+    background: #333;
+    color: #494949;
+    width: 200px;
+    padding: 6px 15px 6px 35px;
+    border-radius: 20px;
+    box-shadow: 0 1px 0 #ccc inset;
+    transition: 500ms all ease;
+    outline: 0;
 }
+input[type=password] {
+    background: #333;
+    color: #494949;
+    width: 200px;
+    padding: 6px 15px 6px 35px;
+    border-radius: 20px;
+    box-shadow: 0 1px 0 #ccc inset;
+    transition: 500ms all ease;
+    outline: 0;
+}
+
+
 
 input[type=text]:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
+    color: orange;
     border: 1px solid rgba(81, 203, 238, 1);
 }
-input[type=password], textarea {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
-    border: 1px solid #DDDDDD;
-}
+
 
 input[type=password]:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
+    color: orange;
     border: 1px solid rgba(81, 203, 238, 1);
 }
 

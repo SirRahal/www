@@ -72,9 +72,9 @@ $this->breadcrumbs=array(
 <div>
     <span>Tickets can be edited and updated until the cut off date</span><br/>
     <span style="color: #f1901e">March 5th 12pm EST</span>
-    <p>Belowe are your tickets</p>
+    <p>Below are your tickets</p>
     <div style="float: right; margin-top: -50px; margin-right: 50px;">
-        <button id="add_ticket">Add Ticket</button>
+
     </div>
 </div>
 
@@ -91,6 +91,12 @@ $this->breadcrumbs=array(
         <a class="button" style="text-align: center" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>">Edit Ticket</a>
     </div>
 <?php }?>
+<div class="regional_div ticket text_center" style="float:left; margin-left: 20px; background: #cbd0d9;">
+    <p>
+        Any tickets that are not filled out by March 5th at 12pm EST will be auto picked.
+    </p>
+    <button id="add_ticket">Add Ticket</button>
+</div>
 <div class="clear"></div>
 
 
