@@ -3,23 +3,25 @@
 
 
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/FORTUNE-500-Company-SURPLUS_a21750';
-$date = 'September 24th';
-$auction_title = 'FORTUNE 500 Company - SURPLUS';
+$auction_url = 'http://auctions.btmindustrial.com/Monthly-Machinery-Auction_as33450';
+$date = 'TOMORROW September 17th';
+$auction_title = 'Monthly Machinery Auction';
 
-$url1="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322666";$img1="http://media.liveauctiongroup.net/i/21750/20322666_1s.jpg?v=8D1890ADD93A670";$title1="2005 Mazak Variaxis 630 5x";
-$url2="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322668";$img2="http://media.liveauctiongroup.net/i/21750/20322668_1s.jpg?v=8D188E23B3EABE0";$title2="(2)2002 Mazak PFH-4800's";
-$url3="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322664";$img3="http://media.liveauctiongroup.net/i/21750/20322664_1s.jpg?v=8D1890482F2B810";$title3="(2)Makino J66 HMC's";
-$url4="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20361110";$img4="http://media.liveauctiongroup.net/i/21750/20361110_1s.jpg?v=8D189ECA3A46DE0";$title4="(2)2005 Excello XHC-241";
-$url5="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20538911";$img5="http://media.liveauctiongroup.net/i/21750/20538911_1s.jpg?v=8D19B190B21C200";$title5="2005 Friflex u50";
-$url6="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322663";$img6="http://media.liveauctiongroup.net/i/21750/20322663_1s.jpg?v=8D18F7376A42330";$title6="1997 Toyoda FA550II HMC";
-$url7="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20300327";$img7="http://media.liveauctiongroup.net/i/21750/20300327_1s.jpg?v=8D1882B74AAC330";$title7="Fanuc Gantry System w/2 M-710's";
-$url8="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20300328";$img8="http://media.liveauctiongroup.net/i/21750/20300328_1s.jpg?v=8D19B1002C27130";$title8="Fanuc R-2000iA 165 Robot W/Control";
-$url9="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20426392";$img9="http://media.liveauctiongroup.net/i/21750/20426392_1s.jpg?v=8D19589864EF410";$title9="Tinius Olsen DML 5000 Tensile Tester";
-$url10="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20298759";$img10="http://media.liveauctiongroup.net/i/21750/20298759_1s.jpg?v=8D1847818D5FE50";$title10="(2) Large Hydraulic Units";
-$url11="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=1&ps=50#i20322669";$img11="http://media.liveauctiongroup.net/i/21750/20322669_1s.jpg?v=8D195983F806FA0";$title11="12' x 3/8'' Hercules Shear";
-$url12="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=2&ps=50#i20322673";$img12="http://media.liveauctiongroup.net/i/21750/20322673_1s.jpg?v=8D197E82649D3D0";$title12="(4) Toyota Lift Trucks";
-
+$url1="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20370564";$img1="http://media.liveauctiongroup.net/i/21749/20370564_1s.jpg?v=8D19ED6F69795F0";$title1="OKK Horizontal Mill";
+$url2="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20370565";$img2="http://media.liveauctiongroup.net/i/21749/20370565_1s.jpg?v=8D19ED6B7FCAB50";$title2="A.C. 10,000 Lb Fork Lift";
+$url3="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20372547";$img3="http://media.liveauctiongroup.net/i/21749/20372547_1s.jpg?v=8D18B486770C320";$title3="75 HP Sullair Air Compressor";
+$url4="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20426682";$img4="http://media.liveauctiongroup.net/i/21749/20426682_1s.jpg?v=8D190AB1ABBC030";$title4="Okuma Howa ACT2SP-2 CNC Lathe";
+$url5="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20426684";$img5="http://media.liveauctiongroup.net/i/21749/20426684_1s.jpg?v=8D190AB13A57B10";$title5="1996 Clausing Metosa EL-1565";
+$url6="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20448993";$img6="http://media.liveauctiongroup.net/i/21749/20448993_1s.jpg?v=8D193F7F2B1E2E0";$title6="36'' x 120'' T-Slotted Table";
+$url7="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20471729";$img7="http://media.liveauctiongroup.net/i/21749/20471729_1s.jpg?v=8D1962ADF202810";$title7="Medina End Grinder";
+$url8="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20538339";$img8="http://media.liveauctiongroup.net/i/21749/20538339_1s.jpg?v=8D19FAA7B0914C0";$title8="3 Axis CNC EDM CJ-100D";
+$url9="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20538338";$img9="http://media.liveauctiongroup.net/i/21749/20538338_1s.jpg?v=8D19FA484E56670";$title9="2 HP Bridgeport Mill";
+$url10="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20448995";$img10="http://media.liveauctiongroup.net/i/21749/20448995_1s.jpg?v=8D193F7EAD54080";$title10="4' x 11'' Caser Radial Arm Drill";
+$url11="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20449316";$img11="http://media.liveauctiongroup.net/i/21749/20449316_1s.jpg?v=8D19F8CC0F06B50";$title11="26'' x 84'' Clausing Lath w/Dro";
+$url12="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20449318";$img12="http://media.liveauctiongroup.net/i/21749/20449318_1s.jpg?v=8D19F8D169095D0";$title12="15'' x 40'' Cincinnati Tray Top Engine Lathe";
+$url13="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20448992";$img13="http://media.liveauctiongroup.net/i/21749/20448992_1s.jpg?v=8D193F7F000A590";$title13="DoAll Vertical Bandsaw";
+$url14="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20503524";$img14="http://media.liveauctiongroup.net/i/21749/20503524_1s.jpg?v=8D19F8E68C899A0";$title14="Blanchard #18 Rotary Surface Grinder";
+$url15="http://auctions.btmindustrial.com/auction.aspx?a=21749&as=33450&p=1&ps=50#i20449317";$img15="http://media.liveauctiongroup.net/i/21749/20449317_1s.jpg?v=8D19F8D6A02E3D0";$title15="18'' x 80'' LeBlond Servo Shift Engine Lathe";
 
 
 ?>
@@ -28,8 +30,8 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=2&ps=5
 <p style="text-align: center;"><img alt="" src="https://media.campaigner.com/accountsmedia/43/437480/e44b703963d1447dbbd582b624092692.png" style="text-align: center; width: 615px; height: 78px; border-width: 0px; border-style: solid;"></p>
 <p style="text-align: center; font-size: 26px;">
     <font color="#ffffff">
-        <?php echo $auction_title;?> Ending <?php echo $date;?> @ 1pm EST<br>
-        No Reserves, Everything Will Sell To The Highest Bidder.<br/>PARTIAL LIST, go to Website for complete catalog
+        <?php echo $auction_title;?> <br/>Ending <?php echo $date;?> @ 1pm EST<br>
+        No Reserves, Everything Will Sell To The Highest Bidder.<br/>
 </p>
 <strong>
     </font></strong>
@@ -38,6 +40,7 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=2&ps=5
     <br/>
         <span contenteditable="false" c2f="true"  type="LINK" ><a href="http://auctions.btmindustrial.com/auctionlist.aspx" style="color: #cccccc;" target="_blank">Click Here for All Upcoming Auctions</a></span>
 </div>
+<br/>
 <table width="600" border="0" cellspacing="0" cellpadding="0" style="border: 2px solid #dcdcdc; top: 86px; width: 615px; height: 564px; margin: 0px auto; background-color: #ffffff;">
 <tbody style="text-align: center;">
 <tr>
@@ -193,21 +196,21 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=2&ps=5
 </tr>
 
 <tr>
-<td>
-<!--lot:  10-->
-<table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
-    <tbody>
-    <tr>
-        <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
-            <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url10;?>' shape='rect'><?php echo $title10;?></a></b></td>
-    </tr>
-    <tr>
-        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url10;?>' shape='rect'>
-                <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img10;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
-    </tr>
-    </tbody>
-</table>
-</td>
+    <td>
+    <!--lot:  10-->
+    <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+        <tbody>
+        <tr>
+            <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url10;?>' shape='rect'><?php echo $title10;?></a></b></td>
+        </tr>
+        <tr>
+            <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url10;?>' shape='rect'>
+                    <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img10;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+        </tr>
+        </tbody>
+    </table>
+    </td>
 
 
     <!--lot 11-->
@@ -242,7 +245,56 @@ $url12="http://auctions.btmindustrial.com/auction.aspx?a=21750&as=33451&p=2&ps=5
     </td>
 
     </tr>
+<tr>
+    <td>
+        <!--lot:  13-->
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url13;?>' shape='rect'><?php echo $title13;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url13;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img13;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
 
+
+    <!--lot 14-->
+    <td>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url14;?>' shape='rect'><?php echo $title14;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url14;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img14;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+    <!--lot 15-->
+    <td>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url15;?>' shape='rect'><?php echo $title15;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url15;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img15;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+
+</tr>
 
 
 <tr>
