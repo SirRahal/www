@@ -18,12 +18,13 @@ $this->breadcrumbs=array(
         $(function() {
             $( "#ticket_view" ).dialog({
                 autoOpen: false,
+                draggable: false,
                 show: {
                     effect: "drop",
                     duration: 1000
                 },
                 hide: {
-                    effect: "scale",
+                    effect: "drop",
                     duration: 1000
                 }
             });

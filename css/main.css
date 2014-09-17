@@ -361,7 +361,6 @@ div.search-form
 }
 
 input[type=text], textarea {
-    background: #333;
     color: #494949;
     width: 200px;
     padding: 6px 15px 6px 35px;
@@ -371,7 +370,6 @@ input[type=text], textarea {
     outline: 0;
 }
 input[type=password] {
-    background: #333;
     color: #494949;
     width: 200px;
     padding: 6px 15px 6px 35px;
