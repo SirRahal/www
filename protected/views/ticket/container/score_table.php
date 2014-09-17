@@ -23,7 +23,7 @@
         $prev_placement = $ticket['prev_placement'];
         $placement_difference = $prev_placement - $placement;
         ?>
-        <div><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></div>
+        <div><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>" class="tooltip" title="See how you rank up against other at <?php echo $school; ?>"><?php echo $school;?></a></div>
         <b>Total Points : </b><?php echo $ticket['total_points'];?><br/>
         <b>League Placement : </b><?php echo $ticket['placement'];?>
         <?php if ($placement_difference > 0){

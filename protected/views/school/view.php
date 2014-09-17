@@ -205,7 +205,7 @@ $placement = 0;
                     </i>
                 </td>
                 </td>
-                <td><div class="ticket_viewer" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>"><?php echo $user_name; ?></div></td>
+                <td><div class="ticket_viewer tooltip" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>" title="Click to preview their ticket"><?php echo $user_name; ?></div></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>

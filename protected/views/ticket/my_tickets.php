@@ -12,6 +12,7 @@ $this->breadcrumbs=array(
 ?>
 <head>
     <script>
+
         $(function() {
             $( "#accordion" ).accordion({
                 heightStyle: "content"
@@ -85,17 +86,17 @@ $this->breadcrumbs=array(
     $school = School::model()->get_name_by_ID($school_ID);
     ?>
     <div class="regional_div ticket" id="my_picks" style="float:left; margin-left: 20px;">
-        <span style="color: black;" ><b>School : </b><a title="See how you rank up against others in <?php echo $school; ?>" href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span><br/>
+        <span style="color: black;" ><b>School : </b><a class="tooltip" title="See how you rank up against others in <?php echo $school; ?>" href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span><br/>
         <span style="color: black;"><b>Ticket # : </b><?php echo $ticket['code']; ?></span>
         <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket['ID']));?>
-        <a class="button" style="text-align: center" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" title="Edit This ticket up until the date of the first game">Edit Ticket</a>
+        <a  class="button tooltip" style="text-align: center" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" title="Edit This ticket up until March 5th 12pm EST">Edit Ticket</a>
     </div>
 <?php }?>
 <div class="regional_div ticket text_center" style="float:left; margin-left: 20px; background: #cbd0d9;">
     <p>
         Any tickets that are not filled out by March 5th at 12pm EST will be auto picked.
     </p>
-    <button id="add_ticket" title="Add another ticket to your account">Add Ticket</button>
+    <button id="add_ticket">Add Ticket</button>
 </div>
 <div class="clear"></div>
 
