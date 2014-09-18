@@ -71,9 +71,9 @@ $this->breadcrumbs=array(
             }
 
         }
-
+        
         dialog = $( "#dialog-form" ).dialog({
-            autoOpen: <?php if(isset($_SESSION['ticket_code'])) echo 'false'; else echo'true'; ?>,
+            autoOpen: <?php if(isset($_SESSION['ticket_ID'])) echo 'false'; else echo'true'; ?>,
             width: 400,
             height: 400,
             modal: true,

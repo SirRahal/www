@@ -208,7 +208,8 @@ class TicketController extends Controller
             $ticket = Ticket::model()->find_ticket_by_code($code);
             if (isset($ticket) && $ticket->user_ID == 1){
                 $_SESSION['ticket_ID'] = $ticket->ID;
-                echo '1';
+                if(isset($_SESSION['ticket_ID']))
+                    echo '1';
             }
         }else{
             echo '0';
