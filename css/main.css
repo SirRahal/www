@@ -320,20 +320,10 @@ div.search-form
     border-radius: 10px;
     margin-bottom: 20px;
     color:#ffffff;
+    background: #f2890d;
 }
 
-.regional_div_south{
-  background: #f2890d;
-}
-.regional_div_east{
-    background: #f2890d;
-}
-.regional_div_west{
-    background: #f2890d;
-}
-.regional_div_midwest{
-    background: #f2890d;
-}
+
 .centered_div{
     position: absolute;
     width: 240px;

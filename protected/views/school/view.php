@@ -9,6 +9,14 @@ $this->breadcrumbs=array(
 );
 ?>
 <head>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
+
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
+
+
     <script>
         $(function() {
             $( "#accordion" ).accordion({
@@ -19,6 +27,7 @@ $this->breadcrumbs=array(
             $( "#ticket_view" ).dialog({
                 autoOpen: false,
                 draggable: false,
+                height:550,
                 show: {
                     effect: "drop",
                     duration: 1000
@@ -36,9 +45,11 @@ $this->breadcrumbs=array(
             });
 
         });
+        $(document).ready( function () {
+            $('#table_id').DataTable();
+        } );
     </script>
 </head>
-
 <h1>Organization : <i><?php echo $model->name; ?></i></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
@@ -173,30 +184,35 @@ $placement = 0;
 
 <br/>
 <h1>All Tickets</h1>
-<div style="background: #e6e6e6;">
-    <table>
+<div>
+    <table id="table_id" class="hover stripe row-border">
+
+
+        <thead>
+            <tr>
+                <td class="text_center"><b>Place</b></td>
+                <td class="text_center"><b>Change</b></td>
+                <td class="text_center"><b>User</b></td>
+                <td class="text_center"><b>Round 1 Total</b></td>
+                <td class="text_center"><b>Round 2 Total</b></td>
+                <td class="text_center"><b>Round 3 Total</b></td>
+                <td class="text_center"><b>Round 4 Total</b></td>
+                <td class="text_center"><b>Round 5 Total</b></td>
+                <td class="text_center"><b>Final Total</b></td>
+            </tr>
+        </thead>
         <tbody>
-        <tr style="background: #acacac;">
-            <td class="text_center" colspan="2"><b>Place</b></td>
-            <td class="text_center"><b>User</b></td>
-            <td class="text_center"><b>Round 1 Total</b></td>
-            <td class="text_center"><b>Round 2 Total</b></td>
-            <td class="text_center"><b>Round 3 Total</b></td>
-            <td class="text_center"><b>Round 4 Total</b></td>
-            <td class="text_center"><b>Round 5 Total</b></td>
-            <td class="text_center"><b>Final Total</b></td>
-        </tr>
-        <?php $i=0; foreach($tickets as $ticket){
-            $i++;
+        <?php foreach($tickets as $ticket){
+
             $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
             $user_name = $user_name['user_name'];
             $placement = $ticket['placement'];
             $prev_placement = $ticket['prev_placement'];
             $placement_difference = $prev_placement - $placement;
             ?>
-            <tr <?php if ($i%2 == 0){echo 'style="background : #cdd2db;"';} else { echo 'style="background : #f9f1e0;"';} ?> >
+            <tr>
                 <td class="text_center" ><?php echo $placement; ?>
-                <td><i>
+                <td class="text_center"><i>
                     <?php if ($placement_difference > 0){
                         echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
                     <?php }elseif($placement_difference < 0){
