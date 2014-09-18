@@ -177,6 +177,17 @@ class Ticket extends CActiveRecord
         $ticket->save();
     }
 
+    public static function reassign_with_IDs($ticket_ID,$user_ID){
+        $ticket = Ticket::model()->findByPK($ticket_ID);
+        $ticket->user_ID = $user_ID;
+        if($ticket->save()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
     public static function update_ticket_points($team_1_ID, $team_2_ID, $team_1_score, $team_2_score,$round){
         //grab all the tickets that have team_1_ID selected
         $tickets = Picks::model()->get_tickets_pick($team_1_ID);

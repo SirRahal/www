@@ -175,4 +175,6 @@ class User extends CActiveRecord
         }
         return implode($pass); //turn the array into a string
     }
+
+
 }
