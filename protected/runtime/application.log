@@ -24832,3 +24832,57 @@ Stack trace:
 REQUEST_URI=/index.php/user/register
 HTTP_REFERER=http://localhost/index.php/user/register
 ---
+2014/09/19 13:46:21 [error] [php] Invalid argument supplied for foreach() (C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:368)
+Stack trace:
+#0 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#1 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#3 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#9 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#10 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/register
+in C:\wamp\www\protected\controllers\UserController.php (103)
+in C:\wamp\www\index.php (13)
+2014/09/19 13:49:06 [error] [php] Invalid argument supplied for foreach() (C:\wamp\yii\framework\db\schema\CDbCommandBuilder.php:368)
+Stack trace:
+#0 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#1 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#3 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#6 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#9 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#10 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/register
+in C:\wamp\www\protected\controllers\UserController.php (103)
+in C:\wamp\www\index.php (13)
+2014/09/19 14:00:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('addTicket')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/addTicke...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/ticket/addTicket
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---

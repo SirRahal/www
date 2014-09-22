@@ -85,7 +85,6 @@ class UserController extends Controller
 
     public function actionRegister()
     {
-
         $model=new User;
         $valid = false;
         // Uncomment the following line if AJAX validation is needed
@@ -97,14 +96,14 @@ class UserController extends Controller
         if($valid)
         {
             $model->attributes=$_POST['User'];
-            $user_ID = $model->ID;
             if($model->save()){
                 //save ticket to user
-                $reassigned = Ticket::model()->reassign_with_IDs($_SESSION['ticket_ID'],$user_ID);
+                $user_ID = $model->ID;
+                $ticket_ID = $_SESSION['ticket_ID'];
+                $reassigned = Ticket::model()->reassign_with_IDs($ticket_ID, $user_ID);
                 if($reassigned){
                     unset($_SESSION['ticket_ID']);
-                    //redirect to mytickets
-                    $this->redirect(array('/ticket/mytickets'));
+                    $this->redirect(array('view','id'=>$model->ID));
                 }
             }
         }
