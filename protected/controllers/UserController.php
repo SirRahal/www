@@ -135,7 +135,7 @@ class UserController extends Controller
 		{
 			$model->attributes=$_POST['User'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect('/index.php/site/index');
 		}
 
 		$this->render('update',array(

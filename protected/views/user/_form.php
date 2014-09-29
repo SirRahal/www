@@ -27,10 +27,88 @@
 
 
     <p class="note">Fields with <span class="required">*</span> are required.</p>
-    <span>Please fill out this information carfuly.  If you win, this will be used to contact you for your prizes.</span>
+    <span>Please fill out and make sure that this information is correct.  If you win, this will be used to contact you.</span>
 
     <?php echo $form->errorSummary($model); ?>
 
+    <div class="centered_div">
+        
+        <div class="row">
+            <?php echo $form->labelEx($model,'city'); ?>
+            <?php echo $form->textField($model,'city',array('size'=>60,'maxlength'=>100)); ?>
+            <?php echo $form->error($model,'city'); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'state'); ?>
+            <?php echo $form->dropDownList($model,'state',array('status'=>'--',
+                'AL'=>'AL'
+            ,'AK'=>'AK'
+            ,'AZ'=>'AZ'
+            ,'AR'=>'AR'
+            ,'CA'=>'CA'
+            ,'CO'=>'CO'
+            ,'CT'=>'CT'
+            ,'DE'=>'DE'
+            ,'DC'=>'DC'
+            ,'FL'=>'FL'
+            ,'GA'=>'GA'
+            ,'HI'=>'HI'
+            ,'ID'=>'ID'
+            ,'IL'=>'IL'
+            ,'IN'=>'IN'
+            ,'IA'=>'IA'
+            ,'KS'=>'KS'
+            ,'KY'=>'KY'
+            ,'LA'=>'LA'
+            ,'ME'=>'ME'
+            ,'MD'=>'MD'
+            ,'MA'=>'MA'
+            ,'MI'=>'MI'
+            ,'MN'=>'MN'
+            ,'MS'=>'MS'
+            ,'MO'=>'MO'
+            ,'MT'=>'MT'
+            ,'NE'=>'NE'
+            ,'NV'=>'NV'
+            ,'NH'=>'NH'
+            ,'NJ'=>'NJ'
+            ,'NM'=>'NM'
+            ,'NY'=>'NY'
+            ,'NC'=>'NC'
+            ,'ND'=>'ND'
+            ,'OH'=>'OH'
+            ,'OK'=>'OK'
+            ,'OR'=>'OR'
+            ,'PA'=>'PA'
+            ,'RI'=>'RI'
+            ,'SC'=>'SC'
+            ,'SD'=>'SD'
+            ,'TN'=>'TN'
+            ,'TX'=>'TX'
+            ,'UT'=>'UT'
+            ,'VT'=>'VT'
+            ,'VA'=>'VA'
+            ,'WA'=>'WA'
+            ,'WV'=>'WV'
+            ,'WI'=>'WI'
+            ,'WY'=>'WY'
+            )); ?>
+            <?php echo $form->error($model,'state'); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'zip'); ?>
+            <?php echo $form->textField($model,'zip',array('size'=>8,'maxlength'=>8)); ?>
+            <?php echo $form->error($model,'zip'); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'phone'); ?>
+            <?php echo $form->textField($model,'phone',array('size'=>18,'maxlength'=>18, 'placeholder'=>'1(555)-555-5555')); ?>
+            <?php echo $form->error($model,'phone'); ?>
+        </div>
+    </div>
     <div class="row">
         <?php echo $form->labelEx($model,'first_name'); ?>
         <?php echo $form->textField($model,'first_name',array('size'=>60,'maxlength'=>100,'title'=>'Please type carefully, this is whom the checks will be made out to.')); ?>
@@ -49,81 +127,7 @@
         <?php echo $form->error($model,'email'); ?>
     </div>
 
-    <div class="row">
-        <?php echo $form->labelEx($model,'city'); ?>
-        <?php echo $form->textField($model,'city',array('size'=>60,'maxlength'=>100)); ?>
-        <?php echo $form->error($model,'city'); ?>
-    </div>
 
-    <div class="row">
-        <?php echo $form->labelEx($model,'state'); ?>
-        <?php echo $form->dropDownList($model,'state',array('status'=>'--',
-            'AL'=>'AL'
-        ,'AK'=>'AK'
-        ,'AZ'=>'AZ'
-        ,'AR'=>'AR'
-        ,'CA'=>'CA'
-        ,'CO'=>'CO'
-        ,'CT'=>'CT'
-        ,'DE'=>'DE'
-        ,'DC'=>'DC'
-        ,'FL'=>'FL'
-        ,'GA'=>'GA'
-        ,'HI'=>'HI'
-        ,'ID'=>'ID'
-        ,'IL'=>'IL'
-        ,'IN'=>'IN'
-        ,'IA'=>'IA'
-        ,'KS'=>'KS'
-        ,'KY'=>'KY'
-        ,'LA'=>'LA'
-        ,'ME'=>'ME'
-        ,'MD'=>'MD'
-        ,'MA'=>'MA'
-        ,'MI'=>'MI'
-        ,'MN'=>'MN'
-        ,'MS'=>'MS'
-        ,'MO'=>'MO'
-        ,'MT'=>'MT'
-        ,'NE'=>'NE'
-        ,'NV'=>'NV'
-        ,'NH'=>'NH'
-        ,'NJ'=>'NJ'
-        ,'NM'=>'NM'
-        ,'NY'=>'NY'
-        ,'NC'=>'NC'
-        ,'ND'=>'ND'
-        ,'OH'=>'OH'
-        ,'OK'=>'OK'
-        ,'OR'=>'OR'
-        ,'PA'=>'PA'
-        ,'RI'=>'RI'
-        ,'SC'=>'SC'
-        ,'SD'=>'SD'
-        ,'TN'=>'TN'
-        ,'TX'=>'TX'
-        ,'UT'=>'UT'
-        ,'VT'=>'VT'
-        ,'VA'=>'VA'
-        ,'WA'=>'WA'
-        ,'WV'=>'WV'
-        ,'WI'=>'WI'
-        ,'WY'=>'WY'
-        )); ?>
-        <?php echo $form->error($model,'state'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'zip'); ?>
-        <?php echo $form->textField($model,'zip',array('size'=>8,'maxlength'=>8)); ?>
-        <?php echo $form->error($model,'zip'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'phone'); ?>
-        <?php echo $form->textField($model,'phone',array('size'=>18,'maxlength'=>18, 'placeholder'=>'1(555)-555-5555')); ?>
-        <?php echo $form->error($model,'phone'); ?>
-    </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'user_name'); ?>
