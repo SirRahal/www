@@ -86,7 +86,7 @@ $this->breadcrumbs=array(
         <span style="color: black;" ><b>School : </b><a class="tooltip" title="See how you rank up against others in <?php echo $school; ?>" href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span><br/>
         <span style="color: black;"><b>Ticket # : </b><?php echo $ticket['code']; ?></span>
         <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket['ID']));?>
-        <a  class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 82px 5px 82px;" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" title="Edit This ticket up until March 5th 12pm EST">Edit Ticket</a>
+        <a  class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" title="Edit This ticket up until March 5th 12pm EST">Edit Ticket</a>
     </div>
 <?php }?>
 <div class="regional_div ticket text_center" style="float:left; margin-left: 20px; background: #cbd0d9;">

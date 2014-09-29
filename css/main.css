@@ -67,6 +67,8 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 	font-size: 200%;
 }
 
+
+
 #mainmenu
 {
     height:33px;
@@ -74,10 +76,12 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     text-align:center;
 }
 
-#mainmenu ul li
-{
-	display: inline;
-    float: left;
+#mainmenu ul li {
+    display: inline-block;
+    position:relative;
+    margin: auto;
+    background: #33332c;
+    padding-top:5px;
 }
 
 #mainmenu ul li a
@@ -87,7 +91,6 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 	padding-top:5px;
     padding-bottom:5px;
     width:217px;
-    background: #33332c;
 }
 
 #mainmenu ul li ul {
@@ -105,8 +108,6 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 	color: #f5921e;
 	border-bottom: solid 5px #f5921e;
 	text-decoration:none;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 
 div.flash-error, div.flash-notice, div.flash-success

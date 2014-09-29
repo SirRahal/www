@@ -31,6 +31,11 @@ class UserController extends Controller
 				'actions'=>array('register','resetPassword'),
 				'users'=>array('*'),
 			),
+            array('allow',
+                'actions'=>array('view','update'),
+                'users'=>array(Yii::app()->user->name),
+                'expression' => 'User::model()->ownsTicket($_GET[\'id\'])'
+            ),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('admin','delete','index','view','create','update'),
 				'users'=>array('admin'),
