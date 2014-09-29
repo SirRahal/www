@@ -12,6 +12,7 @@
         if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
     }
 </script>
+
 <div class="form">
 
     <?php
@@ -137,7 +138,7 @@
     </div>
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class' => 'ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')); ?>
     </div>
 
     <?php $this->endWidget(); ?>

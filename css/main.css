@@ -69,29 +69,35 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 #mainmenu
 {
+    height:33px;
+    margin: 0 auto;
     text-align:center;
-    margin-left: -20px;
-}
-
-#mainmenu ul
-{
-	margin:0px;
 }
 
 #mainmenu ul li
 {
 	display: inline;
-    text-align:center;
+    float: left;
 }
 
 #mainmenu ul li a
 {
 	color: #fbf3e1;
-	background-color:transparent;
 	font-size:14px;
-	text-decoration:none;
-	padding:5px 84px;
+	padding-top:5px;
+    padding-bottom:5px;
+    width:217px;
     background: #33332c;
+}
+
+#mainmenu ul li ul {
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+}
+
+#mainmenu ul li:hover > ul {
+    display: block;
 }
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
@@ -491,4 +497,10 @@ input[type=password]:focus, textarea:focus {
 }
 .ribbon:after {
     right: 0;
+}
+.ui-button:hover{
+    border: 1px solid #59b4d4;
+    background: #0078a3 url("/css/jquery-ui-custom/images/ui-bg_glass_40_0078a3_1x400.png") 50% 50% repeat-x;
+    font-weight: bold;
+    color: #ffffff;
 }
