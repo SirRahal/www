@@ -132,6 +132,17 @@ class User extends CActiveRecord
         $ID = $user['ID'];
         return $ID;
     }
+    public static function isUser($ID){
+        $loged_id = User::model()->get_user_ID();
+        if($ID == $loged_id)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
 
     public static function ownsTicket($ticket_ID){
         //get user ID
@@ -174,6 +185,4 @@ class User extends CActiveRecord
         }
         return implode($pass); //turn the array into a string
     }
-
-
 }

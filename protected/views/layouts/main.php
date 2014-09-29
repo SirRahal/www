@@ -95,7 +95,7 @@
                     'data-toggle' => 'dropdown',
                 ), 'visible'=>!Yii::app()->user->isGuest,
                         'items' => array(
-                    array('label'=>'Edit User', 'url'=>array('/company/index')),
+                    array('label'=>'Edit User', 'url'=>array('/user/update/'.User::model()->get_user_ID())),
                     array('label'=>'Log-out', 'url'=>array('/site/logout'))
         ),
 
