@@ -32,7 +32,7 @@
     <?php echo $form->errorSummary($model); ?>
 
     <div class="centered_div">
-        
+
         <div class="row">
             <?php echo $form->labelEx($model,'city'); ?>
             <?php echo $form->textField($model,'city',array('size'=>60,'maxlength'=>100)); ?>
