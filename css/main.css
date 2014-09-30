@@ -104,6 +104,11 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     position: absolute;
     margin-left: -20px;
 }
+#mainmenu ul li ul:hover {
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+}
 
 #mainmenu ul li:hover > ul {
     display: block;

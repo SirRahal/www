@@ -125,9 +125,11 @@ class TeamTournamentRegion extends CActiveRecord
     }
     public static function select_tournament_roster_by_seed($tournament_ID)
     {
-        /*$qry_str = "SELECT * FROM `team_tournament_region` WHERE `tournament_ID` = ".$tounament_ID;
-        $roster = Yii::app()->db->createCommand($qry_str)->queryAll();*/
         $roster = TeamTournamentRegion::model()->findAllByAttributes(array('tournament_region_ID'=>$tournament_ID ),array('order' => 'seed ASC'));
+        return $roster;
+    }
+    public static function select_teams_by_seed($seed){
+        $roster = TeamTournamentRegion::model()->findAllByAttributes(array('seed'=>$seed ),array('order' => 'tournament_region_ID ASC'));
         return $roster;
     }
 
@@ -152,4 +154,6 @@ class TeamTournamentRegion extends CActiveRecord
         $team_tournament_Region->total_points +=$team_score;
         $team_tournament_Region->save();
     }
+
+
 }

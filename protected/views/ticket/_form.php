@@ -108,10 +108,18 @@ $school = School::model()->get_name_by_ID($school_ID);
             }
         });
     }
+    $( "#alternet_view" ).button().on( "click", function() {
+        dialog.dialog( "open" );
+    });
 </script>
 
 <div class="clear"></div>
-
+<div style="position: absolute; margin-left: 250px"><div class="regional_div ticket text_center" style="background: #cbd0d9; width:150px;">
+        <p>
+            Looking for an easier way to set up your ticket?  Try this view!
+        </p>
+        <button id="add_ticket">Alternate View</button>
+    </div></div>
 <!--the 4 regions with the 16 radio buttons in each-->
 <div style="float: left;  z-index: 100;">
     <!--south region-->
@@ -133,11 +141,59 @@ $school = School::model()->get_name_by_ID($school_ID);
         <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 4)); ?>
     </div>
 </div>
-
+<div id="dialog-form" title="Add a Ticket">
+    <p class="validateTips">Please Enter Ticket Number</p>
+    <?php echo $this->renderPartial('container/seed_button', array('seed' => 1)); ?>
+</div>
 <script>
     /*set the div class picks to jqueries radio button set for css*/
     $('.picks').buttonset();
+    $(function() {
+        var dialog, form,
+            ticket_code = $( "#ticket_code"),
+            allFields = $( [] ).add( ticket_code ),
+            tips = $( ".validateTips" );
 
+        function addTicket() {
+            var valid = false;
+            $.ajax({
+                    type: "POST",
+                    url: '<?php echo Yii::app()->createUrl('ticket/addTicket'); ?>',
+                    data: {ticket_code : ticket_code.val()},
+                    success: function(){
+                        $("#freeow").freeow("Ticket Code Correct!", "The ticket will now be added to your ticket collection.  One Moment!");
+                        dialog.dialog( "close" );
+                        window.location.href='/index.php/ticket/mytickets';
+                    }, error : function(){
+                        $("#freeow").freeow("Ticket Code Incorrect!", "The ticket code entered is incorrect.  Please check the code and try again.", {classes : ["error"]});
+                    }
+                }
+            );
+        }
+        dialog = $( "#dialog-form" ).dialog({
+            autoOpen: false,
+            height: 350,
+            width: 350,
+            modal: true,
+            buttons: {
+                "Add Ticket": addTicket,
+                Cancel: function() {
+                    dialog.dialog( "close" );
+                }
+            },
+            close: function() {
+                form[ 0 ].reset();
+            }
+        });
+
+        form = dialog.find( "form" ).on( "submit", function( event ) {
+            addTicket();
+        });
+
+        $( "#add_ticket" ).button().on( "click", function() {
+            dialog.dialog( "open" );
+        });
+    });
 </script>
 
 <?php
