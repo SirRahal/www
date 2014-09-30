@@ -28,7 +28,7 @@ class TicketController extends Controller
     {
         return array(
             array('allow',
-                'actions'=>array('view','update','easypicks'),
+                'actions'=>array('view','update','easypicks','update2'),
                 'users'=>array(Yii::app()->user->name),
                 'expression' => 'User::model()->ownsTicket($_GET[\'id\'])'
             ),
@@ -110,6 +110,34 @@ class TicketController extends Controller
         }
 
         $this->render('update',array(
+            'model'=>$model,
+        ));
+    }
+
+    public function actionUpdate2($id)
+    {
+        $model=$this->loadModel($id);
+        //if easy_picks is '1' than retrieve an array of 16 IDs and add them to the session
+        if(isset($_POST['easy_picks']) && $_POST['easy_picks']){
+            $my_picks = Ticket::model()->easy_pick(); // returns an array of 16
+            //save the attribute and refresh
+            Yii::app()->user->setState('my_picks', $my_picks);
+            $test = Yii::app()->user->getState('my_picks');
+            if(isset($test))
+            {
+                return true;/*
+                $this->redirect(array('view','id'=>$model->ID));*/
+            }
+        }
+
+        if(isset($_POST['Ticket']))
+        {
+            $model->attributes=$_POST['Ticket'];
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->ID));
+        }
+
+        $this->render('update2',array(
             'model'=>$model,
         ));
     }

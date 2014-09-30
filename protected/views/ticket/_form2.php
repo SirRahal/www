@@ -28,13 +28,14 @@ if(!isset($my_picks)){
 $string_exploded = explode("-", $ticket_code);
 $school_ID = $string_exploded[0];
 $school = School::model()->get_name_by_ID($school_ID);
+$current_pick = 2;
 ?>
 
 <script src="/js/general.js"></script>
 
 <p>Please select a team from each seed.  The center column is your ticket, and don't forget to hit the save button when you are finished.<br/>This ticket can be edited up until noon of the first game EST.</p>
 <!--centered info needs to be updated by the user table-->
-<div class="centered_div text_center">
+<div class="text_center" style="width:30%;">
     <div class="boxed">
         <?php echo Yii::app()->user->ID; ?> <!--echo out user-->
     </div>
@@ -54,7 +55,7 @@ $school = School::model()->get_name_by_ID($school_ID);
         <h3>My Picks</h3>
     </div>
     <!--this div should be updated whenever a button is clicked on the page-->
-    <div class="regional_div regional_div_my_picks" id="my_picks" >
+    <div class="regional_div regional_div_my_picks" id="my_picks">
         <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket_ID));?>
         <div class="picks">
             <!--save-->
@@ -93,8 +94,8 @@ $school = School::model()->get_name_by_ID($school_ID);
 
     }
     function reset_picks(){
-            $("#freeow").freeow("Resetting!", "One moment as we reset your picks.  Please note that it will go back to your last saved entries");
-            window.location.reload();
+        $("#freeow").freeow("Resetting!", "One moment as we reset your picks.  Please note that it will go back to your last saved entries");
+        window.location.reload();
     }
     function easy_picks(){
         $("#freeow").freeow("Easy Picking!", "One moment as we pick for you!.  Please note that you will need to save these picks if you like them.");
@@ -114,33 +115,66 @@ $school = School::model()->get_name_by_ID($school_ID);
 </script>
 
 <div class="clear"></div>
+<div style=" margin-left: 250px"><div class="regional_div ticket text_center" style="background: #cbd0d9; width:150px;">
+        <p>
+            Looking for an easier way to set up your ticket?  Try this view!
+        </p>
+        <button id="add_ticket">Alternate View</button>
+    </div></div>
 
-<!--the 4 regions with the 16 radio buttons in each-->
-<div style="float: left;  z-index: 100;">
-    <!--south region-->
-    <div class="regional_div">
-        <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 1)); ?>
-    </div>
-    <!--east region-->
-    <div class="regional_div" >
-        <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 3)); ?>
-    </div>
+<div id="dialog-form" title="Team Select">
+    <p class="validateTips">Please Select One</p>
+    <?php echo $this->renderPartial('container/seed_button', array('seed' => $current_pick)); ?>
 </div>
-<div style="float: right; z-index: 100;">
-    <!--west region-->
-    <div class="regional_div">
-        <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 2)); ?>
-    </div>
-    <!--midwest region-->
-    <div class="regional_div" >
-        <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 4)); ?>
-    </div>
-</div>
-
 <script>
     /*set the div class picks to jqueries radio button set for css*/
     $('.picks').buttonset();
-    $('#alternet_button').buttonset();
+    $(function() {
+        var dialog, form,
+            ticket_code = $( "#ticket_code"),
+            allFields = $( [] ).add( ticket_code ),
+            tips = $( ".validateTips" );
+
+        function addTicket() {
+            var valid = false;
+            $.ajax({
+                    type: "POST",
+                    url: '<?php echo Yii::app()->createUrl('ticket/addTicket'); ?>',
+                    data: {ticket_code : ticket_code.val()},
+                    success: function(){
+                        $("#freeow").freeow("Ticket Code Correct!", "The ticket will now be added to your ticket collection.  One Moment!");
+                        dialog.dialog( "close" );
+                        window.location.href='/index.php/ticket/mytickets';
+                    }, error : function(){
+                        $("#freeow").freeow("Ticket Code Incorrect!", "The ticket code entered is incorrect.  Please check the code and try again.", {classes : ["error"]});
+                    }
+                }
+            );
+        }
+        dialog = $( "#dialog-form" ).dialog({
+            autoOpen: false,
+            height: 350,
+            width: 350,
+            modal: true,
+            buttons: {
+                "Next Seed": addTicket,
+                "Close": function() {
+                    dialog.dialog( "close" );
+                }
+            },
+            close: function() {
+                form[ 0 ].reset();
+            }
+        });
+
+        form = dialog.find( "form" ).on( "submit", function( event ) {
+            addTicket();
+        });
+
+        $( "#add_ticket" ).button().on( "click", function() {
+            dialog.dialog( "open" );
+        });
+    });
 </script>
 
 <?php

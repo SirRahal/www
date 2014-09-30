@@ -4,14 +4,6 @@
  * User: Sari
  * Date: 9/30/14
  * Time: 10:22 AM
- */ ?>
-
-<?php
-/**
- * Created by PhpStorm.
- * User: Sari
- * Date: 6/6/14
- * Time: 10:32 AM
  */
 
 /*teams are the teams of the specific region, 1 = South, 2 = West, 3 = Ease, 4 = Midwest*/
@@ -59,7 +51,7 @@ foreach($teams as $team){
     <div class="picks" >
         <!--ticketID='here'-->
         <div team_ID='<?php echo $team_ID; ?>' team_name='<?php echo $team_name; ?>' >
-            <div style="float: left; width:80px; padding-top: 7px;" >
+            <div style="float: left; width:60px; padding-top: 7px;" >
                 <?php echo $region_name ;?>
             </div>
             <input type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
