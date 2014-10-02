@@ -111,7 +111,7 @@ class School extends CActiveRecord
             'condition' => "code LIKE :match",
             'params'    => array(':match' => $school_ID . "-%")
         ) );
-        $q->order = "total_points DESC";
+        $q->order = "total_points DESC, rd_5 DESC, rd_5 DESC, rd_4 DESC, rd_3 DESC, rd_2 DESC, rd_1 DESC, user_ID";
 
         $rows = Ticket::model()->findAll( $q );
         return $rows;

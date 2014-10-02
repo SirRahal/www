@@ -71,13 +71,14 @@
 	<div id="mainmenu">
         <?php
         if(Yii::app()->user->name)
-        $display_name = Yii::app()->user->name;
-        if(strlen($display_name) > 11){
-            $display_name = substr($display_name,0,9);
+        $display_name = ucfirst (Yii::app()->user->name);
+        if(strlen($display_name) > 20){
+            $display_name = substr($display_name,0,18);
             $display_name =$display_name.'...';
         }
         ?>
 		<?php $this->widget('zii.widgets.CMenu',array(
+            'encodeLabel' => false,
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
                 array('label'=>'My Tickets', 'url'=>array('/ticket/mytickets'), 'visible'=>!Yii::app()->user->isGuest),
@@ -90,10 +91,20 @@
                 array('label'=>'Users', 'url'=>array('/user'), 'visible'=>Yii::app()->user->id == 'admin'),
                 array('label'=>'Tickets', 'url'=>array('/ticket'), 'visible'=>Yii::app()->user->id == 'admin'),
                 array('label'=>'Team Placement', 'url'=>array('/tournamentresults'), 'visible'=>Yii::app()->user->id == 'admin'),
-				array('label'=>'Logout ('.$display_name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'<span class="ui-icon ui-icon-circle-triangle-s icon"></span>'.$display_name, 'url'=>array(''),'linkOptions'=> array(
+                    'class' => 'dropdown-toggle',
+                    'data-toggle' => 'dropdown',
+                ), 'visible'=>!Yii::app()->user->isGuest,
+                        'items' => array(
+                    array('label'=>'Edit User', 'url'=>array('/user/update/'.User::model()->get_user_ID())),
+                    array('label'=>'Log-out', 'url'=>array('/site/logout'))
+        ),
+
+
+                ),
 			),
 		)); ?>
-	</div><!-- mainmenu -->
+    </div><!-- mainmenu -->
     <div class="clear"></div>
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(

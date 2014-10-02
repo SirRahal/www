@@ -42,6 +42,7 @@ class User extends CActiveRecord
 			array('state', 'length', 'max'=>2),
 			array('zip', 'length', 'max'=>8),
 			array('phone', 'length', 'max'=>18),
+            array('user_name', 'unique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ID, first_name, last_name, email, city, state, zip, phone, user_name, password', 'safe', 'on'=>'search'),
@@ -131,6 +132,17 @@ class User extends CActiveRecord
         $ID = $user['ID'];
         return $ID;
     }
+    public static function isUser($ID){
+        $loged_id = User::model()->get_user_ID();
+        if($ID == $loged_id)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
 
     public static function ownsTicket($ticket_ID){
         //get user ID
@@ -144,8 +156,6 @@ class User extends CActiveRecord
         else{
             return false;
         }
-
-
     }
 
     public static function checkValid(){
@@ -175,6 +185,4 @@ class User extends CActiveRecord
         }
         return implode($pass); //turn the array into a string
     }
-
-
 }

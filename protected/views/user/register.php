@@ -131,7 +131,3 @@ $this->breadcrumbs=array(
     <div class="clear"></div>
 
 </div>
-<!--This part was used for testing and echos out proper data-->
-ticket ID : <?php if(isset($_SESSION['ticket_ID'])){ echo $_SESSION['ticket_ID'];} ?> <br/>
-user ID : <?php if(isset($model->attributes)){
-    echo $model->attributes['ID']; ?>, <?php } ?>

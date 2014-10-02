@@ -75,7 +75,7 @@ If you have business inquiries or other questions, please fill out the following
 	<?php endif; ?>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
+		<?php echo CHtml::submitButton('Submit', array('class' => 'ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
