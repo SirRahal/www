@@ -137,4 +137,13 @@ class Auctions extends CActiveRecord
             return $auctions;
         return $current_date;
     }
+
+    public static function get_latest_auctions(){
+        $auctions = Auctions::model()->findAll(
+            array(
+            'order' => 'date desc',
+            'limit' => 5
+        ));
+        return $auctions;
+    }
 }
