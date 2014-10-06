@@ -29,6 +29,9 @@ class School extends CActiveRecord
 			array('name, state', 'required'),
 			array('name', 'length', 'max'=>100),
 			array('state', 'length', 'max'=>2),
+			array('contact_name', 'length', 'max'=>100),
+            array('phone','length', 'max'=>16),
+            array('email', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ID, name, state', 'safe', 'on'=>'search'),
@@ -55,6 +58,9 @@ class School extends CActiveRecord
 			'ID' => 'ID',
 			'name' => 'Name',
 			'state' => 'State',
+            'contact_name' => 'Contact Name',
+            'phone' => 'Phone',
+            'email' => 'Email',
 		);
 	}
 
@@ -164,4 +170,7 @@ class School extends CActiveRecord
         }
     }
 
+    public static function get_ticket_count($school_ID){
+        return count (School::model()->get_tickets($school_ID));
+    }
 }

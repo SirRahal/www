@@ -27,7 +27,7 @@ $this->breadcrumbs=array(
             $( "#ticket_view" ).dialog({
                 autoOpen: false,
                 draggable: false,
-                height:550,
+                height:585,
                 show: {
                     effect: "drop",
                     duration: 1000
@@ -50,6 +50,7 @@ $this->breadcrumbs=array(
         } );
     </script>
 </head>
+<div style="float: left; width: 400px;">
 <h1>Organization : <i><?php echo $model->name; ?></i></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
@@ -57,6 +58,9 @@ $this->breadcrumbs=array(
 	'attributes'=>array(
 		'name',
 		'state',
+        'contact_name',
+        'phone',
+        'email',
 	),
 ));
 
@@ -64,35 +68,20 @@ $tickets = $model->get_tickets($model->ID);
 $placement = 0;
 
 ?>
-
+    <br/>
+    <div style="padding:20px;">
+        <h3>Please note that Winners are subject to change all the way up to the finals.</h3>
+        <div class="hint" style="margin-top:-15px;">Ties will be determined by the score in the previous round.  These placements are not final till the end of the turnament. </div>
+    </div>
+</div>
 
 <div>
-    <h3>23 Chances To Win!</h3>
-    <table>
-        <tr>
-            <td>1st Place</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>2nd Place</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>3rd Place</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Last Place</td>
-            <td></td>
-        </tr>
-    </table>
+    <img src="/images/pay_outs.png">
 </div>
 <div class="clear"></div>
-<h3>Please note that Winners are subject to change all the way up to the finals.</h3>
-<div class="hint" style="margin-top:-15px;">Ties will be determined by final score of the whole tournament.</div>
 <div id="accordion">
-    <?php for($i=1;$i<7;$i++){
-        if($i < 6)
+    <?php for($i=1;$i<6;$i++){
+        if($i < 5)
         {
             $round = 'rd_'.$i;
             $header= "Final Round ".$i." Winners";
@@ -114,39 +103,7 @@ $placement = 0;
                     if($placement == 1 && $round=="total_points"){ ?>
                         <td style="background: black;">
                             <div>
-                                <p>Congratulations to all final winners.</p>
-                                <table>
-                                    <tbody>
-                                    <tr>
-                                        <td>1st</td>
-                                        <td>$350</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2nd</td>
-                                        <td>200</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3rd</td>
-                                        <td>100</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4th</td>
-                                        <td>50</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5th</td>
-                                        <td>40</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6th</td>
-                                        <td>30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dead Last</td>
-                                        <td>10</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <img src="/images/pay_outs.png">
                             </div>
                         </td>
                         <td style="width:0px; background: black; border-style: none;"></td>
@@ -197,7 +154,6 @@ $placement = 0;
                 <td class="text_center"><b>Round 2 Total</b></td>
                 <td class="text_center"><b>Round 3 Total</b></td>
                 <td class="text_center"><b>Round 4 Total</b></td>
-                <td class="text_center"><b>Round 5 Total</b></td>
                 <td class="text_center"><b>Final Total</b></td>
             </tr>
         </thead>
@@ -205,7 +161,7 @@ $placement = 0;
         <?php foreach($tickets as $ticket){
 
             $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
-            $user_name = $user_name['user_name'];
+            $user_name = ucfirst ($user_name['user_name']);
             $placement = $ticket['placement'];
             $prev_placement = $ticket['prev_placement'];
             $placement_difference = $prev_placement - $placement;
@@ -226,7 +182,6 @@ $placement = 0;
                 <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_4']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_5']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['total_points']; ?></td>
             </tr>
         <?php } ?>

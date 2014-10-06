@@ -31,7 +31,7 @@
                 content: function() {
                     var element = $( this );
                     if ( element.is( "[div_popup]" ) ) {
-                        return "<img src='/images/ncaa-bracket.jpg'/>";
+                        return "<img src='/images/bracket2.png'/>";
                     }
                 }
             });
@@ -56,7 +56,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-        <img src="/images/logo.png" width="700"/>
+        <img src="/images/bflogo2.png" style="padding-top:10px; padding-bottom: 10px;"/>
 		<!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
         <!--bracket buttons example-->
         <div class="display_bracket_button">
@@ -90,6 +90,7 @@
                 array('label'=>'Games', 'url'=>array('/game'), 'visible'=>Yii::app()->user->id == 'admin'),
                 array('label'=>'Users', 'url'=>array('/user'), 'visible'=>Yii::app()->user->id == 'admin'),
                 array('label'=>'Tickets', 'url'=>array('/ticket'), 'visible'=>Yii::app()->user->id == 'admin'),
+                array('label'=>'Bracket', 'url'=>array('/site/bracket'), 'visible'=>Yii::app()->user->id == 'admin'),
                 array('label'=>'Team Placement', 'url'=>array('/tournamentresults'), 'visible'=>Yii::app()->user->id == 'admin'),
 				array('label'=>'<span class="ui-icon ui-icon-circle-triangle-s icon"></span>'.$display_name, 'url'=>array(''),'linkOptions'=> array(
                     'class' => 'dropdown-toggle',

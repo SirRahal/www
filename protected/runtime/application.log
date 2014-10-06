@@ -26858,3 +26858,200 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/index.php/ticket/update1/1
 ---
+2014/10/06 14:48:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "container".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('container')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('container')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/container/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/container/bracket
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/10/06 14:49:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "container".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('container')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('container')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/container/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/container/bracket
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/10/06 14:49:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bracket".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('bracket')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('bracket')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bracket')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bracket
+HTTP_REFERER=http://localhost/index.php/site/container/bracket
+---
+2014/10/06 14:50:20 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/container/bracket".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('/container/brac...', NULL, true)
+#1 C:\wamp\www\protected\controllers\SiteController.php(111): CController->render('/container/brac...')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBracket()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('bracket')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bracket')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/site/bracket
+HTTP_REFERER=http://localhost/index.php/site/container/bracket
+---
+2014/10/06 14:50:21 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/container/bracket".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('/container/brac...', NULL, true)
+#1 C:\wamp\www\protected\controllers\SiteController.php(111): CController->render('/container/brac...')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBracket()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('bracket')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bracket')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/site/bracket
+HTTP_REFERER=http://localhost/index.php/site/container/bracket
+---
+2014/10/06 14:50:22 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/container/bracket".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('/container/brac...', NULL, true)
+#1 C:\wamp\www\protected\controllers\SiteController.php(111): CController->render('/container/brac...')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionBracket()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('bracket')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bracket')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/site/bracket
+HTTP_REFERER=http://localhost/index.php/site/container/bracket
+---
+2014/10/06 15:28:07 [error] [php] include(Schools.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\protected\views\site\index.php(17): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#4 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#5 C:\wamp\www\protected\controllers\SiteController.php(32): SiteController->render()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/index
+in C:\wamp\www\protected\views\site\index.php (17)
+in C:\wamp\www\protected\controllers\SiteController.php (32)
+in C:\wamp\www\index.php (13)
+2014/10/06 17:31:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/ticket/4
+---
+2014/10/06 17:32:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/ticket/6
+---
+2014/10/06 17:32:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/ticket/6
+---
+2014/10/06 17:32:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/ticket/6
+---
+2014/10/06 17:32:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/ticket/6
+---
+2014/10/06 17:33:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/ticket/6
+---
