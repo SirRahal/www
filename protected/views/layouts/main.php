@@ -54,7 +54,13 @@
 <!--pop up notification box-->
 <div id="freeow" class="freeow freeow-top-middle smokey"></div>
 <div class="container" id="page">
-
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="position: fixed; float:right; right:10px;">
+        <a class="a2a_button_facebook"></a><br/>
+        <a class="a2a_button_twitter"></a><br/>
+        <a class="a2a_button_google_plus"></a><br/>
+        <a class="a2a_button_email"></a><br/>
+        <a class="a2a_dd" href="https://www.addtoany.com/share_save?linkurl=BracketFanatic.com&amp;linkname=Bracket%20Fanatic"></a>
+    </div>
 	<div id="header">
         <img src="/images/bflogo2.png" style="padding-top:10px; padding-bottom: 10px;"/>
 		<!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
@@ -67,7 +73,15 @@
             </a>
         </div>
 	</div><!-- header -->
+    <!-- AddToAny BEGIN -->
 
+    <script type="text/javascript">
+        var a2a_config = a2a_config || {};
+        a2a_config.linkname = "Bracket Fanatic";
+        a2a_config.linkurl = "BracketFanatic.com";
+    </script>
+    <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+    <!-- AddToAny END -->
 	<div id="mainmenu">
         <?php
         if(Yii::app()->user->name)
