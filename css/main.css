@@ -407,7 +407,7 @@ input[type=password]:focus, textarea:focus {
     position: absolute;
     margin-left:-90px;
     position:fixed;
-    top:20%;
+    top:30%;
     /* Safari */
     -webkit-transform: rotate(-90deg);
     /* Firefox */
@@ -515,4 +515,12 @@ input[type=password]:focus, textarea:focus {
     background: #0078a3 url("/css/jquery-ui-custom/images/ui-bg_glass_40_0078a3_1x400.png") 50% 50% repeat-x;
     font-weight: bold;
     color: #ffffff;
+}
+
+
+.mfp-with-zoom {
+    border:none;
+    z-index: 1000;
+    padding-left: 15%;
+    margin-right: 300px;
 }

@@ -20,22 +20,14 @@
 
     <script type="text/javascript" src="/js/jquery.freeow.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/freeow.css"/>
+    <!-- Magnific Popup core JS file -->
+    <script src="/js/image_popup.js"></script>
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 <!--once they chose what they want and finalized, move to js folder -->
     <script>
-        $(function() {
-            $( document ).tooltip({
-                items: " [div_popup]",
-                content: function() {
-                    var element = $( this );
-                    if ( element.is( "[div_popup]" ) ) {
-                        return "<img src='/images/bracket2.png'/>";
-                    }
-                }
-            });
-        });
+
         $(function() {
             $( ".tooltip" ).tooltip({
                 show: null,
@@ -60,22 +52,42 @@
         <a class="a2a_button_google_plus"></a><br/>
         <a class="a2a_button_email"></a><br/>
         <a class="a2a_dd" href="https://www.addtoany.com/share_save?linkurl=BracketFanatic.com&amp;linkname=Bracket%20Fanatic"></a>
+
     </div>
 	<div id="header">
         <img src="/images/bflogo2.png" style="padding-top:10px; padding-bottom: 10px;"/>
 		<!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
         <!--bracket buttons example-->
-        <div class="display_bracket_button">
+        <div class="display_bracket_button image-popup-no-margins" href="/images/bracket1.png" >
             <a div_popup="" style=" text-decoration: none !important;">
                 <div class="bracket_button">
                     <h3 style="color:#ffffff;">Display Bracket</h3>
+                    <a href="/images/bracket1.png" class="image-popup-no-margins" >
+                        <img src="/images/bracket1.png" width="30" style="visibility: hidden;"/>
+                    </a>
                 </div>
             </a>
         </div>
 	</div><!-- header -->
-    <!-- AddToAny BEGIN -->
+
 
     <script type="text/javascript">
+        $('.image-popup-no-margins').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            closeBtnInside: false,
+            fixedContentPos: false,
+            showCloseBtn:false,
+            mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+            image: {
+                verticalFit: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                easing: 'ease-in-out', // CSS transition easing function
+            }
+        });
         var a2a_config = a2a_config || {};
         a2a_config.linkname = "Bracket Fanatic";
         a2a_config.linkurl = "BracketFanatic.com";
@@ -139,4 +151,4 @@
 </body>
 </html>
 
-
+</div>

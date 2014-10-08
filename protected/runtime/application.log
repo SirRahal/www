@@ -27055,3 +27055,101 @@ Stack trace:
 #11 {main}
 REQUEST_URI=/index.php/ticket/6
 ---
+2014/10/08 19:08:31 [error] [php] Undefined index: id (C:\wamp\www\yii\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#1 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/magnific-popup/jquery.magnific-popup.js
+in C:\wamp\www\index.php (13)
+2014/10/08 19:08:31 [error] [php] Undefined index: id (C:\wamp\www\yii\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#1 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/magnific-popup/magnific-popup.css
+in C:\wamp\www\index.php (13)
+2014/10/08 19:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('magnific-popup')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('magnific-popup')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/magnific-p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/magnific-popup/magnific-popup.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/10/08 19:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('magnific-popup')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('magnific-popup')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/magnific-p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/magnific-popup/jquery.magnific-popup.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/10/08 19:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('magnific-popup')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('magnific-popup')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/magnific-p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/magnific-popup/magnific-popup.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/10/08 19:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('magnific-popup')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('magnific-popup')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/magnific-p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/magnific-popup/jquery.magnific-popup.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/10/08 19:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('magnific-popup')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('magnific-popup')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/magnific-p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/magnific-popup/jquery.magnific-popup.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/10/08 19:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('magnific-popup')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('magnific-popup')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/magnific-p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/magnific-popup/magnific-popup.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
