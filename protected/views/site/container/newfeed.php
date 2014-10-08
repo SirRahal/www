@@ -19,11 +19,18 @@
 
 
 <?php
+$current_date = date('Y-m-d');
+$todays_auctions = Auctions::model()->findAllByAttributes(array('date'=>$current_date ) );
 $latest_auctions = Auctions::model()->get_latest_auctions();
 ?>
 <div class="marquee">
+    <?php foreach($todays_auctions as $auction){ ?>
+        <span style="margin-right: 110px;"><span style="color:#A31F34;">
+                <b>Auction Ending Today</b>
+            </span> : <?php echo $auction->company; ?> : <a href="<?php echo $auction->url; ?>"><?php echo $auction->title; ?></a></span>
+    <?php } ?>
     <?php foreach($latest_auctions as $auction){ ?>
-        <span style="margin-right: 100px;"><span style="color: #569cc7;"><b>NEW! Auction Posted</b></span> : <?php echo $auction->company; ?> : <a href="<?php echo $auction->url; ?>"><?php echo $auction->title; ?></a></span>
+        <span style="margin-right: 110px;"><span style="color: #569cc7;"><b>NEW! Auction Posted</b></span> : <?php echo $auction->company; ?> : <a href="<?php echo $auction->url; ?>"><?php echo $auction->title; ?></a></span>
     <?php } ?>
 </div>
 <script>
