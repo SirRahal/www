@@ -6,29 +6,29 @@
  * Time: 4:31 PM
  */ ?>
 
+<style>
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background: #ccc;
+    }
+</style>
+
+<script type='text/javascript' src='//cdn.jsdelivr.net/jquery.marquee/1.3.1/jquery.marquee.min.js'></script>
 
 
-        <link href="/js/jquery_news_ticker/styles/ticker-style.css" rel="stylesheet" type="text/css" />
-        <script src="/js/jquery_news_ticker/includes/jquery.ticker.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
-        $(function () {
-            $('#js-news').ticker();
-        });
-    </script>
-    <body>
-    <?php
-    $latest_auctions = Auctions::model()->get_latest_auctions();
-    ?>
-    <ul id="js-news" >
-        <?php
-        foreach($latest_auctions as $auction){ ?>
-            <li class="news-item"><a href="<?php echo $auction->url; ?>">[Auction Posting] : <?php echo $auction->company.' - '.$auction->company; ?></a></li>
-        <?php }
-        ?>
-        <li class="news-item"><a href="#">This is the 1st latest news item.</a></li>
-        <li class="news-item"><a href="#">This is the 2nd latest news item.</a></li>
-        <li class="news-item"><a href="#">This is the 3rd latest news item.</a></li>
-        <li class="news-item"><a href="#">This is the 4th latest news item.</a></li>
-    </ul>
-    </body>
+<?php
+$latest_auctions = Auctions::model()->get_latest_auctions();
+?>
+<div class="marquee">
+    <?php foreach($latest_auctions as $auction){ ?>
+        <span style="margin-right: 100px;"><span style="color: #569cc7;"><b>NEW! Auction Posted</b></span> : <?php echo $auction->company; ?> : <a href="<?php echo $auction->url; ?>"><?php echo $auction->title; ?></a></span>
+    <?php } ?>
+</div>
+<script>
+    $('.marquee').marquee({
+        pauseOnHover: true,
+        duration: 10000
+    });
+</script>
