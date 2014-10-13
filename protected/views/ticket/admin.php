@@ -55,6 +55,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'rd_3',
 		'rd_4',
 		'rd_5',
+		'rd_6',
 		'total_points',
 		*/
 		array(

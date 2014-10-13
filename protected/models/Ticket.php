@@ -13,6 +13,7 @@
  * @property integer $rd_3
  * @property integer $rd_4
  * @property integer $rd_5
+ * @property integer $rd_6
  * @property integer $total_points
  *
  * The followings are the available model relations:
@@ -40,11 +41,11 @@ class Ticket extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('user_ID, tournament_ID, code', 'required'),
-			array('user_ID, tournament_ID, rd_1, rd_2, rd_3, rd_4, rd_5, total_points', 'numerical', 'integerOnly'=>true),
+			array('user_ID, tournament_ID, rd_1, rd_2, rd_3, rd_4, rd_5, rd_6, total_points', 'numerical', 'integerOnly'=>true),
 			array('code', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, user_ID, tournament_ID, code, rd_1, rd_2, rd_3, rd_4, rd_5, total_points', 'safe', 'on'=>'search'),
+			array('ID, user_ID, tournament_ID, code, rd_1, rd_2, rd_3, rd_4, rd_5, rd_6 total_points', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -78,6 +79,7 @@ class Ticket extends CActiveRecord
 			'rd_3' => 'Rd 3',
 			'rd_4' => 'Rd 4',
 			'rd_5' => 'Rd 5',
+            'rd_5' => 'Rd 6',
 			'total_points' => 'Total Points',
 		);
 	}
@@ -109,6 +111,7 @@ class Ticket extends CActiveRecord
 		$criteria->compare('rd_3',$this->rd_3);
 		$criteria->compare('rd_4',$this->rd_4);
 		$criteria->compare('rd_5',$this->rd_5);
+        $criteria->compare('rd_6',$this->rd_6);
 		$criteria->compare('total_points',$this->total_points);
 
 		return new CActiveDataProvider($this, array(

@@ -80,7 +80,7 @@
                     <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>
                     <td style="text-align: center;"><?php echo $ticket['rd_4']; ?></td>
                     <td style="text-align: center;"><?php echo $ticket['rd_5']; ?></td>
-                    <td></td>
+                    <td style="text-align: center;"><?php echo $ticket['rd_5']; ?></td>
                     <td style="text-align: center;"><?php echo $ticket['total_points']; ?></td>
                 </tr>
             </tbody>

@@ -30,6 +30,7 @@ $this->menu=array(
 		'rd_3',
 		'rd_4',
 		'rd_5',
+        'rd_6',
 		'total_points',
 	),
 )); ?>
