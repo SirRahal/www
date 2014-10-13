@@ -59,7 +59,7 @@
 		<!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
         <!--bracket buttons example-->
         <div class="display_bracket_button image-popup-no-margins" href="/images/bracket1.png" >
-            <a div_popup="" style=" text-decoration: none !important;">
+            <a div_popup="" style="text-decoration: none !important;">
                 <div class="bracket_button">
                     <h3 style="color:#ffffff;">Display Bracket</h3>
                     <a href="/images/bracket1.png" class="image-popup-no-margins" >
@@ -145,7 +145,7 @@
 <div id="footer">
     Copyright &copy; <?php echo date('Y'); ?> by Bracket Fanatic.<br/>
     All Rights Reserved.<br/>
-    Author By Sari Rahal
+    Author Sari Rahal
 </div><!-- footer -->
 
 </body>
