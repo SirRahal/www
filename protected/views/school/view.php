@@ -154,6 +154,8 @@ $placement = 0;
                 <td class="text_center"><b>Round 2 Total</b></td>
                 <td class="text_center"><b>Round 3 Total</b></td>
                 <td class="text_center"><b>Round 4 Total</b></td>
+                <td class="text_center"><b>Round 5 Total</b></td>
+                <td class="text_center"><b>Round 6 Total</b></td>
                 <td class="text_center"><b>Final Total</b></td>
             </tr>
         </thead>
@@ -182,6 +184,8 @@ $placement = 0;
                 <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_4']; ?></td>
+                <td style="text-align: center;"><?php echo $ticket['rd_5']; ?></td>
+                <td style="text-align: center;"><?php echo $ticket['rd_6']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['total_points']; ?></td>
             </tr>
         <?php } ?>

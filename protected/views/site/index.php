@@ -50,7 +50,7 @@ $this->pageTitle=Yii::app()->name;
     <div class="display_box">
         <h3>Register My Ticket</h3>
         <p>Just bought your first ticket?  Create an account and get started</p>
-        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:175px;" href="/index.php/site/login">Sign-Up</a>
+        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:175px;" href="/index.php/user/register">Sign-Up</a>
     </div>
     <?php } ?>
     <div class="display_box">

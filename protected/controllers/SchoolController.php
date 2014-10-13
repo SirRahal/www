@@ -28,7 +28,7 @@ class SchoolController extends Controller
 	{
         return array(
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete','index','view','create','update','ticketPopup'),
+                'actions'=>array('admin','delete','index','view','create','update','ticketPopup','results','results_view'),
                 'users'=>array('admin'),
             ),
             array('allow', // allow everyone to view schools
@@ -123,6 +123,24 @@ class SchoolController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+
+    /**
+     * Lists all models.
+     */
+    public function actionResults()
+    {
+        $dataProvider=new CActiveDataProvider('School');
+        $this->render('results',array(
+            'dataProvider'=>$dataProvider,
+        ));
+
+    }
+
+    public function actionResults_view($id){
+        $this->render('results_view',array(
+            'id'=>$id,
+        ));
+    }
 
 	/**
 	 * Manages all models.
