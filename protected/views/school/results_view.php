@@ -5,11 +5,6 @@
  * Date: 10/13/14
  * Time: 3:39 PM
  */
-
-
-
-
-
 $model = School::model()->findByPk($id);
 $ID = $model->ID;
 $name = $model->name;
@@ -17,24 +12,17 @@ $contact_name = $model->contact_name;
 $email = $model->email;
 $state = $model->state;
 $phone = $model->phone;
-
 $this->breadcrumbs=array(
     'Schools'=>array('.'),
     $model->name,
-);
-?>
+); ?>
 
 <head>
-
     <!-- DataTables CSS -->
     <link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
-
     <!-- DataTables -->
     <script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
-
-
     <script>
-
         $(function() {
             $( "#ticket_view" ).dialog({
                 autoOpen: false,
@@ -49,20 +37,17 @@ $this->breadcrumbs=array(
                     duration: 1000
                 }
             });
-
             $( ".ticket_viewer" ).click(function() {
                 var ticket_id = $(this).attr('id');
                 $('#ticket_view').load('ticketPopup/'+ticket_id);
                 $( "#ticket_view" ).dialog( "open" );
             });
-
         });
         $(document).ready( function () {
             $('#table_id').DataTable();
         } );
     </script>
 </head>
-
 <div class="view">
     <table>
         <tbody>
@@ -87,19 +72,11 @@ $this->breadcrumbs=array(
         </tbody>
     </table>
 </div>
-
-
 <?php
-
-
-
 $tickets = $model->get_tickets($model->ID);
 $placement = 0;
-
 ?>
 <br/>
-
-
 <div class="clear"></div>
 <div id="accordion">
     <?php for($i=1;$i<6;$i++){
@@ -117,7 +94,7 @@ $placement = 0;
         <div>
             <table style="background: #e6e6e6; color:#555555;">
                 <tbody>
-                <thead>
+                <thead style="background: #494949; color:#fff;">
                     <td>Place</td>
                     <td>Name</td>
                     <td>User Name</td>
@@ -129,7 +106,6 @@ $placement = 0;
                     $placement = 0;
                     foreach ($placement_round as $finalest){
                     $placement++;
-
                     $user =  User::model()->findByAttributes(array('ID'=>$finalest['user_ID']));
                     $user_ID = $user['ID'];
                     $user_name = $user['user_name'];
@@ -213,9 +189,6 @@ $placement = 0;
         </tbody>
     </table>
 </div>
-
-
 <div id="ticket_view" title="Ticket Preview">
     <p>This is not available yet</p>
-
 </div>
