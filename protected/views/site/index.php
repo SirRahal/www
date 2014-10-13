@@ -3,11 +3,11 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-<div style="padding-bottom:20px;">
+<!--<div style="padding-bottom:20px;">
     <a href="/site/summer_special">
         <img src="/images/summer_special_banner.jpg" width="910"/>
     </a>
-</div>
+</div>-->
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
 <div class="main_container"><!--left Col-->
@@ -27,8 +27,15 @@ $this->pageTitle=Yii::app()->name;
         ?>
     </div>
 </div>
-<div class="ad" url="http://www.usaindustrialscrap.com/">
-    <a href="http://www.usaindustrialscrap.com/" target="_blank">
-        <img src="/images/ad_images/web_banner_home.jpg" width="920" />
+
+
+
+<div class="ad" url="http://www.cia-auction.com/home/upcoming_auctions.html">
+    <a href="http://www.cia-auction.com/home/upcoming_auctions.html" target="_blank">
+        <img src="/images/ad_images/east_tech_ind_banner.jpg" width="920" />
     </a>
 </div>
+
+
+
+

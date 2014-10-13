@@ -58,3 +58,4 @@ if (isset(Yii::app()->session['last_date']))
     <?php echo CHtml::encode($data->info); ?>
     <br />
 </div>
+

@@ -40,3 +40,8 @@ $this->breadcrumbs=array(
 <?php } ?>
 
 
+<div class="ad" url="http://www.usaindustrialscrap.com/">
+    <a href="http://www.usaindustrialscrap.com/" target="_blank">
+        <img src="/images/ad_images/web_banner_home.jpg" width="920" />
+    </a>
+</div>
