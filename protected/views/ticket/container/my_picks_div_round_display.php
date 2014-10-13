@@ -12,15 +12,16 @@
 <table>
     <!-- $i is the seed -->
     <?php for ($i = 1;$i<17; $i++){
-        if($round < 6){
-            $round_title = 'rd_'.$round;
-        }else{
-            $round_title = 'total_points';
-        }
         $team = Team::model()->findByAttributes(array('name'=>$picks[$i-1] ));
         $team_ID = $team['ID'];
         $score_1 = Team::model()->get_scores($team_ID,$round);
         $ticket_total_points = Ticket::model()->find_ticket_by_ID($ticket_ID);
+        if($round < 5){
+            $round_title = 'rd_'.$round;
+        }else{
+            $round_title = 'total_points';
+            $score_1 = TeamTournamentRegion::model()->select_team_total_points($team_ID);
+        }
         $total_points = $ticket_total_points[$round_title];
         if($total_points == 0) {$total_points = '';}   ?>
         <tr <?php if ($i%2 == 0){echo 'style="background : #cdd2db;"';} else { echo 'style="background : #f9f1e0;"'; } ?>>
