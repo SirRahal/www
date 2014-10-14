@@ -56,6 +56,7 @@
     </div>
 	<div id="header">
         <img src="/images/bflogo2.png" style="padding-top:10px; padding-bottom: 10px;"/>
+
 		<!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
         <!--bracket buttons example-->
         <div class="display_bracket_button image-popup-no-margins" href="/images/bracket1.png" >

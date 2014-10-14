@@ -25,9 +25,11 @@ $this->breadcrumbs=array(
         display: none;
     }
 
+    .ui-button-icon-only {
+        display: none;
+    }
 </style>
 <script>
-
     $(function() {
         var dialog, form,
             ticket = $( "#ticket" )
@@ -106,6 +108,10 @@ $this->breadcrumbs=array(
         margin-bottom: 40px;
     }
 </style>
+
+
+
+
 
 <div id="dialog-form" title="Verify Your Ticket Code">
     <form>
