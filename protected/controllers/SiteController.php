@@ -162,11 +162,18 @@ class SiteController extends Controller
     }
 
     /**
-     * Media guide
+     * summer special
      */
     public function actionSummer_special()
     {
         $this->render('summer_special');
+    }
+    /**
+     * fall_winter special
+     */
+    public function actionFall_winter_special()
+    {
+        $this->render('fall_winter_special');
     }
 
     /**

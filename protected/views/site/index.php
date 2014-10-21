@@ -3,11 +3,11 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-<!--<div style="padding-bottom:20px;">
-    <a href="/site/summer_special">
-        <img src="/images/summer_special_banner.jpg" width="910"/>
+<div style="padding-bottom:20px;">
+    <a href="/site/fall_winter_special">
+        <img src="/images/fall_winter_speciall_banner1.jpg" width="910"/>
     </a>
-</div>-->
+</div>
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
 <div class="main_container"><!--left Col-->
