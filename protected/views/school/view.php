@@ -57,7 +57,10 @@ $this->breadcrumbs=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'name',
+        'address',
+        'city',
 		'state',
+        'zip',
         'contact_name',
         'phone',
         'email',

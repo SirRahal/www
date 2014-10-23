@@ -10,7 +10,10 @@ $ID = $model->ID;
 $name = $model->name;
 $contact_name = $model->contact_name;
 $email = $model->email;
+$address = $model->address;
+$city = $model->city;
 $state = $model->state;
+$zip = $model->zip;
 $phone = $model->phone;
 $this->breadcrumbs=array(
     'Schools'=>array('.'),
@@ -64,8 +67,8 @@ $this->breadcrumbs=array(
             <td><?php echo $email; ?></td>
         </tr>
         <tr>
-            <td><b>State</b></td>
-            <td><?php echo $state; ?></td>
+            <td><b>Mailing</b></td>
+            <td><?php echo $address; ?><br/><?php echo $city.', '.$state.' '.$zip; ?></td>
             <td><b>Phone :</b></td>
             <td><?php echo $phone; ?></td>
         </tr>

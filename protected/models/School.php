@@ -28,8 +28,11 @@ class School extends CActiveRecord
 		return array(
 			array('name, state', 'required'),
 			array('name', 'length', 'max'=>100),
-			array('state', 'length', 'max'=>2),
-			array('contact_name', 'length', 'max'=>100),
+            array('contact_name', 'length', 'max'=>100),
+            array('address', 'length', 'max'=>100),
+            array('city', 'length', 'max'=>100),
+            array('state', 'length', 'max'=>2),
+            array('zip', 'length', 'max'=>10),
             array('phone','length', 'max'=>16),
             array('email', 'length', 'max'=>100),
 			// The following rule is used by search().
@@ -57,7 +60,10 @@ class School extends CActiveRecord
 		return array(
 			'ID' => 'ID',
 			'name' => 'Name',
+            'address' => 'Address',
+            'city' => 'City',
 			'state' => 'State',
+            'zip' => 'Zip',
             'contact_name' => 'Contact Name',
             'phone' => 'Phone',
             'email' => 'Email',
