@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
     <meta name="description" content="Midwest Industrial Publication for Anything to do with industrial metalworking (forming and cutting) and upcoming Industrial Auctions."/>
-    <meta name="keywords" content="Midwest, Michigan, Industrial, Auction, Advertiser, Advertisement, Advertising, Tooling, Spare Parts, Industrialtimesinc, Industrialtimes, Industrial times, Publication, market, marketing, AMCON Trade Show, metalworking, metalforming, metalcutting, fabrication, lathes, saws, band, grinders, CNC, debarring machine, horizontal mills and vertical mill, machine sales, magazine, publication, email, advertisement, advertising, marketing, auction, auctioneers "/>
+    <meta name="keywords" content="Midwest, Michigan, Industrial,industrial times magazine, Auction, Advertiser, Advertisement, Advertising, Tooling, Spare Parts, Industrialtimesinc, Industrialtimes, Industrial times, Publication, market, marketing, AMCON Trade Show, metalworking, metalforming, metalcutting, fabrication, lathes, saws, band, grinders, CNC, debarring machine, horizontal mills and vertical mill, machine sales, magazine, publication, email, advertisement, advertising, marketing, auction, auctioneers "/>
     <meta name="author" content="Sari Rahal"/>
     <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/icons/favicon4.png" type="image/x-icon" />
 
@@ -31,7 +31,7 @@
 
 
 <div class="container" id="page">
-    <img src="/images/banner/website_banner.jpg" width='950'/><!-- header -->
+    <img src="/images/banner/website_banner.jpg" /><!-- header -->
 
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(

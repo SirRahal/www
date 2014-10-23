@@ -3,19 +3,28 @@
 
 
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/CNC-Parts-Auction_as33848';
-$date = 'October 1st';
-$auction_title = 'CNC Parts Auction';
+$auction_url = 'http://auctions.btmindustrial.com/C-R-Machine-Company_as33847';
+$date = 'October 23rd';
+$auction_title = 'C & R Machine Company';
 
-$url1="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=1&ps=50#i20556591";$img1="http://media.liveauctiongroup.net/i/22080/20556591_1s.jpg?v=8D19D4362D5D0A0";$title1="Power Supply 6SN1145-1BB00-0FA1";
-$url2="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=1&ps=50#i20556592";$img2="http://media.liveauctiongroup.net/i/22080/20556592_1s.jpg?v=8D19FA24DD2CE90";$title2="6SN1118-0NK01-0AA0";
-$url3="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=1&ps=50#i20556595";$img3="http://media.liveauctiongroup.net/i/22080/20556595_1s.jpg?v=8D19FA24FA125F0";$title3="6SN1118-0NK01-0AA0";
-$url4="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=1&ps=50#i20556602";$img4="http://media.liveauctiongroup.net/i/22080/20556602_1s.jpg?v=8D19D43A68CDE10";$title4="6SN1123-1AA00-0BA1";
-$url5="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=1&ps=50#i20556614";$img5="http://media.liveauctiongroup.net/i/22080/20556614_1s.jpg?v=8D19D4849A978C0";$title5="6SN1115-0BA11-0AA1";
-$url6="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=1&ps=50#i20556629";$img6="http://media.liveauctiongroup.net/i/22080/20556629_1s.jpg?v=8D19D4BD6E94370";$title6="6SN1162-1AA00-0AA0";
-$url7="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=1&ps=50#i20556636";$img7="http://media.liveauctiongroup.net/i/22080/20556636_1s.jpg?v=8D19D4C1A9E2E00";$title7="6SN1112-1AC01-0AA1";
-$url8="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=1&ps=50#i20556643";$img8="http://media.liveauctiongroup.net/i/22080/20556643_1s.jpg?v=8D19D5089313AC0";$title8="Brushley Servo Motor";
-$url9="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=2&ps=50#i20557448";$img9="http://media.liveauctiongroup.net/i/22080/20557448_1s.jpg?v=8D19D508601F3D0";$title9="Spindle Motor";
+$url1="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=1&ps=50#i20619942";$img1="http://media.liveauctiongroup.net/i/22079/20619942_1s.jpg?v=8D1B1ACB7FFB370";$title1="1993 Fadal VMC";
+$url2="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=1&ps=50#i20620014";$img2="http://media.liveauctiongroup.net/i/22079/20620014_1s.jpg?v=8D1B1AD7EE75920";$title2="Maxport Mill";
+$url3="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=1&ps=50#i20620015";$img3="http://media.liveauctiongroup.net/i/22079/20620015_1s.jpg?v=8D1B1B1446EF240";$title3="Sidney Engine Lathe";
+$url4="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=2&ps=50#i20673426";$img4="http://media.liveauctiongroup.net/i/22079/20673426_1s.jpg?v=8D1B1B57C520EA0";$title4="Fosdick Radial Drill";
+$url5="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=2&ps=50#i20673429";$img5="http://media.liveauctiongroup.net/i/22079/20673429_1s.jpg?v=8D1B1B911398900";$title5="DoAll Horizontal Bandsaw";
+$url6="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=2&ps=50#i20673432";$img6="http://media.liveauctiongroup.net/i/22079/20673432_1s.jpg?v=8D1B1BAAE27D4F0";$title6="Daewoo Puma CNC Lathe";
+$url7="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=3&ps=50#i20675670";$img7="http://media.liveauctiongroup.net/i/22079/20675670_1s.jpg?v=8D1AA9A0FD2A860";$title7="";
+$url8="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=3&ps=50#i20675671";$img8="http://media.liveauctiongroup.net/i/22079/20675671_1s.jpg?v=8D1AA9A87A36AF0";$title8="";
+$url9="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=3&ps=50#i20675673";$img9="http://media.liveauctiongroup.net/i/22079/20675673_1s.jpg?v=8D1AC476CD05A40";$title9="";
+$url10="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=1&ps=50#i20673343";$img10="http://media.liveauctiongroup.net/i/22079/20673343_1s.jpg?v=8D1A84AFAACDE70";$title10="";
+$url11="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=1&ps=50#i20673359";$img11="http://media.liveauctiongroup.net/i/22079/20673359_1s.jpg?v=8D1A866B6748250";$title11="";
+$url12="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=2&ps=50#i20673373";$img12="http://media.liveauctiongroup.net/i/22079/20673373_1s.jpg?v=8D1A85DE9CEF530";$title12="";
+$url13="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=2&ps=50#i20673445";$img13="http://media.liveauctiongroup.net/i/22079/20673445_1s.jpg?v=8D1A8F3CE24FB40";$title13="";
+$url14="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=2&ps=50#i20673448";$img14="http://media.liveauctiongroup.net/i/22079/20673448_1s.jpg?v=8D1A8F3E4756A10";$title14="";
+$url15="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=2&ps=50#i20673451";$img15="http://media.liveauctiongroup.net/i/22079/20673451_1s.jpg?v=8D1A8F403ED71D0";$title15="";
+$url16="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=2&ps=50#i20673454";$img16="http://media.liveauctiongroup.net/i/22079/20673454_1s.jpg?v=8D1A8F41779DEA0";$title16="";
+$url17="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=2&ps=50#i20675660";$img17="http://media.liveauctiongroup.net/i/22079/20675660_1s.jpg?v=8D1A8F90B5280F0";$title17="";
+$url18="http://auctions.btmindustrial.com/auction.aspx?a=22079&as=33847&p=3&ps=50#i20698118";$img18="http://media.liveauctiongroup.net/i/22079/20698118_1s.jpg?v=8D1AC477CC94010";$title18="";
 
 
 ?>
@@ -36,7 +45,7 @@ $url9="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=2&ps=50
 </div>
 <br/>
 <table width="600" border="0" cellspacing="0" cellpadding="0" style="border: 2px solid #dcdcdc; top: 86px; width: 615px; height: 564px; margin: 0px auto; background-color: #ffffff;">
-<thead><tr><td colspan="3" style="text-align: center; color: #494949; font-size: 40px;">Siemens Auction</td></tr></thead>
+<thead><tr><td colspan="3" style="text-align: center; color: #494949; font-size: 40px;">Machines</td></tr></thead>
     <tbody style="text-align: center;">
 <tr>
 
@@ -138,56 +147,158 @@ $url9="http://auctions.btmindustrial.com/auction.aspx?a=22080&as=33848&p=2&ps=50
 </td>
 
 </tr>
-
+<tr><td colspan="3" style="text-align: center; color: #494949; font-size: 40px;">(15) lots of CAT 40 Holders</td></tr>
 <tr>
-<td>
-    <!--lot 7-->
- <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
-    <tbody>
-    <tr>
-        <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
-            <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url7;?>' shape='rect'><?php echo $title7;?></a></b></td>
-    </tr>
-    <tr>
-        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url7;?>' shape='rect'>
-                <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img7;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
-    </tr>
-    </tbody>
-</table>
- </td>
-
-<!--lot 8-->
-<td>
- <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
-    <tbody>
-    <tr>
-        <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
-            <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url8;?>' shape='rect'><?php echo $title8;?></a></b></td>
-    </tr>
-    <tr>
-        <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url8;?>' shape='rect'>
-                <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img8;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
-    </tr>
-    </tbody>
-</table>
-</td>
-
-
-<!--lot 9-->
-<td>
-        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+    <td>
+        <!--lot 7-->
+     <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
         <tbody>
         <tr>
             <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
-                <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url9;?>' shape='rect'><?php echo $title9;?></a></b></td>
+                <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url7;?>' shape='rect'><?php echo $title7;?></a></b></td>
         </tr>
         <tr>
-            <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url9;?>' shape='rect'>
-                    <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img9;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url7;?>' shape='rect'>
+                    <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img7;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
         </tr>
         </tbody>
+    </table>
+     </td>
+
+    <!--lot 8-->
+    <td>
+     <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+        <tbody>
+        <tr>
+            <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url8;?>' shape='rect'><?php echo $title8;?></a></b></td>
+        </tr>
+        <tr>
+            <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url8;?>' shape='rect'>
+                    <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img8;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+        </tr>
+        </tbody>
+    </table>
+    </td>
+
+
+    <!--lot 9-->
+    <td>
+            <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url9;?>' shape='rect'><?php echo $title9;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url9;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img9;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+            </table>
+    </td>
+</tr>
+<tr><td colspan="3" style="text-align: center; color: #494949; font-size: 40px;">(30) lots of Steel Stock</td></tr>
+<tr>
+    <td>
+        <!--lot 10-->
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url10;?>' shape='rect'><?php echo $title10;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url10;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img10;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
         </table>
-</td>
+    </td>
+
+    <!--lot 11-->
+    <td>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url11;?>' shape='rect'><?php echo $title11;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url11;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img11;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+
+
+    <!--lot 12-->
+    <td>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url12;?>' shape='rect'><?php echo $title12;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url12;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img12;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+<tr><td colspan="3" style="text-align: center; color: #494949; font-size: 40px;">(10) Vises</td></tr>
+<tr>
+    <td>
+        <!--lot 13-->
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url13;?>' shape='rect'><?php echo $title13;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url13;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img13;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+
+    <!--lot 14-->
+    <td>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url14;?>' shape='rect'><?php echo $title14;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url14;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img14;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+
+
+    <!--lot 15-->
+    <td>
+        <table border='0' cellpadding='5' cellspacing='0' width='100%'  style='display: table;'>
+            <tbody>
+            <tr>
+                <td align='center' styleclass='style_PromoTitle' style='font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: #000000;'>
+                    <b><a style='cursor: pointer; color: #000000;' href='<?php echo $url15;?>' shape='rect'><?php echo $title15;?></a></b></td>
+            </tr>
+            <tr>
+                <td style='color: #000000;  text-align: center;' align='center'><a style='cursor: pointer;' href='<?php echo $url15;?>' shape='rect'>
+                        <img  height='90' vspace='0' border='0' name='ACCOUNT.IMAGE.239' hspace='0' width='123' src=<?php echo $img15;?>></a><br/><img height='2' width='185' name='ACCOUNT.IMAGE.255' alt='shiny-black-header.gif' vspace='5' hspace='5' border='0' src='https://origin.ih.constantcontact.com/fs197/1108582230802/img/255.gif?ver=1386953482000'><br/></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
 </tr>
 
 
