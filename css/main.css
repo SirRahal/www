@@ -364,7 +364,12 @@ div.search-form
 }
 .ticket{
     width:240px;
-    background: #f5921e;
+    background-color: #f48a0d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f1e0), to(#f4890b));
+    background-image: -webkit-linear-gradient(top, #f9f1e0, #f4890b);
+    background-image:    -moz-linear-gradient(top, #f9f1e0, #f4890b);
+    background-image:     -ms-linear-gradient(top, #f9f1e0, #f4890b);
+    background-image:      -o-linear-gradient(top, #f9f1e0, #f4890b);
     color:#000000;
 }
 

@@ -114,9 +114,9 @@ $this->breadcrumbs=array(
         $school_ID = $string_exploded[0];
         $school = School::model()->get_name_by_ID($school_ID);
         ?>
-        <div class="regional_div ticket" id="my_picks" style="float:left; margin-left: 20px;">
-            <span style="color: black;" ><b>School : </b><a class="tooltip" title="See how you rank up against others in <?php echo $school; ?>" href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span><br/>
-            <span style="color: black;"><b>Ticket # : </b><?php echo $ticket['code']; ?></span>
+        <div class="regional_div ticket" id="my_picks" style="float:left; margin-left: 20px;color: black;">
+            <span><a class="tooltip" title="See how you rank up against others in <?php echo $school; ?>" href="/index.php/school/<?php echo $school_ID; ?>"><b><?php echo $school;?></b></a></span><br/>
+            <span><b>Ticket # : </b><?php echo $ticket['code']; ?></span>
             <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket['ID']));?>
             <a  class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" title="Edit This ticket up until March 5th 12pm EST">Edit Ticket</a>
         </div>
@@ -135,7 +135,7 @@ $this->breadcrumbs=array(
         $mytickets = Ticket::model()->get_tickets_by_user_ID();
         foreach($mytickets as $ticket){?>
             <h3><b>Ticket : </b><?php echo $ticket['code']; ?></h3>
-            <div style="background: #f3911e; color: #000000;">
+            <div class="ticket_table_display">
                 <?php echo $this->renderPartial('container/score_table', array('ticket' => $ticket)); ?>
             </div>
         <?php } ?>

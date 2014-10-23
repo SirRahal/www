@@ -8,7 +8,7 @@
 <div>
     <style>
         tr, td {
-            border: 1px solid #acacac;
+            border: 1px solid #333333;
         }
     </style>
     <?php
@@ -32,9 +32,9 @@
                     echo $placement_difference; ?> <img src="/images/red_arrow_down.png" width="10"/>
                 <?php } ?>
      <!--echo out league placement-->
-        <table style="border: solid #acacac; ">
+        <table style="border: solid #333333; ">
             <tbody >
-                <tr style="background:#acacac; color:#000000; font-weight: bold;">
+                <tr style="background:#333333; color:#ffffff; font-weight: bold;">
                     <td>Seed</td>
                     <td style="width: 160px;;">Team</td>
                     <td style="text-align: center;">Round 1</td>
@@ -72,7 +72,7 @@
                         </tr>
                 <?php } ?>
                 </tr>
-                <tr style="background: #acacac;">
+                <tr style="background: #333333; color:#ffffff;">
                     <td></td>
                     <td style="text-align: center;"><b>Total</b></td>
                     <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
