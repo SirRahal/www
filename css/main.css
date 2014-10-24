@@ -530,3 +530,25 @@ input[type=password]:focus, textarea:focus {
     padding-left: 15%;
     margin-right: 300px;
 }
+
+.display_box{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #9db2c9;
+}
+.dataTables_wrapper .dataTables_length {
+    display: none;
+}
+label{
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 0;
+}
+input{
+    width: 125px;
+    margin-right: 10px;
+}
+.link:hover{
+    cursor: pointer;
+}

@@ -6,11 +6,6 @@
  * Time: 3:44 PM
  */ ?>
 <div>
-    <style>
-        tr, td {
-            border: 1px solid #333333;
-        }
-    </style>
     <?php
         $ticket_ID = $ticket['ID'];
         $picks = Picks::model()->find_tickets_by_ID($ticket_ID);

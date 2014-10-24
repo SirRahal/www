@@ -18,30 +18,6 @@ $this->pageTitle=Yii::app()->name;
 
 </script>
 
-<style>
-    .display_box{
-        padding-top: 10px;
-        padding-bottom: 20px;
-        border-bottom: solid 1px #9db2c9;
-    }
-    .dataTables_wrapper .dataTables_length {
-        display: none;
-    }
-    label{
-        float: left;
-        text-align: left;
-        font-weight: bold;
-        margin-left: 0;
-    }
-    input{
-        width: 125px;
-        margin-right: 10px;
-    }
-    .link:hover{
-        cursor: pointer;
-    }
-</style>
-
 <div style="float: left; width: 950px;">
     <img src="/images/bracket1.png" width="950">
 </div>

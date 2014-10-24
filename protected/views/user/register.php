@@ -108,11 +108,6 @@ $this->breadcrumbs=array(
         margin-bottom: 40px;
     }
 </style>
-
-
-
-
-
 <div id="dialog-form" title="Verify Your Ticket Code">
     <form>
         <fieldset>
