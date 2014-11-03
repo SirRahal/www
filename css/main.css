@@ -552,3 +552,22 @@ input{
 .link:hover{
     cursor: pointer;
 }
+.homepage_container{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 17px;
+}
+.orange_text{
+    color: #f5921e;
+}
+.title{
+    font-size: 60px;
+}
+.title2{
+    font-size:40px;
+}
+.bold{
+    font-weight: bold;
+}
