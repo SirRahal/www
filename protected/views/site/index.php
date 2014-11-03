@@ -55,10 +55,6 @@ $this->pageTitle=Yii::app()->name;
     });
 </script>-->
 
-<style>
-
-
-</style>
 <div class="homepage_container">
         <div class="orange_text title bold">RAISE $6,000</div>
         <div class="title2 bold">SCHOOLS | SPORTS PROGRAMS | BOOSTERS</div>

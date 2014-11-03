@@ -4,7 +4,7 @@
 
 
 $this->breadcrumbs=array(
-	'My Tickets'=>array('ticket/mytickets'),
+	'My Entries'=>array('ticket/mytickets'),
 	$model->name,
 );
 ?>
@@ -111,7 +111,8 @@ $placement = 0;
                         </td>
                         <td style="width:0px; background: black; border-style: none;"></td>
                     <?php }
-                    $user_name = User::model()->findByAttributes(array('ID'=>$finalest['user_ID'])); $user_name = $user_name['user_name'];
+                    $user_name = User::model()->findByAttributes(array('ID'=>$finalest['user_ID']));
+                    $user_name = $user_name['last_name'].', '.$user_name['first_name'];
                     $picks = Picks::model()->find_tickets_by_ID($finalest['ID']);
                     ?>
                         <td>
@@ -143,7 +144,7 @@ $placement = 0;
 </div>
 
 <br/>
-<h1>All Tickets</h1>
+<h1>All Entries</h1>
 <div>
     <table id="table_id" class="hover stripe row-border">
 
@@ -165,8 +166,9 @@ $placement = 0;
         <tbody>
         <?php foreach($tickets as $ticket){
 
-            $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
-            $user_name = ucfirst ($user_name['user_name']);
+            $user = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
+            $user_name = ucfirst ($user['last_name']);
+            $user_name = $user_name .', '.ucfirst ($user['first_name']);
             $placement = $ticket['placement'];
             $prev_placement = $ticket['prev_placement'];
             $placement_difference = $prev_placement - $placement;
@@ -182,7 +184,7 @@ $placement = 0;
                     </i>
                 </td>
                 </td>
-                <td><div class="ticket_viewer tooltip" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>" title="Click to preview their ticket"><?php echo $user_name; ?></div></td>
+                <td><div class="ticket_viewer tooltip" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>" title="Click to preview their entry"><?php echo $user_name; ?></div></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
                 <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>
@@ -197,7 +199,7 @@ $placement = 0;
 </div>
 
 
-<div id="ticket_view" title="Ticket Preview">
+<div id="ticket_view" title="Entry Preview">
     <p>This is not available yet</p>
     
 </div>

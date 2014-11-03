@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Ticket #<?php echo $model->ID; ?></h1>
+<h1>View Entry #<?php echo $model->ID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

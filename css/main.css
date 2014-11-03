@@ -338,7 +338,23 @@ div.search-form
     border-radius: 10px;
     margin-bottom: 20px;
     color:#ffffff;
-    background: #f2890d;
+    height: 570px;
+}
+.gradient_left{
+    background-color: #f48a0d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f4890b), to(#f9f1e0));
+    background-image: -webkit-linear-gradient(left, #f4890b, #f9f1e0);
+    background-image:    -moz-linear-gradient(left, #f4890b, #f9f1e0);
+    background-image:     -ms-linear-gradient(left, #f4890b, #f9f1e0);
+    background-image:      -o-linear-gradient(left, #f4890b, #f9f1e0);
+}
+.gradient_right{
+    background-color: #f48a0d;
+    background-image: -webkit-gradient(linear, right top, left bottom, from(#f4890b), to(#f9f1e0));
+    background-image: -webkit-linear-gradient(right, #f4890b, #f9f1e0);
+    background-image:    -moz-linear-gradient(right, #f4890b, #f9f1e0);
+    background-image:     -ms-linear-gradient(right, #f4890b, #f9f1e0);
+    background-image:      -o-linear-gradient(right, #f4890b, #f9f1e0);
 }
 
 
