@@ -27,9 +27,6 @@
 
 <body>
 
-
-
-
 <div class="container" id="page">
     <img src="/images/banner/website_banner.jpg" /><!-- header -->
 

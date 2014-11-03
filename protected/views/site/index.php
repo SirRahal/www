@@ -27,9 +27,6 @@ $this->pageTitle=Yii::app()->name;
         ?>
     </div>
 </div>
-
-
-
 <div class="ad" url="http://www.cia-auction.com/home/upcoming_auctions.html">
     <a href="http://www.cia-auction.com/home/upcoming_auctions.html" target="_blank">
         <img src="/images/ad_images/east_tech_ind_banner.jpg" width="920" />
