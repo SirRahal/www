@@ -14,7 +14,7 @@ $this->breadcrumbs=array(
 <h1>Recommended Companies</h1>
 
 <h3>We recomend these companies first hand.  Our expierences with these companies have been above and beyond expectations, and that is not the only reason we recommend them to our customers. </h3>
-<table style="width:50%; margin: 0 auto;">
+<table style="width:70%; margin: 0 auto;">
     <tbody>
     <tr>
         <td><a href="http://www.btmindustrial.com/" target="_blank">BTM Industrial</a></td>

@@ -32,7 +32,7 @@ $this->breadcrumbs=array(
         At Great West Casualty Company, The Difference is Service ®.
     </div>
 </div>
-<div style="position:absolute; margin-top: 50px;">
+<div style="position:absolute; margin-top: 70px;">
     <h3>Hours</h3>
     <div style="width:400px;">
         <table class="border_red">
@@ -51,3 +51,4 @@ $this->breadcrumbs=array(
         </table>
     </div>
 </div>
+<div class="clear" style="margin-bottom: 20px;"></div>
