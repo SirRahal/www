@@ -28,7 +28,13 @@ class School extends CActiveRecord
 		return array(
 			array('name, state', 'required'),
 			array('name', 'length', 'max'=>100),
-			array('state', 'length', 'max'=>2),
+            array('contact_name', 'length', 'max'=>100),
+            array('address', 'length', 'max'=>100),
+            array('city', 'length', 'max'=>100),
+            array('state', 'length', 'max'=>2),
+            array('zip', 'length', 'max'=>10),
+            array('phone','length', 'max'=>16),
+            array('email', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ID, name, state', 'safe', 'on'=>'search'),
@@ -54,7 +60,13 @@ class School extends CActiveRecord
 		return array(
 			'ID' => 'ID',
 			'name' => 'Name',
+            'address' => 'Address',
+            'city' => 'City',
 			'state' => 'State',
+            'zip' => 'Zip',
+            'contact_name' => 'Contact Name',
+            'phone' => 'Phone',
+            'email' => 'Email',
 		);
 	}
 
@@ -111,7 +123,7 @@ class School extends CActiveRecord
             'condition' => "code LIKE :match",
             'params'    => array(':match' => $school_ID . "-%")
         ) );
-        $q->order = "total_points DESC, rd_5 DESC, rd_5 DESC, rd_4 DESC, rd_3 DESC, rd_2 DESC, rd_1 DESC, user_ID";
+        $q->order = "total_points DESC, rd_6 DESC, rd_5 DESC, rd_4 DESC, rd_3 DESC, rd_2 DESC, rd_1 DESC, user_ID";
 
         $rows = Ticket::model()->findAll( $q );
         return $rows;
@@ -164,4 +176,7 @@ class School extends CActiveRecord
         }
     }
 
+    public static function get_ticket_count($school_ID){
+        return count (School::model()->get_tickets($school_ID));
+    }
 }

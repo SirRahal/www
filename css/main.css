@@ -16,7 +16,7 @@ a{
 
 }
 a:hover{
-    color: #ccd1da;
+    color: #9eb3ca;
 }
 a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
     cursor: pointer;
@@ -33,7 +33,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background: #fbf3e1;
-	border: 10px solid #ccd1da;
+	border: 10px solid #9eb3ca;
     border-radius: 30px;
 }
 
@@ -271,7 +271,7 @@ div.search-form
 
 .bracket_box{
     font-size:.8em;
-    background: #e7e7e7;
+    background: #9eb3ca;
     margin-top: 5px;
     width:110px;
     max-height: 15px;
@@ -338,7 +338,23 @@ div.search-form
     border-radius: 10px;
     margin-bottom: 20px;
     color:#ffffff;
-    background: #f2890d;
+    height: 570px;
+}
+.gradient_left{
+    background-color: #f48a0d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f4890b), to(#f9f1e0));
+    background-image: -webkit-linear-gradient(left, #f4890b, #f9f1e0);
+    background-image:    -moz-linear-gradient(left, #f4890b, #f9f1e0);
+    background-image:     -ms-linear-gradient(left, #f4890b, #f9f1e0);
+    background-image:      -o-linear-gradient(left, #f4890b, #f9f1e0);
+}
+.gradient_right{
+    background-color: #f48a0d;
+    background-image: -webkit-gradient(linear, right top, left bottom, from(#f4890b), to(#f9f1e0));
+    background-image: -webkit-linear-gradient(right, #f4890b, #f9f1e0);
+    background-image:    -moz-linear-gradient(right, #f4890b, #f9f1e0);
+    background-image:     -ms-linear-gradient(right, #f4890b, #f9f1e0);
+    background-image:      -o-linear-gradient(right, #f4890b, #f9f1e0);
 }
 
 
@@ -364,7 +380,12 @@ div.search-form
 }
 .ticket{
     width:240px;
-    background: #f5921e;
+    background-color: #f48a0d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f1e0), to(#f4890b));
+    background-image: -webkit-linear-gradient(top, #f9f1e0, #f4890b);
+    background-image:    -moz-linear-gradient(top, #f9f1e0, #f4890b);
+    background-image:     -ms-linear-gradient(top, #f9f1e0, #f4890b);
+    background-image:      -o-linear-gradient(top, #f9f1e0, #f4890b);
     color:#000000;
 }
 
@@ -405,9 +426,9 @@ input[type=password]:focus, textarea:focus {
 
 .display_bracket_button{
     position: absolute;
-    margin-left:-90px;
+    margin-left:-68px;
     position:fixed;
-    top:20%;
+    top:30%;
     /* Safari */
     -webkit-transform: rotate(-90deg);
     /* Firefox */
@@ -422,14 +443,14 @@ input[type=password]:focus, textarea:focus {
 
 .bracket_button{
     width:135px;
-    height:20px;
-    padding:6px;
+    height:18px;
+    padding:5px;
     background-color: #f48a0d;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#4b4b4b), to(#cbd0d9));
-    background-image: -webkit-linear-gradient(top, #4b4b4b, #cbd0d9);
-    background-image:    -moz-linear-gradient(top, #4b4b4b, #cbd0d9);
-    background-image:     -ms-linear-gradient(top, #4b4b4b, #cbd0d9);
-    background-image:      -o-linear-gradient(top, #4b4b4b, #cbd0d9);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9eb3ca), to(#4b4b4b));
+    background-image: -webkit-linear-gradient(top, #9eb3ca, #4b4b4b);
+    background-image:    -moz-linear-gradient(top, #9eb3ca, #4b4b4b);
+    background-image:     -ms-linear-gradient(top, #9eb3ca, #4b4b4b);
+    background-image:      -o-linear-gradient(top, #9eb3ca, #4b4b4b);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     text-decoration: none;
@@ -437,11 +458,11 @@ input[type=password]:focus, textarea:focus {
 
 .bracket_button:hover{
     background-color: #f48a0d;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f4890b), to(#cbd0d9));
-    background-image: -webkit-linear-gradient(top, #f4890b, #cbd0d9);
-    background-image:    -moz-linear-gradient(top, #f4890b, #cbd0d9);
-    background-image:     -ms-linear-gradient(top, #f4890b, #cbd0d9);
-    background-image:      -o-linear-gradient(top, #f4890b, #cbd0d9);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9eb3ca), to(#f4890b));
+    background-image: -webkit-linear-gradient(top, #9eb3ca, #f4890b);
+    background-image:    -moz-linear-gradient(top, #9eb3ca, #f4890b);
+    background-image:     -ms-linear-gradient(top, #9eb3ca, #f4890b);
+    background-image:      -o-linear-gradient(top, #9eb3ca, #f4890b);
     cursor: pointer;
 }
 
@@ -507,12 +528,62 @@ input[type=password]:focus, textarea:focus {
 .ribbon:before {
     left: 0;
 }
+
 .ribbon:after {
     right: 0;
 }
+
 .ui-button:hover{
     border: 1px solid #59b4d4;
     background: #0078a3 url("/css/jquery-ui-custom/images/ui-bg_glass_40_0078a3_1x400.png") 50% 50% repeat-x;
     font-weight: bold;
     color: #ffffff;
+}
+
+.mfp-with-zoom {
+    border:none;
+    z-index: 1000;
+    padding-left: 15%;
+    margin-right: 300px;
+}
+
+.display_box{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #9db2c9;
+}
+.dataTables_wrapper .dataTables_length {
+    display: none;
+}
+label{
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 0;
+}
+input{
+    width: 125px;
+    margin-right: 10px;
+}
+.link:hover{
+    cursor: pointer;
+}
+.homepage_container{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 17px;
+}
+.orange_text{
+    color: #f5921e;
+}
+.title{
+    font-size: 60px;
+}
+.title2{
+    font-size:40px;
+}
+.bold{
+    font-weight: bold;
 }

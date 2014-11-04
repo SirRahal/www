@@ -118,21 +118,21 @@ $school = School::model()->get_name_by_ID($school_ID);
 <!--the 4 regions with the 16 radio buttons in each-->
 <div style="float: left;  z-index: 100;">
     <!--south region-->
-    <div class="regional_div">
+    <div class="regional_div gradient_left">
         <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 1)); ?>
     </div>
     <!--east region-->
-    <div class="regional_div" >
+    <div class="regional_div gradient_left" >
         <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 3)); ?>
     </div>
 </div>
 <div style="float: right; z-index: 100;">
     <!--west region-->
-    <div class="regional_div">
+    <div class="regional_div gradient_right">
         <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 2)); ?>
     </div>
     <!--midwest region-->
-    <div class="regional_div" >
+    <div class="regional_div gradient_right" >
         <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 4)); ?>
     </div>
 </div>

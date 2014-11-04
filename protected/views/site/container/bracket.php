@@ -7,7 +7,7 @@
  */
 
 ?>
-
+<div class="clear" style="height: 40px;"></div>
 <div>
     <!--round 2 left-->
     <div class="roster">

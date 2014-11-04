@@ -72,6 +72,7 @@ class SiteController extends Controller
 		$this->render('contact',array('model'=>$model));
 	}
 
+
 	/**
 	 * Displays the login page
 	 */
@@ -106,4 +107,8 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+    public function actionBracket(){
+        $this->render('container/bracket');
+    }
 }

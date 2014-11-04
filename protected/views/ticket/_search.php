@@ -56,6 +56,11 @@
 		<?php echo $form->textField($model,'rd_5'); ?>
 	</div>
 
+    <div class="row">
+        <?php echo $form->label($model,'rd_6'); ?>
+        <?php echo $form->textField($model,'rd_6'); ?>
+    </div>
+
 	<div class="row">
 		<?php echo $form->label($model,'total_points'); ?>
 		<?php echo $form->textField($model,'total_points'); ?>

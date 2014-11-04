@@ -6,13 +6,12 @@
  * Time: 1:02 PM
  */
 $this->breadcrumbs=array(
-    'My Tickets',
+    'My Entries',
 );
     $mytickets = Ticket::model()->get_tickets_by_user_ID();
 ?>
 <head>
     <script>
-
         $(function() {
             $( "#accordion" ).accordion({
                 heightStyle: "content"
@@ -46,7 +45,7 @@ $this->breadcrumbs=array(
                 width: 350,
                 modal: true,
                 buttons: {
-                    "Add Ticket": addTicket,
+                    "Add Entry": addTicket,
                     Cancel: function() {
                         dialog.dialog( "close" );
                     }
@@ -67,54 +66,88 @@ $this->breadcrumbs=array(
     </script>
 </head>
 
-<h1>My Tickets</h1>
-
+<h1>My Entries</h1>
+<div style="height: 10px;"></div>
 <div class="clear"></div>
-<div>
-    <span>Tickets can be edited and updated until the cut off date</span><br/>
-    <span style="color: #f1901e">March 5th 12pm EST</span>
-    <p>Below are your tickets</p>
-</div>
-
-<?php foreach($mytickets as $ticket){
+    <div style="float: right; right:40px; margin-top: -80px;">
+        <?php echo $this->renderPartial('/site/container/count_down'); ?>
+    </div>
+    <div class="clear"></div>
+<!--if the user only has 1 ticket-->
+<?php if (count($mytickets)==1) {
+    $ticket = $mytickets[0];
     $my_picks = Picks::model()->find_tickets_by_ID($ticket['ID']);
     $string_exploded = explode("-", $ticket['code']);
     $school_ID = $string_exploded[0];
     $school = School::model()->get_name_by_ID($school_ID);
     ?>
-    <div class="regional_div ticket" id="my_picks" style="float:left; margin-left: 20px;">
-        <span style="color: black;" ><b>School : </b><a class="tooltip" title="See how you rank up against others in <?php echo $school; ?>" href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span><br/>
-        <span style="color: black;"><b>Ticket # : </b><?php echo $ticket['code']; ?></span>
-        <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket['ID']));?>
-        <a  class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" title="Edit This ticket up until March 5th 12pm EST">Edit Ticket</a>
-    </div>
-<?php }?>
-<div class="regional_div ticket text_center" style="float:left; margin-left: 20px; background: #cbd0d9;">
-    <p>
-        Any tickets that are not filled out by March 5th at 12pm EST will be auto picked.
-    </p>
-    <button id="add_ticket">Add Ticket</button>
-</div>
-<div class="clear"></div>
-
-
-<div id="accordion">
-<?php
-    $mytickets = Ticket::model()->get_tickets_by_user_ID();
-    foreach($mytickets as $ticket){?>
-        <h3><b>Ticket : </b><?php echo $ticket['code']; ?></h3>
-        <div style="background: #f3911e; color: #000000;">
-            <?php echo $this->renderPartial('container/score_table', array('ticket' => $ticket)); ?>
+    <div style="float: left;">
+        <div class="regional_div ticket" id="my_picks" style="height: 490px;">
+            <span style="color: black;" ><b>School : </b><a class="tooltip" title="See how you rank up against others in <?php echo $school; ?>" href="/index.php/school/<?php echo $school_ID; ?>"><?php echo $school;?></a></span><br/>
+            <span style="color: black;"><b>Entry # : </b><?php echo $ticket['code']; ?></span>
+            <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket['ID']));?>
+            <a  class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 80px 5px 80px;" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" title="Edit This ticket up until March 5th 12pm EST">Edit Entry</a>
         </div>
-    <?php } ?>
-</div>
 
-<div id="dialog-form" title="Add a Ticket">
-    <p class="validateTips">Please Enter Ticket Number</p>
+        <div class="regional_div ticket text_center" style="background: #cbd0d9; height: 90px;">
+            <span>
+                Any registered entries not completed by March 5th at noon EST will be auto picked.
+            </span><br/>
+            <button id="add_ticket">Add Entry</button>
+        </div>
+    </div>
+    <div id="accordion" style="width:850px; float: left; margin-left: 15px;">
+        <?php
+        $mytickets = Ticket::model()->get_tickets_by_user_ID();
+        foreach($mytickets as $ticket){?>
+            <h3><b>Entry : </b><?php echo $ticket['code']; ?></h3>
+            <div style="background: #f3911e; color: #000000;">
+                <?php echo $this->renderPartial('container/score_table', array('ticket' => $ticket)); ?>
+            </div>
+        <?php } ?>
+    </div>
+<?php }else { ?>
+<!--if the user has more than one ticket-->
+    <?php foreach($mytickets as $ticket){
+        $my_picks = Picks::model()->find_tickets_by_ID($ticket['ID']);
+        $string_exploded = explode("-", $ticket['code']);
+        $school_ID = $string_exploded[0];
+        $school = School::model()->get_name_by_ID($school_ID);
+        ?>
+        <div class="regional_div ticket" id="my_picks" style="float:left; margin-left: 20px;color: black; height: 480px;">
+            <span><a class="tooltip" title="See how you rank up against others in <?php echo $school; ?>" href="/index.php/school/<?php echo $school_ID; ?>"><b><?php echo $school;?></b></a></span><br/>
+            <span><b>Entry # : </b><?php echo $ticket['code']; ?></span>
+            <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket['ID']));?>
+            <a  class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" title="Edit This entry up until March 5th 12pm EST">Edit Entry</a>
+        </div>
+    <?php }?>
+    <div class="regional_div ticket text_center" style="float:left; margin-left: 20px; background: #cbd0d9; height: 100px;">
+        <p>
+                Any registered entries not completed by March 5th at noon EST will be auto picked.
+        </p>
+        <button id="add_ticket">Add Entry</button>
+    </div>
+    <div class="clear"></div>
+
+
+    <div id="accordion">
+    <?php
+        $mytickets = Ticket::model()->get_tickets_by_user_ID();
+        foreach($mytickets as $ticket){?>
+            <h3><b>Entry : </b><?php echo $ticket['code']; ?></h3>
+            <div class="ticket_table_display">
+                <?php echo $this->renderPartial('container/score_table', array('ticket' => $ticket)); ?>
+            </div>
+        <?php } ?>
+    </div>
+<?php } ?>
+
+<div id="dialog-form" title="Add a Entry">
+    <p class="validateTips">Please Enter Entry Number</p>
     <form>
         <fieldset>
-            <label for="ticket_code">Ticket Code #</label>
-            <input type="text" name="ticket_code" id="ticket_code" placeholder="000-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your ticket">
+            <label for="ticket_code">Entry Code #</label>
+            <input type="text" name="ticket_code" id="ticket_code" placeholder="000-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your entry">
             <img src="/images/faq-ticket-codes.png" width="150";/>
             <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
         </fieldset>

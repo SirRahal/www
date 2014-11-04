@@ -42,6 +42,10 @@
 	<?php echo CHtml::encode($data->rd_5); ?>
 	<br />
 
+    <b><?php echo CHtml::encode($data->getAttributeLabel('rd_6')); ?>:</b>
+	<?php echo CHtml::encode($data->rd_6); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('total_points')); ?>:</b>
 	<?php echo CHtml::encode($data->total_points); ?>
 	<br />
