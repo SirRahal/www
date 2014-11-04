@@ -25,7 +25,7 @@
                 <td style="text-align: center;"><b><?php echo $total_points;?></b></td>
             </tr>
         <?php } ?>
-        <tr style="background: #000000; color:white;">
+        <tr style="background: #333333; color:white;">
             <td colspan="2" style="text-align: center;"><b>Total</b></td>
             <td style="text-align: center;"><?php echo $ticket_total_points;?></td>
         </tr>
