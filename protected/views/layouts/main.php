@@ -23,6 +23,16 @@
     <!-- Magnific Popup core JS file -->
     <script src="/js/image_popup.js"></script>
 
+    <!--Check to see if the user is a mobile device and use the correct styling sheet-->
+    <?php
+    $isMobile = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows (phone|ce)|blackberry|tablet'.
+        '|s(ymbian|eries60|amsung)|p(laybook|alm|rofile/midp|laystation portable)|nokia|fennec|htc[\-_]'.
+        '|mobile|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
+
+    if($isMobile){ ?>
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/mobile.css" />
+    <?php } ?>
+
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 <!--once they chose what they want and finalized, move to js folder -->

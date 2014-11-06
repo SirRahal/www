@@ -121,6 +121,10 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 	text-decoration:none;
 }
 
+.row{
+    font-size: 16px;
+}
+
 div.flash-error, div.flash-notice, div.flash-success
 {
 	padding:.8em;
@@ -164,10 +168,6 @@ div.flash-success a
 	color:#264409;
 }
 
-div.form .rememberMe label
-{
-	display: inline;
-}
 
 div.view
 {
@@ -178,7 +178,6 @@ div.view
 
 div.breadcrumbs
 {
-	font-size: 0.9em;
 	padding: 5px 20px;
 }
 
@@ -389,9 +388,16 @@ div.search-form
     color:#000000;
 }
 
+.ticket_box{
+    float:left;
+    margin-left: 20px;
+    color: black;
+    height: 480px;
+}
+
 input[type=text], textarea {
     color: #494949;
-    width: 200px;
+    width: 300px;
     padding: 6px 15px 6px 35px;
     border-radius: 20px;
     box-shadow: 0 1px 0 #ccc inset;
@@ -400,7 +406,7 @@ input[type=text], textarea {
 }
 input[type=password] {
     color: #494949;
-    width: 200px;
+    width: 300px;
     padding: 6px 15px 6px 35px;
     border-radius: 20px;
     box-shadow: 0 1px 0 #ccc inset;

@@ -1,0 +1,49 @@
+body
+{
+    font: normal 16pt Arial,Helvetica,sans-serif;
+}
+
+#footer
+{
+    font-size: 1.2em;
+}
+
+#mainmenu
+{
+    height:100px;
+}
+
+#mainmenu ul li a
+{
+    font-size:45px;
+    width:220px;
+}
+
+div.breadcrumbs{
+    display: none;
+}
+
+.display_bracket_button{
+    top:10%;
+}
+
+.bracket_button{
+    padding-top: 10px;
+    width:170px;
+    height:30px;
+}
+
+.row{
+    font-size: 46px;
+
+}
+
+input[type=text], textarea {
+    font-size: 60px;
+    width : 600px;
+}
+
+input[type=password] {
+    font-size: 60px;
+    width : 600px;
+}

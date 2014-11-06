@@ -68,46 +68,51 @@ $this->breadcrumbs=array(
 );
 ?>
 <h1>Login</h1>
+<div style="position: absolute; border: solid 1px orange; padding:10px; text-align: center; border-radius: 10px; box-shadow: 10px 8px 15px #494949;">
+    <h3>Have a ticket, and not a user yet?</h3>
+    <button onclick="location.href='/index.php/user/register'">Register Now</button>
+</div>
 
-<p>Please fill out the following form with your login credentials:</p>
 
-<div class="form">
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'login-form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
-)); ?>
+<div style="text-align: center; width: 320px; margin: 0 auto;">
+    <p>Please fill out the following form with your login credentials:</p>
+    <div class="form">
+        <?php $form=$this->beginWidget('CActiveForm', array(
+            'id'=>'login-form',
+            'enableClientValidation'=>true,
+            'clientOptions'=>array(
+                'validateOnSubmit'=>true,
+            ),
+        )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-	</div>
+        <div class="row">
+            <?php echo $form->labelEx($model,'username'); ?><br/>
+            <?php echo $form->textField($model,'username'); ?>
+            <?php echo $form->error($model,'username'); ?>
+        </div>
+        <div class="row">
+            <?php echo $form->labelEx($model,'password'); ?><br/>
+            <?php echo $form->passwordField($model,'password'); ?>
+            <?php echo $form->error($model,'password'); ?>
+        </div>
+        <div class="row">
+            <?php echo $form->checkBox($model,'rememberMe'); ?>
+            <?php echo $form->label($model,'rememberMe'); ?>
+            <?php echo $form->error($model,'rememberMe'); ?>
+        </div>
+        <div class="row " >
+            <?php echo CHtml::submitButton('Login'); ?>
+            <button id="reset_password">Forgot Name or Password</button>
+            <p class="note">Fields with <span class="required">*</span> are required.</p>
+        </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-	</div>
+        <?php $this->endWidget(); ?>
+    </div><!-- form -->
 
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
+</div>
 
-	<div class="row buttons" >
-        <?php echo CHtml::submitButton('Login'); ?>
-	</div>
 
-<?php $this->endWidget(); ?>
-</div><!-- form -->
-<button onclick="location.href='/index.php/user/register'">Register Now</button>
-<button id="reset_password">Forgot Name or Password</button>
 <div id="dialog-form" title="Reset Password">
     <p class="validateTips">Please Enter Your Email Address that is registered to your account.  After resetting your password, you will relieve an email with your account and new password. </p>
     <form style="text-align: center;">

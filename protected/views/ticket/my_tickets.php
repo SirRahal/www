@@ -114,7 +114,7 @@ $this->breadcrumbs=array(
         $school_ID = $string_exploded[0];
         $school = School::model()->get_name_by_ID($school_ID);
         ?>
-        <div class="regional_div ticket" id="my_picks" style="float:left; margin-left: 20px;color: black; height: 480px;">
+        <div class="regional_div ticket ticket_box" id="my_picks" style="">
             <span><a class="tooltip" title="See how you rank up against others in <?php echo $school; ?>" href="/index.php/school/<?php echo $school_ID; ?>"><b><?php echo $school;?></b></a></span><br/>
             <span><b>Entry # : </b><?php echo $ticket['code']; ?></span>
             <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket['ID']));?>
