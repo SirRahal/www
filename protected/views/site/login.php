@@ -70,6 +70,7 @@ $this->breadcrumbs=array(
 <h1>Login</h1>
 <div style="position: absolute; border: solid 1px orange; padding:10px; text-align: center; border-radius: 10px; box-shadow: 10px 8px 15px #494949;">
     <h3>Have a ticket, and not a user yet?</h3>
+    <img src="/images/ticket.png" class=" shadow" width="300"/><br/><br/>
     <button onclick="location.href='/index.php/user/register'">Register Now</button>
 </div>
 

@@ -292,6 +292,9 @@ div.search-form
 .float_right{
     float: right;
 }
+.mobile_not_float_right{
+    float: right;
+}
 .align_right{
     text-align: right;
 }

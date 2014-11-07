@@ -32,7 +32,7 @@ div.breadcrumbs{
 .bracket_button{
     padding-top: 10px;
     width:170px;
-    height:30px;
+    height:90px;
 }
 
 .row{
@@ -48,4 +48,10 @@ input[type=text], textarea {
 input[type=password] {
     font-size: 60px;
     width : 600px;
+}
+.mobile_not_float_right{
+    clear: both;
+}
+.title_bar{
+    font-size: 90px;
 }
