@@ -68,13 +68,12 @@ $this->breadcrumbs=array(
 );
 ?>
 <h1>Login</h1>
+<div class="mobile_not_float_right"></div>
 <div style="position: absolute; border: solid 1px orange; padding:10px; text-align: center; border-radius: 10px; box-shadow: 10px 8px 15px #494949;">
     <h3>Have a ticket, and not a user yet?</h3>
     <img src="/images/ticket.png" class=" shadow" width="300"/><br/><br/>
     <button onclick="location.href='/index.php/user/register'">Register Now</button>
 </div>
-
-
 <div style="text-align: center; width: 320px; margin: 0 auto;">
     <p>Please fill out the following form with your login credentials:</p>
     <div class="form">
@@ -85,8 +84,6 @@ $this->breadcrumbs=array(
                 'validateOnSubmit'=>true,
             ),
         )); ?>
-
-
         <div class="row">
             <?php echo $form->labelEx($model,'username'); ?><br/>
             <?php echo $form->textField($model,'username'); ?>
@@ -107,12 +104,9 @@ $this->breadcrumbs=array(
             <button id="reset_password">Forgot Name or Password</button>
             <p class="note">Fields with <span class="required">*</span> are required.</p>
         </div>
-
         <?php $this->endWidget(); ?>
     </div><!-- form -->
-
 </div>
-
 
 <div id="dialog-form" title="Reset Password">
     <p class="validateTips">Please Enter Your Email Address that is registered to your account.  After resetting your password, you will relieve an email with your account and new password. </p>

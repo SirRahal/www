@@ -23,20 +23,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mobile.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="12" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="1071">
+            <state line="34" column="12" selection-start="377" selection-end="377" vertical-scroll-proportion="0.49949238" vertical-offset="86" max-vertical-offset="1071">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="58" selection-start="2618" selection-end="2618" vertical-scroll-proportion="0.37226278" vertical-offset="867" max-vertical-offset="2244">
-              <folding />
+            <state line="70" column="34" selection-start="2396" selection-end="2396" vertical-scroll-proportion="-9.153846" vertical-offset="952" max-vertical-offset="2142">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/user/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="0" selection-start="2938" selection-end="2938" vertical-scroll-proportion="-30.403847" vertical-offset="0" max-vertical-offset="2363">
+              <folding>
+                <element signature="e#6#136#0" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,6 +134,7 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
+        <option value="$PROJECT_DIR$/protected/views/user/register.php" />
         <option value="$PROJECT_DIR$/protected/views/site/login.php" />
       </list>
     </option>
@@ -444,16 +460,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+    <entry file="file://$PROJECT_DIR$/protected/views/user/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="12" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="1071">
-          <folding />
+        <state line="93" column="0" selection-start="2938" selection-end="2938" vertical-scroll-proportion="-30.403847" vertical-offset="0" max-vertical-offset="2363">
+          <folding>
+            <element signature="e#6#136#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="58" selection-start="2618" selection-end="2618" vertical-scroll-proportion="0.37226278" vertical-offset="867" max-vertical-offset="2244">
+        <state line="70" column="34" selection-start="2396" selection-end="2396" vertical-scroll-proportion="-9.153846" vertical-offset="952" max-vertical-offset="2142">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="12" selection-start="377" selection-end="377" vertical-scroll-proportion="0.49949238" vertical-offset="86" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>

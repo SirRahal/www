@@ -77,7 +77,7 @@ $this->breadcrumbs=array(
         
         dialog = $( "#dialog-form" ).dialog({
             autoOpen: <?php if(isset($_SESSION['ticket_ID'])) echo 'false'; else echo'true'; ?>,
-            width: 400,
+            width: 540,
             height: 400,
             modal: true,
             buttons: {
@@ -108,14 +108,14 @@ $this->breadcrumbs=array(
         margin-bottom: 40px;
     }
 </style>
-<div id="dialog-form" title="Verify Your Ticket Code">
+<div id="dialog-form" title="Verify Your Entry Code">
     <form>
         <fieldset>
             <table>
                 <tbody>
                 <tr>
                     <td>
-                        <label for="ticket" >Ticket Code</label>
+                        <label for="ticket" >Entry Code</label>
                     </td>
                     <td>
                         <input autofocus type="text" name="ticket" id="ticket" class="text ui-widget-content ui-corner-all">
@@ -124,7 +124,7 @@ $this->breadcrumbs=array(
                 </tbody>
             </table>
 
-            <img src="/images/faq-ticket-codes.png" width="240"/>
+            <img src="/images/ticket.png" width="500"/>
             <!-- Allow form submission with keyboard without duplicating the dialog button -->
             <input type="submit" tabindex="-1" style="position:absolute; top:-1000px" name="info" id="info" class="text ui-widget-content ui-corner-all">
         </fieldset>
