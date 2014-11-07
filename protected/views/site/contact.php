@@ -19,9 +19,20 @@ $this->breadcrumbs=array(
 
 <?php else: ?>
 <style>
-    .floatL{
-        float: left;
-        padding:10px;
+    .contact{
+        border: solid 1px orange;
+        background-color: #f48a0d;
+        background-image: -webkit-gradient(linear, right top, left bottom, from(#f4890b), to(#f9f1e0));
+        background-image: -webkit-linear-gradient(right, #f4890b, #f9f1e0);
+        background-image:    -moz-linear-gradient(right, #f4890b, #f9f1e0);
+        background-image:     -ms-linear-gradient(right, #f4890b, #f9f1e0);
+        background-image:      -o-linear-gradient(right, #f4890b, #f9f1e0);
+        border-bottom: solid 1px black;
+    }
+    .contact_image{
+        float:left;
+        margin-top: 8px;
+        margin-left: 20px;
     }
 </style>
 
@@ -29,8 +40,30 @@ $this->breadcrumbs=array(
         <p>
             If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
         </p>
-
-        <div class="form">
+        <div class="float_right align_center round_edges shadow orange_boarder" style="width: 600px;">
+            <h1>For more information,<br/>please contact us by email or by phone.</h1>
+            <h1>For Sales</h1>
+            <p>Sales@BracketFanatic.com<br/>Some Default Number</p>
+            <h1>For Support</h1>
+            <p>Support@BracketFanatic.com<br/>Some Default Number</p>
+            <h1>Direct Contacts</h1>
+            <div class="contact">
+                <img class="contact_image" src="/images/joe_sack.png" width="90"/>
+                <p><b><h3>Joe Sack</h3></b>Joe@BracketFanatic.com<br/>Some Default Number</p>
+            </div>
+            <div class="clear"></div>
+            <div class="contact">
+                <img class="contact_image" src="/images/glen_goen.jpg" width="90"/>
+                <p><b><h3>Glen Goen</h3></b>Glen@BracketFanatic.com<br/>Some Default Number</p>
+            </div>
+            <div class="clear"></div>
+            <div class="contact">
+                <img class="contact_image" src="/images/sari_rahal.jpg" width="90"/>
+                <p><b><h3>Sari Rahal</h3></b>Sari@BracketFanatic.com<br/>Some Default Number</p>
+            </div>
+            All Contacts are reachable 9am-5pm EST.
+        </div>
+        <div class="form" style="width:500px;">
 
             <?php $form=$this->beginWidget('CActiveForm', array(
                 'id'=>'contact-form',
@@ -41,7 +74,7 @@ $this->breadcrumbs=array(
             )); ?>
 
             <p class="note">Fields with <span class="required">*</span> are required.</p>
-        <div class="floatL">
+
             <?php echo $form->errorSummary($model); ?>
 
             <div class="row">
@@ -63,18 +96,18 @@ $this->breadcrumbs=array(
             </div>
 
 
-        </div>
-        <div class="floatL">
-            <div class="row" style="width:100%;">
-                <?php echo $form->labelEx($model,'body'); ?><br/>
-                <?php echo $form->textArea($model,'body',array('rows'=>10, 'cols'=>70)); ?>
-                <?php echo $form->error($model,'body'); ?>
-            </div>
 
-            <?php endif; ?>
+
+        <div class="row" style="width:100%;">
+            <?php echo $form->labelEx($model,'body'); ?><br/>
+            <?php echo $form->textArea($model,'body',array('rows'=>10)); ?>
+            <?php echo $form->error($model,'body'); ?>
         </div>
-        <div class="floatL">
-            <div style="background: white; width: 280px; padding:5px; border-radius:10px; margin-top: 20px; border: solid 1px #acacac;">
+
+        <?php endif; ?>
+
+        <div>
+            <div style="background: white; width: 360px; padding:5px; border-radius:10px; margin-top: 20px; border: solid 1px #acacac;">
                 <?php if(CCaptcha::checkRequirements()): ?>
                 <div class="row">
                     <?php echo $form->labelEx($model,'verifyCode'); ?><span class="required">*</span><br/>
@@ -89,7 +122,7 @@ $this->breadcrumbs=array(
             </div>
         </div>
     </div>
-    <div class="clear"></div>
+<br/>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Submit', array('class' => 'ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')); ?>
 	</div>
@@ -99,3 +132,4 @@ $this->breadcrumbs=array(
 </div><!-- form -->
 
 <?php endif; ?>
+<div class="clear"></div>

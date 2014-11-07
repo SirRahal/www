@@ -295,6 +295,15 @@ div.search-form
 .align_right{
     text-align: right;
 }
+.align_center{
+    text-align: center;
+}
+.align_left{
+    text-align: left;
+}
+.float_left{
+    float: left;
+}
 .spacer{
     height: 5px;
 }
@@ -418,14 +427,14 @@ input[type=password] {
 
 input[type=text]:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    color: orange;
+    color: #f48a0d;
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
 
 input[type=password]:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    color: orange;
+    color: #f48a0d;
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
@@ -584,6 +593,18 @@ input{
 .orange_text{
     color: #f5921e;
 }
+.blue_text{
+    color:#9eb3ca;
+}
+.white_text{
+    color:#ffffff;
+}
+.black_text{
+    color:#000000;
+}
+.gray_text{
+    color:#555555;
+}
 .title{
     font-size: 60px;
 }
@@ -593,3 +614,15 @@ input{
 .bold{
     font-weight: bold;
 }
+
+.round_edges{
+    border-radius: 15px;
+}
+
+.shadow{
+    box-shadow: 10px 8px 15px #494949;
+}
+.orange_boarder{
+    border: solid 1px #f5921e;
+}
+
