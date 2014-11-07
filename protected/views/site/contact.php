@@ -40,8 +40,74 @@ $this->breadcrumbs=array(
         <p>
             If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
         </p>
-        <div class="mobile_not_float_right">
-            <div class=" align_center round_edges shadow orange_boarder" style="width: 600px;">
+        <div class="contact_container">
+            <div class="form" >
+
+                <?php $form=$this->beginWidget('CActiveForm', array(
+                    'id'=>'contact-form',
+                    'enableClientValidation'=>true,
+                    'clientOptions'=>array(
+                        'validateOnSubmit'=>true,
+                    ),
+                )); ?>
+
+                <p class="note">Fields with <span class="required">*</span> are required.</p>
+
+                <?php echo $form->errorSummary($model); ?>
+
+                <div class="row">
+                    <?php echo $form->labelEx($model,'name'); ?><br/>
+                    <?php echo $form->textField($model,'name'); ?>
+                    <?php echo $form->error($model,'name'); ?>
+                </div>
+
+                <div class="row">
+                    <?php echo $form->labelEx($model,'email'); ?><br/>
+                    <?php echo $form->textField($model,'email'); ?>
+                    <?php echo $form->error($model,'email'); ?>
+                </div>
+
+                <div class="row">
+                    <?php echo $form->labelEx($model,'subject'); ?><br/>
+                    <?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
+                    <?php echo $form->error($model,'subject'); ?>
+                </div>
+
+                <div class="row" style="width:100%;">
+                    <?php echo $form->labelEx($model,'body'); ?><br/>
+                    <?php echo $form->textArea($model,'body',array('rows'=>10)); ?>
+                    <?php echo $form->error($model,'body'); ?>
+                </div>
+
+                <?php endif; ?>
+
+                <div>
+                    <div class="round_edges" style="background: white; padding:5px; margin-top: 20px; border: solid 1px #acacac;">
+                        <?php if(CCaptcha::checkRequirements()): ?>
+                        <div class="row">
+                            <?php echo $form->labelEx($model,'verifyCode'); ?><span class="required">*</span><br/>
+                            <div>
+                                <?php $this->widget('CCaptcha'); ?><br/>
+                                <?php echo $form->textField($model,'verifyCode'); ?><br/>
+                            </div>
+                            <div>Please enter the letters as they are shown in the image above.
+                                <br/>Letters are not case-sensitive.</div>
+                            <?php echo $form->error($model,'verifyCode'); ?>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="row buttons">
+                    <?php echo CHtml::submitButton('Submit', array('class' => 'ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')); ?>
+                </div>
+
+                <?php $this->endWidget(); ?>
+
+            </div><!-- form -->
+            </div>
+        </div>
+        <div class="contact_container">
+            <div class=" align_center round_edges shadow orange_boarder">
                 <h1>For more information,<br/>please contact us by email or by phone.</h1>
                 <h1>For Sales</h1>
                 <p>Sales@BracketFanatic.com<br/>Some Default Number</p>
@@ -59,79 +125,27 @@ $this->breadcrumbs=array(
                 </div>
                 <div class="clear"></div>
                 <div class="contact">
+                    <img class="contact_image" src="/images/no_pic.jpg" width="90"/>
+                    <p><b><h3>Dave Ingles</h3></b>Dave@BracketFanatic.com<br/>Some Default Number</p>
+                </div>
+                <div class="clear"></div>
+                <div class="contact">
+                    <img class="contact_image" src="/images/no_pic.jpg" width="90"/>
+                    <p><b><h3>Pat Wagneer</h3></b>Pat@BracketFanatic.com<br/>Some Default Number</p>
+                </div>
+                <div class="clear"></div>
+                <div class="contact">
                     <img class="contact_image" src="/images/sari_rahal.jpg" width="90"/>
                     <p><b><h3>Sari Rahal</h3></b>Sari@BracketFanatic.com<br/>Some Default Number</p>
                 </div>
                 All Contacts are reachable 9am-5pm EST.
             </div>
         </div>
-        <div class="form" style="width:500px;">
-
-            <?php $form=$this->beginWidget('CActiveForm', array(
-                'id'=>'contact-form',
-                'enableClientValidation'=>true,
-                'clientOptions'=>array(
-                    'validateOnSubmit'=>true,
-                ),
-            )); ?>
-
-            <p class="note">Fields with <span class="required">*</span> are required.</p>
-
-            <?php echo $form->errorSummary($model); ?>
-
-            <div class="row">
-                <?php echo $form->labelEx($model,'name'); ?><br/>
-                <?php echo $form->textField($model,'name'); ?>
-                <?php echo $form->error($model,'name'); ?>
-            </div>
-
-            <div class="row">
-                <?php echo $form->labelEx($model,'email'); ?><br/>
-                <?php echo $form->textField($model,'email'); ?>
-                <?php echo $form->error($model,'email'); ?>
-            </div>
-
-            <div class="row">
-                <?php echo $form->labelEx($model,'subject'); ?><br/>
-                <?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
-                <?php echo $form->error($model,'subject'); ?>
-            </div>
 
 
 
 
-        <div class="row" style="width:100%;">
-            <?php echo $form->labelEx($model,'body'); ?><br/>
-            <?php echo $form->textArea($model,'body',array('rows'=>10)); ?>
-            <?php echo $form->error($model,'body'); ?>
-        </div>
 
-        <?php endif; ?>
-
-        <div>
-            <div class="round_edges" style="background: white; padding:5px; margin-top: 20px; border: solid 1px #acacac;">
-                <?php if(CCaptcha::checkRequirements()): ?>
-                <div class="row">
-                    <?php echo $form->labelEx($model,'verifyCode'); ?><span class="required">*</span><br/>
-                    <div>
-                        <?php $this->widget('CCaptcha'); ?><br/>
-                        <?php echo $form->textField($model,'verifyCode'); ?><br/>
-                    </div>
-                    <div>Please enter the letters as they are shown in the image above.
-                        <br/>Letters are not case-sensitive.</div>
-                    <?php echo $form->error($model,'verifyCode'); ?>
-                </div>
-            </div>
-        </div>
-    </div>
-<br/>
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit', array('class' => 'ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-
-</div><!-- form -->
 
 <?php endif; ?>
 <div class="clear"></div>

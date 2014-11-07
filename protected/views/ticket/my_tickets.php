@@ -89,7 +89,7 @@ $this->breadcrumbs=array(
             <a  class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 80px 5px 80px;" href="/index.php/ticket/update/<?php echo $ticket['ID'];?>" title="Edit This ticket up until March 5th 12pm EST">Edit Entry</a>
         </div>
 
-        <div class="regional_div ticket text_center" style="background: #cbd0d9; height: 90px;">
+        <div class="regional_div ticket text_center add_ticket_box">
             <span>
                 Any registered entries not completed by March 5th at noon EST will be auto picked.
             </span><br/>

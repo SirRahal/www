@@ -8,14 +8,7 @@ $this->breadcrumbs=array(
 ?>
 <h1>About Us</h1>
 <style>
-    .title_bar{
-        background: #33332c;
-        padding: 5px;
-        text-align: center;
-        font-size: 30px;
-        color: #f3911e;
-        border-radius: 30px;
-    }
+
     .border_right{
         border-right: solid 1px black;
     }
@@ -31,7 +24,8 @@ $this->breadcrumbs=array(
         background-image:      -o-linear-gradient(right, #d36e0b, #f4890b);
     }
 </style>
-<div class="title_bar">For The Entry Holder</div>
+
+<div class="title_bar">For Ticket Holders</div>
 <div class="float_left" style="width:75%; padding-top:20px; padding-bottom: 20px;">
     <img src="/images/edit_pics.png" width="430" class="round_edges shadow float_left"/>
     <div class="float_left bold" style="width:400px; padding-left: 20px; font-size: 17px;">
@@ -46,6 +40,8 @@ $this->breadcrumbs=array(
         <img src="/images/ticket.png" width="400" class="round_edges shadow"/>
     </div>
 </div>
+
+
 <div class="float_left" style="width:20%; padding-top:20px;">
 <img src="/images/pay_outs.png" width="270" class="round_edges shadow"/>
 </div>

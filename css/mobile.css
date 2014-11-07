@@ -30,7 +30,7 @@ div.breadcrumbs{
 }
 
 .bracket_button{
-    padding-top: 10px;
+    padding-top: 30px;
     width:170px;
     height:90px;
 }
@@ -54,4 +54,18 @@ input[type=password] {
 }
 .title_bar{
     font-size: 90px;
+}
+
+.ticket_box{
+    height: 550px;
+}
+
+.add_ticket_box{
+    height: 90px;
+}
+
+.contact_container{
+    width:100%;
+    float: none;
+    margin-left: 10px;
 }
