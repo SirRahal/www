@@ -69,12 +69,12 @@
 
 		<!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
         <!--bracket buttons example-->
-        <div class="display_bracket_button image-popup-no-margins" href="/images/bracket1.png" >
+        <div class="display_bracket_button image-popup-no-margins" href="/images/bracket2.png" >
             <a div_popup="" style="text-decoration: none !important;">
                 <div class="bracket_button">
                     <h3 style="color:#ffffff;">Display Bracket</h3>
-                    <a href="/images/bracket1.png" class="image-popup-no-margins" >
-                        <img src="/images/bracket1.png" width="30" style="visibility: hidden;"/>
+                    <a href="/images/bracket2.png" class="image-popup-no-margins" >
+                        <img src="/images/bracket2.png" width="1" style="visibility: hidden;"/>
                     </a>
                 </div>
             </a>

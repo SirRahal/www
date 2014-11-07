@@ -30,10 +30,13 @@ div.breadcrumbs{
 }
 
 .bracket_button{
-    padding-top: 30px;
+    padding-top: 90px;
     width:170px;
     height:90px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius:30px;
 }
+
 
 .row{
     font-size: 46px;
@@ -42,12 +45,12 @@ div.breadcrumbs{
 
 input[type=text], textarea {
     font-size: 60px;
-    width : 600px;
+    width : 700px;
 }
 
 input[type=password] {
     font-size: 60px;
-    width : 600px;
+    width : 700px;
 }
 .mobile_not_float_right{
     clear: both;
@@ -68,4 +71,11 @@ input[type=password] {
     width:100%;
     float: none;
     margin-left: 10px;
+
+}
+.contact_image{
+    width:240px;
+}
+input{
+    width: 325px;
 }

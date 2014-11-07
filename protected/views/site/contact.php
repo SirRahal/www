@@ -29,11 +29,7 @@ $this->breadcrumbs=array(
         background-image:      -o-linear-gradient(right, #f4890b, #f9f1e0);
         border-bottom: solid 1px black;
     }
-    .contact_image{
-        float:left;
-        margin-top: 8px;
-        margin-left: 20px;
-    }
+
 </style>
 
     <div style="padding:10px;">
@@ -115,27 +111,27 @@ $this->breadcrumbs=array(
                 <p>Support@BracketFanatic.com<br/>Some Default Number</p>
                 <h1>Direct Contacts</h1>
                 <div class="contact">
-                    <img class="contact_image" src="/images/joe_sack.png" width="90"/>
+                    <img class="contact_image" src="/images/joe_sack.png"/>
                     <p><b><h3>Joe Sack</h3></b>Joe@BracketFanatic.com<br/>Some Default Number</p>
                 </div>
                 <div class="clear"></div>
                 <div class="contact">
-                    <img class="contact_image" src="/images/glen_goen.jpg" width="90"/>
+                    <img class="contact_image" src="/images/glen_goen.jpg"/>
                     <p><b><h3>Glen Goen</h3></b>Glen@BracketFanatic.com<br/>Some Default Number</p>
                 </div>
                 <div class="clear"></div>
                 <div class="contact">
-                    <img class="contact_image" src="/images/no_pic.jpg" width="90"/>
+                    <img class="contact_image" src="/images/no_pic.jpg"/>
                     <p><b><h3>Dave Ingles</h3></b>Dave@BracketFanatic.com<br/>Some Default Number</p>
                 </div>
                 <div class="clear"></div>
                 <div class="contact">
-                    <img class="contact_image" src="/images/no_pic.jpg" width="90"/>
+                    <img class="contact_image" src="/images/no_pic.jpg"/>
                     <p><b><h3>Pat Wagneer</h3></b>Pat@BracketFanatic.com<br/>Some Default Number</p>
                 </div>
                 <div class="clear"></div>
                 <div class="contact">
-                    <img class="contact_image" src="/images/sari_rahal.jpg" width="90"/>
+                    <img class="contact_image" src="/images/sari_rahal.jpg"/>
                     <p><b><h3>Sari Rahal</h3></b>Sari@BracketFanatic.com<br/>Some Default Number</p>
                 </div>
                 All Contacts are reachable 9am-5pm EST.

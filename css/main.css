@@ -29,7 +29,6 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 #page
 {
-
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background: #fbf3e1;
@@ -72,8 +71,6 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 	padding: 10px 20px;
 	font-size: 200%;
 }
-
-
 
 #mainmenu
 {
@@ -652,4 +649,10 @@ input{
     width:45%;
     float: left;
     margin-left: 45px;
+}
+.contact_image{
+    float:left;
+    margin-top: 8px;
+    margin-left: 20px;
+    width: 90px;
 }
