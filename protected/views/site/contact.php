@@ -103,14 +103,14 @@ $this->breadcrumbs=array(
             </div>
         </div>
         <div class="contact_container">
-            <div class=" align_center round_edges shadow orange_boarder">
+            <div class="align_center round_edges shadow orange_boarder" style="padding-top: 10px;">
                 <h1>For more information,<br/>please contact us by email or by phone.</h1>
                 <h1>For Sales</h1>
                 <p>Sales@BracketFanatic.com<br/>Some Default Number</p>
                 <h1>For Support</h1>
                 <p>Support@BracketFanatic.com<br/>Some Default Number</p>
                 <h1>Direct Contacts</h1>
-                <div class="contact">
+                <!--<div class="contact">
                     <img class="contact_image" src="/images/joe_sack.png"/>
                     <p><b><h3>Joe Sack</h3></b>Joe@BracketFanatic.com<br/>Some Default Number</p>
                 </div>
@@ -134,7 +134,7 @@ $this->breadcrumbs=array(
                     <img class="contact_image" src="/images/sari_rahal.jpg"/>
                     <p><b><h3>Sari Rahal</h3></b>Sari@BracketFanatic.com<br/>Some Default Number</p>
                 </div>
-                All Contacts are reachable 9am-5pm EST.
+                All Contacts are reachable 9am-5pm EST.-->
             </div>
         </div>
 
