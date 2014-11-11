@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BulkDataExchangeRequests xmlns="urn:ebay:apis:eBLBaseComponents">
+	<Header>
+		<Version>659</Version>
+		<SiteID>0</SiteID>
+	</Header>
+<AddFixedPriceItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <ErrorLanguage>en_US</ErrorLanguage>
+  <WarningLevel>High</WarningLevel>
+  <Version>619</Version>
+  <Item>
+    <CategoryMappingAllowed>true</CategoryMappingAllowed>
+    <Country>US</Country>
+    <Currency>USD</Currency>
+    <Description>Minimal fixed-price shoe listing with SKU, free shipping, 3-day dispatch time, return policy, and no Item Specifics. New Nike Shox Elite TB White/White-Black-Chrome. Size: Mens US 12, UK 11, Europe 46 (Medium, D, M). Condition: New in box.</Description>
+    <DispatchTimeMax>3</DispatchTimeMax>
+    <InventoryTrackingMethod>ItemID</InventoryTrackingMethod>
+    <ListingDuration>Days_30</ListingDuration>
+    <ListingType>FixedPriceItem</ListingType>
+    <Location>San Jose, CA</Location>
+    <PaymentMethods>PayPal</PaymentMethods>
+    <PayPalEmailAddress>MegaOnlineMerchant@gmail.com</PayPalEmailAddress>
+    <PrimaryCategory>
+      <CategoryID>63850</CategoryID>
+    </PrimaryCategory>
+    <Quantity>6</Quantity>
+    <ReturnPolicy>
+      <ReturnsAcceptedOption>ReturnsAccepted</ReturnsAcceptedOption>
+      <RefundOption>MoneyBack</RefundOption>
+      <ReturnsWithinOption>Days_30</ReturnsWithinOption>
+      <Description>Text description of return policy details here.</Description>
+      <ShippingCostPaidByOption>Buyer</ShippingCostPaidByOption>
+    </ReturnPolicy>
+    <ShippingDetails>
+      <ShippingType>Flat</ShippingType>
+      <ShippingServiceOptions>
+        <ShippingServicePriority>1</ShippingServicePriority>
+        <ShippingService>USPSPriority</ShippingService>
+        <ShippingServiceCost currencyID="USD">0.0</ShippingServiceCost>
+        <ShippingServiceAdditionalCost>0.00</ShippingServiceAdditionalCost>
+      </ShippingServiceOptions>
+    </ShippingDetails>
+    <Site>US</Site>
+    <SKU>1122334456-01</SKU>
+    <StartPrice>50.00</StartPrice>
+    <Title>New Nike Shox Elite TB White Mens Basketball Shoes S 12</Title>
+  </Item>
+</AddFixedPriceItemRequest>
+<AddFixedPriceItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <ErrorLanguage>en_US</ErrorLanguage>
+  <WarningLevel>High</WarningLevel>
+  <Version>659</Version>
+  <Item>
+    <CategoryMappingAllowed>true</CategoryMappingAllowed>
+    <Country>US</Country>
+    <Currency>USD</Currency>
+    <Description>Minimal fixed-price shoe listing with SKU, free shipping, 3-day dispatch time, return policy, and no Item Specifics. New Nike Shox Elite TB BLACK / WHITE-VARSITY RED. Size: Mens US 12, UK 11, Europe 46 (Medium, D, M). Condition: New in box.</Description>
+    <DispatchTimeMax>3</DispatchTimeMax>
+    <InventoryTrackingMethod>ItemID</InventoryTrackingMethod>
+    <ListingDuration>Days_30</ListingDuration>
+    <ListingType>FixedPriceItem</ListingType>
+    <Location>San Jose, CA</Location>
+    <PaymentMethods>PayPal</PaymentMethods>
+    <PayPalEmailAddress>MegaOnlineMerchant@gmail.com</PayPalEmailAddress>
+    <PrimaryCategory>
+      <CategoryID>63850</CategoryID>
+    </PrimaryCategory>
+    <Quantity>6</Quantity>
+    <ReturnPolicy>
+      <ReturnsAcceptedOption>ReturnsAccepted</ReturnsAcceptedOption>
+      <RefundOption>MoneyBack</RefundOption>
+      <ReturnsWithinOption>Days_30</ReturnsWithinOption>
+      <Description>Text description of return policy details here.</Description>
+      <ShippingCostPaidByOption>Buyer</ShippingCostPaidByOption>
+    </ReturnPolicy>
+    <ShippingDetails>
+      <ShippingType>Flat</ShippingType>
+      <ShippingServiceOptions>
+        <ShippingServicePriority>1</ShippingServicePriority>
+        <ShippingService>USPSPriority</ShippingService>
+        <ShippingServiceCost currencyID="USD">0.0</ShippingServiceCost>
+        <ShippingServiceAdditionalCost>0.00</ShippingServiceAdditionalCost>
+       <!-- <FreeShipping>true</FreeShipping>-->
+      </ShippingServiceOptions>
+    </ShippingDetails>
+    <Site>US</Site>
+    <SKU>1122334456-02</SKU>
+    <StartPrice>55.00</StartPrice>
+    <Title>New Nike Shox Elite TB Black Mens Basketball Shoes S 12</Title>
+  </Item>
+</AddFixedPriceItemRequest>
+</BulkDataExchangeRequests>

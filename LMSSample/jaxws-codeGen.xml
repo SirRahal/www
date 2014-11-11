@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="archive" name="LMS codeGen scriptes">
+     <description> This script 1. using wsimport tool to generate JAX-WS portable artifacts against FileTransferService and BulkDataExchangeService WSDL files
+                 2. compile and compress the generated java files 
+     </description>
+     
+     <property environment="env"/>
+     <property name="lib.home" value="${basedir}/lib"/>
+     <property name="ant.home" value="${env.ANT_HOME}"/>
+     <property name="jdk.home" value="${env.JAVA_HOME}"/> 
+     <property name="jwsdp.home" value="${env.JWSDP_HOME}"/>
+     <property name="dest" value="classes.ant"/>
+     <property name="tojava" value="binding"/>
+     <property name="wsimport-src" value="${tojava}/wsimport-client-src" />
+     <property name="wsimport-classes" value="${tojava}/wsimport-client-classes" />
+  
+     <path id="classpath">
+          <fileset dir="${jwsdp.home}" includes="lib/*.jar" />     
+     </path>
+        
+     <target name="checkJwsdpHome" unless="env.JWSDP_HOME">
+	  <fail>
+	      "JWSDP_HOME" environment variable is not set. 
+	  </fail>
+     </target>
+	
+     <target name="checkJavaHome" unless="env.JAVA_HOME">
+	  <fail>
+	      "JAVA_HOME" environment variable is not set. 
+	  </fail>
+     </target>
+	 
+	  
+     <!--
+	 =======================
+	 CHECKENVIRONMEN TARGET
+	 =======================
+     -->  
+     <target name="checkEnvironment">
+	  <antcall target="checkJavaHome"/>
+	  <antcall target="checkJwsdpHome"/>
+     </target>  
+
+      
+     <!--
+         ===============================================
+         JAX-WS WSIMPORT for FileTransferService WSDL 
+         =================================================
+     -->
+     <target name="wsimport-init" depends="clean"> 
+         <mkdir dir="${wsimport-src}"/>
+         <mkdir dir="${lib.home}"/>
+         <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath>
+	          <fileset dir="${jwsdp.home}/" includes="lib/*.jar" />
+            </classpath>
+            
+         </taskdef>
+     </target>
+    
+    <target name="wsimport-client-FileTransferService" depends="wsimport-init">
+        <echo message="parsing FileTransferService WSDL.." />
+        <property name="wsdl-FileTransferService" location="WSDL/FileTransferService.wsdl"/>
+        <wsimport sourcedestdir="${wsimport-src}" destdir="${wsimport-src}" wsdl="${wsdl-FileTransferService}" extension="true" verbose="true" wsdlLocation="http://developer.ebay.com/webservices/file-transfer/latest/FileTransferService.wsdl" xnocompile="true">
+            <produces dir="${wsimport-src}" includes="FileTransferService.java" casesensitive="no"/>
+        </wsimport>
+    </target>
+    
+    
+   <!-- 
+     ===============================================
+      JAX-WS WSIMPORT for BulkDataExchangeService WSDL
+     ================================================
+   -->
+    
+     <target name="wsimport-client-BulkDataExchangeService" depends="wsimport-init">
+         <echo message="parsing BulkDataExchangeService WSDL.." />
+         <property name="wsdl-BulkDataExchangeService" location="WSDL/BulkDataExchangeService.wsdl"/>
+         <wsimport sourcedestdir="${wsimport-src}" destdir="${wsimport-src}" wsdl="${wsdl-BulkDataExchangeService}" extension="true" verbose="true" wsdlLocation="http://developer.ebay.com/webservices/bulk-data-exchange/latest/BulkDataExchangeService.wsdl" xnocompile="true">
+              <produces dir="${wsimport-src}" includes="BulkDataExchangeService.java" casesensitive="no"/>
+         </wsimport>
+     </target>
+        
+    
+    <!-- 
+         ===============================================
+          COMPILE THE GENERATED JAVA CLIENT STUB
+         ================================================
+   -->
+     
+    <target name="wsimport-client-compile" depends="wsimport-client-FileTransferService, wsimport-client-BulkDataExchangeService">
+        <mkdir dir="${wsimport-classes}" />
+        <javac srcdir="${wsimport-src}" destdir="${wsimport-classes}" debug="on">
+            <classpath refid="classpath" />
+        </javac>
+    </target>
+    
+    <!-- 
+         ===============================================
+         ARCHIVE THE JAVA CLASSES
+         ================================================
+    -->
+    <target name="archive" depends="wsimport-client-compile" description="Compressing the java classes">
+         <!--<mkdir dir="${lib.home}" /> -->
+          <echo message="Compressing the java classes and making FileTransferService_BulkDataExchangeService.jar ..." />
+          <jar compress="true" destfile="${lib.home}/FileTransferService_BulkDataExchangeService.jar">
+              <fileset dir="${wsimport-classes}">
+                  <patternset refid="dest.exclude"/>
+                  <include name="**/*.*"/>
+              </fileset>
+          </jar>
+    </target>
+    
+    <!-- 
+       ===============================================
+       CLEAN PACKAGE
+       ================================================
+    -->
+    <target name="clean" description="Deletes all the generated artifacts.">
+       <delete dir="${wsimport-src}" />
+       <delete dir="${wsimport-classes}"/>
+       <delete dir="${lib.home}" />
+       <!--<delete file="${lib.home}/FileTransferService_BulkDataExchangeService.jar" />-->
+   </target>
+    
+   <patternset id="dest.exclude">
+        <exclude name="${wsimport-src}" />
+        <exclude name="${lib.home}"/>
+        <exclude name="${wsimport-classes}"/>
+        <exclude name="package cache/"/>
+        <exclude name="dependency cache/"/>
+   </patternset>  
+</project>
