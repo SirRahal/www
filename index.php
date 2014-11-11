@@ -27,11 +27,12 @@
             var title    = item.title;
             var pic      = item.galleryURL;
             var viewitem = item.viewItemURL;
+            var price    = item.currentPrice;
 
             if (null != title && null != viewitem)
             {
                 html.push('<tr><td>' + '<img src="' + pic + '" border="0">' + '</td>' +
-                    '<td><a href="' + viewitem + '" target="_blank">' + title + '</a></td></tr>');
+                    '<td><a href="' + viewitem + '" target="_blank">' + title + '</a></td><td>' + price +'</td></tr>');
             }
         }
         html.push('</tbody></table>');
@@ -42,7 +43,7 @@
 <!--
 Use the value of your appid for the appid parameter below.
 -->
-<script src=http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=nuteksal-1a23-4cc6-bee4-61c507ae977f&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=dbz%20&paginationInput.entriesPerPage=30>
+<script src=http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=nuteksal-1a23-4cc6-bee4-61c507ae977f&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=iphone&paginationInput.entriesPerPage=5>
 </script>
 </body>
 </html>​
