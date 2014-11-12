@@ -1,49 +1,98 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Sari
- * Date: 11/11/14
- * Time: 1:23 PM
- */ ?>
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>eBay Search Results</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Merchandising Tutorial Sample</title>
+    <style type="text/css">body { font-family: arial,sans-serif; font-size: small; } </style>
 </head>
 <body>
-<h1>Sari's Test</h1>
-<div id="results"></div>
+<?php
+// Turn on all errors, warnings and notices for easier PHP debugging
+error_reporting(E_ALL);
 
-<script>
-    function _cb_findItemsByKeywords(root)
-    {
-        var items = root.findItemsByKeywordsResponse[0].searchResult[0].item || [];
-        var html = [];
-        html.push('<div width="100%"> ');
+// Define global variables and settings
+$m_endpoint = 'http://svcs.ebay.com/MerchandisingService?';  // Merchandising URL to call
+$appid = 'nuteksal-1a23-4cc6-bee4-61c507ae977f';  // You will need to supply your own AppID
+$responseEncoding = 'XML';  // Type of response we want back
 
-        for (var i = 0; i < items.length; ++i)
-        {
-            var item     = items[i];
-            var title    = item.title;
-            var pic      = item.galleryURL;
-            var viewitem = item.viewItemURL;
-            var price    = item.currentPrice;
+// Create a function for the getMostWatchedItems call
+function getMostWatchedItemsResults ($selectedItemID = '', $cellColor = '') {
+    global $m_endpoint;
+    global $appid;
+    global $responseEncoding;
 
-            if (null != title && null != viewitem)
-            {
-                html.push('<div style="width:20%; float: left;">' + '<img src="' + pic + '" border="0">' + '<br/>' +
-                    '<a href="' + viewitem + '" target="_blank">' + title + '</a><br/>' + price +'</div>');
+    // Construct getMostWatchedItems call with maxResults and categoryId as input
+    $apicalla  = "$m_endpoint";
+    $apicalla .= "OPERATION-NAME=getMostWatchedItems";
+    $apicalla .= "&SERVICE-VERSION=1.0.0";
+    $apicalla .= "&CONSUMER-ID=$appid";
+    $apicalla .= "&RESPONSE-DATA-FORMAT=$responseEncoding";
+    $apicalla .= "&maxResults=3";
+    $apicalla .= "&userID=machinre_nuteksalesparts";
+
+    // Load the call and capture the document returned by eBay API
+    $resp = simplexml_load_file($apicalla);
+
+    // Check to see if the response was loaded, else print an error
+    if ($resp) {
+        // Set return value for the function to null
+        $retna = '';
+
+        // Verify whether call was successful
+        if ($resp->ack == "Success") {
+
+            // If there were no errors, build the return response for the function
+            $retna .= "<h1>Top 3 Most Watched Items in the ";
+            $retna .=  $resp->itemRecommendations->item->primaryCategoryName;
+            $retna .= " Category</h1> \n";
+
+            // Build a table for the 3 most watched items
+            $retna .= "<!-- start table in getMostWatchedItemsResults --> \n";
+            $retna .= "<table width=\"100%\" cellpadding=\"5\" border=\"0\"><tr> \n";
+
+            // For each item node, build a table cell and append it to $retna
+            foreach($resp->itemRecommendations->item as $item) {
+
+                // Determine which price to display
+                if ($item->currentPrice) {
+                    $price = $item->currentPrice;
+                } else {
+                    $price = $item->buyItNowPrice;
+                }
+
+                // For each item, create a cell with imageURL, viewItemURL, watchCount, currentPrice
+                $retna .= "<td valign=\"bottom\"> \n";
+                $retna .= "<img src=\"$item->imageURL\"> \n";
+                $retna .= "<p><a href=\"" . $item->viewItemURL . "\">" . $item->title . "</a></p>\n";
+                $retna .= 'Watch count: <b>' . $item->watchCount . "</b><br> \n";
+                $retna .= 'Current price: <b>$' . $price . "</b><br><br> \n";
+                $retna .= "</td> \n";
             }
-        }
-        html.push('</div>');
-        document.getElementById("results").innerHTML = html.join("");
-    }
-</script>
+            $retna .= "</tr></table> \n<!-- finish table in getMostWatchedItemsResults --> \n";
 
-<!--
-Use the value of your appid for the appid parameter below.
--->
-<script src=http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=nuteksal-1a23-4cc6-bee4-61c507ae977f&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=cnc&paginationInput.entriesPerPage=5>
-</script>
+        } else {
+            // If there were errors, print an error
+            $retna = "The response contains errors<br>";
+            $retna .= "Call used was: $apicalla";
+
+        }  // if errors
+
+    } else {
+        // If there was no response, print an error
+        $retna = "Dang! Must not have got the getMostWatchedItems response!<br>";
+        $retna .= "Call used was: $apicalla";
+    }  // End if response exists
+
+    // Return the function's value
+    return $retna;
+
+} // End of getMostWatchedItemsResults function
+
+// Display the response data
+print getMostWatchedItemsResults('', '');
+
+?>
+
 </body>
-</html>​
+</html>
+
