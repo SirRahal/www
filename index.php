@@ -1,97 +1,137 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<?php
+$endpoint  = 'http://svcs.ebay.com/services/search/FindingService/v1'; // URL to call
+$version   = '1.11.0'; // API version supported by your application
+$appid     = 'nuteksal-1a23-4cc6-bee4-61c507ae977f'; // Replace with your own AppID
+$globalid  = 'EBAY-US'; // Global ID of the eBay site you want to search (e.g., EBAY-DE)
+$query     = 'cnc'; // You may want to supply your own query
+$safequery = urlencode($query); // Make the query URL-friendly
+
+// Construct the findItemsByKeywords HTTP GET call
+$apicall = "$endpoint?";
+$apicall .= "OPERATION-NAME=findItemsIneBayStores";
+$apicall .= "&SERVICE-VERSION=$version";
+$apicall .= "&SECURITY-APPNAME=$appid";
+$apicall .= "&GLOBAL-ID=$globalid";
+$apicall .= "&storeName=Laura_Chen's_Small_Store";/*
+$apicall .= "&keywords=$safequery";*/
+$apicall .= "&paginationInput.entriesPerPage=12";
+$apicall .= "&paginationInput.pageNumber=1";
+
+// Load the call and capture the document returned by eBay API
+$resp = simplexml_load_file($apicall);
+
+// Check to see if the request was successful, else print an error
+if ($resp->ack == "Success") {
+    $results = '';
+    // If the response was loaded, parse it and build links
+    foreach ($resp->searchResult->item as $item) {
+        $pic   = $item->galleryURL;
+        $link  = $item->viewItemURL;
+        $title = $item->title;
+        $price = $item->currentPrice;
+
+        // For each SearchResultItem node, build a link and append it to $results
+        $results .= "<div id='prod-wrap'><div class='prodimg-wrap' align='center'><img src=\"$pic\" class='prodimg'></div> <div class='prodtxt' align='center'><a href=\"$link\">$title</a></div><div class='price' align='center'><p class='price' align='center'>price = $price</p></div></div>";
+    }
+}
+// If the response does not indicate 'Success,' print an error
+else {
+    $results = "<h3>Oops! The request was not successful. Make sure you are using a valid ";
+    $results .= "AppID for the Production environment.</h3>";
+}
+?>
+<!-- Build the HTML page with values from the call response -->
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <title>Merchandising Tutorial Sample</title>
-    <style type="text/css">body { font-family: arial,sans-serif; font-size: small; } </style>
+    <style type="text/css">
+        body {
+            font-family: arial, sans-serif;
+        }
+
+        img {
+            border: none;
+        }
+
+        #store-wrap {
+            width:    770px;
+            height:   auto;
+            position: relative;
+        }
+
+        #filter-wrap {
+            width:            160px;
+            float:            left;
+            height:           500px;
+            margin-right:     10px;
+            background-color: #EBEBEB;
+        }
+
+        #result-wrap {
+            width:    600px;
+            float:    left;
+            height:   auto;
+            position: relative;
+        }
+
+        #pagination-wrap {
+            width:  200px;
+            float:  right;
+            height: 20px;
+        }
+
+        #prod-wrap {
+            width:            150px;
+            height:           200px;
+            margin:           0 15px 15px;
+            float:            left;
+            border:           1px solid #999999;
+            background-color: #CCCCCC;
+        }
+
+        .prodimg-wrap {
+            width: 150px;
+        }
+
+        .prodimg {
+            width:   100px;
+            height:  100px;
+            padding: 4px;
+        }
+
+        .prodtxt {
+            font-size: 11px;
+            width:     130px;
+            padding:   0 8px;
+        }
+        .price {
+            font-size: 11px;
+            width: 60px;
+            padding: 0 8px;
+        }
+        .price p {
+            font-size: 11px;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-<?php
-// Turn on all errors, warnings and notices for easier PHP debugging
-error_reporting(E_ALL);
 
-// Define global variables and settings
-$m_endpoint = 'http://svcs.ebay.com/MerchandisingService?';  // Merchandising URL to call
-$appid = 'nuteksal-1a23-4cc6-bee4-61c507ae977f';  // You will need to supply your own AppID
-$responseEncoding = 'XML';  // Type of response we want back
+<h1><?php echo $query; ?></h1>
 
-// Create a function for the getMostWatchedItems call
-function getMostWatchedItemsResults ($selectedItemID = '', $cellColor = '') {
-    global $m_endpoint;
-    global $appid;
-    global $responseEncoding;
+<table>
+    <tr>
+        <td>
+            <div id="store-wrap">
 
-    // Construct getMostWatchedItems call with maxResults and categoryId as input
-    $apicalla  = "$m_endpoint";
-    $apicalla .= "OPERATION-NAME=getMostWatchedItems";
-    $apicalla .= "&SERVICE-VERSION=1.0.0";
-    $apicalla .= "&CONSUMER-ID=$appid";
-    $apicalla .= "&RESPONSE-DATA-FORMAT=$responseEncoding";
-    $apicalla .= "&maxResults=3";
-    $apicalla .= "&userID=machinre_nuteksalesparts";
+                <div id="result-wrap">
+                    <?php echo $results;?>
 
-    // Load the call and capture the document returned by eBay API
-    $resp = simplexml_load_file($apicalla);
-
-    // Check to see if the response was loaded, else print an error
-    if ($resp) {
-        // Set return value for the function to null
-        $retna = '';
-
-        // Verify whether call was successful
-        if ($resp->ack == "Success") {
-
-            // If there were no errors, build the return response for the function
-            $retna .= "<h1>Top 3 Most Watched Items in the ";
-            $retna .=  $resp->itemRecommendations->item->primaryCategoryName;
-            $retna .= " Category</h1> \n";
-
-            // Build a table for the 3 most watched items
-            $retna .= "<!-- start table in getMostWatchedItemsResults --> \n";
-            $retna .= "<table width=\"100%\" cellpadding=\"5\" border=\"0\"><tr> \n";
-
-            // For each item node, build a table cell and append it to $retna
-            foreach($resp->itemRecommendations->item as $item) {
-
-                // Determine which price to display
-                if ($item->currentPrice) {
-                    $price = $item->currentPrice;
-                } else {
-                    $price = $item->buyItNowPrice;
-                }
-
-                // For each item, create a cell with imageURL, viewItemURL, watchCount, currentPrice
-                $retna .= "<td valign=\"bottom\"> \n";
-                $retna .= "<img src=\"$item->imageURL\"> \n";
-                $retna .= "<p><a href=\"" . $item->viewItemURL . "\">" . $item->title . "</a></p>\n";
-                $retna .= 'Watch count: <b>' . $item->watchCount . "</b><br> \n";
-                $retna .= 'Current price: <b>$' . $price . "</b><br><br> \n";
-                $retna .= "</td> \n";
-            }
-            $retna .= "</tr></table> \n<!-- finish table in getMostWatchedItemsResults --> \n";
-
-        } else {
-            // If there were errors, print an error
-            $retna = "The response contains errors<br>";
-            $retna .= "Call used was: $apicalla";
-
-        }  // if errors
-
-    } else {
-        // If there was no response, print an error
-        $retna = "Dang! Must not have got the getMostWatchedItems response!<br>";
-        $retna .= "Call used was: $apicalla";
-    }  // End if response exists
-
-    // Return the function's value
-    return $retna;
-
-} // End of getMostWatchedItemsResults function
-
-// Display the response data
-print getMostWatchedItemsResults('', '');
-
-?>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>
