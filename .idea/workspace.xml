@@ -31,9 +31,10 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="298" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.80526316" vertical-offset="0" max-vertical-offset="950">
+            <state line="48" column="8" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.8589474" vertical-offset="0" max-vertical-offset="950">
               <folding>
                 <element signature="e#6#86#0" expanded="true" />
+                <marker date="1415803116080" expanded="true" signature="787:810" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -42,7 +43,7 @@
       <file leaf-file-name="README.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LMSSample/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0" vertical-offset="269" max-vertical-offset="1258">
+            <state line="39" column="0" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -51,7 +52,7 @@
       <file leaf-file-name="BulkDataExchangeService.wsdl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LMSSample/WSDL/BulkDataExchangeService.wsdl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="111" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="49844">
+            <state line="15" column="111" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="49844">
               <folding />
             </state>
           </provider>
@@ -60,7 +61,7 @@
       <file leaf-file-name="FileTransferService.wsdl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LMSSample/WSDL/FileTransferService.wsdl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="41" selection-start="3995" selection-end="4084" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10166">
+            <state line="45" column="41" selection-start="3995" selection-end="4084" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="10166">
               <folding />
             </state>
           </provider>
@@ -69,7 +70,7 @@
       <file leaf-file-name="configuration.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LMSSample/configuration.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="65" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+            <state line="27" column="65" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -292,12 +293,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29473683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29473683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -319,9 +320,62 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="298" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="918">
+          <folding>
+            <element signature="e#6#86#0" expanded="true" />
+            <marker date="1415803116080" expanded="true" signature="787:810" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LMSSample/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LMSSample/WSDL/BulkDataExchangeService.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="111" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="49844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LMSSample/WSDL/FileTransferService.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="41" selection-start="3995" selection-end="4084" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="10166">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LMSSample/configuration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="65" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LMSSample/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LMSSample/AddFixedPriceItem.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="299" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
           <folding>
             <element signature="e#6#86#0" expanded="true" />
+            <marker date="1415803116080" expanded="true" signature="787:810" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -375,9 +429,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="298" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.80526316" vertical-offset="0" max-vertical-offset="950">
+        <state line="48" column="8" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.8589474" vertical-offset="0" max-vertical-offset="950">
           <folding>
             <element signature="e#6#86#0" expanded="true" />
+            <marker date="1415803116080" expanded="true" signature="787:810" placeholder="..." />
           </folding>
         </state>
       </provider>

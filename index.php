@@ -11,7 +11,7 @@
     <title>eBay Search Results</title>
 </head>
 <body>
-<h1>eBay Search Results</h1>
+<h1>Sari's Test</h1>
 <div id="results"></div>
 
 <script>
@@ -19,7 +19,7 @@
     {
         var items = root.findItemsByKeywordsResponse[0].searchResult[0].item || [];
         var html = [];
-        html.push('<table width="100%" border="0" cellspacing="0" cellpadding="3"><tbody>');
+        html.push('<div width="100%"> ');
 
         for (var i = 0; i < items.length; ++i)
         {
@@ -31,11 +31,11 @@
 
             if (null != title && null != viewitem)
             {
-                html.push('<tr><td>' + '<img src="' + pic + '" border="0">' + '</td>' +
-                    '<td><a href="' + viewitem + '" target="_blank">' + title + '</a></td><td>' + price +'</td></tr>');
+                html.push('<div style="width:20%; float: left;">' + '<img src="' + pic + '" border="0">' + '<br/>' +
+                    '<a href="' + viewitem + '" target="_blank">' + title + '</a><br/>' + price +'</div>');
             }
         }
-        html.push('</tbody></table>');
+        html.push('</div>');
         document.getElementById("results").innerHTML = html.join("");
     }
 </script>
@@ -43,7 +43,7 @@
 <!--
 Use the value of your appid for the appid parameter below.
 -->
-<script src=http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=nuteksal-1a23-4cc6-bee4-61c507ae977f&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=iphone&paginationInput.entriesPerPage=5>
+<script src=http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=nuteksal-1a23-4cc6-bee4-61c507ae977f&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=cnc&paginationInput.entriesPerPage=5>
 </script>
 </body>
 </html>​
