@@ -3,7 +3,7 @@
 $endpoint  = 'http://svcs.ebay.com/services/search/FindingService/v1'; // URL to call
 $version   = '1.11.0'; // API version supported by your application
 $appid     = 'nuteksal-1a23-4cc6-bee4-61c507ae977f'; // Replace with your own AppID
-$globalid  = 'EBAY-US'; // Global ID of the eBay site you want to search (e.g., EBAY-DE)
+$globalid  = 'Nu-Tek-Sales'; // Global ID of the eBay site you want to search (e.g., EBAY-DE)
 $query     = 'cnc'; // You may want to supply your own query
 $safequery = urlencode($query); // Make the query URL-friendly
 
@@ -13,6 +13,7 @@ $apicall .= "OPERATION-NAME=findItemsIneBayStores";
 $apicall .= "&SERVICE-VERSION=$version";
 $apicall .= "&SECURITY-APPNAME=$appid";
 $apicall .= "&GLOBAL-ID=$globalid";
+$apicall .= "RESPONSE-DATA-FORMAT=XML&";
 $apicall .= "&storeName=Laura_Chen's_Small_Store";/*
 $apicall .= "&keywords=$safequery";*/
 $apicall .= "&paginationInput.entriesPerPage=12";
