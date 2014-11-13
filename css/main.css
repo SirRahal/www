@@ -29,7 +29,6 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 #page
 {
-
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background: #fbf3e1;
@@ -73,8 +72,6 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 	font-size: 200%;
 }
 
-
-
 #mainmenu
 {
     height:33px;
@@ -117,8 +114,12 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
 	color: #f5921e;
-	border-bottom: solid 5px #f5921e;
+	border-bottom: solid 6px #f5921e;
 	text-decoration:none;
+}
+
+.row{
+    font-size: 16px;
 }
 
 div.flash-error, div.flash-notice, div.flash-success
@@ -164,10 +165,6 @@ div.flash-success a
 	color:#264409;
 }
 
-div.form .rememberMe label
-{
-	display: inline;
-}
 
 div.view
 {
@@ -178,7 +175,6 @@ div.view
 
 div.breadcrumbs
 {
-	font-size: 0.9em;
 	padding: 5px 20px;
 }
 
@@ -293,8 +289,20 @@ div.search-form
 .float_right{
     float: right;
 }
+.mobile_not_float_right{
+    float: right;
+}
 .align_right{
     text-align: right;
+}
+.align_center{
+    text-align: center;
+}
+.align_left{
+    text-align: left;
+}
+.float_left{
+    float: left;
 }
 .spacer{
     height: 5px;
@@ -335,7 +343,7 @@ div.search-form
 
 .regional_div{
     padding:10px;
-    border-radius: 10px;
+    border-radius: 6px;
     margin-bottom: 20px;
     color:#ffffff;
     height: 570px;
@@ -389,20 +397,27 @@ div.search-form
     color:#000000;
 }
 
+.ticket_box{
+    float:left;
+    margin-left: 20px;
+    color: black;
+    height: 480px;
+}
+
 input[type=text], textarea {
     color: #494949;
-    width: 200px;
+    width: 300px;
     padding: 6px 15px 6px 35px;
-    border-radius: 20px;
+    border-radius: 6px;
     box-shadow: 0 1px 0 #ccc inset;
     transition: 500ms all ease;
     outline: 0;
 }
 input[type=password] {
     color: #494949;
-    width: 200px;
+    width: 300px;
     padding: 6px 15px 6px 35px;
-    border-radius: 20px;
+    border-radius: 6px;
     box-shadow: 0 1px 0 #ccc inset;
     transition: 500ms all ease;
     outline: 0;
@@ -412,14 +427,14 @@ input[type=password] {
 
 input[type=text]:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    color: orange;
+    color: #f48a0d;
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
 
 input[type=password]:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    color: orange;
+    color: #f48a0d;
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
@@ -451,8 +466,8 @@ input[type=password]:focus, textarea:focus {
     background-image:    -moz-linear-gradient(top, #9eb3ca, #4b4b4b);
     background-image:     -ms-linear-gradient(top, #9eb3ca, #4b4b4b);
     background-image:      -o-linear-gradient(top, #9eb3ca, #4b4b4b);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     text-decoration: none;
 }
 
@@ -573,10 +588,22 @@ input{
     width: 100%;
     text-align: center;
     margin-right: 20px;
-    font-size: 17px;
+    font-size: 27px;
 }
 .orange_text{
     color: #f5921e;
+}
+.blue_text{
+    color:#9eb3ca;
+}
+.white_text{
+    color:#ffffff;
+}
+.black_text{
+    color:#000000;
+}
+.gray_text{
+    color:#555555;
 }
 .title{
     font-size: 60px;
@@ -586,4 +613,46 @@ input{
 }
 .bold{
     font-weight: bold;
+}
+
+.round_edges{
+    border-radius: 6px;
+}
+
+.shadow{
+    box-shadow: 10px 8px 15px #494949;
+}
+.orange_boarder{
+    border: solid 1px #f5921e;
+}
+
+.add_ticket_box{
+    background: #cbd0d9;
+    height: 90px;
+}
+.title_bar{
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background: -moz-linear-gradient(top, rgba(127, 127, 127, 0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(127, 127, 127, 0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(127, 127, 127, 0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(127, 127, 127, 0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(127, 127, 127, 0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(127, 127, 127, 0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.contact_container{
+    width:45%;
+    float: left;
+    margin-left: 45px;
+}
+.contact_image{
+    float:left;
+    margin-top: 8px;
+    margin-left: 20px;
+    width: 90px;
 }

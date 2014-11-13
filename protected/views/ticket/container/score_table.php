@@ -21,6 +21,10 @@
         <div><b>School : </b><a href="/index.php/school/<?php echo $school_ID; ?>" class="tooltip" title="See how you rank up against other at <?php echo $school; ?>"><?php echo $school;?></a></div>
         <b>Total Points : </b><?php echo $ticket['total_points'];?><br/>
         <b>League Placement : </b><?php echo $ticket['placement'];?>
+        <div style=" float: right; margin-top: -30px; ">
+            <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/school/<?php echo $school_ID; ?>" title="See how you rank up against other at <?php echo $school; ?>">My Ranking</a>
+            <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID']; ?>" title="Edit This entry up until March 5th 12pm EST">Edit Entry</a>
+        </div>
         <?php if ($placement_difference > 0){
                     echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
                 <?php }elseif($placement_difference < 0){

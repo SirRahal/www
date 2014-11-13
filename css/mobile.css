@@ -1,0 +1,81 @@
+body
+{
+    font: normal 16pt Arial,Helvetica,sans-serif;
+}
+
+#footer
+{
+    width:100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#mainmenu
+{
+    height:100px;
+}
+
+#mainmenu ul li a
+{
+    font-size:45px;
+    width:220px;
+}
+
+div.breadcrumbs{
+    display: none;
+}
+
+.display_bracket_button{
+    top:10%;
+}
+
+.bracket_button{
+    padding-top: 90px;
+    width:170px;
+    height:90px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+.row{
+    font-size: 46px;
+
+}
+
+input[type=text], textarea {
+    font-size: 60px;
+    width : 700px;
+}
+
+input[type=password] {
+    font-size: 60px;
+    width : 700px;
+}
+.mobile_not_float_right{
+    clear: both;
+}
+.title_bar{
+    font-size: 90px;
+}
+
+.ticket_box{
+    height: 550px;
+}
+
+.add_ticket_box{
+    height: 90px;
+}
+
+.contact_container{
+    width:100%;
+    float: none;
+    margin-left: 10px;
+
+}
+.contact_image{
+    width:240px;
+}
+input{
+    width: 325px;
+}
