@@ -118,7 +118,9 @@
             'encodeLabel' => false,
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'Organizations', 'url'=>array('/site/page', 'view'=>'organizations')),
+                if(!$isMobile){
+				    array('label'=>'Organizations', 'url'=>array('/site/page', 'view'=>'organizations')),
+                }
                 array('label'=>'Ticket Holders', 'url'=>array('/site/page', 'view'=>'ticket_holder')),
                 array('label'=>'My Entries', 'url'=>array('/ticket/mytickets'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
