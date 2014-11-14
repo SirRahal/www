@@ -4,7 +4,7 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<div class="title"><h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1></div>
 <!-- DataTables CSS -->
 <!--<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables2.css">
 
@@ -69,10 +69,12 @@ $this->pageTitle=Yii::app()->name;
     <div class="title_bar">For Organizations</div>-->
         <div class="orange_text title bold">RAISE $6,000</div>
         <div class="title2 bold">SCHOOLS | SPORTS PROGRAMS | BOOSTERS</div>
-        <div class="orange_text bold">Sweepstakes is based on the Men’s College Hoops Tournament in March.</div><br/>
-        Your group distributes tickets printed with individual access codes to pick the<br/>
-        teams you think will score the most points throughout the tournament.<br/><br/>
-    <div class="orange_text bold">23 CASH PRIZES ARE AWARDED!!!</div><br/>
+        <div class="mobile_padding">
+            <div class="orange_text bold">Sweepstakes is based on the Men’s College Hoops Tournament in March.</div><br/>
+            Your group distributes tickets printed with individual access codes to pick the<br/>
+            teams you think will score the most points throughout the tournament.<br/><br/>
+        <div class="orange_text bold">23 CASH PRIZES ARE AWARDED!!!</div><br/>
+        </div>
         <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/contact">GET STARTED TODAY</a>
         <br/>
     <div>

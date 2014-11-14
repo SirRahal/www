@@ -159,18 +159,18 @@ class School extends CActiveRecord
 
     public static function get_placement_title($round, $placement){
         if ($placement == 1) {
-            return '1 st';
+            return '1st';
         }elseif($placement == 2) {
-            return '2 nd';
+            return '2nd';
         }elseif($placement == 3) {
-            return '3 rd';
+            return '3rd';
         }
         elseif($round=="total_points" && $placement ==4){
-            return '4 th';
+            return '4th';
         } elseif($round=="total_points" && $placement ==5){
-            return '5 th';
+            return '5th';
         } elseif($round=="total_points" && $placement ==6){
-            return '6 th';
+            return '6th';
         }else{
             return 'Dead Last';
         }

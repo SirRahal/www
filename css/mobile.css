@@ -17,16 +17,17 @@ body
 
 #mainmenu ul li a
 {
-    font-size:45px;
+    font-size:30px;
     width:220px;
 }
-
+.mobile_padding{
+    padding: 30px;
+}
 div.breadcrumbs{
     display: none;
 }
-
-.display_bracket_button{
-    top:10%;
+.title{
+    text-align: center;
 }
 
 .bracket_button{
