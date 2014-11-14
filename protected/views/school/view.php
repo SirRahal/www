@@ -78,8 +78,8 @@ $placement = 0;
     </div>
 </div>
 
-<div>
-    <img src="/images/pay_outs.png">
+<div  style="padding : 30px; float:right;">
+    <img class="round_edges shadow" src="/images/23hor.png" >
 </div>
 <div class="clear"></div>
 <div id="accordion">

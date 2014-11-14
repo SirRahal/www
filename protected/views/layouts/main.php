@@ -118,8 +118,9 @@
             'encodeLabel' => false,
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
+				array('label'=>'Organizations', 'url'=>array('/site/page', 'view'=>'organizations')),
+                array('label'=>'Ticket Holders', 'url'=>array('/site/page', 'view'=>'ticket_holder')),
                 array('label'=>'My Entries', 'url'=>array('/ticket/mytickets'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'<span class="ui-icon ui-icon-circle-triangle-s icon"></span>'.$display_name, 'url'=>array(''),'linkOptions'=> array(
