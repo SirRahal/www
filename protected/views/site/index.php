@@ -14,16 +14,12 @@ $this->pageTitle=Yii::app()->name;
     <?php
         echo $this->renderPartial('container/home');?> <br/><?php
     ?>
-    <?php echo $this->renderPartial('container/sign_up');?>
 </div>
 <div class="right_side"><!--right Col-->
-    <div>
-        <?php echo $this->renderPartial('container/sign_up_buttons');?>
-    </div>
     <div class="clear"></div>
     <div class="right_ads">
         <?php
-            echo $this->renderPartial('container/right_ads', array('type' => 'normal','amount' => 5));
+            echo $this->renderPartial('container/right_ads', array('type' => 'normal','amount' => 6));
         ?>
     </div>
 </div>

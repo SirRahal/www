@@ -24,6 +24,16 @@ $todays_auctions = Auctions::model()->findAllByAttributes(array('date'=>$current
 $latest_auctions = Auctions::model()->get_latest_auctions();
 ?>
 <div class="marquee">
+
+<!--
+    <span style="margin-right: 110px;">
+        <span style="color:#A31F34;">
+                <b>[Nov 15]</b>
+            </span> : Cincinaty Industries : <a href="#" target="_blank">East Tools Company</a> : This is a discription that is 100 charcters long</span>
+    <span style="margin-right: 110px;">
+        <span style="color:#A31F34;">
+                <b>[Nov 15]</b>
+            </span> : Cincinaty Industries : <a href="#" target="_blank">East Tools Company</a> : This is a discription that is 100 charcters long</span>-->
     <?php foreach($todays_auctions as $auction){ ?>
         <span style="margin-right: 110px;"><span style="color:#A31F34;">
                 <b>Auction Ending Today</b>

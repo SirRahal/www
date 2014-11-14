@@ -16,12 +16,15 @@
     <style>
         .covers{
             float: left;
-            width: 500px;
-            height: 260px;
         }
-        .cover_info{
+        .covers:hover{
+            box-shadow: 4px 4px 4px #519bc5;
+        }
+        .sign_up_box{
             float: left;
-            width: 170px;
+            width: 190px;
+            margin-top: 20px;
+            margin-left: 12px;
         }
         .table_ele_1{
             width:130px;
@@ -51,23 +54,34 @@
             color: #666666;
             margin-top: 10px;
         }
+        .background_gray{
+            background: -webkit-linear-gradient(left, #3E606F, #333333); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #3E606F, #333333); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #3E606F, #333333); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, #3E606F, #333333); /* Standard syntax */
+            color:white;
+            font-weight: bold;
+            padding:5px;
+            margin-bottom: 20px;;
+        }
     </style>
 </head>
 <body>
 
 <!--latest issue with information about it-->
-<div>
+<div class="background_gray">
+    <div style="margin-left: 10px; padding:4px;">Click Below for our <?php echo date("M Y", strtotime($this->date));?> Issue</div>
     <div class="covers issue" url="<?php echo substr($this->url,8);?>">
         <a href="<?php echo $this->url;?>" target="_blank">
             <img src="<?php echo $this->img;?>"/>
             <img src="<?php echo $this->back_img;?>"/>
         </a>
     </div>
-    <div class="cover_info">
-        <b>Date: </b><?php echo date("M Y", strtotime($this->date));?>
+    <div class="cover_info sign_up_box">
+        <?php echo $this->renderPartial('container/sign_up_buttons');?>
+        <!--<b>Date: </b><?php /*echo date("M Y", strtotime($this->date));*/?>
         <br/>
-        <b>Description: </b><?php echo $this->info;?>
-
+        <b>Description: </b>--><?php /*echo $this->info;*/?>
     </div>
     <div class="clear"></div>
 </div>
