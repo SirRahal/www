@@ -448,7 +448,7 @@ input[type=password]:focus, textarea:focus {
     position: absolute;
     margin-left:-68px;
     position:fixed;
-    top:10%;
+    top:20%;
     /* Safari */
     -webkit-transform: rotate(-90deg);
     /* Firefox */
@@ -465,24 +465,14 @@ input[type=password]:focus, textarea:focus {
     width:135px;
     height:18px;
     padding:5px;
-    background-color: #f48a0d;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9eb3ca), to(#4b4b4b));
-    background-image: -webkit-linear-gradient(top, #9eb3ca, #4b4b4b);
-    background-image:    -moz-linear-gradient(top, #9eb3ca, #4b4b4b);
-    background-image:     -ms-linear-gradient(top, #9eb3ca, #4b4b4b);
-    background-image:      -o-linear-gradient(top, #9eb3ca, #4b4b4b);
+    background: #9eb3ca;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     text-decoration: none;
 }
 
 .bracket_button:hover{
-    background-color: #f48a0d;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9eb3ca), to(#f4890b));
-    background-image: -webkit-linear-gradient(top, #9eb3ca, #f4890b);
-    background-image:    -moz-linear-gradient(top, #9eb3ca, #f4890b);
-    background-image:     -ms-linear-gradient(top, #9eb3ca, #f4890b);
-    background-image:      -o-linear-gradient(top, #9eb3ca, #f4890b);
+    background-color: #303131;
     cursor: pointer;
 }
 
