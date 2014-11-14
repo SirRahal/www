@@ -4,7 +4,7 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<div class="title"><h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1></div>
+<div class="main_title"><h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1></div>
 <!-- DataTables CSS -->
 <!--<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables2.css">
 

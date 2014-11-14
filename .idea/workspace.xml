@@ -5,12 +5,13 @@
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.dummy" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415917038679" ignored="false" />
-    <file path="/main.css" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415929176606" ignored="false" />
+    <file path="/main.css" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415929885366" ignored="false" />
     <file path="/custom-style.html" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415917427211" ignored="false" />
     <file path="/view.php" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415924863578" ignored="false" />
     <file path="$PROJECT_DIR$/protected/runtime/application.log" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415926717426" ignored="false" />
-    <file path="/index.php" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415929418156" ignored="false" />
-    <file path="/mobile.css" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415929308551" ignored="false" />
+    <file path="/index.php" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415929904890" ignored="false" />
+    <file path="/mobile.css" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415929914342" ignored="false" />
+    <file path="/main.php" changelist="0a1d6036-053f-4234-b9af-466dafd71a26" time="1415930003821" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="98" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.9230769">
+            <state line="6" column="17" selection-start="95" selection-end="95" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -42,7 +43,7 @@
       <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="23" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+            <state line="28" column="12" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -51,7 +52,16 @@
       <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="20" selection-start="5426" selection-end="5426" vertical-scroll-proportion="0.40860215">
+            <state line="120" column="113" selection-start="5487" selection-end="5487" vertical-scroll-proportion="0.26344085">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="6" selection-start="510" selection-end="510" vertical-scroll-proportion="-19.72">
               <folding />
             </state>
           </provider>
@@ -80,8 +90,8 @@
         <option value="$PROJECT_DIR$/protected/views/site/pages/organizations.php" />
         <option value="$PROJECT_DIR$/protected/models/School.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/css/mobile.css" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/css/mobile.css" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
       </list>
     </option>
@@ -386,13 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="504" selection-end="536" vertical-scroll-proportion="-17.44">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/school/results_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="46" selection-start="4744" selection-end="4745" vertical-scroll-proportion="4.84803">
@@ -426,23 +429,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="6" selection-start="510" selection-end="510" vertical-scroll-proportion="-19.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="98" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.9230769">
+        <state line="6" column="17" selection-start="95" selection-end="95" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="23" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+        <state line="28" column="12" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="20" selection-start="5426" selection-end="5426" vertical-scroll-proportion="0.40860215">
+        <state line="120" column="113" selection-start="5487" selection-end="5487" vertical-scroll-proportion="0.26344085">
           <folding />
         </state>
       </provider>
