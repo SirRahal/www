@@ -67,54 +67,60 @@ $this->breadcrumbs=array(
 	'Login',
 );
 ?>
-<h1>Login</h1>
-<div class="mobile_not_float_right"></div>
-<div style="position: absolute; border: solid 1px orange; padding:10px; text-align: center; border-radius: 10px; box-shadow: 10px 8px 15px #494949;">
-    <h3>Have a ticket, and not a user yet?</h3>
-    <img src="/images/ticket.png" class=" shadow" width="300"/><br/><br/>
-    <button onclick="location.href='/index.php/user/register'">Register Now</button>
-</div>
-<div style="text-align: center; width: 320px; margin: 0 auto;">
-    <p>Please fill out the following form with your login credentials:</p>
-    <div class="form">
-        <?php $form=$this->beginWidget('CActiveForm', array(
-            'id'=>'login-form',
-            'enableClientValidation'=>true,
-            'clientOptions'=>array(
-                'validateOnSubmit'=>true,
-            ),
-        )); ?>
-        <div class="row">
-            <?php echo $form->labelEx($model,'username'); ?><br/>
-            <?php echo $form->textField($model,'username'); ?>
-            <?php echo $form->error($model,'username'); ?>
-        </div>
-        <div class="row">
-            <?php echo $form->labelEx($model,'password'); ?><br/>
-            <?php echo $form->passwordField($model,'password'); ?>
-            <?php echo $form->error($model,'password'); ?>
-        </div>
-        <div class="row">
-            <?php echo $form->checkBox($model,'rememberMe'); ?>
-            <?php echo $form->label($model,'rememberMe'); ?>
-            <?php echo $form->error($model,'rememberMe'); ?>
-        </div>
-        <div class="row " >
-            <?php echo CHtml::submitButton('Login'); ?>
-            <button id="reset_password">Forgot Name or Password</button>
-            <p class="note">Fields with <span class="required">*</span> are required.</p>
-        </div>
-        <?php $this->endWidget(); ?>
-    </div><!-- form -->
-</div>
+<div class="main_title"><h1>Login</h1></div>
+<div class="mobile_container">
+    <div style="text-align: center; width: 320px; margin: 0 auto;">
+        <p>Please fill out the following form with your login credentials:</p>
+        <div class="form">
+            <?php $form=$this->beginWidget('CActiveForm', array(
+                'id'=>'login-form',
+                'enableClientValidation'=>true,
+                'clientOptions'=>array(
+                    'validateOnSubmit'=>true,
+                ),
+            )); ?>
+            <div class="row">
+                <?php echo $form->labelEx($model,'username'); ?><br/>
+                <?php echo $form->textField($model,'username'); ?>
+                <?php echo $form->error($model,'username'); ?>
+            </div>
+            <div class="row">
+                <?php echo $form->labelEx($model,'password'); ?><br/>
+                <?php echo $form->passwordField($model,'password'); ?>
+                <?php echo $form->error($model,'password'); ?>
+            </div>
+            <div class="row">
+                <?php echo $form->checkBox($model,'rememberMe'); ?>
+                <?php echo $form->label($model,'rememberMe'); ?>
+                <?php echo $form->error($model,'rememberMe'); ?>
+            </div>
+            <div class="row " >
+                <?php echo CHtml::submitButton('Login'); ?>
+                <button id="reset_password">Forgot Name or Password</button>
+                <p class="note">Fields with <span class="required">*</span> are required.</p>
+            </div>
+            <?php $this->endWidget(); ?>
+        </div><!-- form -->
+    </div>
 
-<div id="dialog-form" title="Reset Password">
-    <p class="validateTips">Please Enter Your Email Address that is registered to your account.  After resetting your password, you will relieve an email with your account and new password. </p>
-    <form style="text-align: center;">
-        <fieldset>
-            <label for="email">Email </label>
-            <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your ticket">
-            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-        </fieldset>
-    </form>
+    <div id="dialog-form" title="Reset Password">
+        <p class="validateTips">Please Enter Your Email Address that is registered to your account.  After resetting your password, you will relieve an email with your account and new password. </p>
+        <form style="text-align: center;">
+            <fieldset>
+                <label for="email">Email </label>
+                <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your ticket">
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+        </form>
+    </div>
 </div>
+<div class="mobile_container">
+    <div style="border: solid 1px orange; padding:20px; text-align: center; border-radius: 10px; box-shadow: 10px 8px 15px #494949;">
+        <h3>Have a ticket, and not a user yet?</h3>
+        <img src="/images/ticket.png" class=" shadow" width="300"/><br/><br/>
+        <button onclick="location.href='/index.php/user/register'">Register Now</button>
+    </div>
+</div>
+<div class="mobile_not_float_right"></div>
+
+

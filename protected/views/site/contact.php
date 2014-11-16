@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Contact Us</h1>
+<div class="main_title"><h1>Contact Us</h1></div>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -36,7 +36,7 @@ $this->breadcrumbs=array(
         <p>
             If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
         </p>
-        <div class="contact_container">
+        <div class="mobile_container">
             <div class="form" >
 
                 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -100,9 +100,9 @@ $this->breadcrumbs=array(
                 <?php $this->endWidget(); ?>
 
             </div><!-- form -->
-            </div>
         </div>
-        <div class="contact_container">
+    </div>
+        <div class="mobile_container">
             <div class="align_center round_edges shadow orange_boarder" style="padding-top: 10px;">
                 <h1>For more information,<br/>please contact us by email or by phone.</h1>
                 <h1>For Sales</h1>
