@@ -6,7 +6,7 @@ $this->breadcrumbs=array(
 	'About',
 );
 ?>
-<h1>About Us</h1>
+<div class="main_title"><h1>About Us</h1></div>
 <style>
 
     .border_right{
@@ -25,11 +25,12 @@ $this->breadcrumbs=array(
     }
 </style>
 
-<div class="homepage_container" style="font-size: 19px;">
+<div class="homepage_container" style="font-size: 19px; text-align: left">
     <div class="float_left" style="width:45%;">
         <div class="title bold">
             AWESOME <span class="orange_text">NEW</span> SWEEPSTAKES FUNDRAISER
         </div>
+        <br/>
         <div class="float_left">
             <ul class="align_left">
                 <li>#1 Basketball Draw in America</li>

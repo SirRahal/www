@@ -66,7 +66,7 @@ $this->breadcrumbs=array(
     </script>
 </head>
 
-<h1>My Entries</h1>
+<div class="main_title"><h1>My Entries</h1></div>
 <div style="height: 10px;"></div>
 <div class="clear"></div>
     <div style="float: right; right:40px; margin-top: -80px;">
@@ -87,12 +87,7 @@ $this->breadcrumbs=array(
             <a  class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php /*echo $ticket['ID'];*/?>" title="Edit This entry up until March 5th 12pm EST">Edit Entry</a>
         </div>
     --><?php /*}*/?>
-    <div class="regional_div ticket text_center" style="float:left; margin-left: 20px; background: #cbd0d9; height: 100px;">
-        <p>
-                Any registered entries not completed by March 5th at noon EST will be auto picked.
-        </p>
-        <button id="add_ticket">Add Entry</button>
-    </div>
+<button id="add_ticket">Add Entry</button>
     <div class="clear"></div>
 
 

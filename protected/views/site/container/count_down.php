@@ -9,7 +9,7 @@
         $(document).ready(function() {
 
             $("#countdown").countdown({
-                date: "1 march 2015 17:07:00", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
+                date: "15 march 2015 11:00:00", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
             }, function() {
                 alert("Tournament Has Begun!");
             });
@@ -20,8 +20,8 @@
 </head>
 <body>
 <ul id="countdown">
-    <li style="width: 465px; font-size: 16px; padding:7px;">
-        <span>All tickets are editable before noon of the first game.  Please make sure you have all of your tickets.  If a ticket is registered to you, and is not set up, it will get auto easy picked.</span>
+    <li style="width: 490px; font-size: 14px; padding:10px;">
+        <span>All tickets are editable before noon of the first game.<br/>Please make sure you have all of your tickets.  If a ticket is<br/>registered to you, and is not set up, it will get auto easy picked.</span>
     </li>
     <li>
         <span class="days">00</span><br/>
