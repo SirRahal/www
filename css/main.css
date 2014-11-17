@@ -3,7 +3,8 @@ body
 	margin: 0;
 	padding: 0;
 	color: #555;
-	font: normal 10pt sans-serif,Arial,Helvetica;
+    font-size: 10pt;
+    font-family: 'bree serif' , Arial;
     background: #262223;
     background-image: url("/images/backgrounds/bigball.jpg");
     background-repeat: no-repeat;
@@ -583,7 +584,7 @@ input{
     width: 100%;
     text-align: center;
     margin-right: 20px;
-    font-size: 30px;
+    font-size: 28px;
 }
 .orange_text{
     color: #f5921e;

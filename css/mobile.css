@@ -64,6 +64,9 @@ input[type=password] {
     height: 550px;
 }
 
+.title2{
+    font-size: 38px;
+}
 .add_ticket_box{
     height: 90px;
 }
