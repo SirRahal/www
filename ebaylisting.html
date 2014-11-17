@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Items in our store <?php echo $query; ?></title>
+    <style type="text/css">body { font-family: arial,sans-serif;} </style>
+</head>
+<body>
+
+<h1>New Items In Stock <?php echo $query; ?></h1>
+<div id="results"></div>
+
+
+<script>
+    function _cb_findItemsByKeywords(root)
+    {var items = root.findItemsByKeywordsResponse[0].searchResult[0].item || [];
+        var html = [];
+        html.push('<table width="100%" border="0" cellspacing="0" cellpadding="4"><tbody>');
+        for (var i = 0; i < items.length; ++i) {
+            var item     = items[i];
+            var title    = item.title;
+            var pic      = item.galleryURL;
+            var price    = item.convertedCurrentPrice;
+            var viewitem = item.viewItemURL;
+            if (null != title && null != viewitem) {
+                html.push('<tr><td>' + '<img src="' + pic + '" border="0">' + '</td>' +
+                        '<td><a href="' + viewitem + '" target="_blank">' + title + '</a></td></tr>'
+                ) }
+        }
+        html.push('</tbody></table>');
+        document.getElementById("results").innerHTML = html.join("");
+    }                     // End _cb_findItemsByKeywords() function
+
+
+    var url = "http://svcs.ebay.com/services/search/FindingService/v1";
+    url += "?OPERATION-NAME=findItemsByKeywords";
+    url += "&SERVICE-VERSION=1.0.0";
+    url += "&SECURITY-APPNAME=TimothyM-8cc0-48f7-9e88-8bae4e6fc89b";
+    url += "&GLOBAL-ID=EBAY-US";
+    url += "&RESPONSE-DATA-FORMAT=JSON";
+    url += "&callback=_cb_findItemsByKeywords";
+    url += "&REST-PAYLOAD";
+    url += "&keywords=sunglasses" <!--change keyword here-->//this script needs a keyword to run
+    url += "&paginationInput.entriesPerPage=5"; <!--change # of entries-->
+    url += "&itemFilter(0).name=Seller";
+    url += "&itemFilter(0).value=smartspecs4you"; <!--enter your username here-->
+    s=document.createElement('script');
+    s.src= url;
+    document.body.appendChild(s);
+</script>
+<table>
+    <tr>
+        <td>
+            <?php echo $results;?>
+        </td>
+    </tr>
+</table>
+//one solution to this problematic code would be to supply your ebay store items with a universal tag for this function to call.
+
+
+</body>
+</html>
