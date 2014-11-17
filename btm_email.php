@@ -1,22 +1,19 @@
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/Exact-Tool-Engineering_a22157';
-$date = 'November 5th';
-$auction_title = 'Exact Tool & Engineering';
+$auction_url = 'http://auctions.btmindustrial.com/Monthly-Machinery-Auction_as34229';
+$date = 'November 19th';
+$auction_title = 'Monthly Machinery Auction';
 
 $info = array();
 
-$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=1&ps=50#i20729893";$info[0][1]="http://media.liveauctiongroup.net/i/22157/20729893_1s.jpg?v=8D1BFBCE25308C0";$info[0][2]="2 HP Bridgeport";
-$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=1&ps=50#i20729894";$info[1][1]="http://media.liveauctiongroup.net/i/22157/20729894_1s.jpg?v=8D1BFBCEC9894D0";$info[1][2]="4'x13'' Carlton";
-$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20746357";$info[2][1]="http://media.liveauctiongroup.net/i/22157/20746357_1s.jpg?v=8D1BFBD6D2F6F60";$info[2][2]="South Bend Mill";
-$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20749996";$info[3][1]="http://media.liveauctiongroup.net/i/22157/20749996_1s.jpg?v=8D1BFBDBFE06930";$info[3][2]="20'' Powermatic Bandsaw";
-$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20750001";$info[4][1]="http://media.liveauctiongroup.net/i/22157/20750001_1s.jpg?v=8D1BFBDCFF848B0";$info[4][2]="24''x78'' Tarnow Engine Lathe";
-$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20753892";$info[5][1]="http://media.liveauctiongroup.net/i/22157/20753892_1s.jpg?v=8D1BFBDDB8B8A70";$info[5][2]="12''x24'' Kent Hydraulic Surface Grinder";
-$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20757779";$info[6][1]="http://media.liveauctiongroup.net/i/22157/20757779_1s.jpg?v=8D1BFBE04138470";$info[6][2]="Dake Arbor Press";
-$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20757983";$info[7][1]="http://media.liveauctiongroup.net/i/22157/20757983_1s.jpg?v=8D1BFBE340A43D0";$info[7][2]="150 Ton Cleveland OBI";
-$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20759155";$info[8][1]="http://media.liveauctiongroup.net/i/22157/20759155_1s.jpg?v=8D1BFBED9A5E510";$info[8][2]="2 Ton Jib Crane";
-$info[9][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20759157";$info[9][1]="http://media.liveauctiongroup.net/i/22157/20759157_1s.jpg?v=8D1BFBEE4ACC550";$info[9][2]="Miller Portable Spot Welder";
-$info[10][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20759158";$info[10][1]="http://media.liveauctiongroup.net/i/22157/20759158_1s.jpg?v=8D1BFBEF178D530";$info[10][2]="30 HP Worthington Air Compressor";
-$info[11][0]="http://auctions.btmindustrial.com/auction.aspx?a=22157&as=33930&p=5&ps=50#i20759159";$info[11][1]="http://media.liveauctiongroup.net/i/22157/20759159_1s.jpg?v=8D1B27BD3F1A0A0";$info[11][2]="5,000 Lb Caterpillar Forklift";
+$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20788727";$info[0][1]="http://media.liveauctiongroup.net/i/22395/20788727_1s.jpg?v=8D1CAEB22DB3FF0";$info[0][2]="Apls Tool Lathe Bar Feed";
+$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887205";$info[1][1]="http://media.liveauctiongroup.net/i/22395/20887205_1s.jpg?v=8D1C7A5DB9BC260";$info[1][2]="6 Ton Denison";
+$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887207";$info[2][1]="http://media.liveauctiongroup.net/i/22395/20887207_1s.jpg?v=8D1C7A5DB9BC260";$info[2][2]="Taft Pierce Grinder";
+$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887095";$info[3][1]="http://media.liveauctiongroup.net/i/22395/20887095_1s.jpg?v=8D1C7A5DB9BC260";$info[3][2]="10''x80'' LeBlond Lathe";
+$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887097";$info[4][1]="http://media.liveauctiongroup.net/i/22395/20887097_1s.jpg?v=8D1CFA6932AD850";$info[4][2]="G&L PC50 CNC HBM";
+$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887098";$info[5][1]="http://media.liveauctiongroup.net/i/22395/20887098_1s.jpg?v=8D1C7A5DB9BC260";$info[5][2]="40''x80'' Morton CNC";
+$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887203";$info[6][1]="http://media.liveauctiongroup.net/i/22395/20887203_1s.jpg?v=8D1C7A5DB9BC260";$info[6][2]="1998 Johnford CNC Vertical Machining Center";
+$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20893400";$info[7][1]="http://media.liveauctiongroup.net/i/22395/20893400_1s.jpg?v=8D1C7A5DB9BC260";$info[7][2]="Mazak Slant Turn Universal 10 CNC Lathe";
+$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i21032561";$info[8][1]="http://media.liveauctiongroup.net/i/22395/21032561_1s.jpg?v=8D1CDEDFCAF22F0";$info[8][2]="Cincinnati-Milacron Sabre 750 VMC";
 
 $count=0;
 ?>
