@@ -31,13 +31,8 @@ div.breadcrumbs{
 }
 
 .bracket_button{
-    padding-top: 90px;
-    width:170px;
-    height:90px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    display: none;
 }
-
 
 .row{
     font-size: 46px;

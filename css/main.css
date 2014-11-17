@@ -447,7 +447,7 @@ input[type=password]:focus, textarea:focus {
 
 .display_bracket_button{
     position: absolute;
-    margin-left:-68px;
+    margin-left:-90px;
     position:fixed;
     top:20%;
     /* Safari */
@@ -463,12 +463,11 @@ input[type=password]:focus, textarea:focus {
 }
 
 .bracket_button{
-    width:135px;
-    height:18px;
+    height:21px;
     padding:5px;
     background: #9eb3ca;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     text-decoration: none;
 }
 

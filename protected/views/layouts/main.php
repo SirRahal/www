@@ -167,22 +167,22 @@
         <br/>
             <div class="clear"></div>
         </div><!-- page -->
-    <div id="footer">
-        Copyright &copy; <?php echo date('Y'); ?> by Bracket Fanatic.<br/>
-        All Rights Reserved.<br/>
-        Author Sari Rahal
-    </div><!-- footer -->
-
+        <div id="footer">
+            Copyright &copy; <?php echo date('Y'); ?> by Bracket Fanatic.<br/>
+            All Rights Reserved.<br/>
+            Author Sari Rahal
+        </div><!-- footer -->
+    </div>
 </body>
 </html>
 
 
-
+<!--
 <script>
     (function($) {
         $(document).ready(function() {
             $.slidebars();
         });
     }) (jQuery);
-</script>
+</script>-->
 

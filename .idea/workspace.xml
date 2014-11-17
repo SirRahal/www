@@ -38,26 +38,44 @@
       <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1530">
+            <state line="28" column="12" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1445">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/game/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
-              <folding />
+            <state line="11" column="67" selection-start="350" selection-end="350" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1734">
+              <folding>
+                <marker date="1416237179355" expanded="true" signature="111:3373" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="718:1243" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="1266:1436" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="1459:1629" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="1652:1869" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="1892:2342" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="2365:2575" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="2598:2792" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="2815:3009" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="3032:3205" placeholder="..." />
+                <marker date="1416237179355" expanded="true" signature="3236:3331" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="27" selection-start="9195" selection-end="9195" vertical-scroll-proportion="-54.03846" vertical-offset="1451" max-vertical-offset="3298">
-              <folding />
+            <state line="169" column="25" selection-start="9221" selection-end="9221" vertical-scroll-proportion="0.7559709" vertical-offset="2145" max-vertical-offset="3298">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,7 +83,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="6" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="11203">
+            <state line="469" column="14" selection-start="7733" selection-end="7733" vertical-scroll-proportion="-22.807692" vertical-offset="7380" max-vertical-offset="11186">
               <folding />
             </state>
           </provider>
@@ -93,10 +111,10 @@
         <option value="$PROJECT_DIR$/protected/views/site/pages/ticket_holder.php" />
         <option value="$PROJECT_DIR$/protected/views/site/pages/organizations.php" />
         <option value="$PROJECT_DIR$/protected/models/School.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
       </list>
     </option>
   </component>
@@ -202,7 +220,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,7 +264,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24895833" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24895833" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -298,7 +316,13 @@
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="120" column="113" selection-start="5487" selection-end="5487" vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="2907">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -369,16 +393,35 @@
         <state line="26" column="0" selection-start="768" selection-end="768" vertical-scroll-proportion="0.7921147" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/game/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="67" selection-start="350" selection-end="350" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1734">
+          <folding>
+            <marker date="1416237179355" expanded="true" signature="111:3373" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="718:1243" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="1266:1436" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="1459:1629" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="1652:1869" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="1892:2342" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="2365:2575" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="2598:2792" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="2815:3009" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="3032:3205" placeholder="..." />
+            <marker date="1416237179355" expanded="true" signature="3236:3331" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="6" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="11203">
+        <state line="469" column="14" selection-start="7733" selection-end="7733" vertical-scroll-proportion="-22.807692" vertical-offset="7380" max-vertical-offset="11186">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+    <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="27" selection-start="9195" selection-end="9195" vertical-scroll-proportion="-54.03846" vertical-offset="1451" max-vertical-offset="3298">
+        <state line="28" column="12" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
@@ -393,17 +436,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/game/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
-          <folding />
+        <state line="169" column="25" selection-start="9221" selection-end="9221" vertical-scroll-proportion="0.7559709" vertical-offset="2145" max-vertical-offset="3298">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
