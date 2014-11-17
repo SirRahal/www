@@ -64,11 +64,14 @@ input[type=password] {
     height: 550px;
 }
 
+.title2{
+    font-size: 38px;
+}
 .add_ticket_box{
     height: 90px;
 }
 
-.contact_container{
+.mobile_container{
     width:100%;
     float: none;
     margin-left: 10px;

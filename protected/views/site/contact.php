@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Contact Us</h1>
+<div class="main_title"><h1>Contact Us</h1></div>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -33,10 +33,43 @@ $this->breadcrumbs=array(
 </style>
 
     <div style="padding:10px;">
-        <p>
-            If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-        </p>
-        <div class="contact_container">
+        <div class="mobile_container">
+            <div style="margin-bottom:20px;">If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.</div>
+            <div class="align_center round_edges shadow orange_boarder" style="padding-top: 10px;">
+                <h1>For more information,<br/>please contact us by email or by phone.</h1>
+                <h1>For Sales</h1>
+                <p>Sales@BracketFanatic.com<br/>Some Default Number</p>
+                <h1>For Support</h1>
+                <p>Support@BracketFanatic.com<br/>Some Default Number</p>
+                <h1>Direct Contacts</h1>
+                <!--<div class="contact">
+                    <img class="contact_image" src="/images/joe_sack.png"/>
+                    <p><b><h3>Joe Sack</h3></b>Joe@BracketFanatic.com<br/>Some Default Number</p>
+                </div>
+                <div class="clear"></div>
+                <div class="contact">
+                    <img class="contact_image" src="/images/glen_goen.jpg"/>
+                    <p><b><h3>Glen Goen</h3></b>Glen@BracketFanatic.com<br/>Some Default Number</p>
+                </div>
+                <div class="clear"></div>
+                <div class="contact">
+                    <img class="contact_image" src="/images/no_pic.jpg"/>
+                    <p><b><h3>Dave Ingles</h3></b>Dave@BracketFanatic.com<br/>Some Default Number</p>
+                </div>
+                <div class="clear"></div>
+                <div class="contact">
+                    <img class="contact_image" src="/images/no_pic.jpg"/>
+                    <p><b><h3>Pat Wagneer</h3></b>Pat@BracketFanatic.com<br/>Some Default Number</p>
+                </div>
+                <div class="clear"></div>
+                <div class="contact">
+                    <img class="contact_image" src="/images/sari_rahal.jpg"/>
+                    <p><b><h3>Sari Rahal</h3></b>Sari@BracketFanatic.com<br/>Some Default Number</p>
+                </div>
+                All Contacts are reachable 9am-5pm EST.-->
+            </div>
+        </div>
+        <div class="mobile_container">
             <div class="form" >
 
                 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -100,43 +133,9 @@ $this->breadcrumbs=array(
                 <?php $this->endWidget(); ?>
 
             </div><!-- form -->
-            </div>
         </div>
-        <div class="contact_container">
-            <div class="align_center round_edges shadow orange_boarder" style="padding-top: 10px;">
-                <h1>For more information,<br/>please contact us by email or by phone.</h1>
-                <h1>For Sales</h1>
-                <p>Sales@BracketFanatic.com<br/>Some Default Number</p>
-                <h1>For Support</h1>
-                <p>Support@BracketFanatic.com<br/>Some Default Number</p>
-                <h1>Direct Contacts</h1>
-                <!--<div class="contact">
-                    <img class="contact_image" src="/images/joe_sack.png"/>
-                    <p><b><h3>Joe Sack</h3></b>Joe@BracketFanatic.com<br/>Some Default Number</p>
-                </div>
-                <div class="clear"></div>
-                <div class="contact">
-                    <img class="contact_image" src="/images/glen_goen.jpg"/>
-                    <p><b><h3>Glen Goen</h3></b>Glen@BracketFanatic.com<br/>Some Default Number</p>
-                </div>
-                <div class="clear"></div>
-                <div class="contact">
-                    <img class="contact_image" src="/images/no_pic.jpg"/>
-                    <p><b><h3>Dave Ingles</h3></b>Dave@BracketFanatic.com<br/>Some Default Number</p>
-                </div>
-                <div class="clear"></div>
-                <div class="contact">
-                    <img class="contact_image" src="/images/no_pic.jpg"/>
-                    <p><b><h3>Pat Wagneer</h3></b>Pat@BracketFanatic.com<br/>Some Default Number</p>
-                </div>
-                <div class="clear"></div>
-                <div class="contact">
-                    <img class="contact_image" src="/images/sari_rahal.jpg"/>
-                    <p><b><h3>Sari Rahal</h3></b>Sari@BracketFanatic.com<br/>Some Default Number</p>
-                </div>
-                All Contacts are reachable 9am-5pm EST.-->
-            </div>
-        </div>
+    </div>
+
 
 
 
