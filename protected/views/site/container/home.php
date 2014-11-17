@@ -101,7 +101,7 @@
         <?php echo $this->renderPartial('container/auctions');?>
     <div style="margin-top: 15px;">
         <button onClick="location.href='/index.php/auctions'">Click Here For Auctions</button>
-        <button id="post_auction">Post Your Auctions</button>
+        <button onClick="location.href='/index.php/auctions'" id="post_auction">Post Your Auctions</button>
     </div>
 </div>
     <!--tab 2-->
