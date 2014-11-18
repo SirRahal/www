@@ -9,17 +9,23 @@
     <link href="//fonts.googleapis.com/css?family=Bree+Serif:400" rel="stylesheet" type="text/css">
 
 
-
+    <!-- blueprint CSS framework -->
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
+	<![endif]-->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/jquery_ui.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/jquery-ui-custom/jquery-ui.css" />
 
-
-
-
-
-
+    <script type="text/javascript" src="/js/jquery.freeow.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/freeow.css"/>
+    <!-- Magnific Popup core JS file -->
+    <script src="/js/image_popup.js"></script>
 
 
     <!--Check to see if the user is a mobile device and use the correct styling sheet-->
@@ -29,24 +35,9 @@
         '|mobile|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
 
     if($isMobile){ ?>
-        <link rel="stylesheet" href="/css/jquery.mobile-1.4.5.min.css">
-        <script src="/jquery/jquery.mobile/demos/js/jquery.mobile-1.4.5.min.js"></script>
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/mobile.css" />
     <?php } ?>
-    <!-- blueprint CSS framework -->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
-
-    <script type="text/javascript" src="/js/jquery.freeow.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/freeow.css"/>
-    <!-- Magnific Popup core JS file -->
-    <script src="/js/image_popup.js"></script>
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 <!--once they chose what they want and finalized, move to js folder -->
@@ -72,19 +63,8 @@
 
 
 <body>
-
-<?php if($isMobile){ ?>
-<div data-role="page" class="jqm-demos jqm-panel-page" data-quicklinks="true">
-    <!-- Note: all other panels are at the end of the page, scroll down  -->
-    <div data-role="header" class="jqm-header">
-        <div>
-            <a href="#leftpanel2" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Push</a>
-        </div>
-    </div><!-- /header -->
-    <div role="main" class="ui-content jqm-content">
-        <?php } ?>
-        <!--pop up notification box-->
-        <div id="freeow" class="freeow freeow-top-middle smokey"></div>
+    <!--pop up notification box-->
+    <div id="freeow" class="freeow freeow-top-middle smokey"></div>
         <div class="container" id="page">
             <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="position: fixed; float:right; right:10px;">
                 <a class="a2a_button_facebook"></a><br/>
@@ -137,7 +117,7 @@
             <div id="mainmenu">
                 <?php
                 if(Yii::app()->user->name)
-                    $display_name = ucfirst (Yii::app()->user->name);
+                $display_name = ucfirst (Yii::app()->user->name);
                 if(strlen($display_name) > 20){
                     $display_name = substr($display_name,0,18);
                     $display_name =$display_name.'...';
@@ -156,17 +136,17 @@
                             'class' => 'dropdown-toggle',
                             'data-toggle' => 'dropdown',
                         ), 'visible'=>!Yii::app()->user->isGuest,
-                            'items' => array(
-                                array('label'=>'Games', 'url'=>array('/game'), 'visible'=>Yii::app()->user->id == 'admin'),
-                                array('label'=>'Users', 'url'=>array('/user'), 'visible'=>Yii::app()->user->id == 'admin'),
-                                array('label'=>'Tickets', 'url'=>array('/ticket'), 'visible'=>Yii::app()->user->id == 'admin'),
-                                array('label'=>'Bracket', 'url'=>array('/site/bracket'), 'visible'=>Yii::app()->user->id == 'admin'),
-                                array('label'=>'Schools', 'url'=>array('/school'), 'visible'=>Yii::app()->user->id == 'admin'),
-                                array('label'=>'Teams', 'url'=>array('/team'), 'visible'=>Yii::app()->user->id == 'admin'),
-                                array('label'=>'Team Placement', 'url'=>array('/tournamentresults'), 'visible'=>Yii::app()->user->id == 'admin'),
-                                array('label'=>'Schools Results', 'url'=>array('/school/results'), 'visible'=>Yii::app()->user->id == 'admin'),
-                                array('label'=>'Edit User', 'url'=>array('/user/update/'.User::model()->get_user_ID())),
-                                array('label'=>'Log-out', 'url'=>array('/site/logout'))
+                                'items' => array(
+                                    array('label'=>'Games', 'url'=>array('/game'), 'visible'=>Yii::app()->user->id == 'admin'),
+                                    array('label'=>'Users', 'url'=>array('/user'), 'visible'=>Yii::app()->user->id == 'admin'),
+                                    array('label'=>'Tickets', 'url'=>array('/ticket'), 'visible'=>Yii::app()->user->id == 'admin'),
+                                    array('label'=>'Bracket', 'url'=>array('/site/bracket'), 'visible'=>Yii::app()->user->id == 'admin'),
+                                    array('label'=>'Schools', 'url'=>array('/school'), 'visible'=>Yii::app()->user->id == 'admin'),
+                                    array('label'=>'Teams', 'url'=>array('/team'), 'visible'=>Yii::app()->user->id == 'admin'),
+                                    array('label'=>'Team Placement', 'url'=>array('/tournamentresults'), 'visible'=>Yii::app()->user->id == 'admin'),
+                                    array('label'=>'Schools Results', 'url'=>array('/school/results'), 'visible'=>Yii::app()->user->id == 'admin'),
+                                    array('label'=>'Edit User', 'url'=>array('/user/update/'.User::model()->get_user_ID())),
+                                    array('label'=>'Log-out', 'url'=>array('/site/logout'))
                             ),
                         ),
 
@@ -180,7 +160,7 @@
                 )); ?><!-- breadcrumbs -->
             <?php endif?>
             <?php echo $content; ?>
-            <br/>
+        <br/>
             <div class="clear"></div>
         </div><!-- page -->
         <div id="footer">
@@ -188,44 +168,9 @@
             All Rights Reserved.<br/>
             Author Sari Rahal
         </div><!-- footer -->
-        <?php if($isMobile){ ?>
-    </div><!-- /panel -->
-    <!-- TODO: This should become an external panel so we can add input to markup (unique ID) -->
-    <div data-role="panel" class="jqm-search-panel" data-position="right" data-display="overlay" data-theme="a">
-        test where is this?
-    </div><!-- /panel -->
-    <!-- leftpanel2  -->
-    <div data-role="panel" id="leftpanel2" data-position="left" data-display="push" data-theme="a">
-        <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a>
-    </div><!-- /leftpanel2 -->
-</div><!-- /page -->
-<?php } ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
-
-
 </html>
+
+
+
