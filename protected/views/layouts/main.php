@@ -9,23 +9,14 @@
     <link href="//fonts.googleapis.com/css?family=Bree+Serif:400" rel="stylesheet" type="text/css">
 
 
-    <!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+
 
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/jquery_ui.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/jquery-ui-custom/jquery-ui.css" />
 
-    <script type="text/javascript" src="/js/jquery.freeow.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/freeow.css"/>
-    <!-- Magnific Popup core JS file -->
-    <script src="/js/image_popup.js"></script>
+
+
 
 
 
@@ -38,11 +29,24 @@
         '|mobile|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
 
     if($isMobile){ ?>
-        <script src="/jquery/jquery.mobile/demos/js/jquery.js"></script>
+        <link rel="stylesheet" href="/css/jquery.mobile-1.4.5.min.css">
         <script src="/jquery/jquery.mobile/demos/js/jquery.mobile-1.4.5.min.js"></script>
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/mobile.css" />
     <?php } ?>
+    <!-- blueprint CSS framework -->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
+
+    <script type="text/javascript" src="/js/jquery.freeow.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/freeow.css"/>
+    <!-- Magnific Popup core JS file -->
+    <script src="/js/image_popup.js"></script>
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 <!--once they chose what they want and finalized, move to js folder -->
