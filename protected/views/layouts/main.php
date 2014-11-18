@@ -18,11 +18,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
-    <!--slider menu
-    <script type="text/javascript" src="/js/slider_menu/slidebars.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/js/slider_menu/slidebars.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
--->
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/jquery_ui.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/jquery-ui-custom/jquery-ui.css" />
