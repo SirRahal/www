@@ -31,7 +31,7 @@
 
 	if ( typeof define === 'function' && define.amd ) {
 		// Define as an AMD module if possible
-		define( 'datatables', ['jquery'], factory );
+		define( 'datatables', ['../js2/jquery'], factory );
 	}
     else if ( typeof exports === 'object' ) {
         // Node/CommonJS

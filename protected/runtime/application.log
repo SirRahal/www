@@ -29399,3 +29399,1818 @@ Stack trace:
 REQUEST_URI=/index.php/school/results_view/1
 HTTP_REFERER=http://localhost/index.php/school
 ---
+2014/11/18 22:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:42:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:42:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:42:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/css/boot...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/jquer...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/boots...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:42:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:42:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:42:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:42:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:42:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:42:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:42:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:42:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:42:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/css/boot...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/jquer...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/boots...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:44:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:44:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:44:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:44:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:44:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:44:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:44:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(103): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:47:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:47:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:47:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:47:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:47:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:47:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:47:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/css/boot...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:47:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/boots...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:47:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/jquer...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:47:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/css/boot...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:47:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/jquer...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:47:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/boots...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/css/boot...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/jquer...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/js/boots...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/ticket/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/ticket/mytickets
+---
+2014/11/18 22:47:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:47:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:47:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=ticket_holder
+---
+2014/11/18 22:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:50:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:50:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:50:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:50:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:50:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:50:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:52:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:52:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/index
+---
+2014/11/18 22:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:52:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/jquery.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
+2014/11/18 22:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/index.php/site/page?view=organizations
+---
