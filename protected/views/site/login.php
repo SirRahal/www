@@ -69,7 +69,7 @@ $this->breadcrumbs=array(
 ?>
 <div class="main_title"><h1>Login</h1></div>
 <div class="mobile_container">
-    <div style="text-align: center; width: 320px; margin: 0 auto;">
+    <div style="text-align: center; margin: 0 auto;">
         <p>Please fill out the following form with your login credentials:</p>
         <div class="form">
             <?php $form=$this->beginWidget('CActiveForm', array(
@@ -90,8 +90,8 @@ $this->breadcrumbs=array(
                 <?php echo $form->error($model,'password'); ?>
             </div>
             <div class="row">
-                <?php echo $form->checkBox($model,'rememberMe'); ?>
                 <?php echo $form->label($model,'rememberMe'); ?>
+                <?php echo $form->checkBox($model,'rememberMe'); ?>
                 <?php echo $form->error($model,'rememberMe'); ?>
             </div>
             <div class="row " >
@@ -122,5 +122,3 @@ $this->breadcrumbs=array(
     </div>
 </div>
 <div class="mobile_not_float_right"></div>
-
-
