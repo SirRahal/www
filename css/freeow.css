@@ -3,19 +3,22 @@
 /* Outermost Container */
 .freeow {
     position: fixed;
-    width: 300px;
+    width: 600px;
     z-index: 9999;
+    font-size: 30px;
+
 }
 
 .freeow-top-middle {
     top:30px;
-    left:40%;
+    left:25%;
 }
 /* Message */
 .freeow > div {
     position: relative;
     margin-bottom: 5px;
 	cursor: pointer;
+    padding:10px;
 }
 .freeow .content {
     margin: 5px 5px 5px 69px;
@@ -29,10 +32,10 @@
 .freeow .icon {
     position: absolute;
     display: block;
-    width: 48px;
-    height: 48px;
-    top: 5px;
-    left: 10px;
+    width: 60px;
+    height: 60px;
+    top: 25px;
+    left: 15px;
     background: transparent url(../images/freeow_images/notice.png) no-repeat 0 0;
     z-index: 1;
 }
@@ -81,6 +84,7 @@
      color: #ffbe08;
     font-family: "Lucida Grande", Helvetica, arial, sans-serif;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 22px;
 }
+

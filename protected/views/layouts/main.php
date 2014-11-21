@@ -4,6 +4,11 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bracket Fanatic Fundraiser for public organizations">
+    <meta name="author" content="Sari Rahal">
 
     <!--font type loade from google-->
     <link href="//fonts.googleapis.com/css?family=Bree+Serif:400" rel="stylesheet" type="text/css">
@@ -40,15 +45,9 @@
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <style>
@@ -122,12 +121,7 @@
 
 
 
-<<<<<<< HEAD
 <body>
-    <!--<div id="sb-site">-->
-=======
-
->>>>>>> f95120e4db9b05e5942015655e2c22ef7f43c41f
     <!--pop up notification box-->
     <div id="freeow" class="freeow freeow-top-middle smokey"></div>
     <div class="container" id="page">
@@ -226,16 +220,7 @@
         <?php endif?>
         <?php echo $content; ?>
         <br/>
-<<<<<<< HEAD
-            <div class="clear"></div>
-        </div><!-- page -->
-        <div id="footer">
-            Copyright &copy; <?php echo date('Y'); ?> by Bracket Fanatic.<br/>
-            All Rights Reserved.<br/>
-            Author Sari Rahal
-        </div><!-- footer -->
-    <!--</div>-->
-=======
+
         <div class="clear"></div>
     </div><!-- page -->
     <div id="footer">
@@ -247,26 +232,10 @@
 
 
 </div>
-<!-- /.container -->
-
-
->>>>>>> f95120e4db9b05e5942015655e2c22ef7f43c41f
 </body>
-<!-- jQuery Version 1.11.1 -->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 
 </html>
-
-
-<!--
-<script>
-    (function($) {
-        $(document).ready(function() {
-            $.slidebars();
-        });
-    }) (jQuery);
-</script>-->
 

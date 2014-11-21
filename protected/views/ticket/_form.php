@@ -36,9 +36,6 @@ $school = School::model()->get_name_by_ID($school_ID);
 <!--centered info needs to be updated by the user table-->
 <div class="centered_div text_center">
     <div class="boxed">
-        <?php echo Yii::app()->user->ID; ?> <!--echo out user-->
-    </div>
-    <div class="boxed">
         Entry <?php echo $ticket_code; ?> <!--echo out ticket number-->
     </div>
     <div class="boxed" style="margin-top: 10px;">
