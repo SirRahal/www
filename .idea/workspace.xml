@@ -35,7 +35,7 @@
       <file leaf-file-name="count_down.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/container/count_down.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="29" selection-start="592" selection-end="606" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="833">
+            <state line="21" column="25" selection-start="569" selection-end="582" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/user/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="55" selection-start="5206" selection-end="5206" vertical-scroll-proportion="2.612554" vertical-offset="0" max-vertical-offset="2686">
+            <state line="142" column="55" selection-start="5206" selection-end="5206" vertical-scroll-proportion="-46.423077" vertical-offset="0" max-vertical-offset="2686">
               <folding />
             </state>
           </provider>
@@ -71,16 +71,16 @@
       <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="12" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="1802">
+            <state line="101" column="1" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1819">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="686" column="0" selection-start="12612" selection-end="12646" vertical-scroll-proportion="0.0" vertical-offset="11186" max-vertical-offset="11900">
+            <state line="697" column="23" selection-start="12890" selection-end="12890" vertical-scroll-proportion="0.94843274" vertical-offset="10911" max-vertical-offset="11968">
               <folding />
             </state>
           </provider>
@@ -131,10 +131,10 @@
         <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/container/score_table.php" />
         <option value="$PROJECT_DIR$/css/countdown.css" />
+        <option value="$PROJECT_DIR$/protected/views/user/_form.php" />
+        <option value="$PROJECT_DIR$/css/mobile.css" />
         <option value="$PROJECT_DIR$/protected/views/site/container/count_down.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/css/mobile.css" />
-        <option value="$PROJECT_DIR$/protected/views/user/_form.php" />
       </list>
     </option>
   </component>
@@ -606,27 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/container/count_down.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="29" selection-start="592" selection-end="606" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="686" column="0" selection-start="12612" selection-end="12646" vertical-scroll-proportion="0.0" vertical-offset="11186" max-vertical-offset="11900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="12" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="1802">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/form.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2907">
@@ -652,7 +631,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/user/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="55" selection-start="5206" selection-end="5206" vertical-scroll-proportion="2.612554" vertical-offset="0" max-vertical-offset="2686">
+        <state line="142" column="55" selection-start="5206" selection-end="5206" vertical-scroll-proportion="-46.423077" vertical-offset="0" max-vertical-offset="2686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="1" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/container/count_down.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="569" selection-end="582" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="697" column="23" selection-start="12890" selection-end="12890" vertical-scroll-proportion="0.94843274" vertical-offset="10911" max-vertical-offset="11968">
           <folding />
         </state>
       </provider>

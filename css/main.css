@@ -693,3 +693,7 @@ ul#countdown li{
     border: none !important;
     box-shadow: none !important;
 }
+.countdown_div{
+    width:100%;
+    text-align: center;
+}

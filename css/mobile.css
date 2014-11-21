@@ -82,9 +82,6 @@ input[type=password] {
 input{
     width: 325px;
 }
-.countdown_text{
-    font-size: 17px;
-}
 .space_div{
     margin-top: 100px;
 }
@@ -97,5 +94,9 @@ input[type=checkbox]
     -o-transform: scale(2); /* Opera */
 }
 .countdown_text{
-    width: 800px;
+    width: 100%;
+    font-size : 24px !important;
+}
+ul#countdown li{
+    font-size: 50px;
 }
