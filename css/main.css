@@ -374,12 +374,12 @@ div.search-form
 
 .centered_div{
     position: absolute;
-    width: 240px;
-    margin-left: 450px;
+    margin-left: 400px;
 }
 .regional_div_my_picks{
-    width:240px;
+    width:340px;
     background: #333333;
+    height: 875px;
 }
 .center_div{
     margin:0 auto;

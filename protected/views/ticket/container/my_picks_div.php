@@ -9,7 +9,7 @@
 */
 
 ?>
-    <table>
+    <table style="font-size: 25px;">
         <!-- $i is the seed -->
         <?php for ($i = 1;$i<17; $i++){
             $team = Team::model()->findByAttributes(array('name'=>$picks[$i-1] ));
@@ -22,12 +22,7 @@
                 <!--echo out the selected radio buttons-->
                 <td style="width: 20px; text-align: center;"><?php echo $i; ?></td>
                 <td id="radio<?php echo $i;?>" team_ID='<?php echo $team_ID;?>' ticket_ID='<?php echo $ticket_ID;?>' ><?php echo $picks[$i-1]; ?></td>
-                <td style="text-align: center;"><b><?php echo $total_points;?></b></td>
             </tr>
         <?php } ?>
-        <tr style="background: #333333; color:white;">
-            <td colspan="2" style="text-align: center;"><b>Total</b></td>
-            <td style="text-align: center;"><?php echo $ticket_total_points;?></td>
-        </tr>
     </table>
 <!--add the three buttons as an example-->
