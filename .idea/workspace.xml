@@ -91,7 +91,7 @@
       <file leaf-file-name="mobile.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="21" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.8786653" vertical-offset="984" max-vertical-offset="1989">
+            <state line="97" column="16" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.6734075" vertical-offset="983" max-vertical-offset="1972">
               <folding />
             </state>
           </provider>
@@ -132,9 +132,9 @@
         <option value="$PROJECT_DIR$/protected/views/ticket/container/score_table.php" />
         <option value="$PROJECT_DIR$/css/countdown.css" />
         <option value="$PROJECT_DIR$/protected/views/user/_form.php" />
-        <option value="$PROJECT_DIR$/css/mobile.css" />
         <option value="$PROJECT_DIR$/protected/views/site/container/count_down.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/css/mobile.css" />
       </list>
     </option>
   </component>
@@ -652,7 +652,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="21" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.8786653" vertical-offset="984" max-vertical-offset="1989">
+        <state line="97" column="16" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.6734075" vertical-offset="983" max-vertical-offset="1972">
           <folding />
         </state>
       </provider>

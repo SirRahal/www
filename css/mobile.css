@@ -98,7 +98,7 @@ input[type=checkbox]
     font-size : 24px !important;
 }
 ul#countdown li{
-    font-size: 50px;
+    font-size: 150px;
 }
 
 .countdown_div{
@@ -106,6 +106,5 @@ ul#countdown li{
     text-align: center;
 }
 .coutdown_time{
-    margin-left: 360px;
-    font-size: 150px;
+    margin-left: 120px;
 }
