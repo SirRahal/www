@@ -132,7 +132,7 @@
         <div id="mainmenu">
             <?php
             if(Yii::app()->user->name)
-                $display_name = ucfirst (Yii::app()->user->name);
+                $display_name = ucfirst (User::model()->get_user_first_name());
             if(strlen($display_name) > 20){
                 $display_name = substr($display_name,0,18);
                 $display_name =$display_name.'...';

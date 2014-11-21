@@ -71,6 +71,7 @@ input[type=password] {
     width:100%;
     float: none;
     margin-left: 10px;
+    margin-bottom: 15px;
 
 }
 .contact_image{
@@ -80,6 +81,8 @@ input{
     width: 325px;
 }
 .countdown_text{
-    clear:both;
     font-size: 17px;
+}
+.countdown_div{
+    margin-top: 50px;
 }
