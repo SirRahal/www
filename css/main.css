@@ -672,7 +672,6 @@ ul#countdown li{
     display: inline;
     float: left;
     font-weight: bold;
-    font-size: 36px;
     margin-left: 5px;
     text-align: center;
     border-radius: 6px;
@@ -685,8 +684,10 @@ ul#countdown li{
 }
 
 .countdown_text{
+    float: left;
+    margin-right: 20px;
     width: 500px;
-    font-size: 15px !important;
+    font-size: 15px;
     padding:10px !important;
     background: none !important;
     color:#333333 !important;
@@ -695,4 +696,5 @@ ul#countdown li{
 }
 .coutdown_time{
     float:left;
+    font-size: 40px;
 }

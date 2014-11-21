@@ -21,9 +21,11 @@
 <div class="space_div"></div>
 <div class="countdown_div">
     <ul id="countdown">
-        <li class="countdown_text">
-            All tickets are editable before noon of the first game.  Please make sure you have all of your tickets.  If a ticket is registered to you, and is not set up, it will get auto easy picked.
-        </li>
+        <div  class="countdown_text">
+            <li class="countdown_text">
+                All tickets are editable before noon of the first game.  Please make sure you have all of your tickets.  If a ticket is registered to you, and is not set up, it will get auto easy picked.
+            </li>
+        </div>
         <div class="coutdown_time">
             <li>
                 <span class="days">00</span><br/>
