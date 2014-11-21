@@ -80,5 +80,6 @@ input{
     width: 325px;
 }
 .countdown_text{
+    clear:both;
     font-size: 17px;
 }

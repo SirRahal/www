@@ -1,5 +1,4 @@
 ul#countdown {
-    margin-top: -5px;
 }
 ul#countdown li{
     background-color: #333;
@@ -18,5 +17,5 @@ ul#countdown li{
 }
 
 .timeRef{
-    font-size: 11px;
+    font-size: 16px;
 }
