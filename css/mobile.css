@@ -12,13 +12,15 @@ body
 
 #mainmenu
 {
-    height:150px;
+    height:250px;
 }
 
 #mainmenu ul li a
 {
+    padding-top:40px;
     font-size:30px;
     width:220px;
+    height:80px;
 }
 .mobile_padding{
     padding: 30px;
@@ -28,7 +30,7 @@ div.breadcrumbs{
 }
 .main_title{
     text-align: center;
-    display:inline-block;
+    margin-top: -50px;
 }
 
 .bracket_button{
@@ -93,4 +95,7 @@ input[type=checkbox]
     -moz-transform: scale(2); /* FF */
     -webkit-transform: scale(2); /* Safari and Chrome */
     -o-transform: scale(2); /* Opera */
+}
+.countdown_text{
+    width: 800px;
 }

@@ -31,16 +31,50 @@
 
     <?php echo $form->errorSummary($model); ?>
 
-    <div class="centered_div">
+    <div class="mobile_container">
+        <div class="row">
+            <?php echo $form->labelEx($model,'first_name'); ?><br/>
+            <?php echo $form->textField($model,'first_name',array('size'=>60,'maxlength'=>100,'title'=>'Please type carefully, this is whom the checks will be made out to.')); ?>
+            <?php echo $form->error($model,'first_name'); ?>
+        </div>
 
         <div class="row">
-            <?php echo $form->labelEx($model,'city'); ?>
+            <?php echo $form->labelEx($model,'last_name'); ?><br/>
+            <?php echo $form->textField($model,'last_name',array('size'=>60,'maxlength'=>100,'title'=>'Please type carefully, this is whom the checks will be made out to.')); ?>
+            <?php echo $form->error($model,'last_name'); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'email'); ?><br/>
+            <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution', 'placeholder'=>'Someone@BracketFanatic.com')); ?>
+            <?php echo $form->error($model,'email'); ?>
+        </div>
+
+
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'user_name'); ?><br/>
+            <?php echo $form->textField($model,'user_name',array('size'=>60,'maxlength'=>100,'minlength'=>5,'title'=>'Must be at least 5 characters long.', 'placeholder'=>'JonJackup')); ?>
+            <?php echo $form->error($model,'user_name'); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'password'); ?><br/>
+            <?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>100,'minlength'=>5,'title'=>'Must be at least 5 characters long.')); ?>
+            <?php echo $form->error($model,'password'); ?>
+        </div>
+    </div>
+
+    <div class="mobile_container">
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'city'); ?><br/>
             <?php echo $form->textField($model,'city',array('size'=>60,'maxlength'=>100)); ?>
             <?php echo $form->error($model,'city'); ?>
         </div>
 
         <div class="row">
-            <?php echo $form->labelEx($model,'state'); ?>
+            <?php echo $form->labelEx($model,'state'); ?><br/>
             <?php echo $form->dropDownList($model,'state',array('status'=>'--',
                 'AL'=>'AL'
             ,'AK'=>'AK'
@@ -98,49 +132,18 @@
         </div>
 
         <div class="row">
-            <?php echo $form->labelEx($model,'zip'); ?>
+            <?php echo $form->labelEx($model,'zip'); ?><br/>
             <?php echo $form->textField($model,'zip',array('size'=>8,'maxlength'=>8)); ?>
             <?php echo $form->error($model,'zip'); ?>
         </div>
 
         <div class="row">
-            <?php echo $form->labelEx($model,'phone'); ?>
+            <?php echo $form->labelEx($model,'phone'); ?><br/>
             <?php echo $form->textField($model,'phone',array('size'=>18,'maxlength'=>18, 'placeholder'=>'1(555)-555-5555')); ?>
             <?php echo $form->error($model,'phone'); ?>
         </div>
     </div>
-    <div class="row">
-        <?php echo $form->labelEx($model,'first_name'); ?>
-        <?php echo $form->textField($model,'first_name',array('size'=>60,'maxlength'=>100,'title'=>'Please type carefully, this is whom the checks will be made out to.')); ?>
-        <?php echo $form->error($model,'first_name'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'last_name'); ?>
-        <?php echo $form->textField($model,'last_name',array('size'=>60,'maxlength'=>100,'title'=>'Please type carefully, this is whom the checks will be made out to.')); ?>
-        <?php echo $form->error($model,'last_name'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'email'); ?>
-        <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution', 'placeholder'=>'Someone@BracketFanatic.com')); ?>
-        <?php echo $form->error($model,'email'); ?>
-    </div>
-
-
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'user_name'); ?>
-        <?php echo $form->textField($model,'user_name',array('size'=>60,'maxlength'=>100,'minlength'=>5,'title'=>'Must be at least 5 characters long.', 'placeholder'=>'JonJackup')); ?>
-        <?php echo $form->error($model,'user_name'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'password'); ?>
-        <?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>100,'minlength'=>5,'title'=>'Must be at least 5 characters long.')); ?>
-        <?php echo $form->error($model,'password'); ?>
-    </div>
-
+<div class="clear"></div>
     <div class="row buttons">
         <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class' => 'ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')); ?>
     </div>
