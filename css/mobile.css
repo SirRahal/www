@@ -106,5 +106,6 @@ ul#countdown li{
     text-align: center;
 }
 .coutdown_time{
-    margin-left: 40px;
+    margin-left: 60px;
+    font-size: 150px;
 }
