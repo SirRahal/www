@@ -84,17 +84,13 @@ input{
     font-size: 17px;
 }
 .countdown_div{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 input[type=checkbox]
 {
     /* Double-sized Checkboxes */
-    -ms-transform: scale(4); /* IE */
-    -moz-transform: scale(4); /* FF */
-    -webkit-transform: scale(4); /* Safari and Chrome */
-    -o-transform: scale(4); /* Opera */
-    padding: 20px;
-}
-#yw0{
-    width:300px;
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
 }
