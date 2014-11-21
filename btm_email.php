@@ -1,19 +1,22 @@
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/Monthly-Machinery-Auction_as34229';
-$date = 'November 19th';
-$auction_title = 'Monthly Machinery Auction';
+$auction_url = 'http://auctions.btmindustrial.com/CNC-Parts-Auction_as34552';
+$date = 'November 25th';
+$auction_title = 'CNC Replacement Parts Auction';
 
 $info = array();
 
-$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20788727";$info[0][1]="http://media.liveauctiongroup.net/i/22395/20788727_1s.jpg?v=8D1CAEB22DB3FF0";$info[0][2]="Apls Tool Lathe Bar Feed";
-$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887205";$info[1][1]="http://media.liveauctiongroup.net/i/22395/20887205_1s.jpg?v=8D1C7A5DB9BC260";$info[1][2]="6 Ton Denison";
-$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887207";$info[2][1]="http://media.liveauctiongroup.net/i/22395/20887207_1s.jpg?v=8D1C7A5DB9BC260";$info[2][2]="Taft Pierce Grinder";
-$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887095";$info[3][1]="http://media.liveauctiongroup.net/i/22395/20887095_1s.jpg?v=8D1C7A5DB9BC260";$info[3][2]="10''x80'' LeBlond Lathe";
-$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887097";$info[4][1]="http://media.liveauctiongroup.net/i/22395/20887097_1s.jpg?v=8D1CFA6932AD850";$info[4][2]="G&L PC50 CNC HBM";
-$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887098";$info[5][1]="http://media.liveauctiongroup.net/i/22395/20887098_1s.jpg?v=8D1C7A5DB9BC260";$info[5][2]="40''x80'' Morton CNC";
-$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20887203";$info[6][1]="http://media.liveauctiongroup.net/i/22395/20887203_1s.jpg?v=8D1C7A5DB9BC260";$info[6][2]="1998 Johnford CNC Vertical Machining Center";
-$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i20893400";$info[7][1]="http://media.liveauctiongroup.net/i/22395/20893400_1s.jpg?v=8D1C7A5DB9BC260";$info[7][2]="Mazak Slant Turn Universal 10 CNC Lathe";
-$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=22395&as=34229&p=1&ps=50#i21032561";$info[8][1]="http://media.liveauctiongroup.net/i/22395/21032561_1s.jpg?v=8D1CDEDFCAF22F0";$info[8][2]="Cincinnati-Milacron Sabre 750 VMC";
+$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=1&ps=50#i20991281";$info[0][1]="http://media.liveauctiongroup.net/i/22651/20991281_1s.jpg?v=8D1C956BE741680";$info[0][2]="Mitsubish MDS-C!-CV-300 Power Supply Unit";
+$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=1&ps=50#i20991283";$info[1][1]="http://media.liveauctiongroup.net/i/22651/20991283_1s.jpg?v=8D1C956C0CAB0B0";$info[1][2]="AB 1391B-ESAA22-AQB, Series D";
+$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=1&ps=50#i20991288";$info[2][1]="http://media.liveauctiongroup.net/i/22651/20991288_1s.jpg?v=8D1C956F5216ED0";$info[2][2]="AB 3 Axis 5 KW Module #8520-355A-GX4-G1-G2";
+$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=1&ps=50#i20991330";$info[3][1]="http://media.liveauctiongroup.net/i/22651/20991330_1s.jpg?v=8D1C963C9923C60";$info[3][2]="Fanuc A03B-0801-C401 Module";
+$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i20991337";$info[4][1]="http://media.liveauctiongroup.net/i/22651/20991337_1s.jpg?v=8D1C9639EBD4520";$info[4][2]="Fanuc A06B-6087-H130 G Power Supply Module";
+$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i20991340";$info[5][1]="http://media.liveauctiongroup.net/i/22651/20991340_1s.jpg?v=8D1C969259D5E90";$info[5][2]="Fanuc A06B-6096-H106 Rev F Servo Amplifier";
+$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i20998975";$info[6][1]="http://media.liveauctiongroup.net/i/22651/20998975_1s.jpg?v=8D1D36FB0726C30";$info[6][2]="AB Panelview 1000 #2711-K10CB, Ser C Rev B FRN 4.10";
+$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i20999052";$info[7][1]="http://media.liveauctiongroup.net/i/22651/20999052_1s.jpg?v=8D1CAD2676D2660";$info[7][2]="KOYO PLC Direct D3-08B 8 Slot Direct Logic 305 Rack w/ Modules";
+$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i21011663";$info[8][1]="http://media.liveauctiongroup.net/i/22651/21011663_1s.jpg?v=8D1CC6274C74BB0";$info[8][2]="ABB Servo Drive 3HAB8101-14/08C";
+$info[9][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=3&ps=50#i21034410";$info[9][1]="http://media.liveauctiongroup.net/i/22651/21034410_1s.jpg?v=8D1CDEA1A419EA0";$info[9][2]="Fanuc A06B-0166-B188 Servo Motor";
+$info[10][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=3&ps=50#i21065969";$info[10][1]="http://media.liveauctiongroup.net/i/22651/21065969_1s.jpg?v=8D1D04FE8E16530";$info[10][2]="Fanuc A06B-6120-H045 B Power Supply";
+$info[11][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=3&ps=50#i21065971";$info[11][1]="http://media.liveauctiongroup.net/i/22651/21065971_1s.jpg?v=8D1D04FF92B9F50";$info[11][2]="Fanuc A06B-6124-H209-R Servo Amplifier";
 
 $count=0;
 ?>
@@ -47,13 +50,13 @@ $count=0;
     </div>
     <br/>
     <table width="600" border="0" cellspacing="0" cellpadding="0" style="border: 2px solid #dcdcdc; top: 86px; width: 615px; height: 564px; margin: 0px auto; background-color: #ffffff;">
-        <thead>
+        <!--<thead>
             <tr>
                 <td colspan="3" style="text-align: center; color: #494949; font-size: 40px;">
                     Machines
                 </td>
             </tr>
-        </thead>
+        </thead>-->
         <tbody style="text-align: center;">
 
                 <?php foreach ($info as $item) { ?>
