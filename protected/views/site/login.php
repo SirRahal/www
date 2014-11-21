@@ -94,6 +94,7 @@ $this->breadcrumbs=array(
                 <?php echo $form->checkBox($model,'rememberMe'); ?>
                 <?php echo $form->error($model,'rememberMe'); ?>
             </div>
+            <br/>
             <div class="row " >
                 <?php echo CHtml::submitButton('Login'); ?>
                 <button id="reset_password">Forgot Name or Password</button>

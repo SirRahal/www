@@ -35,7 +35,7 @@ $this->breadcrumbs=array(
     <div style="padding:10px;">
         <div class="mobile_container">
             <div style="margin-bottom:20px;">If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.</div>
-            <div class="align_center round_edges shadow orange_boarder" style="padding-top: 10px;">
+            <div class="align_center round_edges shadow orange_boarder" style="padding-top: 10px; margin-bottom: 30px;">
                 <h1>For more information,<br/>please contact us by email or by phone.</h1>
                 <h1>For Sales</h1>
                 <p>Sales@BracketFanatic.com<br/>Some Default Number</p>

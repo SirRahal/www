@@ -86,3 +86,15 @@ input{
 .countdown_div{
     margin-top: 50px;
 }
+input[type=checkbox]
+{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(4); /* IE */
+    -moz-transform: scale(4); /* FF */
+    -webkit-transform: scale(4); /* Safari and Chrome */
+    -o-transform: scale(4); /* Opera */
+    padding: 20px;
+}
+#yw0{
+    width:300px;
+}
