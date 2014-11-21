@@ -100,3 +100,11 @@ input[type=checkbox]
 ul#countdown li{
     font-size: 50px;
 }
+
+.countdown_div{
+    width:100%;
+    text-align: center;
+}
+.coutdown_time{
+    margin-left: 40px;
+}

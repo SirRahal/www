@@ -24,22 +24,24 @@
         <li class="countdown_text">
             All tickets are editable before noon of the first game.  Please make sure you have all of your tickets.  If a ticket is registered to you, and is not set up, it will get auto easy picked.
         </li>
-        <li>
-            <span class="days">00</span><br/>
-            <span class="timeRef">Days</span>
-        </li>
-        <li>
-            <span class="hours">00</span><br/>
-            <span class="timeRef">Hours</span>
-        </li>
-        <li>
-            <span class="minutes">00</span><br/>
-            <span class="timeRef">Minutes</span>
-        </li>
-        <li>
-            <span class="seconds">00</span><br/>
-            <span class="timeRef">Seconds</span>
-        </li>
+        <div class="coutdown_time">
+            <li>
+                <span class="days">00</span><br/>
+                <span class="timeRef">Days</span>
+            </li>
+            <li>
+                <span class="hours">00</span><br/>
+                <span class="timeRef">Hours</span>
+            </li>
+            <li>
+                <span class="minutes">00</span><br/>
+                <span class="timeRef">Minutes</span>
+            </li>
+            <li>
+                <span class="seconds">00</span><br/>
+                <span class="timeRef">Seconds</span>
+            </li>
+        </div>
     </ul>
 </div>
 </body>
