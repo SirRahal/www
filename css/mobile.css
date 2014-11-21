@@ -28,6 +28,7 @@ div.breadcrumbs{
 }
 .main_title{
     text-align: center;
+    display:inline-block;
 }
 
 .bracket_button{
@@ -77,4 +78,7 @@ input[type=password] {
 }
 input{
     width: 325px;
+}
+.countdown_text{
+    font-size: 17px;
 }

@@ -20,8 +20,8 @@
 </head>
 <body>
 <ul id="countdown">
-    <li style="width: 490px; font-size: 14px; padding:10px;">
-        <span>All tickets are editable before noon of the first game.<br/>Please make sure you have all of your tickets.  If a ticket is<br/>registered to you, and is not set up, it will get auto easy picked.</span>
+    <li style="width: 500px; font-size: 15px; padding:10px; background: none; color:#333333; border: none; box-shadow: none;" class="countdown_text">
+        All tickets are editable before noon of the first game.<br/>Please make sure you have all of your tickets.  If a ticket is<br/>registered to you, and is not set up, it will get auto easy picked.
     </li>
     <li>
         <span class="days">00</span><br/>
