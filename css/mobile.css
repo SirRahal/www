@@ -83,7 +83,7 @@ input{
 .countdown_text{
     font-size: 17px;
 }
-.countdown_div{
+.space_div{
     margin-top: 100px;
 }
 input[type=checkbox]

@@ -26,7 +26,7 @@
       <file leaf-file-name="count_down.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/container/count_down.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="27" selection-start="487" selection-end="487" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="833">
+            <state line="27" column="41" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="850">
               <folding>
                 <element signature="n#style#0;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="33" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1717">
+            <state line="85" column="10" selection-start="967" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
@@ -57,7 +57,7 @@
       <file leaf-file-name="score_table.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/score_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="47" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.76282054" vertical-offset="0" max-vertical-offset="1530">
+            <state line="20" column="194" selection-start="829" selection-end="829" vertical-scroll-proportion="0.40865386" vertical-offset="0" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -83,13 +83,13 @@
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/protected/views/ticket/my_tickets.php" />
         <option value="$PROJECT_DIR$/css/countdown.css" />
-        <option value="$PROJECT_DIR$/protected/views/site/container/count_down.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/protected/models/User.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/views/site/login.php" />
         <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
+        <option value="$PROJECT_DIR$/protected/views/site/container/count_down.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/container/score_table.php" />
       </list>
     </option>
@@ -564,22 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/container/count_down.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="487" selection-end="487" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="833">
-          <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="33" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="16" selection-start="2320" selection-end="2320" vertical-scroll-proportion="-3.2692308" vertical-offset="1122" max-vertical-offset="1768">
@@ -589,9 +573,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="10" selection-start="967" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/container/count_down.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="41" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="850">
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/score_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="47" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.76282054" vertical-offset="0" max-vertical-offset="1530">
+        <state line="20" column="194" selection-start="829" selection-end="829" vertical-scroll-proportion="0.40865386" vertical-offset="0" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
