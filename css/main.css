@@ -698,3 +698,14 @@ ul#countdown li{
     float:left;
     font-size: 40px;
 }
+
+.share_div{
+    position: fixed;
+    float:right;
+    right:10px;
+}
+
+.round_total{
+    text-align: center;
+    font-size: 16px;
+}

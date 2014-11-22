@@ -27,7 +27,7 @@ $this->breadcrumbs=array(
             $( "#ticket_view" ).dialog({
                 autoOpen: false,
                 draggable: false,
-                height:585,
+                height:620,
                 show: {
                     effect: "drop",
                     duration: 1000
@@ -154,12 +154,12 @@ $placement = 0;
                 <td class="text_center"><b>Place</b></td>
                 <td class="text_center"><b>Change</b></td>
                 <td class="text_center"><b>User</b></td>
-                <td class="text_center"><b>Round 1 Total</b></td>
-                <td class="text_center"><b>Round 2 Total</b></td>
-                <td class="text_center"><b>Round 3 Total</b></td>
-                <td class="text_center"><b>Round 4 Total</b></td>
-                <td class="text_center"><b>Round 5 Total</b></td>
-                <td class="text_center"><b>Round 6 Total</b></td>
+                <td class="text_center"><b>Round 1</b></td>
+                <td class="text_center"><b>Round 2</b></td>
+                <td class="text_center"><b>Round 3</b></td>
+                <td class="text_center"><b>Round 4</b></td>
+                <td class="text_center"><b>Round 5</b></td>
+                <td class="text_center"><b>Round 6</b></td>
                 <td class="text_center"><b>Final Total</b></td>
             </tr>
         </thead>
@@ -185,13 +185,13 @@ $placement = 0;
                 </td>
                 </td>
                 <td><div class="ticket_viewer tooltip" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>" title="Click to preview their entry"><?php echo $user_name; ?></div></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_4']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_5']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_6']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['total_points']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_1']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_2']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_3']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_4']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_5']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_6']; ?></td>
+                <td class="round_total"><?php echo $ticket['total_points']; ?></td>
             </tr>
         <?php } ?>
         </tbody>

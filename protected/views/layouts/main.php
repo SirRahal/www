@@ -81,7 +81,7 @@
     <!--pop up notification box-->
     <div id="freeow" class="freeow freeow-top-middle smokey"></div>
     <div class="container" id="page">
-        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="position: fixed; float:right; right:10px;">
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style share_div">
             <a class="a2a_button_facebook"></a><br/>
             <a class="a2a_button_twitter"></a><br/>
             <a class="a2a_button_google_plus"></a><br/>
