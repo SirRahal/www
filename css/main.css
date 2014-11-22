@@ -699,11 +699,6 @@ ul#countdown li{
     font-size: 40px;
 }
 
-.share_div{
-    position: fixed;
-    float:right;
-    right:10px;
-}
 
 .round_total{
     text-align: center;

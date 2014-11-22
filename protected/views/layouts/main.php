@@ -75,22 +75,21 @@
         });
     </script>
 
-
-
 <body>
     <!--pop up notification box-->
     <div id="freeow" class="freeow freeow-top-middle smokey"></div>
     <div class="container" id="page">
-        <div class="a2a_kit a2a_kit_size_32 a2a_default_style share_div">
+        <?php if (!$isMobile) { ?>
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="position: fixed; float:right; right:10px;">
             <a class="a2a_button_facebook"></a><br/>
             <a class="a2a_button_twitter"></a><br/>
             <a class="a2a_button_google_plus"></a><br/>
             <a class="a2a_button_email"></a><br/>
             <a class="a2a_dd" href="https://www.addtoany.com/share_save?linkurl=BracketFanatic.com&amp;linkname=Bracket%20Fanatic"></a>
         </div>
+        <?php } ?>
         <div id="header">
             <img src="/images/bflogo2.png" style="padding-top:10px; padding-bottom: 10px;"/>
-
             <!--<div id="logo"><?php /*echo CHtml::encode(Yii::app()->name); */?></div>-->
             <!--bracket buttons example-->
             <div class="display_bracket_button image-popup-no-margins" href="/images/bracket2.png" >
@@ -104,7 +103,6 @@
                 </a>
             </div>
         </div><!-- header -->
-
 
         <script type="text/javascript">
             $('.image-popup-no-margins').magnificPopup({

@@ -174,8 +174,8 @@ $placement = 0;
             $placement_difference = $prev_placement - $placement;
             ?>
             <tr>
-                <td class="text_center" ><?php echo $placement; ?>
-                <td class="text_center"><i>
+                <td class="text_center round_total" ><?php echo $placement; ?>
+                <td class="text_center round_total"><i>
                     <?php if ($placement_difference > 0){
                         echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
                     <?php }elseif($placement_difference < 0){
