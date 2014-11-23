@@ -35,7 +35,6 @@
                 autoOpen: false,
                 modal: true,
                 width:500,
-                height:255,
                 buttons: {
                     "Reset Password": resetPassword,
                     Cancel: function() {
@@ -96,7 +95,7 @@ $this->breadcrumbs=array(
             </div>
             <br/>
             <div class="row " >
-                <?php echo CHtml::submitButton('Login'); ?>
+                <div><?php echo CHtml::submitButton('Login'); ?></div>
                 <button id="reset_password">Forgot Name or Password</button>
                 <p class="note">Fields with <span class="required">*</span> are required.</p>
             </div>
@@ -109,7 +108,7 @@ $this->breadcrumbs=array(
         <form style="text-align: center;">
             <fieldset>
                 <label for="email">Email </label>
-                <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your ticket">
+                <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" >
                 <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
             </fieldset>
         </form>
@@ -117,8 +116,8 @@ $this->breadcrumbs=array(
 </div>
 <div class="mobile_container">
     <div style="border: solid 1px orange; padding:20px; text-align: center; border-radius: 10px; box-shadow: 10px 8px 15px #494949;">
-        <h3>Have a ticket, and not a user yet?</h3>
-        <img src="/images/ticket.png" class=" shadow" width="300"/><br/><br/>
+        <h1>Have a ticket, and not a user yet?</h1>
+        <img src="/images/ticket.png" class=" shadow" width="400"/><br/><br/>
         <button onclick="location.href='/index.php/user/register'">Register Now</button>
     </div>
 </div>

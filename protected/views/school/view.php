@@ -50,37 +50,43 @@ $this->breadcrumbs=array(
         } );
     </script>
 </head>
-<div style="float: left; width: 400px;">
 <h1>Organization : <i><?php echo $model->name; ?></i></h1>
+<div class="mobile_hidden">
+    <div style="float: left; width: 400px;">
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'name',
-        'address',
-        'city',
-		'state',
-        'zip',
-        'contact_name',
-        'phone',
-        'email',
-	),
-));
 
-$tickets = $model->get_tickets($model->ID);
-$placement = 0;
+        <div style="font-size: 20px;">
+            <?php $this->widget('zii.widgets.CDetailView', array(
+            'data'=>$model,
+            'attributes'=>array(
+                'name',
+                'address',
+                'city',
+                'state',
+                'zip',
+                'contact_name',
+                'phone',
+                'email',
+            ),
+        ));
 
-?>
-    <br/>
-    <div style="padding:20px;">
-        <h3>Please note that Winners are subject to change all the way up to the finals.</h3>
-        <div class="hint" style="margin-top:-15px;">Ties will be determined by the score in the previous round.  These placements are not final till the end of the turnament. </div>
+        $tickets = $model->get_tickets($model->ID);
+        $placement = 0;
+
+        ?>
+        </div>
+    </div>
+    <div  style="padding-right : 10px; float:right;">
+        <img class="round_edges shadow" src="/images/23hor.png" >
     </div>
 </div>
+<div class="clear"></div>
+    <div style="padding:20px;">
+        <h1>Please note that Winners are subject to change all the way up to the finals.</h1>
+        <div class="hint" style="margin-top:-15px;">Ties will be determined by the score in the previous round.  These placements are not final till the end of the turnament. </div>
+    </div>
 
-<div  style="padding : 30px; float:right;">
-    <img class="round_edges shadow" src="/images/23hor.png" >
-</div>
+
 <div class="clear"></div>
 <div id="accordion">
     <?php for($i=1;$i<6;$i++){
@@ -96,8 +102,6 @@ $placement = 0;
         ?>
     <h1><?php echo $header; ?></h1>
         <div>
-
-
         <table style="background: #e6e6e6; color:#555555;">
             <tbody>
             <tr>

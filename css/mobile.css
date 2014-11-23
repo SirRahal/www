@@ -28,7 +28,7 @@ body
 div.breadcrumbs{
     display: none;
 }
-.share_div{
+.mobile_hidden{
     display: none;
 }
 .main_title{
