@@ -53,8 +53,6 @@ $this->breadcrumbs=array(
 <h1>Organization : <i><?php echo $model->name; ?></i></h1>
 <div class="mobile_hidden">
     <div style="float: left; width: 400px;">
-
-
         <div style="font-size: 20px;">
             <?php $this->widget('zii.widgets.CDetailView', array(
             'data'=>$model,
@@ -69,10 +67,8 @@ $this->breadcrumbs=array(
                 'email',
             ),
         ));
-
         $tickets = $model->get_tickets($model->ID);
         $placement = 0;
-
         ?>
         </div>
     </div>
