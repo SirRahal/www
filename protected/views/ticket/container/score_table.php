@@ -21,7 +21,7 @@
         <div><b>School : </b><?php echo $school;?></div>
         <b>Total Points : </b><?php echo $ticket['total_points'];?><br/>
         <b>League Placement : </b><?php echo $ticket['placement'];?>
-        <div style=" float: right; margin-top: -30px; ">
+        <div style=" float: right; margin-top: -30px; " class="mobile_not_float_right">
             <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/school/<?php echo $school_ID; ?>" title="See how you rank up against other at <?php echo $school; ?>">My Ranking</a>
             <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID']; ?>" title="Edit This entry up until March 5th 12pm EST">Edit Entry</a>
         </div>
