@@ -6,8 +6,8 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/mobile.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416840232537" ignored="false" />
     <file path="/score_table.php" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416838543547" ignored="false" />
-    <file path="/main.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416839501588" ignored="false" />
-    <file path="/region_buttons.php" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416839492575" ignored="false" />
+    <file path="/main.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416840879477" ignored="false" />
+    <file path="/region_buttons.php" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416844163421" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="23" selection-start="1580" selection-end="1580" vertical-scroll-proportion="-9.153846">
+            <state line="51" column="10" selection-start="1477" selection-end="1477" vertical-scroll-proportion="-7.8461537">
               <folding />
             </state>
           </provider>
@@ -39,16 +39,16 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="706" column="0" selection-start="12962" selection-end="13032" vertical-scroll-proportion="0.0">
+            <state line="353" column="18" selection-start="4708" selection-end="4708" vertical-scroll-proportion="-10.32">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="20" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.7721943">
+            <state line="124" column="20" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -57,18 +57,25 @@
       <file leaf-file-name="my_tickets.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="10" selection-start="18" selection-end="20" vertical-scroll-proportion="-0.6666667">
-              <folding />
+            <state line="2" column="10" selection-start="18" selection-end="20" vertical-scroll-proportion="1.3333334">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#div#7;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="region_buttons.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="region_buttons.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="22" selection-start="1949" selection-end="1949" vertical-scroll-proportion="-12.423077">
+            <state line="58" column="20" selection-start="2157" selection-end="2157" vertical-scroll-proportion="0.609319">
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,6 +92,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="my_picks_div.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/my_picks_div.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -96,9 +112,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/protected/views/ticket/container/score_table.php" />
-        <option value="$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
+        <option value="$PROJECT_DIR$/protected/views/ticket/_form.php" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php" />
       </list>
     </option>
   </component>
@@ -151,7 +168,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
+    <frame x="-8" y="-8" width="1378" height="780" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -235,10 +252,21 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/ticket/_form.php">
+    <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="23" selection-start="1580" selection-end="1580" vertical-scroll-proportion="-9.153846">
+        <state line="124" column="20" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="18" selection-end="20" vertical-scroll-proportion="1.3333334">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#div#7;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -251,33 +279,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/my_picks_div.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="18" selection-end="20" vertical-scroll-proportion="-0.6666667">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="10" selection-start="1477" selection-end="1477" vertical-scroll-proportion="-7.8461537">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="706" column="0" selection-start="12962" selection-end="13032" vertical-scroll-proportion="0.0">
+        <state line="353" column="18" selection-start="4708" selection-end="4708" vertical-scroll-proportion="-10.32">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="22" selection-start="1949" selection-end="1949" vertical-scroll-proportion="-12.423077">
+        <state line="58" column="20" selection-start="2157" selection-end="2157" vertical-scroll-proportion="0.609319">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="20" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.7721943">
-          <folding />
         </state>
       </provider>
     </entry>
