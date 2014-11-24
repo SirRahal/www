@@ -4,8 +4,9 @@
     <list default="true" id="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" name="Default" comment="" />
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/mobile.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416838763647" ignored="false" />
+    <file path="/mobile.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416839106287" ignored="false" />
     <file path="/score_table.php" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416838543547" ignored="false" />
+    <file path="/main.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416839004334" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="354" column="12" selection-start="4721" selection-end="4722" vertical-scroll-proportion="0.0">
+            <state line="354" column="18" selection-start="4727" selection-end="4727" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -46,7 +47,7 @@
       <file leaf-file-name="mobile.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="29" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.80067">
+            <state line="112" column="19" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.65829146">
               <folding />
             </state>
           </provider>
@@ -82,8 +83,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/protected/views/ticket/container/score_table.php" />
+        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
       </list>
     </option>
@@ -228,13 +229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="354" column="12" selection-start="4721" selection-end="4722" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="10" selection-start="18" selection-end="20" vertical-scroll-proportion="-0.6666667">
@@ -251,9 +245,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="354" column="18" selection-start="4727" selection-end="4727" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="29" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.80067">
+        <state line="112" column="19" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.65829146">
           <folding />
         </state>
       </provider>

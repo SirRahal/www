@@ -110,10 +110,11 @@ ul#countdown li{
 }
 
 .regional_div{
-    height: 870px;
-    background:red;
+    height: 1000px;
+    background:green;
+    width: 300px;
 }
 
 .ui-widget {
-    font-size: 2em !important;
+    font-size: 1.6em !important;
 }
