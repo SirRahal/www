@@ -111,16 +111,21 @@ ul#countdown li{
 
 .regional_div{
     height: 1150px;
-    background:green;
-    width: 220px;
+    background:orange;
+    width: 270px;
 }
 
 .ui-widget {
     font-size: 1.6em !important;
 }
 
-
 .seed_title{
     width:40px;
     padding-top: 9px;
+    font-size: 15px;
+}
+.ui-buttonset .ui-button {
+    margin-left: 0;
+    margin-right: -.3em;
+    width: 250px;
 }

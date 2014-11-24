@@ -4,7 +4,7 @@
     <list default="true" id="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" name="Default" comment="" />
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/mobile.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416839106287" ignored="false" />
+    <file path="/mobile.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416840232537" ignored="false" />
     <file path="/score_table.php" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416838543547" ignored="false" />
     <file path="/main.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416839501588" ignored="false" />
     <file path="/region_buttons.php" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416839492575" ignored="false" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="mobile.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="16" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.5443886">
+            <state line="124" column="20" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.7721943">
               <folding />
             </state>
           </provider>
@@ -66,8 +66,10 @@
       <file leaf-file-name="region_buttons.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="30" selection-start="1609" selection-end="1609" vertical-scroll-proportion="-9.807693">
-              <folding />
+            <state line="51" column="22" selection-start="1949" selection-end="1949" vertical-scroll-proportion="-12.423077">
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -256,13 +258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="30" selection-start="1609" selection-end="1609" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="706" column="0" selection-start="12962" selection-end="13032" vertical-scroll-proportion="0.0">
@@ -270,9 +265,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/region_buttons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="22" selection-start="1949" selection-end="1949" vertical-scroll-proportion="-12.423077">
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="16" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.5443886">
+        <state line="124" column="20" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.7721943">
           <folding />
         </state>
       </provider>
