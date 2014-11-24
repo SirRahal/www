@@ -4,7 +4,7 @@
     <list default="true" id="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" name="Default" comment="" />
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/mobile.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416836667619" ignored="false" />
+    <file path="/mobile.css" changelist="709bc70b-4aff-4a0e-91ba-f4e8726aaf5d" time="1416837607193" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
       <file leaf-file-name="mobile.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="19" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.91457283">
+            <state line="113" column="21" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.91122276">
               <folding />
             </state>
           </provider>
@@ -215,7 +215,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="19" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.91457283">
+        <state line="113" column="21" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.91122276">
           <folding />
         </state>
       </provider>
