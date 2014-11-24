@@ -27,7 +27,7 @@ $this->breadcrumbs=array(
             $( "#ticket_view" ).dialog({
                 autoOpen: false,
                 draggable: false,
-                height:585,
+                height:620,
                 show: {
                     effect: "drop",
                     duration: 1000
@@ -50,37 +50,37 @@ $this->breadcrumbs=array(
         } );
     </script>
 </head>
-<div style="float: left; width: 400px;">
 <h1>Organization : <i><?php echo $model->name; ?></i></h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'name',
-        'address',
-        'city',
-		'state',
-        'zip',
-        'contact_name',
-        'phone',
-        'email',
-	),
-));
-
-$tickets = $model->get_tickets($model->ID);
-$placement = 0;
-
-?>
-    <br/>
-    <div style="padding:20px;">
-        <h3>Please note that Winners are subject to change all the way up to the finals.</h3>
-        <div class="hint" style="margin-top:-15px;">Ties will be determined by the score in the previous round.  These placements are not final till the end of the turnament. </div>
+<div style="float: left; width: 400px;">
+    <div style="font-size: 20px;">
+        <?php $this->widget('zii.widgets.CDetailView', array(
+        'data'=>$model,
+        'attributes'=>array(
+            'name',
+            'address',
+            'city',
+            'state',
+            'zip',
+            'contact_name',
+            'phone',
+            'email',
+        ),
+    ));
+    $tickets = $model->get_tickets($model->ID);
+    $placement = 0;
+    ?>
     </div>
 </div>
-
-<div  style="padding : 30px; float:right;">
+<div  style="padding-right : 10px; float:right;">
     <img class="round_edges shadow" src="/images/23hor.png" >
 </div>
+<div class="clear"></div>
+    <div style="padding:20px;">
+        <h1>Please note that Winners are subject to change all the way up to the finals.</h1>
+        <div class="hint" style="margin-top:-15px;">Ties will be determined by the score in the previous round.  These placements are not final till the end of the turnament. </div>
+    </div>
+
+
 <div class="clear"></div>
 <div id="accordion">
     <?php for($i=1;$i<6;$i++){
@@ -96,8 +96,6 @@ $placement = 0;
         ?>
     <h1><?php echo $header; ?></h1>
         <div>
-
-
         <table style="background: #e6e6e6; color:#555555;">
             <tbody>
             <tr>
@@ -154,12 +152,12 @@ $placement = 0;
                 <td class="text_center"><b>Place</b></td>
                 <td class="text_center"><b>Change</b></td>
                 <td class="text_center"><b>User</b></td>
-                <td class="text_center"><b>Round 1 Total</b></td>
-                <td class="text_center"><b>Round 2 Total</b></td>
-                <td class="text_center"><b>Round 3 Total</b></td>
-                <td class="text_center"><b>Round 4 Total</b></td>
-                <td class="text_center"><b>Round 5 Total</b></td>
-                <td class="text_center"><b>Round 6 Total</b></td>
+                <td class="text_center"><b>Round 1</b></td>
+                <td class="text_center"><b>Round 2</b></td>
+                <td class="text_center"><b>Round 3</b></td>
+                <td class="text_center"><b>Round 4</b></td>
+                <td class="text_center"><b>Round 5</b></td>
+                <td class="text_center"><b>Round 6</b></td>
                 <td class="text_center"><b>Final Total</b></td>
             </tr>
         </thead>
@@ -174,8 +172,8 @@ $placement = 0;
             $placement_difference = $prev_placement - $placement;
             ?>
             <tr>
-                <td class="text_center" ><?php echo $placement; ?>
-                <td class="text_center"><i>
+                <td class="text_center round_total" ><?php echo $placement; ?>
+                <td class="text_center round_total"><i>
                     <?php if ($placement_difference > 0){
                         echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
                     <?php }elseif($placement_difference < 0){
@@ -185,13 +183,13 @@ $placement = 0;
                 </td>
                 </td>
                 <td><div class="ticket_viewer tooltip" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>" title="Click to preview their entry"><?php echo $user_name; ?></div></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_4']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_5']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_6']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['total_points']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_1']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_2']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_3']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_4']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_5']; ?></td>
+                <td class="round_total"><?php echo $ticket['rd_6']; ?></td>
+                <td class="round_total"><?php echo $ticket['total_points']; ?></td>
             </tr>
         <?php } ?>
         </tbody>

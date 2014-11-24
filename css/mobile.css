@@ -1,6 +1,6 @@
 body
 {
-    font: normal 16pt Arial,Helvetica,sans-serif;
+    font-size: 16pt;
 }
 
 #footer
@@ -12,13 +12,15 @@ body
 
 #mainmenu
 {
-    height:100px;
+    height:250px;
 }
 
 #mainmenu ul li a
 {
+    padding-top:40px;
     font-size:30px;
     width:220px;
+    height:80px;
 }
 .mobile_padding{
     padding: 30px;
@@ -28,16 +30,12 @@ div.breadcrumbs{
 }
 .main_title{
     text-align: center;
+    margin-top: -50px;
 }
 
 .bracket_button{
-    padding-top: 90px;
-    width:170px;
-    height:90px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    display: none;
 }
-
 
 .row{
     font-size: 46px;
@@ -75,6 +73,7 @@ input[type=password] {
     width:100%;
     float: none;
     margin-left: 10px;
+    margin-bottom: 15px;
 
 }
 .contact_image{
@@ -82,4 +81,38 @@ input[type=password] {
 }
 input{
     width: 325px;
+}
+.space_div{
+    margin-top: 100px;
+}
+input[type=checkbox]
+{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+}
+.countdown_text{
+    width: 100%;
+    font-size : 24px !important;
+}
+ul#countdown li{
+    font-size: 150px;
+}
+
+.countdown_div{
+    width:100%;
+    text-align: center;
+}
+.coutdown_time{
+    margin-left: 120px;
+}
+
+.regional_div{
+    height: 670px;
+}
+
+.ui-widget .ui-widget {
+    font-size: 2em;
 }

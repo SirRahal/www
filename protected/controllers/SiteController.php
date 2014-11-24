@@ -111,4 +111,8 @@ class SiteController extends Controller
     public function actionBracket(){
         $this->render('container/bracket');
     }
+
+    public function actionForgot_password(){
+        $this->render('forgot_password');
+    }
 }

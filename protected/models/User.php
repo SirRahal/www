@@ -132,6 +132,15 @@ class User extends CActiveRecord
         $ID = $user['ID'];
         return $ID;
     }
+
+    public static function get_user_first_name(){
+        //user user_name to return user ID
+        $user_name = Yii::app()->user->id;
+        $user = User::model()->findByAttributes(array('user_name'=>$user_name));
+        $first_name = $user['first_name'];
+        return $first_name;
+    }
+
     public static function isUser($ID){
         $loged_id = User::model()->get_user_ID();
         if($ID == $loged_id)

@@ -374,12 +374,12 @@ div.search-form
 
 .centered_div{
     position: absolute;
-    width: 240px;
-    margin-left: 450px;
+    margin-left: 400px;
 }
 .regional_div_my_picks{
-    width:240px;
+    width:340px;
     background: #333333;
+    height: 875px;
 }
 .center_div{
     margin:0 auto;
@@ -447,7 +447,7 @@ input[type=password]:focus, textarea:focus {
 
 .display_bracket_button{
     position: absolute;
-    margin-left:-68px;
+    margin-left:-90px;
     position:fixed;
     top:20%;
     /* Safari */
@@ -463,12 +463,11 @@ input[type=password]:focus, textarea:focus {
 }
 
 .bracket_button{
-    width:135px;
-    height:18px;
+    height:21px;
     padding:5px;
     background: #9eb3ca;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     text-decoration: none;
 }
 
@@ -651,4 +650,57 @@ input{
     margin-top: 8px;
     margin-left: 20px;
     width: 90px;
+}
+
+input[type=checkbox]
+{
+    float: left;
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    padding: 10px;
+}
+
+ul#countdown {
+}
+ul#countdown li{
+    background-color: #333;
+    border: 2px solid #fff;
+    color: #fff;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #777;
+    padding:8px;
+}
+
+.timeRef{
+    font-size: 16px;
+}
+
+.countdown_text{
+    float: left;
+    margin-right: 20px;
+    width: 500px;
+    font-size: 15px;
+    padding:10px !important;
+    background: none !important;
+    color:#333333 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.coutdown_time{
+    float:left;
+    font-size: 40px;
+}
+
+
+.round_total{
+    text-align: center;
+    font-size: 16px;
 }
