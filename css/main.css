@@ -704,3 +704,9 @@ ul#countdown li{
     text-align: center;
     font-size: 16px;
 }
+
+.seed_title{
+    float: left;
+    width:20px;
+    padding-top: 7px;
+}

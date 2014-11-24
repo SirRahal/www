@@ -118,3 +118,9 @@ ul#countdown li{
 .ui-widget {
     font-size: 1.6em !important;
 }
+
+
+.seed_title{
+    width:40px;
+    padding-top: 9px;
+}

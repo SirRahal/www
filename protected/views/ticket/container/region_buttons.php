@@ -45,7 +45,7 @@ if(!isset($picks)){
     <!--ticketID='here'-->
     <div team_ID='<?php echo $team_ID; ?>' team_name='<?php echo $team; ?>' >
         <?php if ($region_ID == 1 || $region_ID == 3) { ?>
-        <div style="float: left; width:20px; padding-top: 7px;" >
+        <div class="seed_title" >
             <b><?php echo $seed ;?></b>
         </div>
         <input type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
