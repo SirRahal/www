@@ -19,13 +19,18 @@ if(!isset($picks)){
     $picks = Picks::model()->find_tickets_by_ID($ticket_ID);
 }
 ?>
+<style>
+    .ui-button-text-only .ui-button-text {
+        padding: 0;
+    }
+</style>
 
 <!--class picks changed radio buttons into jquery css radio buttons-->
 <div class="picks" >
     <div style="text-align: center; padding-bottom: 5px;">
-        <span style="font-size: 18px; font-weight: bold; color:#333333">
+        <h1 class="bold gray_text">
             <?php if($region_ID == 1){ echo "South";}elseif($region_ID == 2){ echo "West";}elseif($region_ID == 3){ echo "East";}elseif($region_ID == 4){ echo "Midwest";};?> Region
-        </span>
+        </h1>
     </div>
     <?php
     foreach($teams as $teamRegion)
@@ -45,11 +50,20 @@ if(!isset($picks)){
     <!--ticketID='here'-->
     <div team_ID='<?php echo $team_ID; ?>' team_name='<?php echo $team; ?>' >
         <?php if ($region_ID == 1 || $region_ID == 3) { ?>
-        <div style="float: left; width:20px; padding-top: 7px;" >
-            <b><?php echo $seed ;?></b>
+            <table>
+                <tr>
+                    <td><?php echo $seed ;?></td>
+                    <td>
+                        <input type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
+                        <label style="border-radius: 0px;" for="<?php echo $triger_ID; ?>"><?php echo $team; ?></label>
+                    </td>
+                </tr>
+            </table>
+        <!--<div class="seed_title" >
+            <b><?php /*echo $seed ;*/?></b>
         </div>
-        <input type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
-        <label style="border-radius: 0px;" for="<?php echo $triger_ID; ?>"><?php echo $team; ?></label>
+        <input type="radio" seed="<?php /*echo $seed; */?>" name="radio_button<?php /*echo $seed;*/?>" id="<?php /*echo $triger_ID; */?>" value="<?php /*echo $team_ID;*/?>" onclick="fill_entry(<?php /*echo $triger_ID .','. $seed; */?>);" <?php /*if($picked){echo 'checked'; } */?>/>
+        <label style="border-radius: 0px;" for="<?php /*echo $triger_ID; */?>"><?php echo $team; ?></label>-->
         <?php }else {?>
 
             <input type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>

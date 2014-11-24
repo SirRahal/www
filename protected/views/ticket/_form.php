@@ -48,7 +48,7 @@ $school = School::model()->get_name_by_ID($school_ID);
     <br/>
     <br/>
     <div>
-        <h3>My Picks</h3>
+        <h1>My Picks</h1>
     </div>
     <!--this div should be updated whenever a button is clicked on the page-->
     <div class="regional_div regional_div_my_picks" id="my_picks" >

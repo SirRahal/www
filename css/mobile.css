@@ -1,6 +1,6 @@
 body
 {
-    font: normal 16pt Arial,Helvetica,sans-serif;
+    font-size: 16pt;
 }
 
 #footer
@@ -107,4 +107,25 @@ ul#countdown li{
 }
 .coutdown_time{
     margin-left: 120px;
+}
+
+.regional_div{
+    height: 1150px;
+    background:orange;
+    width: 270px;
+}
+
+.ui-widget {
+    font-size: 1.6em !important;
+}
+
+.seed_title{
+    width:40px;
+    padding-top: 9px;
+    font-size: 15px;
+}
+.ui-buttonset .ui-button {
+    margin-left: 0;
+    margin-right: -.3em;
+    width: 250px;
 }

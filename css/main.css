@@ -352,7 +352,7 @@ div.search-form
     border-radius: 6px;
     margin-bottom: 20px;
     color:#ffffff;
-    height: 570px;
+    height: 580px;
 }
 .gradient_left{
     background-color: #f48a0d;
@@ -697,4 +697,16 @@ ul#countdown li{
 .coutdown_time{
     float:left;
     font-size: 40px;
+}
+
+
+.round_total{
+    text-align: center;
+    font-size: 16px;
+}
+
+.seed_title{
+    float: left;
+    width:20px;
+    padding-top: 7px;
 }
