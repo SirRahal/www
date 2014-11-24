@@ -28,9 +28,6 @@ body
 div.breadcrumbs{
     display: none;
 }
-.mobile_hidden{
-    display: none;
-}
 .main_title{
     text-align: center;
     margin-top: -50px;

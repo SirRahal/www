@@ -51,30 +51,28 @@ $this->breadcrumbs=array(
     </script>
 </head>
 <h1>Organization : <i><?php echo $model->name; ?></i></h1>
-<div class="mobile_hidden">
-    <div style="float: left; width: 400px;">
-        <div style="font-size: 20px;">
-            <?php $this->widget('zii.widgets.CDetailView', array(
-            'data'=>$model,
-            'attributes'=>array(
-                'name',
-                'address',
-                'city',
-                'state',
-                'zip',
-                'contact_name',
-                'phone',
-                'email',
-            ),
-        ));
-        $tickets = $model->get_tickets($model->ID);
-        $placement = 0;
-        ?>
-        </div>
+<div style="float: left; width: 400px;">
+    <div style="font-size: 20px;">
+        <?php $this->widget('zii.widgets.CDetailView', array(
+        'data'=>$model,
+        'attributes'=>array(
+            'name',
+            'address',
+            'city',
+            'state',
+            'zip',
+            'contact_name',
+            'phone',
+            'email',
+        ),
+    ));
+    $tickets = $model->get_tickets($model->ID);
+    $placement = 0;
+    ?>
     </div>
-    <div  style="padding-right : 10px; float:right;">
-        <img class="round_edges shadow" src="/images/23hor.png" >
-    </div>
+</div>
+<div  style="padding-right : 10px; float:right;">
+    <img class="round_edges shadow" src="/images/23hor.png" >
 </div>
 <div class="clear"></div>
     <div style="padding:20px;">
