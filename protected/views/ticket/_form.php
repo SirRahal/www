@@ -35,17 +35,15 @@ $school = School::model()->get_name_by_ID($school_ID);
 <p>Please select a team from each seed.  The center column is your ticket, and don't forget to hit the save button when you are finished.<br/>This ticket can be edited up until noon of the first game EST.</p>
 <!--centered info needs to be updated by the user table-->
 <div class="centered_div text_center">
-    <div class="boxed">
-        Entry <?php echo $ticket_code; ?> <!--echo out ticket number-->
-    </div>
-    <div class="boxed" style="margin-top: 10px;">
-        <?php echo $school; ?> <!--echo out school-->
-    </div>
-    <br/>
+    <!--<div class="boxed">
+        Entry <?php /*echo $ticket_code; */?>
+    </div>-->
+    <!--<div class="boxed" style="margin-top: 10px;">
+        <?php /*echo $school; */?>
+    </div>-->
     <div>
-        FROM EACH OF THE 4 REGIONS<br/>PICK ONE OF EACH SEED<br/>TO MAKE YOUR BRACKET
+        PICK ONE OF EACH SEED<br/>FROM EACH OF THE 4 REGIONS<br/>TO MAKE YOUR BRACKET
     </div>
-    <br/>
     <br/>
     <div>
         <h1>My Picks</h1>
