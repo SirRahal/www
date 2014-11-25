@@ -69,7 +69,7 @@ $this->breadcrumbs=array(
 <div class="main_title"><h1>My Entries</h1></div>
 <div style="height: 10px;"></div>
 <div class="clear"></div>
-    <div style="float: right; right:40px; margin-top: -80px;">
+    <div class="countdown_div">
         <?php echo $this->renderPartial('/site/container/count_down'); ?>
     </div>
     <div class="clear"></div>

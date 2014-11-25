@@ -659,6 +659,11 @@ ul#countdown li{
     font-size: 16px;
 }
 
+.countdown_div{
+    float: right;
+    right:40px;
+    margin-top: -30px;
+}
 .countdown_text{
     float: left;
     margin-right: 20px;
