@@ -106,7 +106,7 @@ ul#countdown li{
     text-align: center;
 }
 .coutdown_time{
-    margin-left: 120px;
+    margin-left: 170px;
 }
 
 .regional_div{
@@ -129,6 +129,7 @@ ul#countdown li{
     width: 250px;
 }
 
-.countdown_div{
-    margin-top: 0px;
+.button_arrangment{
+    margin-top: 5px;
+    margin-bottom:5px;
 }

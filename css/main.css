@@ -691,3 +691,8 @@ ul#countdown li{
     padding-top: 0px;
     text-align: center;
 }
+
+.button_arrangment{
+    float: right;
+    margin-top: -30px;
+}
