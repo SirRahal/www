@@ -69,19 +69,18 @@ $this->breadcrumbs=array(
 <div class="main_title"><h1>My Entries</h1></div>
 <div style="height: 10px;"></div>
 <div class="clear"></div>
-    <div style="float: right; right:40px; margin-top: -80px;">
+    <div class="countdown_div">
         <?php echo $this->renderPartial('/site/container/count_down'); ?>
     </div>
     <div class="clear"></div>
 <button id="add_ticket">Add Entry</button>
-    <div class="clear"></div>
+    <div class="clear spacer"></div>
     <div id="accordion">
     <?php
         $mytickets = Ticket::model()->get_tickets_by_user_ID();
         foreach($mytickets as $ticket){?>
             <h3><b>Entry : </b><?php echo $ticket['code']; ?></h3>
             <div class="ticket_table_display">
-
                 <?php echo $this->renderPartial('container/score_table', array('ticket' => $ticket)); ?>
             </div>
         <?php } ?>

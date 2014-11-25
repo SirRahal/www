@@ -50,27 +50,21 @@ if(!isset($picks)){
     <!--ticketID='here'-->
     <div team_ID='<?php echo $team_ID; ?>' team_name='<?php echo $team; ?>' >
         <?php if ($region_ID == 1 || $region_ID == 3) { ?>
-            <table>
-                <tr>
-                    <td><?php echo $seed ;?></td>
-                    <td>
-                        <input type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
-                        <label style="border-radius: 0px;" for="<?php echo $triger_ID; ?>"><?php echo $team; ?></label>
-                    </td>
-                </tr>
-            </table>
-        <!--<div class="seed_title" >
-            <b><?php /*echo $seed ;*/?></b>
-        </div>
-        <input type="radio" seed="<?php /*echo $seed; */?>" name="radio_button<?php /*echo $seed;*/?>" id="<?php /*echo $triger_ID; */?>" value="<?php /*echo $team_ID;*/?>" onclick="fill_entry(<?php /*echo $triger_ID .','. $seed; */?>);" <?php /*if($picked){echo 'checked'; } */?>/>
-        <label style="border-radius: 0px;" for="<?php /*echo $triger_ID; */?>"><?php echo $team; ?></label>-->
-        <?php }else {?>
-
-            <input type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
-            <label style="border-radius: 0px;" for="<?php echo $triger_ID; ?>"><?php echo $team; ?></label>
-            <div style="float: left; width:13px; padding-top: 7px; padding-left:8px;" >
+            <div class="seed_title" style="float: left;">
                 <b><?php echo $seed ;?></b>
             </div>
+            <input style="float: left;" type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
+            <label style="border-radius: 0px; float: left;" for="<?php echo $triger_ID; ?>"><?php echo $team; ?></label>
+            <div class="clear spacer"></div>
+        <?php } else { ?>
+            <input type="radio" seed="<?php echo $seed; ?>" name="radio_button<?php echo $seed;?>" id="<?php echo $triger_ID; ?>" value="<?php echo $team_ID;?>" onclick="fill_entry(<?php echo $triger_ID .','. $seed; ?>);" <?php if($picked){echo 'checked'; } ?>/>
+            <label style="border-radius: 0px;" for="<?php echo $triger_ID; ?>"><?php echo $team; ?></label>
+            <div style="float: left; width:13px; padding-left:8px;" >
+                <div class="seed_title" style="float: left;" >
+                    <b><?php echo $seed ;?></b>
+                </div>
+            </div>
+            <div class="clear spacer"></div>
         <?php }?>
     </div>
     <?php } ?>
@@ -85,3 +79,4 @@ if(!isset($picks)){
         $('#radio'+seed).attr('ticket',<?php echo $ticket_ID;?> );
     }
 </script>
+

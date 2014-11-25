@@ -322,37 +322,13 @@ div.search-form
     color:#8a1f11;
     margin-bottom: .1em;
 }
-.reagion_title_div_south{
-    position: absolute;
-    margin-left: 297px;
-    margin-top: 217px;
-    font-size: 20px;
-}
-.reagion_title_div_west{
-    position: absolute;
-    margin-left: -275px;
-    margin-top: 197px;
-    font-size: 20px;
-}
-.reagion_title_div_east{
-    position: absolute;
-    margin-left: 305px;
-    margin-top:655px;
-    font-size: 20px;
-}
-.reagion_title_div_midwest{
-    position: absolute;
-    margin-left: -305px;
-    margin-top:655px;
-    font-size: 20px;
-}
 
 .regional_div{
     padding:10px;
     border-radius: 6px;
     margin-bottom: 20px;
     color:#ffffff;
-    height: 580px;
+    height: 480px;
 }
 .gradient_left{
     background-color: #f48a0d;
@@ -683,6 +659,11 @@ ul#countdown li{
     font-size: 16px;
 }
 
+.countdown_div{
+    float: right;
+    right:40px;
+    margin-top: -30px;
+}
 .countdown_text{
     float: left;
     margin-right: 20px;
@@ -706,7 +687,12 @@ ul#countdown li{
 }
 
 .seed_title{
-    float: left;
-    width:20px;
-    padding-top: 7px;
+    width:25px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.button_arrangment{
+    float: right;
+    margin-top: -30px;
 }

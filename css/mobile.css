@@ -106,13 +106,12 @@ ul#countdown li{
     text-align: center;
 }
 .coutdown_time{
-    margin-left: 120px;
+    margin-left: 170px;
 }
 
 .regional_div{
-    height: 1150px;
-    background:orange;
-    width: 270px;
+    height: 860px;
+    width: 350px;
 }
 
 .ui-widget {
@@ -128,4 +127,9 @@ ul#countdown li{
     margin-left: 0;
     margin-right: -.3em;
     width: 250px;
+}
+
+.button_arrangment{
+    margin-top: 5px;
+    margin-bottom:5px;
 }
