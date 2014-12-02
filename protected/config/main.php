@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Industrial Times Inc.',
+	'name'=>'My Web Application',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -38,11 +38,9 @@ return array(
 		),
 		// uncomment the following to enable URLs in path-format
 
-
 		'urlManager'=>array(
-            'urlFormat'=>'path',
-            'showScriptName'=>false,
-            'rules'=>array(
+			'urlFormat'=>'path',
+			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -55,7 +53,7 @@ return array(
 		// uncomment the following to use a MySQL database
 
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=industrial_times',
+			'connectionString' => 'mysql:host=localhost;dbname=lister',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
@@ -87,6 +85,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'admin@industrialtimesinc.com',
+		'adminEmail'=>'webmaster@example.com',
 	),
 );

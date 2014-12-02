@@ -10,78 +10,86 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
-    <meta name="description" content="Midwest Industrial Publication for Anything to do with industrial metalworking (forming and cutting) and upcoming Industrial Auctions."/>
-    <meta name="keywords" content="Midwest, Michigan, Industrial,industrial times magazine, Auction, Advertiser, Advertisement, Advertising, Tooling, Spare Parts, Industrialtimesinc, Industrialtimes, Industrial times, Publication, market, marketing, AMCON Trade Show, metalworking, metalforming, metalcutting, fabrication, lathes, saws, band, grinders, CNC, debarring machine, horizontal mills and vertical mill, machine sales, magazine, publication, email, advertisement, advertising, marketing, auction, auctioneers "/>
-    <meta name="author" content="Sari Rahal"/>
-    <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/icons/favicon4.png" type="image/x-icon" />
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/shop-homepage.css" rel="stylesheet">
 
-    <script type="" src="/js/jquery.js"></script>
-    <script src="/js/global.js"></script>
-
-    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
 
-<div class="container" id="page">
-    <img src="/images/banner/website_banner.jpg" /><!-- header -->
+<div class="container" >
 
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-                array('label'=>'Auctions', 'url'=>array('/auctions')),
-                array('label'=>'Auctioneers', 'url'=>array('/auctioneer')),
-                array('label'=>'Publications', 'url'=>array('/index.php/issues')),
-                array('label'=>'Advertisers', 'url'=>array('/advertisers')),
-                array('label'=>'Media Guide', 'url'=>array('/site/media_guide')),
-                array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-                array('label'=>'Frequent Q&A', 'url'=>array('/questions')),
-                array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
-	</div><!-- mainmenu -->
-    <div id="mainmenu">
-        <?php $this->widget('zii.widgets.CMenu',array(
-            'items'=>array(
-                array('label'=>'Edit Auctioneer', 'url'=>array('/auctioneer/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
-                array('label'=>'Edit Auctions', 'url'=>array('/auctions/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
-                array('label'=>'Auctions Of The Week', 'url'=>array('/auctions/week_auctions'), 'visible'=>Yii::app()->user->id == 'admin'),
-                array('label'=>'Auctions Of The Month', 'url'=>array('/auctions/month_auctions'), 'visible'=>Yii::app()->user->id == 'admin'),
-                array('label'=>'Derek, dont tuch', 'url'=>array('/contacts'), 'visible'=>Yii::app()->user->id == 'admin'),
-            ),
-        )); ?>
-    </div><!-- mainmenu -->
-
-
-    <div class="clear"></div>
-    <?php
-    echo $this->renderPartial('/site/container/newfeed');
-    ?>
-    <?php if(isset($this->breadcrumbs)):?>
+	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
 
-	<?php echo $content; ?>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.php">Nu Tek Listings</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <?php if (Yii::app()->user->name != 'Guest') { ?>
+                    <li>
+                        <a href="/index.php/site/logout">Logout <?php echo Yii::app()->user->name ?></a>
+                    </li>
+                    <?php } else { ?>
+                    <li>
+                        <a href="/index.php/site/login">Login</a>
+                    </li>
+                    <?php } ?>
+                    <li>
+                        <a href="/index.php/user">Users</a>
+                    </li>
+                    <li>
+                        <a href="/index.php/listings">Listings</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="container">
+
+        <?php echo $content; ?>
+
+    </div>
+
 
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by Industrial Times Inc.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
-		<?php /*echo Yii::powered(); */?>
-        Designed & Programmed by Sari Rahal
+		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 
-
 </div><!-- page -->
+<!-- jQuery -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 
 </body>
 </html>
