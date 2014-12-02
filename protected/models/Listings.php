@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table 'listings':
  * @property integer $ID
- * @property string $list_by
+ * @property integer $list_by
  * @property string $inventory
  * @property string $date
  * @property string $photo_numbers
@@ -28,8 +28,12 @@
  * @property string $height_2
  * @property string $listing_note
  * @property integer $ebay_listed
- * @property string $ebay_lister
+ * @property integer $ebay_lister
  * @property string $ebay_date
+ *
+ * The followings are the available model relations:
+ * @property User $ebayLister
+ * @property User $listBy
  */
 class Listings extends CActiveRecord
 {
@@ -50,9 +54,9 @@ class Listings extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('list_by, inventory, date, photo_numbers, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_lister, ebay_date', 'required'),
-			array('condition, ebay_listed', 'numerical', 'integerOnly'=>true),
-			array('list_by, photo_numbers, internal_number, manufacturer, condition_info, ebay_lister', 'length', 'max'=>100),
+			array('list_by, condition, ebay_listed, ebay_lister', 'numerical', 'integerOnly'=>true),
 			array('inventory, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2', 'length', 'max'=>15),
+			array('photo_numbers, internal_number, manufacturer, condition_info', 'length', 'max'=>100),
 			array('description', 'length', 'max'=>1000),
 			array('price', 'length', 'max'=>10),
 			array('serial_number, model_number', 'length', 'max'=>50),
@@ -71,6 +75,8 @@ class Listings extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'ebayLister' => array(self::BELONGS_TO, 'User', 'ebay_lister'),
+			'listBy' => array(self::BELONGS_TO, 'User', 'list_by'),
 		);
 	}
 
@@ -128,7 +134,7 @@ class Listings extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ID',$this->ID);
-		$criteria->compare('list_by',$this->list_by,true);
+		$criteria->compare('list_by',$this->list_by);
 		$criteria->compare('inventory',$this->inventory,true);
 		$criteria->compare('date',$this->date,true);
 		$criteria->compare('photo_numbers',$this->photo_numbers,true);
@@ -151,7 +157,7 @@ class Listings extends CActiveRecord
 		$criteria->compare('height_2',$this->height_2,true);
 		$criteria->compare('listing_note',$this->listing_note,true);
 		$criteria->compare('ebay_listed',$this->ebay_listed);
-		$criteria->compare('ebay_lister',$this->ebay_lister,true);
+		$criteria->compare('ebay_lister',$this->ebay_lister);
 		$criteria->compare('ebay_date',$this->ebay_date,true);
 
 		return new CActiveDataProvider($this, array(

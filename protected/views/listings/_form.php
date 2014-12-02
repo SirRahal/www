@@ -6,6 +6,14 @@
 
 <div class="form">
 
+    <?php
+    $user_ID = User::model()->get_user_ID();
+    if (isset($model)){
+        $date = $model->date;
+    }
+        $date = date("d-m-y");
+    ?>
+
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'listings-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
@@ -19,9 +27,9 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="visibility_none">
 		<?php echo $form->labelEx($model,'list_by'); ?>
-		<?php echo $form->textField($model,'list_by',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'list_by',array('value'=>$user_ID)); ?>
 		<?php echo $form->error($model,'list_by'); ?>
 	</div>
 
@@ -31,9 +39,9 @@
 		<?php echo $form->error($model,'inventory'); ?>
 	</div>
 
-	<div class="row">
+	<div class="visibility_none">
 		<?php echo $form->labelEx($model,'date'); ?>
-		<?php echo $form->textField($model,'date'); ?>
+		<?php echo $form->textField($model,'date',array('value'=>$date)); ?>
 		<?php echo $form->error($model,'date'); ?>
 	</div>
 
@@ -159,7 +167,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ebay_lister'); ?>
-		<?php echo $form->textField($model,'ebay_lister',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'ebay_lister'); ?>
 		<?php echo $form->error($model,'ebay_lister'); ?>
 	</div>
 

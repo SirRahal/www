@@ -105,4 +105,9 @@ class User extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function get_user_ID(){
+        $user = User::model()->findByAttributes(array('user_name'=>Yii::app()->user->name));
+        return $user['ID'];
+    }
 }

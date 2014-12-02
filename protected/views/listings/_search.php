@@ -18,7 +18,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'list_by'); ?>
-		<?php echo $form->textField($model,'list_by',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'list_by'); ?>
 	</div>
 
 	<div class="row">
@@ -133,7 +133,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'ebay_lister'); ?>
-		<?php echo $form->textField($model,'ebay_lister',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'ebay_lister'); ?>
 	</div>
 
 	<div class="row">

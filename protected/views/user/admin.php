@@ -3,7 +3,7 @@
 /* @var $model User */
 
 $this->breadcrumbs=array(
-	'Users',
+    'Users',
 );
 
 
@@ -23,7 +23,7 @@ $this->breadcrumbs=array(
 <div class="clear"></div>
 <a href="/index.php/user/create">Create User</a>
 <?php
-    $users = User::model()->findAll();
+$users = User::model()->findAll();
 ?>
 <style>
     tbody{
@@ -34,6 +34,7 @@ $this->breadcrumbs=array(
     <thead>
     <tr>
         <td>Edit</td>
+        <td>Activity</td>
         <td>ID</td>
         <td>First</td>
         <td>Last</td>
@@ -43,9 +44,10 @@ $this->breadcrumbs=array(
     </tr>
     </thead>
     <tbody>
-        <?php foreach($users as $user){ ?>
+    <?php foreach($users as $user){ ?>
         <tr>
-            <td ><a class="link" href="/index.php/user/update/<?php echo $user->ID; ?>">Edit</a> <a class="link" href="/index.php/user/delete/<?php echo $user->ID; ?>">Delete</a></td>
+            <td><a class="link" href="/index.php/user/update/<?php echo $user->ID; ?>">Edit</a></td>
+            <td><a class="link" href="/index.php/user/<?php echo $user->ID; ?>">View</a></td>
             <td><?php echo $user->ID; ?></td>
             <td><?php echo $user->first_name; ?></td>
             <td><?php echo $user->last_name; ?></td>
