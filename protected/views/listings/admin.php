@@ -3,77 +3,61 @@
 /* @var $model Listings */
 
 $this->breadcrumbs=array(
-	'Listings'=>array('index'),
-	'Manage',
+	'Listings',
 );
 
-$this->menu=array(
-	array('label'=>'List Listings', 'url'=>array('index')),
-	array('label'=>'Create Listings', 'url'=>array('create')),
-);
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#listings-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
 ?>
 
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
 <h1>Manage Listings</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<div class="spacer"></div>
+<script>
+    $(document).ready(function(){
+        $('#myTable').DataTable();
+    });
+</script>
+<a href="/index.php/listings/create">Create Listing</a>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
-
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'listings-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'ID',
-		'list_by',
-		'date',
-		'photo_numbers',
-		'description',
-		'internal_number',
-		/*
-		'price',
-		'manufacturer',
-		'serial_number',
-		'model_number',
-		'more_info',
-		'condition',
-		'condition_info',
-		'weight',
-		'length_1',
-		'width_1',
-		'height_1',
-		'dims_2',
-		'length_2',
-		'width_2',
-		'height_2',
-		'listing_note',
-		'ebay_listed',
-		'ebay_lister',
-		'ebay_date',
-		*/
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+<?php
+$listings = Listings::model()->findAll();
+?>
+<style>
+    tbody{
+        color:black;
+    }
+</style>
+<table id="myTable" class="hover stripe row-border">
+    <thead>
+    <tr>
+        <td>Edit</td>
+        <td>ID</td>
+        <td>Inventory</td>
+        <td>Manufacturer</td>
+        <td>Serial #</td>
+        <td>Model #</td>
+        <td>Date</td>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach($listings as $item){ ?>
+        <tr>
+            <td ><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a></td>
+            <td><?php echo $item->ID; ?></td>
+            <td><?php echo $item->inventory; ?></td>
+            <td><?php echo $item->manufacturer; ?></td>
+            <td><?php echo $item->serial_number; ?></td>
+            <td><?php echo $item->model_number; ?></td>
+            <td><?php echo $item->date; ?></td>
+        </tr>
+    <?php } ?>
+    </tbody>
+</table>
+<script>
+    $(document).ready(function(){
+        $('#myTable').DataTable();
+    });
+</script>

@@ -26,6 +26,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'inventory'); ?>
+		<?php echo $form->textField($model,'inventory',array('size'=>15,'maxlength'=>15)); ?>
+		<?php echo $form->error($model,'inventory'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'date'); ?>
 		<?php echo $form->textField($model,'date'); ?>
 		<?php echo $form->error($model,'date'); ?>

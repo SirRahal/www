@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'listings':
  * @property integer $ID
  * @property string $list_by
+ * @property string $inventory
  * @property string $date
  * @property string $photo_numbers
  * @property string $description
@@ -48,17 +49,17 @@ class Listings extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('list_by, date, photo_numbers, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_lister, ebay_date', 'required'),
+			array('list_by, inventory, date, photo_numbers, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_lister, ebay_date', 'required'),
 			array('condition, ebay_listed', 'numerical', 'integerOnly'=>true),
 			array('list_by, photo_numbers, internal_number, manufacturer, condition_info, ebay_lister', 'length', 'max'=>100),
+			array('inventory, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2', 'length', 'max'=>15),
 			array('description', 'length', 'max'=>1000),
 			array('price', 'length', 'max'=>10),
 			array('serial_number, model_number', 'length', 'max'=>50),
 			array('more_info, listing_note', 'length', 'max'=>1500),
-			array('weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2', 'length', 'max'=>15),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, list_by, date, photo_numbers, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_listed, ebay_lister, ebay_date', 'safe', 'on'=>'search'),
+			array('ID, list_by, inventory, date, photo_numbers, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_listed, ebay_lister, ebay_date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -81,6 +82,7 @@ class Listings extends CActiveRecord
 		return array(
 			'ID' => 'ID',
 			'list_by' => 'List By',
+			'inventory' => 'Inventory',
 			'date' => 'Date',
 			'photo_numbers' => 'Photo Numbers',
 			'description' => 'Description',
@@ -127,6 +129,7 @@ class Listings extends CActiveRecord
 
 		$criteria->compare('ID',$this->ID);
 		$criteria->compare('list_by',$this->list_by,true);
+		$criteria->compare('inventory',$this->inventory,true);
 		$criteria->compare('date',$this->date,true);
 		$criteria->compare('photo_numbers',$this->photo_numbers,true);
 		$criteria->compare('description',$this->description,true);

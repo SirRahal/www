@@ -3,23 +3,15 @@ body
 	margin: 0;
 	padding: 0;
 	color: #555;
-	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
-}
-
-#page
-{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	background: white;
-	border: 1px solid #C9E0ED;
 }
 
 #header
 {
 	margin: 0;
 	padding: 0;
-	border-top: 3px solid #C9E0ED;
+	background-image: url( 'business3.jpg' );
+	background-repeat: no-repeat;
+	height: 125px;
 }
 
 #content
@@ -38,46 +30,7 @@ body
 	margin: 10px 20px;
 	font-size: 0.8em;
 	text-align: center;
-	border-top: 1px solid #C9E0ED;
-}
-
-#logo
-{
-	padding: 10px 20px;
-	font-size: 200%;
-}
-
-#mainmenu
-{
-	background:white url(bg.gif) repeat-x left top;
-}
-
-#mainmenu ul
-{
-	padding:6px 20px 5px 20px;
-	margin:0px;
-}
-
-#mainmenu ul li
-{
-	display: inline;
-}
-
-#mainmenu ul li a
-{
-	color:#ffffff;
-	background-color:transparent;
-	font-size:12px;
-	font-weight:bold;
-	text-decoration:none;
-	padding:5px 8px;
-}
-
-#mainmenu ul li a:hover, #mainmenu ul li.active a
-{
-	color: #6399cd;
-	background-color:#EFF4FA;
-	text-decoration:none;
+	border-top: 1px solid #888888;
 }
 
 div.flash-error, div.flash-notice, div.flash-success
@@ -226,4 +179,14 @@ div.search-form
 .operations li a:hover
 {
 	background: #80CFFF;
+}
+
+.link{
+    color: #0066A4 !important;
+}
+.clear{
+    clear:both;
+}
+.spacer{
+    height: 20px;
 }

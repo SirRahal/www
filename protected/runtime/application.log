@@ -65,3 +65,372 @@ Stack trace:
 REQUEST_URI=/index.php/site/page&view=about
 HTTP_REFERER=http://localhost/index.php/site/page&view=about
 ---
+2014/12/02 19:59:03 [error] [php] Undefined variable: modwl (C:\wamp\www\protected\views\user\admin.php:71)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(143): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/admin
+in C:\wamp\www\protected\views\user\admin.php (71)
+in C:\wamp\www\protected\controllers\UserController.php (143)
+in C:\wamp\www\index.php (13)
+2014/12/02 19:59:05 [error] [php] Undefined variable: modwl (C:\wamp\www\protected\views\user\admin.php:71)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(143): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/admin
+in C:\wamp\www\protected\views\user\admin.php (71)
+in C:\wamp\www\protected\controllers\UserController.php (143)
+in C:\wamp\www\index.php (13)
+2014/12/02 20:00:07 [error] [php] Trying to get property of non-object (C:\wamp\www\protected\views\user\admin.php:72)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(143): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/admin
+in C:\wamp\www\protected\views\user\admin.php (72)
+in C:\wamp\www\protected\controllers\UserController.php (143)
+in C:\wamp\www\index.php (13)
+2014/12/02 20:00:09 [error] [php] Trying to get property of non-object (C:\wamp\www\protected\views\user\admin.php:72)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(143): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/admin
+in C:\wamp\www\protected\views\user\admin.php (72)
+in C:\wamp\www\protected\controllers\UserController.php (143)
+in C:\wamp\www\index.php (13)
+2014/12/02 20:00:15 [error] [php] Trying to get property of non-object (C:\wamp\www\protected\views\user\admin.php:72)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(143): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/admin
+in C:\wamp\www\protected\views\user\admin.php (72)
+in C:\wamp\www\protected\controllers\UserController.php (143)
+in C:\wamp\www\index.php (13)
+2014/12/02 20:00:16 [error] [php] Trying to get property of non-object (C:\wamp\www\protected\views\user\admin.php:72)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(143): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/admin
+in C:\wamp\www\protected\views\user\admin.php (72)
+in C:\wamp\www\protected\controllers\UserController.php (143)
+in C:\wamp\www\index.php (13)
+2014/12/02 20:03:16 [error] [exception.CException] exception 'CException' with message 'UserController and its behaviors do not have a method or closure named "getTableAlias".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1517): CComponent->__call('getTableAlias', Array)
+#1 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1517): UserController->getTableAlias(true)
+#2 C:\wamp\www\protected\views\user\admin.php(72): CActiveRecord->findByAttributes(Array)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 C:\wamp\www\protected\controllers\UserController.php(143): CController->render('admin', Array)
+#8 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#9 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/user/admin
+HTTP_REFERER=http://localhost/index.php/user
+---
+2014/12/02 20:03:17 [error] [exception.CException] exception 'CException' with message 'UserController and its behaviors do not have a method or closure named "getTableAlias".' in C:\wamp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1517): CComponent->__call('getTableAlias', Array)
+#1 C:\wamp\yii\framework\db\ar\CActiveRecord.php(1517): UserController->getTableAlias(true)
+#2 C:\wamp\www\protected\views\user\admin.php(72): CActiveRecord->findByAttributes(Array)
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#5 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#6 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 C:\wamp\www\protected\controllers\UserController.php(143): CController->render('admin', Array)
+#8 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#9 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/user/admin
+HTTP_REFERER=http://localhost/index.php/user
+---
+2014/12/02 20:07:04 [error] [php] Trying to get property of non-object (C:\wamp\www\protected\views\user\admin.php:73)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(143): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/admin
+in C:\wamp\www\protected\views\user\admin.php (73)
+in C:\wamp\www\protected\controllers\UserController.php (143)
+in C:\wamp\www\index.php (13)
+2014/12/02 20:07:14 [error] [php] Trying to get property of non-object (C:\wamp\www\protected\views\user\admin.php:73)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(143): UserController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/admin
+in C:\wamp\www\protected\views\user\admin.php (73)
+in C:\wamp\www\protected\controllers\UserController.php (143)
+in C:\wamp\www\index.php (13)
+2014/12/02 21:02:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php/listings
+---
+2014/12/02 21:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php/listings
+---
+2014/12/02 21:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2014/12/02 21:02:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2014/12/02 21:02:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2014/12/02 21:02:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2014/12/02 21:02:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2014/12/02 21:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php/user/admin
+---
+2014/12/02 21:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php/user/admin
+---
+2014/12/02 21:03:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php/user/admin
+---
+2014/12/02 21:03:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/admin')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/admin
+HTTP_REFERER=http://localhost/index.php/user/admin
+---
+2014/12/02 21:15:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/delete')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/delete/3
+HTTP_REFERER=http://localhost/index.php/user/admin
+---

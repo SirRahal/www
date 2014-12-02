@@ -13,6 +13,10 @@
 	<?php echo CHtml::encode($data->list_by); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('inventory')); ?>:</b>
+	<?php echo CHtml::encode($data->inventory); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('date')); ?>:</b>
 	<?php echo CHtml::encode($data->date); ?>
 	<br />
@@ -29,11 +33,11 @@
 	<?php echo CHtml::encode($data->internal_number); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('price')); ?>:</b>
 	<?php echo CHtml::encode($data->price); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('manufacturer')); ?>:</b>
 	<?php echo CHtml::encode($data->manufacturer); ?>
 	<br />

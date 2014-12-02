@@ -6,7 +6,6 @@
 	<meta name="language" content="en" />
 
 	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
@@ -19,6 +18,12 @@
 
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/shop-homepage.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
+
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -57,11 +62,13 @@
                         <a href="/index.php/site/login">Login</a>
                     </li>
                     <?php } ?>
+                    <?php if (Yii::app()->user->name == 'admin'){ ?>
                     <li>
-                        <a href="/index.php/user">Users</a>
+                        <a href="/index.php/user/admin">Users</a>
                     </li>
+                    <?php } ?>
                     <li>
-                        <a href="/index.php/listings">Listings</a>
+                        <a href="/index.php/listings/admin">Listings</a>
                     </li>
                 </ul>
             </div>
@@ -85,11 +92,7 @@
 	</div><!-- footer -->
 
 </div><!-- page -->
-<!-- jQuery -->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 
 </body>
 </html>

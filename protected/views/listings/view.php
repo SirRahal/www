@@ -23,6 +23,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'ID',
 		'list_by',
+		'inventory',
 		'date',
 		'photo_numbers',
 		'description',
