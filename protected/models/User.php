@@ -10,6 +10,10 @@
  * @property integer $permission
  * @property string $user_name
  * @property string $password
+ *
+ * The followings are the available model relations:
+ * @property Listings[] $listings
+ * @property Listings[] $listings1
  */
 class User extends CActiveRecord
 {
@@ -47,6 +51,8 @@ class User extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'listings' => array(self::HAS_MANY, 'Listings', 'list_by'),
+			'listings1' => array(self::HAS_MANY, 'Listings', 'ebay_lister'),
 		);
 	}
 

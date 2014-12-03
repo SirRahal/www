@@ -194,3 +194,10 @@ div.search-form
     position: absolute;
     visibility: hidden;
 }
+.boxed{
+    border: solid 1px #888888;
+}
+.form_container{
+    width:50%;
+    float: left;
+}

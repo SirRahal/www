@@ -3,28 +3,24 @@
 /* @var $model Listings */
 
 $this->breadcrumbs=array(
-	'Listings'=>array('index'),
+	'Listings'=>array('admin'),
 	$model->ID,
 );
 
 $this->menu=array(
-	array('label'=>'List Listings', 'url'=>array('index')),
-	array('label'=>'Create Listings', 'url'=>array('create')),
+	array('label'=>'Create Another Listings', 'url'=>array('create')),
 	array('label'=>'Update Listings', 'url'=>array('update', 'id'=>$model->ID)),
 	array('label'=>'Delete Listings', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Listings', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Listings #<?php echo $model->ID; ?></h1>
+<h1>View Listings #<?php echo $model->ID ; ?></h1>
+<h3>Listed by <?php echo $model->listBy['first_name']; ?> On <?php echo $model->date; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'ID',
-		'list_by',
 		'inventory',
-		'date',
 		'photo_numbers',
 		'description',
 		'internal_number',
@@ -49,3 +45,8 @@ $this->menu=array(
 		'ebay_date',
 	),
 )); ?>
+<style>
+    tbody{
+        color:black;
+    }
+</style>
