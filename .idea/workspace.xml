@@ -37,12 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="0" selection-start="4701" selection-end="4701" vertical-scroll-proportion="0.32917964" vertical-offset="1791" max-vertical-offset="3944">
+            <state line="12" column="29" selection-start="277" selection-end="277" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="3995">
               <folding>
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <marker date="1417645113548" expanded="true" signature="7908:7996" placeholder="..." />
+                <marker date="1417645113548" expanded="true" signature="7942:7996" placeholder="..." />
+                <marker date="1417645113548" expanded="true" signature="8232:8286" placeholder="..." />
+                <marker date="1417645113548" expanded="true" signature="8545:8599" placeholder="..." />
+                <marker date="1417645113548" expanded="true" signature="8818:8872" placeholder="..." />
+                <marker date="1417645113548" expanded="true" signature="9108:9162" placeholder="..." />
+                <marker date="1417645113548" expanded="true" signature="9417:9473" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -51,7 +58,34 @@
       <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/listings/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="34" selection-start="192" selection-end="192" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="986">
+            <state line="18" column="0" selection-start="629" selection-end="629" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListingsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/ListingsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="33" selection-start="1132" selection-end="1132" vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="3043">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/listings/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="63" selection-start="234" selection-end="234" vertical-scroll-proportion="0.24714434" vertical-offset="0" max-vertical-offset="963">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/listings/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
@@ -94,8 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/Magnific-Popup-master/dist/jquery.magnific-popup.js" />
-        <option value="$PROJECT_DIR$/js/image_popup.js" />
         <option value="$PROJECT_DIR$/protected/views/school/ticketPopup.php" />
         <option value="$PROJECT_DIR$/protected/models/School.php" />
         <option value="$PROJECT_DIR$/protected/models/Ticket.php" />
@@ -136,15 +168,17 @@
         <option value="$PROJECT_DIR$/js/datatable.js" />
         <option value="$PROJECT_DIR$/css/jquery.dataTables.css" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ListingsController.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/admin.php" />
         <option value="$PROJECT_DIR$/protected/views/user/admin.php" />
         <option value="$PROJECT_DIR$/protected/models/Listings.php" />
         <option value="$PROJECT_DIR$/protected/models/User.php" />
         <option value="$PROJECT_DIR$/protected/views/user/view.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/update.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ListingsController.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/create.php" />
       </list>
     </option>
   </component>
@@ -492,7 +526,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="177" column="10" selection-start="6160" selection-end="6160" vertical-scroll-proportion="0.0" vertical-offset="3009" max-vertical-offset="3247">
           <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <marker date="1417645113548" expanded="true" signature="7908:7996" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="7942:7996" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="8232:8286" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="8545:8599" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="8818:8872" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="9108:9162" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="9417:9473" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -603,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ListingsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="0" selection-start="4231" selection-end="4231" vertical-scroll-proportion="0.85877466" vertical-offset="2080" max-vertical-offset="3043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="104" selection-start="2880" selection-end="2880" vertical-scroll-proportion="0.3707165" vertical-offset="612" max-vertical-offset="1768">
@@ -661,19 +695,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="29" selection-start="277" selection-end="277" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="3995">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <marker date="1417645113548" expanded="true" signature="7908:7996" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="7942:7996" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="8232:8286" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="8545:8599" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="8818:8872" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="9108:9162" placeholder="..." />
+            <marker date="1417645113548" expanded="true" signature="9417:9473" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/listings/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="34" selection-start="192" selection-end="192" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="986">
+        <state line="18" column="0" selection-start="629" selection-end="629" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="986">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="4701" selection-end="4701" vertical-scroll-proportion="0.32917964" vertical-offset="1791" max-vertical-offset="3944">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="9" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ListingsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="33" selection-start="1132" selection-end="1132" vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="63" selection-start="234" selection-end="234" vertical-scroll-proportion="0.24714434" vertical-offset="0" max-vertical-offset="963">
+          <folding />
         </state>
       </provider>
     </entry>

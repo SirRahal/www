@@ -8,6 +8,7 @@
 
     <?php
     $user_ID = User::model()->get_user_ID();
+    $user = User::model()->findByPk($user_ID);
     if (isset($model)){
         $date = $model->date;
     }
@@ -91,7 +92,7 @@
 
         <?php
 
-        $role_list = array('1 - Very Poor', '2 - Poor','3 - Fair','4 - Good','5 - Like New');
+        $role_list = array('0 - No Condition','1 - Very Poor', '2 - Poor','3 - Fair','4 - Good','5 - Like New');
         $options = array(
             'tabindex' => '0',
             'empty' => '(Select Condition)',
@@ -99,6 +100,11 @@
         ?>
 
 
+
+    </div>
+
+
+    <div class="form_container">
         <div class="row">
             <?php echo $form->labelEx($model,'condition'); ?>
             <?php echo $form->dropDownList($model,'condition',$role_list, $options); ?>
@@ -110,10 +116,6 @@
             <?php echo $form->textField($model,'condition_info',array('size'=>60,'maxlength'=>100)); ?>
             <?php echo $form->error($model,'condition_info'); ?>
         </div>
-    </div>
-
-
-    <div class="form_container">
         <!--dimmentions-->
         <h3>Measurements</h3>
         <div class="boxed">
@@ -184,37 +186,38 @@
             </table>
 
         </div>
-        <!--dimmentions-->
-        <h3>Lister's Info</h3>
-        <div class="boxed">
-            <div class="row">
-                <?php echo $form->labelEx($model,'price'); ?>
-                <?php echo $form->textField($model,'price',array('size'=>10,'maxlength'=>10)); ?>
-                <?php echo $form->error($model,'price'); ?>
-            </div>
+        <div <?php if($user['permission']<2){ echo 'style="display:none;"';} ?> >
+            <h3>Lister's Info</h3>
+            <div class="boxed">
+                <div class="row">
+                    <?php echo $form->labelEx($model,'price'); ?>
+                    <?php echo $form->textField($model,'price',array('size'=>10,'maxlength'=>10)); ?>
+                    <?php echo $form->error($model,'price'); ?>
+                </div>
 
-            <div class="row">
-                <?php echo $form->labelEx($model,'listing_note'); ?>
-                <?php echo $form->textField($model,'listing_note',array('size'=>60,'maxlength'=>1500)); ?>
-                <?php echo $form->error($model,'listing_note'); ?>
-            </div>
+                <div class="row">
+                    <?php echo $form->labelEx($model,'listing_note'); ?>
+                    <?php echo $form->textField($model,'listing_note',array('size'=>60,'maxlength'=>1500)); ?>
+                    <?php echo $form->error($model,'listing_note'); ?>
+                </div>
 
-            <div class="row">
-                <?php echo $form->labelEx($model,'ebay_listed'); ?>
-                <?php echo $form->checkBox($model,'ebay_listed'); ?>
-                <?php echo $form->error($model,'ebay_listed'); ?>
-            </div>
+                <div class="row">
+                    <?php echo $form->labelEx($model,'ebay_listed'); ?>
+                    <?php echo $form->checkBox($model,'ebay_listed'); ?>
+                    <?php echo $form->error($model,'ebay_listed'); ?>
+                </div>
 
-            <div class="row">
-                <?php echo $form->labelEx($model,'ebay_lister'); ?>
-                <?php echo $form->textField($model,'ebay_lister'); ?>
-                <?php echo $form->error($model,'ebay_lister'); ?>
-            </div>
+                <div class="row">
+                    <?php echo $form->labelEx($model,'ebay_lister'); ?>
+                    <?php echo $form->textField($model,'ebay_lister'); ?>
+                    <?php echo $form->error($model,'ebay_lister'); ?>
+                </div>
 
-            <div class="row visibility_none">
-                <?php echo $form->labelEx($model,'ebay_date'); ?>
-                <?php echo $form->textField($model,'ebay_date'); ?>
-                <?php echo $form->error($model,'ebay_date'); ?>
+                <div class="row visibility_none">
+                    <?php echo $form->labelEx($model,'ebay_date'); ?>
+                    <?php echo $form->textField($model,'ebay_date'); ?>
+                    <?php echo $form->error($model,'ebay_date'); ?>
+                </div>
             </div>
         </div>
         </div>

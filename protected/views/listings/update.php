@@ -8,12 +8,6 @@ $this->breadcrumbs=array(
 	'Update',
 );
 
-$this->menu=array(
-	array('label'=>'List Listings', 'url'=>array('index')),
-	array('label'=>'Create Listings', 'url'=>array('create')),
-	array('label'=>'View Listings', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Listings', 'url'=>array('admin')),
-);
 ?>
 
 <h1>Update Listings <?php echo $model->ID; ?></h1>
