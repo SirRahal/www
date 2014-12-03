@@ -24,7 +24,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Fields with <span class="required">*</span> are required.<br/>If the information is not avalible, enter <span class="required">N/A</span> or <span class="required">0</span></p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -118,6 +118,7 @@
         </div>
         <!--dimmentions-->
         <h3>Measurements</h3>
+        <h6>Please note that everything is in pounds and inches</h6>
         <div class="boxed">
             <div class="row">
                 <?php echo $form->labelEx($model,'weight'); ?>

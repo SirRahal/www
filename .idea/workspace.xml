@@ -28,29 +28,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/user/admin.php">
+      <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="109" selection-end="314" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1207">
-              <folding />
+            <state line="26" column="185" selection-start="912" selection-end="912" vertical-scroll-proportion="0.45898235" vertical-offset="0" max-vertical-offset="4012">
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <marker date="1417646646528" expanded="true" signature="8092:8180" placeholder="..." />
+                <marker date="1417646646528" expanded="true" signature="8126:8180" placeholder="..." />
+                <marker date="1417646646528" expanded="true" signature="8416:8470" placeholder="..." />
+                <marker date="1417646646528" expanded="true" signature="8729:8783" placeholder="..." />
+                <marker date="1417646646528" expanded="true" signature="9002:9056" placeholder="..." />
+                <marker date="1417646646528" expanded="true" signature="9292:9346" placeholder="..." />
+                <marker date="1417646646528" expanded="true" signature="9601:9657" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
+      <file leaf-file-name="Listings.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/Listings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="277" selection-end="277" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="3995">
-              <folding>
-                <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <marker date="1417645113548" expanded="true" signature="7908:7996" placeholder="..." />
-                <marker date="1417645113548" expanded="true" signature="7942:7996" placeholder="..." />
-                <marker date="1417645113548" expanded="true" signature="8232:8286" placeholder="..." />
-                <marker date="1417645113548" expanded="true" signature="8545:8599" placeholder="..." />
-                <marker date="1417645113548" expanded="true" signature="8818:8872" placeholder="..." />
-                <marker date="1417645113548" expanded="true" signature="9108:9162" placeholder="..." />
-                <marker date="1417645113548" expanded="true" signature="9417:9473" placeholder="..." />
-              </folding>
+            <state line="55" column="19" selection-start="1435" selection-end="1435" vertical-scroll-proportion="-10.461538" vertical-offset="663" max-vertical-offset="3128">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,10 +73,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="28" selection-start="3557" selection-end="3557" vertical-scroll-proportion="-39.0" vertical-offset="278" max-vertical-offset="1751">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/listings/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="63" selection-start="234" selection-end="234" vertical-scroll-proportion="0.24714434" vertical-offset="0" max-vertical-offset="963">
+            <state line="14" column="63" selection-start="234" selection-end="234" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
@@ -85,7 +94,7 @@
       <file leaf-file-name="update.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/listings/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
+            <state line="13" column="63" selection-start="270" selection-end="270" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -167,18 +176,18 @@
         <option value="$PROJECT_DIR$/css/screen.css" />
         <option value="$PROJECT_DIR$/js/datatable.js" />
         <option value="$PROJECT_DIR$/css/jquery.dataTables.css" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/admin.php" />
         <option value="$PROJECT_DIR$/protected/views/user/admin.php" />
-        <option value="$PROJECT_DIR$/protected/models/Listings.php" />
         <option value="$PROJECT_DIR$/protected/models/User.php" />
         <option value="$PROJECT_DIR$/protected/views/user/view.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/protected/views/listings/view.php" />
-        <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
-        <option value="$PROJECT_DIR$/protected/views/listings/update.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ListingsController.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/create.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/update.php" />
+        <option value="$PROJECT_DIR$/protected/models/Listings.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
       </list>
     </option>
   </component>
@@ -527,13 +536,13 @@
         <state line="177" column="10" selection-start="6160" selection-end="6160" vertical-scroll-proportion="0.0" vertical-offset="3009" max-vertical-offset="3247">
           <folding>
             <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <marker date="1417645113548" expanded="true" signature="7908:7996" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="7942:7996" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="8232:8286" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="8545:8599" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="8818:8872" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="9108:9162" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="9417:9473" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="8092:8180" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="8126:8180" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="8416:8470" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="8729:8783" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="9002:9056" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="9292:9346" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="9601:9657" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -555,9 +564,7 @@
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="52" selection-start="3123" selection-end="3145" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1768">
-          <folding>
-            <marker date="1417553534145" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -644,15 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="104" selection-start="2880" selection-end="2880" vertical-scroll-proportion="0.3707165" vertical-offset="612" max-vertical-offset="1768">
-          <folding>
-            <marker date="1417553534145" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery.dataTables.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="462" column="46" selection-start="17334" selection-end="17334" vertical-scroll-proportion="0.0" vertical-offset="7244" max-vertical-offset="8228">
@@ -688,26 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Listings.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="19" selection-start="2989" selection-end="2995" vertical-scroll-proportion="0.8589474" vertical-offset="510" max-vertical-offset="3128">
+        <state line="76" column="28" selection-start="3557" selection-end="3557" vertical-scroll-proportion="-39.0" vertical-offset="278" max-vertical-offset="1751">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="277" selection-end="277" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="3995">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <marker date="1417645113548" expanded="true" signature="7908:7996" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="7942:7996" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="8232:8286" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="8545:8599" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="8818:8872" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="9108:9162" placeholder="..." />
-            <marker date="1417645113548" expanded="true" signature="9417:9473" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,7 +702,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/listings/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
+        <state line="13" column="63" selection-start="270" selection-end="270" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="63" selection-start="234" selection-end="234" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
@@ -732,10 +721,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/listings/create.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Listings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="63" selection-start="234" selection-end="234" vertical-scroll-proportion="0.24714434" vertical-offset="0" max-vertical-offset="963">
+        <state line="55" column="19" selection-start="1435" selection-end="1435" vertical-scroll-proportion="-10.461538" vertical-offset="663" max-vertical-offset="3128">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="185" selection-start="912" selection-end="912" vertical-scroll-proportion="0.45898235" vertical-offset="0" max-vertical-offset="4012">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <marker date="1417646646528" expanded="true" signature="8092:8180" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="8126:8180" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="8416:8470" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="8729:8783" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="9002:9056" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="9292:9346" placeholder="..." />
+            <marker date="1417646646528" expanded="true" signature="9601:9657" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

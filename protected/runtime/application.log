@@ -3362,3 +3362,15 @@ in C:\wamp\www\index.php (13)
 2014/12/03 22:22:44 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
 in C:\wamp\www\protected\controllers\ListingsController.php (72)
 in C:\wamp\www\index.php (13)
+2014/12/03 22:31:25 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/03 22:31:25 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/03 22:44:22 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/03 22:44:22 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)

@@ -53,7 +53,7 @@ class Listings extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			/*array('list_by, inventory, date, photo_numbers, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_lister, ebay_date', 'required'),*/
+			array('inventory, photo_numbers, manufacturer, model_number, condition, weight, length_1, width_1, height_1', 'required'),
 			array('list_by, condition, ebay_listed, ebay_lister', 'numerical', 'integerOnly'=>true),
 			array('inventory, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2', 'length', 'max'=>15),
 			array('photo_numbers, internal_number, manufacturer, condition_info', 'length', 'max'=>100),
@@ -101,13 +101,13 @@ class Listings extends CActiveRecord
 			'condition' => 'Condition',
 			'condition_info' => 'Condition Info',
 			'weight' => 'Weight',
-			'length_1' => 'Length 1',
-			'width_1' => 'Width 1',
-			'height_1' => 'Height 1',
-			'dims_2' => 'Dims 2',
-			'length_2' => 'Length 2',
-			'width_2' => 'Width 2',
-			'height_2' => 'Height 2',
+			'length_1' => 'Length',
+			'width_1' => 'Width',
+			'height_1' => 'Height',
+			'dims_2' => 'Secondary Dimensions',
+			'length_2' => '2nd Length',
+			'width_2' => '2nd Width',
+			'height_2' => '2nd Height',
 			'listing_note' => 'Listing Note',
 			'ebay_listed' => 'Ebay Listed',
 			'ebay_lister' => 'Ebay Lister',
