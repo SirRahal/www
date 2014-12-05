@@ -44,7 +44,7 @@ $this->menu=array(
     <tbody>
     <?php foreach($model->listings as $post){ ?>
         <tr>
-            <td><a class="link" href="/index.php/postings/update/<?php echo $post->ID; ?>">Edit</a></td>
+            <td><a class="link" href="/index.php/listings/update/<?php echo $post->ID; ?>">Edit</a></td>
             <td><a class="link" href="/index.php/listings/view/<?php echo $post->ID; ?>">View</a></td>
             <td><?php echo $post->ID; ?></td>
             <td><?php echo $post->internal_number; ?></td>

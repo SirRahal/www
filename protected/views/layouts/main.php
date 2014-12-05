@@ -4,7 +4,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 	<!-- blueprint CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 	<!--[if lt IE 8]>
@@ -53,23 +54,29 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <?php if (Yii::app()->user->name != 'Guest') { ?>
-                    <li>
-                        <a href="/index.php/site/logout">Logout <?php echo Yii::app()->user->name ?></a>
-                    </li>
-                    <?php } else { ?>
-                    <li>
-                        <a href="/index.php/site/login">Login</a>
-                    </li>
-                    <?php } ?>
+
                     <?php if (Yii::app()->user->name == 'admin'){ ?>
-                    <li>
-                        <a href="/index.php/user/admin">Users</a>
-                    </li>
+                        <li>
+                            <a href="/index.php/user/admin">Users</a>
+                        </li>
                     <?php } ?>
-                    <li>
-                        <a href="/index.php/listings/admin">Listings</a>
-                    </li>
+                    <?php if (Yii::app()->user->name != 'Guest') { ?>
+                        <li>
+                            <a href="/index.php/site/logout">Logout <?php echo ucfirst (Yii::app()->user->name); ?></a>
+                        </li>
+                        <li>
+                            <a href="/index.php/listings/admin">All Listings</a>
+                        </li>
+                    <?php } else { ?>
+                        <li>
+                            <a href="/index.php/site/login">Login</a>
+                        </li>
+                    <?php } ?>
+                    <?php if(Yii::app()->user->name != 'Guest' && User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
+                        <li>
+                            <a href="/index.php/listings/not_on_ebay">Listings Not On Ebay</a>
+                        </li>
+                    <?php } ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

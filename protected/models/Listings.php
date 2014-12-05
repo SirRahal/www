@@ -55,7 +55,8 @@ class Listings extends CActiveRecord
 		return array(
 			array('inventory, photo_numbers, manufacturer, model_number, condition, weight, length_1, width_1, height_1', 'required'),
 			array('list_by, condition, ebay_listed, ebay_lister', 'numerical', 'integerOnly'=>true),
-			array('inventory, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2', 'length', 'max'=>15),
+			array('weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2', 'length', 'max'=>15),
+            array('inventory', 'length', 'max'=>45),
 			array('photo_numbers, internal_number, manufacturer, condition_info', 'length', 'max'=>100),
 			array('description', 'length', 'max'=>1000),
 			array('price', 'length', 'max'=>10),

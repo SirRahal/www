@@ -32,7 +32,7 @@ class ListingsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','not_on_ebay'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -142,6 +142,10 @@ class ListingsController extends Controller
 			'model'=>$model,
 		));
 	}
+
+    public function actionNot_on_ebay(){
+        $this->render('not_on_ebay');
+    }
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

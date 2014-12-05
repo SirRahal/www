@@ -14,7 +14,24 @@
     }
         $date = date("d-m-y");
     ?>
+<style>
+    table{
+        border-collapse: separate;
+        border-spacing: 20px 0px;
+    }
+</style>
 
+    <!--If it is a copy-->
+    <?php
+    $url = $_SERVER['REQUEST_URI'];
+    if( strpos( $url, 'create/' ) !== false ) {
+        $exploded_url = explode('/',$url);
+        $listing_copied = end($exploded_url);
+        $model = Listings::model()->findByPk($listing_copied);
+        // Do something
+        echo("<h3 class='red_text'>Copied Item</h3>");
+    }
+    ?>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'listings-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
@@ -37,7 +54,7 @@
 
         <div class="row">
             <?php echo $form->labelEx($model,'inventory'); ?>
-            <?php echo $form->textField($model,'inventory',array('size'=>15,'maxlength'=>15)); ?>
+            <?php echo $form->textField($model,'inventory',array('size'=>15,'maxlength'=>45)); ?>
             <?php echo $form->error($model,'inventory'); ?>
         </div>
 
@@ -98,9 +115,6 @@
             'empty' => '(Select Condition)',
         );
         ?>
-
-
-
     </div>
 
 

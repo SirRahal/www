@@ -196,8 +196,28 @@ div.search-form
 }
 .boxed{
     border: solid 1px #888888;
+    padding:10px;
 }
 .form_container{
     width:50%;
     float: left;
+}
+.ebay_div{
+    background: #ffffff;
+    padding:10px;
+}
+.text_center{
+    text-align: center;
+}
+.green_text{
+    color:green;
+}
+.red_text{
+    color:red;
+}
+.blue_text{
+    color:blue;
+}
+.mid_font{
+    font-size: 20px;
 }

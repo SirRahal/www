@@ -3374,3 +3374,277 @@ in C:\wamp\www\index.php (13)
 2014/12/03 22:44:22 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
 in C:\wamp\www\protected\controllers\ListingsController.php (96)
 in C:\wamp\www\index.php (13)
+2014/12/04 15:29:41 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/04 15:29:41 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/04 15:29:52 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/04 15:29:52 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/04 15:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "postings/update".' in C:\wamp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('postings/update')
+#1 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/postings/update/8
+HTTP_REFERER=http://localhost/index.php/user/3
+---
+2014/12/04 15:31:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "postings/update".' in C:\wamp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('postings/update')
+#1 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/postings/update/7
+HTTP_REFERER=http://localhost/index.php/user/3
+---
+2014/12/04 15:31:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "postings/edit".' in C:\wamp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('postings/edit')
+#1 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/postings/edit/7
+---
+2014/12/04 15:31:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "postings/edit".' in C:\wamp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('postings/edit')
+#1 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/postings/edit/1
+---
+2014/12/04 15:31:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "postings/edit".' in C:\wamp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('postings/edit')
+#1 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/postings/edit/7
+---
+2014/12/04 15:31:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "postings/update".' in C:\wamp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('postings/update')
+#1 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/postings/update/7
+HTTP_REFERER=http://localhost/index.php/user/3
+---
+2014/12/04 16:47:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "postings/update".' in C:\wamp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('postings/update')
+#1 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/postings/update/1
+HTTP_REFERER=http://localhost/index.php/user/1
+---
+2014/12/04 19:23:01 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/04 19:23:01 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/04 19:45:13 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/04 19:45:13 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/04 19:53:08 [error] [php] Trying to get property of non-object (C:\wamp\www\protected\views\layouts\main.php:73)
+Stack trace:
+#0 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\wamp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\wamp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\wamp\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\wamp\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 C:\wamp\www\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\wamp\www\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\wamp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\wamp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in C:\wamp\www\protected\views\layouts\main.php (73)
+in C:\wamp\www\protected\views\layouts\column1.php (6)
+in C:\wamp\www\protected\controllers\SiteController.php (32)
+2014/12/04 19:57:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('not_on_ebay')
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/not_on...')
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/listings/not_on_ebay
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2014/12/04 19:57:52 [error] [exception.CException] exception 'CException' with message 'ListingsController cannot find the requested view "not_on_ebay".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('not_on_ebay', NULL, true)
+#1 C:\wamp\www\protected\controllers\ListingsController.php(147): CController->render('not_on_ebay')
+#2 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionNot_on_ebay()
+#3 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('not_on_ebay')
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/not_on...')
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/listings/not_on_ebay
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2014/12/04 19:57:53 [error] [exception.CException] exception 'CException' with message 'ListingsController cannot find the requested view "not_on_ebay".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('not_on_ebay', NULL, true)
+#1 C:\wamp\www\protected\controllers\ListingsController.php(147): CController->render('not_on_ebay')
+#2 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionNot_on_ebay()
+#3 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('not_on_ebay')
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/not_on...')
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/listings/not_on_ebay
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2014/12/04 19:57:55 [error] [exception.CException] exception 'CException' with message 'ListingsController cannot find the requested view "not_on_ebay".' in C:\wamp\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('not_on_ebay', NULL, true)
+#1 C:\wamp\www\protected\controllers\ListingsController.php(147): CController->render('not_on_ebay')
+#2 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionNot_on_ebay()
+#3 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('not_on_ebay')
+#12 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/not_on...')
+#13 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/listings/not_on_ebay
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2014/12/04 20:01:28 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/04 20:01:28 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/04 20:01:47 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/04 20:01:47 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/04 20:07:10 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/04 20:07:10 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/04 20:07:27 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/04 20:07:27 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/05 15:04:23 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/05 15:04:23 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/05 15:29:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "_form".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('_form')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('_form')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/_form')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/_form/1
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2014/12/05 15:31:23 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/05 15:31:23 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/05 15:53:10 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/05 15:53:10 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/05 15:56:25 [error] [php] explode() expects at least 2 parameters, 1 given (C:\wamp\www\protected\views\listings\_form.php:28)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CBaseController.php(95): ListingsController->renderInternal()
+#1 C:\wamp\yii\framework\web\CController.php(869): ListingsController->renderFile()
+#2 C:\wamp\www\protected\views\listings\create.php(15): ListingsController->renderPartial()
+#3 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#4 C:\wamp\yii\framework\web\CBaseController.php(95): ListingsController->renderInternal()
+#5 C:\wamp\yii\framework\web\CController.php(869): ListingsController->renderFile()
+#6 C:\wamp\yii\framework\web\CController.php(782): ListingsController->renderPartial()
+#7 C:\wamp\www\protected\controllers\ListingsController.php(79): ListingsController->render()
+#8 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionCreate()
+#9 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): ListingsController->runAction()
+#11 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): ListingsController->filterAccessControl()
+#14 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\yii\framework\web\CController.php(265): ListingsController->runActionWithFilters()
+#17 C:\wamp\yii\framework\web\CWebApplication.php(282): ListingsController->run()
+#18 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/listings/create/9
+in C:\wamp\www\protected\views\listings\_form.php (28)
+in C:\wamp\www\protected\views\listings\create.php (15)
+in C:\wamp\www\protected\controllers\ListingsController.php (79)
+2014/12/05 15:58:03 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2014/12/05 15:58:03 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
