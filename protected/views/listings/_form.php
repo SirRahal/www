@@ -274,4 +274,12 @@
         $("#mulitplefileuploader").uploadFile(settings);
 
     });
+    function checkvalue(){
+        var files = document.getElementsByClassName('upload-filename');
+
+            alert(files.toSource());
+
+    }
 </script>
+
+<button onclick="checkvalue()">Check Value</button>
