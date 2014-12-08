@@ -63,7 +63,10 @@
             <?php echo $form->textField($model,'date',array('value'=>$date)); ?>
             <?php echo $form->error($model,'date'); ?>
         </div>
-
+        <script src="/js/jquery.js"></script>
+        <script src="/js/fileuploadmulti.min.js"></script>
+        <div id="mulitplefileuploader">Upload</div>
+        <div id="status"></div>
         <div class="row">
             <?php echo $form->labelEx($model,'photo_numbers'); ?>
             <?php echo $form->textField($model,'photo_numbers',array('size'=>60,'maxlength'=>100)); ?>
@@ -243,3 +246,32 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+
+<script>
+    $(document).ready(function()
+    {
+
+        var settings = {
+            url: "/upload.php",
+            method: "POST",
+            allowedTypes:"jpg,png,gif,doc,pdf,zip",
+            fileName: "myfile",
+            multiple: true,
+            onSuccess:function(files,data,xhr)
+            {
+                $("#status").html("<font color='green'>Upload is success</font>");
+            },
+            afterUploadAll:function()
+            {
+                alert("all images uploaded!!");
+            },
+            onError: function(files,status,errMsg)
+            {
+                $("#status").html("<font color='red'>Upload is Failed</font>");
+            }
+        }
+        $("#mulitplefileuploader").uploadFile(settings);
+
+    });
+</script>
