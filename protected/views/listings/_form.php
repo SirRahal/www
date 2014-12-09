@@ -72,12 +72,6 @@
         </div>
 
         <div class="row">
-            <?php echo $form->labelEx($model,'photo_numbers'); ?>
-            <?php echo $form->textField($model,'photo_numbers',array('size'=>60,'maxlength'=>100)); ?>
-            <?php echo $form->error($model,'photo_numbers'); ?>
-        </div>
-
-        <div class="row">
             <?php echo $form->labelEx($model,'description'); ?>
             <?php echo $form->textArea($model,'description',array('maxlength'=>500,'rows'=>4,'cols'=>60)); ?>
             <?php echo $form->error($model,'description'); ?>
@@ -240,11 +234,23 @@
                     <?php echo $form->textField($model,'ebay_date'); ?>
                     <?php echo $form->error($model,'ebay_date'); ?>
                 </div>
+
+                <div class="row">
+                    <?php echo $form->labelEx($model,'sold'); ?>
+                    <?php echo $form->checkBox($model,'sold'); ?>
+                    <?php echo $form->error($model,'sold'); ?>
+                </div>
+
+                <div class="row visibility_none">
+                    <?php echo $form->labelEx($model,'sold_date'); ?>
+                    <?php echo $form->textField($model,'sold_date'); ?>
+                    <?php echo $form->error($model,'sold_date'); ?>
+                </div>
             </div>
         </div>
         </div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create & Upload Images' : 'Save & Upload Images'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
