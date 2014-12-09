@@ -53,6 +53,18 @@ $this->menu=array(
         padding-right:20px;
     }
 </style>
+
+<div>
+    <h1>Images</h1>
+    <div>
+        <?php if($model->photo_numbers != '') {
+            $image_names = explode(' ',$model->photo_numbers);
+            foreach ($image_names as $image_name) {
+            ?>
+            <img src="/uploads/<?php echo $image_name; ?>" width="200">
+        <?php } }?>
+    </div>
+</div>
 <?php if(User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
 <h1>Ebay Listing</h1>
 <h6>Copy And Past Info Below</h6>  <a href="/index.php/listings/update/<?php echo $model->ID; ?>" style="float:right; margin-top: -30px;"><b>Activate this as on Ebay</b></a>

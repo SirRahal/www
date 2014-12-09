@@ -11599,3 +11599,17 @@ Stack trace:
 REQUEST_URI=/index.php/listings/upload.php
 HTTP_REFERER=http://localhost/index.php/listings/create
 ---
+2014/12/09 14:28:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testing".' in C:\wamp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('testing')
+#1 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/testing
+---
+2014/12/09 15:21:25 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)
+2014/12/09 15:21:25 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (96)
+in C:\wamp\www\index.php (13)

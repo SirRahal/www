@@ -63,10 +63,14 @@
             <?php echo $form->textField($model,'date',array('value'=>$date)); ?>
             <?php echo $form->error($model,'date'); ?>
         </div>
-        <script src="/js/jquery.js"></script>
-        <script src="/js/fileuploadmulti.min.js"></script>
-        <div id="mulitplefileuploader">Upload</div>
-        <div id="status"></div>
+
+        <div class="row">
+            <script src="/js/jquery.js"></script>
+            <script src="/js/fileuploadmulti.min.js"></script>
+            <textarea id="mulitplefileuploader">upload</textarea>
+            <div id="status"></div>
+        </div>
+
         <div class="row">
             <?php echo $form->labelEx($model,'photo_numbers'); ?>
             <?php echo $form->textField($model,'photo_numbers',array('size'=>60,'maxlength'=>100)); ?>
@@ -280,6 +284,8 @@
             alert(files.toSource());
 
     }
+
+
 </script>
 
 <button onclick="checkvalue()">Check Value</button>
