@@ -72,7 +72,7 @@
       <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="15" selection-start="21" selection-end="21" vertical-scroll-proportion="0.017653167" vertical-offset="0" max-vertical-offset="1326">
+            <state line="10" column="19" selection-start="198" selection-end="198" vertical-scroll-proportion="0.17653167" vertical-offset="0" max-vertical-offset="1326">
               <folding />
             </state>
           </provider>
@@ -774,7 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="15" selection-start="21" selection-end="21" vertical-scroll-proportion="0.017653167" vertical-offset="0" max-vertical-offset="1326">
+        <state line="10" column="19" selection-start="198" selection-end="198" vertical-scroll-proportion="0.17653167" vertical-offset="0" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>
