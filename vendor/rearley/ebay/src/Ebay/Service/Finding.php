@@ -43,30 +43,30 @@ class Finding extends \Ebay\Service\Base {
     public function __construct() {
         parent::__construct();
     }
-    
+
     /**
      * Sets up the headers for the Finding Service.
      */
     private function setupHeaders($request){
-        
+
         // API Level
         $this->setHeader('X-EBAY-SOA-SERVICE-VERSION',$this->callVersion);
-        
+
         // Site ID
         $this->setHeader('X-EBAY-SOA-GLOBAL-ID',$this->siteId);
-        
+
         // AppId
         $this->setHeader('X-EBAY-SOA-SECURITY-APPNAME',$this->appId);
-        
+
         // Content Type
         $this->setHeader("X-EBAY-SOA-MESSAGE-ENCODING", "UTF-8");
-        
+
         // Request Encoding
         $this->setHeader("X-EBAY-SOA-REQUEST-DATA-FORMAT", $request->getRequestType());
-        
+
         // Response Encoding
         $this->setHeader("X-EBAY-SOA-RESPONSE-DATA-FORMAT", $request->getResponseType());
-        
+
         // Call Name
         $this->setHeader("X-EBAY-SOA-OPERATION-NAME", $request->getCallName());
     }
@@ -91,7 +91,7 @@ class Finding extends \Ebay\Service\Base {
         // Set XML Header/Footer
         $request->setCallHeader('<' . $request->getCallName() . 'Request xmlns="http://www.ebay.com/marketplace/search/v1/services">');
         $request->setCallFooter('</' . $request->getCallName() . 'Request>');
-        
+
         // Call Parent Function
         return parent::makeRequest($request);
     }

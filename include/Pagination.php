@@ -1,5 +1,5 @@
 <?php
-namespace EbayShop;
+namespace EbayStore;
 
 /**
  * The Flexible PHP pagination class was designed to be the easiest to use PHP Pagination system without losing any customization options.

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Homepage</title>
+    <title>Nu-Tek-Sales</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -66,29 +66,49 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Shop Name</p>
+                <p class="lead">Nu-Tek-Sales</p>
+                <form role="form" method="get" action="<?php echo str_replace('index.php', '', $_SERVER['PHP_SELF']) . '?' . htmlspecialchars($_SERVER['QUERY_STRING']);?>">
+                    <?php if (isset($_GET['p'])):?>
+                        <input type="hidden" name="p" value="<?php echo htmlspecialchars($_GET['p']);?>"/>
+                    <?php endif;?>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="keyword" id="searchId" placeholder="Search items" value="<?php echo isset($_GET['keyword']) ? htmlspecialchars($_GET['keyword']) : '';?>" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
+                <?php if (isset($categories) && !empty($categories)):?>
+                <?php foreach ($categories as $cat):?>
+                    <a href="<?php echo str_replace('index.php', '', $_SERVER['PHP_SELF']) . '?category=' . htmlspecialchars($cat['CategoryID']);?>" class="list-group-item"><?php if ($category == $cat['CategoryID']):?><strong><?php endif;?><?php echo htmlspecialchars($cat['Name']);?> (<?php echo htmlspecialchars($cat['Count']);?>)<?php if ($category == $cat['CategoryID']):?></strong><?php endif;?></a>
+                <?php endforeach;?>
+                <?php endif;?>
                 </div>
             </div>
 
             <div class="col-md-9">
 
                 <div class="row">
+                    <?php if (isset($error) && strlen($error) > 0):?>
+                        <div class="alert alert-danger" role="alert"><?php echo $error;?></div>
+                    <?php endif;?>
 
+                    <?php if (isset($items) && !empty($items)):?>
                     <?php foreach ($items as $item):?>
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <a href="<?php echo $item->pictureURLSuperSize;?>"><img src="<?php echo $item->pictureURLLarge;?>" alt="<?php echo $item->title;?>" /></a>
+                            <a href="<?php echo $item->pictureURLSuperSize;?>"><img src="<?php echo $item->pictureURLLarge;?>" alt="<?php echo htmlspecialchars($item->title);?>" /></a>
                             <div class="caption">
-                                <h5><?php echo $item->title;?></h5>
+                                <h5><?php echo htmlspecialchars($item->title);?></h5>
                                 <h4 class="text-center">$<?php echo number_format((strval($item->listingInfo->buyItNowAvailable) === 'true' ? floatval($item->listingInfo->buyItNowPrice) : floatval($item->sellingStatus->currentPrice)), 2, '.', ',');?></h4>
                             </div>
                         </div>
                     </div>
                     <?php endforeach;?>
+                    <?php endif;?>
 
                 </div>
 

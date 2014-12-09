@@ -1,8 +1,0 @@
-{
-    "require": {
-        "rearley/ebay" : "~1.0"
-    },
-    "autoload": {
-        "psr-4": {"EbayShop\\": "include/"}
-    }
-}

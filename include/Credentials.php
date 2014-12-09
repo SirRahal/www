@@ -1,13 +1,13 @@
 <?php
 
-namespace EbayShop;
+namespace EbayStore;
 
 /**
  * Class ShopCredentials
  *
  * Keeps access data for eBay API
  *
- * @package EbayShop
+ * @package EbayStore
  */
 class Credentials
 {
@@ -41,10 +41,10 @@ class Credentials
      */
 	public function __construct($appId = null, $certId = null, $deviceId = null, $isSandbox = null)
 	{
-        $this->setAppId(isset($appId) ? $appId : APP_ID);
-        $this->setCertId(isset($certId) ? $certId : CERT_ID);
-        $this->setDeviceId(isset($deviceId) ? $deviceId : DEVICE_ID);
-        $this->setIsSandbox(isset($isSandbox) ? $isSandbox : IS_SANDBOX);
+        $this->setAppId(isset($appId) ? $appId : EBAY_APP_ID);
+        $this->setCertId(isset($certId) ? $certId : EBAY_CERT_ID);
+        $this->setDeviceId(isset($deviceId) ? $deviceId : EBAY_DEVICE_ID);
+        $this->setIsSandbox(isset($isSandbox) ? $isSandbox : EBAY_IS_SANDBOX);
 	}
 
     /**

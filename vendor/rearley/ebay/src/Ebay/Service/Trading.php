@@ -51,26 +51,26 @@ class Trading extends \Ebay\Service\Base {
         
         // API Level
         $this->setHeader('X-EBAY-API-COMPATIBILITY-LEVEL',$this->callVersion);
-        
-        // Site ID
-        $this->setHeader('X-EBAY-API-SITEID',$this->siteId);
-        
+
         // AppId
         $this->setHeader('X-EBAY-API-APP-NAME',$this->appId);
-        
+
         // DevId
         $this->setHeader('X-EBAY-API-DEV-NAME',$this->devId);
-        
+
         // CertId
         $this->setHeader('X-EBAY-API-CERT-NAME',$this->certId);
-        
-        // Content Type
-        $this->setHeader("Content-Type", "text/xml");        
-        
+
+        // Site ID
+        $this->setHeader('X-EBAY-API-SITEID',$this->siteId);
+
         // Call Name
         $this->setHeader("X-EBAY-API-CALL-NAME", $request->getCallName());
-        
-        $this->setHeader("Expect", "");
+
+        // Content Type
+        $this->setHeader("Content-Type", "text/xml");
+
+        //$this->setHeader("Expect", "");
     }
 
     /**
@@ -81,6 +81,7 @@ class Trading extends \Ebay\Service\Base {
     public function makeRequest(\Ebay\Common\Request $request, $requireCredentials = true) {
         
         // Trading Call Headers
+        $this->clearHeaders();
         $this->setupHeaders($request);
         
         // Set Endpoint

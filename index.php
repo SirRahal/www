@@ -1,8 +1,13 @@
 <?php
 
-use \EbayShop\Credentials;
-use \EbayShop\Manager;
-use \EbayShop\Pagination;
+use \EbayStore\Credentials;
+use \EbayStore\Manager;
+use \EbayStore\Pagination;
+use \EbayStore\FindingFilter;
+use \EbayStore\ShoppingFilter;
+
+# Start session
+session_start();
 
 # Require configuration constants
 require __DIR__ . '/config.php';
@@ -10,21 +15,58 @@ require __DIR__ . '/config.php';
 require __DIR__ . '/vendor/autoload.php';
 
 # Create manager object to get items
-$shop = new Manager(new Credentials(), STORE_NAME);
+$shop = new Manager(new Credentials(), EBAY_STORE_NAME);
+
+# Simple caching categories through session
+if (isset($_SESSION['categories']) && !empty($_SESSION['categories'])) {
+    $categories = $_SESSION['categories'];
+} else {
+    try {
+        $categories = $shop->getStoreCategories();
+        $_SESSION['categories'] = $categories;
+    } catch (Exception $e) {
+        $error .= $e->getMessage();
+    }
+}
 
 # Basic params for request and pagination
 $page         = isset($_GET['p']) ? intval($_GET['p']) : 1;
-$maxPerPage   = 21;
-$items        = $shop->getItems(null, $maxPerPage, $page);
-$totalPages   = 100;
-$pageNumber   = $shop->getPageNumber();
-$totalEntries = $maxPerPage * $totalPages;
+$category     = isset($_GET['category']) ? intval($_GET['category']) : null;
+$keyword      = isset($_GET['keyword']) ? trim($_GET['keyword']) : null;
+$maxPerPage   = 18;
 $maxNavItems  = 11;
 
+# Check if we need to filter category
+if ($category > 0) {
+    $filter = new ShoppingFilter();
+    $filter->setMaxPerPage($maxPerPage);
+    $filter->setPageNumber($page);
+    $filter->setCategory($category);
+    $items = $shop->getItemsByCategory($filter);
+    $totalPages = $shop->getTotalPages();
+} else {
+    try {
+        $filter = new FindingFilter();
+        $filter->setMaxPerPage($maxPerPage)
+               ->setPageNumber($page)
+               ->setKeyword($keyword);
+        $items = $shop->getItems($filter);
+        $totalPages = min($shop->getTotalPages(), 100);
+    } catch (Exception $e) {
+        $error .= $e->getMessage();
+    }
+}
+$pageNumber   = $shop->getPageNumber();
+$totalEntries = $maxPerPage * $totalPages;
+
 # Setting up page numbers and links
-$pagination  = new Pagination($maxPerPage, $totalEntries, $maxNavItems, $page);
-$queryString = strlen($_SERVER['QUERY_STRING']) > 0 ? preg_replace('/p=[0-9]+/', 'p={nr}', $_SERVER['QUERY_STRING'], 1) : 'p={nr}';
-$pageNav     = $pagination->get_html(str_replace('index.php', '', $_SERVER['PHP_SELF']) . '?' . $queryString);
+$queryString = preg_match('/p=[0-9]+/', $_SERVER['QUERY_STRING']) ? preg_replace('/p=[0-9]+/', 'p={nr}', $_SERVER['QUERY_STRING'], 1) : $_SERVER['QUERY_STRING'] . '&p={nr}';
+try {
+    $pagination = new Pagination($maxPerPage, $totalEntries, $maxNavItems, $page);
+    $pageNav    = $pagination->get_html(str_replace('index.php', '', $_SERVER['PHP_SELF']) . '?' . $queryString);
+} catch (Exception $e) {
+    $error .= $e->getMessage();
+}
 
 # Require Bootstrap template
 require TEMPLATES_DIR . '/' . basename(__FILE__, '.php') . TEMPLATE_EXTENSION;

@@ -1,8 +1,11 @@
 <?php
 
-namespace EbayShop;
+namespace EbayStore;
 
+use \DateTime;
+use \DateTimeZone;
 use \Exception;
+use \stdClass;
 
 use \Ebay\Common\Field;
 use \Ebay\Common\Request;
@@ -16,7 +19,7 @@ use \Ebay\Service\Trading;
  *
  * Manage requests to eBay for items and categories
  *
- * @package EbayShop
+ * @package EbayStore
  */
 class Manager
 {
@@ -36,49 +39,19 @@ class Manager
     const FINDING_FIND_ITEMS_IN_EBAY_STORES = 'findItemsIneBayStores';
 
     /**
-     * Sorting by best match
-     */
-    const FINDING_SORT_BEST_MATCH = 'BestMatch';
-
-    /**
-     * Sorting by current price highest to lowest
-     */
-    const FINDING_SORT_CURRENT_PRICE_HIGHEST = 'CurrentPriceHighest';
-
-    /**
-     * Sorting by price with shipping highest to lowest
-     */
-    const FINDING_SORT_PRICE_PLUS_SHIPPING_HIGHEST = 'PricePlusShippingHighest';
-
-    /**
-     * Sorting by price with shipping lowest to highest
-     */
-    const FINDING_SORT_PRICE_PLUS_SHIPPING_LOWEST = 'PricePlusShippingLowest';
-
-    /**
-     * Sorting by time newest first
-     */
-    const FINDING_SORT_START_TIME_NEWEST = 'StartTimeNewest';
-
-    /**
-     * Max items per page
-     */
-    const FINDING_DEFAULT_MAX_PER_PAGE = 12;
-
-    /**
-     * Default page number
-     */
-    const FINDING_DEFAULT_PAGE_NUMBER = 1;
-
-    /**
      * Shopping API version
      */
-    const SHOPPING_CALL_VERSION = 899;
+    const SHOPPING_CALL_VERSION = 865;
 
     /**
      * Shopping API site ID (US = 0) http://developer.ebay.com/Devzone/finding/CallRef/Enums/GlobalIdList.html
      */
     const SHOPPING_SITE_ID = 0;
+
+    /**
+     * Shopping API function name for finding items
+     */
+    const SHOPPING_GET_MULTIPLE_ITEMS = 'GetMultipleItems';
 
     /**
      * Trading API version
@@ -89,6 +62,26 @@ class Manager
      * Trading API site ID (US = 0) http://developer.ebay.com/Devzone/finding/CallRef/Enums/GlobalIdList.html
      */
     const TRADING_SITE_ID = 0;
+
+    /**
+     * Trading API function name for getting store info with categories
+     */
+    const TRADING_GET_STORE = 'GetStore';
+
+    /**
+     * Trading API function name for getting list of items
+     */
+    const TRADING_GET_SELLER_LIST = 'GetSellerList';
+
+    /**
+     * Max days to scan for items in past
+     */
+    const MAX_DAYS_TO_PAST = 2560;
+
+    /**
+     * Max days eBay allows to have in period
+     */
+    const MAX_DAYS_EBAY_ALLOW_FOR_PERIOD = 120;
 
     /**
      * @var Credentials
@@ -138,6 +131,7 @@ class Manager
      */
     public function __construct(Credentials $credentials, $storeName = null)
     {
+        # Set eBay access data before any request
         $this->setCredentials($credentials);
         if (isset($storeName)) {
             $this->setStoreName($storeName);
@@ -224,6 +218,7 @@ class Manager
         $this->setUpService($tradingAPI);
         $tradingAPI->setCallVersion(self::TRADING_CALL_VERSION);
         $tradingAPI->setSiteId(self::TRADING_SITE_ID);
+        $tradingAPI->setUserToken(EBAY_TOKEN);
         $this->tradingAPI = $tradingAPI;
         return $this;
     }
@@ -301,25 +296,33 @@ class Manager
         return $this;
     }
 
-    public function getItems($sort = self::FINDING_SORT_BEST_MATCH,
-                             $maxPerPage = self::FINDING_DEFAULT_MAX_PER_PAGE,
-                             $pageNumber = self::FINDING_DEFAULT_PAGE_NUMBER)
+    /**
+     * Get items from the store with sort and search keywords
+     *
+     * @param FindingFilter $filter
+     *
+     * @throws Exception*
+     * @return mixed
+     */
+    public function getItems(FindingFilter $filter)
     {
+        # Prepare request
         $request = new Request(self::FINDING_FIND_ITEMS_IN_EBAY_STORES);
 
         $request->addField(new Field('outputSelector', 'PictureURLLarge'));
         $request->addField(new Field('outputSelector', 'PictureURLSuperSize'));
         $request->addField(new Field('outputSelector', 'GalleryInfo'));
-        $request->addField(new Field('storeName', STORE_NAME));
-        $request->addField(new Field('sortOrder', $sort));
-        $request->addField(new Field('paginationInput', array(new Field('entriesPerPage', $maxPerPage), new Field('pageNumber', $pageNumber))));
-
-        $response = $this->findingAPI->makeRequest($request);
-        $object   = $response->getResponseBody('OBJECT');
-
-        if ($object->Ack === 'Failure') {
-            throw new Exception($object->errorMessage->message);
+        $request->addField(new Field('storeName', EBAY_STORE_NAME));
+        $request->addField(new Field('sortOrder', $filter->getSort()));
+        $request->addField(new Field('paginationInput',
+                                     array(new Field('entriesPerPage', $filter->getMaxPerPage()),
+                                           new Field('pageNumber', $filter->getPageNumber()))));
+        # Add search keywords if needed
+        if (!is_null($filter->getKeyword()) && strlen($filter->getKeyword()) > 0) {
+            $request->addField(new Field('keywords', $filter->getKeyword()));
         }
+
+        $object = $this->makeRequest($this->findingAPI, $request);
 
         $this->setPageNumber(intval($object->paginationOutput->pageNumber));
         $this->setTotalPages(intval($object->paginationOutput->totalPages));
@@ -327,4 +330,264 @@ class Manager
 
         return $object->searchResult->item;
     }
-} 
+
+    /**
+     * Get list of store custom categories
+     *
+     * @return array
+     * @throws Exception
+     */
+    public function getStoreCategories()
+    {
+        $request = new Request(self::TRADING_GET_STORE);
+        $request->addField(new Field('CategoryStructureOnly', true));
+        $request->addField(new Field('UserID', EBAY_USER_NAME));
+
+        $object = $this->makeRequest($this->tradingAPI, $request);
+
+        $categories = (array) $object->Store->CustomCategories;
+        $categories = $categories['CustomCategory'];
+        usort($categories, function($a, $b) {
+            if (intval($a->Order) == intval($b->Order)) {
+                return 0;
+            }
+            return (intval($a->Order) < intval($b->Order)) ? -1 : 1;
+        });
+        array_push($categories, array_shift($categories));
+        # Move categories to array from objects to be able to serialize it and save to session
+        $arCategories = array();
+        foreach ($categories as $category) {
+            $arCategories[] = array(
+                'Name'       => strval($category->Name),
+                'Order'      => intval($category->Order),
+                'CategoryID' => intval($category->CategoryID)
+            );
+        }
+
+        $sql        = "SELECT `category_id`, COUNT(`id`) AS `cnt` FROM `category_item` GROUP BY `category_id`";
+        $items      = Mysql::getInstance()->query($sql);
+        $arNotEmpty = array();
+        $arCount    = array();
+        foreach ($items as $item) {
+            $arNotEmpty[] = $item['category_id'];
+            $arCount[$item['category_id']] = $item['cnt'];
+        }
+        foreach ($arCategories as $key => $category) {
+            $arCategories[$key]['Count'] = $arCount[$category['CategoryID']];
+            if (!in_array($category['CategoryID'], $arNotEmpty)) {
+                unset($arCategories[$key]);
+            }
+        }
+        return $arCategories;
+    }
+
+    /**
+     * @param Base|Trading|Shopping|Finding $service
+     * @param Request                       $request
+     *
+     * @param boolean|null                  $requireCredentials
+     *
+     * @throws Exception
+     * @return mixed
+     */
+    protected function makeRequest(Base $service, Request $request, $requireCredentials = null)
+    {
+        try {
+            if (!is_null($requireCredentials)) {
+                $response = $service->makeRequest($request, $requireCredentials);
+            } else {
+                $response = $service->makeRequest($request);
+            }
+        } catch (Exception $e) {
+            throw new Exception('eBay API call exception: ' . $e->getMessage());
+        }
+        $object = $response->getResponseBody('OBJECT');
+        if (strval($object->ack) !== 'Success' && strval($object->Ack) !== 'Success') {
+            if (isset($object->error->message)) {
+                $msg = strval($object->error->message);
+            } elseif (isset($object->errorMessage->error->message)) {
+                $msg = strval($object->errorMessage->error->message);
+            } elseif (isset($object->Errors->LongMessage)) {
+                $msg = strval($object->Errors->LongMessage);
+            } else {
+                $msg = 'Unknown eBay error.';
+            }
+            throw new Exception($msg);
+        }
+
+        return $object;
+    }
+
+    /**
+     * Get items filtered by custom eBay category
+     *
+     * @param ShoppingFilter $filter
+     *
+     * @return array
+     * @throws Exception
+     */
+    public function getItemsByCategory(ShoppingFilter $filter)
+    {
+        $IDs = $this->getItemIDs($filter->getCategory(),
+                                 $filter->getMaxPerPage() * ($filter->getPageNumber() - 1),
+                                 $filter->getMaxPerPage());
+        if (count($IDs) <= 0) {
+            return array();
+        }
+
+        $request = new Request(self::SHOPPING_GET_MULTIPLE_ITEMS);
+        $request->addField(new Field('IncludeSelector', 'Details'));
+        foreach ($IDs as $id) {
+            $request->addField(new Field('ItemID', $id));
+        }
+        $object = $this->makeRequest($this->shoppingAPI, $request);
+
+        $items = array();
+        foreach ($object->Item as $ebayItem) {
+            $listingInfo                    = new stdClass();
+            $listingInfo->buyItNowAvailable = 'true';
+            $listingInfo->buyItNowPrice     = floatval($ebayItem->ConvertedCurrentPrice);
+            $item                           = new stdClass();
+            $item->pictureURLSuperSize      = strval($ebayItem->PictureURL[0]);
+            $item->pictureURLLarge          = strval($ebayItem->PictureURL[0]);
+            $item->title                    = strval($ebayItem->Title);
+            $item->listingInfo              = $listingInfo;
+            $items[]                        = $item;
+        }
+
+        $this->setPageNumber($filter->getPageNumber());
+
+        return $items;
+    }
+
+    /**
+     * Downloads categories and put to DB
+     *
+     * @return bool
+     */
+    public function downloadCategories()
+    {
+        $db = Mysql::getInstance();
+
+        # Delete old categories first
+        try {
+            $db->exec('DELETE FROM `category_item`');
+        } catch (Exception $e) {
+            echo $e->getMessage() . "\n" . $e->getTraceAsString();
+        }
+
+        # Iterate 120 days blocks to get all the items
+        $totalItemsDownloaded = 0;
+        $totalItemsSaved      = 0;
+        for ($i = 0; $i < ceil(self::MAX_DAYS_TO_PAST / self::MAX_DAYS_EBAY_ALLOW_FOR_PERIOD); $i++) {
+            $dateEndDays = $i * self::MAX_DAYS_EBAY_ALLOW_FOR_PERIOD;
+            $date    = new DateTime(null, new DateTimeZone('PST'));
+            $dateEnd = $date->modify("-{$dateEndDays} days");
+            $dateBegin = clone $dateEnd;
+            $dateBegin->modify('-' . self::MAX_DAYS_EBAY_ALLOW_FOR_PERIOD . ' day');
+            $page       = 1;
+            $totalPages = 1;
+            echo 'Date begin: ' . $dateBegin->format('Y-m-d H:i:s') . "\n";
+            echo 'Date end: ' . $dateEnd->format('Y-m-d H:i:s') . "\n";
+
+            # Iterate each page in the block
+            while ($page <= $totalPages) {
+                $request = new Request(self::TRADING_GET_SELLER_LIST);
+                $request->addField(new Field('GranularityLevel', 'Coarse'));
+                $request->addField(new Field('StartTimeTo', $dateEnd->format('Y-m-d\TH:i:s\Z')));
+                $request->addField(new Field('StartTimeFrom', $dateBegin->format('Y-m-d\TH:i:s\Z')));
+                $request->addField(new Field('Sort', 1));
+                $request->addField(new Field('UserID', EBAY_USER_NAME));
+                $request->addField(new Field('DetailLevel', 'ItemReturnAttributes'));
+                $request->addField(new Field('Pagination', array(new Field('PageNumber', $page), new Field('EntriesPerPage', 200))));
+                try {
+                    $object = $this->makeRequest($this->tradingAPI, $request);
+                } catch (Exception $e) {
+                    echo $e->getMessage() . "\n" . $e->getTraceAsString() . "\n";
+                    $page++;
+                    continue;
+                }
+
+                $totalPages = intval($object->PaginationResult->TotalNumberOfPages);
+                if ($page == 1) {
+                    echo 'Total pages: ' . $totalPages . "\n";
+                }
+                echo 'Current page: ' . $page . "\n";
+                if ($totalPages <= 0) {
+                    break;
+                }
+                echo 'Items downloaded: ' . count($object->ItemArray->Item) . "\n";
+                $totalItemsDownloaded += count($object->ItemArray->Item);
+
+                $itemsForDb = array();
+                foreach ($object->ItemArray->Item as $item) {
+                    $itemId         = floatval($item->ItemID);
+                    $itemCategoryId = intval($item->Storefront->StoreCategoryID);
+                    $itemEndTime    = new DateTime(strval($item->ListingDetails->EndTime), new DateTimeZone('UTC'));
+                    if ($itemId > 0 && $itemCategoryId > 0 && $itemEndTime >= new DateTime(null, new DateTimeZone('PST'))) {
+                        $itemsForDb[] = "(null, $itemId, $itemCategoryId)";
+                    }
+                }
+                if (count($itemsForDb) <= 0) {
+                    echo "No items to save.\n";
+                    $page++;
+                    continue;
+                }
+                $sql = 'INSERT INTO `category_item` VALUES '
+                       . implode(', ', $itemsForDb)
+                       . ' ON DUPLICATE KEY UPDATE `id` = `id`, `item_id` = `item_id`, `category_id` = `category_id`';
+                try {
+                    $saved = $db->exec($sql);
+                    $totalItemsSaved += $saved;
+                    echo 'Items saved: ' . $saved . "\n";
+                } catch (Exception $e) {
+                    echo 'Error saving to DB: '. $e->getMessage() . "\n" . $e->getTraceAsString() . "\n";
+                }
+
+                $page++;
+            }
+        }
+
+        echo 'Total items downloaded: ' . $totalItemsDownloaded . "\n";
+        echo 'Total items saved: ' . $totalItemsSaved . "\n";
+        return true;
+    }
+
+    /**
+     * Get item IDs from database filtered by category
+     *
+     * @param $category
+     * @param $start
+     * @param $limit
+     *
+     * @return array
+     * @throws Exception
+     */
+    private function getItemIDs($category, $start, $limit)
+    {
+        $category = intval($category);
+        $start    = intval($start);
+        $limit    = intval($limit);
+
+        $db = Mysql::getInstance();
+
+        $IDs = array();
+        try {
+            $sql   = "
+              SELECT SQL_CALC_FOUND_ROWS `item_id` FROM `category_item`
+              WHERE `category_id` = " . $category . "
+              ORDER BY `item_id` DESC LIMIT {$start},{$limit}";
+            $items = $db->query($sql);
+            foreach ($items as $item) {
+                $IDs[] = $item['item_id'];
+            }
+            $sql = "SELECT FOUND_ROWS() AS rows";
+            $items = $db->query($sql);
+            $this->setTotalPages(ceil($items->fetchColumn(0) / $limit));
+        } catch (Exception $e) {
+            throw new Exception('Error fetching items from DB');
+        }
+
+        return $IDs;
+    }
+}

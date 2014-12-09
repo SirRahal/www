@@ -204,4 +204,15 @@ abstract class Base {
 
         return $this;
     }
+
+    /**
+     * Clears headers
+     *
+     * @return Base
+     */
+    protected function clearHeaders()
+    {
+        $this->headers = array();
+        return $this;
+    }
 }
