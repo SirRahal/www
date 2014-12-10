@@ -12467,3 +12467,33 @@ in C:\wamp\www\index.php (13)
 2014/12/10 19:39:22 [warning] [application] Failed to set unsafe attribute "sold" of "Listings".
 in C:\wamp\www\protected\controllers\ListingsController.php (105)
 in C:\wamp\www\index.php (13)
+2014/12/10 20:19:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload_im".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('upload_im')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('upload_im')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/upload...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/upload_im
+---
+2014/12/10 20:19:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload_im".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('upload_im')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('upload_im')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/upload...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/upload_im
+---
+2014/12/10 20:19:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload_im".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('upload_im')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('upload_im')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/upload...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/upload_im
+---
