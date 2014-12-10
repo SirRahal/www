@@ -14,12 +14,15 @@ $this->pageTitle=Yii::app()->name;
 <ul>
     <li>Create listings</li>
     <li>Edit Listings</li>
+    <li>Add Images</li>
     <li>Copy Listings</li>
+    <li>View Listings</li>
 </ul>
 <br/>
 <h6>eBay Listers</h6>
 <ul>
-    <li>Special Views</li>
+    <li>View Listings on Ebay</li>
+    <li>View Listings Not on Ebay</li>
     <li>Mark Items as Ebay Listed</li>
     <li>Mark Items as Sold</li>
 </ul>
@@ -27,8 +30,14 @@ $this->pageTitle=Yii::app()->name;
 <h6>Admin</h6>
 <ul>
     <li>Create Users</li>
-    <li>Mark Items as Ebay Listed</li>
+    <li>Edit Users</li>
+    <li>Change Permissions</li>
     <li>View User Activity</li>
+</ul>
+<br/>
+<h6>Automatic</h6>
+<ul>
+    <li>Delete Images 30days once sold</li>
 </ul>
 
 
