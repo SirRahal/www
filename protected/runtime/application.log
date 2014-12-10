@@ -12438,3 +12438,32 @@ Stack trace:
 REQUEST_URI=/index.php/listings/upload
 in C:\wamp\www\protected\controllers\ListingsController.php (114)
 in C:\wamp\www\index.php (13)
+2014/12/10 19:31:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "creat".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('creat')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('creat')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/creat')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/images/creat
+---
+2014/12/10 19:33:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "creat".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('creat')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('creat')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/creat')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/images/creat
+---
+2014/12/10 19:39:22 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/10 19:39:22 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/10 19:39:22 [warning] [application] Failed to set unsafe attribute "sold" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)

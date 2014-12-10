@@ -1,5 +1,5 @@
 <?php
-$output_dir = "uploads/";
+$output_dir = "images/uploads/";
 
 if(isset($_FILES["myfile"]))
 {
