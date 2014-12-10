@@ -187,6 +187,6 @@ class SchoolController extends Controller
 
     public function actionTicketPopup($id){
         $ticket = Ticket::model()->findByPk($id);
-        $this->renderPartial('ticketpopup',array('ticket'=>$ticket));
+        $this->renderPartial('ticketPopup',array('ticket'=>$ticket));
     }
 }
