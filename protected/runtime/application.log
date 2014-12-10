@@ -12654,3 +12654,333 @@ Stack trace:
 REQUEST_URI=/index.php/listings/upload_images/1
 HTTP_REFERER=http://localhost/index.php/site/login
 ---
+2014/12/10 21:42:15 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:42:15 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:42:15 [warning] [application] Failed to set unsafe attribute "sold" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:42:18 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:27)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (27)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:44:31 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:27)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (27)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:45:29 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:27)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (27)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:45:36 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:27)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (27)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:46:13 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:28)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (28)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:46:39 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:28)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (28)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:50:27 [warning] [application] Failed to set unsafe attribute "date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:50:27 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:50:27 [warning] [application] Failed to set unsafe attribute "sold" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:50:35 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:28)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (28)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:51:47 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:28)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (28)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:52:04 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:28)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (28)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 21:55:41 [error] [php] Undefined variable: fileName (C:\wamp\www\protected\views\upload\upload.php:28)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(17): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (28)
+in C:\wamp\www\protected\controllers\UploadController.php (17)
+in C:\wamp\www\index.php (13)
+2014/12/10 22:09:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#4 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('upload')
+#5 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/upload
+HTTP_REFERER=http://localhost/index.php/listings/upload_images/1
+---
+2014/12/10 22:10:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#4 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('upload')
+#5 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/upload
+HTTP_REFERER=http://localhost/index.php/listings/upload_images/1
+---
+2014/12/10 22:11:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#4 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('upload')
+#5 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/upload
+HTTP_REFERER=http://localhost/index.php/listings/upload_images/1
+---
+2014/12/10 22:12:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#4 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('upload')
+#5 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/upload
+HTTP_REFERER=http://localhost/index.php/listings/upload_images/1
+---
+2014/12/10 22:13:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('upload/view')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/upload/1
+HTTP_REFERER=http://localhost/index.php/listings/upload_images/1
+---
+2014/12/10 22:15:09 [error] [php] Undefined variable: listing_ID (C:\wamp\www\protected\views\upload\upload.php:25)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UploadController.php(18): UploadController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#6 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (25)
+in C:\wamp\www\protected\controllers\UploadController.php (18)
+in C:\wamp\www\index.php (13)
+2014/12/10 22:15:48 [error] [php] move_uploaded_file(images/uploads//index.php/upload_back_disabled.png) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory (C:\wamp\www\protected\views\upload\upload.php:24)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CBaseController.php(95): UploadController->renderInternal()
+#1 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#2 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#3 C:\wamp\www\protected\controllers\UploadController.php(18): UploadController->render()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#7 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (24)
+in C:\wamp\www\protected\controllers\UploadController.php (18)
+in C:\wamp\www\index.php (13)
+2014/12/10 22:16:13 [error] [php] move_uploaded_file(images/uploads//index.php/upload_back_disabled.png) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory (C:\wamp\www\protected\views\upload\upload.php:24)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CBaseController.php(95): UploadController->renderInternal()
+#1 C:\wamp\yii\framework\web\CController.php(869): UploadController->renderFile()
+#2 C:\wamp\yii\framework\web\CController.php(782): UploadController->renderPartial()
+#3 C:\wamp\www\protected\controllers\UploadController.php(18): UploadController->render()
+#4 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): UploadController->actionIndex()
+#5 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\yii\framework\web\CController.php(286): UploadController->runAction()
+#7 C:\wamp\yii\framework\web\CController.php(265): UploadController->runActionWithFilters()
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): UploadController->run()
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/upload
+in C:\wamp\www\protected\views\upload\upload.php (24)
+in C:\wamp\www\protected\controllers\UploadController.php (18)
+in C:\wamp\www\index.php (13)
+2014/12/10 22:20:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#4 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('upload/index')
+#5 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/upload/index/1
+HTTP_REFERER=http://localhost/index.php/listings/upload_images/1
+---
+2014/12/10 22:21:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#4 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('upload/index')
+#5 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/upload/index/1
+HTTP_REFERER=http://localhost/index.php/listings/upload_images/1
+---

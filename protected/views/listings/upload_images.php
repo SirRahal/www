@@ -24,7 +24,7 @@
     {
 
         var settings = {
-            url: "/index.php/upload",
+            url: "/index.php/upload", //Would like to pass the ID here if possible
             method: "POST",
             allowedTypes:"jpg,png,gif,doc,pdf,zip",
             fileName: "myfile",
@@ -55,4 +55,3 @@
 <script src="/js/fileuploadmulti.min.js"></script>
 <div id="mulitplefileuploader">Upload</div>
 <div id="status"></div>
-

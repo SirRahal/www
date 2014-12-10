@@ -3,29 +3,28 @@ $output_dir = "images/uploads/";
 
 if(isset($_FILES["myfile"]))
 {
+
     $ret = array();
 
     $error =$_FILES["myfile"]["error"];
     {
         //this is hardcoded for now just to test.
-        $listing_ID = 1;
+        $listing_ID =1;
+
         if(!is_array($_FILES["myfile"]['name'])) //single file
         {
-            $RandomNum   = time();
-
             $ImageName      = str_replace(' ','-',strtolower($_FILES['myfile']['name']));
             $ImageType      = $_FILES['myfile']['type']; //"image/png", image/jpeg etc.
 
             $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
             $ImageExt       = str_replace('.','',$ImageExt);
             $ImageName      = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
-            $NewImageName = $listing_ID.'_'.$ImageName.'-'.$RandomNum.'.'.$ImageExt;
+            $NewImageName = $listing_ID.'_'.$ImageName.'.'.$ImageExt;
 
             move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir. $NewImageName);
             echo "<br> Error: ".$_FILES["myfile"]["error"];
 
-            $ret[$fileName]= $output_dir.$NewImageName;
-
+            $ret['fileName']= $output_dir.$NewImageName;
 
             $image_entry = new Images();
             $image_entry->image = $NewImageName;
@@ -39,7 +38,6 @@ if(isset($_FILES["myfile"]))
             $fileCount = count($_FILES["myfile"]['name']);
             for($i=0; $i < $fileCount; $i++)
             {
-                $RandomNum   = time();
 
                 $ImageName      = str_replace(' ','-',strtolower($_FILES['myfile']['name'][$i]));
                 $ImageType      = $_FILES['myfile']['type'][$i]; //"image/png", image/jpeg etc.
@@ -47,14 +45,14 @@ if(isset($_FILES["myfile"]))
                 $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
                 $ImageExt       = str_replace('.','',$ImageExt);
                 $ImageName      = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
-                $NewImageName = $listing_ID.'_'.$ImageName.'-'.$RandomNum.'.'.$ImageExt;
+                $NewImageName = $listing_ID.'_'.$ImageName.'.'.$ImageExt;
 
                 $ret[$NewImageName]= $output_dir.$NewImageName;
                 move_uploaded_file($_FILES["myfile"]["tmp_name"][$i],$output_dir.$NewImageName );
 
                 $image_entry = new Images();
                 $image_entry->image = $NewImageName;
-                $image_entry->listing_ID = 1;
+                $image_entry->listing_ID = $listing_ID;
                 if (!$image_entry->save()) {
                     print_r($image_entry->getErrors());
                 }

@@ -28,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ImagesController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImagesController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ImagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.847352" vertical-offset="0" max-vertical-offset="3043">
+            <state line="48" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-31.384615" vertical-offset="0" max-vertical-offset="3043">
               <folding />
             </state>
           </provider>
@@ -40,16 +40,16 @@
       <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/upload/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="13" selection-start="1255" selection-end="1255" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="1258">
+            <state line="39" column="13" selection-start="1356" selection-end="1356" vertical-scroll-proportion="-25.26923" vertical-offset="6" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload_images.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="upload_images.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/listings/upload_images.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="37" selection-start="1207" selection-end="1207" vertical-scroll-proportion="-29.846153" vertical-offset="40" max-vertical-offset="1003">
+            <state line="26" column="37" selection-start="508" selection-end="553" vertical-scroll-proportion="0.3707165" vertical-offset="0" max-vertical-offset="986">
               <folding />
             </state>
           </provider>
@@ -58,19 +58,10 @@
       <file leaf-file-name="UploadController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/UploadController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="236" selection-end="236" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
+            <state line="8" column="0" selection-start="88" selection-end="236" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="408">
               <folding>
                 <element signature="e#6#86#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="5" selection-start="822" selection-end="822" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="2006">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -133,8 +124,8 @@
         <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
         <option value="$PROJECT_DIR$/protected/views/site/error.php" />
         <option value="$PROJECT_DIR$/upload.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/UploadController.php" />
         <option value="$PROJECT_DIR$/protected/views/upload/upload.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/UploadController.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/upload_images.php" />
       </list>
     </option>
@@ -263,65 +254,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="listings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -467,32 +400,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="4" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/upload/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1326">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/uploadfilemulti.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="33" selection-start="1690" selection-end="1690" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/upload/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="12" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/user/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="25" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207" />
@@ -728,16 +635,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/back_disabled.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="5" selection-start="822" selection-end="822" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="2006">
+        <state line="71" column="56" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.61786085" vertical-offset="612" max-vertical-offset="2006">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/UploadController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="236" selection-end="236" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
+        <state line="8" column="0" selection-start="88" selection-end="236" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="408">
           <folding>
             <element signature="e#6#86#0" expanded="true" />
           </folding>
@@ -746,21 +658,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/upload/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="1255" selection-end="1255" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/listings/upload_images.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="37" selection-start="1207" selection-end="1207" vertical-scroll-proportion="-29.846153" vertical-offset="40" max-vertical-offset="1003">
+        <state line="39" column="13" selection-start="1356" selection-end="1356" vertical-scroll-proportion="-25.26923" vertical-offset="6" max-vertical-offset="1224">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ImagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.847352" vertical-offset="0" max-vertical-offset="3043">
+        <state line="48" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-31.384615" vertical-offset="0" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/upload_images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="37" selection-start="508" selection-end="553" vertical-scroll-proportion="0.3707165" vertical-offset="0" max-vertical-offset="986">
           <folding />
         </state>
       </provider>
