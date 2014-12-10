@@ -8,7 +8,8 @@ if(isset($_FILES["myfile"]))
 
     $error =$_FILES["myfile"]["error"];
     {
-
+        //this is hardcoded for now just to test.
+        $listing_ID = 1;
         if(!is_array($_FILES["myfile"]['name'])) //single file
         {
             $RandomNum   = time();
@@ -22,14 +23,14 @@ if(isset($_FILES["myfile"]))
             $NewImageName = $listing_ID.'_'.$ImageName.'-'.$RandomNum.'.'.$ImageExt;
 
             move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir. $NewImageName);
-            //echo "<br> Error: ".$_FILES["myfile"]["error"];
+            echo "<br> Error: ".$_FILES["myfile"]["error"];
 
             $ret[$fileName]= $output_dir.$NewImageName;
 
 
             $image_entry = new Images();
             $image_entry->image = $NewImageName;
-            $image_entry->listing_ID = 1;
+            $image_entry->listing_ID = $listing_ID;
             if (!$image_entry->save()) {
                 print_r($image_entry->getErrors());
             }

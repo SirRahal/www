@@ -31,7 +31,7 @@
       <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="44" selection-start="2225" selection-end="2225" vertical-scroll-proportion="1.0062305" vertical-offset="0" max-vertical-offset="1258">
+            <state line="10" column="49" selection-start="188" selection-end="188" vertical-scroll-proportion="0.17653167" vertical-offset="0" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -299,6 +299,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -689,7 +707,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="44" selection-start="2225" selection-end="2225" vertical-scroll-proportion="1.0062305" vertical-offset="0" max-vertical-offset="1258">
+        <state line="10" column="49" selection-start="188" selection-end="188" vertical-scroll-proportion="0.17653167" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
