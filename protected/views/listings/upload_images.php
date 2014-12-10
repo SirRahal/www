@@ -24,7 +24,7 @@
     {
 
         var settings = {
-            url: "/upload.php",
+            url: "/index.php/upload",
             method: "POST",
             allowedTypes:"jpg,png,gif,doc,pdf,zip",
             fileName: "myfile",
@@ -55,3 +55,4 @@
 <script src="/js/fileuploadmulti.min.js"></script>
 <div id="mulitplefileuploader">Upload</div>
 <div id="status"></div>
+

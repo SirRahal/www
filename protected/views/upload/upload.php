@@ -3,7 +3,6 @@ $output_dir = "images/uploads/";
 
 if(isset($_FILES["myfile"]))
 {
-
     $ret = array();
 
     $error =$_FILES["myfile"]["error"];
