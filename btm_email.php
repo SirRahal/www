@@ -1,22 +1,25 @@
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/CNC-Parts-Auction_as34552';
-$date = 'November 25th';
-$auction_title = 'CNC Replacement Parts Auction';
+$auction_url = 'http://auctions.btmindustrial.com/MONTHLY-MACHINERY-AUCTION_as34551';
+$date = 'December 17th';
+$auction_title = 'Monthly Machinery Auction';
 
 $info = array();
 
-$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=1&ps=50#i20991281";$info[0][1]="http://media.liveauctiongroup.net/i/22651/20991281_1s.jpg?v=8D1C956BE741680";$info[0][2]="Mitsubish MDS-C!-CV-300 Power Supply Unit";
-$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=1&ps=50#i20991283";$info[1][1]="http://media.liveauctiongroup.net/i/22651/20991283_1s.jpg?v=8D1C956C0CAB0B0";$info[1][2]="AB 1391B-ESAA22-AQB, Series D";
-$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=1&ps=50#i20991288";$info[2][1]="http://media.liveauctiongroup.net/i/22651/20991288_1s.jpg?v=8D1C956F5216ED0";$info[2][2]="AB 3 Axis 5 KW Module #8520-355A-GX4-G1-G2";
-$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=1&ps=50#i20991330";$info[3][1]="http://media.liveauctiongroup.net/i/22651/20991330_1s.jpg?v=8D1C963C9923C60";$info[3][2]="Fanuc A03B-0801-C401 Module";
-$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i20991337";$info[4][1]="http://media.liveauctiongroup.net/i/22651/20991337_1s.jpg?v=8D1C9639EBD4520";$info[4][2]="Fanuc A06B-6087-H130 G Power Supply Module";
-$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i20991340";$info[5][1]="http://media.liveauctiongroup.net/i/22651/20991340_1s.jpg?v=8D1C969259D5E90";$info[5][2]="Fanuc A06B-6096-H106 Rev F Servo Amplifier";
-$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i20998975";$info[6][1]="http://media.liveauctiongroup.net/i/22651/20998975_1s.jpg?v=8D1D36FB0726C30";$info[6][2]="AB Panelview 1000 #2711-K10CB, Ser C Rev B FRN 4.10";
-$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i20999052";$info[7][1]="http://media.liveauctiongroup.net/i/22651/20999052_1s.jpg?v=8D1CAD2676D2660";$info[7][2]="KOYO PLC Direct D3-08B 8 Slot Direct Logic 305 Rack w/ Modules";
-$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=2&ps=50#i21011663";$info[8][1]="http://media.liveauctiongroup.net/i/22651/21011663_1s.jpg?v=8D1CC6274C74BB0";$info[8][2]="ABB Servo Drive 3HAB8101-14/08C";
-$info[9][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=3&ps=50#i21034410";$info[9][1]="http://media.liveauctiongroup.net/i/22651/21034410_1s.jpg?v=8D1CDEA1A419EA0";$info[9][2]="Fanuc A06B-0166-B188 Servo Motor";
-$info[10][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=3&ps=50#i21065969";$info[10][1]="http://media.liveauctiongroup.net/i/22651/21065969_1s.jpg?v=8D1D04FE8E16530";$info[10][2]="Fanuc A06B-6120-H045 B Power Supply";
-$info[11][0]="http://auctions.btmindustrial.com/auction.aspx?a=22651&as=34552&p=3&ps=50#i21065971";$info[11][1]="http://media.liveauctiongroup.net/i/22651/21065971_1s.jpg?v=8D1D04FF92B9F50";$info[11][2]="Fanuc A06B-6124-H209-R Servo Amplifier";
+$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21092542";$info[0][1]="http://media.liveauctiongroup.net/i/22650/21092542_1s.jpg?v=8D1DCD1677E8110";$info[0][2]="1992 Mazak QT-18 Turning Center";
+$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21092543";$info[1][1]="http://media.liveauctiongroup.net/i/22650/21092543_1s.jpg?v=8D1DCD1A8018CA0";$info[1][2]="1988 Mazak VQC 15/40 MACHINING CENTER";
+$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21092544";$info[2][1]="http://media.liveauctiongroup.net/i/22650/21092544_1s.jpg?v=8D1DCD1D512B840";$info[2][2]="1991 MAZAK V-414 w/M-32 CONTROL";
+$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21095494";$info[3][1]="http://media.liveauctiongroup.net/i/22650/21095494_1s.jpg?v=8D1DCD1CF5AF1B0";$info[3][2]="1995 Mazak V/414 Machining Center M-Plus";
+$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21095501";$info[4][1]="http://media.liveauctiongroup.net/i/22650/21095501_1s.jpg?v=8D1DCD231E848A0";$info[4][2]="Makino J66 HMC w/Professional L Control";
+$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21095502";$info[5][1]="http://media.liveauctiongroup.net/i/22650/21095502_1s.jpg?v=8D1DDC526E10ED0";$info[5][2]="Milltronics MB-18 CNC Mill w/Centurion VI";
+$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21095504";$info[6][1]="http://media.liveauctiongroup.net/i/22650/21095504_1s.jpg?v=8D1DDCBCCA14050";$info[6][2]="CLAUSING METOSA EL-1565 CNC LATHE";
+$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21095508";$info[7][1]="http://media.liveauctiongroup.net/i/22650/21095508_1s.jpg?v=8D1D390D1D0E430";$info[7][2]="Mazak 1987 CNC H-400 HMC";
+$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21121915";$info[8][1]="http://media.liveauctiongroup.net/i/22650/21121915_1s.jpg?v=8D1DDCA0DEBA570";$info[8][2]="Milltronics Partner 5 CNC Vert Bed Mill";
+$info[9][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21121916";$info[9][1]="http://media.liveauctiongroup.net/i/22650/21121916_1s.jpg?v=8D1DB5EBB1561A0";$info[9][2]="K&T #320 TF-17 w/Newall DRO";
+$info[10][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21134072";$info[10][1]="http://media.liveauctiongroup.net/i/22650/21134072_1s.jpg?v=8D1DB5DDEE8F0C0";$info[10][2]="Okuma LC20 CNC Lathe";
+$info[11][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21156236";$info[11][1]="http://media.liveauctiongroup.net/i/22650/21156236_1s.jpg?v=8D1DB42AC234E30";$info[11][2]="14'' x 32'' Royal / Takisawa Engine Lathe";
+$info[12][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21156237";$info[12][1]="http://media.liveauctiongroup.net/i/22650/21156237_1s.jpg?v=8D1DB42BB1F5D70";$info[12][2]="17'' x 40'' Millport CNC Lathe w/ Crusdaer II L";
+$info[13][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21156403";$info[13][1]="http://media.liveauctiongroup.net/i/22650/21156403_1s.jpg?v=8D1DB612C21BDB0";$info[13][2]="Cincinnati 6P Horizontal Mill w/ Vertical Head";
+$info[14][0]="http://auctions.btmindustrial.com/auction.aspx?a=22650&as=34551&p=1&ps=50#i21158284";$info[14][1]="http://media.liveauctiongroup.net/i/22650/21158284_1s.jpg?v=8D1DC2E8D5C66C0";$info[14][2]="13''Gage Master Optical Comparator";
 
 $count=0;
 ?>
