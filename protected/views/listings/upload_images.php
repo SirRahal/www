@@ -10,13 +10,16 @@
     $url = $_SERVER['REQUEST_URI'];
     if( strpos( $url, 'listings/' ) !== false ) {
         $exploded_url = explode('/',$url);
-        $listing_copied = end($exploded_url);
-        $model = Listings::model()->findByPk($listing_copied);
+        $last_part_of_url = end($exploded_url);
+        $model = Listings::model()->findByPk($last_part_of_url);
+
+
+        $_SESSION['listing_ID']=$last_part_of_url;
 }
 ?>
 
 <h1>
-    Uploading Images for <?php echo $model['ID']; ?>
+    Uploading Images for <?php echo $_SESSION['listing_ID']; ?>
 </h1>
 
 <script>
@@ -55,3 +58,8 @@
 <script src="/js/fileuploadmulti.min.js"></script>
 <div id="mulitplefileuploader">Upload</div>
 <div id="status"></div>
+
+
+<?php foreach ($model->images as $image){ ?>
+    <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200">
+<?php } ?>

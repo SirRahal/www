@@ -3,13 +3,14 @@ $output_dir = "images/uploads/";
 
 if(isset($_FILES["myfile"]))
 {
-
     $ret = array();
 
     $error =$_FILES["myfile"]["error"];
     {
         //this is hardcoded for now just to test.
-        $listing_ID =1;
+            session_start();
+            $name_ID = $_SESSION['listing_ID'];
+            $listing_ID = 1;
 
         if(!is_array($_FILES["myfile"]['name'])) //single file
         {
@@ -19,7 +20,7 @@ if(isset($_FILES["myfile"]))
             $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
             $ImageExt       = str_replace('.','',$ImageExt);
             $ImageName      = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
-            $NewImageName = $listing_ID.'_'.$ImageName.'.'.$ImageExt;
+            $NewImageName = $name_ID.'_'.$ImageName.'.'.$ImageExt;
 
             move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir. $NewImageName);
             echo "<br> Error: ".$_FILES["myfile"]["error"];
@@ -45,7 +46,7 @@ if(isset($_FILES["myfile"]))
                 $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
                 $ImageExt       = str_replace('.','',$ImageExt);
                 $ImageName      = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
-                $NewImageName = $listing_ID.'_'.$ImageName.'.'.$ImageExt;
+                $NewImageName = $name_ID.'_'.$ImageName.'.'.$ImageExt;
 
                 $ret[$NewImageName]= $output_dir.$NewImageName;
                 move_uploaded_file($_FILES["myfile"]["tmp_name"][$i],$output_dir.$NewImageName );

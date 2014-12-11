@@ -29,11 +29,13 @@
  * @property integer $ebay_listed
  * @property integer $ebay_lister
  * @property string $ebay_date
+ * @property integer $sold
  * @property string $sold_date
  *
  * The followings are the available model relations:
- * @property User $ebayLister
+ * @property Images[] $images
  * @property User $listBy
+ * @property User $ebayLister
  */
 class Listings extends CActiveRecord
 {
@@ -53,18 +55,18 @@ class Listings extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('inventory, manufacturer, model_number, condition, weight, length_1, width_1, height_1', 'required'),
-			array('list_by, condition, ebay_listed, ebay_lister', 'numerical', 'integerOnly'=>true),
-			array('weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, sold_date', 'length', 'max'=>15),
-            array('inventory', 'length', 'max'=>45),
-			array('internal_number, manufacturer, condition_info', 'length', 'max'=>100),
+			array('list_by, inventory, date, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_date, sold_date', 'required'),
+			array('list_by, condition, ebay_listed, ebay_lister, sold', 'numerical', 'integerOnly'=>true),
+			array('inventory', 'length', 'max'=>45),
 			array('description', 'length', 'max'=>1000),
+			array('internal_number, manufacturer, condition_info', 'length', 'max'=>100),
 			array('price', 'length', 'max'=>10),
 			array('serial_number, model_number', 'length', 'max'=>50),
 			array('more_info, listing_note', 'length', 'max'=>1500),
+			array('weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2', 'length', 'max'=>15),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, list_by, inventory, date, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_listed, ebay_lister, ebay_date, sold_date', 'safe', 'on'=>'search'),
+			array('ID, list_by, inventory, date, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_listed, ebay_lister, ebay_date, sold, sold_date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -76,8 +78,9 @@ class Listings extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'ebayLister' => array(self::BELONGS_TO, 'User', 'ebay_lister'),
+			'images' => array(self::HAS_MANY, 'Images', 'listing_ID'),
 			'listBy' => array(self::BELONGS_TO, 'User', 'list_by'),
+			'ebayLister' => array(self::BELONGS_TO, 'User', 'ebay_lister'),
 		);
 	}
 
@@ -101,18 +104,19 @@ class Listings extends CActiveRecord
 			'condition' => 'Condition',
 			'condition_info' => 'Condition Info',
 			'weight' => 'Weight',
-			'length_1' => 'Length',
-			'width_1' => 'Width',
-			'height_1' => 'Height',
-			'dims_2' => 'Secondary Dimensions',
-			'length_2' => '2nd Length',
-			'width_2' => '2nd Width',
-			'height_2' => '2nd Height',
+			'length_1' => 'Length 1',
+			'width_1' => 'Width 1',
+			'height_1' => 'Height 1',
+			'dims_2' => 'Dims 2',
+			'length_2' => 'Length 2',
+			'width_2' => 'Width 2',
+			'height_2' => 'Height 2',
 			'listing_note' => 'Listing Note',
 			'ebay_listed' => 'Ebay Listed',
 			'ebay_lister' => 'Ebay Lister',
 			'ebay_date' => 'Ebay Date',
-            'sold_date' => 'Sold Date'
+			'sold' => 'Sold',
+			'sold_date' => 'Sold Date',
 		);
 	}
 
@@ -159,7 +163,8 @@ class Listings extends CActiveRecord
 		$criteria->compare('ebay_listed',$this->ebay_listed);
 		$criteria->compare('ebay_lister',$this->ebay_lister);
 		$criteria->compare('ebay_date',$this->ebay_date,true);
-        $criteria->compare('sold_date',$this->sold_date,true);
+		$criteria->compare('sold',$this->sold);
+		$criteria->compare('sold_date',$this->sold_date,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

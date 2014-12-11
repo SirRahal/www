@@ -54,16 +54,12 @@ $this->menu=array(
 </style>
 
 <div>
-    <h1>Images</h1> EDIT THIS
-    <!--<div>
-        <?php /*if($model->photo_numbers != '') {
-            $image_names = explode(' ',$model->photo_numbers);
-            foreach ($image_names as $image_name) {
-                if($image_name != '' AND $image_name != ' '){
-            */?>
-            <img src="/uploads/<?php /*echo $image_name; */?>" width="200">
-        <?php /*} } }*/?>
-    </div>-->
+    <h1>Images</h1>
+    <div>
+        <?php foreach ($model->images as $image){ ?>
+            <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200">
+        <?php } ?>
+    </div>
 </div>
 <?php if(User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
 <h1>Ebay Listing</h1>
