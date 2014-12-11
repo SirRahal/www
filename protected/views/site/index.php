@@ -39,7 +39,7 @@ $this->pageTitle=Yii::app()->name;
 <br/>
 <h6>Automatic</h6>
 <ul>
-    <li>Delete Images 30days once sold</li>
+    <li>Delete Images 30days once sold (coming soon)</li>
 </ul>
 
 

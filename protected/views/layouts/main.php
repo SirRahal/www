@@ -55,11 +55,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
 
-                    <?php if (Yii::app()->user->name == 'admin'){ ?>
-                        <li>
-                            <a href="/index.php/user/admin">Users</a>
-                        </li>
-                    <?php } ?>
+
                     <?php if (Yii::app()->user->name != 'Guest') { ?>
                         <li>
                             <a href="/index.php/site/logout">Logout <?php echo ucfirst (Yii::app()->user->name); ?></a>
@@ -75,6 +71,11 @@
                     <?php if(Yii::app()->user->name != 'Guest' && User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
                         <li>
                             <a href="/index.php/listings/not_on_ebay">Listings Not On Ebay</a>
+                        </li>
+                    <?php } ?>
+                    <?php if (Yii::app()->user->name == 'admin'){ ?>
+                        <li>
+                            <a href="/index.php/user/admin">Users</a>
                         </li>
                     <?php } ?>
                 </ul>

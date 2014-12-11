@@ -74,25 +74,25 @@
 
         <div class="row">
             <?php echo $form->labelEx($model,'internal_number'); ?>
-            <?php echo $form->textField($model,'internal_number',array('size'=>60,'maxlength'=>100)); ?>
+            <?php echo $form->textField($model,'internal_number',array('size'=>58,'maxlength'=>100)); ?>
             <?php echo $form->error($model,'internal_number'); ?>
         </div>
 
         <div class="row">
             <?php echo $form->labelEx($model,'manufacturer'); ?>
-            <?php echo $form->textField($model,'manufacturer',array('size'=>60,'maxlength'=>100)); ?>
+            <?php echo $form->textField($model,'manufacturer',array('size'=>58,'maxlength'=>100)); ?>
             <?php echo $form->error($model,'manufacturer'); ?>
         </div>
 
         <div class="row">
             <?php echo $form->labelEx($model,'serial_number'); ?>
-            <?php echo $form->textField($model,'serial_number',array('size'=>50,'maxlength'=>50)); ?>
+            <?php echo $form->textField($model,'serial_number',array('size'=>58,'maxlength'=>50)); ?>
             <?php echo $form->error($model,'serial_number'); ?>
         </div>
 
         <div class="row">
             <?php echo $form->labelEx($model,'model_number'); ?>
-            <?php echo $form->textField($model,'model_number',array('size'=>50,'maxlength'=>50)); ?>
+            <?php echo $form->textField($model,'model_number',array('size'=>58,'maxlength'=>50)); ?>
             <?php echo $form->error($model,'model_number'); ?>
         </div>
 
@@ -197,9 +197,13 @@
             </table>
 
         </div>
-        <div <?php if($user['permission']<2){ echo 'style="display:none;"';} ?> >
+
+        </div>
+    <div style="clear:both">
+        <div <?php if($user['permission']<2){ echo 'style="display:none;"'; } ?> >
+            <br/>
             <h3>Lister's Info</h3>
-            <div class="boxed">
+            <div class="form_container">
                 <div class="row">
                     <?php echo $form->labelEx($model,'price'); ?>
                     <?php echo $form->textField($model,'price',array('size'=>10,'maxlength'=>10)); ?>
@@ -208,7 +212,7 @@
 
                 <div class="row">
                     <?php echo $form->labelEx($model,'listing_note'); ?>
-                    <?php echo $form->textField($model,'listing_note',array('size'=>60,'maxlength'=>1500)); ?>
+                    <?php echo $form->textArea($model,'listing_note',array('maxlength'=>1500,'rows'=>4,'cols'=>60)); ?>
                     <?php echo $form->error($model,'listing_note'); ?>
                 </div>
 
@@ -229,21 +233,23 @@
                     <?php echo $form->textField($model,'ebay_date'); ?>
                     <?php echo $form->error($model,'ebay_date'); ?>
                 </div>
+            </div>
 
+            <div class="form_container">
                 <div class="row">
                     <?php echo $form->labelEx($model,'sold'); ?>
                     <?php echo $form->checkBox($model,'sold'); ?>
                     <?php echo $form->error($model,'sold'); ?>
                 </div>
 
-                <div class="row visibility_none">
+                <div class="row">
                     <?php echo $form->labelEx($model,'sold_date'); ?>
-                    <?php echo $form->textField($model,'sold_date'); ?>
+                    <?php echo $form->dateField($model,'sold_date'); ?>
                     <?php echo $form->error($model,'sold_date'); ?>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create & Upload Images' : 'Save & Upload Images'); ?>
 	</div>
