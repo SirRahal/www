@@ -15,6 +15,7 @@ $this->pageTitle=Yii::app()->name;
     <li>Create listings</li>
     <li>Edit Listings</li>
     <li>Add Images</li>
+    <li>Delete Images</li>
     <li>Copy Listings</li>
     <li>View Listings</li>
 </ul>
@@ -31,6 +32,7 @@ $this->pageTitle=Yii::app()->name;
 <ul>
     <li>Create Users</li>
     <li>Edit Users</li>
+    <li>Delete Users</li>
     <li>Change Permissions</li>
     <li>View User Activity</li>
 </ul>

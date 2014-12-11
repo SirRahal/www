@@ -52,15 +52,16 @@ $this->menu=array(
         padding-right:20px;
     }
 </style>
-
-<div>
-    <h1>Images</h1>
+<?php if ($model->images){ ?>
     <div>
-        <?php foreach ($model->images as $image){ ?>
-            <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200">
-        <?php } ?>
+        <h1>Images</h1>
+        <div>
+            <?php foreach ($model->images as $image){ ?>
+                <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200">
+            <?php } ?>
+        </div>
     </div>
-</div>
+<?php } ?>
 <?php if(User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
 <h1>Ebay Listing</h1>
 <h6>Copy And Past Info Below</h6>  <a href="/index.php/listings/update/<?php echo $model->ID; ?>" style="float:right; margin-top: -30px;"><b>Activate this as on Ebay</b></a>

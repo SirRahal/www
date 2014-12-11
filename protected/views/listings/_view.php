@@ -21,10 +21,6 @@
 	<?php echo CHtml::encode($data->date); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('photo_numbers')); ?>:</b>
-	<?php echo CHtml::encode($data->photo_numbers); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
 	<?php echo CHtml::encode($data->description); ?>
 	<br />

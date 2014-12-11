@@ -32,11 +32,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'photo_numbers'); ?>
-		<?php echo $form->textField($model,'photo_numbers',array('size'=>60,'maxlength'=>100)); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'description'); ?>
 		<?php echo $form->textField($model,'description',array('size'=>60,'maxlength'=>1000)); ?>
 	</div>

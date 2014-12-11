@@ -251,5 +251,15 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+<div class="clear"></div>
+<?php if ($model->images){ ?>
+<div>
+    <h1>Images</h1>
+    <div>
+        <?php foreach ($model->images as $image){ ?>
+            <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200">
+        <?php } ?>
+    </div>
+</div>
 
-
+<?php } ?>

@@ -15,11 +15,17 @@
 
 
         $_SESSION['listing_ID']=$last_part_of_url;
+        $listing_ID = $_SESSION['listing_ID'];
 }
+
+$this->breadcrumbs=array(
+    'Listings'=>array('admin'),
+    $model->ID=>array('listings/update/'.$model->ID),
+);
 ?>
 
 <h1>
-    Uploading Images for <?php echo $_SESSION['listing_ID']; ?>
+    Uploading Images for <?php echo $listing_ID; ?>
 </h1>
 
 <script>
@@ -49,7 +55,6 @@
 
     });
 
-
 </script>
 
 
@@ -61,5 +66,25 @@
 
 
 <?php foreach ($model->images as $image){ ?>
-    <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200">
+    <div style="float: left; width:205px; text-align: center; border:solid 1px #999999; margin-left: 10px;">
+        <div style="height: 220px;">
+            <a href="/images/uploads/<?php echo $image['image']; ?>"><img src ="/images/uploads/<?php echo $image['image']; ?>" width="200"></a>
+            <br/>
+        </div>
+        <a style="cursor: pointer;" onclick="delete_image(<?php echo $image->ID; ?>)">Delete</a>
+    </div>
 <?php } ?>
+
+<script>
+    function delete_image(id){
+        var url = '<?php echo Yii::app()->createUrl('images/delete'); ?>/'+id;
+        $.ajax({
+            type: "POST",
+            url: url,
+            success: function(){
+                delete window.alert; // true
+                alert('Deleted!');
+            }
+        });
+    };
+</script>
