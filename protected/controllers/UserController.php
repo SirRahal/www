@@ -227,7 +227,13 @@ class UserController extends Controller
                     "Reply-To: {admin@bracketfanatic.com}\r\n".
                     "MIME-Version: 1.0\r\n".
                     "Content-Type: text/plain; charset=UTF-8";
-                $body = "You account has been reset.  Your account name is : $user->user_name and your new password is $new_password";
+                $body = "<br/><img src='http://www.bracketfanatic.com/images/bflogo2.png' width='400'/>
+                <br/>Thank you for playing Bracket Fanatic.
+                <br/>Your account has been reset.
+                <br/><b>Your account name is :</b> $user->user_name
+                <br/><b>your new password is :</b> $new_password
+                <br/>Thank you and good luck!
+                <br/><i>Bracket Fanatic</i>";
                 mail($email,$subject,$body,$headers);
                 Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
 
