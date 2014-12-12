@@ -90,7 +90,6 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     position:relative;
     margin: auto;
     background: #33332c;
-    padding-top:5px;
 }
 
 #mainmenu ul li a
@@ -119,8 +118,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #f5921e;
-	border-bottom: solid 6px #f5921e;
+    background: #f5921e;
 	text-decoration:none;
 }
 
@@ -695,4 +693,12 @@ ul#countdown li{
 .button_arrangment{
     float: right;
     margin-top: -30px;
+}
+.terms{
+    border: solid 1px #494949;
+    padding: 3px;
+    background: #ffffff;
+    max-height: 50px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
 }

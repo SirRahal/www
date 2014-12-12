@@ -226,16 +226,25 @@ class UserController extends Controller
                 $headers="From: $name <{admin@bracketfanatic.com}>\r\n".
                     "Reply-To: {admin@bracketfanatic.com}\r\n".
                     "MIME-Version: 1.0\r\n".
-                    "Content-Type: text/plain; charset=UTF-8";
-                $body = "<br/><img src='http://www.bracketfanatic.com/images/bflogo2.png' width='400'/>
-                <br/>Thank you for playing Bracket Fanatic.
-                <br/>Your account has been reset.
-                <br/><b>Your account name is :</b> $user->user_name
-                <br/><b>your new password is :</b> $new_password
-                <br/>Thank you and good luck!
-                <br/><i>Bracket Fanatic</i>";
+                    "Content-Type: text/html; charset=UTF-8";
+                $body = "<html>
+                        <body style='font-size: 18px;'>
+                            <br/><a href='http://bracketfanatic.com'><img src='http://www.bracketfanatic.com/images/bflogo2.png' width='400'/></a>
+                            <br/>
+                            <br/>
+                            <br/>Thank you for playing Bracket Fanatic.
+                            <br/>Do you your request, we have reset your password.
+                            <br/>
+                            <br/><b>Your account name is :</b> $user->user_name
+                            <br/><b>your new password is :</b> $new_password
+                            <br/>You can log in <a href='http://bracketfanatic.com/index.php/site/login'>HERE</a>
+                            <br/>
+                            <br/>Thank you and good luck!
+                            <br/><i>Bracket Fanatic</i>
+                        </body>
+                        </html>";
                 mail($email,$subject,$body,$headers);
-                Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+                Yii::app()->user->setFlash('contact','Your user name and new password has been sent to your email.  Please make sure to check your spam folder.');
 
             }else{
                 return false;

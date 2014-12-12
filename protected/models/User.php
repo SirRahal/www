@@ -14,6 +14,7 @@
  * @property string $phone
  * @property string $user_name
  * @property string $password
+ * @property string $terms
  *
  * The followings are the available model relations:
  * @property Ticket[] $tickets
@@ -36,7 +37,8 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('first_name, last_name, email, city, state, zip, phone, user_name, password', 'required'),
+			array('first_name, last_name, email, city, state, zip, phone, user_name, password, terms', 'required'),
+            array('terms', 'numerical', 'min'=>1),
 			array('first_name, last_name, city, user_name, password', 'length', 'max'=>100),
 			array('email', 'length', 'max'=>200),
 			array('state', 'length', 'max'=>2),
@@ -77,6 +79,7 @@ class User extends CActiveRecord
 			'phone' => 'Phone',
 			'user_name' => 'User Name',
 			'password' => 'Password',
+            'terms' => 'Terms & Conditions'
 		);
 	}
 
