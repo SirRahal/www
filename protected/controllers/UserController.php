@@ -79,6 +79,7 @@ class UserController extends Controller
 		if($valid)
 		{
 			$model->attributes=$_POST['User'];
+            $model = $this->clean_up_user($model);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
@@ -87,6 +88,19 @@ class UserController extends Controller
 			'model'=>$model,
 		));
 	}
+
+
+    public function clean_up_user($user)
+    {
+        $model = $user;
+        //clean up phone numbers
+        $model->phone = preg_replace("/[^0-9]/","",$model->phone);
+        //clean up first name
+        $model->first_name =ucfirst ($model->first_name);
+        //clean up last name
+        $model->last_name =ucfirst ($model->last_name);
+        return $model;
+    }
 
     public function actionRegister()
     {
@@ -134,6 +148,7 @@ class UserController extends Controller
 		if(isset($_POST['User']))
 		{
 			$model->attributes=$_POST['User'];
+            $model = $this->clean_up_user($model);
 			if($model->save())
 				$this->redirect('/index.php/site/index');
 		}

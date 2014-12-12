@@ -116,6 +116,16 @@ $placement = 0;
                     $last_name = $user['last_name'];
                     $email = $user['email'];
                     $phone = $user['phone'];
+
+                        $num = $phone;
+                        $len = strlen($num);
+
+                       if($len == 10) $num = preg_replace('/([0-9]{3})([0-9]{3})([0-9]{4})/', '+1 ($1) $2 - $3', $num);
+                        elseif($len == 11) $num = preg_replace('/([0-9]{1})([0-9]{3})([0-9]{3})([0-9]{4})/', '+$1 ($2) $3 - $4', $num);
+
+                    $phone = $num;
+
+
                     $picks = Picks::model()->find_tickets_by_ID($finalest['ID']);
                     if($round != 'total_points'){
                         if($placement == 4)
@@ -150,20 +160,20 @@ $placement = 0;
             <td class="text_center"><b>Place</b></td>
             <td class="text_center"><b>Change</b></td>
             <td class="text_center"><b>User</b></td>
-            <td class="text_center"><b>Round 1 Total</b></td>
-            <td class="text_center"><b>Round 2 Total</b></td>
-            <td class="text_center"><b>Round 3 Total</b></td>
-            <td class="text_center"><b>Round 4 Total</b></td>
-            <td class="text_center"><b>Round 5 Total</b></td>
-            <td class="text_center"><b>Round 6 Total</b></td>
-            <td class="text_center"><b>Final Total</b></td>
+            <td class="text_center"><b>Round 1</b></td>
+            <td class="text_center"><b>Round 2</b></td>
+            <td class="text_center"><b>Round 3</b></td>
+            <td class="text_center"><b>Round 4</b></td>
+            <td class="text_center"><b>Round 5</b></td>
+            <td class="text_center"><b>Round 6</b></td>
+            <td class="text_center"><b>Final</b></td>
         </tr>
         </thead>
         <tbody>
         <?php foreach($tickets as $ticket){
 
-            $user_name = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
-            $user_name = ucfirst ($user_name['user_name']);
+            $user = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
+            $user_name = ucfirst ($user['first_name']).' '.ucfirst($user['last_name']);
             $placement = $ticket['placement'];
             $prev_placement = $ticket['prev_placement'];
             $placement_difference = $prev_placement - $placement;

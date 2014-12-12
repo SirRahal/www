@@ -62,3 +62,43 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		),
 	),
 )); ?>
+
+<script>
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+</script>
+<br/>
+<?php
+$games = Game::model()->findAll();
+
+?>
+<table>
+    <thead>
+    <tr>
+        <td>Round</td>
+        <td>Team 1</td>
+        <td>Team 2</td>
+        <td>Date</td>
+        <td>Location</td>
+    </tr>
+    </thead>
+    <tbody>
+<?php foreach($games as $game){ ?>
+    <tr>
+        <!--round-->
+        <td><?php echo $game['round'];?></td>
+        <!--team1 (score1)-->
+        <td><?php echo '('.$game['team_1_score'].') '.Team::model()->get_team_name($game['team_1_ID']);?></td>
+        <!--team2 (score2)-->
+        <td><?php echo '('.$game['team_2_score'].') '.Team::model()->get_team_name($game['team_2_ID']);?></td>
+        <!--date time-->
+        <td><?php echo $game['date'].' @ '.$game['time'];?></td>
+        <!--location-->
+        <td><?php echo $game['location'];?></td>
+    </tr>
+
+<?php } ?>
+
+    </tbody>
+</table>

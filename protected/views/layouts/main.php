@@ -150,7 +150,7 @@
                         'data-toggle' => 'dropdown',
                     ), 'visible'=>!Yii::app()->user->isGuest,
                         'items' => array(
-                            array('label'=>'Games', 'url'=>array('/game'), 'visible'=>Yii::app()->user->id == 'admin'),
+                            array('label'=>'Games', 'url'=>array('/game/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Users', 'url'=>array('/user'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Tickets', 'url'=>array('/ticket'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Bracket', 'url'=>array('/site/bracket'), 'visible'=>Yii::app()->user->id == 'admin'),
@@ -158,7 +158,7 @@
                             array('label'=>'Teams', 'url'=>array('/team'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Team Placement', 'url'=>array('/tournamentresults'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Schools Results', 'url'=>array('/school/results'), 'visible'=>Yii::app()->user->id == 'admin'),
-                            array('label'=>'Edit User', 'url'=>array('/user/update/'.User::model()->get_user_ID())),
+                            array('label'=>'Edit My Account', 'url'=>array('/user/update/'.User::model()->get_user_ID())),
                             array('label'=>'Log-out', 'url'=>array('/site/logout'))
                         ),
                     ),

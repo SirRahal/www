@@ -393,6 +393,7 @@ input[type=text], textarea {
     transition: 500ms all ease;
     outline: 0;
 }
+
 input[type=password] {
     color: #494949;
     width: 300px;
@@ -402,8 +403,23 @@ input[type=password] {
     transition: 500ms all ease;
     outline: 0;
 }
-
-
+input[type=email]{
+    color: #494949;
+    width: 300px;
+    padding: 6px 15px 6px 35px;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 #ccc inset;
+    transition: 500ms all ease;
+    outline: 0;
+}
+select{
+    color: #494949;
+    padding: 6px 15px 6px 35px;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 #ccc inset;
+    transition: 500ms all ease;
+    outline: 0;
+}
 
 input[type=text]:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
@@ -519,7 +535,7 @@ input[type=password]:focus, textarea:focus {
 
 .ui-button:hover{
     border: 1px solid #59b4d4;
-    background: #0078a3 url("/css/jquery-ui-custom/images/ui-bg_glass_40_0078a3_1x400.png") 50% 50% repeat-x;
+    background: #59b4d4 url("/css/jquery-ui-custom/images/ui-bg_glass_40_0078a3_1x400.png") 50% 50% repeat-x;
     font-weight: bold;
     color: #ffffff;
 }

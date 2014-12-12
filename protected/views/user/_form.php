@@ -46,7 +46,7 @@
 
         <div class="row">
             <?php echo $form->labelEx($model,'email'); ?><br/>
-            <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution', 'placeholder'=>'Someone@BracketFanatic.com')); ?>
+            <?php echo $form->emailField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution', 'placeholder'=>'Someone@BracketFanatic.com')); ?>
             <?php echo $form->error($model,'email'); ?>
         </div>
 

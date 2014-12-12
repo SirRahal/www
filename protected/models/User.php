@@ -44,6 +44,7 @@ class User extends CActiveRecord
 			array('state', 'length', 'max'=>2),
 			array('zip', 'length', 'max'=>8),
 			array('phone', 'length', 'max'=>18),
+            array('phone', 'length', 'min'=>10),
             array('user_name', 'unique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
