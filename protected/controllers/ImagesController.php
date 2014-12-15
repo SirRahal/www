@@ -110,7 +110,14 @@ class ImagesController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		$temp_model = $this->loadModel($id);
+        $file_dir = './images/uploads/'.$temp_model['image'];
+        if(realpath($file_dir)){
+            unlink($file_dir);
+            $temp_model->delete();
+        }elseif(!realpath($file_dir)){
+            //error
+        }
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
