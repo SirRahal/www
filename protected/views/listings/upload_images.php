@@ -61,9 +61,10 @@ $this->breadcrumbs=array(
 
 <script src="/js/jquery.js"></script>
 <script src="/js/fileuploadmulti.min.js"></script>
+<div class="boxed link">
 <div id="mulitplefileuploader">Upload</div>
 <div id="status"></div>
-
+</div>
 
 <?php foreach ($model->images as $image){ ?>
     <div style="float: left; width:205px; text-align: center; border:solid 1px #999999; margin-left: 10px;">

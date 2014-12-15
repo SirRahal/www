@@ -15035,3 +15035,15 @@ Stack trace:
 REQUEST_URI=/index.php/images/delete/2
 in C:\wamp\www\protected\controllers\ImagesController.php (115)
 in C:\wamp\www\index.php (13)
+2014/12/15 18:56:56 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/15 18:56:56 [warning] [application] Failed to set unsafe attribute "sold_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/15 18:58:09 [warning] [application] Failed to set unsafe attribute "ebay_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)
+2014/12/15 18:58:09 [warning] [application] Failed to set unsafe attribute "sold_date" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (105)
+in C:\wamp\www\index.php (13)

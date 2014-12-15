@@ -182,7 +182,12 @@ div.search-form
 }
 
 .link{
-    color: #0066A4 !important;
+    color: #2a9fd6 !important;
+    text-decoration: none;
+}
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .clear{
     clear:both;
