@@ -72,6 +72,9 @@
                         <li>
                             <a href="/index.php/listings/not_on_ebay">Listings Not On Ebay</a>
                         </li>
+                        <li>
+                            <a href="/index.php/listings/on_ebay">Listings On Ebay</a>
+                        </li>
                     <?php } ?>
                     <?php if (Yii::app()->user->name == 'admin'){ ?>
                         <li>

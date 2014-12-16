@@ -31,11 +31,22 @@
 		<?php echo $form->error($model,'last_name'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'permission'); ?>
-		<?php echo $form->textField($model,'permission'); ?>
-		<?php echo $form->error($model,'permission'); ?>
-	</div>
+
+
+
+    <?php
+
+    $role_list = array('0 - Not Set','1 - Lister','2 - Ebay Lister', '3 - Admin');
+    $options = array(
+        'tabindex' => $model['permission'],
+    );
+    ?>
+
+    <div class="row">
+        <?php echo $form->labelEx($model,'permission'); ?>
+        <?php echo $form->dropDownList($model,'permission',$role_list, $options); ?>
+        <?php echo $form->error($model,'permission'); ?>
+    </div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'user_name'); ?>

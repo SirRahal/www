@@ -1,12 +1,12 @@
 <?php
-/* @var $this ListingsController */
-/* @var $model Listings */
+/**
+ * Created by PhpStorm.
+ * User: Sari
+ * Date: 12/4/14
+ * Time: 2:58 PM
+ */ ?>
 
-$this->breadcrumbs=array(
-	'Listings',
-);
 
-?>
 
 <!-- DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
@@ -23,7 +23,7 @@ $this->breadcrumbs=array(
 <a href="/index.php/listings/create">Create Listing</a>
 
 <?php
-$listings = Listings::model()->findAll();
+$listings = Listings::model()->findAllByAttributes(array('ebay_listed'=>1));
 ?>
 <style>
     tbody{
@@ -34,8 +34,7 @@ $listings = Listings::model()->findAll();
     <thead>
     <tr>
         <td>Edit</td>
-        <td>View</td>
-        <td>Copy</td>
+        <td>Edit</td>
         <td>ID</td>
         <td>Inventory</td>
         <td>Manufacturer</td>
@@ -49,13 +48,12 @@ $listings = Listings::model()->findAll();
         <tr>
             <td ><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a></td>
             <td ><a class="link" href="/index.php/listings/view/<?php echo $item->ID; ?>">View</a></td>
-            <td ><a class="link" href="/index.php/listings/create/<?php echo $item->ID; ?>">Copy</a></td>
             <td><?php echo $item->ID; ?></td>
             <td><?php echo $item->inventory; ?></td>
             <td><?php echo $item->manufacturer; ?></td>
             <td><?php echo $item->serial_number; ?></td>
             <td><?php echo $item->model_number; ?></td>
-            <td><?php echo date("m-d-y -- g:sa",strtotime($item->date)); ?></td>
+            <td><?php echo $item->date; ?></td>
         </tr>
     <?php } ?>
     </tbody>
