@@ -7,8 +7,14 @@ $this->pageTitle=Yii::app()->name;
 <h1>Welcome to Nu Tek Listings</h1>
 
 <h3>This Site is for Nu Tek Listers Only.<br/>If you are not a lister, please leave.</h3>
-
-<img style="float: right; " src="/images/alien.gif"/>
+<style>
+    img {
+        opacity: 0.1;
+        float: right;
+        margin-top: -60px;
+    }
+</style>
+<img src="/images/alien.gif" width="500"/>
 <br/>
 <h6>Back Listers</h6>
 <ul>

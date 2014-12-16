@@ -15,7 +15,15 @@ $this->menu=array(
 ?>
 
 <h1>View Listings #<?php echo $model->ID ; ?></h1>
-<h3>Listed by <?php echo $model->listBy['first_name']; ?> On <?php echo $model->date; ?></h3>
+<h3>Listed by <?php echo $model->listBy['first_name'].' '.$model->listBy['last_name']; ?> On <?php echo date('m-d-Y',strtotime($model->date)); ?></h3>
+<?php
+if($model['ebay_listed'] == 1){ ?>
+    <h6 class="green_text">Ebay listed on <?php echo date('m-d-Y',strtotime($model['ebay_date'])); ?> by <?php echo $model->ebayLister['first_name'].' '.$model->ebayLister['last_name'];?></h6>
+<?php  } ?>
+<?php
+    if($model['sold'] == 1){ ?>
+        <h6 class="red_text">Sold on <?php echo date('m-d-Y',strtotime($model['sold_date'])); ?></h6>
+<?php  } ?>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -39,9 +47,6 @@ $this->menu=array(
 		'width_2',
 		'height_2',
 		'listing_note',
-		'ebay_listed',
-		'ebay_lister',
-		'ebay_date',
 	),
 )); ?>
 <style>
@@ -51,13 +56,20 @@ $this->menu=array(
     td{
         padding-right:20px;
     }
+    img:hover{
+        opacity: 0.7;
+    }
+
 </style>
+
 <?php if ($model->images){ ?>
     <div>
         <h1>Images</h1>
         <div>
             <?php foreach ($model->images as $image){ ?>
-                <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200">
+                <a href="/images/uploads/<?php echo $image['image'];?>">
+                    <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200">
+                </a>
             <?php } ?>
         </div>
     </div>
@@ -66,6 +78,7 @@ $this->menu=array(
 <h1>Ebay Listing</h1>
 <h6>Copy And Past Info Below</h6>  <a href="/index.php/listings/update/<?php echo $model->ID; ?>" style="float:right; margin-top: -30px;"><b>Activate this as on Ebay</b></a>
 <div class="ebay_div">
+    Our lising ID : <b><?php echo $model->ID; ?></b><br/>
     Our internal inventory number on this product is : <b><?php echo $model->inventory; ?></b>
     <br/>
     <br/>
