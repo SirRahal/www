@@ -14,6 +14,9 @@ require __DIR__ . '/config.php';
 # Require Composer autoload class
 require __DIR__ . '/vendor/autoload.php';
 
+# Error message
+$error = '';
+
 # Create manager object to get items
 $shop = new Manager(new Credentials(), EBAY_STORE_NAME);
 
@@ -42,7 +45,11 @@ if ($category > 0) {
     $filter->setMaxPerPage($maxPerPage);
     $filter->setPageNumber($page);
     $filter->setCategory($category);
-    $items = $shop->getItemsByCategory($filter);
+    try {
+        $items = $shop->getItemsByCategory($filter);
+    } catch (Exception $e) {
+        $error .= $e->getMessage();
+    }
     $totalPages = $shop->getTotalPages();
 } else {
     try {

@@ -364,8 +364,11 @@ class Manager
             );
         }
 
-        $sql        = "SELECT `category_id`, COUNT(`id`) AS `cnt` FROM `category_item` GROUP BY `category_id`";
-        $items      = Mysql::getInstance()->query($sql);
+        $sql   = "SELECT `category_id`, COUNT(`id`) AS `cnt` FROM `category_item` GROUP BY `category_id`";
+        $items = Mysql::getInstance()->query($sql);
+        if (count($items) <= 0) {
+            return array();
+        }
         $arNotEmpty = array();
         $arCount    = array();
         foreach ($items as $item) {
