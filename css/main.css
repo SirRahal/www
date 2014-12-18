@@ -9,8 +9,6 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-image: url( 'business3.jpg' );
-	background-repeat: no-repeat;
 	height: 125px;
 }
 
@@ -218,7 +216,7 @@ div.search-form
     color:green;
 }
 .red_text{
-    color:red;
+    color: #d60305;
 }
 .blue_text{
     color:blue;

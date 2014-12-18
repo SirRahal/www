@@ -7,12 +7,18 @@
 <div class="form">
 
     <?php
+    /*find out who the user is*/
     $user_ID = User::model()->get_user_ID();
     $user = User::model()->findByPk($user_ID);
+    /*if it's not a new item*/
     if (isset($model)){
         $date = $model->date;
+        $list_by = $model->list_by;
+    }else{
+        /*if it is a new item*/
+        $date = date("y-m-d");
+        $list_by = $user_ID;
     }
-        $date = date("d-m-y");
     ?>
 <style>
     table{
@@ -28,7 +34,10 @@
         $exploded_url = explode('/',$url);
         $listing_copied = end($exploded_url);
         $model = Listings::model()->findByPk($listing_copied);
-        // Do something
+        /*update user and date*/
+        $list_by = $user_ID;
+        $date = date("y-m-d");
+        // alerts it's a copy
         echo("<h3 class='red_text'>Copied Item</h3>");
     }
     ?>
@@ -41,14 +50,14 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.<br/>If the information is not avalible, enter <span class="required">N/A</span> or <span class="required">0</span></p>
+	<p class="note">Fields with <span class="required">*</span> are required.<br/>If the information is not available, enter <span class="required">N/A</span> or <span class="required">0</span></p>
 
 	<?php echo $form->errorSummary($model); ?>
 
     <div class="form_container">
         <div class="visibility_none">
             <?php echo $form->labelEx($model,'list_by'); ?>
-            <?php echo $form->textField($model,'list_by',array('value'=>$user_ID)); ?>
+            <?php echo $form->textField($model,'list_by',array('value'=>$list_by)); ?>
             <?php echo $form->error($model,'list_by'); ?>
         </div>
 
@@ -223,14 +232,23 @@
                 </div>
 
                 <div class="row">
-                    <?php echo $form->labelEx($model,'ebay_lister'); ?>
-                    <?php echo $form->textField($model,'ebay_lister'); ?>
-                    <?php echo $form->error($model,'ebay_lister'); ?>
+                    <div class="row">
+                        <?php echo $form->labelEx($model,'ebay_lister'); ?>
+                        <?php
+                        $role_list2 = CHtml::listData(User::model()->findAll(array('order'=>'ID ASC')), 'ID' , 'ID', 'first_name', 'first_name');
+                        $options = array(
+                            'tabindex' => '0',
+                            'empty' => '(Select a User)',
+                        );
+                        ?>
+                        <?php echo $form->dropDownList($model,'ebay_lister', $role_list2, $options); ?>
+                        <?php echo $form->error($model,'ebay_lister'); ?>
+                    </div>
                 </div>
 
-                <div class="row visibility_none">
+                <div class="row">
                     <?php echo $form->labelEx($model,'ebay_date'); ?>
-                    <?php echo $form->textField($model,'ebay_date'); ?>
+                    <?php echo $form->dateField($model,'ebay_date'); ?>
                     <?php echo $form->error($model,'ebay_date'); ?>
                 </div>
             </div>
