@@ -79,6 +79,7 @@ class UserController extends Controller
 		if($valid)
 		{
 			$model->attributes=$_POST['User'];
+            $model = $this->clean_up_user($model);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
@@ -87,6 +88,19 @@ class UserController extends Controller
 			'model'=>$model,
 		));
 	}
+
+
+    public function clean_up_user($user)
+    {
+        $model = $user;
+        //clean up phone numbers
+        $model->phone = preg_replace("/[^0-9]/","",$model->phone);
+        //clean up first name
+        $model->first_name =ucfirst ($model->first_name);
+        //clean up last name
+        $model->last_name =ucfirst ($model->last_name);
+        return $model;
+    }
 
     public function actionRegister()
     {
@@ -134,6 +148,7 @@ class UserController extends Controller
 		if(isset($_POST['User']))
 		{
 			$model->attributes=$_POST['User'];
+            $model = $this->clean_up_user($model);
 			if($model->save())
 				$this->redirect('/index.php/site/index');
 		}
@@ -226,10 +241,25 @@ class UserController extends Controller
                 $headers="From: $name <{admin@bracketfanatic.com}>\r\n".
                     "Reply-To: {admin@bracketfanatic.com}\r\n".
                     "MIME-Version: 1.0\r\n".
-                    "Content-Type: text/plain; charset=UTF-8";
-                $body = "You account has been reset.  Your account name is : $user->user_name and your new password is $new_password";
+                    "Content-Type: text/html; charset=UTF-8";
+                $body = "<html>
+                        <body style='font-size: 18px;'>
+                            <br/><a href='http://bracketfanatic.com'><img src='http://www.bracketfanatic.com/images/bflogo2.png' width='400'/></a>
+                            <br/>
+                            <br/>
+                            <br/>Thank you for playing Bracket Fanatic.
+                            <br/>Do you your request, we have reset your password.
+                            <br/>
+                            <br/><b>Your account name is :</b> $user->user_name
+                            <br/><b>your new password is :</b> $new_password
+                            <br/>You can log in <a href='http://bracketfanatic.com/index.php/site/login'>HERE</a>
+                            <br/>
+                            <br/>Thank you and good luck!
+                            <br/><i>Bracket Fanatic</i>
+                        </body>
+                        </html>";
                 mail($email,$subject,$body,$headers);
-                Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+                Yii::app()->user->setFlash('contact','Your user name and new password has been sent to your email.  Please make sure to check your spam folder.');
 
             }else{
                 return false;

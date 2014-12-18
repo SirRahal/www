@@ -123,4 +123,8 @@ class Team extends CActiveRecord
 
         return $score;
 }
+    public static function get_team_name($ID){
+        $team = Team::model()->findByPk($ID);
+        return $team['name'];
+    }
 }

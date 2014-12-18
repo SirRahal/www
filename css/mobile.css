@@ -133,3 +133,8 @@ ul#countdown li{
     margin-top: 5px;
     margin-bottom:5px;
 }
+
+.terms{
+    min-height: 300px;
+    max-height: 300px;
+}

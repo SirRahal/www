@@ -46,7 +46,7 @@
 
         <div class="row">
             <?php echo $form->labelEx($model,'email'); ?><br/>
-            <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution', 'placeholder'=>'Someone@BracketFanatic.com')); ?>
+            <?php echo $form->emailField($model,'email',array('size'=>60,'maxlength'=>200,'minlength'=>8,'title'=>'These are only used as reminders to Bracket Fanatic, and are not used as distribution', 'placeholder'=>'Someone@BracketFanatic.com')); ?>
             <?php echo $form->error($model,'email'); ?>
         </div>
 
@@ -141,6 +141,21 @@
             <?php echo $form->labelEx($model,'phone'); ?><br/>
             <?php echo $form->textField($model,'phone',array('size'=>18,'maxlength'=>18, 'placeholder'=>'1(555)-555-5555')); ?>
             <?php echo $form->error($model,'phone'); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'terms'); ?><br/>
+            <div class="terms">
+                These are the terms and conditions to this game.  If you don't like them you can pack up your stuff and get out.  We don't take
+                everything you say literal..  this is just really long text to make it look like the terms and conditions to this game.  If anyong
+                is reading this i will be really surprised and if you are, you are catching all of the spelling mistakes because i am just writing
+                off the top of my head and nothing else.  I think this text took me less than a min to write.  Well not any more.  Now it's more
+                2 min because i still havn't stoped typeing.  Joe Sack if you see this, that means you still havn't given me the terms and conditions
+                and this is your fault.  Thank you for reading.  I'm Out SirRahal
+            </div>
+            <?php echo $form->checkBox($model,'terms'); ?>
+            <div style=" maargin-left: -20px;">I accept the Terms & Conditions listed above</div>
+            <?php echo $form->error($model,'terms'); ?>
         </div>
     </div>
 <div class="clear"></div>
