@@ -28,7 +28,7 @@ class SchoolController extends Controller
 	{
         return array(
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete','index','view','create','update','ticketPopup','results','results_view'),
+                'actions'=>array('admin','delete','index','view','create','update','ticketPopup','results','results_view','create_tickets','createTickets','generateRandomString'),
                 'users'=>array('admin'),
             ),
             array('allow', // allow everyone to view schools
@@ -142,6 +142,12 @@ class SchoolController extends Controller
         ));
     }
 
+    public function actionCreate_tickets($id){
+        $this->render('create_tickets',array(
+           'id'=>$id,
+        ));
+    }
+
 	/**
 	 * Manages all models.
 	 */
@@ -188,5 +194,39 @@ class SchoolController extends Controller
     public function actionTicketPopup($id){
         $ticket = Ticket::model()->findByPk($id);
         $this->renderPartial('ticketPopup',array('ticket'=>$ticket));
+    }
+
+    public function actionCreateTickets(){
+        //get the ticket_code, check to see if it is set
+        if(isset($_POST['school_ID'])){
+            $school_ID = $_POST['school_ID'];
+            //create an array of ticket codes
+            $ticket_codes = array();
+            for($i=0;$i<1100;$i++){
+                //return a string of length 4
+                //and add the schools ID in front of it.
+                $ticket_codes[$i] = $school_ID.'-'.$this->generateRandomString();
+            }
+            for($i=0;$i<1000;$i++){
+                //get rid of duplicates and take the first 1,000
+                $ticket_codes = array_unique($ticket_codes);
+                $final_tickets = array_slice($ticket_codes, 999);
+            }
+            return Ticket::model()->create_tickets($final_tickets);
+
+        }
+        //if anything fails, return false.
+        return false;
+    }
+
+    public function generateRandomString() {
+        $length = 4;
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
     }
 }

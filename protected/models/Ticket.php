@@ -225,4 +225,23 @@ class Ticket extends CActiveRecord
             }
         }
     }
+
+    public static function create_tickets($ticket_codes){
+        //create all 1,000 tickets
+        foreach($ticket_codes as $ticket_code){
+            $ticket_model = new Ticket;
+            $ticket_model->user_ID = 1;
+            $ticket_model->tournament_ID = 1;
+            $ticket_model->code = $ticket_code;
+            $ticket_model->save();
+        }
+        //check to see that all 1,000 tickets were created
+        $ticket_code_exploded = explode('-',$ticket_codes[0]);
+        $school_ID = $ticket_code_exploded[0];
+        $count = Ticket::model()->get_ticket_count($school_ID);
+        if($count == 1000){
+            return true;
+        }
+        return false;
+    }
 }

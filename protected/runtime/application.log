@@ -602,3 +602,277 @@ Stack trace:
 #21 {main}
 REQUEST_URI=/index.php/user/admin
 ---
+2014/12/18 21:27:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "createTickets".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('createTickets')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/2
+---
+2014/12/18 21:28:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "createTickets".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('createTickets')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/2
+---
+2014/12/18 21:37:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/2
+---
+2014/12/18 22:27:18 [error] [php] Undefined offset: 0 (C:\wamp\www\protected\models\School.php:145)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SchoolController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): SchoolController->renderPartial()
+#3 C:\wamp\www\protected\controllers\SchoolController.php(52): SchoolController->render()
+#4 unknown(0): SchoolController->actionView()
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/4
+in C:\wamp\www\protected\models\School.php (145)
+in C:\wamp\www\protected\views\school\view.php (95)
+in C:\wamp\www\protected\controllers\SchoolController.php (52)
+2014/12/18 22:28:03 [error] [php] Undefined offset: 0 (C:\wamp\www\protected\models\School.php:145)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SchoolController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): SchoolController->renderPartial()
+#3 C:\wamp\www\protected\controllers\SchoolController.php(142): SchoolController->render()
+#4 unknown(0): SchoolController->actionResults_view()
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/results_view/4
+in C:\wamp\www\protected\models\School.php (145)
+in C:\wamp\www\protected\views\school\results_view.php (94)
+in C:\wamp\www\protected\controllers\SchoolController.php (142)
+2014/12/18 22:39:05 [error] [php] Undefined variable: model (C:\wamp\www\protected\views\school\create_tickets.php:32)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SchoolController->renderPartial()
+#2 C:\wamp\www\protected\controllers\SchoolController.php(148): SchoolController->render()
+#3 unknown(0): SchoolController->actionCreate_tickets()
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/create_tickets/4
+in C:\wamp\www\protected\views\school\create_tickets.php (32)
+in C:\wamp\www\protected\controllers\SchoolController.php (148)
+in C:\wamp\www\index.php (13)
+2014/12/18 22:39:19 [error] [php] Undefined variable: model (C:\wamp\www\protected\views\school\create_tickets.php:32)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SchoolController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SchoolController->renderPartial()
+#2 C:\wamp\www\protected\controllers\SchoolController.php(148): SchoolController->render()
+#3 unknown(0): SchoolController->actionCreate_tickets()
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/create_tickets/4
+in C:\wamp\www\protected\views\school\create_tickets.php (32)
+in C:\wamp\www\protected\controllers\SchoolController.php (148)
+in C:\wamp\www\index.php (13)
+2014/12/18 22:43:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/4
+---
+2014/12/18 22:43:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/4
+---
+2014/12/18 22:45:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/4
+---
+2014/12/18 22:45:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/4
+---
+2014/12/18 22:48:22 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('4')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(214): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/4
+---
+2014/12/18 22:50:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('results_view')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/results_...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/school/results_view/ticketPopup/778
+HTTP_REFERER=http://localhost/index.php/school/results_view/4
+---
+2014/12/18 22:55:05 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('5')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(215): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
+---
