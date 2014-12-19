@@ -90,7 +90,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     position:relative;
     margin: auto;
     background: #33332c;
-    z-index: 1000;
+    z-index: 4;
 }
 
 #mainmenu ul li a

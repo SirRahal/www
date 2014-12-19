@@ -172,7 +172,12 @@ class Ticket extends CActiveRecord
     }
 
     public static function find_ticket_by_code($ticket_code){
-        return Ticket::model()->findByAttributes(array('user_ID' => 1, 'code' => $ticket_code));
+        $tickets =  Ticket::model()->findAllByAttributes(array('user_ID' => 1, 'code' => $ticket_code));
+        foreach($tickets as $ticket){
+            if($ticket['code']==$ticket_code){
+                return $ticket;
+            }
+        }
     }
 
     public static function reassign($ticket){
