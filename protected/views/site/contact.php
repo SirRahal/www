@@ -69,7 +69,7 @@ $this->breadcrumbs=array(
                 All Contacts are reachable 9am-5pm EST.-->
             </div>
         </div>
-        <div class="mobile_container">
+        <div class="mobile_container mobile_hide">
             <div class="form" >
 
                 <?php $form=$this->beginWidget('CActiveForm', array(

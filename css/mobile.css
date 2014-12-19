@@ -36,6 +36,9 @@ div.breadcrumbs{
 .bracket_button{
     display: none;
 }
+.mobile_hide{
+    display:none;
+}
 
 .row{
     font-size: 46px;
