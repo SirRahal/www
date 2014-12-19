@@ -207,13 +207,10 @@ class SchoolController extends Controller
                 //and add the schools ID in front of it.
                 $ticket_codes[$i] = $school_ID.'-'.$this->generateRandomString();
             }
-            for($i=0;$i<1000;$i++){
-                //get rid of duplicates and take the first 1,000
-                $ticket_codes = array_unique($ticket_codes);
-                $final_tickets = array_slice($ticket_codes, 999);
-            }
+            //get rid of duplicates and take the first 1,000
+            $ticket_codes = array_unique($ticket_codes);
+            $final_tickets = array_slice($ticket_codes, 100);
             return Ticket::model()->create_tickets($final_tickets);
-
         }
         //if anything fails, return false.
         return false;

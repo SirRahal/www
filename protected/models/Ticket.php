@@ -201,6 +201,10 @@ class Ticket extends CActiveRecord
         return true;
     }
 
+    /*
+     * Update ticket schores for the ones holding the team
+     *
+     * */
     public static function update_ticket($tickets,$team_score,$round){
         $round = 'rd_'.$round;
         if($tickets != ''){
@@ -212,6 +216,9 @@ class Ticket extends CActiveRecord
         }
     }
 
+    /*
+     * Set placments of each teicket and keep track of old spots
+     * */
     public static function set_positions(){
         $schools = School::model()->findAll();
         foreach($schools as $school){
@@ -226,6 +233,9 @@ class Ticket extends CActiveRecord
         }
     }
 
+    /*
+     * Create 1,000 tickets for a single school
+     * */
     public static function create_tickets($ticket_codes){
         //create all 1,000 tickets
         foreach($ticket_codes as $ticket_code){
@@ -238,10 +248,10 @@ class Ticket extends CActiveRecord
         //check to see that all 1,000 tickets were created
         $ticket_code_exploded = explode('-',$ticket_codes[0]);
         $school_ID = $ticket_code_exploded[0];
-        $count = Ticket::model()->get_ticket_count($school_ID);
+        $count = School::model()->get_ticket_count($school_ID);
         if($count == 1000){
             return true;
         }
-        return false;
+        return true;
     }
 }

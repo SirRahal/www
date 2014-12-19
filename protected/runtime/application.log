@@ -876,3 +876,239 @@ Stack trace:
 REQUEST_URI=/index.php/school/createTickets
 HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
 ---
+2014/12/18 22:56:57 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('5')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(215): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
+---
+2014/12/18 22:57:21 [error] [php] Undefined offset: 0 (C:\wamp\www\protected\models\Ticket.php:239)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SchoolController->runAction()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SchoolController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): SchoolController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SchoolController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/school/createTickets
+in C:\wamp\www\protected\models\Ticket.php (239)
+in C:\wamp\www\protected\controllers\SchoolController.php (215)
+in C:\wamp\www\index.php (13)
+2014/12/18 22:57:43 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('5')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(215): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
+---
+2014/12/19 14:23:51 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('5')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(213): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
+---
+2014/12/19 14:24:47 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('5')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(213): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
+---
+2014/12/19 14:25:14 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('5')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(213): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
+---
+2014/12/19 14:26:07 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('5')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(213): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
+---
+2014/12/19 14:27:29 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('5')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(213): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
+---
+2014/12/19 14:34:11 [error] [exception.CException] exception 'CException' with message 'Ticket and its behaviors do not have a method or closure named "get_ticket_count".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('get_ticket_coun...', Array)
+#1 C:\wamp\www\protected\models\Ticket.php(241): CActiveRecord->__call('get_ticket_coun...', Array)
+#2 C:\wamp\www\protected\models\Ticket.php(241): Ticket->get_ticket_count('5')
+#3 C:\wamp\www\protected\controllers\SchoolController.php(213): Ticket::create_tickets(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SchoolController->actionCreateTickets()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createTickets')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('school/createTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/school/createTickets
+HTTP_REFERER=http://localhost/index.php/school/create_tickets/5
+---
+2014/12/19 14:41:42 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Session object destruction failed (C:\wamp\www\yii\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 C:\wamp\www\protected\models\LoginForm.php(71): CWebUser->login()
+#2 C:\wamp\www\protected\controllers\SiteController.php(95): LoginForm->login()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/login
+in C:\wamp\www\protected\models\LoginForm.php (71)
+in C:\wamp\www\protected\controllers\SiteController.php (95)
+in C:\wamp\www\index.php (13)
+2014/12/19 14:41:42 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Session object destruction failed (C:\wamp\www\yii\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 C:\wamp\www\protected\models\LoginForm.php(71): CWebUser->login()
+#2 C:\wamp\www\protected\controllers\SiteController.php(95): LoginForm->login()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/login
+in C:\wamp\www\protected\models\LoginForm.php (71)
+in C:\wamp\www\protected\controllers\SiteController.php (95)
+in C:\wamp\www\index.php (13)

@@ -45,53 +45,28 @@ $tickets = $school->get_tickets($school->ID);
 <br/>
 <h1>All Tickets</h1>
 <div>
-    <table id="table_id" class="hover stripe row-border">
+    <table class="hover stripe row-border">
 
 
         <thead>
         <tr>
-            <td class="text_center"><b>Place</b></td>
-            <td class="text_center"><b>Change</b></td>
-            <td class="text_center"><b>User</b></td>
-            <td class="text_center"><b>Round 1</b></td>
-            <td class="text_center"><b>Round 2</b></td>
-            <td class="text_center"><b>Round 3</b></td>
-            <td class="text_center"><b>Round 4</b></td>
-            <td class="text_center"><b>Round 5</b></td>
-            <td class="text_center"><b>Round 6</b></td>
-            <td class="text_center"><b>Final</b></td>
+            <td>#</td>
+            <td>ID</td>
+            <td>Code</td>
         </tr>
         </thead>
         <tbody>
-        <?php foreach($tickets as $ticket){
-
-            $user = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
-            $user_name = ucfirst ($user['first_name']).' '.ucfirst($user['last_name']);
-            $placement = $ticket['placement'];
-            $prev_placement = $ticket['prev_placement'];
-            $placement_difference = $prev_placement - $placement;
+        <?php
+        $count = 0;
+        foreach($tickets as $ticket){
+            $count++;
             ?>
             <tr>
-                <td class="text_center" ><?php echo $placement; ?>
-                <td class="text_center"><i>
-                        <?php if ($placement_difference > 0){
-                            echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
-                        <?php }elseif($placement_difference < 0){
-                            echo "&nbsp;".$placement_difference; ?> <img src="/images/red_arrow_down.png" width="10"/>
-                        <?php } ?>
-                    </i>
-                </td>
-                </td>
-                <td><div class="ticket_viewer tooltip" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>" title="Click to preview their ticket"><?php echo $user_name; ?></div></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_1']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_2']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_3']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_4']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_5']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['rd_6']; ?></td>
-                <td style="text-align: center;"><?php echo $ticket['total_points']; ?></td>
+                <td><?php echo $count; ?></td>
+                <td><?php echo $ticket['ID']; ?></td>
+                <td><?php echo $ticket['code']; ?></td>
             </tr>
-        <?php } ?>
+         <?php } ?>
         </tbody>
     </table>
 </div>
