@@ -20,13 +20,31 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
+		<?php echo $form->labelEx($model,'name'); ?><br/>
 		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'contact_name'); ?><br/>
+		<?php echo $form->textField($model,'contact_name',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'contact_name'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'address'); ?><br/>
+		<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'address'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'city'); ?><br/>
+		<?php echo $form->textField($model,'city',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'city'); ?>
+	</div>
+
     <div class="row">
-        <?php echo $form->labelEx($model,'state'); ?>
+        <?php echo $form->labelEx($model,'state'); ?><br/>
         <?php echo $form->dropDownList($model,'state',array('status'=>'--',
             'AL'=>'AL','AK'=>'AK','AZ'=>'AZ','AR'=>'AR','CA'=>'CA','CO'=>'CO','CT'=>'CT','DE'=>'DE','DC'=>'DC','
             FL'=>'FL','GA'=>'GA','HI'=>'HI','ID'=>'ID','IL'=>'IL','IN'=>'IN','IA'=>'IA','KS'=>'KS','KY'=>'KY',
@@ -38,6 +56,24 @@
 
         <?php echo $form->error($model,'state'); ?>
     </div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'zip'); ?><br/>
+		<?php echo $form->textField($model,'zip',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->error($model,'zip'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'phone'); ?><br/>
+		<?php echo $form->textField($model,'phone',array('size'=>16,'maxlength'=>16)); ?>
+		<?php echo $form->error($model,'phone'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'email'); ?><br/>
+		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'email'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

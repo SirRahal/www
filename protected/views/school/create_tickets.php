@@ -16,7 +16,6 @@ $school = School::model()->findByPk($id);
 <script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
 <script>
     function addtickets(school_ID) {
-
         $.ajax({
             type: "POST",
             url: '<?php echo Yii::app()->createUrl('school/createTickets'); ?>',
@@ -28,9 +27,6 @@ $school = School::model()->findByPk($id);
             }
         })
     }
-    $(document).ready( function () {
-        $('#table_id').DataTable();
-    } );
 </script>
 <h1>Are you sure you would like to create 1,000 tickets for <b><?php echo $school['name']; ?></b>?</h1>
 
@@ -49,10 +45,10 @@ $tickets = $school->get_tickets($school->ID);
 
 
         <thead>
-        <tr>
-            <td>#</td>
-            <td>ID</td>
-            <td>Code</td>
+        <tr style="background: #9db2c9;">
+            <td><b>#</b></td>
+            <td><b>ID</b></td>
+            <td><b>Code</b></td>
         </tr>
         </thead>
         <tbody>

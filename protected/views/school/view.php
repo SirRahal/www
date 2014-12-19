@@ -77,7 +77,7 @@ $this->breadcrumbs=array(
 <div class="clear"></div>
     <div style="padding:20px;">
         <h1>Please note that Winners are subject to change all the way up to the finals.</h1>
-        <div class="hint" style="margin-top:-15px;">Ties will be determined by the score in the previous round.  These placements are not final till the end of the turnament. </div>
+        <div class="hint" style="margin-top:-15px;">Ties will be determined by the score in the previous round.  These placements are not final till the end of the tournament. </div>
     </div>
 
 
@@ -122,7 +122,7 @@ $this->breadcrumbs=array(
                                     </div>
                                 </div>
                             </div>
-                            <h3><b>User : </b><i><?php echo $user_name;?></i></h3>
+                            <h3><b><i><?php echo $user_name;?></i></b></h3>
                             <?php echo $this->renderPartial('/ticket/container/my_picks_div_round_display', array('picks' => $picks,'ticket_ID' => $finalest['ID'],'round' => $i));?>
                         </td>
                         <td style="width:0px; background: black; border-style: none;"></td>
@@ -162,36 +162,40 @@ $this->breadcrumbs=array(
             </tr>
         </thead>
         <tbody>
-        <?php foreach($tickets as $ticket){
-
-            $user = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
-            $user_name = ucfirst ($user['last_name']);
-            $user_name = $user_name .', '.ucfirst ($user['first_name']);
-            $placement = $ticket['placement'];
-            $prev_placement = $ticket['prev_placement'];
-            $placement_difference = $prev_placement - $placement;
-            ?>
-            <tr>
-                <td class="text_center round_total" ><?php echo $placement; ?>
-                <td class="text_center round_total"><i>
-                    <?php if ($placement_difference > 0){
-                        echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
-                    <?php }elseif($placement_difference < 0){
-                        echo "&nbsp;".$placement_difference; ?> <img src="/images/red_arrow_down.png" width="10"/>
-                    <?php } ?>
-                    </i>
-                </td>
-                </td>
-                <td><div class="ticket_viewer tooltip" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>" title="Click to preview their entry"><?php echo $user_name; ?></div></td>
-                <td class="round_total"><?php echo $ticket['rd_1']; ?></td>
-                <td class="round_total"><?php echo $ticket['rd_2']; ?></td>
-                <td class="round_total"><?php echo $ticket['rd_3']; ?></td>
-                <td class="round_total"><?php echo $ticket['rd_4']; ?></td>
-                <td class="round_total"><?php echo $ticket['rd_5']; ?></td>
-                <td class="round_total"><?php echo $ticket['rd_6']; ?></td>
-                <td class="round_total"><?php echo $ticket['total_points']; ?></td>
-            </tr>
-        <?php } ?>
+        <?php
+        $count = 0;
+        foreach($tickets as $ticket){
+            //remove all admin tickets
+            if($ticket['user_ID']!=1){
+                $count++;
+                $user = User::model()->findByAttributes(array('ID'=>$ticket['user_ID']));
+                $user_name = ucfirst ($user['last_name']);
+                $user_name = $user_name .', '.ucfirst ($user['first_name']);
+                $placement = $ticket['placement'];
+                $prev_placement = $ticket['prev_placement'];
+                $placement_difference = $prev_placement - $placement;
+                ?>
+                <tr>
+                    <td class="text_center round_total" ><?php echo $count; ?>
+                    <td class="text_center round_total"><i>
+                        <?php if ($placement_difference > 0){
+                            echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
+                        <?php }elseif($placement_difference < 0){
+                            echo "&nbsp;".$placement_difference; ?> <img src="/images/red_arrow_down.png" width="10"/>
+                        <?php } ?>
+                        </i>
+                    </td>
+                    </td>
+                    <td><div class="ticket_viewer tooltip" style="cursor: pointer" id="<?php echo $ticket['ID']; ?>" title="Click to preview their entry"><?php echo $user_name; ?></div></td>
+                    <td class="round_total"><?php echo $ticket['rd_1']; ?></td>
+                    <td class="round_total"><?php echo $ticket['rd_2']; ?></td>
+                    <td class="round_total"><?php echo $ticket['rd_3']; ?></td>
+                    <td class="round_total"><?php echo $ticket['rd_4']; ?></td>
+                    <td class="round_total"><?php echo $ticket['rd_5']; ?></td>
+                    <td class="round_total"><?php echo $ticket['rd_6']; ?></td>
+                    <td class="round_total"><?php echo $ticket['total_points']; ?></td>
+                </tr>
+        <?php }} ?>
         </tbody>
     </table>
 </div>
