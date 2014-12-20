@@ -34,15 +34,18 @@ $this->breadcrumbs=array(
 
     <div style="padding:10px;">
         <div class="mobile_container">
-            <div style="margin-bottom:20px;">If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.</div>
+
             <div class="align_center round_edges shadow orange_boarder" style="padding-top: 10px; margin-bottom: 50px;">
                 <h1>For more information,<br/>please contact us by email or by phone.</h1>
                 <h1>For Sales</h1>
-                <p>Sales@BracketFanatic.com<br/>Some Default Number</p>
+                <h4>Joe@BracketFanatic.com<br/>(616)-262-9270</h4>
                 <h1>For Support</h1>
-                <p>Support@BracketFanatic.com<br/>Some Default Number</p>
+
+
+                    <h4>Sari@BracketFanatic.com<br/>(313) 384-8369</h4>
+                <!--
+                <div class="contact">
                 <h1>Direct Contacts</h1>
-                <!--<div class="contact">
                     <img class="contact_image" src="/images/joe_sack.png"/>
                     <p><b><h3>Joe Sack</h3></b>Joe@BracketFanatic.com<br/>Some Default Number</p>
                 </div>
@@ -70,6 +73,7 @@ $this->breadcrumbs=array(
             </div>
         </div>
         <div class="mobile_container mobile_hide">
+            <div style="margin-bottom:20px;">If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.</div>
             <div class="form" >
 
                 <?php $form=$this->beginWidget('CActiveForm', array(

@@ -14,7 +14,7 @@ $this->breadcrumbs=array(
 
 <div class="main_title"><h1>How To Play</h1></div>
 <div class="mobile_container">
-    <div class="bold" style="width:500px; padding-left: 20px; font-size: 17px;">
+    <div class="bold" style="width:500px; padding-left: 20px; font-size: 21px;">
         <img src="/images/ticket.png" width="500" class="round_edges shadow"/>
         <br/><br/>
         <ol>
@@ -30,6 +30,8 @@ $this->breadcrumbs=array(
 <div class="mobile_container">
     <img src="/images/edit_pics.png" width="540" class="round_edges shadow "/>
 </div>
+<div class="clear"></div>
+<div class="main_title"><h1>Break Down of Payouts</h1></div>
 <div style="text-align: center;">
     <img src="/images/23hor.png"  class="round_edges shadow"/>
 </div>

@@ -41,7 +41,7 @@ $this->breadcrumbs=array(
                 <li>Simple to Run!</li>
             </ul>
         </div>
-        <img src="/images/logo.png" width="200" class="float_left" style="margin-top: 40px;"/>
+        <img src="/images/logo.png" width="180" class="float_left" style="margin-top: 60px;"/>
         <div class="clear"></div>
         <div >
             BracketFanatic makes your fundraising experience fun and
