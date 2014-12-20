@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Bracket Fanatic Fundraiser for public organizations">
     <meta name="author" content="Sari Rahal">
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
 
     <!--font type loade from google-->
     <link href="//fonts.googleapis.com/css?family=Bree+Serif:400" rel="stylesheet" type="text/css">

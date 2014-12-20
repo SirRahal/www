@@ -77,14 +77,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ticket_holder.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ticket_holder.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/pages/ticket_holder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.67344755" vertical-offset="0" max-vertical-offset="934">
+            <state line="37" column="0" selection-start="1443" selection-end="1443" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="731">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="9" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.65524626" vertical-offset="0" max-vertical-offset="3383">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,7 +136,6 @@
         <option value="$PROJECT_DIR$/protected/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/protected/models/User.php" />
         <option value="$PROJECT_DIR$/protected/views/school/results_view.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/models/Team.php" />
         <option value="$PROJECT_DIR$/protected/views/game/admin.php" />
         <option value="$PROJECT_DIR$/protected/views/user/admin.php" />
@@ -144,6 +152,7 @@
         <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
         <option value="$PROJECT_DIR$/protected/views/site/pages/organizations.php" />
         <option value="$PROJECT_DIR$/protected/views/site/pages/ticket_holder.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
       </list>
     </option>
   </component>
@@ -275,6 +284,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -543,11 +588,6 @@
         <state line="29" column="24" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.49848333" vertical-offset="0" max-vertical-offset="989" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="61" selection-start="3903" selection-end="3920" vertical-scroll-proportion="0.49428868" vertical-offset="918" max-vertical-offset="3366" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/school/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.6002077" vertical-offset="0" max-vertical-offset="1037" />
@@ -668,11 +708,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/pages/ticket_holder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.67344755" vertical-offset="0" max-vertical-offset="934">
+        <state line="37" column="0" selection-start="1443" selection-end="1443" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="731">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="9" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.65524626" vertical-offset="0" max-vertical-offset="3383">
+          <folding />
         </state>
       </provider>
     </entry>
