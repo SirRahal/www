@@ -1,22 +1,20 @@
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/CNC-Parts_as34882';
-$date = 'December 23rd';
-$auction_title = 'CNC Parts Auction';
+$auction_url = 'http://auctions.btmindustrial.com/CNC-Manual-Machinery-Auction_as35027';
+$date = 'December 30th';
+$auction_title = 'CNC & Manual Machinery Auction';
 
 $info = array();
 
-$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=1&ps=50#i21158131";$info[0][1]="http://media.liveauctiongroup.net/i/22906/21158131_1s.jpg?v=8D1DB4BC0A2B770";$info[0][2]="Mitsubishi TRA Drives";
-$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=1&ps=50#i21158136";$info[1][1]="http://media.liveauctiongroup.net/i/22906/21158136_1s.jpg?v=8D1DB4B4DDBC830";$info[1][2]="Mitsubishi Circuit Boards";
-$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=1&ps=50#i21158149";$info[2][1]="http://media.liveauctiongroup.net/i/22906/21158149_1s.jpg?v=8D1DB52E6785E80";$info[2][2]="Mitsubishi Freqrol FR-SX AC Spindle Controller";
-$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=1&ps=50#i21164207";$info[3][1]="http://media.liveauctiongroup.net/i/22906/21164207_1s.jpg?v=8D1DBA0B9E89B70";$info[3][2]="Fanuc Servo Motors";
-$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=2&ps=50#i21164312";$info[4][1]="http://media.liveauctiongroup.net/i/22906/21164312_1s.jpg?v=8D1DC195C681A10";$info[4][2]="Fanuc Servo Amplifiers";
-$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=2&ps=50#i21164315";$info[5][1]="http://media.liveauctiongroup.net/i/22906/21164315_1s.jpg?v=8D1DC19473AA770";$info[5][2]="Fanuc Power Supplies";
-$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=2&ps=50#i21165319";$info[6][1]="http://media.liveauctiongroup.net/i/22906/21165319_1s.jpg?v=8D1DC1B5F8797A0";$info[6][2]="Fanuc Series 18-M Control Interface";
-$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=2&ps=50#i21266245";$info[7][1]="http://media.liveauctiongroup.net/i/22906/21266245_1s.jpg?v=8D1E4BC05FA60B0";$info[7][2]="Fanuc Spindle Drives";
-$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=2&ps=50#i21266246";$info[8][1]="http://media.liveauctiongroup.net/i/22906/21266246_1s.jpg?v=8D1E4BC05FA60B0";$info[8][2]="Fanuc VCU's";
-$info[9][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=2&ps=50#i21248502";$info[9][1]="http://media.liveauctiongroup.net/i/22906/21248502_1s.jpg?v=8D1E339BC334BF0";$info[9][2]="Reliance Max Pak Plus VS Spindle Drives";
-$info[10][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=2&ps=50#i21270657";$info[10][1]="http://media.liveauctiongroup.net/i/22906/21270657_1s.jpg?v=8D1E59685935130";$info[10][2]="Getty's Servo Amplifiers";
-$info[11][0]="http://auctions.btmindustrial.com/auction.aspx?a=22906&as=34882&p=2&ps=50#i21292551";$info[11][1]="http://media.liveauctiongroup.net/i/22906/21292551_1s.jpg?v=8D1E8E409A4BF90";$info[11][2]="Getty's Three Phase Half Wave Controller";
+$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21238065";$info[0][1]="http://media.liveauctiongroup.net/i/23002/21238065_1s.jpg?v=8D1ECA02BF946F0";$info[0][2]="1996 Cincinnati Arrow 750 VMC";
+$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21238066";$info[1][1]="http://media.liveauctiongroup.net/i/23002/21238066_1s.jpg?v=8D1ECA02BF946F0";$info[1][2]="1985 Okuma Howa ACT3 CNC TC";
+$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21238071";$info[2][1]="http://media.liveauctiongroup.net/i/23002/21238071_1s.jpg?v=8D1ECA02BF946F0";$info[2][2]="1987 Mori Seiki SL-2H CNC Chucker, Fanuc 11T";
+$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21238072";$info[3][1]="http://media.liveauctiongroup.net/i/23002/21238072_1s.jpg?v=8D1ECA02BF946F0";$info[3][2]="1994 Bridgeport Interact M2 CNC VM";
+$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248434";$info[4][1]="http://media.liveauctiongroup.net/i/23002/21248434_1s.jpg?v=8D1ECA02BF946F0";$info[4][2]="SUNNEN MODEL 1650";
+$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248435";$info[5][1]="http://media.liveauctiongroup.net/i/23002/21248435_1s.jpg?v=8D1ECA02BF946F0";$info[5][2]="1978 LeBlond 15'' x 60'' Manual Lathe";
+$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248436";$info[6][1]="http://media.liveauctiongroup.net/i/23002/21248436_1s.jpg?v=8D1ECA02BF946F0";$info[6][2]="2 HP Bridgeport Mill";
+$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248438";$info[7][1]="http://media.liveauctiongroup.net/i/23002/21248438_1s.jpg?v=8D1ECA02BF946F0";$info[7][2]="1969 VAN NORMAN 2R3 V& H Univeral Mill";
+$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248440";$info[8][1]="http://media.liveauctiongroup.net/i/23002/21248440_1s.jpg?v=8D1ECA02BF946F0";$info[8][2]="DECKEL FP1 Universal Mill w/ 3 Axis DRO";
+$info[9][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248534";$info[9][1]="http://media.liveauctiongroup.net/i/23002/21248534_1s.jpg?v=8D1ECA02BF946F0";$info[9][2]="Hardinge D-59 Secondary lathe";
 
 $count=0;
 ?>
@@ -50,13 +48,13 @@ $count=0;
     </div>
     <br/>
     <table width="600" border="0" cellspacing="0" cellpadding="0" style="border: 2px solid #dcdcdc; top: 86px; width: 615px; height: 564px; margin: 0px auto; background-color: #ffffff;">
-        <!--<thead>
+        <thead>
             <tr>
                 <td colspan="3" style="text-align: center; color: #494949; font-size: 40px;">
                     Machines
                 </td>
             </tr>
-        </thead>-->
+        </thead>
         <tbody style="text-align: center;">
 
                 <?php foreach ($info as $item) { ?>
@@ -83,6 +81,13 @@ $count=0;
                     </td>
 
                 <?php $count++; } ?>
+                            <td colspan="2" style="background: #333333; color: #ffffff;">
+                                <div >
+                                    <h2>Have a machine up for sale?<br/>
+                                    Call us and see how we can help.<br/>
+                                        (616) 745-5953</h2>
+                                </div>
+                            </td>
             </tr>
                 <tr>
                     <td colspan="4"><br>
