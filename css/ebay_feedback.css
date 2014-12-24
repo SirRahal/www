@@ -1,0 +1,192 @@
+#eBayFeedback
+{
+    display:          block;
+    background-color: white;
+    width:            90%;
+    padding:          5px 5px 0px 5px;
+    border-radius:    5px;
+    border:           1px solid #DADAFF;
+    font-family:      arial, helvetica, sans-serif;
+    font-size:        12px;
+}
+
+#eBayVerify
+{
+    float:     left;
+    padding:   0px 0px 0px 5px;
+    margin:    0px;
+    color:     #337;
+    font-size: 90%;
+}
+
+#eBaySponsor
+{
+    float:    right;
+    padding:   0px 5px 0px 0px;
+    margin:    0px;
+    color:     #337;
+    font-size: 90%;
+}
+
+.eBayFootLink a:link    {color: #195695; text-decoration: underline}
+.eBayFootLink a:hover   {color: #BB035D; text-decoration: none}
+.eBayFootLink a.active  {color: #BB035D; text-decoration: none}
+.eBayFootLink a.visited {color: #195695; text-decoration: underline}
+
+.eBayTopSeller
+{
+    float:        right;
+    margin-top:   2px;
+    padding:      0px 0px 2px 5px;
+}
+
+#eBayNew
+{
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayYellow
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/yellow_star.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayBlue
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/blue_star.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayTurquoise
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/turquoise_star.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayPurple
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/purple_star.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayRed
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/red_star.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayGreen
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/green_star.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayYellowShooting
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/yellow_shootingstar.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayTurquoiseShooting
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/turquoise_shootingstar.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayPurpleShooting
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/purple__shootingstar.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayRedShooting
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/red_shootingstar.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBayGreenShooting
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/green_shootingstar.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+#eBaySilverShooting
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/silver_shootingstar.gif) right center no-repeat;
+    font-weight:  bold;
+    padding:      0px 22px 0px 10px;
+}
+
+.eBayFeedbackComments
+{
+    list-style-type: none;
+    padding:         0px;
+    margin:          23px 5px 0px 5px;
+}
+
+.eBayHeader
+{
+    width:        100%;
+    height:       31px;
+    border:       #99A solid 1px;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size:    14px;
+    font-weight:  600;
+    padding:      0px;
+    margin-bottom: 5px;
+}
+
+.eBayHeader th
+{
+    display: none;
+}
+.eBayHeader td
+{
+    background:   url(http://www.x-shops.co.uk/ebay/images/ebay_back.png) repeat-x;
+    color:        #335;
+    border:       none;
+    padding:      0px 10px;
+}
+
+.eBayFeedbackComments
+{
+    list-style-type: none;
+    padding:         0px;
+    margin:          0px 0px 0px 5px;
+}
+
+.eBayFeedbackComments li
+{
+    background:    url(http://www.x-shops.co.uk/ebay/images/positive.png) left top no-repeat;
+    height:        16px;
+    color:         #335;
+    padding:       0px 5px 0px 25px;
+    white-space:   nowrap;
+    overflow:      hidden;
+    margin-bottom: 6px;
+}
+
+#eBayFeedbackUser
+{
+    font-size:        12px;
+    font-weight:      600;
+    color:            #333;
+    background:       url(http://www.x-shops.co.uk/ebay/images/ebay_back.png) repeat-x;
+    white-space:      nowrap;
+    padding:          5px 0px 0px 10px;
+    margin:           0px 0px 0px 54px;
+    height:           31px;
+}

@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="CNC replacement parts and supplies.">
+    <meta name="author" content="Sari Rahal">
 
-    <title>Nu-Tek-Sales</title>
+    <title>Nu Tek Sales</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -29,44 +29,16 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Nu-Tek-Sales</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <?php include 'nav.php'; ?>
 
+<div style="clear:both; height:30px;"></div>
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Nu-Tek-Sales</p>
+                <p class="lead">Nu Tek Sales</p>
                 <form role="form" method="get" action="<?php echo str_replace('index.php', '', $_SERVER['PHP_SELF']) . '?' . htmlspecialchars($_SERVER['QUERY_STRING']);?>">
                     <?php if (isset($_GET['p'])):?>
                         <input type="hidden" name="p" value="<?php echo htmlspecialchars($_GET['p']);?>"/>
@@ -121,21 +93,7 @@
     </div>
     <!-- /.container -->
 
-    <div class="container">
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
+    <?php include('footer.php'); ?>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
