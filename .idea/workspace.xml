@@ -26,9 +26,11 @@
       <file leaf-file-name="ticket_holder.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/site/pages/ticket_holder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="48" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.51194185" vertical-offset="0" max-vertical-offset="963">
+            <state line="18" column="18" selection-start="493" selection-end="493" vertical-scroll-proportion="0.317757" vertical-offset="0" max-vertical-offset="963">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ol#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -575,9 +577,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/pages/ticket_holder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="48" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.51194185" vertical-offset="0" max-vertical-offset="963">
+        <state line="18" column="18" selection-start="493" selection-end="493" vertical-scroll-proportion="0.317757" vertical-offset="0" max-vertical-offset="963">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ol#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
           </folding>
         </state>

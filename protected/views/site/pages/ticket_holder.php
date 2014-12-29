@@ -17,7 +17,7 @@ $this->breadcrumbs=array(
     <div class="bold" style="font-size: 21px;">
         <img src="/images/ticket.png" width="100%" class="round_edges shadow"/>
         <br/><br/>
-        <ol>
+        <ol style="padding-left:40px;">
             <li>After Selection Sunday, players enter their ticket # and register at bracketfanatic.com</li>
             <li>Using all 4 regions, players pick the teams they think will score the most points from each seed 1 thru 16</li>
             <li>Players will compete only against entries from your own organization!!!</li>
@@ -29,8 +29,8 @@ $this->breadcrumbs=array(
 <div class="mobile_container">
     <img src="/images/edit_pics.png" width="100%" class="round_edges shadow "/>
 </div>
-<div class="clear"></div>
+<div class="clear" style="height:20px;"></div>
 <div class="main_title"><h1>Payouts</h1></div>
 <div style="text-align: center;">
-    <img src="/images/23hor.png"  class="round_edges shadow"/>
+    <img src="/images/23hor.png" width="100%" class="round_edges shadow"/>
 </div>
