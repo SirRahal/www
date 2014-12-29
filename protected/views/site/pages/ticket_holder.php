@@ -14,7 +14,7 @@ $this->breadcrumbs=array(
 
 <div class="main_title"><h1>How To Play</h1></div>
 <div class="mobile_container">
-    <div class="bold" style="width:500px; padding-left: 20px; font-size: 21px;">
+    <div class="bold" style="font-size: 21px;">
         <img src="/images/ticket.png" width="500" class="round_edges shadow"/>
         <br/><br/>
         <ol>
@@ -24,14 +24,13 @@ $this->breadcrumbs=array(
             <li>Players’ teams that score the highest combined point totals for each round win cash prizes!</li>
             <li>Round by round winners: Round of 64-32-16-8 and final Grand Total Even the worst total can win $$!</li>
         </ol>
-
     </div>
 </div>
 <div class="mobile_container">
     <img src="/images/edit_pics.png" width="540" class="round_edges shadow "/>
 </div>
 <div class="clear"></div>
-<div class="main_title"><h1>Break Down of Payouts</h1></div>
+<div class="main_title"><h1>Payouts</h1></div>
 <div style="text-align: center;">
     <img src="/images/23hor.png"  class="round_edges shadow"/>
 </div>
