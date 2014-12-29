@@ -12,44 +12,65 @@ $this->menu=array(
 	array('label'=>'Create TournamentResults', 'url'=>array('create')),
 );
 
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#tournament-results-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
 ?>
 
 <h1>Manage Tournament Results</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+<script>
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+</script>
+<br/>
+<?php
+$tournament_results = TournamentResults::model()->findAll();
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'tournament-results-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'ID',
-		'team_tournament_region_ID',
-		'placement',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+
+
+?>
+<table id="table_id">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>TTR ID</td>
+        <td>(ID) Team</td>
+        <td>Region</td>
+        <td>Placement</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach($tournament_results as $tournament_result){
+        $TTR_ID = $tournament_result['team_tournament_region_ID'];
+        $TTR = TeamTournamentRegion::model()->findByPk($TTR_ID);
+        $team_ID = $TTR['team_ID'];
+        $team = Team::model()->findByPk($team_ID);
+        $team_name = $team['name'];
+        $region_model = Region::model()->findByPk($TTR['tournament_region_ID']);
+        $region = $region_model['Name'];
+
+        ?>
+        <tr>
+            <!--ID-->
+            <td><?php echo $tournament_result['ID'];?></td>
+            <!--TTR ID-->
+            <td><?php echo $tournament_result['team_tournament_region_ID'];?></td>
+            <!--Team-->
+            <td><?php echo '('.$team_ID.') '.$team_name;?></td>
+            <!--Region-->
+            <td><?php echo $region; ?></td>
+            <!--Placment-->
+            <td><?php echo $tournament_result['placement'];?></td>
+            <!--edit-->
+            <td><a href="update/<?php echo $tournament_result['ID']; ?>">Edit</a></td>
+        </tr>
+
+    <?php } ?>
+
+    </tbody>
+</table>

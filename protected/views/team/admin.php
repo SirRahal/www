@@ -12,44 +12,62 @@ $this->menu=array(
 	array('label'=>'Create Team', 'url'=>array('create')),
 );
 
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#team-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
 ?>
 
 <h1>Manage Teams</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+<script>
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+</script>
+<br/>
+<?php
+$teams = Team::model()->findAll();
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'team-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'ID',
-		'name',
-		'logo',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+
+
+?>
+<table id="table_id">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Rd_1</td>
+        <td>Rd_2</td>
+        <td>Rd_3</td>
+        <td>Rd_4</td>
+        <td>Rd_5</td>
+        <td>Rd_6</td>
+        <td>Total</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach($teams as $team){ ?>
+        <tr>
+            <!--ID-->
+            <td><?php echo $team['ID'];?></td>
+            <!--Team-->
+            <td><?php echo $team['name'];?></td>
+
+            <td>Rd_1</td>
+            <td>Rd_2</td>
+            <td>Rd_3</td>
+            <td>Rd_4</td>
+            <td>Rd_5</td>
+            <td>Rd_6</td>
+            <td>total</td>
+            <!--edit-->
+            <td><a href="update/<?php echo $team['ID']; ?>">Edit</a></td>
+        </tr>
+
+    <?php } ?>
+
+    </tbody>
+</table>

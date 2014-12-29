@@ -22,7 +22,7 @@ $this->menu=array(
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
 )); ?>
-</div><!-- search-form -->
+</div>
 
 <!-- DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
