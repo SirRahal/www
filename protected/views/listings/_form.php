@@ -6,12 +6,20 @@
 
 <div class="form">
 
+    <style>
+        table{
+            border-collapse: separate;
+            border-spacing: 20px 0px;
+            background:none;
+        }
+    </style>
+
     <?php
     /*find out who the user is*/
     $user_ID = User::model()->get_user_ID();
     $user = User::model()->findByPk($user_ID);
     /*if it's not a new item*/
-    if (isset($model)){
+    if (isset($model->list_by)){
         $date = $model->date;
         $list_by = $model->list_by;
     }else{
@@ -19,16 +27,9 @@
         $date = date("y-m-d");
         $list_by = $user_ID;
     }
-    ?>
-<style>
-    table{
-        border-collapse: separate;
-        border-spacing: 20px 0px;
-    }
-</style>
 
-    <!--If it is a copy-->
-    <?php
+
+    /*If it is a copy*/
     $url = $_SERVER['REQUEST_URI'];
     if( strpos( $url, 'create/' ) !== false ) {
         $exploded_url = explode('/',$url);
@@ -53,7 +54,6 @@
 	<p class="note">Fields with <span class="required">*</span> are required.<br/>If the information is not available, enter <span class="required">N/A</span> or <span class="required">0</span></p>
 
 	<?php echo $form->errorSummary($model); ?>
-
     <div class="form_container">
         <div class="visibility_none">
             <?php echo $form->labelEx($model,'list_by'); ?>
@@ -72,8 +72,6 @@
             <?php echo $form->textField($model,'date',array('value'=>$date)); ?>
             <?php echo $form->error($model,'date'); ?>
         </div>
-
-
 
         <div class="row">
             <?php echo $form->labelEx($model,'description'); ?>
@@ -208,8 +206,9 @@
         </div>
 
         </div>
-    <div style="clear:both">
-        <div <?php if($user['permission']<2){ echo 'style="display:none;"'; } ?> >
+        <div style="clear:both"></div>
+    <!--if the user is a lister display this part of the form-->
+        <div <?php if($user['permission']<2){ echo 'style="display:none;"'; } ?>  >
             <br/>
             <h3>Lister's Info</h3>
             <div class="form_container">
@@ -267,7 +266,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create & Upload Images' : 'Save & Upload Images'); ?>
 	</div>
