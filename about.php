@@ -36,7 +36,7 @@
 <body>
 
 <!-- Navigation -->
-<?php include '/templates/nav.php'; ?>
+<?php include './templates/nav.php'; ?>
 <style>
     a{
         color:black ;
@@ -48,7 +48,7 @@
 <div class="container">
 
     <div class="row">
-        <div style="position: absolute; background: #ececed; color:black; padding:15px; ">
+        <div style="position: absolute; background: #ececed; color:black; padding:15px; width: 1170px;">
 
             Nu Tek Sales strives on having good feedback from our customers.  We try our best to make sure that all of our items are represented as best as possible and all of our customers are satisfied.
 
@@ -73,6 +73,6 @@
 
 </body>
 <div>
-<?php include('/templates/footer.php'); ?>
+<?php include('./templates/footer.php'); ?>
 </div>
 </html>

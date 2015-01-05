@@ -22,23 +22,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="/about.php">About</a>
-                </li>
-                <li>
+
+                <!--<li>
                     <a href="#">Services</a>
-                </li>
+                </li>-->
                 <li>
                     <a href="/contacts_us.php">Contact</a>
                 </li>
-
+                <li>
+                    <a href="/about.php">Feedback</a>
+                </li>
             </ul>
 
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <div style="color: #ffffff; padding-left: 15px; padding-bottom: 15px;">
-        To purchase items from this site, please contact us a <b><i>(616) 259-9125</i></b>.
+        To purchase items from this site, please contact us a <b><i>(616) 259-0631</i></b>.
     </div>
     <!-- /.container -->
 </nav>
