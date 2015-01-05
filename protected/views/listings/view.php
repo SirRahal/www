@@ -76,9 +76,9 @@ if($model['ebay_listed'] == 1){ ?>
 <?php } ?>
 <?php if(User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
 <h1>Ebay Listing</h1>
-<h6>Copy And Past Info Below</h6>  <a href="/index.php/listings/update/<?php echo $model->ID; ?>" style="float:right; margin-top: -30px;"><b>Activate this as on Ebay</b></a>
+<h6>Copy And Past Info Below</h6>  <a href="/index.php/listings/update/<?php echo $model->ID; ?>" style="float:right; margin-top: -30px;"><b>Edit This Item</b></a>
 <div class="ebay_div">
-    Our lising ID : <b><?php echo $model->ID; ?></b><br/>
+    Our listing ID : <b><?php echo $model->ID; ?></b><br/>
     Our internal inventory number on this product is : <b><?php echo $model->inventory; ?></b>
     <br/>
     <br/>
@@ -245,16 +245,39 @@ if($model['ebay_listed'] == 1){ ?>
         <?php } ?>
     </table>
 
-
+<br/>
+    <table style="background: none;">
+        <thead>
+            <tr style="background: #050505; text-align: center; font-size: 20px; font-weight: bold;">
+                <td>Shipping 1</td>
+                <td>Shipping 2</td>
+            </tr>
+        </thead>
+        <tr style="border-bottom:solid 1px #050505;">
+            <td style="border-right: solid 1px #050505;  width:50%;">
+                <div class="text_center mid_font" style="padding:20px;">
+                    <div class="green_text"><b>***NOTE***</b></div>
+                    <div class="red_text">
+                        <b>FREE SHIPPING & HANDLING</b><br/>
+                        Shipping to lower 48 States via UPS Ground Service.<br/><br/>
+                        <b>Domestic Shipments</b> pay $14.00 Boxing / Handling PLUS shipping costs from Mi, 49534. <br/><br/>
+                        <b>International Shipments</b> pay $19.00 Boxing / Handling / Processing PLUS shipping costs from Mi, 49534.
+                    </div><br/>
+                </div>
+            </td>
+            <td style=" width:50%;">
+                <div class="text_center mid_font" style="padding:20px;">
+                    <div class="green_text"><b>***NOTE***</b></div>
+                    <div class="red_text">
+                        <b>FREE SHIPPING & HANDLING</b><br/>Buyer to pay $45.00 skidding and handling fee + actual freight cost from Grand Rapids Mi, 49534.
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
     <div class="text_center mid_font" style="padding:20px;">
-        <div class="green_text"><b>***NOTE***</b></div>
-        <div class="red_text">
-        <b>FREE SHIPPING & HANDLING</b> to lower 48 States via <b>UPS Ground Service</b>.<br/>
-        All Other Domestic Shipments pay $15.00 Boxing / Handling PLUS shipping costs from Zip 49534!<br/>
-        All International Shipments pay $20.00 Boxing / Handling / Processing PLUS shipping costs from Zip 49534!<br/>
-        </div><br/>
         <div class="blue_text">
-        <b>ALL INTERNATIONAL ORDERS ARE SUBJECT TO ACTUAL SHIPPING COSTS - SOMETIMES THE SHIPPING CALCULATOR IS NOT CORRECT WITH PACKAGES!!!   WE ALSO MAY SUBSTITUTE SHIPPING COMPANY TO GET YOU A BETTER PRICE!!!</b>
+            ALL INTERNATIONAL ORDERS ARE SUBJECT TO ACTUAL SHIPPING COSTS - SOMETIMES THE SHIPPING CALCULATOR IS NOT CORRECT WITH PACKAGES!!!   WE ALSO MAY SUBSTITUTE SHIPPING COMPANY TO GET YOU A BETTER PRICE!!!
         </div><br/>
         <b>Domestic Shipping Policies:</b><br/>
         All shipments are sent standard ground unless requested differently.<br/>
@@ -262,14 +285,14 @@ if($model['ebay_listed'] == 1){ ?>
         We can ship this early A.M., but you must include that in your Paypal payment notes.<br/>
         <br/>
         <b>International Shipping Policies:</b><br/>
-        We ship FedEx International, UPS International, USPS Express International.  (Only when requested, we ship USPS Priority; this carrier type lacks reliable tracking info.  We cannot be held responsible for your shipment once it leaves US land).
-        Please understand if we ship an item on your account, we are unable to see what you are being charged for shipping.  This is both FedEx and UPS rules.  They do not allow us to look at your rates that you are getting with them.  We will not be held responsible if you ask us to ship on your account and then the shipment cost is high.
+        Our primary methods of shipment are UPS International, FedEx International and USPS Express International.  If requested, we can ship via USPS Priority, but this shipping method lacks reliable tracking information.  Please understand if we ship an item on your account, we are unable to see what you are being charged for shipping (per FedEx and UPS rules).  We will not be held responsible if you ask us to ship on your account and then the shipment cost is high.
         <br/><br/>
         <b>Returns:</b><br/>
         We have a 30-day return policy (excluding all manuals, and AS-IS items, see listing description).  A replacement unit will be sent out as soon as we receive the original unit.  If we do not have one in stock, then we will refund your purchase price amount only!  There will be a 10% restocking fee for all transactions that are returned.  Alternations or removal of any components of a part voids the 30-day return privilege.  Once we get the return, we will inspect the item to make sure it is in the same condition as we shipped it.  This process can take up to three business days.
         <br/><br/>
         <div class="red_text">All purchases must be paid within 10 days of the Auction!</div>
     </div>
+</div>
 </div>
 
 <?php } ?>

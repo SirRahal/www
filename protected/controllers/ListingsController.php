@@ -70,6 +70,11 @@ class ListingsController extends Controller
 		if(isset($_POST['Listings']))
 		{
 			$model->attributes=$_POST['Listings'];
+            $model->model_number = strtoupper($model->model_number);
+            $model->serial_number = strtoupper($model->serial_number);
+            $model->internal_number = strtoupper($model->internal_number);
+            $model->inventory = strtoupper($model->inventory);
+            $model->manufacturer = ucfirst($model->manufacturer);
 			if($model->save())
 				$this->redirect(array('upload_images','id'=>$model->ID));
 		}

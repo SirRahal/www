@@ -63,6 +63,9 @@
                         <li>
                             <a href="/index.php/listings/admin">All Listings</a>
                         </li>
+                        <li>
+                            <a href="/index.php/user/<?php echo User::model()->findByPk(User::model()->get_user_ID())->ID; ?>">My Listings</a>
+                        </li>
                     <?php } else { ?>
                         <li>
                             <a href="/index.php/site/login">Login</a>

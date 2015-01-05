@@ -12,6 +12,10 @@
             border-spacing: 20px 0px;
             background:none;
         }
+        input,textarea,select{
+            color: #000000;
+            padding-left: 5px;
+        }
     </style>
 
     <?php
@@ -275,7 +279,7 @@
 
 </div><!-- form -->
 <div class="clear"></div>
-<?php if ($model->images){ ?>
+<?php if (strpos( $url, 'create/' ) != true && $model->images){ ?>
 <div>
     <h1>Images</h1>
     <div>

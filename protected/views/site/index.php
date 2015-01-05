@@ -21,9 +21,11 @@ $this->pageTitle=Yii::app()->name;
     <li>Create listings</li>
     <li>Edit Listings</li>
     <li>Add Images</li>
-    <li>Delete Images</li>
     <li>Copy Listings</li>
     <li>View Listings</li>
+    <li>Delete Images</li>
+    <li>Delete Listings</li>
+    <li>My Listings</li>
 </ul>
 <br/>
 <h6>eBay Listers</h6>

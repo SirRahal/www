@@ -7,13 +7,6 @@ $this->breadcrumbs=array(
 	$model->ID,
 );
 
-$this->menu=array(
-	array('label'=>'List User', 'url'=>array('index')),
-	array('label'=>'Create User', 'url'=>array('create')),
-	array('label'=>'Update User', 'url'=>array('update', 'id'=>$model->ID)),
-	array('label'=>'Delete User', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage User', 'url'=>array('admin')),
-);
 ?>
 
 <!-- DataTables CSS -->
@@ -30,28 +23,26 @@ $this->menu=array(
 </style>
 <table id="myTable" class="hover stripe row-border">
     <thead>
-    <tr>
-        <td>Edit</td>
-        <td>Activity</td>
+    <tr style="text-align: center">
         <td>ID</td>
-        <td>Internal #</td>
+        <td>Inventory</td>
         <td>Manufacturer</td>
         <td>Serial #</td>
         <td>Model #</td>
         <td>Date</td>
+        <td>Options</td>
     </tr>
     </thead>
     <tbody>
-    <?php foreach($model->listings as $post){ ?>
+    <?php foreach($model->listings as $item){ ?>
         <tr>
-            <td><a class="link" href="/index.php/listings/update/<?php echo $post->ID; ?>">Edit</a></td>
-            <td><a class="link" href="/index.php/listings/view/<?php echo $post->ID; ?>">View</a></td>
-            <td><?php echo $post->ID; ?></td>
-            <td><?php echo $post->internal_number; ?></td>
-            <td><?php echo $post->manufacturer; ?></td>
-            <td><?php echo $post->serial_number; ?></td>
-            <td><?php echo $post->model_number; ?></td>
-            <td><?php echo $post->date; ?></td>
+            <td><?php echo $item->ID; ?></td>
+            <td><?php echo $item->inventory; ?></td>
+            <td><?php echo $item->manufacturer; ?></td>
+            <td><?php echo $item->serial_number; ?></td>
+            <td><?php echo $item->model_number; ?></td>
+            <td style="text-align: center;"><?php echo date("M d/y",strtotime($item->date)); ?></td>
+            <td style="text-align: center;"><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a> | <a class="link" href="/index.php/listings/view/<?php echo $item->ID; ?>">View</a> | <a class="link" href="/index.php/listings/create/<?php echo $item->ID; ?>">Copy</a> | <a class="link" style="cursor: pointer;" onclick="delete_listing(<?php echo $item->ID; ?>)">Delete</a></td>
         </tr>
     <?php } ?>
     </tbody>
