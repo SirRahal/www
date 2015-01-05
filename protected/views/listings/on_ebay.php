@@ -4,7 +4,12 @@
  * User: Sari
  * Date: 12/4/14
  * Time: 2:58 PM
- */ ?>
+ */
+
+$this->breadcrumbs=array(
+    'Listings',
+);
+?>
 
 
 
@@ -23,43 +28,6 @@
 <a href="/index.php/listings/create">Create Listing</a>
 
 <?php
-$listings = Listings::model()->findAllByAttributes(array('ebay_listed'=>1));
+    $listings = Listings::model()->findAllByAttributes(array('ebay_listed'=>1));
+    echo $this->renderPartial('listing_table', array('listings' => $listings));
 ?>
-<style>
-    tbody{
-        color:black;
-    }
-</style>
-<table id="myTable" class="hover stripe row-border">
-    <thead>
-    <tr>
-        <td>Edit</td>
-        <td>Edit</td>
-        <td>ID</td>
-        <td>Inventory</td>
-        <td>Manufacturer</td>
-        <td>Serial #</td>
-        <td>Model #</td>
-        <td>Date</td>
-    </tr>
-    </thead>
-    <tbody>
-    <?php foreach($listings as $item){ ?>
-        <tr>
-            <td ><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a></td>
-            <td ><a class="link" href="/index.php/listings/view/<?php echo $item->ID; ?>">View</a></td>
-            <td><?php echo $item->ID; ?></td>
-            <td><?php echo $item->inventory; ?></td>
-            <td><?php echo $item->manufacturer; ?></td>
-            <td><?php echo $item->serial_number; ?></td>
-            <td><?php echo $item->model_number; ?></td>
-            <td><?php echo $item->date; ?></td>
-        </tr>
-    <?php } ?>
-    </tbody>
-</table>
-<script>
-    $(document).ready(function(){
-        $('#myTable').DataTable();
-    });
-</script>

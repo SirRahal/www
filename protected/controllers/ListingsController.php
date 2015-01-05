@@ -28,7 +28,7 @@ class ListingsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','upload'),
+				'actions'=>array('index','view','upload','listing_table'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -119,8 +119,21 @@ class ListingsController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+        //delete all images related to that listing
+        $delete_model = $this->loadModel($id);
+        if ($delete_model->images){
+            foreach ($delete_model->images as $delete_image){
 
+                $file_dir = './images/uploads/'.$delete_image['image'];
+                if(realpath($file_dir)){
+                    unlink($file_dir);
+                    $delete_image->delete();
+                }elseif(!realpath($file_dir)){
+                    //error
+                }
+            }
+        }
+        $delete_model->delete();
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
@@ -157,6 +170,12 @@ class ListingsController extends Controller
     }
     public function actionOn_ebay(){
         $this->render('on_ebay');
+    }
+
+    public function actionListing_table($listings){
+        $this->render('listing_table',array(
+            'listings'=>$listings,
+        ));
     }
 
 	/**

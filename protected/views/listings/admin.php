@@ -24,44 +24,7 @@ $this->breadcrumbs=array(
 
 <?php
 $listings = Listings::model()->findAll();
+
+
+echo $this->renderPartial('listing_table', array('listings' => $listings));
 ?>
-<style>
-    tbody{
-        color:black;
-    }
-</style>
-<table id="myTable" class="hover stripe row-border">
-    <thead>
-    <tr>
-        <td>Edit</td>
-        <td>View</td>
-        <td>Copy</td>
-        <td>ID</td>
-        <td>Inventory</td>
-        <td>Manufacturer</td>
-        <td>Serial #</td>
-        <td>Model #</td>
-        <td>Date</td>
-    </tr>
-    </thead>
-    <tbody>
-    <?php foreach($listings as $item){ ?>
-        <tr>
-            <td ><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a></td>
-            <td ><a class="link" href="/index.php/listings/view/<?php echo $item->ID; ?>">View</a></td>
-            <td ><a class="link" href="/index.php/listings/create/<?php echo $item->ID; ?>">Copy</a></td>
-            <td><?php echo $item->ID; ?></td>
-            <td><?php echo $item->inventory; ?></td>
-            <td><?php echo $item->manufacturer; ?></td>
-            <td><?php echo $item->serial_number; ?></td>
-            <td><?php echo $item->model_number; ?></td>
-            <td><?php echo date("m-d-y -- g:sa",strtotime($item->date)); ?></td>
-        </tr>
-    <?php } ?>
-    </tbody>
-</table>
-<script>
-    $(document).ready(function(){
-        $('#myTable').DataTable();
-    });
-</script>
