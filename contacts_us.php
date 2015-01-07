@@ -60,7 +60,7 @@
                         </tr>
                         <tr>
                             <td>Phone</td>
-                            <td> : <a href="tel:6162590631">(616) 259-0631</a></td>
+                            <td> : <a href="tel:6162590631">(616) 258-0631</a></td>
                         </tr>
                         <tr>
                             <td>Email</td>

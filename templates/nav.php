@@ -38,7 +38,7 @@
         <!-- /.navbar-collapse -->
     </div>
     <div style="color: #ffffff; padding-left: 15px; padding-bottom: 15px;">
-        To purchase items from this site, please contact us a <b><i>(616) 259-0631</i></b>.
+        To purchase items from this site, please contact us a <b><i>(616) 258-0631</i></b>.
     </div>
     <!-- /.container -->
 </nav>
