@@ -260,8 +260,8 @@ if($model['ebay_listed'] == 1){ ?>
                     <div class="red_text">
                         <b>FREE SHIPPING & HANDLING</b><br/>
                         Shipping to lower 48 States via UPS Ground Service.<br/><br/>
-                        <b>Domestic Shipments</b> pay $14.00 Boxing / Handling PLUS shipping costs from Mi, 49534. <br/><br/>
-                        <b>International Shipments</b> pay $19.00 Boxing / Handling / Processing PLUS shipping costs from Mi, 49534.
+                        <b>Domestic Shipments</b> pay $14.00 Boxing / Handling PLUS shipping costs from MI, 49534. <br/><br/>
+                        <b>International Shipments</b> pay $19.00 Boxing / Handling / Processing PLUS shipping costs from MI, 49534.
                     </div><br/>
                 </div>
             </td>
@@ -269,7 +269,7 @@ if($model['ebay_listed'] == 1){ ?>
                 <div class="text_center mid_font" style="padding:20px;">
                     <div class="green_text"><b>***NOTE***</b></div>
                     <div class="red_text">
-                        <b>FREE SHIPPING & HANDLING</b><br/>Buyer to pay $45.00 skidding and handling fee + actual freight cost from Grand Rapids Mi, 49534.
+                        <b>SHIPPING & HANDLING</b><br/>Buyer to pay $45.00 skidding and handling fee + actual freight cost from Grand Rapids MI, 49534.
                     </div>
                 </div>
             </td>

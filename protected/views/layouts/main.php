@@ -26,6 +26,16 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 
 
+    <!--Check to see if the user is a mobile device and use the correct styling sheet-->
+    <?php
+    $isMobile = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows (phone|ce)|blackberry|tablet'.
+        '|s(ymbian|eries60|amsung)|p(laybook|alm|rofile/midp|laystation portable)|nokia|fennec|htc[\-_]'.
+        '|mobile|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
+    if($isMobile){ ?>
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/mobile.css" />
+    <?php } ?>
+
+
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -58,30 +68,33 @@
 
                     <?php if (Yii::app()->user->name != 'Guest') { ?>
                         <li>
-                            <a href="/index.php/site/logout">Logout <?php echo ucfirst (Yii::app()->user->name); ?></a>
-                        </li>
-                        <li>
                             <a href="/index.php/listings/admin">All Listings</a>
                         </li>
                         <li>
                             <a href="/index.php/user/<?php echo User::model()->findByPk(User::model()->get_user_ID())->ID; ?>">My Listings</a>
                         </li>
+                        <?php if(Yii::app()->user->name != 'Guest' && User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
+                            <li>
+                                <a href="/index.php/listings/not_on_ebay">Listings Not On Ebay</a>
+                            </li>
+                            <li>
+                                <a href="/index.php/listings/on_ebay">Listings On Ebay</a>
+                            </li>
+                        <?php } ?>
+                        <li>
+                            <a href="/index.php/listings/sold">Sold Items</a>
+                        </li>
+                        <?php if(Yii::app()->user->name != 'Guest' && User::model()->findByPk(User::model()->get_user_ID())->permission > 2){ ?>
+                            <li>
+                                <a href="/index.php/user/admin">Users</a>
+                            </li>
+                        <?php } ?>
+                        <li>
+                            <a href="/index.php/site/logout">Logout <?php echo ucfirst (Yii::app()->user->name); ?></a>
+                        </li>
                     <?php } else { ?>
                         <li>
                             <a href="/index.php/site/login">Login</a>
-                        </li>
-                    <?php } ?>
-                    <?php if(Yii::app()->user->name != 'Guest' && User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
-                        <li>
-                            <a href="/index.php/listings/not_on_ebay">Listings Not On Ebay</a>
-                        </li>
-                        <li>
-                            <a href="/index.php/listings/on_ebay">Listings On Ebay</a>
-                        </li>
-                    <?php } ?>
-                    <?php if (Yii::app()->user->name == 'admin'){ ?>
-                        <li>
-                            <a href="/index.php/user/admin">Users</a>
                         </li>
                     <?php } ?>
                 </ul>

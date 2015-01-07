@@ -123,7 +123,7 @@
         );
         ?>
     </div>
-
+    <div class="mobile_line_break"></div>
 
     <div class="form_container">
         <div class="row">
@@ -139,7 +139,7 @@
         </div>
         <!--dimmentions-->
         <h3>Measurements</h3>
-        <h6>Please note that everything is in pounds and inches</h6>
+        <h6>Please note that everything is in pounds and inches.<br/>Please use decimal notation not fractions. Example :<span class="green_text">1.25 Good</span> <span class="red_text">1 1/4 Bad</span></h6>
         <div class="boxed">
             <div class="row">
                 <?php echo $form->labelEx($model,'weight'); ?>

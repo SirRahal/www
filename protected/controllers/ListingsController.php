@@ -32,7 +32,7 @@ class ListingsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','not_on_ebay','upload_images','on_ebay'),
+				'actions'=>array('create','update','not_on_ebay','upload_images','on_ebay','sold'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -181,6 +181,10 @@ class ListingsController extends Controller
         $this->render('listing_table',array(
             'listings'=>$listings,
         ));
+    }
+
+    public function actionSold(){
+        $this->render('sold');
     }
 
 	/**
