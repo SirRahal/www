@@ -1,0 +1,35 @@
+
+		.topToolbar,.contentLabel, .sliderThumb:after{
+		background-color:
+		rgb(41,41,41);
+	
+		}
+
+		.popover{
+		background-color:
+		rgb(178,178,178);
+	
+		}
+
+		.toolbar, .contentLabel, .popover .button{
+		color:
+		rgb(178,178,178);
+	
+		}
+
+		.popover:not(#helpOver) .contentOuter *{
+		color:
+		rgb(41,41,41);
+	
+		}
+
+		#bgDiv{
+		background-color:
+		rgb(41,41,41);
+	
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+		}
+	

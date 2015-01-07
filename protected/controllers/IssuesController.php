@@ -123,14 +123,12 @@ class IssuesController extends Controller
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Issues',array(
-
                 'criteria'=>array(
-                    'order'=>'date DESC'
-
+                    'order'=>'date DESC',
                 )));
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+		    $this->render('index',array(
+			    'dataProvider'=>$dataProvider,
+		    ));
 	}
 
 	/**

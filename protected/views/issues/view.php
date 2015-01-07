@@ -19,6 +19,10 @@ $this->menu=array(
 <h1>View Issues #<?php echo $model->ID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
+    'dataProvider' => array(
+        /* other options for the data provider... */
+        'pagination' => array('pageSize' => 12),
+    ),
 	'data'=>$model,
 	'attributes'=>array(
 		'ID',

@@ -5,7 +5,9 @@
 <style>
     .cover{
         float: left;
+        margin-left: 20px;;
         width: 210px;
+        height : 150px;
     }
     .date_link{
         position: absolute;
@@ -21,25 +23,12 @@ $date = $data->date;
 $date = date("M Y",strtotime($date));
 ?>
 
-<div class="view">
+<div>
     <div class="cover issue" url="<?php echo $data->url;?>">
         <a href="<?php echo '/issues/'.$data->url; ?>" target="_blank">
-        <img src="/images/covers/<?php echo $data->img;?>" width="100"/>
-        <img src="/images/covers/<?php echo $back_img;?>" width="100"/>
+            <img src="/images/covers/<?php echo $data->img;?>" width="100"/>
+            <img src="/images/covers/<?php echo $back_img;?>" width="100"/><br/>
+            <span style="margin-left: 60px;"><?php echo $data->date; ?></span>
+        </a>
     </div>
-    </a>
-    <div >
-        <b><?php echo CHtml::encode($data->getAttributeLabel('date')); ?>:</b>
-        <div class="issue date_link" url="<?php echo $data->url;?>" >
-            <?php echo CHtml::link(CHtml::encode($date), '/issues/'.$data->url, array('target'=>"_blank")); ?>
-        </div>
-        <br />
-
-        <b><?php echo CHtml::encode($data->getAttributeLabel('info')); ?>:</b>
-        <?php echo CHtml::encode($data->info); ?>
-        <br />
-
-        <br />
-    </div>
-<div class="clear"></div>
 </div>
