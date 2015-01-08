@@ -30,7 +30,7 @@
                     <a href="/contacts_us.php">Contact</a>
                 </li>
                 <li>
-                    <a href="/about.php">Feedback</a>
+                    <a href="/about.php">About Us</a>
                 </li>
             </ul>
 

@@ -48,17 +48,24 @@
 <div class="container">
 
     <div class="row">
-        <div style="position: absolute; background: #ececed; color:black; padding:15px; width: 1170px;">
 
+        <h1>About Us</h1>
+        <div>
+            We are a one stop shop for everything to do with CNC Machines.  From Large machines that are fully functional, to spare parts and display modules.  If we don't have what you are looking for, we can help you find it.  Take a look at our inventory or contact us and we'll do it for you.
+            <br/><br/>
             Nu Tek Sales strives on having good feedback from our customers.  We try our best to make sure that all of our items are represented as best as possible and all of our customers are satisfied.
 
-        </div>
 
-    <div style="margin-top: 24px;">
+        </div>
+        <br/>
+
+
+
+
+    <!--<div style="margin-top: 24px;">
         <script type="text/javascript" src="//www.auctionnudge.com/feedback_build/js/UserID/machinre_nuteksalesparts/siteid/0/limit/5/type/FeedbackReceivedAsSeller/theme/profile_table"></script><div id="auction-nudge-feedback" class="auction-nudge"><a href="http://www.auctionnudge.com/your-ebay-feedback">eBay Feedback Widget from Auction Nudge</a></div>
-        <!--<link rel="stylesheet" type="text/css" href="/css/ebay_feedback.css" />
-        <script type="text/javascript" src="http://www.x-shops.co.uk/ebay/feedback.php?id=machinre_nuteksalesparts&site=3&seller=top"></script>-->
-    </div>
+
+    </div>-->
     </div>
 </div>
 <!-- /.container -->
