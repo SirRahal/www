@@ -5,7 +5,7 @@
 <style>
     .cover{
         float: left;
-        margin-left: 20px;;
+        margin-left: 21px;;
         width: 210px;
         height : 150px;
     }

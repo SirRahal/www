@@ -128,6 +128,7 @@ class IssuesController extends Controller
                 )));
 		    $this->render('index',array(
 			    'dataProvider'=>$dataProvider,
+                $dataProvider->pagination = array('pageSize'=>15),
 		    ));
 	}
 
