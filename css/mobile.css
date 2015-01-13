@@ -142,3 +142,8 @@ ul#countdown li{
     min-height: 300px;
     max-height: 300px;
 }
+.mobile_add_ticket{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}

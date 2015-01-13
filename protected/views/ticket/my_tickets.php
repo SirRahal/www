@@ -44,8 +44,8 @@ $this->breadcrumbs=array(
             }
             dialog = $( "#dialog-form" ).dialog({
                 autoOpen: false,
-                width: <?php if($isMobile) { echo '800';}else {echo '400';} ?>,
-                height: <?php if($isMobile) { echo '800';}else {echo '400';} ?>,
+                width: <?php if($isMobile) { echo '900';}else {echo '400';} ?>,
+                height: <?php if($isMobile) { echo '900';}else {echo '400';} ?>,
                 modal: true,
                 buttons: {
                     "Add Entry": addTicket,
@@ -76,7 +76,7 @@ $this->breadcrumbs=array(
         <?php echo $this->renderPartial('/site/container/count_down'); ?>
     </div>
     <div class="clear"></div>
-    <div class="row">
+    <div class="row mobile_add_ticket">
         <button id="add_ticket">Add Entry</button>
     </div>
     <div class="clear spacer"></div>
@@ -97,7 +97,7 @@ $this->breadcrumbs=array(
             <label for="ticket_code">Entry Code #</label>
             <input type="text" name="ticket_code" id="ticket_code" placeholder="0-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your entry">
             <br/><br/>
-            <img src="/images/ticket.png" width="360";/>
+            <img src="/images/ticket.png" width="<?php if($isMobile){echo '720';}else{ echo'360'; } ?>";/>
             <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
         </fieldset>
     </form>
