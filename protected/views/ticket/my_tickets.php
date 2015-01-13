@@ -9,6 +9,9 @@ $this->breadcrumbs=array(
     'My Entries',
 );
     $mytickets = Ticket::model()->get_tickets_by_user_ID();
+    $isMobile = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows (phone|ce)|blackberry|tablet'.
+    '|s(ymbian|eries60|amsung)|p(laybook|alm|rofile/midp|laystation portable)|nokia|fennec|htc[\-_]'.
+    '|mobile|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
 ?>
 <head>
     <script>
@@ -41,8 +44,8 @@ $this->breadcrumbs=array(
             }
             dialog = $( "#dialog-form" ).dialog({
                 autoOpen: false,
-                height: 350,
-                width: 500,
+                width: <?php if($isMobile) { echo '800';}else {echo '400';} ?>,
+                height: <?php if($isMobile) { echo '800';}else {echo '400';} ?>,
                 modal: true,
                 buttons: {
                     "Add Entry": addTicket,
@@ -73,7 +76,9 @@ $this->breadcrumbs=array(
         <?php echo $this->renderPartial('/site/container/count_down'); ?>
     </div>
     <div class="clear"></div>
-<button id="add_ticket">Add Entry</button>
+    <div class="row">
+        <button id="add_ticket">Add Entry</button>
+    </div>
     <div class="clear spacer"></div>
     <div id="accordion">
     <?php
@@ -91,7 +96,8 @@ $this->breadcrumbs=array(
         <fieldset>
             <label for="ticket_code">Entry Code #</label>
             <input type="text" name="ticket_code" id="ticket_code" placeholder="0-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your entry">
-            <img src="/images/faq-ticket-codes.png" width="150";/>
+            <br/><br/>
+            <img src="/images/ticket.png" width="360";/>
             <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
         </fieldset>
     </form>

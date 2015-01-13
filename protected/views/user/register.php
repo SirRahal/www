@@ -17,7 +17,7 @@ $this->breadcrumbs=array(
 <?php
 $this->renderPartial('_form', array('model'=>$model));
 $valid_code=false;
-$_SESSION['isMobile'] = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows (phone|ce)|blackberry|tablet'.
+$isMobile = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows (phone|ce)|blackberry|tablet'.
     '|s(ymbian|eries60|amsung)|p(laybook|alm|rofile/midp|laystation portable)|nokia|fennec|htc[\-_]'.
     '|mobile|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
 ?>
@@ -82,8 +82,8 @@ $_SESSION['isMobile'] = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|
         
         dialog = $( "#dialog-form" ).dialog({
             autoOpen: <?php if(isset($_SESSION['ticket_ID'])) echo 'false'; else echo'true'; ?>,
-            width: <?php if($_SESSION['isMobile']) { echo '1080';}else {echo '540';} ?>,
-            height: <?php if($_SESSION['isMobile']) { echo '800';}else {echo '400';} ?>,
+            width: <?php if($isMobile) { echo '1080';}else {echo '540';} ?>,
+            height: <?php if($isMobile) { echo '800';}else {echo '400';} ?>,
             modal: true,
             buttons: {
                 "Submit Ticket Code": addUser,

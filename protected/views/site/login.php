@@ -65,6 +65,9 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 $this->breadcrumbs=array(
 	'Login',
 );
+$isMobile = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows (phone|ce)|blackberry|tablet'.
+    '|s(ymbian|eries60|amsung)|p(laybook|alm|rofile/midp|laystation portable)|nokia|fennec|htc[\-_]'.
+    '|mobile|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
 ?>
 <div class="main_title"><h1>Login</h1></div>
 <div class="mobile_container">
@@ -117,8 +120,10 @@ $this->breadcrumbs=array(
 <div class="mobile_container">
     <div style="border: solid 1px orange; padding:20px; text-align: center; border-radius: 10px; box-shadow: 10px 8px 15px #494949;">
         <h1>Have a ticket, and not a user yet?</h1>
-        <img src="/images/ticket.png" class=" shadow" width="400"/><br/><br/>
-        <button onclick="location.href='/index.php/user/register'">Register Now</button>
+        <img src="/images/ticket.png" class=" shadow" width="<?php if($isMobile){echo '800';}else{ echo'400'; } ?>"/><br/><br/>
+        <div class="row " >
+            <button onclick="location.href='/index.php/user/register'">Register Now</button>
+        </div>
     </div>
 </div>
 <div class="mobile_not_float_right"></div>
