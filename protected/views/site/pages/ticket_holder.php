@@ -30,7 +30,7 @@ $this->breadcrumbs=array(
     <img src="/images/edit_pics.png" width="100%" class="round_edges shadow "/>
 </div>
 <div class="clear" style="height:20px;"></div>
-<div class="main_title"><h1>Payouts</h1></div>
+<div class="main_title mobile_padding"><h1>Payouts</h1></div>
 <div style="text-align: center;">
     <img src="/images/23hor.png" width="100%" class="round_edges shadow"/>
 </div>

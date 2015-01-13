@@ -1751,3 +1751,25 @@ Stack trace:
 REQUEST_URI=/index.php/tournamentresults/admin
 HTTP_REFERER=http://localhost/index.php/team/admin
 ---
+2015/01/13 22:41:35 [error] [php] Undefined index: isMobile (C:\wamp\www\protected\views\user\register.php:80)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\wamp\www\protected\controllers\UserController.php(132): UserController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/register
+in C:\wamp\www\protected\views\user\register.php (80)
+in C:\wamp\www\protected\controllers\UserController.php (132)
+in C:\wamp\www\index.php (13)
