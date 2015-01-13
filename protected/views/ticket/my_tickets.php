@@ -44,7 +44,7 @@ $this->breadcrumbs=array(
             }
             dialog = $( "#dialog-form" ).dialog({
                 autoOpen: false,
-                width: <?php if($isMobile) { echo '900';}else {echo '400';} ?>,
+                width: <?php if($isMobile) { echo '880';}else {echo '400';} ?>,
                 height: <?php if($isMobile) { echo '900';}else {echo '400';} ?>,
                 modal: true,
                 buttons: {
@@ -76,7 +76,7 @@ $this->breadcrumbs=array(
         <?php echo $this->renderPartial('/site/container/count_down'); ?>
     </div>
     <div class="clear"></div>
-    <div class="row mobile_add_ticket">
+    <div class="row add_ticket_div">
         <button id="add_ticket">Add Entry</button>
     </div>
     <div class="clear spacer"></div>

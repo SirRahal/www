@@ -719,3 +719,6 @@ ul#countdown li{
     overflow-y: scroll;
     margin-bottom: 10px;
 }
+.add_ticket_div{
+    margin-top: -50px;
+}
