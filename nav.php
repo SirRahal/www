@@ -37,11 +37,14 @@ $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                 <div class="col-sm-2">
                     Forklift Rentals
                 </div>
-                <div class="col-sm-3">
-                    Specialized Heavy Hauling
+                <div class="col-sm-2">
+                    Heavy Hauling
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     After Hours Rigging
+                </div>
+                <div class="col-sm-2">
+                    Hilo Lift Truck Rentals
                 </div>
                 <div class="col-sm-2">
                     And More
