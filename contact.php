@@ -27,8 +27,8 @@
 <div id="wrapper">
 	<!-- start header -->
 	<?php include 'nav.php' ?>
-	<!-- end header -->
-	<section id="inner-headline">
+	<!-- Breadcrum -->
+	<!--<section id="inner-headline">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -39,9 +39,10 @@
 			</div>
 		</div>
 	</div>
-	</section>
+	</section>-->
 	<section id="content">
-	<div class="map">
+        <br/>
+	<div class="map container">
         <div><iframe width="300" height="300" src="http://regiohelden.de/google-maps/map_en.php?width=NaN&amp;height=300&amp;hl=en&amp;q=3227%203%20Mile%20Rd%20NW%2C%20Grand%20Rapids%20MI.%2049534+(Midway%20Machinery%20Movers)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br /></div>
 	</div>
 	<div class="container">
@@ -83,8 +84,8 @@
 		</div>
 	</div>
 	</section>
-
 </div>
+<?php include 'footer.php'; ?>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript
     ================================================== -->

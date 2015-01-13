@@ -38,9 +38,7 @@
                 <div class="widget">
                     <h5 class="widgetheading">Latest posts</h5>
                     <ul class="link-list">
-                        <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                        <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-                        <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+                        <li>Midway Machinery Movers just released their new website, and to show their gratitude, they updated their special for this season.</li>
                     </ul>
                 </div>
             </div>

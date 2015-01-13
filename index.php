@@ -35,36 +35,37 @@
 	<!-- start slider -->
 	<div class="container">
 		<div class="row">
+
 			<div class="col-lg-12">
 	<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="img/slides/1.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Modern Design</h3> 
-					<p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p> 
-					<a href="#" class="btn btn-theme">Learn More</a>
-                </div>
-              </li>
-              <li>
-                <img src="img/slides/2.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Fully Responsive</h3> 
-					<p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p> 
-					<a href="#" class="btn btn-theme">Learn More</a>
-                </div>
-              </li>
-              <li>
-                <img src="img/slides/3.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Clean & Fast</h3> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p> 
-					<a href="#" class="btn btn-theme">Learn More</a>
-                </div>
-              </li>
-            </ul>
-        </div>
+            <div id="main-slider" class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/slides/3.jpg" alt="" />
+                        <div class="flex-caption">
+                            <h3>Heavy Hauling</h3>
+                            <p>We'll move it all for you.</p>
+                            <a href="#" class="btn btn-theme">Learn More</a>
+                        </div>
+                    </li>
+                  <li>
+                    <img src="img/slides/1.jpg" alt="" />
+                    <div class="flex-caption">
+                        <h3>Forklift Rental</h3>
+                        <p>5,000 - 100,000 lbs. Capacity</p>
+                        <a href="#" class="btn btn-theme">Learn More</a>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img/slides/2.jpg" alt="" />
+                    <div class="flex-caption">
+                        <h3>Auction Specialists</h3>
+                        <p>Deal with Auction Sites all the time</p>
+                        <a href="#" class="btn btn-theme">Learn More</a>
+                    </div>
+                  </li>
+                </ul>
+            </div>
 	<!-- end slider -->
 			</div>
 		</div>
@@ -73,15 +74,13 @@
 	
 
 	</section>
-	<section class="callaction">
 	<div class="container">
-		<div class="row">
+		<div class="row box-gray">
             <div class="cta-text">
                 <h1>Whether you are moving your operation<br/><span class="blue-text">down the street</span> or <span class="blue-text">across the country</span>.<br/><span>We can help you!</span></h1>
             </div>
 		</div>
 	</div>
-	</section>
 	<section id="content">
 	<div class="container">
 		<div class="row">
@@ -100,7 +99,7 @@
 									
 							</div>
 							<div class="box-bottom">
-								<a href="#">Learn more</a>
+								<a href="about_us.php">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -117,24 +116,24 @@
 									
 							</div>
 							<div class="box-bottom">
-								<a href="#">Learn more</a>
+								<a href="recent_work.php">Learn more</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-3">
 						<div class="box">
 							<div class="box-gray aligncenter">
-								<h4>Insurance</h4>
+								<h4>Pricing</h4>
 								<div class="icon">
 								<i class="fa fa-check fa-3x"></i>
 								</div>
 								<p>
-								 Great West Certificate of Liability with every delivery
+								 Offering the best quality for the lowest prices
 								</p>
 									
 							</div>
 							<div class="box-bottom">
-								<a href="#">Learn more</a>
+								<a href="pricing.php">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -151,7 +150,7 @@
 									
 							</div>
 							<div class="box-bottom">
-								<a href="#">Learn more</a>
+								<a href="contact.php">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -170,7 +169,10 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<h4 class="heading">Companies We Recommend</h4>
-				<div class="row">
+                <div class="box-gray text-center" style="padding-bottom: 10px;">
+                    <h4>We recommend these companies first hand. Our experiences with these companies have been above and beyond expectations, and that is not the only reason we recommend them to our customers.</h4>
+                </div>
+                <div class="row">
 					<section id="projects">
 					<ul id="thumbs" class="portfolio">
 						<!-- Item Project and Filter Name -->
