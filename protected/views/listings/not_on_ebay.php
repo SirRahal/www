@@ -12,12 +12,6 @@ $this->breadcrumbs=array(
 );
 ?>
 
-
-
-<!-- DataTables CSS -->
-<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
-<!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
 <h1>Listings Not On Ebay</h1>
 
 <div class="spacer"></div>

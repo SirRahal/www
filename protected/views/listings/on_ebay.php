@@ -11,20 +11,9 @@ $this->breadcrumbs=array(
 );
 ?>
 
-
-
-<!-- DataTables CSS -->
-<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
-<!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
 <h1>Listings On Ebay</h1>
 
 <div class="spacer"></div>
-<script>
-    $(document).ready(function(){
-        $('#myTable').DataTable();
-    });
-</script>
 <a href="/index.php/listings/create">Create Listing</a>
 
 <?php

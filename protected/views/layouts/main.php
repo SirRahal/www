@@ -88,6 +88,9 @@
                             <li>
                                 <a href="/index.php/user/admin">Users</a>
                             </li>
+                            <li>
+                                <a href="/index.php/btmauctions/admin">Auctions</a>
+                            </li>
                         <?php } ?>
                         <li>
                             <a href="/index.php/site/logout">Logout <?php echo ucfirst (Yii::app()->user->name); ?></a>

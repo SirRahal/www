@@ -28,45 +28,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/btmListings/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="23" selection-start="911" selection-end="911" vertical-scroll-proportion="0.38836968" vertical-offset="102" max-vertical-offset="1853">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/btmAuctions/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="97" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-17.423077" vertical-offset="397" max-vertical-offset="1411">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="14" selection-start="4312" selection-end="4893" vertical-scroll-proportion="-25.5" vertical-offset="1581" max-vertical-offset="5049">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/listings/admin.php">
+        <entry file="file://$PROJECT_DIR$/protected/views/btmAuctions/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="5" selection-start="533" selection-end="533" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="578">
+            <state line="42" column="50" selection-start="975" selection-end="986" vertical-scroll-proportion="-15.153846" vertical-offset="320" max-vertical-offset="1309">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Listings.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/Listings.php">
+      <file leaf-file-name="BtmListingsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/BtmListingsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="5" selection-start="6633" selection-end="6633" vertical-scroll-proportion="-31.307692" vertical-offset="2297" max-vertical-offset="3247">
+            <state line="32" column="14" selection-start="836" selection-end="836" vertical-scroll-proportion="14.384615" vertical-offset="918" max-vertical-offset="3043">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listing_table.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/listings/listing_table.php">
+      <file leaf-file-name="BtmListings.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/BtmListings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="55" selection-start="811" selection-end="811" vertical-scroll-proportion="-16.26923" vertical-offset="104" max-vertical-offset="1088">
-              <folding>
-                <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#3;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/views/user/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="24" selection-start="707" selection-end="707" vertical-scroll-proportion="0.4831579" vertical-offset="0" max-vertical-offset="1479">
-              <folding>
-                <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="37" column="47" selection-start="918" selection-end="918" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="2159">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,11 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/screen.css" />
-        <option value="$PROJECT_DIR$/js/datatable.js" />
-        <option value="$PROJECT_DIR$/css/jquery.dataTables.css" />
-        <option value="$PROJECT_DIR$/protected/views/user/admin.php" />
-        <option value="$PROJECT_DIR$/protected/models/User.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/create.php" />
         <option value="$PROJECT_DIR$/protected/views/site/login.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
@@ -124,14 +130,19 @@
         <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
         <option value="$PROJECT_DIR$/protected/controllers/ListingsController.php" />
-        <option value="$PROJECT_DIR$/protected/views/listings/sold.php" />
-        <option value="$PROJECT_DIR$/protected/views/listings/on_ebay.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/views/listings/not_on_ebay.php" />
-        <option value="$PROJECT_DIR$/protected/views/listings/admin.php" />
         <option value="$PROJECT_DIR$/protected/models/Listings.php" />
-        <option value="$PROJECT_DIR$/protected/views/listings/listing_table.php" />
         <option value="$PROJECT_DIR$/protected/views/user/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/admin.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/listing_table.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/not_on_ebay.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/on_ebay.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/sold.php" />
+        <option value="$PROJECT_DIR$/protected/views/btmAuctions/admin.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/BtmAuctionsController.php" />
+        <option value="$PROJECT_DIR$/protected/models/BtmListings.php" />
+        <option value="$PROJECT_DIR$/protected/views/btmAuctions/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/btmListings/_form.php" />
       </list>
     </option>
   </component>
@@ -218,28 +229,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -281,7 +270,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="btmListings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="btmAuctions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,7 +384,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -436,25 +447,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/protected/views/listings/not_on_ebay.php</url>
-          <line>27</line>
+          <line>21</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="34" selection-start="3967" selection-end="3967" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="3383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/user/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="14" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2941" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="1" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="12342" />
@@ -591,23 +590,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="8" selection-start="818" selection-end="818" vertical-scroll-proportion="-21.576923" vertical-offset="0" max-vertical-offset="1479">
+          <folding>
+            <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="27" selection-start="5313" selection-end="5313" vertical-scroll-proportion="0.8650052" vertical-offset="952" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/listings/_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="989">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/listings/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="9" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.3936842" vertical-offset="1020" max-vertical-offset="5151">
+        <state line="91" column="63" selection-start="4835" selection-end="4835" vertical-scroll-proportion="-22.884615" vertical-offset="952" max-vertical-offset="2261">
           <folding />
         </state>
       </provider>
@@ -619,52 +620,150 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/listings/not_on_ebay.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="2" selection-start="628" selection-end="628" vertical-scroll-proportion="0.40602285" vertical-offset="0" max-vertical-offset="963">
+        <state line="13" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/on_ebay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/sold.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/upload_images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="9" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.5010526" vertical-offset="918" max-vertical-offset="5151">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/listings/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="533" selection-end="533" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="578">
+        <state line="12" column="0" selection-start="143" selection-end="226" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="442">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Listings.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/BtmAuctions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="5" selection-start="6633" selection-end="6633" vertical-scroll-proportion="-31.307692" vertical-offset="2297" max-vertical-offset="3247">
+        <state line="46" column="24" selection-start="1136" selection-end="1147" vertical-scroll-proportion="0.7061267" vertical-offset="102" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/listings/listing_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="55" selection-start="811" selection-end="811" vertical-scroll-proportion="-16.26923" vertical-offset="104" max-vertical-offset="1088">
-          <folding>
-            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/user/_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="646">
+        <state line="44" column="402" selection-start="1572" selection-end="1674" vertical-scroll-proportion="-16.923077" vertical-offset="223" max-vertical-offset="1173">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/user/view.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/btmAuctions/_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="24" selection-start="707" selection-end="707" vertical-scroll-proportion="0.4831579" vertical-offset="0" max-vertical-offset="1479">
-          <folding>
-            <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/BtmAuctionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="11" selection-start="1945" selection-end="1945" vertical-scroll-proportion="-19.615385" vertical-offset="816" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/BtmListingsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="14" selection-start="836" selection-end="836" vertical-scroll-proportion="14.384615" vertical-offset="918" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Listings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="60" selection-start="5865" selection-end="5865" vertical-scroll-proportion="0.49052632" vertical-offset="2271" max-vertical-offset="3247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ListingsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="48" selection-start="5258" selection-end="5298" vertical-scroll-proportion="0.54642475" vertical-offset="2854" max-vertical-offset="3791">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/BtmListings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="47" selection-start="918" selection-end="918" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="2159">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/btmAuctions/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="50" selection-start="975" selection-end="986" vertical-scroll-proportion="-15.153846" vertical-offset="320" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="14" selection-start="4312" selection-end="4893" vertical-scroll-proportion="-25.5" vertical-offset="1581" max-vertical-offset="5049">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/btmAuctions/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="97" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-17.423077" vertical-offset="397" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/btmListings/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="23" selection-start="911" selection-end="911" vertical-scroll-proportion="0.38836968" vertical-offset="102" max-vertical-offset="1853">
+          <folding />
         </state>
       </provider>
     </entry>

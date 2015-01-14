@@ -9,6 +9,11 @@
 
 
 ?>
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
 <style>
     tbody{
         color:black;
