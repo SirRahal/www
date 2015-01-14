@@ -7,6 +7,16 @@ $this->breadcrumbs=array(
 	$model->ID,
 );
 
+
+
+if($model->permission > 1){
+    $lister = array('ebay_lister'=>$model->ID);
+    $criteria = new CDbCriteria(array('order'=>'ebay_date ASC'));
+    $listings = Listings::model()->findAllByAttributes($lister, $criteria);
+}else{
+    $listings = $model->listings;
+}
+
 ?>
 
 <!-- DataTables CSS -->
@@ -16,6 +26,7 @@ $this->breadcrumbs=array(
 <h1>View User <?php echo $model->first_name . ' '. $model->last_name; ?></h1>
 
 <h3>Recent Activity</h3>
+<a href="/index.php/listings/create">Create Listing</a>
 <style>
     tbody{
         color:black;
@@ -35,7 +46,7 @@ $this->breadcrumbs=array(
     </tr>
     </thead>
     <tbody>
-    <?php foreach($model->listings as $item){ ?>
+    <?php foreach($listings as $item){ ?>
         <tr>
             <td><?php echo $item->ID; ?></td>
             <td><?php echo $item->inventory; ?></td>
@@ -53,4 +64,19 @@ $this->breadcrumbs=array(
     $(document).ready(function(){
         $('#myTable').DataTable();
     });
+
+    function delete_listing(id){
+        var result = confirm("Are you sure you want to delete this listing?");
+        if (result==true) {
+            var url = '<?php echo Yii::app()->createUrl('listings/delete'); ?>/'+id;
+            $.ajax({
+                type: "POST",
+                url: url,
+                success: function(){
+                    delete window.alert; // true
+                    alert('Item has been deleted.  The item will still display till the page has refreshed.');
+                }
+            });
+        }
+    };
 </script>

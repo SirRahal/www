@@ -25,6 +25,5 @@ $this->breadcrumbs=array(
 <?php
 $listings = Listings::model()->findAll();
 
-
 echo $this->renderPartial('listing_table', array('listings' => $listings));
 ?>

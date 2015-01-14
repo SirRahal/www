@@ -21,11 +21,6 @@ $this->breadcrumbs=array(
 <h1>Listings Not On Ebay</h1>
 
 <div class="spacer"></div>
-<script>
-    $(document).ready(function(){
-        $('#myTable').DataTable();
-    });
-</script>
 <a href="/index.php/listings/create">Create Listing</a>
 
 <?php
