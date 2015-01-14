@@ -2,11 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: Sari
- * Date: 12/10/14
- * Time: 4:05 PM
+ * Date: 1/14/15
+ * Time: 2:36 PM
  */
 
-class UploadController extends Controller
+class BtmUploadController extends Controller
 {
 
     /**

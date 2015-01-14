@@ -1,23 +1,11 @@
 <?php
-/* @var $this BtmAuctionsController */
-/* @var $model BtmAuctions */
+/**
+ * Created by PhpStorm.
+ * User: Sari
+ * Date: 1/14/15
+ * Time: 3:56 PM
+ */ ?>
 
-$this->breadcrumbs=array(
-	'Btm Auctions'=>array('index'),
-	$model->name,
-);
-
-$listings = $model->btmListings;
-?>
-
-<h1><b><?php echo $model->name; ?></b></h1>
-
-
-
-<div class="spacer"></div>
-
-<a href="/index.php/btmlistings/create/<?php echo $model->ID; ?>">Add A Lot</a>
-| <a href="/index.php/btmauctions/order_lots/<?php echo $model->ID; ?>">Change Lot Order</a>
 
 
 <!-- DataTables CSS -->
@@ -52,7 +40,7 @@ $listings = $model->btmListings;
             <td style="text-align: center;">
                 <a class="link" href="/index.php/btmlistings/view/<?php echo $listing->ID; ?>">View</a>
                 | <a class="link" href="/index.php/btmlistings/update/<?php echo $listing->ID; ?>">Edit</a>
-                | <a class="link" style="cursor: pointer;" onclick="delete_btmlisting(<?php echo $listing->ID; ?>)">Delete</a>
+                | <a class="link" style="cursor: pointer;" onclick="delete_auction(<?php echo $listing->ID; ?>)">Delete</a>
             </td>
         </tr>
     <?php } ?>
@@ -63,10 +51,10 @@ $listings = $model->btmListings;
         $('#myTable').DataTable();
     });
 
-    function delete_btmlisting(id){
-        var result = confirm("Are you sure you want to delete this listing?");
+    function delete_auction(id){
+        var result = confirm("Are you sure you want to delete this auction?");
         if (result==true) {
-            var url = '<?php echo Yii::app()->createUrl('btmlistings/delete'); ?>/'+id;
+            var url = '<?php echo Yii::app()->createUrl('btmauctions/delete'); ?>/'+id;
             $.ajax({
                 type: "POST",
                 url: url,

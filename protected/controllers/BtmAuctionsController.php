@@ -32,7 +32,7 @@ class BtmAuctionsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','order_lots'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -70,8 +70,14 @@ class BtmAuctionsController extends Controller
 		if(isset($_POST['BtmAuctions']))
 		{
 			$model->attributes=$_POST['BtmAuctions'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+			if($model->save()){
+                $auction_image_folder = 'images/btm_uploads/'.$model->ID.'/';
+                if (!file_exists($auction_image_folder)) {
+                    mkdir($auction_image_folder, 0777, true);
+                }
+                $this->redirect(array('view','id'=>$model->ID));
+            }
+
 		}
 
 		$this->render('create',array(
@@ -116,6 +122,14 @@ class BtmAuctionsController extends Controller
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
+
+
+    public function actionOrder_lots($id){
+        $model=$this->loadModel($id);
+        $this->render('order_lots',array(
+            'model'=>$model,
+        ));
+    }
 
 	/**
 	 * Lists all models.

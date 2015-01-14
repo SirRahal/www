@@ -32,7 +32,7 @@ class BtmListingsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','upload_images'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -70,14 +70,19 @@ class BtmListingsController extends Controller
 		if(isset($_POST['BtmListings']))
 		{
 			$model->attributes=$_POST['BtmListings'];
+            $model->model = strtoupper($model->model);
+            $model->manufacturer = ucfirst($model->manufacturer);
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+                $this->redirect(array('upload_images','id'=>$model->ID));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
 		));
 	}
+    public function actionUpload_images($id){
+        $this->render('upload_images');
+    }
 
 	/**
 	 * Updates a particular model.
@@ -95,7 +100,7 @@ class BtmListingsController extends Controller
 		{
 			$model->attributes=$_POST['BtmListings'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+                $this->redirect(array('upload_images','id'=>$model->ID));
 		}
 
 		$this->render('update',array(
@@ -110,12 +115,26 @@ class BtmListingsController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		//delete all images related to that listing
+        $delete_model = $this->loadModel($id);
+        if ($delete_model->btmImages){
+            foreach ($delete_model->btmImages as $delete_image){
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-	}
+                $file_dir = './images/btm_uploads/'.$delete_model['auction_ID'].'/'.$delete_image['name'];
+                if(realpath($file_dir)){
+                    unlink($file_dir);
+                    $delete_image->delete();
+                }elseif(!realpath($file_dir)){
+                    //error
+                }
+            }
+        }
+        $delete_model->delete();
+        // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+        if(!isset($_GET['ajax']))
+            $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+
+    }
 
 	/**
 	 * Lists all models.
