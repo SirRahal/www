@@ -26,7 +26,7 @@
       <file leaf-file-name="mobile.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="20" selection-start="546" selection-end="546" vertical-scroll-proportion="0.7563195" vertical-offset="0" max-vertical-offset="2601">
+            <state line="147" column="22" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.9140546" vertical-offset="1595" max-vertical-offset="2618">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,31 @@
       <file leaf-file-name="my_tickets.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="34" selection-start="2898" selection-end="2898" vertical-scroll-proportion="-13.769231" vertical-offset="610" max-vertical-offset="1853">
+            <state line="30" column="55" selection-start="925" selection-end="925" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="1938">
+              <folding>
+                <element signature="e#6#85#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#div#8;n#!!top" expanded="true" />
+                <marker date="1421193705526" expanded="true" signature="620:671" placeholder="..." />
+                <marker date="1421193705526" expanded="true" signature="633:671" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="145" column="122" selection-start="7246" selection-end="7273" vertical-scroll-proportion="-16.346153" vertical-offset="2040" max-vertical-offset="3383">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicketController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/TicketController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="14" selection-start="1111" selection-end="1111" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="4318">
               <folding />
             </state>
           </provider>
@@ -44,7 +68,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="135" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12393">
+            <state line="721" column="0" selection-start="13190" selection-end="13231" vertical-scroll-proportion="0.0" vertical-offset="11404" max-vertical-offset="12393">
               <folding />
             </state>
           </provider>
@@ -98,8 +122,9 @@
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/views/user/register.php" />
         <option value="$PROJECT_DIR$/protected/views/site/login.php" />
-        <option value="$PROJECT_DIR$/protected/views/ticket/my_tickets.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/protected/controllers/TicketController.php" />
+        <option value="$PROJECT_DIR$/protected/views/ticket/my_tickets.php" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
       </list>
     </option>
@@ -575,11 +600,6 @@
         <state line="27" column="97" selection-start="1359" selection-end="1373" vertical-scroll-proportion="0.47663552" vertical-offset="0" max-vertical-offset="963" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/TicketController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="5" selection-start="6025" selection-end="6025" vertical-scroll-proportion="0.0" vertical-offset="3176" max-vertical-offset="4318" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Ticket.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="248" column="27" selection-start="8011" selection-end="8011" vertical-scroll-proportion="0.0" vertical-offset="4216" max-vertical-offset="4556" />
@@ -644,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="2262" selection-end="2623" vertical-scroll-proportion="-13.730769" vertical-offset="255" max-vertical-offset="3383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/user/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="9" selection-start="2671" selection-end="2671" vertical-scroll-proportion="-16.346153" vertical-offset="816" max-vertical-offset="2329">
@@ -667,23 +680,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/TicketController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="14" selection-start="1111" selection-end="1111" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="4318">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="122" selection-start="7246" selection-end="7273" vertical-scroll-proportion="-16.346153" vertical-offset="2040" max-vertical-offset="3383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="34" selection-start="2898" selection-end="2898" vertical-scroll-proportion="-13.769231" vertical-offset="610" max-vertical-offset="1853">
-          <folding />
+        <state line="30" column="55" selection-start="925" selection-end="925" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="1938">
+          <folding>
+            <element signature="e#6#85#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#fieldset#0;n#form#0;n#div#8;n#!!top" expanded="true" />
+            <marker date="1421193705526" expanded="true" signature="620:671" placeholder="..." />
+            <marker date="1421193705526" expanded="true" signature="633:671" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="135" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12393">
+        <state line="721" column="0" selection-start="13190" selection-end="13231" vertical-scroll-proportion="0.0" vertical-offset="11404" max-vertical-offset="12393">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="20" selection-start="546" selection-end="546" vertical-scroll-proportion="0.7563195" vertical-offset="0" max-vertical-offset="2601">
+        <state line="147" column="22" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.9140546" vertical-offset="1595" max-vertical-offset="2618">
           <folding />
         </state>
       </provider>

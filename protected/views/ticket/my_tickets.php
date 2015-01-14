@@ -5,6 +5,11 @@
  * Date: 6/23/14
  * Time: 1:02 PM
  */
+
+ if(Yii::app()->user->isGuest){
+     header("Location: http://bracketfanatic.com/index.php/site/login");
+ }
+
 $this->breadcrumbs=array(
     'My Entries',
 );

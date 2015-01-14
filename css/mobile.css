@@ -142,7 +142,8 @@ ul#countdown li{
     max-height: 300px;
 }
 .add_ticket_div{
+    margin-top:30px;
     width: 100%;
     text-align: center;
-    margin-top:30px;
+    margin-left: 30px;
 }
