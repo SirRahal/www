@@ -158,7 +158,7 @@ class BtmAuctionsController extends Controller
                 //update database name to new name
                 $new_file_name = $count.'_'.$image_count.'.'.$image_extention;
                 //rename all images to the new lot #'s with the prefix Temp_
-                rename($file_directory.$image->name, $file_directory.'t_'.$new_file_name);
+                rename($file_directory.$image->name, $file_directory.'temp_'.$new_file_name);
                 $image->name = $new_file_name;
                 $image->save();
                 $image_count++;
@@ -168,11 +168,11 @@ class BtmAuctionsController extends Controller
             $count++;
         }
         //remove all temp_ from all the images in the auction directory
-        $files = scandir($file_directory);
+        $files = array_diff(scandir($file_directory), array('..', '.'));
         foreach($files as $file) {
-            $file_name = $file.'.'.filetype($file);
-            $newName = str_replace("t_","",$file_name);
-            rename($file, $newName);
+            $file_name = $file_directory ."". $file;
+            $newName = str_replace("temp_","",$file_name);
+            rename($file_name, $newName);
         }
     }
 
