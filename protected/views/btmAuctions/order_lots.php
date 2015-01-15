@@ -13,36 +13,57 @@ $listings = $model->get_lot_listings($model);
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui/jquery-ui.js"></script>
 <link rel="stylesheet" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui/jquery-ui.css" />
 
+<style>
+    table{
+        width: 100%;
+        color: black;
+    }
+    tr:nth-child(even) {
+        background-color: #f3f3f3;
+    }
+    tr:nth-child(odd) {
+        background-color: #f7f7f7;
 
+    }
+    tr{
+        border-bottom: solid 1px black;
+    }
+    td{
+      padding:7px;
+    }
+    table body{
+        background: #acacac;
+        color: #000000;
+    }
+</style>
 
 <div>
     <table>
-        <thead>
-        <tr>
+        <thead style="background: background: #181818;">
+        <tr style="background: #181818; color: white;">
             <td style="col1">Lot</td>
             <td style="col1">description</td>
-            <!--<td style="col1">Manufacturer</td>
-            <td style="col1">Model</td>-->
+            <td style="col1">Manufacturer</td>
+            <td style="col1">Model</td>
         </tr>
         </thead>
+        <tbody id="sortMe">
+        <?php foreach($listings as $listing){ ?>
+            <tr id="item_<?php echo $listing->ID;?>">
+                <td><?php echo $listing->lot; ?></td>
+                <td><?php echo $listing->description; ?></td>
+                <td><?php echo $listing->manufacturer; ?></td>
+                <td><?php echo $listing->model; ?></td>
+            </tr>
+        <?php } ?>
+        </tbody>
     </table>
 </div>
 
 
-<div id="sortMe">
-    <?php foreach($listings as $listing){ ?>
-        <div id="item_<?php echo $listing->ID;?>">
-            <?php echo $listing->lot; ?>
-            <?php echo $listing->description; ?>
-            <?php /*echo $listing->manufacturer; */?><!--
-            --><?php /*echo $listing->model; */?>
-        </div>
-    <?php } ?>
-</div>
 
 <script>
     $(function() {
-
         $('#sortMe').sortable({
             update: function(event, ui) {
                 var postData = $(this).sortable('serialize');

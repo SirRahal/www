@@ -7,10 +7,7 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
-$this->menu=array(
-	array('label'=>'List BtmAuctions', 'url'=>array('index')),
-	array('label'=>'Manage BtmAuctions', 'url'=>array('admin')),
-);
+
 ?>
 
 <h1>Create BtmAuctions</h1>
