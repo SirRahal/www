@@ -95,4 +95,12 @@ class BtmAuctions extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function get_lot_listings($model){
+        $listings = BtmListings::model()->findAllByAttributes(array('auction_ID'=>$model->ID),
+            array(
+                'order' => 'lot ASC'
+            ));
+        return $listings;
+    }
 }

@@ -32,7 +32,7 @@ class BtmAuctionsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','order_lots'),
+				'actions'=>array('create','update','order_lots','save_order'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -131,6 +131,51 @@ class BtmAuctionsController extends Controller
         ));
     }
 
+    public function actionSave_order(){
+        //get the auction_ID
+        $auction_ID = Yii::app()->request->getPost('auction_ID');
+        //get the list from the post method
+        $list = Yii::app()->request->getPost('list');
+        //set an array
+        $output = array();
+        //break the json array into an normal array
+        $list = parse_str($list,$output);
+
+        //make it a list that orders the ID's by lots exp: 1,2,5,4,3
+        $list = implode(',', $output['item']);
+        $list = explode(',',$list);
+        ////set all the lots
+
+        //for each new lot, change the old lot
+        $count=1;
+        $file_directory = 'images/btm_uploads/'.$auction_ID.'/';
+        foreach($list as $listing){
+            $listing = BtmListings::model()->findByPk($listing);
+            $image_count = 1;
+            foreach($listing->btmImages as $image){
+                $image_extention = explode('.',$image->name);
+                $image_extention = $image_extention[1];
+                //update database name to new name
+                $new_file_name = $count.'_'.$image_count.'.'.$image_extention;
+                //rename all images to the new lot #'s with the prefix Temp_
+                rename($file_directory.$image->name, $file_directory.'t_'.$new_file_name);
+                $image->name = $new_file_name;
+                $image->save();
+                $image_count++;
+            }
+            $listing->lot = $count;
+            $listing->save();
+            $count++;
+        }
+        //remove all temp_ from all the images in the auction directory
+        $files = scandir($file_directory);
+        foreach($files as $file) {
+            $file_name = $file.'.'.filetype($file);
+            $newName = str_replace("t_","",$file_name);
+            rename($file, $newName);
+        }
+    }
+
 	/**
 	 * Lists all models.
 	 */
@@ -184,4 +229,6 @@ class BtmAuctionsController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+
 }

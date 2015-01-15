@@ -4,73 +4,54 @@
  * User: Sari
  * Date: 1/14/15
  * Time: 5:16 PM
- */ ?>
+ */
+
+$listings = $model->get_lot_listings($model);
+?>
 <!-- Bootstrap Core JavaScript -->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-sortable.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui/jquery-ui.js"></script>
+<link rel="stylesheet" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui/jquery-ui.css" />
 
-<?php $listings = $model->btmListings; ?>
 
-<div class="span4">
-    <h3>Sort This table</h3>
-    <a href="">Save</a>
-    <table class="table table-striped table-bordered sorted_table">
+
+<div>
+    <table>
         <thead>
         <tr>
-            <th>Original Lot</th>
-            <th>Description</th>
-            <th>Manufacturer</th>
-            <th>Model</th>
+            <td style="col1">Lot</td>
+            <td style="col1">description</td>
+            <!--<td style="col1">Manufacturer</td>
+            <td style="col1">Model</td>-->
         </tr>
         </thead>
-        <tbody>
-        <?php foreach($listings as $listing){ ?>
-        <tr>
-            <td><?php echo $listing->lot; ?></td>
-            <td><?php echo $listing->description; ?></td>
-            <td><?php echo $listing->manufacturer; ?></td>
-            <td><?php echo $listing->model; ?></td>
-        </tr>
-        <?php } ?>
-        </tbody>
     </table>
 </div>
 
+
+<div id="sortMe">
+    <?php foreach($listings as $listing){ ?>
+        <div id="item_<?php echo $listing->ID;?>">
+            <?php echo $listing->lot; ?>
+            <?php echo $listing->description; ?>
+            <?php /*echo $listing->manufacturer; */?><!--
+            --><?php /*echo $listing->model; */?>
+        </div>
+    <?php } ?>
+</div>
+
 <script>
-    // Sortable rows
-    $('.sorted_table').sortable({
-        containerSelector: 'table',
-        itemPath: '> tbody',
-        itemSelector: 'tr',
-        placeholder: '<tr class="placeholder"/>'
-    })
+    $(function() {
 
-    // Sortable column heads
-    var oldIndex
-    $('.sorted_head tr').sortable({
-        containerSelector: 'tr',
-        itemSelector: 'th',
-        placeholder: '<th class="placeholder"/>',
-        vertical: false,
-        onDragStart: function (item, group, _super) {
-            oldIndex = item.index()
-            item.appendTo(item.parent())
-            _super(item)
-        },
-        onDrop: function  (item, container, _super) {
-            var field,
-                newIndex = item.index()
+        $('#sortMe').sortable({
+            update: function(event, ui) {
+                var postData = $(this).sortable('serialize');
+                console.log(postData);
 
-            if(newIndex != oldIndex)
-                item.closest('table').find('tbody tr').each(function (i, row) {
-                    row = $(row)
-                    field = row.children().eq(oldIndex)
-                    if(newIndex)
-                        field.before(row.children()[newIndex])
-                    else
-                        row.prepend(field)
-                })
-
-            _super(item)
-        }
-    })
+                $.post('/index.php/btmauctions/save_order', {list: postData, auction_ID: '<?php echo($model->ID); ?>' }, function(o){
+                    console.log(o);
+                }, 'json');
+            }
+        });
+    });
 </script>
