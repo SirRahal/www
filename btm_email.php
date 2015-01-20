@@ -1,20 +1,19 @@
 <?php
-$auction_url = 'http://auctions.btmindustrial.com/CNC-Manual-Machinery-Auction_as35027';
-$date = 'December 30th';
-$auction_title = 'CNC & Manual Machinery Auction';
+$auction_url = 'http://auctions.btmindustrial.com/Monthly-Machinery-Auction_as35195';
+$date = 'January 21st';
+$auction_title = 'Monthly Machinery Auction';
 
 $info = array();
 
-$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21238065";$info[0][1]="http://media.liveauctiongroup.net/i/23002/21238065_1s.jpg?v=8D1ECA02BF946F0";$info[0][2]="1996 Cincinnati Arrow 750 VMC";
-$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21238066";$info[1][1]="http://media.liveauctiongroup.net/i/23002/21238066_1s.jpg?v=8D1ECA02BF946F0";$info[1][2]="1985 Okuma Howa ACT3 CNC TC";
-$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21238071";$info[2][1]="http://media.liveauctiongroup.net/i/23002/21238071_1s.jpg?v=8D1ECA02BF946F0";$info[2][2]="1987 Mori Seiki SL-2H CNC Chucker, Fanuc 11T";
-$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21238072";$info[3][1]="http://media.liveauctiongroup.net/i/23002/21238072_1s.jpg?v=8D1ECA02BF946F0";$info[3][2]="1994 Bridgeport Interact M2 CNC VM";
-$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248434";$info[4][1]="http://media.liveauctiongroup.net/i/23002/21248434_1s.jpg?v=8D1ECA02BF946F0";$info[4][2]="SUNNEN MODEL 1650";
-$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248435";$info[5][1]="http://media.liveauctiongroup.net/i/23002/21248435_1s.jpg?v=8D1ECA02BF946F0";$info[5][2]="1978 LeBlond 15'' x 60'' Manual Lathe";
-$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248436";$info[6][1]="http://media.liveauctiongroup.net/i/23002/21248436_1s.jpg?v=8D1ECA02BF946F0";$info[6][2]="2 HP Bridgeport Mill";
-$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248438";$info[7][1]="http://media.liveauctiongroup.net/i/23002/21248438_1s.jpg?v=8D1ECA02BF946F0";$info[7][2]="1969 VAN NORMAN 2R3 V& H Univeral Mill";
-$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248440";$info[8][1]="http://media.liveauctiongroup.net/i/23002/21248440_1s.jpg?v=8D1ECA02BF946F0";$info[8][2]="DECKEL FP1 Universal Mill w/ 3 Axis DRO";
-$info[9][0]="http://auctions.btmindustrial.com/auction.aspx?a=23002&as=35027&p=1&ps=50#i21248534";$info[9][1]="http://media.liveauctiongroup.net/i/23002/21248534_1s.jpg?v=8D1ECA02BF946F0";$info[9][2]="Hardinge D-59 Secondary lathe";
+$info[0][0]="http://auctions.btmindustrial.com/auction.aspx?a=23125&as=35195&p=1&ps=50#i21323525";$info[0][1]="http://media.liveauctiongroup.net/i/23125/21323525_1s.jpg?v=8D1F2F0647347A0";$info[0][2]="1986 Mazak Model ST30 - ATCMC CNC Lathe";
+$info[1][0]="http://auctions.btmindustrial.com/auction.aspx?a=23125&as=35195&p=1&ps=50#i21323526";$info[1][1]="http://media.liveauctiongroup.net/i/23125/21323526_1s.jpg?v=8D1FC76FCDE7B10";$info[1][2]="5000 Lb Hyster Electric Lift Truck";
+$info[2][0]="http://auctions.btmindustrial.com/auction.aspx?a=23125&as=35195&p=1&ps=50#i21359258";$info[2][1]="http://media.liveauctiongroup.net/i/23125/21359258_1s.jpg?v=8D1FC7718C8C830";$info[2][2]="3000 Lb Raymond Electric Stand Up Lift Truck";
+$info[3][0]="http://auctions.btmindustrial.com/auction.aspx?a=23125&as=35195&p=1&ps=50#i21336952";$info[3][1]="http://media.liveauctiongroup.net/i/23125/21336952_1s.jpg?v=8D201DB0C806D30";$info[3][2]="Cincinnati Bickford Radial Drill";
+$info[4][0]="http://auctions.btmindustrial.com/auction.aspx?a=23125&as=35195&p=1&ps=50#i21338353";$info[4][1]="http://media.liveauctiongroup.net/i/23125/21338353_1s.jpg?v=8D201DB3F0132D0";$info[4][2]="Roto-Finish Vibratory Finisher";
+$info[5][0]="http://auctions.btmindustrial.com/auction.aspx?a=23125&as=35195&p=1&ps=50#i21338363";$info[5][1]="http://media.liveauctiongroup.net/i/23125/21338363_1s.jpg?v=8D2011132D84F90";$info[5][2]="Charmilles FORM 20 EDM";
+$info[6][0]="http://auctions.btmindustrial.com/auction.aspx?a=23125&as=35195&p=1&ps=50#i21336235";$info[6][1]="http://media.liveauctiongroup.net/i/23125/21336235_1s.jpg?v=8D201EFBE32C0F0";$info[6][2]="Studer S20 OD Grinder";
+$info[7][0]="http://auctions.btmindustrial.com/auction.aspx?a=23125&as=35195&p=1&ps=50#i21336234";$info[7][1]="http://media.liveauctiongroup.net/i/23125/21336234_1s.jpg?v=8D1FE95E98E9B50";$info[7][2]="Mazak VQC-20/40 B";
+$info[8][0]="http://auctions.btmindustrial.com/auction.aspx?a=23125&as=35195&p=1&ps=50#i21430362";$info[8][1]="http://media.liveauctiongroup.net/i/23125/21430362_1s.jpg?v=8D1FE9EA476FD60";$info[8][2]="Cincinnati Milacron 220-8 Centerless Grinder";
 
 $count=0;
 ?>
@@ -81,14 +80,17 @@ $count=0;
                     </td>
 
                 <?php $count++; } ?>
-                            <td colspan="2" style="background: #333333; color: #ffffff;">
-                                <div >
-                                    <h2>Have a machine up for sale?<br/>
-                                    Call us and see how we can help.<br/>
-                                        (616) 745-5953</h2>
-                                </div>
-                            </td>
+
             </tr>
+                <tr>
+                    <td colspan="3" style="background: #333333; color: #ffffff;">
+                        <div >
+                            <h2>Have a machine up for sale?<br/>
+                                Call us and see how we can help.<br/>
+                                (616) 745-5953</h2>
+                        </div>
+                    </td>
+                </tr>
                 <tr>
                     <td colspan="4"><br>
                         <table width="600" border="0" cellspacing="0" cellpadding="0" style="width: 608px; height: 71px; top: 205px;">
