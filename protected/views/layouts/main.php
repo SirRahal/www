@@ -67,6 +67,7 @@
 
 
                     <?php if (Yii::app()->user->name != 'Guest') { ?>
+                        <!--All listers-->
                         <li>
                             <a href="/index.php/listings/admin">All Listings</a>
                         </li>
@@ -74,28 +75,33 @@
                             <a href="/index.php/user/<?php echo User::model()->findByPk(User::model()->get_user_ID())->ID; ?>">My Listings</a>
                         </li>
                         <?php if(Yii::app()->user->name != 'Guest' && User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
+                            <!--Ebay listters menu-->
                             <li>
                                 <a href="/index.php/listings/not_on_ebay">Listings Not On Ebay</a>
                             </li>
                             <li>
                                 <a href="/index.php/listings/on_ebay">Listings On Ebay</a>
                             </li>
-                        <?php } ?>
-                        <li>
-                            <a href="/index.php/listings/sold">Sold Items</a>
-                        </li>
-                        <?php if(Yii::app()->user->name != 'Guest' && User::model()->findByPk(User::model()->get_user_ID())->permission > 2){ ?>
                             <li>
-                                <a href="/index.php/user/admin">Users</a>
+                                <a href="/index.php/listings/sold">Sold Items</a>
                             </li>
+                            <!--BTM auctions menu-->
                             <li>
                                 <a href="/index.php/btmauctions/admin">Auctions</a>
                             </li>
                         <?php } ?>
+                        <?php if(Yii::app()->user->name != 'Guest' && User::model()->findByPk(User::model()->get_user_ID())->permission > 2){ ?>
+                            <!--Admin menus-->
+                            <li>
+                                <a href="/index.php/user/admin">Users</a>
+                            </li>
+                        <?php } ?>
+                        <!--logged In-->
                         <li>
                             <a href="/index.php/site/logout">Logout <?php echo ucfirst (Yii::app()->user->name); ?></a>
                         </li>
                     <?php } else { ?>
+                        <!--Not logged in-->
                         <li>
                             <a href="/index.php/site/login">Login</a>
                         </li>

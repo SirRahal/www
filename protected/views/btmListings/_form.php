@@ -19,8 +19,12 @@ $form=$this->beginWidget('CActiveForm', array(
 /*If it is a copy*/
 $url = $_SERVER['REQUEST_URI'];
 if( strpos( $url, 'create/' ) !== false ) {
-    $exploded_url = explode('/',$url);
-    $auction_ID = end($exploded_url);
+    $auction_ID = $_GET["auction"];
+    if(isset($_GET["listing"])){
+        $listing_ID = $_GET["listing"];
+        $model = BtmListings::model()->findByPk($listing_ID);
+        echo("<h3 class='red_text'>Copied Item</h3>");
+    }
     $auction = BtmAuctions::model()->findByPk($auction_ID);
     $list_count = count($auction->btmListings);
     $lot = $list_count+1;

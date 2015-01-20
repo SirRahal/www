@@ -52,6 +52,7 @@ $listings = $model->btmListings;
             <td style="text-align: center;">
                 <a class="link" href="/index.php/btmlistings/view/<?php echo $listing->ID; ?>">View</a>
                 | <a class="link" href="/index.php/btmlistings/update/<?php echo $listing->ID; ?>">Edit</a>
+                | <a class="link" href="/index.php/btmlistings/create/?auction=<?php echo $model->ID ?>&listing=<?php echo $listing->ID; ?>">Copy</a>
                 | <a class="link" style="cursor: pointer;" onclick="delete_btmlisting(<?php echo $listing->ID; ?>)">Delete</a>
             </td>
         </tr>
