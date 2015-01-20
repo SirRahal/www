@@ -36,7 +36,9 @@ $listings = $model->get_lot_listings($model);
         color: #000000;
     }
 </style>
-
+<div>
+    <a href="#" onclick="save_order()">Save</a> | <a href="/index.php/btmauctions/order_lots/<?php echo $model->ID; ?>">Reset</a> | <a href="/index.php/btmauctions/view/<?php echo $model->ID; ?>">Cancel</a>
+</div>
 <div>
     <table>
         <thead style="background: background: #181818;">
@@ -64,15 +66,18 @@ $listings = $model->get_lot_listings($model);
 
 <script>
     $(function() {
-        $('#sortMe').sortable({
-            update: function(event, ui) {
-                var postData = $(this).sortable('serialize');
-                console.log(postData);
+        $('#sortMe').sortable();
+    });
 
+
+    function save_order(){
+        var result = confirm("Are you sure you want to save listing order?");
+        if (result==true) {
+                var postData =  $('#sortMe').sortable('serialize');
+                console.log(postData);
                 $.post('/index.php/btmauctions/save_order', {list: postData, auction_ID: '<?php echo($model->ID); ?>' }, function(o){
                     console.log(o);
                 }, 'json');
-            }
-        });
-    });
+        }
+    }
 </script>
