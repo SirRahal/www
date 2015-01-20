@@ -14,10 +14,10 @@
  * @property string $condition
  *
  * The followings are the available model relations:
- * @property BtmImages[] $btmImages
- * @property BtmAuctions $auction
+ * @property Btmimages[] $btmImages
+ * @property Btmauctions $auction
  */
-class BtmListings extends CActiveRecord
+class Btmlistings extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -54,8 +54,8 @@ class BtmListings extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'btmImages' => array(self::HAS_MANY, 'BtmImages', 'btm_listing_ID'),
-			'auction' => array(self::BELONGS_TO, 'BtmAuctions', 'auction_ID'),
+			'btmImages' => array(self::HAS_MANY, 'Btmimages', 'btm_listing_ID'),
+			'auction' => array(self::BELONGS_TO, 'Btmauctions', 'auction_ID'),
 		);
 	}
 
@@ -112,7 +112,7 @@ class BtmListings extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return BtmListings the static model class
+	 * @return Btmlistings the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

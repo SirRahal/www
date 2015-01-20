@@ -8,9 +8,9 @@
  * @property string $name
  *
  * The followings are the available model relations:
- * @property BtmListings[] $btmListings
+ * @property Btmlistings[] $btmListings
  */
-class BtmAuctions extends CActiveRecord
+class Btmauctions extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -44,7 +44,7 @@ class BtmAuctions extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'btmListings' => array(self::HAS_MANY, 'BtmListings', 'auction_ID'),
+			'btmListings' => array(self::HAS_MANY, 'Btmlistings', 'auction_ID'),
 		);
 	}
 
@@ -89,7 +89,7 @@ class BtmAuctions extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return BtmAuctions the static model class
+	 * @return Btmauctions the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -97,7 +97,7 @@ class BtmAuctions extends CActiveRecord
 	}
 
     public function get_lot_listings($model){
-        $listings = BtmListings::model()->findAllByAttributes(array('auction_ID'=>$model->ID),
+        $listings = Btmlistings::model()->findAllByAttributes(array('auction_ID'=>$model->ID),
             array(
                 'order' => 'lot ASC'
             ));

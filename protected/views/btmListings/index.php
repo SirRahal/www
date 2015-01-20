@@ -1,5 +1,5 @@
 <?php
-/* @var $this BtmListingsController */
+/* @var $this BtmlistingsController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create BtmListings', 'url'=>array('create')),
-	array('label'=>'Manage BtmListings', 'url'=>array('admin')),
+	array('label'=>'Create Btmlistings', 'url'=>array('create')),
+	array('label'=>'Manage Btmlistings', 'url'=>array('admin')),
 );
 ?>
 

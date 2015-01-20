@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmListingsController */
-/* @var $model BtmListings */
+/* @var $this BtmlistingsController */
+/* @var $model Btmlistings */
 
 $this->breadcrumbs=array(
 	'Btm Listings'=>array('index'),
@@ -10,6 +10,6 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Create BtmListings</h1>
+<h1>Create Btmlistings</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

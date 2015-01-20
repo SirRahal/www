@@ -1,5 +1,5 @@
 <?php
-/* @var $this BtmImagesController */
+/* @var $this BtmimagesController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create BtmImages', 'url'=>array('create')),
-	array('label'=>'Manage BtmImages', 'url'=>array('admin')),
+	array('label'=>'Create Btmimages', 'url'=>array('create')),
+	array('label'=>'Manage Btmimages', 'url'=>array('admin')),
 );
 ?>
 

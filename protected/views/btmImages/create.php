@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmImagesController */
-/* @var $model BtmImages */
+/* @var $this BtmimagesController */
+/* @var $model Btmimages */
 
 $this->breadcrumbs=array(
 	'Btm Images'=>array('index'),
@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List BtmImages', 'url'=>array('index')),
-	array('label'=>'Manage BtmImages', 'url'=>array('admin')),
+	array('label'=>'List Btmimages', 'url'=>array('index')),
+	array('label'=>'Manage Btmimages', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create BtmImages</h1>
+<h1>Create Btm Images</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

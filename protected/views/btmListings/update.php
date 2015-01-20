@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmListingsController */
-/* @var $model BtmListings */
+/* @var $this BtmlistingsController */
+/* @var $model Btmlistings */
 
 $this->breadcrumbs=array(
 	'Update',
@@ -9,6 +9,6 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Update BtmListings <?php echo $model->ID; ?></h1>
+<h1>Update Btmlistings <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmListingsController */
-/* @var $model BtmListings */
+/* @var $this BtmlistingsController */
+/* @var $model Btmlistings */
 /* @var $form CActiveForm */
 ?>
 
@@ -22,10 +22,10 @@ if( strpos( $url, 'create/' ) !== false ) {
     $auction_ID = $_GET["auction"];
     if(isset($_GET["listing"])){
         $listing_ID = $_GET["listing"];
-        $model = BtmListings::model()->findByPk($listing_ID);
+        $model = Btmlistings::model()->findByPk($listing_ID);
         echo("<h3 class='red_text'>Copied Item</h3>");
     }
-    $auction = BtmAuctions::model()->findByPk($auction_ID);
+    $auction = Btmauctions::model()->findByPk($auction_ID);
     $list_count = count($auction->btmListings);
     $lot = $list_count+1;
 }else{

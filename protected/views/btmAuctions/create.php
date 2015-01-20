@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmAuctionsController */
-/* @var $model BtmAuctions */
+/* @var $this BtmauctionController */
+/* @var $model Btmauction */
 
 $this->breadcrumbs=array(
 	'Btm Auctions'=>array('index'),
@@ -10,6 +10,6 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Create BtmAuctions</h1>
+<h1>Create Btmauction</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

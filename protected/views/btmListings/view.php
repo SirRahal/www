@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmListingsController */
-/* @var $model BtmListings */
+/* @var $this BtmlistingsController */
+/* @var $model Btmlistings */
 
 $this->breadcrumbs=array(
 	$model->auction->name =>array('btmauctions/'.$model->auction_ID),

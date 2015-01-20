@@ -1,5 +1,5 @@
 <?php
-/* @var $this BtmAuctionsController */
+/* @var $this BtmauctionController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create BtmAuctions', 'url'=>array('create')),
+	array('label'=>'Create BBtmauction, 'url'=>array('create')),
 	array('label'=>'Manage BtmAuctions', 'url'=>array('admin')),
 );
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-class BtmImagesController extends Controller
+class BtmimagesController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -62,14 +62,14 @@ class BtmImagesController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new BtmImages;
+		$model=new Btmimages;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['BtmImages']))
+		if(isset($_POST['Btmimages']))
 		{
-			$model->attributes=$_POST['BtmImages'];
+			$model->attributes=$_POST['Btmimages'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
@@ -91,9 +91,9 @@ class BtmImagesController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['BtmImages']))
+		if(isset($_POST['Btmimages']))
 		{
-			$model->attributes=$_POST['BtmImages'];
+			$model->attributes=$_POST['Btmimages'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
@@ -122,7 +122,7 @@ class BtmImagesController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('BtmImages');
+		$dataProvider=new CActiveDataProvider('Btmimages');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +133,10 @@ class BtmImagesController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new BtmImages('search');
+		$model=new Btmimages('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['BtmImages']))
-			$model->attributes=$_GET['BtmImages'];
+		if(isset($_GET['Btmimages']))
+			$model->attributes=$_GET['Btmimages'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +147,12 @@ class BtmImagesController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return BtmImages the loaded model
+	 * @return Btmimages the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=BtmImages::model()->findByPk($id);
+		$model=Btmimages::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,7 +160,7 @@ class BtmImagesController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param BtmImages $model the model to be validated
+	 * @param Btmimages $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{

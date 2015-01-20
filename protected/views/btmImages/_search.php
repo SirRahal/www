@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmImagesController */
-/* @var $model BtmImages */
+/* @var $this BtmimagesController */
+/* @var $model Btmimages */
 /* @var $form CActiveForm */
 ?>
 

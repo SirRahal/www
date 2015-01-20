@@ -1,12 +1,12 @@
 <?php
-/* @var $this BtmAuctionsController */
-/* @var $model BtmAuctions */
+/* @var $this BtmauctionController */
+/* @var $model Btmauction */
 
 $this->breadcrumbs=array(
 	'Auctions',
 );
 
-$auctions = BtmAuctions::model()->findAll();
+$auctions = Btmauctions::model()->findAll();
 ?>
 
 <h1>Manage Btm Auctions</h1>

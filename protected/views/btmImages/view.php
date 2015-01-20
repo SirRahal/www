@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmImagesController */
-/* @var $model BtmImages */
+/* @var $this BtmimagesController */
+/* @var $model Btmimages */
 
 $this->breadcrumbs=array(
 	'Btm Images'=>array('index'),
@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List BtmImages', 'url'=>array('index')),
-	array('label'=>'Create BtmImages', 'url'=>array('create')),
-	array('label'=>'Update BtmImages', 'url'=>array('update', 'id'=>$model->ID)),
-	array('label'=>'Delete BtmImages', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage BtmImages', 'url'=>array('admin')),
+	array('label'=>'List Btmimages', 'url'=>array('index')),
+	array('label'=>'Create Btmimages', 'url'=>array('create')),
+	array('label'=>'Update Btmimages', 'url'=>array('update', 'id'=>$model->ID)),
+	array('label'=>'Delete Btmimages', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage Btmimages', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View BtmImages #<?php echo $model->ID; ?></h1>
+<h1>View Btmimages #<?php echo $model->ID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

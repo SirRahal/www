@@ -11,7 +11,7 @@ $url = $_SERVER['REQUEST_URI'];
 if( strpos( $url, 'listings/' ) !== false ) {
     $exploded_url = explode('/',$url);
     $last_part_of_url = end($exploded_url);
-    $model = BtmListings::model()->findByPk($last_part_of_url);
+    $model = Btmlistings::model()->findByPk($last_part_of_url);
     $_SESSION['BTMListing_ID']=$last_part_of_url;
     $btm_listing_ID = $_SESSION['BTMListing_ID'];
 
@@ -79,7 +79,7 @@ $this->breadcrumbs=array(
 
 <script>
     function delete_image(id){
-        var url = '<?php echo Yii::app()->createUrl('btmImages/delete'); ?>/'+id;
+        var url = '<?php echo Yii::app()->createUrl('btmimages/delete'); ?>/'+id;
         $.ajax({
             type: "POST",
             url: url,

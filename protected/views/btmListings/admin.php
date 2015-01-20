@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmListingsController */
-/* @var $model BtmListings */
+/* @var $this BtmlistingsController */
+/* @var $model Btmlistings */
 
 $this->breadcrumbs=array(
 	'Btm Listings'=>array('index'),
@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List BtmListings', 'url'=>array('index')),
-	array('label'=>'Create BtmListings', 'url'=>array('create')),
+	array('label'=>'List Btmlistings', 'url'=>array('index')),
+	array('label'=>'Create Btmlistings', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

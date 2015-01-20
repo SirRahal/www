@@ -1,6 +1,6 @@
 <?php
 
-class BtmListingsController extends Controller
+class BtmlistingsController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -62,14 +62,14 @@ class BtmListingsController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new BtmListings;
+		$model=new Btmlistings;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['BtmListings']))
+		if(isset($_POST['Btmlistings']))
 		{
-			$model->attributes=$_POST['BtmListings'];
+			$model->attributes=$_POST['Btmlistings'];
             $model->model = strtoupper($model->model);
             $model->manufacturer = ucfirst($model->manufacturer);
 			if($model->save())
@@ -96,9 +96,9 @@ class BtmListingsController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['BtmListings']))
+		if(isset($_POST['Btmlistings']))
 		{
-			$model->attributes=$_POST['BtmListings'];
+			$model->attributes=$_POST['Btmlistings'];
 			if($model->save())
                 $this->redirect(array('upload_images','id'=>$model->ID));
 		}
@@ -141,7 +141,7 @@ class BtmListingsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('BtmListings');
+		$dataProvider=new CActiveDataProvider('Btmlistings');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -152,10 +152,10 @@ class BtmListingsController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new BtmListings('search');
+		$model=new Btmlistings('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['BtmListings']))
-			$model->attributes=$_GET['BtmListings'];
+		if(isset($_GET['Btmlistings']))
+			$model->attributes=$_GET['Btmlistings'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -166,12 +166,12 @@ class BtmListingsController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return BtmListings the loaded model
+	 * @return Btmlistings the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=BtmListings::model()->findByPk($id);
+		$model=Btmlistings::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -179,7 +179,7 @@ class BtmListingsController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param BtmListings $model the model to be validated
+	 * @param Btmlistings $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{

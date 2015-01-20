@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmListingsController */
-/* @var $data BtmListings */
+/* @var $this BtmlistingsController */
+/* @var $data Btmlistings */
 ?>
 
 <div class="view">

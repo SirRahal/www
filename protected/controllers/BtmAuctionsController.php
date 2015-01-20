@@ -1,6 +1,6 @@
 <?php
 
-class BtmAuctionsController extends Controller
+class BtmauctionsController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -32,12 +32,8 @@ class BtmAuctionsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','order_lots','save_order'),
+				'actions'=>array('create','update','order_lots','save_order','admin','delete'),
 				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -62,14 +58,14 @@ class BtmAuctionsController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new BtmAuctions;
+		$model=new Btmauctions;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['BtmAuctions']))
+		if(isset($_POST['Btmauctions']))
 		{
-			$model->attributes=$_POST['BtmAuctions'];
+			$model->attributes=$_POST['Btmauctions'];
 			if($model->save()){
                 $auction_image_folder = 'images/btm_uploads/'.$model->ID.'/';
                 if (!file_exists($auction_image_folder)) {
@@ -97,9 +93,9 @@ class BtmAuctionsController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['BtmAuctions']))
+		if(isset($_POST['Btmauctions']))
 		{
-			$model->attributes=$_POST['BtmAuctions'];
+			$model->attributes=$_POST['Btmauctions'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
@@ -150,7 +146,7 @@ class BtmAuctionsController extends Controller
         $count=1;
         $file_directory = 'images/btm_uploads/'.$auction_ID.'/';
         foreach($list as $listing){
-            $listing = BtmListings::model()->findByPk($listing);
+            $listing = Btmlistings::model()->findByPk($listing);
             $image_count = 1;
             foreach($listing->btmImages as $image){
                 $image_extention = explode('.',$image->name);
@@ -181,7 +177,7 @@ class BtmAuctionsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('BtmAuctions');
+		$dataProvider=new CActiveDataProvider('Btmauctions');
 		$this->render('admin',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -192,10 +188,10 @@ class BtmAuctionsController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new BtmAuctions('search');
+		$model=new Btmauctions('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['BtmAuctions']))
-			$model->attributes=$_GET['BtmAuctions'];
+		if(isset($_GET['Btmauctions']))
+			$model->attributes=$_GET['Btmauctions'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -206,12 +202,12 @@ class BtmAuctionsController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return BtmAuctions the loaded model
+	 * @return Btmauctions the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=BtmAuctions::model()->findByPk($id);
+		$model=Btmauctions::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -219,7 +215,7 @@ class BtmAuctionsController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param BtmAuctions $model the model to be validated
+	 * @param Btmauctions $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{

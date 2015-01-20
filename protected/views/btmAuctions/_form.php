@@ -1,6 +1,6 @@
 <?php
-/* @var $this BtmAuctionsController */
-/* @var $model BtmAuctions */
+/* @var $this BtmauctionController */
+/* @var $model Btmauction */
 /* @var $form CActiveForm */
 ?>
 

@@ -1,5 +1,5 @@
 <?php
-/* @var $this BtmAuctionsController */
+/* @var $this BtmauctionController */
 /* @var $model BtmAuctions */
 
 $this->breadcrumbs=array(
@@ -16,7 +16,7 @@ $listings = $model->btmListings;
 
 <div class="spacer"></div>
 
-<a href="/index.php/btmlistings/create/<?php echo $model->ID; ?>">Add A Lot</a>
+<a href="/index.php/btmlistings/create/?auction=<?php echo $model->ID; ?>">Add A Lot</a>
 | <a href="/index.php/btmauctions/order_lots/<?php echo $model->ID; ?>">Change Lot Order</a>
 
 

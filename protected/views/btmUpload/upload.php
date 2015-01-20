@@ -9,7 +9,7 @@ if(isset($_FILES["myfile"]))
     {
         session_start();
         $btm_listing_ID = $_SESSION['BTMListing_ID'];
-        $btm_listing = BtmListings::model()->findByPk($btm_listing_ID);
+        $btm_listing = Btmlistings::model()->findByPk($btm_listing_ID);
         $output_dir = "images/btm_uploads/".$btm_listing->auction_ID . '/';
 
         if(!is_array($_FILES["myfile"]['name'])) //single file
@@ -28,7 +28,7 @@ if(isset($_FILES["myfile"]))
 
             $ret['fileName']= $output_dir.$NewImageName;
 
-            $image_entry = new BtmImages();
+            $image_entry = new Btmimages();
             $image_entry->name = $NewImageName;
             $image_entry->btm_listing_ID = $btm_listing_ID;
             if (!$image_entry->save()) {
@@ -52,7 +52,7 @@ if(isset($_FILES["myfile"]))
                 $ret[$NewImageName]= $output_dir.$NewImageName;
                 move_uploaded_file($_FILES["myfile"]["tmp_name"][$i],$output_dir.$NewImageName );
 
-                $image_entry = new BtmImages();
+                $image_entry = new Btmimages();
                 $image_entry->name = $NewImageName;
                 $image_entry->btm_listing_ID = $btm_listing_ID;
                 if (!$image_entry->save()) {
