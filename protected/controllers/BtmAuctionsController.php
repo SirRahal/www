@@ -250,27 +250,28 @@ class BtmauctionsController extends Controller
         //after ziping the folder, sendfile to user
         //delete the zipped file
         //setting the variables
-        $file = '/images/btm_uploads/'.$id;
+       /* $file = '/images/btm_uploads/'.$id;
         $zipnam = $id.'_ziped.zip';
-        $dir = '/images/btm_uploads';
-        $del = false;
-        echo $this->zipfile($file,$zipnam,$dir);
+        $del = false;*/
+
+        Yii::app()->getRequest()->sendFile($id.'.zip', file_get_contents($this->zipfile($id)));
     }
 
-    public function zipfile($file,$zipnam,$dir){
-        $zip = new ZipArchive();
-        $filename = "./test112.zip";
+    public function zipfile($id){
+        Yii::import('protected/components/Zipper');
+        $dir = 'images/btm_uploads/'.$id;
+        $zipper = new Zipper;
 
-        if ($zip->open($filename, ZipArchive::CREATE)!==TRUE) {
-            exit("cannot open <$filename>\n");
+        //get all files from a folder
+        $files = scandir($dir);
+        //loop through the files and add them to zip
+        foreach($files as $file){
+            if($file != '.' && $file != '..'){
+                $zipper->add( $dir.'/'.$file );
+            }
+
         }
-
-        $zip->addFromString("testfilephp.txt" . time(), "#1 This is a test string added as testfilephp.txt.\n");
-        $zip->addFromString("testfilephp2.txt" . time(), "#2 This is a test string added as testfilephp2.txt.\n");
-        $zip->addFile( "/too.php","/testfromfile.php");
-        echo "numfiles: " . $zip->numFiles . "\n";
-        echo "status:" . $zip->status . "\n";
-        $zip->close();
-        return true;
+        $zipper->store('images/btm_uploads/'.$id.'.zip');
+        return ('images/btm_uploads/'.$id.'.zip');
     }
 }
