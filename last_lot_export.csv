@@ -1,0 +1,6 @@
+ID,auction_ID,lot,description,manufacturer,model,more_info,condition
+8,8,5,"this is lot 1",Asdf,ADF9ASJ,sd9,3
+9,8,4,asdf,Asdf,ASDF,asdf,2
+10,8,2,"fanuc drive",ADj3sj,AD-DS,sjlkn,1
+11,8,3,"yes,this is working",Manufacturer,MODEL,moreingfo,2
+14,8,1,"this is lot 1",Asdf,ADF9ASJ,sd9,3

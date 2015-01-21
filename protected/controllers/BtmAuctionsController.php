@@ -32,7 +32,7 @@ class BtmauctionsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','order_lots','save_order','admin','delete'),
+				'actions'=>array('create','update','order_lots','save_order','admin','delete','export_lots','export_images'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -226,5 +226,27 @@ class BtmauctionsController extends Controller
 		}
 	}
 
+    /**
+     * Creates an csv file of the auction's lots
+     * */
+    public function actionExport_lots($id){
+        Yii::import('protected/components/ECSVExport');
+        $auction = Btmauctions::model()->findByPk($id);
+        $listings = $auction->btmListings;
+        // for use with array of arrays
+        $data = $listings;
+        $filename = 'last_lot_export.csv';
+        $csv = new ECSVExport($data);
+        $csv->toCSV($filename); // returns string by default
+        Yii::app()->getRequest()->sendFile( $auction->name.'_lots.csv' , file_get_contents( $filename ) );
+    }
+
+
+    /**
+    * Zips the images in a file for the auction and exports it
+     */
+    public function actionExport_images($id){
+
+    }
 
 }

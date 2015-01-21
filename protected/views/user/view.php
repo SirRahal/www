@@ -8,15 +8,13 @@ $this->breadcrumbs=array(
 );
 
 
-
+$listings = array();
 if($model->permission > 1){
     $lister = array('ebay_lister'=>$model->ID);
     $criteria = new CDbCriteria(array('order'=>'ebay_date ASC'));
     $listings = Listings::model()->findAllByAttributes($lister, $criteria);
-}else{
-    $listings = $model->listings;
 }
-
+    $listings = array_merge ($listings,$model->listings);
 ?>
 
 <!-- DataTables CSS -->
