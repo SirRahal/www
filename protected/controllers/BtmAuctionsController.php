@@ -28,7 +28,7 @@ class BtmauctionsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','zipfile'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -246,7 +246,31 @@ class BtmauctionsController extends Controller
     * Zips the images in a file for the auction and exports it
      */
     public function actionExport_images($id){
-
+        //use auction ID to zip the correct folder
+        //after ziping the folder, sendfile to user
+        //delete the zipped file
+        //setting the variables
+        $file = '/images/btm_uploads/'.$id;
+        $zipnam = $id.'_ziped.zip';
+        $dir = '/images/btm_uploads';
+        $del = false;
+        echo $this->zipfile($file,$zipnam,$dir);
     }
 
+    public function zipfile($file,$zipnam,$dir){
+        $zip = new ZipArchive();
+        $filename = "./test112.zip";
+
+        if ($zip->open($filename, ZipArchive::CREATE)!==TRUE) {
+            exit("cannot open <$filename>\n");
+        }
+
+        $zip->addFromString("testfilephp.txt" . time(), "#1 This is a test string added as testfilephp.txt.\n");
+        $zip->addFromString("testfilephp2.txt" . time(), "#2 This is a test string added as testfilephp2.txt.\n");
+        $zip->addFile( "/too.php","/testfromfile.php");
+        echo "numfiles: " . $zip->numFiles . "\n";
+        echo "status:" . $zip->status . "\n";
+        $zip->close();
+        return true;
+    }
 }
