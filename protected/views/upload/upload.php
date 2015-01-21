@@ -18,7 +18,7 @@ if(isset($_FILES["myfile"]))
 
             $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
             $ImageExt       = str_replace('.','',$ImageExt);
-            $ImageName      = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
+            $ImageName      = substr(md5(uniqid(mt_rand(), true)), 0, 5);
             $NewImageName = $listing_ID.'_'.$ImageName.'.'.$ImageExt;
 
             move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir. $NewImageName);
@@ -44,7 +44,7 @@ if(isset($_FILES["myfile"]))
 
                 $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
                 $ImageExt       = str_replace('.','',$ImageExt);
-                $ImageName      = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
+                $ImageName      = substr(md5(uniqid(mt_rand(), true)), 0, 5);
                 $NewImageName = $listing_ID.'_'.$ImageName.'.'.$ImageExt;
 
                 $ret[$NewImageName]= $output_dir.$NewImageName;
