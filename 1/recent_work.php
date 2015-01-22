@@ -48,12 +48,8 @@
         </div>
     </div>
 </section>-->
-
 <section id="content">
     <div class="container">
-        <div class="row">
-            <h1>This page is currently being worked on.  Images of past work comming soon!</h1>
-        </div>
         <div class="row">
             <div class="col-lg-12">
                 <ul class="portfolio-categ filter">
