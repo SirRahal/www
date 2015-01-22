@@ -111,12 +111,35 @@ class ImagesController extends Controller
 	public function actionDelete($id)
 	{
 		$temp_model = $this->loadModel($id);
-        $file_dir = './images/uploads/'.$temp_model['image'];
-        if(realpath($file_dir)){
-            unlink($file_dir);
-            $temp_model->delete();
-        }elseif(!realpath($file_dir)){
-            //error
+        $lot = Btmauctions::model()->findByPk($temp_model->liting_ID);
+        $file_directory = './images/btm_uploads/'.$lot->auction_ID.'/';
+        $images = $lot->btmImages;
+
+        $count = 1;
+        foreach($images as $image){
+            //if it's the delete image
+            if($image->ID == $id){
+                //delete
+                $file = $file_directory.$image->name;
+                if(realpath($file)){
+                    unlink($file);
+                    $temp_model->delete();
+                }elseif(!realpath($file)){
+                    //error
+                }
+            }else{//else
+                //update database
+
+                $image_extention = explode('.',$image->name);
+                $image_extention = $image_extention[1];
+                $new_file_name = $lot->ID.'_'.$count.'.'.$image_extention[1];
+                //rename image
+                rename($file_directory.$image->name, $file_directory.$new_file_name);
+                $image->name = $new_file_name;
+                //save model
+                $image->save();
+                $count++;
+            }
         }
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
