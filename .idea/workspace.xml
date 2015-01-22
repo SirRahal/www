@@ -40,11 +40,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BtmImagesController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BtmImagesController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/BtmImagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="25" selection-start="3650" selection-end="3650" vertical-scroll-proportion="0.6286019" vertical-offset="1621" max-vertical-offset="3468">
+            <state line="112" column="44" selection-start="2785" selection-end="2785" vertical-scroll-proportion="-5.4423075" vertical-offset="1621" max-vertical-offset="3468">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="63" selection-start="170" selection-end="170" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1785">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="34" selection-start="5125" selection-end="5125" vertical-scroll-proportion="-22.23077" vertical-offset="1071" max-vertical-offset="2363">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listing_table.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/listings/listing_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="60" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.59052634" vertical-offset="102" max-vertical-offset="1173">
+              <folding>
+                <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,16 +117,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/btmListings/upload_images.php" />
-        <option value="$PROJECT_DIR$/protected/views/btmAuctions/update.php" />
-        <option value="$PROJECT_DIR$/js/jquery-sortable.js" />
         <option value="$PROJECT_DIR$/protected/views/btmAuctions/save_order.php" />
         <option value="$PROJECT_DIR$/protected/views/btmAuctions/create.php" />
         <option value="$PROJECT_DIR$/protected/views/btmListings/create.php" />
         <option value="$PROJECT_DIR$/protected/views/btmAuctions/order_lots.php" />
         <option value="$PROJECT_DIR$/protected/views/btmAuctions/view.php" />
         <option value="$PROJECT_DIR$/protected/views/btmListings/_form.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/protected/controllers/BtmAuctionsController.php" />
         <option value="$PROJECT_DIR$/protected/models/BtmAuctions.php" />
@@ -128,6 +164,10 @@
         <option value="$PROJECT_DIR$/protected/controllers/BtmauctionsController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ImagesController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/BtmImagesController.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/listing_table.php" />
       </list>
     </option>
   </component>
@@ -207,7 +247,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -221,29 +265,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="btm_uploads" />
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,15 +287,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="btm_uploads" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="8" />
+              <option name="myItemId" value="listings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,8 +369,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -330,7 +378,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14583333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14583333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -370,11 +418,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/btmListings/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="210" selection-end="210" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/listings/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="48" selection-start="219" selection-end="219" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340" />
@@ -393,16 +436,6 @@
     <entry file="file://$PROJECT_DIR$/protected/views/btmAuctions/order_lots.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="20" selection-start="2291" selection-end="2306" vertical-scroll-proportion="0.84527516" vertical-offset="427" max-vertical-offset="1411" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="109" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="2363" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="318" selection-end="318" vertical-scroll-proportion="0.1588785" vertical-offset="0" max-vertical-offset="1615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
@@ -640,8 +673,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/BtmImagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="25" selection-start="3650" selection-end="3650" vertical-scroll-proportion="0.6286019" vertical-offset="1621" max-vertical-offset="3468">
+        <state line="112" column="44" selection-start="2785" selection-end="2785" vertical-scroll-proportion="-5.4423075" vertical-offset="1621" max-vertical-offset="3468">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="63" selection-start="170" selection-end="170" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1785">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="34" selection-start="5125" selection-end="5125" vertical-scroll-proportion="-22.23077" vertical-offset="1071" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/listing_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="60" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.59052634" vertical-offset="102" max-vertical-offset="1173">
+          <folding>
+            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -42,7 +42,7 @@
             <td><?php echo $item->model_number; ?></td>
             <!--<td style="text-align: center;"><?php /*echo date("M d/y",strtotime($item->date)); */?></td>-->
             <td style="text-align: center;"><img src="/images/<?php if($item->images){ echo 'green';}else { echo 'red';} ?>thumb.jpg" /></td>
-            <td style="text-align: center;"><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a> | <a class="link" href="/index.php/listings/view/<?php echo $item->ID; ?>">View</a> | <a class="link" href="/index.php/listings/create/<?php echo $item->ID; ?>">Copy</a> | <a class="link" style="cursor: pointer;" onclick="delete_listing(<?php echo $item->ID; ?>)">Delete</a></td>
+            <td style="text-align: center; min-width: 152px;"><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a> | <a class="link" href="/index.php/listings/view/<?php echo $item->ID; ?>">View</a> | <a class="link" href="/index.php/listings/create/<?php echo $item->ID; ?>">Copy</a> | <a class="link" style="cursor: pointer;" onclick="delete_listing(<?php echo $item->ID; ?>)">Delete</a></td>
         </tr>
     <?php } ?>
     </tbody>
