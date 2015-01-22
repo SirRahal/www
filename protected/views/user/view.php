@@ -39,8 +39,8 @@ if($model->permission > 1){
         <td>Serial #</td>
         <td>Model #</td>
         <td>Date</td>
-        <td>Images</td>
-        <td>Options</td>
+        <td style="width:45px;">Img</td>
+        <td style="width:152px;">Options</td>
     </tr>
     </thead>
     <tbody>

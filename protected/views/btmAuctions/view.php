@@ -17,7 +17,7 @@ $listings = $model->btmListings;
 <div class="spacer"></div>
 
 <a href="/index.php/btmlistings/create/?auction=<?php echo $model->ID; ?>">Add A Lot</a>
-| <a href="/index.php/btmauctions/order_lots/<?php echo $model->ID; ?>">Change Lot Order</a>
+| <a href="/index.php/btmauctions/order_lots/<?php echo $model->ID; ?>">Set Lot Order</a>
 | <a href="/index.php/btmauctions/export_lots/<?php echo $model->ID; ?>">Export Lots</a>
 | <a href="/index.php/btmauctions/export_images/<?php echo $model->ID; ?>">Export Images</a>
 
