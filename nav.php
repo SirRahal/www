@@ -8,8 +8,17 @@
 
 $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
+<?php
+$isMobile = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows (phone|ce)|blackberry|tablet'.
+    '|s(ymbian|eries60|amsung)|p(laybook|alm|rofile/midp|laystation portable)|nokia|fennec|htc[\-_]'.
+    '|mobile|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
+$_SESSION['isMobile'] = $isMobile;
+if($isMobile){ ?>
+    <link rel="stylesheet" type="text/css" href="/css/mobile.css" />
+<?php } ?>
+
 <header>
-    <div class="navbar navbar-default navbar-static-top">
+    <div class="navbar navbar-default navbar-static-top mobile_nav">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -18,9 +27,11 @@ $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.php"><span>M</span>idway<span> M</span>achinery<span> M</span>overs<br/>
-                <span class="blue-text">Machine Moving & Rigging</span></a><br/><br/><br/><br/>
-                <span class="blue-text">Contact Us : </span><span>(616) 608-7606</span>
+                <span class="blue-text">Machine Moving & Rigging</span><br/>
+                <span class="blue-text">Contact Us : </span><span>(616) 608-7606</span></a>
+
             </div>
+            <div class="mobile_nav_padding"></div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav">
                     <li class="<?php if (strpos($url, "index")!==false){ echo "active"; } ?>"><a href="index.php">Home</a></li>
@@ -30,7 +41,7 @@ $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                     <li class="<?php if (strpos($url, "contact")!==false){ echo "active"; } ?>"><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12" style="padding-bottom: 0px;">
+            <div class="col-sm-12 mobile_hidden" style="padding-bottom: 0px;">
                 <div class="col-sm-2">
                     Plant Moving
                 </div>
@@ -52,4 +63,5 @@ $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
             </div>
         </div>
     </div>
+
 </header>

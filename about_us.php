@@ -131,7 +131,7 @@
                                 <div class="box-gray aligncenter">
                                     <h4>Certified Riggers</h4>
                                     <div class="icon">
-                                        <i class="fa fa-check-square-o fa-3x"></i>
+                                        <i class="fa fa-wrench fa-3x"></i>
                                     </div>
                                     <p>
                                         All our riggers are professional certified

@@ -1977,3 +1977,7 @@ h2 div.hint{
     margin-top: -10px;
     font-size: .4em;
 }
+
+.move-up{
+    margin-top: -30px;
+}

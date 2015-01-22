@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Midway Machinery Movers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
+<meta name="description" content="Industrial Machine Moving company specialized around heavy hauling and rigging" />
 <meta name="author" content="Sari Rahal" />
 <!-- css -->
 <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -45,7 +45,7 @@
                         <div class="flex-caption">
                             <h3>Heavy Hauling</h3>
                             <p>We'll move it all for you.</p>
-                            <a href="#" class="btn btn-theme">Learn More</a>
+                            <a href="about_us.php" class="btn btn-theme">Learn More</a>
                         </div>
                     </li>
                   <li>
@@ -53,7 +53,7 @@
                     <div class="flex-caption">
                         <h3>Forklift Rental</h3>
                         <p>5,000 - 100,000 lbs. Capacity</p>
-                        <a href="#" class="btn btn-theme">Learn More</a>
+                        <a href="pricing.php" class="btn btn-theme">Learn More</a>
                     </div>
                   </li>
                   <li>
@@ -61,7 +61,7 @@
                     <div class="flex-caption">
                         <h3>Auction Specialists</h3>
                         <p>Deal with Auction Sites all the time</p>
-                        <a href="#" class="btn btn-theme">Learn More</a>
+                        <a href="about_us.php" class="btn btn-theme">Learn More</a>
                     </div>
                   </li>
                 </ul>
@@ -89,7 +89,7 @@
 					<div class="col-lg-3">
 						<div class="box">
 							<div class="box-gray aligncenter">
-								<h4>We Offer</h4>
+								<h4>What We Offer</h4>
 								<div class="icon">
 								<i class="fa fa-truck fa-3x"></i>
 								</div>
@@ -125,7 +125,7 @@
 							<div class="box-gray aligncenter">
 								<h4>Pricing</h4>
 								<div class="icon">
-								<i class="fa fa-check fa-3x"></i>
+								<i class="fa fa-usd fa-3x"></i>
 								</div>
 								<p>
 								 Offering the best quality for the lowest prices
@@ -157,13 +157,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- divider -->
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="solidline">
-				</div>
-			</div>
-		</div>
 		<!-- end divider -->
 		<!-- Portfolio Projects -->
 		<div class="row">
@@ -172,55 +165,67 @@
                 <div class="box-gray text-center" style="padding-bottom: 10px;">
                     <h4>We recommend these companies first hand. Our experiences with these companies have been above and beyond expectations, and that is not the only reason we recommend them to our customers.</h4>
                 </div>
+                <br/>
                 <div class="row">
 					<section id="projects">
 					<ul id="thumbs" class="portfolio">
 						<!-- Item Project and Filter Name -->
 						<li class="col-lg-3 design" data-id="id-0" data-type="web">
-						<div class="item-thumbs">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="BTM Industrial" href="img/companies/BTM.jpg">
-						<span class="overlay-img aligncenter"><h3 style="color:white;">BTM Industrial</h3><h4 style="color: gray">Industrial Auctioneers</h4></span>
-						<span class="overlay-img-thumb font-icon-plus"></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/companies/BTM.jpg" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
-						</div>
+                            <div class="item-thumbs">
+                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="BTM Industrial" href="img/companies/BTM.jpg">
+                                    <span class="overlay-img aligncenter"><h3 style="color:white;">BTM Industrial</h3><h4 style="color: gray">Industrial Auctioneers</h4></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                            <!-- Thumb Image and Description -->
+                                <img src="img/companies/BTM.jpg" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
+                            </div>
+                            <div class="box-bottom move-up">
+                                <a href="http://www.btmindustrial.com">BTM Industrial</a>
+                            </div>
 						</li>
-						<!-- End Item Project -->
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Nu Tek Sales" href="img/companies/Nu_Tek.jpg">
-						<span class="overlay-img aligncenter"><h3 style="color:white;">Nu Tek Sales</h3><h4 style="color: gray">CNC Replacement Parts</h4></span>
-						<span class="overlay-img-thumb font-icon-plus"></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/companies/Nu_Tek.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-						</li>
-						<!-- End Item Project -->
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="img/companies/ITi.png">
-						<span class="overlay-img aligncenter"><h3 style="color:white;">Industrial Times Inc</h3><h4 style="color: gray">Industrial Advertising</h4></span>
-						<span class="overlay-img-thumb font-icon-plus"></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/companies/ITi.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-						</li>
-						<!-- End Item Project -->
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="USA Industrial Scrap" href="img/companies/USA.png">
-						<span class="overlay-img aligncenter"><h3 style="color:white;">USA Industrial Scrap</h3><h4 style="color: gray">Decommission Large Machine</h4></span>
-						<span class="overlay-img-thumb font-icon-plus"></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/companies/USA.png" alt="Coast To Coast We Pay The Most">
-						</li>
-						<!-- End Item Project -->
+                        <li class="col-lg-3 design" data-id="id-0" data-type="web">
+                            <div class="item-thumbs">
+                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Nu Tek Sales" href="img/companies/Nu_Tek.jpg">
+                                    <span class="overlay-img aligncenter"><h3 style="color:white;">Nu Tek Sales</h3><h4 style="color: gray">CNC Replacement Parts</h4></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/companies/Nu_Tek.jpg" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
+                            </div>
+                            <div class="box-bottom move-up">
+                                <a href="http://www.nuteksales.com">Nu Tek Sales</a>
+                            </div>
+                        </li>
+                        <li class="col-lg-3 design" data-id="id-0" data-type="web">
+                            <div class="item-thumbs">
+                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Industrial Times Inc" href="img/companies/ITi.png">
+                                    <span class="overlay-img aligncenter"><h3 style="color:white;">Industrial Times Inc</h3><h4 style="color: gray">Industrial Advertising</h4></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/companies/ITi.png" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
+                            </div>
+                            <div class="box-bottom move-up">
+                                <a href="http://www.industrialtimesinc.com">Industrial Times Inc.</a>
+                            </div>
+                        </li>
+                        <li class="col-lg-3 design" data-id="id-0" data-type="web">
+                            <div class="item-thumbs">
+                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="BTM Industrial" href="img/companies/USA.png">
+                                    <span class="overlay-img aligncenter"><h3 style="color:white;">USA Industrial Scrap</h3><h4 style="color: gray">Decommission Large Machine</h4></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/companies/USA.png" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
+                            </div>
+                            <div class="box-bottom move-up">
+                                <a href="http://www.usaindustrialscrap.com">USA Industrial Scrap</a>
+                            </div>
+                        </li>
 					</ul>
 					</section>
 				</div>
