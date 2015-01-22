@@ -32,11 +32,11 @@ class BtmimagesController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -110,11 +110,36 @@ class BtmimagesController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+        $temp_model = $this->loadModel($id);
+        $lot = Btmlistings::model()->findByPk($temp_model->btm_listing_ID);
+        $file_directory = './images/btm_uploads/'.$lot->auction_ID.'/';
+        $images = $lot->btmImages;
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+        $count = 1;
+        foreach($images as $image){
+            //if it's not the delete image
+            if($image->ID != $id){
+                //update database
+                $image_extention = explode('.',$image->name);
+                $image_extention = $image_extention[1];
+                //update database name to new name
+                $new_file_name = $lot->lot.'_'.$count.'.'.$image_extention;
+                //rename all images to the new lot #'s with the prefix Temp_
+                rename($file_directory.$image->name, $file_directory.$new_file_name);
+                $image->name = $new_file_name;
+                $image->save();
+                $count++;
+            }else{//else
+                //delete
+                $file = $file_directory.$image->name;
+                if(realpath($file)){
+                    unlink($file);
+                    $temp_model->delete();
+                }elseif(!realpath($file)){
+                    //error
+                }
+            }
+        }
 	}
 
 	/**
