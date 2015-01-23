@@ -79,7 +79,7 @@
                         </ul>
                     </div>
                     <div class="pricing-action">
-                        <a href="#" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>GET A FULL QUOTE</a>
+                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>GET A FULL QUOTE</a>
                     </div>
                 </div>
             </div>
@@ -89,8 +89,8 @@
                         <h3><strong>Insurance Provider</strong></h3>
                     </div>
                     <div class="pricing-terms" style="padding:35px 35px 20px 35px;">
-                        <h4 style="color: #fff;">We are dedicated to providing great service as well as insuring safety. We provide a certificate of liability with every job insured by <a href="https://ssl.gwccnet.com/">Great West</a></h4>
-                        <a href="https://ssl.gwccnet.com/"><img src="img/insurance_logo.png"></a><br/><br/>
+                        <h4 style="color: #fff;">We are dedicated to providing great service as well as insuring safety. We provide a certificate of liability with every job insured by <a  target="_blank" href="https://ssl.gwccnet.com/">Great West</a></h4>
+                        <a target="_blank" href="https://ssl.gwccnet.com/"><img src="img/insurance_logo.png"></a><br/><br/>
                         <blockquote>
                             <p>Great West Casualty Company specializes in truck insurance products and services.  Our company was founded on a service philosophy over 50 years ago, and today our goal of meeting our customers' changing needs has not changed.
 
@@ -104,6 +104,7 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="row">
             <div class="col-lg-12">
                 <h2>Moving & Rigging Packages<br/></h2>
@@ -126,7 +127,7 @@
                         </ul>
                     </div>
                     <div class="pricing-action">
-                        <a href="#" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
+                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
                     </div>
                 </div>
             </div>
@@ -148,7 +149,7 @@
                         </ul>
                     </div>
                     <div class="pricing-action">
-                        <a href="#" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
+                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
                     </div>
                 </div>
             </div>
@@ -170,11 +171,12 @@
                         </ul>
                     </div>
                     <div class="pricing-action">
-                        <a href="#" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
+                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
                     </div>
                 </div>
             </div>
         </div>
+        -->
         <!-- end divider -->
         <div class="row">
             <div class="col-lg-12">

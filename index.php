@@ -71,13 +71,10 @@
 	<!-- end slider -->
 			</div>
 		</div>
-	</div>	
-	
-	
-
+	</div>
 	</section>
 	<div class="container">
-		<div class="row box-gray">
+		<div class="col-md-12 box-gray">
             <div class="cta-text">
                 <h1>Whether you are moving your operation<br/><span class="blue-text">down the street</span> or <span class="blue-text">across the country</span>.<br/><span>We can help you!</span></h1>
             </div>
@@ -194,7 +191,7 @@
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="img/companies/Nu_Tek.jpg" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
+                                <img src="img/companies/Nu_Tek.jpg" alt="Find all of your CNC replacement part needs, all in one place.">
                             </div>
                             <div class="box-bottom move-up">
                                 <a href="http://www.nuteksales.com">Nu Tek Sales</a>
@@ -208,7 +205,7 @@
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="img/companies/ITi.png" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
+                                <img src="img/companies/ITi.png" alt="Midwest Industrial Publication for Anything to do with industrial metalworking (forming and cutting) and upcoming Industrial Auctions.">
                             </div>
                             <div class="box-bottom move-up">
                                 <a href="http://www.industrialtimesinc.com">Industrial Times Inc.</a>
@@ -222,7 +219,7 @@
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="img/companies/USA.png" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
+                                <img src="img/companies/USA.png" alt="We pay the Best Scrap Prices for: CNC machines (old/problem), Automated Machining Lines, and Robotics. On Staff ">
                             </div>
                             <div class="box-bottom move-up">
                                 <a href="http://www.usaindustrialscrap.com">USA Industrial Scrap</a>

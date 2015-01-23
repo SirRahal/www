@@ -53,7 +53,7 @@
 
 <section id="content">
     <div class="container">
-        <div class="container">
+        <div class="container col-lg-12">
             <div class="row box-gray">
                 <div class="cta-text">
                     <h1>This page is currently being worked on.  Images of past work <span class="blue-text">coming soon!</span></h1>
