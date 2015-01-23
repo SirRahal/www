@@ -29,7 +29,8 @@ if($isMobile){ ?>
                 <!--<a class="navbar-brand" href="index.php"><span>M</span>idway<span> M</span>achinery<span> M</span>overs<br/>
                 Machine Moving & Rigging<br/>
                 Contact Us : (616) 608-7606</a>-->
-                <img src="/img/new_logo.png" style="padding-top: 20px;"/>
+
+                <img src="/img/new_logo.png" style="padding-top: 10px;"/>
             </div>
             <div class="mobile_nav_padding"></div>
             <div class="navbar-collapse collapse ">
@@ -44,5 +45,4 @@ if($isMobile){ ?>
 
         </div>
     </div>
-
 </header>

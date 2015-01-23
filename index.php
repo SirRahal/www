@@ -215,7 +215,7 @@
                             <div class="item-thumbs">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="BTM Industrial" href="img/companies/USA.png">
-                                    <span class="overlay-img aligncenter"><h3 style="color:white;">USA Industrial Scrap</h3><h4 style="color: gray">Decommission Large Machine</h4></span>
+                                    <span class="overlay-img aligncenter"><h3 style="color:white;">USA Industrial Scrap</h3><h4 style="color: gray">Decommission Machine</h4></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->

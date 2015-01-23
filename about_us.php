@@ -52,12 +52,15 @@
     </section>-->
     <section id="content">
         <div class="container">
-            <div class="row box-gray">
+            <div class="col-md-12 box-gray">
                 <div class="cta-text">
                     <h1>Whether you are moving your operation<br/><span class="blue-text">down the street</span> or <span class="blue-text">across the country</span>.<br/><span>We can help you!</span></h1>
                 </div>
             </div>
         </div>
+    </section>
+    <section id="content">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

@@ -89,7 +89,7 @@
                         <h3><strong>Insurance Provider</strong></h3>
                     </div>
                     <div class="pricing-terms" style="padding:35px 35px 20px 35px;">
-                        <h4 style="color: #fff;">We are dedicated to providing great service as well as insuring safety. We provide a certificate of liability with every job insured by <a  target="_blank" href="https://ssl.gwccnet.com/">Great West</a></h4>
+                        <h4 style="color: #fff;">We are dedicated to providing great service as well as insuring safety. We provide a certificate of liability with every job insured by Great West</h4>
                         <a target="_blank" href="https://ssl.gwccnet.com/"><img src="img/insurance_logo.png"></a><br/><br/>
                         <blockquote>
                             <p>Great West Casualty Company specializes in truck insurance products and services.  Our company was founded on a service philosophy over 50 years ago, and today our goal of meeting our customers' changing needs has not changed.

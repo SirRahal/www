@@ -246,8 +246,9 @@ header ul.nav li ul li a {
 
 
 .navbar .nav > li > a {
-  color: #111;
+  color: #5d5d5d;
   text-shadow: none;
+  font-size: 1.4em;
 }
 
 .navbar .nav a:hover {
@@ -379,6 +380,7 @@ section.callaction {
 .box-gray  {
 	background: #d9d8da;
 	padding: 20px 20px 30px;
+    border:solid 1px #bcbbbd;
 }
 .box-gray  h4,.box-gray  i {
 	margin-bottom: 20px;
