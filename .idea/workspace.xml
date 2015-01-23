@@ -60,10 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.07061267" vertical-offset="0" max-vertical-offset="963">
+            <state line="4" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portfolio.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/portfolio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="18" selection-start="2819" selection-end="2819" vertical-scroll-proportion="0.68" vertical-offset="510" max-vertical-offset="4709">
               <folding />
             </state>
           </provider>
@@ -145,6 +154,7 @@
         <option value="$PROJECT_DIR$/recent_work.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/pricing.php" />
+        <option value="$PROJECT_DIR$/portfolio.html" />
       </list>
     </option>
   </component>
@@ -304,7 +314,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -549,11 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="61" selection-start="0" selection-end="12210" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="4709" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pricingbox.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="54" selection-start="0" selection-end="12021" vertical-scroll-proportion="-0.0" vertical-offset="578" max-vertical-offset="5831" />
@@ -667,7 +672,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contact/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.07061267" vertical-offset="0" max-vertical-offset="963">
+        <state line="4" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="18" selection-start="2819" selection-end="2819" vertical-scroll-proportion="0.68" vertical-offset="510" max-vertical-offset="4709">
           <folding />
         </state>
       </provider>
