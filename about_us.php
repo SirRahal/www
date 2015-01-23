@@ -58,9 +58,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="content">
-
+        <div class="blankline"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -76,9 +74,6 @@
                                         Whether you're moving across the<br/>street or across the country
                                     </p>
                                 </div>
-                                <div class="box-bottom">
-                                    <a href="contact.php">Contact Us</a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -92,9 +87,6 @@
                                         Forklift, Hysters, Workers <br/>and we deliver!
                                     </p>
 
-                                </div>
-                                <div class="box-bottom">
-                                    <a href="pricing.php">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -110,18 +102,10 @@
                                     </p>
 
                                 </div>
-                                <div class="box-bottom">
-                                    <a href="pricing.php">Learn More</a>
-                                </div>
                             </div>
                         </div>
+                        <div class="col-lg-12 blankline"></div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
                         <div class="col-lg-4">
                             <div class="box">
                                 <div class="box-gray aligncenter">
@@ -132,9 +116,6 @@
                                     <p>
                                         Auction lot specialest
                                     </p>
-                                </div>
-                                <div class="box-bottom">
-                                    <a href="contact.php">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -150,9 +131,6 @@
                                     </p>
 
                                 </div>
-                                <div class="box-bottom">
-                                    <a href="pricing.php">Learn More</a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -167,9 +145,20 @@
                                     </p>
 
                                 </div>
-                                <div class="box-bottom">
-                                    <a href="pricing.php">Learn More</a>
-                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="box-bottom">
+                                <h4>Learn more about what we offer.</h4>
+                                <a href="pricing.php" class="btn btn-theme">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="box-bottom">
+                                <h4>Contact us if you still have questions.</h4>
+                                <a href="contact.php" class="btn btn-theme">Contact Us</a>
                             </div>
                         </div>
                     </div>

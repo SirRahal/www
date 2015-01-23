@@ -384,6 +384,10 @@ section.callaction {
 }
 .box-gray  h4,.box-gray  i {
 	margin-bottom: 20px;
+
+}
+.box-gray i {
+    color:#900101;
 }
 .box-bottom {
 	padding: 20px 0;

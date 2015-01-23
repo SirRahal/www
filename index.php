@@ -98,7 +98,7 @@
 									
 							</div>
 							<div class="box-bottom">
-								<a href="about_us.php">Learn more</a>
+								<a href="about_us.php" class="btn btn-theme">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -115,7 +115,7 @@
 									
 							</div>
 							<div class="box-bottom">
-								<a href="recent_work.php">Learn more</a>
+								<a href="recent_work.php" class="btn btn-theme">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -132,7 +132,7 @@
 									
 							</div>
 							<div class="box-bottom">
-								<a href="pricing.php">Learn more</a>
+								<a href="pricing.php" class="btn btn-theme">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -149,7 +149,7 @@
 									
 							</div>
 							<div class="box-bottom">
-								<a href="contact.php">Learn more</a>
+								<a href="contact.php" class="btn btn-theme">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -180,7 +180,7 @@
                                 <img src="img/companies/BTM.jpg" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
                             </div>
                             <div class="box-bottom move-up">
-                                <a href="http://www.btmindustrial.com">BTM Industrial</a>
+                                <a href="http://www.btmindustrial.com" class="btn btn-theme">BTM Industrial</a>
                             </div>
 						</li>
                         <li class="col-lg-3 design" data-id="id-0" data-type="web">
@@ -194,7 +194,7 @@
                                 <img src="img/companies/Nu_Tek.jpg" alt="Find all of your CNC replacement part needs, all in one place.">
                             </div>
                             <div class="box-bottom move-up">
-                                <a href="http://www.nuteksales.com">Nu Tek Sales</a>
+                                <a href="http://www.nuteksales.com" class="btn btn-theme">Nu Tek Sales</a>
                             </div>
                         </li>
                         <li class="col-lg-3 design" data-id="id-0" data-type="web">
@@ -208,7 +208,7 @@
                                 <img src="img/companies/ITi.png" alt="Midwest Industrial Publication for Anything to do with industrial metalworking (forming and cutting) and upcoming Industrial Auctions.">
                             </div>
                             <div class="box-bottom move-up">
-                                <a href="http://www.industrialtimesinc.com">Industrial Times Inc.</a>
+                                <a href="http://www.industrialtimesinc.com" class="btn btn-theme">Industrial Times Inc.</a>
                             </div>
                         </li>
                         <li class="col-lg-3 design" data-id="id-0" data-type="web">
@@ -222,7 +222,7 @@
                                 <img src="img/companies/USA.png" alt="We pay the Best Scrap Prices for: CNC machines (old/problem), Automated Machining Lines, and Robotics. On Staff ">
                             </div>
                             <div class="box-bottom move-up">
-                                <a href="http://www.usaindustrialscrap.com">USA Industrial Scrap</a>
+                                <a href="http://www.usaindustrialscrap.com" class="btn btn-theme">USA Industrial Scrap</a>
                             </div>
                         </li>
 					</ul>

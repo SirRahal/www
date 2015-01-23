@@ -104,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <!--
+
         <div class="row">
             <div class="col-lg-12">
                 <h2>Moving & Rigging Packages<br/></h2>
@@ -176,7 +176,7 @@
                 </div>
             </div>
         </div>
-        -->
+
         <!-- end divider -->
         <div class="row">
             <div class="col-lg-12">
