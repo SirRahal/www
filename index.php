@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Midway Machinery Movers</title>
+<title>idway Machinery Movers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Industrial Machine Moving company specialized around heavy hauling and rigging" />
 <meta name="author" content="Sari Rahal" />
+    <!--favicon-->
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
 <!-- css -->
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">

@@ -9,10 +9,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Moderna - Bootstrap 3 flat corporate template</title>
+    <title>Pricing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta name="description" content="Midway Machinery Movers Pricing" />
     <meta name="author" content="http://bootstraptaste.com" />
+
+    <!--favicon-->
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
@@ -111,14 +114,15 @@
                         <h3><strong>Short </strong>Range</h3>
                     </div>
                     <div class="pricing-terms">
-                        <h6>&#36;145.00 / Hour</h6>
-                        <h6>&#36;2.00 / Mile</h6>
+                        <h6> 500 Miles or Less </h6>
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li><i class="icon-ok"></i>Great West Insured</li>
-                            <li><i class="icon-ok"></i>Additional Rigger &#36;50.00 / Hour</li>
-                            <li><i class="icon-ok"></i>No hidden fees</li>
+                            <li>&#36;145.00 / Hour</li>
+                            <li>&#36;2.00 / Mile</li>
+                            <li>Additional Rigger &#36;50.00 / Hour</li>
+                            <li>Great West Insured</li>
+                            <li>No hidden fees</li>
                         </ul>
                     </div>
                     <div class="pricing-action">
@@ -132,15 +136,15 @@
                         <h3><strong>Mid </strong>Range</h3>
                     </div>
                     <div class="pricing-terms">
-                        <h6>&#36;25.00 / Month</h6>
+                        <h6> 500 to 1,000 Miles </h6>
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li><i class="icon-ok"></i> 100 applications</li>
-                            <li><i class="icon-ok"></i> 24x7 support available</li>
-                            <li><i class="icon-ok"></i> No hidden fees</li>
-                            <li><i class="icon-ok"></i> Free 30-days trial</li>
-                            <li><i class="icon-ok"></i> Stop anytime easily</li>
+                            <li>&#36;145.00 / Hour</li>
+                            <li>&#36;1.85 / Mile</li>
+                            <li>Additional Rigger &#36;50.00 / Hour</li>
+                            <li>Great West Insured</li>
+                            <li>No hidden fees</li>
                         </ul>
                     </div>
                     <div class="pricing-action">
@@ -154,15 +158,15 @@
                         <h3><strong>Long </strong>Range</h3>
                     </div>
                     <div class="pricing-terms">
-                        <h6>&#36;35.00 / Month</h6>
+                        <h6> Greater Than 1,000 Miles </h6>
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li><i class="icon-ok"></i> 100 applications</li>
-                            <li><i class="icon-ok"></i> 24x7 support available</li>
-                            <li><i class="icon-ok"></i> No hidden fees</li>
-                            <li><i class="icon-ok"></i> Free 30-days trial</li>
-                            <li><i class="icon-ok"></i> Stop anytime easily</li>
+                            <li>&#36;145.00 / Hour</li>
+                            <li>&#36;1.75 / Mile</li>
+                            <li>Additional Rigger &#36;50.00 / Hour</li>
+                            <li>Great West Insured</li>
+                            <li>No hidden fees</li>
                         </ul>
                     </div>
                     <div class="pricing-action">
@@ -177,7 +181,45 @@
                 <h2><strong>Forklift Rental</strong> Prices <br/>
                 <div class="hint">(Prices do not include Pickup / Delivery Charges)</div></h2>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2">
+                <div class="pricing-box-alt">
+                    <div class="pricing-heading">
+                        <h3><strong>Light</strong></h3>
+                    </div>
+                    <div class="pricing-terms">
+                        <h6>5,000 Lb</h6>
+                    </div>
+                    <div class="pricing-content">
+                        <ul>
+                            <li>&#36;300.00 / week</li>
+                            <li>&#36;900.00 / Month</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="pricing-box-alt">
+                    <div class="pricing-heading">
+                        <h3>Semi-<strong>Light</strong></h3>
+                    </div>
+                    <div class="pricing-terms">
+                        <h6>8,000 Lb</h6>
+                    </div>
+                    <div class="pricing-content">
+                        <ul>
+                            <li>&#36;350.00 / week</li>
+                            <li>&#36;1,050.00 / Month</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
                         <h3><strong>Basic</strong></h3>
@@ -187,8 +229,8 @@
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li><i class="icon-ok"></i> &#36;500.00 / week</li>
-                            <li><i class="icon-ok"></i> &#36;1,500.00 / Month</li>
+                            <li>&#36;500.00 / week</li>
+                            <li>&#36;1,500.00 / Month</li>
                         </ul>
                     </div>
                     <div class="pricing-action">
@@ -196,18 +238,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
                         <h3>Semi-<strong>Basic</strong></h3>
                     </div>
                     <div class="pricing-terms">
-                        <h6>15,000 Lb</h6>
+                        <h6>25,000 Lb</h6>
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li><i class="icon-ok"></i> &#36;600.00 / week</li>
-                            <li><i class="icon-ok"></i> &#36;1,800.00 / Month</li>
+                            <li>&#36;600.00 / week</li>
+                            <li>&#36;1,800.00 / Month</li>
                         </ul>
                     </div>
                     <div class="pricing-action">
@@ -215,18 +257,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
-                        <h3>Semi-<strong>Heavy</strong></h3>
+                        <h3><strong>Heavy</strong></h3>
                     </div>
                     <div class="pricing-terms">
                         <h6>40,000 Lb</h6>
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li><i class="icon-ok"></i> &#36;800.00 / week</li>
-                            <li><i class="icon-ok"></i> &#36;2,400.00 / Month</li>
+                            <li>&#36;800.00 / week</li>
+                            <li>&#36;2,400.00 / Month</li>
                         </ul>
                     </div>
                     <div class="pricing-action">
@@ -234,18 +276,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
-                        <h3><strong>Heavy</strong></h3>
+                        <h3><strong>Heavy</strong>-Pro</h3>
                     </div>
                     <div class="pricing-terms">
                         <h6>80,000 Lb</h6>
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li><i class="icon-ok"></i> &#36;1,100.00 / week</li>
-                            <li><i class="icon-ok"></i> &#36;3,300.00 / Month</li>
+                            <li>&#36;1,100.00 / week</li>
+                            <li>&#36;3,300.00 / Month</li>
                         </ul>
                     </div>
                     <div class="pricing-action">

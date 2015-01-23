@@ -26,10 +26,10 @@ if($isMobile){ ?>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><span>M</span>idway<span> M</span>achinery<span> M</span>overs<br/>
-                <span class="blue-text">Machine Moving & Rigging</span><br/>
-                <span class="blue-text">Contact Us : </span><span>(616) 608-7606</span></a>
-
+                <!--<a class="navbar-brand" href="index.php"><span>M</span>idway<span> M</span>achinery<span> M</span>overs<br/>
+                Machine Moving & Rigging<br/>
+                Contact Us : (616) 608-7606</a>-->
+                <img src="/img/new_logo.png" style="padding-top: 20px;"/>
             </div>
             <div class="mobile_nav_padding"></div>
             <div class="navbar-collapse collapse ">
@@ -41,26 +41,7 @@ if($isMobile){ ?>
                     <li class="<?php if (strpos($url, "contact")!==false){ echo "active"; } ?>"><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12 mobile_hidden" style="padding-bottom: 0px;">
-                <div class="col-sm-2">
-                    Plant Moving
-                </div>
-                <div class="col-sm-2">
-                    Forklift Rentals
-                </div>
-                <div class="col-sm-2">
-                    Heavy Hauling
-                </div>
-                <div class="col-sm-2">
-                    After Hours Rigging
-                </div>
-                <div class="col-sm-2">
-                    Hilo Lift Truck Rentals
-                </div>
-                <div class="col-sm-2">
-                    And More
-                </div>
-            </div>
+
         </div>
     </div>
 
