@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Moderna - Bootstrap 3 flat corporate template</title>
+<title>Contact Us</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="" />
 <meta name="author" content="http://bootstraptaste.com" />
+    <!--favicon-->
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
 <!-- css -->
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
@@ -27,8 +29,8 @@
 <div id="wrapper">
 	<!-- start header -->
 	<?php include 'nav.php' ?>
-	<!-- end header -->
-	<section id="inner-headline">
+	<!-- Breadcrum -->
+	<!--<section id="inner-headline">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -39,10 +41,41 @@
 			</div>
 		</div>
 	</div>
-	</section>
+	</section>-->
 	<section id="content">
-	<div class="map">
-        <div><iframe width="300" height="300" src="http://regiohelden.de/google-maps/map_en.php?width=NaN&amp;height=300&amp;hl=en&amp;q=3227%203%20Mile%20Rd%20NW%2C%20Grand%20Rapids%20MI.%2049534+(Midway%20Machinery%20Movers)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br /></div>
+        <br/>
+	<div class="map container">
+        <div>
+            <head>
+                <style>
+                    #map-canvas {
+                        width: 100%;
+                        height: 300px;
+                    }
+                </style>
+                <script src="https://maps.googleapis.com/maps/api/js"></script>
+                <script>
+                    function initialize() {
+                        var myLatlng = new google.maps.LatLng(43.0156484,-85.74980140000002);
+                        var mapOptions = {
+                            zoom: 13,
+                            center: myLatlng
+                        }
+                        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+                        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.0156484, -85.74980140000002)});
+                        infowindow = new google.maps.InfoWindow({content:"<b>Midway Machinery Movers</b><br/>3227 3 Mile Road NW<br/>Grand Rapids 49534" });
+                        google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
+                        infowindow.open(map,marker);
+                    }
+
+                    google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+            </head>
+            <body>
+            <div id="map-canvas"></div>
+            </body>
+        </div>
 	</div>
 	<div class="container">
 		<div class="row">
@@ -83,8 +116,8 @@
 		</div>
 	</div>
 	</section>
-
 </div>
+<?php include 'footer.php'; ?>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript
     ================================================== -->
@@ -103,3 +136,5 @@
 <script src="js/validate.js"></script>
 </body>
 </html>
+
+
