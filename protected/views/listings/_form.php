@@ -89,11 +89,91 @@
             <?php echo $form->error($model,'internal_number'); ?>
         </div>
 
-        <div class="row">
-            <?php echo $form->labelEx($model,'manufacturer'); ?>
-            <?php echo $form->textField($model,'manufacturer',array('size'=>58,'maxlength'=>100)); ?>
-            <?php echo $form->error($model,'manufacturer'); ?>
-        </div>
+        <?php
+        $manufacturer_list = array(
+            'ABB Robotics'=>'ABB Robotics',
+            'Allen Bradley'=>'Allen Bradley',
+            'Cincinnati Milacron'=>'Cincinnati Milacron',
+            'Daikin'=>'Daikin',
+            'Dynamics Research'=>'Dynamics Research',
+            'Dynapath'=>'Dynapath',
+            'Electro-Craft'=>'Electro-Craft',
+            'Fadal'=>'Fadal',
+            'Fanuc'=>'Fanuc',
+            'Fischer'=>'Fischer',
+            'Fuji'=>'Fuji',
+            'Gusher'=>'Gusher',
+            'Heidenhain'=>'Heidenhain',
+            'Honeywell'=>'Honeywell',
+            'Hurco'=>'Hurco',
+            'Indramat'=>'Indramat',
+            'Kearney and Trecker'=>'Kearney and Trecker',
+            'Kitagawa'=>'Kitagawa',
+            'Macome'=>'Macome',
+            'Macome Corp'=>'Macome Corp',
+            'Mazak'=>'Mazak',
+            'Mitsubishi'=>'Mitsubishi',
+            'Nachi'=>'Nachi',
+            'Nippon Gerotor'=>'Nippon Gerotor',
+            'NUM'=>'NUM',
+            'Okuma'=>'Okuma',
+            'Parker'=>'Parker',
+            'Rexroth'=>'Rexroth',
+            'Seiki'=>'Seiki',
+            'Seimens'=>'Seimens',
+            'Sharnoa'=>'Sharnoa',
+            'Timonta'=>'Timonta',
+            'Turmoil'=>'Turmoil',
+            'Varvel'=>'Varvel',
+            'Yaskawa'=>'Yaskawa',
+            'N/A'=>'N/A',
+            'Other'=>'Other'
+
+        );
+        $options = array(
+            'empty' => '(Select One)',
+            'ABB Robotics'=>'ABB Robotics',
+            'Allen Bradley'=>'Allen Bradley',
+            'Cincinnati Milacron'=>'Cincinnati Milacron',
+            'Daikin'=>'Daikin',
+            'Dynamics Research'=>'Dynamics Research',
+            'Dynapath'=>'Dynapath',
+            'Electro-Craft'=>'Electro-Craft',
+            'Fadal'=>'Fadal',
+            'Fanuc'=>'Fanuc',
+            'Fischer'=>'Fischer',
+            'Fuji'=>'Fuji',
+            'Gusher'=>'Gusher',
+            'Heidenhain'=>'Heidenhain',
+            'Honeywell'=>'Honeywell',
+            'Hurco'=>'Hurco',
+            'Indramat'=>'Indramat',
+            'Kearney and Trecker'=>'Kearney and Trecker',
+            'Kitagawa'=>'Kitagawa',
+            'Macome'=>'Macome',
+            'Macome Corp'=>'Macome Corp',
+            'Mazak'=>'Mazak',
+            'Mitsubishi'=>'Mitsubishi',
+            'Nachi'=>'Nachi',
+            'Nippon Gerotor'=>'Nippon Gerotor',
+            'NUM'=>'NUM',
+            'Okuma'=>'Okuma',
+            'Parker'=>'Parker',
+            'Rexroth'=>'Rexroth',
+            'Seiki'=>'Seiki',
+            'Seimens'=>'Seimens',
+            'Sharnoa'=>'Sharnoa',
+            'Timonta'=>'Timonta',
+            'Turmoil'=>'Turmoil',
+            'Varvel'=>'Varvel',
+            'Yaskawa'=>'Yaskawa',
+            'N/A'=>'N/A',
+            'Other'=>'Other'
+        );
+        ?>
+        <?php echo $form->labelEx($model,'manufacturer'); ?>
+        <?php echo $form->dropDownList($model,'manufacturer',$manufacturer_list, $options); ?>
+        <?php echo $form->error($model,'manufacturer'); ?>
 
         <div class="row">
             <?php echo $form->labelEx($model,'serial_number'); ?>
@@ -113,8 +193,6 @@
             <?php echo $form->error($model,'more_info'); ?>
 
         </div>
-
-
     </div>
     <div class="mobile_line_break"></div>
 
@@ -160,7 +238,6 @@
                 <?php echo $form->textField($model,'weight',array('size'=>15,'maxlength'=>15)); ?>
                 <?php echo $form->error($model,'weight'); ?>
             </div>
-
             <table style="color:#999999 !important;">
                 <tbody>
                 <tr>

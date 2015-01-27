@@ -31,19 +31,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="43" selection-start="4598" selection-end="4598" vertical-scroll-proportion="-1.3076923" vertical-offset="2091" max-vertical-offset="5287">
-              <folding />
+            <state line="239" column="18" selection-start="9070" selection-end="9070" vertical-scroll-proportion="-0.19894737" vertical-offset="4252" max-vertical-offset="6596">
+              <folding>
+                <element signature="e#9090#9123#0" expanded="true" />
+                <element signature="e#12092#12110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/btmListings/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="41" selection-start="2332" selection-end="2332" vertical-scroll-proportion="-0.5825545" vertical-offset="1802" max-vertical-offset="3281">
+            <state line="72" column="31" selection-start="2290" selection-end="2290" vertical-scroll-proportion="-12.846154" vertical-offset="890" max-vertical-offset="3281">
               <folding>
                 <marker date="1422376170239" expanded="true" signature="4727:4763" placeholder="..." />
                 <marker date="1422376170239" expanded="true" signature="4934:4970" placeholder="..." />
@@ -111,10 +114,10 @@
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/models/Listings.php" />
-        <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/listing_table.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/view.php" />
         <option value="$PROJECT_DIR$/protected/views/btmListings/_form.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
       </list>
     </option>
   </component>
@@ -167,60 +170,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="btmListings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -612,21 +561,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="43" selection-start="4598" selection-end="4598" vertical-scroll-proportion="-1.3076923" vertical-offset="2091" max-vertical-offset="5287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/btmListings/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="41" selection-start="2332" selection-end="2332" vertical-scroll-proportion="-0.5825545" vertical-offset="1802" max-vertical-offset="3281">
+        <state line="72" column="31" selection-start="2290" selection-end="2290" vertical-scroll-proportion="-12.846154" vertical-offset="890" max-vertical-offset="3281">
           <folding>
             <marker date="1422376170239" expanded="true" signature="4727:4763" placeholder="..." />
             <marker date="1422376170239" expanded="true" signature="4934:4970" placeholder="..." />
             <marker date="1422376170239" expanded="true" signature="5384:5426" placeholder="..." />
             <marker date="1422376170239" expanded="true" signature="5622:5678" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="239" column="18" selection-start="9070" selection-end="9070" vertical-scroll-proportion="-0.19894737" vertical-offset="4252" max-vertical-offset="6596">
+          <folding>
+            <element signature="e#9090#9123#0" expanded="true" />
+            <element signature="e#12092#12110#0" expanded="true" />
           </folding>
         </state>
       </provider>
