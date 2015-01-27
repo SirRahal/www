@@ -8,6 +8,7 @@
  * @property integer $list_by
  * @property string $inventory
  * @property string $date
+ * @property string $from
  * @property string $description
  * @property string $internal_number
  * @property string $price
@@ -55,11 +56,11 @@ class Listings extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('list_by, inventory, date, manufacturer, model_number, condition, weight, length_1, width_1, height_1', 'required'),
+			array('list_by, inventory, date, manufacturer, model_number, condition, weight, length_1, width_1, height_1, from', 'required'),
 			array('list_by, condition, ebay_listed, ebay_lister, sold', 'numerical', 'integerOnly'=>true),
 			array('inventory', 'length', 'max'=>45),
 			array('description', 'length', 'max'=>1000),
-			array('internal_number, manufacturer, condition_info', 'length', 'max'=>100),
+			array('internal_number, manufacturer, condition_info, from', 'length', 'max'=>100),
 			array('price', 'length', 'max'=>10),
 			array('serial_number, model_number', 'length', 'max'=>50),
 			array('more_info, listing_note', 'length', 'max'=>1500),
@@ -118,6 +119,7 @@ class Listings extends CActiveRecord
 			'ebay_date' => 'Ebay Date',
 			'sold' => 'Sold',
 			'sold_date' => 'Sold Date',
+            'from' => 'Came From',
 		);
 	}
 
@@ -143,6 +145,7 @@ class Listings extends CActiveRecord
 		$criteria->compare('list_by',$this->list_by);
 		$criteria->compare('inventory',$this->inventory,true);
 		$criteria->compare('date',$this->date,true);
+        $criteria->compare('from',$this->from,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('internal_number',$this->internal_number,true);
 		$criteria->compare('price',$this->price,true);

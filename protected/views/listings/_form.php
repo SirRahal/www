@@ -114,19 +114,33 @@
 
         </div>
 
-        <?php
 
-        $role_list = array('0 - No Condition','1 - Very Poor', '2 - Poor','3 - Fair','4 - Good','5 - Like New');
-        $options = array(
-            'tabindex' => '0',
-            'empty' => '(Select Condition)',
-        );
-        ?>
     </div>
     <div class="mobile_line_break"></div>
 
     <div class="form_container">
         <div class="row">
+            <?php
+            $from_list = array('Crib' => 'Crib','Working Machine' => 'Working Machine');
+            $options = array(
+                'empty' => '(Where From?)',
+                'Crib' => 'Crib',
+                'Working Machine' => 'Working Machine'
+            );
+            ?>
+            <?php echo $form->labelEx($model,'from'); ?>
+            <?php echo $form->dropDownList($model,'from',$from_list, $options); ?>
+            <?php echo $form->error($model,'from'); ?>
+        </div>
+        <div class="row">
+            <?php
+
+            $role_list = array('0 - No Condition','1 - Very Poor', '2 - Poor','3 - Fair','4 - Good','5 - Like New');
+            $options = array(
+                'tabindex' => '0',
+                'empty' => '(Select Condition)',
+            );
+            ?>
             <?php echo $form->labelEx($model,'condition'); ?>
             <?php echo $form->dropDownList($model,'condition',$role_list, $options); ?>
             <?php echo $form->error($model,'condition'); ?>

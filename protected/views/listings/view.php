@@ -15,7 +15,7 @@ $this->menu=array(
 ?>
 
 <h1>View Listings #<?php echo $model->ID ; ?></h1>
-<h3>Listed by <?php echo $model->listBy['first_name'].' '.$model->listBy['last_name']; ?> On <?php echo date('m-d-Y',strtotime($model->date)); ?></h3>
+<h6>Listed by <?php echo $model->listBy['first_name'].' '.$model->listBy['last_name']; ?> On <?php echo date('m-d-Y',strtotime($model->date)); ?></h6>
 <?php
 if($model['ebay_listed'] == 1){ ?>
     <h6 class="green_text">Ebay listed on <?php echo date('m-d-Y',strtotime($model['ebay_date'])); ?> by <?php echo $model->ebayLister['first_name'].' '.$model->ebayLister['last_name'];?></h6>
@@ -25,7 +25,7 @@ if($model['ebay_listed'] == 1){ ?>
         <h6 class="red_text">Sold on <?php echo date('m-d-Y',strtotime($model['sold_date'])); ?></h6>
 <?php  } ?>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php /*$this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'inventory',
@@ -48,7 +48,7 @@ if($model['ebay_listed'] == 1){ ?>
 		'height_2',
 		'listing_note',
 	),
-)); ?>
+)); */?>
 <style>
     tbody{
         color:black;
@@ -64,7 +64,6 @@ if($model['ebay_listed'] == 1){ ?>
 
 <?php if ($model->images){ ?>
     <div>
-        <h1>Images</h1>
         <div>
             <?php foreach ($model->images as $image){ ?>
                 <a href="/images/uploads/<?php echo $image['image'];?>">
@@ -74,9 +73,8 @@ if($model['ebay_listed'] == 1){ ?>
         </div>
     </div>
 <?php } ?>
-<?php if(User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
-<h1>Ebay Listing</h1>
-<h6>Copy And Past Info Below</h6>  <a href="/index.php/listings/update/<?php echo $model->ID; ?>" style="float:right; margin-top: -30px;"><b>Edit This Item</b></a>
+<br/>
+<a href="/index.php/listings/update/<?php echo $model->ID; ?>" style="float:right; margin-top: -30px;"><b>Edit This Item</b></a>
 <div class="ebay_div">
     Our listing ID : <b><?php echo $model->ID; ?></b><br/>
     Our internal inventory number on this product is : <b><?php echo $model->inventory; ?></b>
@@ -216,7 +214,7 @@ if($model['ebay_listed'] == 1){ ?>
                 </td>
                 <td>
                     <b>Note:</b>  This is solely a cosmetic description of the item.<br/>
-                    This item was removed from a working machine, and is being<br/>
+                    This item was removed from a <b><?php if($model->from == 'Working Machine'){echo 'Working Machine';}else { echo 'Fortune 500 Crib'; } ?></b>, and is being<br/>
                     sold in good condition unless otherwise stated!
                     <table style="background:white;">
                         <tr>
@@ -294,5 +292,3 @@ if($model['ebay_listed'] == 1){ ?>
     </div>
 </div>
 </div>
-
-<?php } ?>

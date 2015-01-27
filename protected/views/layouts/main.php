@@ -122,7 +122,7 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by Sari rahal.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by Sari Rahal.<br/>
 		All Rights Reserved.<br/>
 	</div><!-- footer -->
 

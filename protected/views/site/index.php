@@ -11,10 +11,10 @@ $this->pageTitle=Yii::app()->name;
     img {
         opacity: 0.5;
         float: right;
-        margin-top: -60px;
+        margin-top: 300px;
     }
 </style>
-<img src="/images/alien.gif" width="500"/>
+<img src="/images/giphy.gif" />
 <br/>
 <div style="position: absolute;">
     <div class="container">
