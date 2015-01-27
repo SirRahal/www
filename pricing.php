@@ -53,10 +53,13 @@
 <section id="content">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
+                <h2>Moving & Rigging Packages<br/></h2>
+            </div>
+            <div class="col-lg-4">
                 <div class="pricing-box-alt special">
                     <div class="pricing-heading">
-                        <h3><strong>Winter Specials</strong></h3>
+                        <h3><strong>Winter Special</strong></h3>
                     </div>
                     <div class="pricing-terms" style="padding:5px;">
                         Special Rate Includes Tractor, Lift Truck & Operator
@@ -83,12 +86,39 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-3">
+                <div class="pricing-box-alt">
+                    <div class="pricing-heading">
+                        <h3><strong>Normal Package</strong></h3>
+                    </div>
+                    <div class="pricing-terms" style="padding:5px;">
+                        15,000 Lb with Certified Rigger
+                    </div>
+                    <div class="pricing-content">
+                        <ul>
+                            <li>Great West Insured</li>
+                            <li>Hyster 15,000 Lb Unit</li>
+                            <li>500 Miles or Less</li>
+                            <li>&#36;145.00 / Hour</li>
+                            <li>&#36;2.00 / Mile</li>
+                            <li>Additional Rigger &#36;50.00 / Hour</li>
+                            <li>No hidden fees</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-terms">
+                        <strong>First Time?</strong><br/>Contact us today for specialized first time quote.
+                    </div>
+                    <div class="pricing-action">
+                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
                         <h3><strong>Insurance Provider</strong></h3>
                     </div>
-                    <div class="pricing-terms" style="padding:35px 35px 20px 35px;">
+                    <div class="pricing-terms" style="padding:35px 35px 0px 35px;">
                         <h4 style="color: #fff;">We are dedicated to providing great service as well as insuring safety. We provide a certificate of liability with every job insured by Great West</h4>
                         <a target="_blank" href="https://ssl.gwccnet.com/"><img src="img/insurance_logo.png"></a><br/><br/>
                         <blockquote>
@@ -104,79 +134,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Moving & Rigging Packages<br/></h2>
-            </div>
-            <div class="col-lg-4">
-                <div class="pricing-box-alt">
-                    <div class="pricing-heading">
-                        <h3><strong>Short </strong>Range</h3>
-                    </div>
-                    <div class="pricing-terms">
-                        <h6> 500 Miles or Less </h6>
-                    </div>
-                    <div class="pricing-content">
-                        <ul>
-                            <li>&#36;145.00 / Hour</li>
-                            <li>&#36;2.00 / Mile</li>
-                            <li>Additional Rigger &#36;50.00 / Hour</li>
-                            <li>Great West Insured</li>
-                            <li>No hidden fees</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-action">
-                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="pricing-box-alt">
-                    <div class="pricing-heading">
-                        <h3><strong>Mid </strong>Range</h3>
-                    </div>
-                    <div class="pricing-terms">
-                        <h6> 500 to 1,000 Miles </h6>
-                    </div>
-                    <div class="pricing-content">
-                        <ul>
-                            <li>&#36;145.00 / Hour</li>
-                            <li>&#36;1.85 / Mile</li>
-                            <li>Additional Rigger &#36;50.00 / Hour</li>
-                            <li>Great West Insured</li>
-                            <li>No hidden fees</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-action">
-                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="pricing-box-alt">
-                    <div class="pricing-heading">
-                        <h3><strong>Long </strong>Range</h3>
-                    </div>
-                    <div class="pricing-terms">
-                        <h6> Greater Than 1,000 Miles </h6>
-                    </div>
-                    <div class="pricing-content">
-                        <ul>
-                            <li>&#36;145.00 / Hour</li>
-                            <li>&#36;1.75 / Mile</li>
-                            <li>Additional Rigger &#36;50.00 / Hour</li>
-                            <li>Great West Insured</li>
-                            <li>No hidden fees</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-action">
-                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> GET A FULL QUOTE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- end divider -->
         <div class="row">
             <div class="col-lg-12">
@@ -197,9 +154,7 @@
                             <li>&#36;900.00 / Month</li>
                         </ul>
                     </div>
-                    <div class="pricing-action">
-                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>Contact Us</a>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-2">
@@ -216,9 +171,7 @@
                             <li>&#36;1,050.00 / Month</li>
                         </ul>
                     </div>
-                    <div class="pricing-action">
-                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>Contact Us</a>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-2">
@@ -235,9 +188,7 @@
                             <li>&#36;1,500.00 / Month</li>
                         </ul>
                     </div>
-                    <div class="pricing-action">
-                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>Contact Us</a>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-2">
@@ -254,9 +205,7 @@
                             <li>&#36;1,800.00 / Month</li>
                         </ul>
                     </div>
-                    <div class="pricing-action">
-                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>Contact Us</a>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-2">
@@ -273,9 +222,7 @@
                             <li>&#36;2,400.00 / Month</li>
                         </ul>
                     </div>
-                    <div class="pricing-action">
-                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>Contact Us</a>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-2">
@@ -292,9 +239,7 @@
                             <li>&#36;3,300.00 / Month</li>
                         </ul>
                     </div>
-                    <div class="pricing-action">
-                        <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>Contact Us</a>
-                    </div>
+
                 </div>
             </div>
         </div>

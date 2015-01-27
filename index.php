@@ -169,21 +169,7 @@
 					<section id="projects">
 					<ul id="thumbs" class="portfolio">
 						<!-- Item Project and Filter Name -->
-						<li class="col-lg-3 design" data-id="id-0" data-type="web">
-                            <div class="item-thumbs">
-                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="BTM Industrial" href="img/companies/BTM.jpg">
-                                    <span class="overlay-img aligncenter"><h3 style="color:white;">BTM Industrial</h3><h4 style="color: gray">Industrial Auctioneers</h4></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                            <!-- Thumb Image and Description -->
-                                <img src="img/companies/BTM.jpg" alt="Industrial Online Auctioneers that provide the best solution for your equipment sales needs.Liquidation Services, Auction, or outright purchase of assets.">
-                            </div>
-                            <div class="box-bottom move-up">
-                                <a href="http://www.btmindustrial.com" class="btn btn-theme">BTM Industrial</a>
-                            </div>
-						</li>
-                        <li class="col-lg-3 design" data-id="id-0" data-type="web">
+						<li class="col-lg-4 design" data-id="id-0" data-type="web">
                             <div class="item-thumbs">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Nu Tek Sales" href="img/companies/Nu_Tek.jpg">
@@ -197,7 +183,7 @@
                                 <a href="http://www.nuteksales.com" class="btn btn-theme">Nu Tek Sales</a>
                             </div>
                         </li>
-                        <li class="col-lg-3 design" data-id="id-0" data-type="web">
+                        <li class="col-lg-4 design" data-id="id-0" data-type="web">
                             <div class="item-thumbs">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Industrial Times Inc" href="img/companies/ITi.png">
@@ -211,7 +197,7 @@
                                 <a href="http://www.industrialtimesinc.com" class="btn btn-theme">Industrial Times Inc.</a>
                             </div>
                         </li>
-                        <li class="col-lg-3 design" data-id="id-0" data-type="web">
+                        <li class="col-lg-4 design" data-id="id-0" data-type="web">
                             <div class="item-thumbs">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="BTM Industrial" href="img/companies/USA.png">
@@ -219,7 +205,7 @@
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="img/companies/USA.png" alt="We pay the Best Scrap Prices for: CNC machines (old/problem), Automated Machining Lines, and Robotics. On Staff ">
+                                <img src="img/companies/USA.png" alt="We pay the Best Scrap Prices for: CNC machines (old/problem), Automated Machining Lines, and Robotics.">
                             </div>
                             <div class="box-bottom move-up">
                                 <a href="http://www.usaindustrialscrap.com" class="btn btn-theme">USA Industrial Scrap</a>

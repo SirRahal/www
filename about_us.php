@@ -66,6 +66,20 @@
                         <div class="col-lg-4">
                             <div class="box">
                                 <div class="box-gray aligncenter">
+                                    <h4>Certified Riggers</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-wrench fa-3x"></i>
+                                    </div>
+                                    <p>
+                                        All of our workers are<br/>professional certified Riggers
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="box">
+                                <div class="box-gray aligncenter">
                                     <h4>Plant Moving</h4>
                                     <div class="icon">
                                         <i class="fa fa-building-o fa-3x"></i>
@@ -76,6 +90,22 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-4">
+                            <div class="box">
+                                <div class="box-gray aligncenter">
+                                    <h4>Machinery Transport</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-tachometer fa-3x"></i>
+                                    </div>
+                                    <p>
+                                        Full truck rates, Less Than Truckload,<br/>and Special Permit Loads
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 blankline"></div>
                         <div class="col-lg-4">
                             <div class="box">
                                 <div class="box-gray aligncenter">
@@ -84,28 +114,12 @@
                                         <i class="fa fa-truck fa-3x"></i>
                                     </div>
                                     <p>
-                                        Forklift, Hysters, Workers <br/>and we deliver!
+                                        Forklift, Hysters, Workers and we deliver!
                                     </p>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="box">
-                                <div class="box-gray aligncenter">
-                                    <h4>Specialized Hauling</h4>
-                                    <div class="icon">
-                                        <i class="fa fa-tachometer fa-3x"></i>
-                                    </div>
-                                    <p>
-                                        Offering the best prices and quality<br/>for Specialized heavy hauling
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 blankline"></div>
-
                         <div class="col-lg-4">
                             <div class="box">
                                 <div class="box-gray aligncenter">
@@ -122,26 +136,12 @@
                         <div class="col-lg-4">
                             <div class="box">
                                 <div class="box-gray aligncenter">
-                                    <h4>Certified Riggers</h4>
-                                    <div class="icon">
-                                        <i class="fa fa-wrench fa-3x"></i>
-                                    </div>
-                                    <p>
-                                        All our riggers are professional certified
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="box">
-                                <div class="box-gray aligncenter">
                                     <h4>After Hours Rigging</h4>
                                     <div class="icon">
                                         <i class="fa fa-clock-o fa-3x"></i>
                                     </div>
                                     <p>
-                                        Feel Free To Contact Us To Learn More
+                                        Move when it's most convenient for you
                                     </p>
 
                                 </div>
