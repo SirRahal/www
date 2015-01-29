@@ -78,6 +78,10 @@ if($model['ebay_listed'] == 1){ ?>
 <div class="ebay_div">
     Our listing ID : <b><?php echo $model->ID; ?></b><br/>
     Our internal inventory number on this product is : <b><?php echo $model->inventory; ?></b>
+    <?php if($model->internal_number){ ?>
+       <br/>
+        Internal number is : <b><?php echo $model->internal_number; ?></b>
+    <?php } ?>
     <br/>
     <br/>
     <table style="background:#ffffff;">
