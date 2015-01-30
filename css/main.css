@@ -5,9 +5,9 @@ body
 	color: #555;
     font-size: 10pt;
     font-family: 'bree serif' , Arial;
-    background: #262223;
+    background: #262223;/*
     background-image: url("/images/backgrounds/bigball.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 a{
@@ -721,4 +721,10 @@ ul#countdown li{
 }
 .add_ticket_div{
     margin-top: -50px;
+}
+.over_lap_buttons{
+    text-align: center;
+    position: absolute;
+    margin-top:-75px;
+    margin-left: 115px;
 }

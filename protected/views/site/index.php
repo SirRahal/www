@@ -59,13 +59,18 @@ $this->pageTitle=Yii::app()->name;
     <!--<div class="title_bar">For Ticket Holders</div>-->
     <div class="orange_text title bold">Win Up To $750 With 1 Ticket</div>
     <div class="orange_text bold">23 Ways To Win</div>
+    <img src="/images/join_the_madness.png" width="1100" />
+    <div class="over_lap_buttons">
+        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/user/register">Create an Account</a>
+        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/page?view=ticket_holder">How To Play</a>
+    </div><!--
     <div>
         <h2>Have a ticket and need to register?</h2>
-        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/user/register">Create an Account</a><br/>
+        <br/>
         And start picking your teams!<br/>
         Need to learn how to play?<br/><div class="orange_text bold">IT'S EASY!</div>Take a look at our 5 easy steps!<br/>
-        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/page?view=ticket_holder">How To Play</a><br/><br/>
-    </div>
+        <br/><br/>
+    </div>-->
 
     <!--<div class="title_bar">For Organizations</div>
         <div class="orange_text title bold">RAISE $6,000</div>
@@ -80,10 +85,10 @@ $this->pageTitle=Yii::app()->name;
         <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/contact">GET STARTED TODAY</a>-->
         <br/>
     <div style="margin-top:40px;">
-        <img src="/images/home_page/fan_1.png" width="200"/>
-        <img src="/images/home_page/fan_2.png" width="200"/>
-        <img src="/images/home_page/fan_3.png" width="200"/>
-        <img src="/images/home_page/fan_4.png" width="200"/>
-        <img src="/images/home_page/fan_5.png" width="200"/>
+        <img src="/images/home_page/fan_1.png" width="250"/>
+        <img src="/images/home_page/fan_2.png" width="250"/>
+        <img src="/images/home_page/fan_3.png" width="250"/><!--
+        <img src="/images/home_page/fan_4.png" width="200"/>-->
+        <img src="/images/home_page/fan_5.png" width="250"/>
     </div>
 </div>
