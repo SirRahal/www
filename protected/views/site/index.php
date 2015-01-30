@@ -38,6 +38,7 @@ $this->pageTitle=Yii::app()->name;
                 <ul>
                     <li>View Listings on Ebay</li>
                     <li>View Listings Not on Ebay</li>
+                    <li>Not Sold Items</li>
                     <li>Mark Items as Ebay Listed</li>
                     <li>Mark Items as Sold</li>
                 </ul>

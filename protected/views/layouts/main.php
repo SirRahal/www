@@ -83,6 +83,9 @@
                                 <a href="/index.php/listings/on_ebay">Listings On Ebay</a>
                             </li>
                             <li>
+                                <a href="/index.php/listings/not_sold">Not Sold</a>
+                            </li>
+                            <li>
                                 <a href="/index.php/listings/sold">Sold Items</a>
                             </li>
                             <!--BTM auctions menu-->
