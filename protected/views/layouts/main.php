@@ -143,7 +143,7 @@
                     array('label'=>'Home', 'url'=>array('/site/index')),
                     array('label'=>'Organizations', 'url'=>array('/site/page', 'view'=>'organizations' ),'visible'=>!$isMobile),
                     array('label'=>'Ticket Holders', 'url'=>array('/site/page', 'view'=>'ticket_holder')),
-                    array('label'=>'My Entries', 'url'=>array('/ticket/mytickets'), 'visible'=>!Yii::app()->user->isGuest),
+                    array('label'=>'My Tickets', 'url'=>array('/ticket/mytickets'), 'visible'=>!Yii::app()->user->isGuest),
                     array('label'=>'Contact', 'url'=>array('/site/contact')),
                     array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                     array('label'=>'<span class="ui-icon ui-icon-circle-triangle-s icon"></span>'.$display_name, 'url'=>array(''),'linkOptions'=> array(

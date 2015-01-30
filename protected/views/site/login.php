@@ -91,7 +91,7 @@ $isMobile = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows
                 <?php echo $form->passwordField($model,'password'); ?>
                 <?php echo $form->error($model,'password'); ?>
             </div>
-            <div class="row">
+            <div class="row mobile_hide">
                 <?php echo $form->label($model,'rememberMe'); ?>
                 <?php echo $form->checkBox($model,'rememberMe'); ?>
                 <?php echo $form->error($model,'rememberMe'); ?>

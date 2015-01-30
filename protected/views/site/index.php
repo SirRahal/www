@@ -56,17 +56,18 @@ $this->pageTitle=Yii::app()->name;
 </script>-->
 
 <div class="homepage_container">
-    <!--<div class="title_bar">For Ticket Holders</div>
+    <!--<div class="title_bar">For Ticket Holders</div>-->
     <div class="orange_text title bold">Win Up To $750 With 1 Ticket</div>
     <div class="orange_text bold">23 Ways To Win</div>
     <div>
-        Have a ticket and need to register?<br/>
+        <h2>Have a ticket and need to register?</h2>
         <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/user/register">Create an Account</a><br/>
         And start picking your teams!<br/>
         Need to learn how to play?<br/><div class="orange_text bold">IT'S EASY!</div>Take a look at our 5 easy steps!<br/>
-        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/page?view=about">How To Play</a><br/><br/>
+        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/page?view=ticket_holder">How To Play</a><br/><br/>
     </div>
-    <div class="title_bar">For Organizations</div>-->
+
+    <!--<div class="title_bar">For Organizations</div>
         <div class="orange_text title bold">RAISE $6,000</div>
         <div class="title2 bold">SCHOOLS | SPORTS PROGRAMS | BOOSTERS</div>
         <div class="mobile_padding" >
@@ -76,7 +77,7 @@ $this->pageTitle=Yii::app()->name;
             </div>
         <div class="orange_text bold">23 CASH PRIZES ARE AWARDED!!!</div><br/>
         </div>
-        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/contact">GET STARTED TODAY</a>
+        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/contact">GET STARTED TODAY</a>-->
         <br/>
     <div style="margin-top:40px;">
         <img src="/images/home_page/fan_1.png" width="200"/>

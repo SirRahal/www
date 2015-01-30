@@ -53,7 +53,7 @@ $this->breadcrumbs=array(
                 height: <?php if($isMobile) { echo '900';}else {echo '400';} ?>,
                 modal: true,
                 buttons: {
-                    "Add Entry": addTicket,
+                    "Add Ticket": addTicket,
                     Cancel: function() {
                         dialog.dialog( "close" );
                     }
@@ -82,25 +82,25 @@ $this->breadcrumbs=array(
     </div>
     <div class="clear"></div>
     <div class="row add_ticket_div">
-        <button id="add_ticket">Add Entry</button>
+        <button id="add_ticket">Add Ticket</button>
     </div>
     <div class="clear spacer"></div>
     <div id="accordion">
     <?php
         $mytickets = Ticket::model()->get_tickets_by_user_ID();
         foreach($mytickets as $ticket){?>
-            <h3><b>Entry : </b><?php echo $ticket['code']; ?></h3>
+            <h3><b>Ticket : </b><?php echo $ticket['code']; ?></h3>
             <div class="ticket_table_display">
                 <?php echo $this->renderPartial('container/score_table', array('ticket' => $ticket)); ?>
             </div>
         <?php } ?>
     </div>
-<div id="dialog-form" title="Add a Entry">
-    <p class="validateTips">Please Enter Entry Number</p>
+<div id="dialog-form" title="Add a Ticket">
+    <p class="validateTips">Please Enter Ticket Number</p>
     <form>
         <fieldset>
-            <label for="ticket_code">Entry Code #</label>
-            <input type="text" name="ticket_code" id="ticket_code" placeholder="0-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the bottom right hand side of your entry">
+            <label for="ticket_code">Ticket Code #</label>
+            <input type="text" name="ticket_code" id="ticket_code" placeholder="0-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the front side of your Ticket towards the bottom">
             <br/><br/>
             <img src="/images/ticket.png" width="<?php if($isMobile){echo '720';}else{ echo'360'; } ?>";/>
             <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
