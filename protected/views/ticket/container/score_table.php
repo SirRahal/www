@@ -26,9 +26,9 @@
             <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID']; ?>" title="Edit This entry up until March 5th 12pm EST">Edit Ticket</a>
         </div>
         <?php if ($placement_difference > 0){
-                    echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" width="10"/>
+                    echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" />
                 <?php }elseif($placement_difference < 0){
-                    echo $placement_difference; ?> <img src="/images/red_arrow_down.png" width="10"/>
+                    echo $placement_difference; ?> <img src="/images/red_arrow_down.png" />
                 <?php } ?>
      <!--echo out league placement-->
         <table style="border: solid #333333; ">
