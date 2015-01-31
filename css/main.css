@@ -683,8 +683,7 @@ ul#countdown li{
     float: left;
     margin-right: 20px;
     width: 500px;
-    font-size: 15px;
-    padding:10px !important;
+    font-size: 25px;
     background: none !important;
     color:#333333 !important;
     border: none !important;
@@ -724,7 +723,5 @@ ul#countdown li{
 }
 .over_lap_buttons{
     text-align: center;
-    position: absolute;
-    margin-top:-75px;
-    margin-left: 110px;
+    padding-bottom:20px;
 }

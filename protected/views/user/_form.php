@@ -144,7 +144,7 @@
         <div class="row">
             <?php echo $form->labelEx($model,'terms'); ?><br/>
             <div class="terms">
-            <strong>Official Rules / Terms and Conditions</strong><br/>
+            <strong>Official Rules<br>Terms and Conditions:</strong><br/>
 
             <strong>1.</strong> NO PURCHASE NECESSARY TO PLAY/WIN A PRIZE. A PURCHASE/DONATION/PAYMENT OF ANY KIND  WILL NOT IMPROVE
 

@@ -31,8 +31,16 @@ $school = School::model()->get_name_by_ID($school_ID);
 ?>
 
 <script src="/js/general.js"></script>
-
-<p>Please select a team from each seed.  The center column is your ticket, and don't forget to hit the save button when you are finished.<br/>This ticket can be edited up until noon of the first game EST.</p>
+<br/><br/>
+<h1>How To Play</h1>
+<h3>
+    <b>1)</b> To create your entry, please select a team from each seed (1 thru 16).<br/>
+    <b>2)</b> Simply click on the teams name you wish to choose for each seed.<br/>
+    <b>3)</b> Once all 16 teams are chosen, click the save button located at the bottom of your pick table.<br/>
+    <b>4)</b> Your picks can be changed any time before the entry window deadline <i><b>(3/15/15) @ 11a.m. EST.</b></i><br/>
+    <b>5)</b> For your convienionce there is an easy pick button that auto populates your picks.
+</h3>
+<br/><br/>
 <!--centered info needs to be updated by the user table-->
 <div class="centered_div text_center">
     <!--<div class="boxed">
@@ -42,9 +50,8 @@ $school = School::model()->get_name_by_ID($school_ID);
         <?php /*echo $school; */?>
     </div>-->
     <div>
-        PICK ONE OF EACH SEED<br/>FROM EACH OF THE 4 REGIONS<br/>TO MAKE YOUR BRACKET
+        <h2 class="orange_text">PICK YOUR FAVORITE TEAMS<br/>FROM EACH SEED TO<br/>CREATE YOUR ENTRY<h2/>
     </div>
-    <br/>
     <div>
         <h1>My Picks</h1>
     </div>
@@ -53,13 +60,13 @@ $school = School::model()->get_name_by_ID($school_ID);
         <?php echo $this->renderPartial('container/my_picks_div', array('picks' => $my_picks,'ticket_ID' => $ticket_ID));?>
         <div class="picks">
             <!--save-->
-            <button style="width:100%; border-radius: 0px; font-size: 20px;" onclick="save_picks()">Save</button>                                            <!--save my picks and go back to my tickets page-->
+            <button style="width:100%; border-radius: 0px; font-size: 20px;" onclick="save_picks()">Save My Picks</button>                                            <!--save my picks and go back to my tickets page-->
             <div class="spacer"></div>
             <!--radom select all seeds-->
             <button style="width:100%; border-radius: 0px; font-size: 20px;" onclick="easy_picks()">Easy Pick</button>                                         <!--onclick $picks = Ticket::model()->easy_pick(); and refresh my_picks div-->
             <div class="spacer"></div>
             <!--reset all seeds-->
-            <button style="width:100%; border-radius: 0px; font-size: 20px;" onclick="reset_picks()">Reset</button>             <!--reset all picks to TBA and refresh the div-->
+            <button style="width:100%; border-radius: 0px; font-size: 20px;" onclick="reset_picks()">Reset to Last Saved</button>             <!--reset all picks to TBA and refresh the div-->
         </div>
     </div>
 </div>
@@ -133,6 +140,7 @@ $school = School::model()->get_name_by_ID($school_ID);
         <?php echo $this->renderPartial('container/region_buttons', array('region_ID' => 4)); ?>
     </div>
 </div>
+<br/>
 
 <script>
     /*set the div class picks to jqueries radio button set for css*/

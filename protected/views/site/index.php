@@ -56,14 +56,18 @@ $this->pageTitle=Yii::app()->name;
 </script>-->
 
 <div class="homepage_container">
+
+    <div style="padding:20px;">
+        <?php echo $this->renderPartial('/site/container/count_down'); ?>
+    </div>
     <!--<div class="title_bar">For Ticket Holders</div>-->
-    <div class="orange_text title bold">Win Up To $750 With 1 Ticket</div>
-    <div class="orange_text bold">23 Ways To Win</div>
-    <img src="/images/join_the_madness.png" width="1100" />
+    <div class="orange_text title bold">Fundraiser Sweepstakes</div>
     <div class="over_lap_buttons">
-        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/user/register">Create an Account</a>
+        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/user/register">Register Now</a>
         <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/page?view=ticket_holder">How To Play</a>
-    </div><!--
+    </div>
+    <img src="/images/join_the_madness.png" width="1100" />
+    <!--
     <div>
         <h2>Have a ticket and need to register?</h2>
         <br/>
