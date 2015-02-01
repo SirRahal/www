@@ -121,8 +121,15 @@ class UserController extends Controller
                 $ticket_ID = $_SESSION['ticket_ID'];
                 $reassigned = Ticket::model()->reassign_with_IDs($ticket_ID, $user_ID);
                 if($reassigned){
+                    //unset the ticket code
                     unset($_SESSION['ticket_ID']);
-                    $this->redirect(array('view','id'=>$model->ID));
+                    //log in the user here
+                    $login_model=new LoginForm;
+                    $login_model->username = $model->user_name;
+                    $login_model->password = $model->password;
+                    $login_model->login();
+                    //send them to mytickets
+                    $this->redirect('/index.php/ticket/mytickets');
                 }
             }
         }
