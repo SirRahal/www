@@ -355,6 +355,7 @@ div.search-form
     width:340px;
     background: #333333;
     height: 875px;
+    margin-top: -10px;
 }
 .center_div{
     margin:0 auto;

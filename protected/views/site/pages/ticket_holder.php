@@ -19,7 +19,7 @@ $this->breadcrumbs=array(
         <br/><br/>
         <ol style="padding-left:40px;">
             <li>At anytime before the start of the 2015 Division 1 Men's College Basketball Tournament, players can register their ticket at BracketFanatic.com (Entry window closes 3/19/15 11a.m. EST).</li>
-            <li>Once the brackets are set go to BrcketFanatic.com and peek the seeded teams, 1 thru 16, you think will score the most total points throughout the Tournament.</li>
+            <li>Once the brackets are set, go to BracketFanatic.com and pick the seeded teams, 1 thru 16, you think will score the most total points throughout the Tournament.</li>
             <li>Players’ teams that score the highest combined point totals for each round win cash prizes!</li>
             <li>Winners in each round 64-32-16-8 and Grand Total. Even the worst total can win.</li>
             <li>Players will compete only against entries from your own organization!!!</li>

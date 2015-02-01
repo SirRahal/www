@@ -2,6 +2,7 @@ body
 {
     font-size: 16pt;
     background-image: url("/images/freeow_images/osx/background.png");
+    background-repeat: no-repeat;
 }
 
 #footer

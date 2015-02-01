@@ -179,8 +179,8 @@
         <div class="clear"></div>
     </div><!-- page -->
     <div id="footer">
-        Copyright &copy; <?php echo date('Y'); ?> by Bracket Fanatic.<br/>
-        All Rights Reserved.<br/>
+        Copyright &copy; <?php echo date('Y'); ?> by American Exposition, Inc.<br/>
+        Bracket Fanatic - All Rights Reserved.<br/>
         Author Sari Rahal
     </div><!-- footer -->
 
