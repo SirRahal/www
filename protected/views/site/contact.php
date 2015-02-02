@@ -37,12 +37,12 @@ $this->breadcrumbs=array(
 
             <div class="align_center round_edges shadow orange_boarder" style="padding-top: 10px; margin-bottom: 50px;">
                 <h1>For more information,<br/>please contact us by email or by phone.</h1>
-                <h1>For Sales</h1>
+                <h1>For Sales and Support</h1>
                 <h4>Joe@BracketFanatic.com<br/>(616)-262-9270</h4>
-                <h1>For Support</h1>
+                <!--<h1>For Support</h1>
 
 
-                    <h4>Sari@BracketFanatic.com<br/>(313) 384-8369</h4>
+                    <h4>Sari@BracketFanatic.com<br/>(313) 384-8369</h4>-->
                 <!--
                 <div class="contact">
                 <h1>Direct Contacts</h1>
@@ -114,21 +114,21 @@ $this->breadcrumbs=array(
 
                 <?php endif; ?>
 
-                <div>
-                    <div class="round_edges" style="background: white; padding:5px; margin-top: 20px; border: solid 1px #acacac;">
-                        <?php if(CCaptcha::checkRequirements()): ?>
-                        <div class="row">
-                            <?php echo $form->labelEx($model,'verifyCode'); ?><span class="required">*</span><br/>
-                            <div>
-                                <?php $this->widget('CCaptcha'); ?><br/>
-                                <?php echo $form->textField($model,'verifyCode'); ?><br/>
-                            </div>
-                            <div>Please enter the letters as they are shown in the image above.
-                                <br/>Letters are not case-sensitive.</div>
-                            <?php echo $form->error($model,'verifyCode'); ?>
+
+                <div class="round_edges" style="background: white; padding:5px; margin-top: 20px; border: solid 1px #acacac;">
+                    <?php if(CCaptcha::checkRequirements()): ?>
+                    <div class="row">
+                        <?php echo $form->labelEx($model,'verifyCode'); ?>
+                        <div>
+                            <?php $this->widget('CCaptcha'); ?>
+                            <?php echo $form->textField($model,'verifyCode',array('size'=>15)); ?>
                         </div>
+                        <div class="hint">Please enter the letters as they are shown in the<br/> image above.
+                            Letters are not case-sensitive.</div>
+                        <?php echo $form->error($model,'verifyCode'); ?>
                     </div>
                 </div>
+
                 <br/>
                 <div class="row buttons">
                     <?php echo CHtml::submitButton('Submit', array('class' => 'ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')); ?>
