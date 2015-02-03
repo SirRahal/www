@@ -56,7 +56,10 @@ $this->pageTitle=Yii::app()->name;
             <div class="col-lg-2">
                 <h6>Automatic</h6>
                 <ul>
+                    <li>Rename Images so they don't overlap</li>
+                    <li>Organizes listing Views</li>
                     <li>Delete Images 30days once sold (coming soon)</li>
+                    <li>Image Notifier</li>
                 </ul>
             </div>
         </div>
