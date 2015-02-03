@@ -200,7 +200,6 @@ if($model['ebay_listed'] == 1){ ?>
             </tr>
         <?php } ?>
 
-        <?php if($model->condition > 0){ ?>
             <tr>
                 <td>
                     <b>Why This Condition:</b>
@@ -209,9 +208,8 @@ if($model['ebay_listed'] == 1){ ?>
                     <?php echo $model->condition_info;?>
                 </td>
             </tr>
-        <?php } ?>
 
-        <?php if($model->condition > 0){ ?>
+        <?php if($model->from != 'As Is'){ ?>
             <tr>
                 <td>
 
@@ -244,7 +242,12 @@ if($model['ebay_listed'] == 1){ ?>
                     </table>
                 </td>
             </tr>
-        <?php } ?>
+        <?php }else{ ?>
+            <tr>
+                <td></td>
+                <td><b>Note : </b>This Item is sold as is with a No Return Policy.</td>
+            </tr>
+        <?php  } ?>
     </table>
 
 <br/>
@@ -289,9 +292,16 @@ if($model['ebay_listed'] == 1){ ?>
         <b>International Shipping Policies:</b><br/>
         Our primary methods of shipment are UPS International, FedEx International and USPS Express International.  If requested, we can ship via USPS Priority, but this shipping method lacks reliable tracking information.  Please understand if we ship an item on your account, we are unable to see what you are being charged for shipping (per FedEx and UPS rules).  We will not be held responsible if you ask us to ship on your account and then the shipment cost is high.
         <br/><br/>
+        <?php if($model->from != 'As Is'){ ?>
         <b>Returns:</b><br/>
         We have a 30-day return policy (excluding all manuals, and AS-IS items, see listing description).  A replacement unit will be sent out as soon as we receive the original unit.  If we do not have one in stock, then we will refund your purchase price amount only!  There will be a 10% restocking fee for all transactions that are returned.  Alternations or removal of any components of a part voids the 30-day return privilege.  Once we get the return, we will inspect the item to make sure it is in the same condition as we shipped it.  This process can take up to three business days.
         <br/><br/>
+        <?php }else{ ?>
+        <div class="blue_text">
+            <b>This item is being sold "As Is" and there are no returns.</b>
+        </div>
+        <br/>
+        <?php } ?>
         <div class="red_text">All purchases must be paid within 10 days of the Auction!</div>
     </div>
 </div>

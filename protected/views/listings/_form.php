@@ -32,7 +32,6 @@
         $list_by = $user_ID;
     }
 
-
     /*If it is a copy*/
     $url = $_SERVER['REQUEST_URI'];
     if( strpos( $url, 'create/' ) !== false ) {
@@ -94,12 +93,16 @@
             'ABB Robotics'=>'ABB Robotics',
             'Allen Bradley'=>'Allen Bradley',
             'ARTOS' =>'ARTOS',
+            'Baldor' => 'Baldor',
             'ASCO' => 'ASCO',
+            'Bausch & Lomb' =>'Bausch & Lomb',
             'Black Box' => 'Black Box',
             'Brinkmann Pump'=>'Brinkmann Pump',
             'Cincinnati Milacron'=>'Cincinnati Milacron',
+            'Continental Hydraulics'=>'Continental Hydraulics',
             'Cosel'=>'Cosel',
             'Daikin'=>'Daikin',
+            'Denison Hydraulics' =>'Denison Hydraulics',
             'Dynamics Research'=>'Dynamics Research',
             'Dynapath'=>'Dynapath',
             'Electro-Craft'=>'Electro-Craft',
@@ -114,6 +117,7 @@
             'Graymills'=>'Graymills',
             'Gusher'=>'Gusher',
             'Hardinge'=>'Hardinge',
+            'Harowe Servo Controls'=>'Harowe Servo Controls',
             'Heidenhain'=>'Heidenhain',
             'Honeywell'=>'Honeywell',
             'Hurco'=>'Hurco',
@@ -125,6 +129,7 @@
             'Kuroda'=>'Kuroda',
             'Macome'=>'Macome',
             'Macome Corp'=>'Macome Corp',
+            'Marposs'=>'Marposs',
             'Mazak'=>'Mazak',
             'Mitsubishi'=>'Mitsubishi',
             'Monarch Cortland'=>'Monarch Cortland',
@@ -141,14 +146,17 @@
             'Red Hat' => 'Red Hat',
             'Reliance'=>'Electric',
             'Rexroth'=>'Rexroth',
+            'Rosedale Products'=>'Rosedale Products',
             'Seiki'=>'Seiki',
             'Seimens'=>'Seimens',
             'SEM'=>'SEM',
             'Sharnoa'=>'Sharnoa',
+            'Sperry & Vickers'=>'Sperry & Vickers',
             'STI'=>'STI',
             'Super Line'=>'Super Line',
             'Timonta'=>'Timonta',
             'Touch Master'=>'Touch Master',
+            'Toshiba'=>'Toshiba',
             'Turmoil'=>'Turmoil',
             'Varvel'=>'Varvel',
             'Yaskawa'=>'Yaskawa',
@@ -161,12 +169,16 @@
             'ABB Robotics'=>'ABB Robotics',
             'Allen Bradley'=>'Allen Bradley',
             'ARTOS' =>'ARTOS',
+            'Baldor' => 'Baldor',
             'ASCO' => 'ASCO',
+            'Bausch & Lomb' =>'Bausch & Lomb',
             'Black Box' => 'Black Box',
             'Brinkmann Pump'=>'Brinkmann Pump',
             'Cincinnati Milacron'=>'Cincinnati Milacron',
+            'Continental Hydraulics'=>'Continental Hydraulics',
             'Cosel'=>'Cosel',
             'Daikin'=>'Daikin',
+            'Denison Hydraulics' =>'Denison Hydraulics',
             'Dynamics Research'=>'Dynamics Research',
             'Dynapath'=>'Dynapath',
             'Electro-Craft'=>'Electro-Craft',
@@ -181,6 +193,7 @@
             'Graymills'=>'Graymills',
             'Gusher'=>'Gusher',
             'Hardinge'=>'Hardinge',
+            'Harowe Servo Controls'=>'Harowe Servo Controls',
             'Heidenhain'=>'Heidenhain',
             'Honeywell'=>'Honeywell',
             'Hurco'=>'Hurco',
@@ -192,6 +205,7 @@
             'Kuroda'=>'Kuroda',
             'Macome'=>'Macome',
             'Macome Corp'=>'Macome Corp',
+            'Marposs'=>'Marposs',
             'Mazak'=>'Mazak',
             'Mitsubishi'=>'Mitsubishi',
             'Monarch Cortland'=>'Monarch Cortland',
@@ -208,14 +222,17 @@
             'Red Hat' => 'Red Hat',
             'Reliance'=>'Electric',
             'Rexroth'=>'Rexroth',
+            'Rosedale Products'=>'Rosedale Products',
             'Seiki'=>'Seiki',
             'Seimens'=>'Seimens',
             'SEM'=>'SEM',
             'Sharnoa'=>'Sharnoa',
+            'Sperry & Vickers'=>'Sperry & Vickers',
             'STI'=>'STI',
             'Super Line'=>'Super Line',
             'Timonta'=>'Timonta',
             'Touch Master'=>'Touch Master',
+            'Toshiba'=>'Toshiba',
             'Turmoil'=>'Turmoil',
             'Varvel'=>'Varvel',
             'Yaskawa'=>'Yaskawa',
@@ -251,11 +268,12 @@
     <div class="form_container">
         <div class="row">
             <?php
-            $from_list = array('Crib' => 'Crib','Working Machine' => 'Working Machine');
+            $from_list = array('Crib' => 'Crib','Working Machine' => 'Working Machine','As Is'=>'As Is');
             $options = array(
                 'empty' => '(Where From?)',
                 'Crib' => 'Crib',
-                'Working Machine' => 'Working Machine'
+                'Working Machine' => 'Working Machine',
+                'As Is'=>'As Is'
             );
             ?>
             <?php echo $form->labelEx($model,'from'); ?>
