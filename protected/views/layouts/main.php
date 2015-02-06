@@ -74,6 +74,9 @@
                         <li>
                             <a href="/index.php/user/<?php echo User::model()->findByPk(User::model()->get_user_ID())->ID; ?>">My Listings</a>
                         </li>
+                        <li>
+                            <a href="/index.php/manufacturer/admin">Manufacturer</a>
+                        </li>
                         <?php if(Yii::app()->user->name != 'Guest' && User::model()->findByPk(User::model()->get_user_ID())->permission > 1){ ?>
                             <!--Ebay listters menu-->
                             <li>

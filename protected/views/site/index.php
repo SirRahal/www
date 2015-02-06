@@ -11,16 +11,18 @@ $this->pageTitle=Yii::app()->name;
     img {
         opacity: 0.5;
         float: right;
-        margin-top: 300px;
+        margin-top: 260px;
+        position: absolute;
+        right:10px;
     }
 </style>
-<img src="/images/giphy.gif" />
+<img src="/images/giphy.gif" style="" />
 <br/>
-<div style="position: absolute;">
+<div>
     <div class="container">
         <!--Lister site breakdown-->
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <h6>Back Listers</h6>
                 <ul>
                     <li>Create listings</li>
@@ -30,6 +32,8 @@ $this->pageTitle=Yii::app()->name;
                     <li>View Listings</li>
                     <li>Delete Images</li>
                     <li>Delete Listings</li>
+                    <li>Create Manufacture</li>
+                    <li>Delete Manufacture</li>
                     <li>My Listings</li>
                 </ul>
             </div>
@@ -41,6 +45,8 @@ $this->pageTitle=Yii::app()->name;
                     <li>Not Sold Items</li>
                     <li>Mark Items as Ebay Listed</li>
                     <li>Mark Items as Sold</li>
+                    <li>Set Dates</li>
+                    <li>Leave Notes</li>
                 </ul>
             </div>
             <div class="col-lg-3">
@@ -53,19 +59,20 @@ $this->pageTitle=Yii::app()->name;
                     <li>View User Activity</li>
                 </ul>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-4">
                 <h6>Automatic</h6>
                 <ul>
                     <li>Rename Images so they don't overlap</li>
                     <li>Organizes listing Views</li>
                     <li>Delete Images 30days once sold (coming soon)</li>
                     <li>Image Notifier</li>
+                    <li>Manufacture Listing</li>
                 </ul>
             </div>
         </div>
         <!--BTM Lister Breakdown-->
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <h6>BTM Listers</h6>
                 <ul>
                     <li>Create Auction</li>
@@ -93,6 +100,8 @@ $this->pageTitle=Yii::app()->name;
                 <ul>
                     <li>Lot Organizer</li>
                     <li>Auto Image Namer</li>
+                    <li>Excel Creater</li>
+                    <li>Zip Folder</li>
                 </ul>
             </div>
         </div>

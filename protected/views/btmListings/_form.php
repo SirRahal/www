@@ -64,96 +64,15 @@ if( strpos( $url, 'create/' ) !== false ) {
 	</div>
 
     <?php
-    $manufacturer_list = array(
-        'ABB Robotics'=>'ABB Robotics',
-        'Allen Bradley'=>'Allen Bradley',
-        'Cincinnati Milacron'=>'Cincinnati Milacron',
-        'Daikin'=>'Daikin',
-        'Dynamics Research'=>'Dynamics Research',
-        'Dynapath'=>'Dynapath',
-        'Electro-Craft'=>'Electro-Craft',
-        'Fadal'=>'Fadal',
-        'Fanuc'=>'Fanuc',
-        'Fischer'=>'Fischer',
-        'Fuji'=>'Fuji',
-        'Graymills'=>'Graymills',
-        'Gusher'=>'Gusher',
-        'Heidenhain'=>'Heidenhain',
-        'Honeywell'=>'Honeywell',
-        'Hurco'=>'Hurco',
-        'Indramat'=>'Indramat',
-        'Kearney and Trecker'=>'Kearney and Trecker',
-        'Kitagawa'=>'Kitagawa',
-        'Kuroda'=>'Kuroda',
-        'Macome'=>'Macome',
-        'Macome Corp'=>'Macome Corp',
-        'Mazak'=>'Mazak',
-        'Mitsubishi'=>'Mitsubishi',
-        'Nachi'=>'Nachi',
-        'Nippon Gerotor'=>'Nippon Gerotor',
-        'NUM'=>'NUM',
-        'Okuma'=>'Okuma',
-        'Parker'=>'Parker',
-        'Racine'=>'Racine',
-        'Reliance'=>'Electric',
-        'Rexroth'=>'Rexroth',
-        'Seiki'=>'Seiki',
-        'Seimens'=>'Seimens',
-        'Sharnoa'=>'Sharnoa',
-        'Super Line'=>'Super Line',
-        'Timonta'=>'Timonta',
-        'Turmoil'=>'Turmoil',
-        'Varvel'=>'Varvel',
-        'Yaskawa'=>'Yaskawa',
-        'N/A'=>'N/A',
-        'Other'=>'Other'
-
-    );
-    $options = array(
-        'empty' => '(Select One)',
-        'ABB Robotics'=>'ABB Robotics',
-        'Allen Bradley'=>'Allen Bradley',
-        'Cincinnati Milacron'=>'Cincinnati Milacron',
-        'Daikin'=>'Daikin',
-        'Dynamics Research'=>'Dynamics Research',
-        'Dynapath'=>'Dynapath',
-        'Electro-Craft'=>'Electro-Craft',
-        'Fadal'=>'Fadal',
-        'Fanuc'=>'Fanuc',
-        'Fischer'=>'Fischer',
-        'Fuji'=>'Fuji',
-        'Graymills'=>'Graymills',
-        'Gusher'=>'Gusher',
-        'Heidenhain'=>'Heidenhain',
-        'Honeywell'=>'Honeywell',
-        'Hurco'=>'Hurco',
-        'Indramat'=>'Indramat',
-        'Kearney and Trecker'=>'Kearney and Trecker',
-        'Kitagawa'=>'Kitagawa',
-        'Kuroda'=>'Kuroda',
-        'Macome'=>'Macome',
-        'Macome Corp'=>'Macome Corp',
-        'Mazak'=>'Mazak',
-        'Mitsubishi'=>'Mitsubishi',
-        'Nachi'=>'Nachi',
-        'Nippon Gerotor'=>'Nippon Gerotor',
-        'NUM'=>'NUM',
-        'Okuma'=>'Okuma',
-        'Parker'=>'Parker',
-        'Racine'=>'Racine',
-        'Reliance'=>'Electric',
-        'Rexroth'=>'Rexroth',
-        'Seiki'=>'Seiki',
-        'Seimens'=>'Seimens',
-        'Sharnoa'=>'Sharnoa',
-        'Super Line'=>'Super Line',
-        'Timonta'=>'Timonta',
-        'Turmoil'=>'Turmoil',
-        'Varvel'=>'Varvel',
-        'Yaskawa'=>'Yaskawa',
-        'N/A'=>'N/A',
-        'Other'=>'Other'
-    );
+    $manufacturers = Manufacturer::model()->findAll(array(
+        "order" => "name ASC",
+    ));
+    $manufacturer_list = array();
+    $options = array('empty'=>'Select One');
+    foreach($manufacturers as $manufacturer){
+        $manufacturer_list[$manufacturer->name] = $manufacturer->name;
+        $options[$manufacturer->name] = $manufacturer->name;
+    }
     ?>
     <?php echo $form->labelEx($model,'manufacturer'); ?>
     <?php echo $form->dropDownList($model,'manufacturer',$manufacturer_list, $options); ?>
