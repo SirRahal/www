@@ -25869,3 +25869,91 @@ Stack trace:
 REQUEST_URI=/index.php/manufacturer/view
 HTTP_REFERER=http://localhost/index.php/manufacturer/update/84
 ---
+2015/02/09 21:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/images...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/images/delete_old_images/yes
+HTTP_REFERER=http://localhost/index.php/listings/sold
+---
+2015/02/09 21:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/index....')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/index.php/images/delete_old_images/yes
+HTTP_REFERER=http://localhost/index.php/listings/sold
+---
+2015/02/09 21:58:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete_old_images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('delete_old_imag...')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('delete_old_imag...')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/delete_o...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/images/delete_old_images/yes
+HTTP_REFERER=http://localhost/index.php/listings/sold
+---
+2015/02/09 22:00:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete_old_images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('delete_old_imag...')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('delete_old_imag...')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/delete_o...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/images/delete_old_images/yes
+HTTP_REFERER=http://localhost/index.php/listings/sold
+---
+2015/02/09 22:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete_old_images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('delete_old_imag...')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('delete_old_imag...')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/delete...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/delete_old_images/yes
+HTTP_REFERER=http://localhost/index.php/listings/sold
+---
+2015/02/09 22:04:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete_old_images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('delete_old_imag...')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('delete_old_imag...')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/delete...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/delete_old_images/yes
+HTTP_REFERER=http://localhost/index.php/listings/sold
+---
+2015/02/09 22:04:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete_old_images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('delete_old_imag...')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('delete_old_imag...')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/delete...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/delete_old_images
+HTTP_REFERER=http://localhost/index.php/listings/sold
+---
+2015/02/09 22:04:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete_old_images".' in C:\wamp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(270): CController->missingAction('delete_old_imag...')
+#1 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('delete_old_imag...')
+#2 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/delete...')
+#3 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/listings/delete_old_images
+HTTP_REFERER=http://localhost/index.php/listings/sold
+---

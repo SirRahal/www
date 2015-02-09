@@ -32,7 +32,7 @@ class ListingsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','not_on_ebay','upload_images','on_ebay','sold','not_sold'),
+				'actions'=>array('create','update','not_on_ebay','upload_images','on_ebay','sold','not_sold','delete_old_images'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -218,4 +218,18 @@ class ListingsController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    /**
+     * select all listings that have been sold for more than 90 days and delete
+     * their images.
+     *
+     */
+    public function actionDelete_old_images(){
+        $current_date=date(Y-m-d);
+        $cutt_off = date('Y-m-d', strtotime($current_date. ' - 90 days'));;
+        $criteria = new CDbCriteria();
+        $criteria->condition = 'sold=1 AND sold_date > '.$cutt_off;
+        $listings = Listings::model()->findAll($criteria);
+            return true;
+    }
 }
