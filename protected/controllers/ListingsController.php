@@ -126,18 +126,7 @@ class ListingsController extends Controller
 	{
         //delete all images related to that listing
         $delete_model = $this->loadModel($id);
-        if ($delete_model->images){
-            foreach ($delete_model->images as $delete_image){
-
-                $file_dir = './images/uploads/'.$delete_image['image'];
-                if(realpath($file_dir)){
-                    unlink($file_dir);
-                    $delete_image->delete();
-                }elseif(!realpath($file_dir)){
-                    //error
-                }
-            }
-        }
+        $this->delete_model_images($delete_model);
         $delete_model->delete();
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
@@ -225,11 +214,40 @@ class ListingsController extends Controller
      *
      */
     public function actionDelete_old_images(){
-        $current_date=date(Y-m-d);
-        $cutt_off = date('Y-m-d', strtotime($current_date. ' - 90 days'));;
-        $criteria = new CDbCriteria();
-        $criteria->condition = 'sold=1 AND sold_date > '.$cutt_off;
-        $listings = Listings::model()->findAll($criteria);
+        $listings = $this->get_old_sold_listings();
+        if(isset($listings)){
+            foreach($listings as $listing){
+                $this->delete_model_images($listing);
+            }
             return true;
+        }
+            return false;
+    }
+
+    /**
+     * Get's all listings that have been sold for 90 days
+     *
+     * */
+    public function get_old_sold_listings(){
+        $current_date=date('Y-m-d');
+        $cut_off = date("Y-m-d", strtotime("-3 months"));
+        $criteria = new CDbCriteria();
+        $criteria->compare('sold = 1 AND sold_date','<='.$cut_off);
+        $listings = Listings::model()->findAll($criteria);
+        return $listings;
+    }
+
+    public function delete_model_images($model){
+        if ($model->images){
+            foreach ($model->images as $delete_image){
+                $file_dir = './images/uploads/'.$delete_image['image'];
+                if(realpath($file_dir)){
+                    unlink($file_dir);
+                    $delete_image->delete();
+                }elseif(!realpath($file_dir)){
+                    //error
+                }
+            }
+        }
     }
 }

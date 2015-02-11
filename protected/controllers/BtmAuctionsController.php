@@ -116,8 +116,29 @@ class BtmauctionsController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+        $auction = $this->loadModel($id);
+        //delete all listings within the auction
+        foreach($auction->btmListings as $btm_listing){
+            foreach($btm_listing->btmImages as $image){
+                //delete images
+                $image->delete();
+            }
+            //delete listing
+            $btm_listing->delete();
+        }
+        //directory of auction info
+        $dir = '/images/btm_uploads/'.$auction->ID;
+        //delete zipped folders
+        if (is_dir($dir.'.zip')) {
+            unlink($dir.'.zip');
+        }
 
+        //delete folder
+        if(is_dir($dir)){
+            rmdir($dir);
+        }
+        //delete the auction
+        $auction->delete();
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
@@ -250,14 +271,6 @@ class BtmauctionsController extends Controller
     * Zips the images in a file for the auction and exports it
      */
     public function actionExport_images($id){
-        //use auction ID to zip the correct folder
-        //after ziping the folder, sendfile to user
-        //delete the zipped file
-        //setting the variables
-       /* $file = '/images/btm_uploads/'.$id;
-        $zipnam = $id.'_ziped.zip';
-        $del = false;*/
-
         Yii::app()->getRequest()->sendFile($id.'.zip', file_get_contents($this->zipfile($id)));
     }
 

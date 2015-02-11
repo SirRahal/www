@@ -44,7 +44,9 @@ tbody{
         <td style="text-align: center;">
             <a class="link" href="/index.php/btmauctions/view/<?php echo $auction->ID; ?>">View</a>
             | <a class="link" href="/index.php/btmauctions/update/<?php echo $auction->ID; ?>">Edit</a>
-            | <a class="link" style="cursor: pointer;" onclick="delete_auction(<?php echo $auction->ID; ?>)">Delete</a>
+            <?php if(User::model()->findByPk(User::model()->get_user_ID())->permission > 2){ ?>
+                | <a class="link" style="cursor: pointer;" onclick="delete_auction(<?php echo $auction->ID; ?>)">Delete</a>
+           <?php }?>
         </td>
     </tr>
 <?php } ?>
@@ -63,7 +65,6 @@ tbody{
                 type: "POST",
                 url: url,
                 success: function(){
-                    delete window.alert; // true
                     alert('Item has been deleted.  The item will still display till the page has refreshed.');
                 }
             });
