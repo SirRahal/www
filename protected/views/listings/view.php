@@ -162,7 +162,7 @@ if($model['ebay_listed'] == 1){ ?>
             </tr>
         <?php } ?>
 
-        <?php if($model->dims_2 > 0){ ?>
+        <?php if($model->dims_2 != '' AND $model->dims_2 != '0.00'){ ?>
             <tr>
                 <td>
                     <b>Secondary Dimensions:</b>

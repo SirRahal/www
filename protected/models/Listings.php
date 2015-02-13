@@ -64,7 +64,7 @@ class Listings extends CActiveRecord
 			array('price', 'length', 'max'=>10),
 			array('serial_number, model_number', 'length', 'max'=>50),
 			array('more_info, listing_note', 'length', 'max'=>1500),
-			array('weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2', 'length', 'max'=>15),
+			array('weight, length_1, width_1, height_1, length_2, width_2, height_2', 'length', 'max'=>15),
             array('ebay_date, sold_date','length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

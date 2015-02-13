@@ -26392,3 +26392,6 @@ Stack trace:
 REQUEST_URI=/index.php/btmauctions/delete/10
 HTTP_REFERER=http://localhost/index.php/btmauctions/admin
 ---
+2015/02/13 15:30:16 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (110)
+in C:\wamp\www\index.php (13)
