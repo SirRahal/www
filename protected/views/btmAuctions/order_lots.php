@@ -37,7 +37,8 @@ $listings = $model->get_lot_listings($model);
     }
 </style>
 <div>
-    <a href="#" onclick="save_order()">Save</a> | <a href="/index.php/btmauctions/order_lots/<?php echo $model->ID; ?>">Reset</a> | <a href="/index.php/btmauctions/view/<?php echo $model->ID; ?>">Cancel</a>
+    <br/><br/>
+    <a href="#" onclick="save_order()">Save</a> | <a href="/index.php/btmauctions/order_lots/<?php echo $model->ID; ?>">Reset</a> | <a href="/index.php/btmauctions/view/<?php echo $model->ID; ?>">Cancel</a> | <a href="/index.php/btmauctions/view/<?php echo $model->ID; ?>">Finish</a>
 </div>
 <div>
     <table>
