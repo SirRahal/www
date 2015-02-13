@@ -50,12 +50,13 @@
     <div class="row">
 
         <h1>About Us</h1>
-        <div>
-            We are a one stop shop for everything to do with CNC Machines.  From Large machines that are fully functional, to spare parts and display modules.  If we don't have what you are looking for, we can help you find it.  Take a look at our inventory or contact us and we'll do it for you.
+        <br/><br/>
+        <div style="font-size: 22px; padding 20px; width: 80%;">
+            Nu Tek Sales Parts is one of the leading providers in CNC replacement parts. The company supplies a wide range of products for CNC machines. Such products included are circuit boards, power supplies, servo motors, transformers, tooling, and many others.<br/><br/>
+            Nu Tek Sales Parts has been in business for over 10 years and offers domestic and worldwide shipping. Parts are packaged and shipped with the utmost care and efficiency, which allows for a wide range of shipping options for customers. Parts can be shipped Standard, Next Day, International Freight, and many other services depending on the customer’s needs.<br/><br/>
+            Headquartered in Grand Rapids Michigan, Nu Tek Sales Parts works with many local and domestic suppliers to source the highest level of product possible. The company manages a continuous improvement approach to stock and supply inventory based on customer’s needs. The experienced staff is dedicated to providing the highest level of service possible.
             <br/><br/>
-            Nu Tek Sales strives on having good feedback from our customers.  We try our best to make sure that all of our items are represented as best as possible and all of our customers are satisfied.
-
-
+            <br/><br/><br/><br/>
         </div>
         <br/>
 
