@@ -26,7 +26,8 @@ $this->breadcrumbs=array(
 <h1>
     Uploading Images for <?php echo $btm_listing_ID; ?>
 </h1>
-
+<a href="/index.php/btmlistings/create/?auction=<?php echo $model->auction_ID; ?>">Create Another Listing</a>
+| <a href="/index.php/btmauctions/<?php echo $model->auction_ID; ?>" >Auction Listings</a>
 <script>
     $(document).ready(function()
     {

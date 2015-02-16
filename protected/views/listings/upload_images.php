@@ -27,7 +27,6 @@ $this->breadcrumbs=array(
 <h1>
     Uploading Images for <?php echo $listing_ID; ?>
 </h1>
-
 <script>
     $(document).ready(function()
     {
