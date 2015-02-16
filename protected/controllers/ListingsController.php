@@ -90,16 +90,13 @@ class ListingsController extends Controller
         $model->internal_number = strtoupper($model->internal_number);
         $model->inventory = strtoupper($model->inventory);
         $model->manufacturer = ucfirst($model->manufacturer);
+        $model->board_1 = strtoupper($model->board_1);
+        $model->board_2 = strtoupper($model->board_2);
         return $model;
     }
 
     public function actionUpload_images($id){
         $this->render('upload_images');
-    }
-
-
-    public function actionUpload(){
-
     }
 
 	/**

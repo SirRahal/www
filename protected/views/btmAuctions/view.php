@@ -35,7 +35,6 @@ $listings = $model->btmListings;
 <table id="myTable" class="hover stripe row-border">
     <thead>
     <tr style="text-align: center">
-        <td>ID</td>
         <td>Lot</td>
         <td>Manufacturer</td>
         <td>Model</td>
@@ -46,7 +45,6 @@ $listings = $model->btmListings;
     <tbody>
     <?php foreach($listings as $listing){ ?>
         <tr>
-            <td><?php echo $listing->ID; ?></td>
             <td><?php echo $listing->lot; ?></td>
             <td><?php echo $listing->manufacturer; ?></td>
             <td><?php echo $listing->model; ?></td>

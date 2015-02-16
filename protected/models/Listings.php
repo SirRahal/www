@@ -33,6 +33,9 @@
  * @property integer $sold
  * @property string $sold_date
  * @property string $url
+ * @property string $board_1
+ * @property string $board_2
+ * @property string $type
  *
  * The followings are the available model relations:
  * @property Images[] $images
@@ -61,7 +64,7 @@ class Listings extends CActiveRecord
 			array('list_by, condition, ebay_listed, ebay_lister, sold', 'numerical', 'integerOnly'=>true),
 			array('inventory', 'length', 'max'=>45),
 			array('description', 'length', 'max'=>1000),
-			array('internal_number, manufacturer, condition_info, from', 'length', 'max'=>100),
+			array('internal_number, manufacturer, condition_info, from, board_1, board_2, type', 'length', 'max'=>100),
 			array('price', 'length', 'max'=>10),
 			array('serial_number, model_number', 'length', 'max'=>50),
 			array('more_info, listing_note', 'length', 'max'=>1500),
@@ -70,7 +73,7 @@ class Listings extends CActiveRecord
             array('url','length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, list_by, inventory, date, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_listed, ebay_lister, ebay_date, sold, sold_date', 'safe', 'on'=>'search'),
+			array('ID, list_by, inventory, date, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_listed, ebay_lister, ebay_date, sold, sold_date, board_1, board_2, type', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -123,6 +126,9 @@ class Listings extends CActiveRecord
 			'sold_date' => 'Sold Date',
             'from' => 'Came From',
             'url'=> 'eBay URL',
+            'board_1' =>'Board 1',
+            'board_2' =>'Board 2',
+            'type' =>'Type',
 		);
 	}
 
@@ -173,6 +179,9 @@ class Listings extends CActiveRecord
 		$criteria->compare('sold',$this->sold);
         $criteria->compare('sold_date',$this->sold_date,true);
 		$criteria->compare('url',$this->url,true);
+        $criteria->compare('board_1',$this->board_1,true);
+        $criteria->compare('board_2',$this->board_2,true);
+        $criteria->compare('type',$this->type,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

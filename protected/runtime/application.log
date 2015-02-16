@@ -26684,3 +26684,373 @@ Stack trace:
 REQUEST_URI=/index.php/listings/upload_images/7
 HTTP_REFERER=http://localhost/index.php/listings/update/7
 ---
+2015/02/16 19:03:47 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (119)
+in C:\wamp\www\index.php (13)
+2015/02/16 19:05:20 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (119)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:03:23 [error] [exception.CException] exception 'CException' with message 'Property "CStringValidator.0" is not defined.' in C:\wamp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\yii\framework\validators\CValidator.php(189): CComponent->__set('0', 'type')
+#1 C:\wamp\yii\framework\base\CModel.php(287): CValidator::createValidator('length', Object(Listings), 'ebay_date, sold...', Array)
+#2 C:\wamp\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\wamp\yii\framework\base\CModel.php(304): CModel->getValidators('list_by')
+#4 C:\wamp\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('list_by')
+#5 C:\wamp\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Listings), 'list_by', Array)
+#6 C:\wamp\www\protected\views\listings\_form.php(62): CActiveForm->labelEx(Object(Listings), 'list_by')
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#10 C:\wamp\www\protected\views\listings\create.php(15): CController->renderPartial('_form', Array)
+#11 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#12 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#13 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#14 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\protected\controllers\ListingsController.php(80): CController->render('create', Array)
+#16 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionCreate()
+#17 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/create')
+#27 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\wamp\www\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/listings/create
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2015/02/16 20:03:33 [error] [exception.CException] exception 'CException' with message 'Property "CStringValidator.0" is not defined.' in C:\wamp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\yii\framework\validators\CValidator.php(189): CComponent->__set('0', 'type')
+#1 C:\wamp\yii\framework\base\CModel.php(287): CValidator::createValidator('length', Object(Listings), 'ebay_date, sold...', Array)
+#2 C:\wamp\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\wamp\yii\framework\base\CModel.php(304): CModel->getValidators('list_by')
+#4 C:\wamp\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('list_by')
+#5 C:\wamp\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Listings), 'list_by', Array)
+#6 C:\wamp\www\protected\views\listings\_form.php(62): CActiveForm->labelEx(Object(Listings), 'list_by')
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#10 C:\wamp\www\protected\views\listings\create.php(15): CController->renderPartial('_form', Array)
+#11 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#12 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#13 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#14 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\protected\controllers\ListingsController.php(80): CController->render('create', Array)
+#16 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionCreate()
+#17 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/create')
+#27 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\wamp\www\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/listings/create
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2015/02/16 20:03:53 [error] [exception.CException] exception 'CException' with message 'Property "CStringValidator.0" is not defined.' in C:\wamp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\yii\framework\validators\CValidator.php(189): CComponent->__set('0', 'type')
+#1 C:\wamp\yii\framework\base\CModel.php(287): CValidator::createValidator('length', Object(Listings), 'ebay_date, sold...', Array)
+#2 C:\wamp\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\wamp\yii\framework\base\CModel.php(304): CModel->getValidators('list_by')
+#4 C:\wamp\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('list_by')
+#5 C:\wamp\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Listings), 'list_by', Array)
+#6 C:\wamp\www\protected\views\listings\_form.php(62): CActiveForm->labelEx(Object(Listings), 'list_by')
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#10 C:\wamp\www\protected\views\listings\create.php(15): CController->renderPartial('_form', Array)
+#11 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#12 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#13 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#14 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\protected\controllers\ListingsController.php(80): CController->render('create', Array)
+#16 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionCreate()
+#17 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/create')
+#27 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\wamp\www\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/listings/create
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2015/02/16 20:03:53 [error] [exception.CException] exception 'CException' with message 'Property "CStringValidator.0" is not defined.' in C:\wamp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\yii\framework\validators\CValidator.php(189): CComponent->__set('0', 'type')
+#1 C:\wamp\yii\framework\base\CModel.php(287): CValidator::createValidator('length', Object(Listings), 'ebay_date, sold...', Array)
+#2 C:\wamp\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\wamp\yii\framework\base\CModel.php(304): CModel->getValidators('list_by')
+#4 C:\wamp\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('list_by')
+#5 C:\wamp\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Listings), 'list_by', Array)
+#6 C:\wamp\www\protected\views\listings\_form.php(62): CActiveForm->labelEx(Object(Listings), 'list_by')
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#10 C:\wamp\www\protected\views\listings\create.php(15): CController->renderPartial('_form', Array)
+#11 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#12 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#13 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#14 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\protected\controllers\ListingsController.php(80): CController->render('create', Array)
+#16 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionCreate()
+#17 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/create')
+#27 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\wamp\www\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/listings/create
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2015/02/16 20:03:54 [error] [exception.CException] exception 'CException' with message 'Property "CStringValidator.0" is not defined.' in C:\wamp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\yii\framework\validators\CValidator.php(189): CComponent->__set('0', 'type')
+#1 C:\wamp\yii\framework\base\CModel.php(287): CValidator::createValidator('length', Object(Listings), 'ebay_date, sold...', Array)
+#2 C:\wamp\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\wamp\yii\framework\base\CModel.php(304): CModel->getValidators('list_by')
+#4 C:\wamp\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('list_by')
+#5 C:\wamp\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Listings), 'list_by', Array)
+#6 C:\wamp\www\protected\views\listings\_form.php(62): CActiveForm->labelEx(Object(Listings), 'list_by')
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#10 C:\wamp\www\protected\views\listings\create.php(15): CController->renderPartial('_form', Array)
+#11 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#12 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#13 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#14 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\protected\controllers\ListingsController.php(80): CController->render('create', Array)
+#16 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionCreate()
+#17 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/create')
+#27 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\wamp\www\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/listings/create
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2015/02/16 20:04:25 [error] [exception.CException] exception 'CException' with message 'Property "CStringValidator.0" is not defined.' in C:\wamp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\yii\framework\validators\CValidator.php(189): CComponent->__set('0', 'type')
+#1 C:\wamp\yii\framework\base\CModel.php(287): CValidator::createValidator('length', Object(Listings), 'ebay_date, sold...', Array)
+#2 C:\wamp\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\wamp\yii\framework\base\CModel.php(304): CModel->getValidators('list_by')
+#4 C:\wamp\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('list_by')
+#5 C:\wamp\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Listings), 'list_by', Array)
+#6 C:\wamp\www\protected\views\listings\_form.php(62): CActiveForm->labelEx(Object(Listings), 'list_by')
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#10 C:\wamp\www\protected\views\listings\create.php(15): CController->renderPartial('_form', Array)
+#11 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#12 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#13 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#14 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\protected\controllers\ListingsController.php(80): CController->render('create', Array)
+#16 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionCreate()
+#17 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/create')
+#27 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\wamp\www\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/listings/create
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2015/02/16 20:04:33 [error] [exception.CException] exception 'CException' with message 'Property "CStringValidator.0" is not defined.' in C:\wamp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\yii\framework\validators\CValidator.php(189): CComponent->__set('0', 'type')
+#1 C:\wamp\yii\framework\base\CModel.php(287): CValidator::createValidator('length', Object(Listings), 'ebay_date, sold...', Array)
+#2 C:\wamp\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\wamp\yii\framework\base\CModel.php(304): CModel->getValidators('list_by')
+#4 C:\wamp\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('list_by')
+#5 C:\wamp\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Listings), 'list_by', Array)
+#6 C:\wamp\www\protected\views\listings\_form.php(62): CActiveForm->labelEx(Object(Listings), 'list_by')
+#7 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#8 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#9 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#10 C:\wamp\www\protected\views\listings\update.php(14): CController->renderPartial('_form', Array)
+#11 C:\wamp\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#12 C:\wamp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#13 C:\wamp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#14 C:\wamp\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#15 C:\wamp\www\protected\controllers\ListingsController.php(129): CController->render('update', Array)
+#16 [internal function]: ListingsController->actionUpdate('7')
+#17 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ListingsController), Array)
+#18 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ListingsController), Object(ReflectionMethod), Array)
+#19 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#28 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/update')
+#29 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\wamp\www\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/index.php/listings/update/7
+HTTP_REFERER=http://localhost/index.php/listings/admin
+---
+2015/02/16 20:07:45 [warning] [application] Failed to set unsafe attribute "type" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (121)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:07:45 [warning] [application] Failed to set unsafe attribute "board_1" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (121)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:07:45 [warning] [application] Failed to set unsafe attribute "board_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (121)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:07:45 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (121)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:08:17 [warning] [application] Failed to set unsafe attribute "type" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (121)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:08:17 [warning] [application] Failed to set unsafe attribute "board_1" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (121)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:08:17 [warning] [application] Failed to set unsafe attribute "board_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (121)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:08:17 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (121)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:10:26 [warning] [application] Failed to set unsafe attribute "type" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:10:26 [warning] [application] Failed to set unsafe attribute "board_1" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:10:26 [warning] [application] Failed to set unsafe attribute "board_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:10:26 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:11:55 [warning] [application] Failed to set unsafe attribute "type" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:11:55 [warning] [application] Failed to set unsafe attribute "board_1" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:11:55 [warning] [application] Failed to set unsafe attribute "board_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:11:55 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:12:12 [warning] [application] Failed to set unsafe attribute "type" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:12:12 [warning] [application] Failed to set unsafe attribute "board_1" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:12:12 [warning] [application] Failed to set unsafe attribute "board_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:12:12 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:12:25 [warning] [application] Failed to set unsafe attribute "type" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:12:25 [warning] [application] Failed to set unsafe attribute "board_1" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:12:25 [warning] [application] Failed to set unsafe attribute "board_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:12:25 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:28:41 [warning] [application] Failed to set unsafe attribute "type" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (114)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:28:41 [warning] [application] Failed to set unsafe attribute "board_1" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (114)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:28:41 [warning] [application] Failed to set unsafe attribute "board_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (114)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:28:41 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (114)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:28:50 [warning] [application] Failed to set unsafe attribute "type" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (114)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:28:50 [warning] [application] Failed to set unsafe attribute "board_1" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (114)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:28:50 [warning] [application] Failed to set unsafe attribute "board_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (114)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:28:50 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (114)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:29:45 [warning] [application] Failed to set unsafe attribute "type" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:29:45 [warning] [application] Failed to set unsafe attribute "board_1" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:29:45 [warning] [application] Failed to set unsafe attribute "board_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:29:45 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:45:12 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)
+2015/02/16 20:46:01 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (72)
+in C:\wamp\www\index.php (13)
+2015/02/16 21:49:15 [warning] [application] Failed to set unsafe attribute "dims_2" of "Listings".
+in C:\wamp\www\protected\controllers\ListingsController.php (116)
+in C:\wamp\www\index.php (13)

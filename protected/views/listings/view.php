@@ -14,6 +14,10 @@ $this->menu=array(
 );
 ?>
 
+<!--include gallery js and css-->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/gallery/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/js/gallery/magnific-popup.css" />
+
 <h1>View Listings #<?php echo $model->ID ; ?></h1>
 <h6>Listed by <?php echo $model->listBy['first_name'].' '.$model->listBy['last_name']; ?> On <?php echo date('m-d-Y',strtotime($model->date)); ?></h6>
 <?php
@@ -42,8 +46,8 @@ if($model['ebay_listed'] == 1){ ?>
     <div>
         <div>
             <?php foreach ($model->images as $image){ ?>
-                <a href="/images/uploads/<?php echo $image['image'];?>">
-                    <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200">
+                <a class="image-popup-vertical-fit" href="/images/uploads/<?php echo $image['image'];?>">
+                    <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200" >
                 </a>
             <?php } ?>
         </div>
@@ -75,17 +79,17 @@ if($model['url'] != ''){ ?>
                 </td>
             </tr>
         <?php } ?>
-
-        <?php if($model->serial_number != '' or $model->serial_number != 0){ ?>
+        <?php if($model->type != ''){ ?>
             <tr>
                 <td>
-                    <b>Serial #:</b>
+                    <b>Type:</b>
                 </td>
                 <td>
-                    <?php echo $model->serial_number;?>
+                    <?php echo $model->type;?>
                 </td>
             </tr>
         <?php } ?>
+
 
         <?php if($model->model_number != '' or $model->model_number != 0){ ?>
             <tr>
@@ -97,7 +101,36 @@ if($model['url'] != ''){ ?>
                 </td>
             </tr>
         <?php } ?>
-
+        <?php if($model->board_1 != ''){ ?>
+            <tr>
+                <td>
+                    <b>Board 1</b>
+                </td>
+                <td>
+                    <?php echo $model->board_1;?>
+                </td>
+            </tr>
+        <?php } ?>
+        <?php if($model->board_2 != ''){ ?>
+            <tr>
+                <td>
+                    <b>Board 2:</b>
+                </td>
+                <td>
+                    <?php echo $model->board_2;?>
+                </td>
+            </tr>
+        <?php } ?>
+        <?php if($model->serial_number != '' or $model->serial_number != 0){ ?>
+            <tr>
+                <td>
+                    <b>Serial #:</b>
+                </td>
+                <td>
+                    <?php echo $model->serial_number;?>
+                </td>
+            </tr>
+        <?php } ?>
         <?php if($model->description != '' or $model->description != 0){ ?>
             <tr>
                 <td>
@@ -285,3 +318,17 @@ if($model['url'] != ''){ ?>
     </div>
 </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+
+        $('.image-popup-vertical-fit').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            MainClass: 'mfp-img-mobile',
+            image: {
+                verticalFit:true
+            }
+        });
+    });
+</script>

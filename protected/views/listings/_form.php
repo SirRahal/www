@@ -88,6 +88,7 @@
             <?php echo $form->error($model,'internal_number'); ?>
         </div>
 
+        <div class="row">
         <?php
         $manufacturers = Manufacturer::model()->findAll(array(
             "order" => "name ASC",
@@ -102,17 +103,36 @@
         <?php echo $form->labelEx($model,'manufacturer'); ?>
         <?php echo $form->dropDownList($model,'manufacturer',$manufacturer_list, $options); ?>
         <?php echo $form->error($model,'manufacturer'); ?>
+        </div>
 
         <div class="row">
-            <?php echo $form->labelEx($model,'serial_number'); ?>
-            <?php echo $form->textField($model,'serial_number',array('size'=>58,'maxlength'=>50)); ?>
-            <?php echo $form->error($model,'serial_number'); ?>
+            <?php echo $form->labelEx($model,'type'); ?>
+            <?php echo $form->textField($model,'type',array('size'=>58,'maxlength'=>100)); ?>
+            <?php echo $form->error($model,'type'); ?>
         </div>
 
         <div class="row">
             <?php echo $form->labelEx($model,'model_number'); ?>
             <?php echo $form->textField($model,'model_number',array('size'=>58,'maxlength'=>50)); ?>
             <?php echo $form->error($model,'model_number'); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'board_1'); ?>
+            <?php echo $form->textField($model,'board_1',array('size'=>58,'maxlength'=>100)); ?>
+            <?php echo $form->error($model,'board_1'); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'board_2'); ?>
+            <?php echo $form->textField($model,'board_2',array('size'=>58,'maxlength'=>100)); ?>
+            <?php echo $form->error($model,'board_2'); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,'serial_number'); ?>
+            <?php echo $form->textField($model,'serial_number',array('size'=>58,'maxlength'=>50)); ?>
+            <?php echo $form->error($model,'serial_number'); ?>
         </div>
 
         <div class="row">

@@ -29,7 +29,6 @@ tbody{
 <table id="myTable" class="hover stripe row-border">
     <thead>
     <tr style="text-align: center">
-        <td>ID</td>
         <td>Name</td>
         <td># of Items</td>
         <td>Options</td>
@@ -38,7 +37,6 @@ tbody{
     <tbody>
     <?php foreach($auctions as $auction){ ?>
     <tr>
-        <td><?php echo $auction->ID; ?></td>
         <td><?php echo $auction->name; ?></td>
         <td><?php echo count($auction->btmListings); ?></td>
         <td style="text-align: center;">
