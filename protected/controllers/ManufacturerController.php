@@ -97,7 +97,12 @@ class ManufacturerController extends Controller
                 $listing->manufacturer = $model->name;
                 $listing->save();
             }
-
+            //search for any BTM listing and do the same
+            $BTMlistings = Btmlistings::model()->findAllByAttributes(array('manufacturer'=> $old_manufacturer));
+            foreach($BTMlistings as $listing){
+                $listing->manufacturer = $model->name;
+                $listing->save();
+            }
 			if($model->save())
                 $this->redirect('/index.php/manufacturer/admin');
 		}
