@@ -28,46 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BtmAuctionsController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BtmAuctionsController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/BtmAuctionsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="5100">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BtmImagesController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/BtmImagesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="10" selection-start="17" selection-end="17" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="3468">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BtmListingsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/BtmListingsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="10" selection-start="17" selection-end="17" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="3366">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BtmUploadController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/BtmUploadController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="10" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="340">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImagesController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/ImagesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="7" selection-start="55" selection-end="55" vertical-scroll-proportion="0.07061267" vertical-offset="0" max-vertical-offset="3179">
+            <state line="16" column="10" selection-start="551" selection-end="551" vertical-scroll-proportion="0.29955947" vertical-offset="0" max-vertical-offset="4556">
               <folding />
             </state>
           </provider>
@@ -130,10 +94,10 @@
         <option value="$PROJECT_DIR$/protected/controllers/ManufacturerController.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/listing_table.php" />
         <option value="$PROJECT_DIR$/protected/views/btmListings/_form.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/BtmAuctionsController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/BtmImagesController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/BtmListingsController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/BtmUploadController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/BtmAuctionsController.php" />
       </list>
     </option>
   </component>
@@ -638,13 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/BtmAuctionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="5100">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/BtmImagesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="10" selection-start="17" selection-end="17" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="3468">
@@ -668,7 +625,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ImagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="55" selection-end="55" vertical-scroll-proportion="0.07061267" vertical-offset="0" max-vertical-offset="3179">
+        <state line="24" column="41" selection-start="631" selection-end="631" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="3179">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/BtmAuctionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="551" selection-end="551" vertical-scroll-proportion="0.29955947" vertical-offset="0" max-vertical-offset="4556">
           <folding />
         </state>
       </provider>
