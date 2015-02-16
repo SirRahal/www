@@ -6,7 +6,7 @@
  * Time: 2:36 PM
  */
 
-class BtmuploadController extends Controller
+class BtmUploadController extends Controller
 {
 
     /**
