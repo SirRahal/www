@@ -106,12 +106,6 @@
         </div>
 
         <div class="row">
-            <?php echo $form->labelEx($model,'type'); ?>
-            <?php echo $form->textField($model,'type',array('size'=>58,'maxlength'=>100)); ?>
-            <?php echo $form->error($model,'type'); ?>
-        </div>
-
-        <div class="row">
             <?php echo $form->labelEx($model,'model_number'); ?>
             <?php echo $form->textField($model,'model_number',array('size'=>58,'maxlength'=>50)); ?>
             <?php echo $form->error($model,'model_number'); ?>

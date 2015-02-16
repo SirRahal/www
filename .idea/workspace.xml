@@ -28,10 +28,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Listings.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/models/Listings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="28" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.4094737" vertical-offset="223" max-vertical-offset="3468">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/listings/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="325" column="26" selection-start="12370" selection-end="12370" vertical-scroll-proportion="0.7494737" vertical-offset="4813" max-vertical-offset="5763">
+            <state line="80" column="18" selection-start="2822" selection-end="2822" vertical-scroll-proportion="-5.5961537" vertical-offset="1069" max-vertical-offset="5559">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="14" selection-start="148" selection-end="148" vertical-scroll-proportion="-2.0769231" vertical-offset="45" max-vertical-offset="5712">
               <folding />
             </state>
           </provider>
@@ -104,9 +122,9 @@
         <option value="$PROJECT_DIR$/protected/views/btmauctions/admin.php" />
         <option value="$PROJECT_DIR$/protected/views/btmauctions/view.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ListingsController.php" />
-        <option value="$PROJECT_DIR$/protected/models/Listings.php" />
-        <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
         <option value="$PROJECT_DIR$/protected/views/listings/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/listings/_form.php" />
+        <option value="$PROJECT_DIR$/protected/models/Listings.php" />
       </list>
     </option>
   </component>
@@ -679,23 +697,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Listings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="94" selection-start="2009" selection-end="2009" vertical-scroll-proportion="-1.2010527" vertical-offset="2263" max-vertical-offset="3519">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ListingsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="110" column="68" selection-start="3076" selection-end="3076" vertical-scroll-proportion="-1.7538941" vertical-offset="3559" max-vertical-offset="4522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="0" selection-start="4138" selection-end="4138" vertical-scroll-proportion="0.35306334" vertical-offset="1564" max-vertical-offset="5814">
           <folding />
         </state>
       </provider>
@@ -709,7 +713,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/listings/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="325" column="26" selection-start="12370" selection-end="12370" vertical-scroll-proportion="0.7494737" vertical-offset="4813" max-vertical-offset="5763">
+        <state line="80" column="18" selection-start="2822" selection-end="2822" vertical-scroll-proportion="-5.5961537" vertical-offset="1069" max-vertical-offset="5559">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/listings/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="148" selection-end="148" vertical-scroll-proportion="-2.0769231" vertical-offset="45" max-vertical-offset="5712">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Listings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="28" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.4094737" vertical-offset="223" max-vertical-offset="3468">
           <folding />
         </state>
       </provider>

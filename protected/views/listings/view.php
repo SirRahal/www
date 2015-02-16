@@ -79,18 +79,6 @@ if($model['url'] != ''){ ?>
                 </td>
             </tr>
         <?php } ?>
-        <?php if($model->type != ''){ ?>
-            <tr>
-                <td>
-                    <b>Type:</b>
-                </td>
-                <td>
-                    <?php echo $model->type;?>
-                </td>
-            </tr>
-        <?php } ?>
-
-
         <?php if($model->model_number != '' or $model->model_number != 0){ ?>
             <tr>
                 <td>
