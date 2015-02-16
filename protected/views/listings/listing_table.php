@@ -28,7 +28,7 @@
         <td>Model #</td>
         <!--<td>Date</td>-->
         <td style="width: 45px;">Img</td>
-        <td style="width:190px;">Options</td>
+        <td style="width:193px;">Options</td>
     </tr>
     </thead>
     <tbody>

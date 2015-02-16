@@ -26537,3 +26537,29 @@ Stack trace:
 REQUEST_URI=/index.php/manufacturer/update/82
 HTTP_REFERER=http://localhost/index.php/manufacturer/update/82
 ---
+2015/02/16 15:46:37 [error] [php] Use of undefined constant asdf - assumed 'asdf' (C:\wamp\www\protected\views\btmListings\_form.php:76)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): BtmlistingsController->renderFile()
+#1 C:\wamp\www\protected\views\btmListings\create.php(15): BtmlistingsController->renderPartial()
+#2 C:\wamp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\yii\framework\web\CBaseController.php(95): BtmlistingsController->renderInternal()
+#4 C:\wamp\yii\framework\web\CController.php(869): BtmlistingsController->renderFile()
+#5 C:\wamp\yii\framework\web\CController.php(782): BtmlistingsController->renderPartial()
+#6 C:\wamp\www\protected\controllers\BtmListingsController.php(81): BtmlistingsController->render()
+#7 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): BtmlistingsController->actionCreate()
+#8 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): BtmlistingsController->runAction()
+#10 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): BtmlistingsController->filterAccessControl()
+#13 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\wamp\yii\framework\web\CController.php(265): BtmlistingsController->runActionWithFilters()
+#16 C:\wamp\yii\framework\web\CWebApplication.php(282): BtmlistingsController->run()
+#17 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/btmlistings/create/?auction=11
+in C:\wamp\www\protected\views\btmListings\_form.php (76)
+in C:\wamp\www\protected\views\btmListings\create.php (15)
+in C:\wamp\www\protected\controllers\BtmListingsController.php (81)
