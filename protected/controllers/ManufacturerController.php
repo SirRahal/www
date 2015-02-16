@@ -89,9 +89,17 @@ class ManufacturerController extends Controller
 
 		if(isset($_POST['Manufacturer']))
 		{
-			$model->attributes=$_POST['Manufacturer'];
+            $old_manufacturer = $model->name;
+            $model->attributes=$_POST['Manufacturer'];
+            //search for any listing with the old manufacturer name, and replace it with the new one
+            $listings = Listings::model()->findAllByAttributes(array('manufacturer'=> $old_manufacturer));
+            foreach($listings as $listing){
+                $listing->manufacturer = $model->name;
+                $listing->save();
+            }
+
 			if($model->save())
-                $this->redirect('admin');
+                $this->redirect('/index.php/manufacturer/admin');
 		}
 
 		$this->render('update',array(

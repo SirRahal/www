@@ -25,30 +25,6 @@ if($model['ebay_listed'] == 1){ ?>
         <h6 class="red_text">Sold on <?php echo date('m-d-Y',strtotime($model['sold_date'])); ?></h6>
 <?php  } ?>
 
-<?php /*$this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'inventory',
-		'description',
-		'internal_number',
-		'price',
-		'manufacturer',
-		'serial_number',
-		'model_number',
-		'more_info',
-		'condition',
-		'condition_info',
-		'weight',
-		'length_1',
-		'width_1',
-		'height_1',
-		'dims_2',
-		'length_2',
-		'width_2',
-		'height_2',
-		'listing_note',
-	),
-)); */?>
 <style>
     tbody{
         color:black;
@@ -74,7 +50,11 @@ if($model['ebay_listed'] == 1){ ?>
     </div>
 <?php } ?>
 <br/>
-<a href="/index.php/listings/update/<?php echo $model->ID; ?>" style="float:right; margin-top: -30px;"><b>Edit This Item</b></a>
+<?php
+if($model['url'] != ''){ ?>
+    <h6><a href="<?php echo $model['url']; ?>">eBay Listing</a></h6>
+<?php  } ?><a href="/index.php/listings/update/<?php echo $model->ID; ?>" style="float:right; margin-top: -30px;">Edit This Item</a>
+
 <div class="ebay_div">
     Our listing ID : <b><?php echo $model->ID; ?></b><br/>
     Our internal inventory number on this product is : <b><?php echo $model->inventory; ?></b>
@@ -302,7 +282,6 @@ if($model['ebay_listed'] == 1){ ?>
         </div>
         <br/>
         <?php } ?>
-        <div class="red_text">All purchases must be paid within 10 days of the Auction!</div>
     </div>
 </div>
 </div>

@@ -70,11 +70,7 @@ class ListingsController extends Controller
 		if(isset($_POST['Listings']))
 		{
 			$model->attributes=$_POST['Listings'];
-            $model->model_number = strtoupper($model->model_number);
-            $model->serial_number = strtoupper($model->serial_number);
-            $model->internal_number = strtoupper($model->internal_number);
-            $model->inventory = strtoupper($model->inventory);
-            $model->manufacturer = ucfirst($model->manufacturer);
+            $model = $this->cleanModel($model);
 			if($model->save())
 				$this->redirect(array('upload_images','id'=>$model->ID));
 		}
@@ -83,6 +79,19 @@ class ListingsController extends Controller
 			'model'=>$model,
 		));
 	}
+
+    /**
+    * Clean up info before going into the database
+    *
+    **/
+    public function cleanModel($model){
+        $model->model_number = strtoupper($model->model_number);
+        $model->serial_number = strtoupper($model->serial_number);
+        $model->internal_number = strtoupper($model->internal_number);
+        $model->inventory = strtoupper($model->inventory);
+        $model->manufacturer = ucfirst($model->manufacturer);
+        return $model;
+    }
 
     public function actionUpload_images($id){
         $this->render('upload_images');
@@ -108,6 +117,7 @@ class ListingsController extends Controller
 		if(isset($_POST['Listings']))
 		{
 			$model->attributes=$_POST['Listings'];
+            $model = $this->cleanModel($model);
 			if($model->save())
 				$this->redirect(array('upload_images','id'=>$model->ID));
 		}

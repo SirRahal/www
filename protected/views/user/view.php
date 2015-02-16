@@ -36,7 +36,6 @@ if($model->permission > 1){
         <td>ID</td>
         <td>Inventory</td>
         <td>Manufacturer</td>
-        <td>Serial #</td>
         <td>Model #</td>
         <td>Date</td>
         <td style="width:45px;">Img</td>
@@ -49,7 +48,6 @@ if($model->permission > 1){
             <td><?php echo $item->ID; ?></td>
             <td><?php echo $item->inventory; ?></td>
             <td><?php echo $item->manufacturer; ?></td>
-            <td><?php echo $item->serial_number; ?></td>
             <td><?php echo $item->model_number; ?></td>
             <td style="text-align: center;"><?php echo date("M d/y",strtotime($item->date)); ?></td>
             <td style="text-align: center;"><img src="/images/<?php if($item->images){ echo 'green';}else { echo 'red';} ?>thumb.jpg" /></td>

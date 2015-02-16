@@ -57,6 +57,7 @@ $this->pageTitle=Yii::app()->name;
                     <li>Delete Users</li>
                     <li>Change Permissions</li>
                     <li>View User Activity</li>
+                    <li>Delete Old Images</li>
                 </ul>
             </div>
             <div class="col-lg-4">
@@ -64,9 +65,9 @@ $this->pageTitle=Yii::app()->name;
                 <ul>
                     <li>Rename Images so they don't overlap</li>
                     <li>Organizes listing Views</li>
-                    <li>Delete Images 30days once sold (coming soon)</li>
                     <li>Image Notifier</li>
                     <li>Manufacture Listing</li>
+                    <li>Editing Manufacture Cascades</li>
                 </ul>
             </div>
         </div>

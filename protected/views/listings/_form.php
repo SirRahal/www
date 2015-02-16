@@ -278,6 +278,11 @@
 
             <div class="form_container">
                 <div class="row">
+                    <?php echo $form->labelEx($model,'url'); ?>
+                    <?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>200)); ?>
+                    <?php echo $form->error($model,'url'); ?>
+                </div>
+                <div class="row">
                     <?php echo $form->labelEx($model,'sold'); ?>
                     <?php echo $form->checkBox($model,'sold'); ?>
                     <?php echo $form->error($model,'sold'); ?>

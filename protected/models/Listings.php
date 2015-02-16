@@ -32,6 +32,7 @@
  * @property string $ebay_date
  * @property integer $sold
  * @property string $sold_date
+ * @property string $url
  *
  * The followings are the available model relations:
  * @property Images[] $images
@@ -66,6 +67,7 @@ class Listings extends CActiveRecord
 			array('more_info, listing_note', 'length', 'max'=>1500),
 			array('weight, length_1, width_1, height_1, length_2, width_2, height_2', 'length', 'max'=>15),
             array('ebay_date, sold_date','length', 'max'=>100),
+            array('url','length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ID, list_by, inventory, date, description, internal_number, price, manufacturer, serial_number, model_number, more_info, condition, condition_info, weight, length_1, width_1, height_1, dims_2, length_2, width_2, height_2, listing_note, ebay_listed, ebay_lister, ebay_date, sold, sold_date', 'safe', 'on'=>'search'),
@@ -120,6 +122,7 @@ class Listings extends CActiveRecord
 			'sold' => 'Sold',
 			'sold_date' => 'Sold Date',
             'from' => 'Came From',
+            'url'=> 'eBay URL',
 		);
 	}
 
@@ -168,7 +171,8 @@ class Listings extends CActiveRecord
 		$criteria->compare('ebay_lister',$this->ebay_lister);
 		$criteria->compare('ebay_date',$this->ebay_date,true);
 		$criteria->compare('sold',$this->sold);
-		$criteria->compare('sold_date',$this->sold_date,true);
+        $criteria->compare('sold_date',$this->sold_date,true);
+		$criteria->compare('url',$this->url,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

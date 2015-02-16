@@ -31,21 +31,6 @@ $manufacturers = Manufacturer::model()->findAll(array(
 
 ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <table id="myTable" class="hover stripe row-border">
         <thead>
         <tr style="text-align: center">
