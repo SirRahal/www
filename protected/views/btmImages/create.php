@@ -7,10 +7,6 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
-$this->menu=array(
-	array('label'=>'List Btmimages', 'url'=>array('index')),
-	array('label'=>'Manage Btmimages', 'url'=>array('admin')),
-);
 ?>
 
 <h1>Create Btm Images</h1>

@@ -8,12 +8,7 @@ $this->breadcrumbs=array(
 	'Update',
 );
 
-$this->menu=array(
-	array('label'=>'List Btmimages', 'url'=>array('index')),
-	array('label'=>'Create Btmimages', 'url'=>array('create')),
-	array('label'=>'View Btmimages', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Btmimages', 'url'=>array('admin')),
-);
+
 ?>
 
 <h1>Update Btm Images <?php echo $model->ID; ?></h1>

@@ -91,7 +91,7 @@
         <div class="row">
         <?php
         $manufacturers = Manufacturer::model()->findAll(array(
-            "order" => "name ASC",
+            "order" => "name ",
         ));
         $manufacturer_list = array();
         $options = array('empty'=>'Select One');
@@ -268,19 +268,27 @@
                     <?php echo $form->error($model,'ebay_listed'); ?>
                 </div>
 
+
+
                 <div class="row">
-                    <div class="row">
-                        <?php echo $form->labelEx($model,'ebay_lister'); ?>
-                        <?php
-                        $role_list2 = CHtml::listData(User::model()->findAll(array('order'=>'ID ASC')), 'ID' , 'ID', 'first_name', 'first_name');
-                        $options = array(
-                            'tabindex' => '0',
-                            'empty' => '(Select a User)',
-                        );
-                        ?>
-                        <?php echo $form->dropDownList($model,'ebay_lister', $role_list2, $options); ?>
-                        <?php echo $form->error($model,'ebay_lister'); ?>
-                    </div>
+                    <?php
+                    $criteria = new CDbCriteria;
+                    $criteria->condition = 'permission > 1';
+                    $criteria->order = 'first_name ASC';
+                    $users = User::model()->findAll(
+                        $criteria
+                    );
+                    $user_list = array();
+                    $user_options = array('empty'=>'Select One');
+                    foreach($users as $user){
+                        $user_list[$user->ID] = $user->first_name.' '.$user->last_name;
+                        $user_options[$user->ID] = $user->first_name.' '.$user->last_name;
+                    }
+
+                    ?>
+                    <?php echo $form->labelEx($model,'ebay_lister'); ?>
+                    <?php echo $form->dropDownList($model,'ebay_lister',$user_list, $user_options); ?>
+                    <?php echo $form->error($model,'ebay_lister'); ?>
                 </div>
 
                 <div class="row">

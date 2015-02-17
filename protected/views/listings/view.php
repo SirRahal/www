@@ -7,11 +7,6 @@ $this->breadcrumbs=array(
 	$model->ID,
 );
 
-$this->menu=array(
-	array('label'=>'Create Another Listings', 'url'=>array('create')),
-	array('label'=>'Update Listings', 'url'=>array('update', 'id'=>$model->ID)),
-	array('label'=>'Delete Listings', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
-);
 ?>
 
 <!--include gallery js and css-->
@@ -44,9 +39,9 @@ if($model['ebay_listed'] == 1){ ?>
 
 <?php if ($model->images){ ?>
     <div>
-        <div>
+        <div class="zoom-gallery">
             <?php foreach ($model->images as $image){ ?>
-                <a class="image-popup-vertical-fit" href="/images/uploads/<?php echo $image['image'];?>">
+                <a href="/images/uploads/<?php echo $image['image'];?>" style="text-decoration: none;">
                     <img src ="/images/uploads/<?php echo $image['image']; ?>" width="200" >
                 </a>
             <?php } ?>
@@ -158,7 +153,7 @@ if($model['url'] != ''){ ?>
                     <b>Dimensions:</b>
                 </td>
                 <td>
-                    <?php echo "Length : ".$model->length_1."'' Width : ".$model->width_1."'' Height : ".$model->height_1."''";?>
+                    <?php echo (float)$model->length_1."'' x ".(float)$model->width_1."'' x ".(float)$model->height_1."''";?>
                 </td>
             </tr>
         <?php } ?>
@@ -180,7 +175,7 @@ if($model['url'] != ''){ ?>
                     <b>Dimensions:</b>
                 </td>
                 <td>
-                    <?php echo "Length : ".$model->length_2."'' Width : ".$model->width_2."'' Height : ".$model->height_2."''";?>
+                    <?php echo (float)$model->length_2."'' x ".(float)$model->width_2."'' x ".(float)$model->height_2."''";?>
                 </td>
             </tr>
         <?php } ?>
@@ -309,14 +304,26 @@ if($model['url'] != ''){ ?>
 
 <script>
     $(document).ready(function() {
-
-        $('.image-popup-vertical-fit').magnificPopup({
+        $('.zoom-gallery').magnificPopup({
+            delegate: 'a',
             type: 'image',
-            closeOnContentClick: true,
-            MainClass: 'mfp-img-mobile',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
             image: {
-                verticalFit:true
+                verticalFit: true
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
             }
+
         });
     });
 </script>

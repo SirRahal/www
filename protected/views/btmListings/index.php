@@ -6,10 +6,7 @@ $this->breadcrumbs=array(
 	'Btm Listings',
 );
 
-$this->menu=array(
-	array('label'=>'Create Btmlistings', 'url'=>array('create')),
-	array('label'=>'Manage Btmlistings', 'url'=>array('admin')),
-);
+
 ?>
 
 <h1>Btm Listings</h1>
