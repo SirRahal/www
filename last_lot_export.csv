@@ -1,0 +1,3 @@
+ID,auction_ID,lot,description,manufacturer,model,more_info,condition
+12,9,1,"First Item going in",Asus,A2-GRAA323DS,"This is the first Item",4
+13,9,2,"fanuc DRIVER",Asus,AD-DSD,"this is the second item",2
