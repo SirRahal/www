@@ -12,11 +12,11 @@ $this->breadcrumbs=array(
 
 
 
-    <h1>Sold Items</h1>
+<h1>Sold Items</h1>
 
-    <div class="spacer"></div>
+<div class="spacer"></div>
 
-    <a href="/index.php/listings/create">Create Listing</a> | <a class="link" onclick="delete_old_images()" >Delete Old Images</a>
+<a href="/index.php/listings/create">Create Listing</a> | <a href="/index.php/listings/manual_create">Create Manual Listing</a> | <a class="link" onclick="delete_old_images()" >Delete Old Images</a>
 
 <script>
     function delete_old_images(){

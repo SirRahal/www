@@ -24,7 +24,7 @@ if($model->permission > 1){
 <h1>View User <?php echo $model->first_name . ' '. $model->last_name; ?></h1>
 
 <h3>Recent Activity</h3>
-<a href="/index.php/listings/create">Create Listing</a>
+<a href="/index.php/listings/create">Create Listing</a> | <a href="/index.php/listings/manual_create">Create Manual Listing</a>
 <style>
     tbody{
         color:black;

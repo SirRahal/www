@@ -10,7 +10,7 @@
     <h1>Listings On Ebay But Not Sold</h1>
 
     <div class="spacer"></div>
-    <a href="/index.php/listings/create">Create Listing</a>
+    <a href="/index.php/listings/create">Create Listing</a> | <a href="/index.php/listings/manual_create">Create Manual Listing</a>
 
 <?php
 $criteria = new CDbCriteria();

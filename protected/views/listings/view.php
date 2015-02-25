@@ -207,7 +207,7 @@ if($model['url'] != ''){ ?>
                 </td>
             </tr>
         <?php } ?>
-        <?php if($model->pages != '' or $model->pages != 0){ ?>
+        <?php if($model->pages != 0 ){ ?>
             <tr>
                 <td>
                     <b>Pages :</b>
