@@ -35,6 +35,12 @@
  * @property string $url
  * @property string $board_1
  * @property string $board_2
+ * @property string type
+ * @property string part
+ * @property string publication
+ * @property string table_of_contents
+ * @property string copyright
+ * @property integer pages
  *
  * The followings are the available model relations:
  * @property Images[] $images
@@ -60,10 +66,11 @@ class Listings extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('list_by, date, manufacturer, model_number, condition, weight, length_1, width_1, height_1, from', 'required'),
-			array('list_by, condition, ebay_listed, ebay_lister, sold', 'numerical', 'integerOnly'=>true),
+			array('list_by, condition, ebay_listed, ebay_lister, sold, pages', 'numerical', 'integerOnly'=>true),
 			array('inventory', 'length', 'max'=>45),
 			array('description', 'length', 'max'=>1000),
-			array('internal_number, manufacturer, condition_info, from, board_1, board_2', 'length', 'max'=>100),
+            array('table_of_contents', 'length', 'max'=>1500),
+			array('internal_number, manufacturer, condition_info, from, board_1, board_2, type, part, publication, copyright', 'length', 'max'=>100),
 			array('price', 'length', 'max'=>10),
 			array('serial_number, model_number', 'length', 'max'=>50),
 			array('more_info, listing_note', 'length', 'max'=>1500),
@@ -127,6 +134,12 @@ class Listings extends CActiveRecord
             'url'=> 'eBay URL',
             'board_1' =>'Board 1',
             'board_2' =>'Board 2',
+            'tyoe' => 'Type',
+            'part' => 'Part',
+            'publication' => 'Publication',
+            'table_of_contents' => 'Table of Contents',
+            'copyright' => 'Copyright',
+            'pages' => 'Pages'
 		);
 	}
 

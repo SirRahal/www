@@ -28660,3 +28660,483 @@ Stack trace:
 REQUEST_URI=/index.php/listings/create
 HTTP_REFERER=http://localhost/index.php/listings/admin
 ---
+2015/02/19 23:10:03 [error] [php] Undefined variable: model (C:\wamp\www\protected\views\listings\manual.php:12)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): ListingsController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): ListingsController->renderPartial()
+#2 C:\wamp\www\protected\controllers\ListingsController.php(191): ListingsController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionManual()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): ListingsController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): ListingsController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): ListingsController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): ListingsController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/listings/manual
+in C:\wamp\www\protected\views\listings\manual.php (12)
+in C:\wamp\www\protected\controllers\ListingsController.php (191)
+in C:\wamp\www\index.php (13)
+2015/02/19 23:10:04 [error] [php] Undefined variable: model (C:\wamp\www\protected\views\listings\manual.php:12)
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(869): ListingsController->renderFile()
+#1 C:\wamp\yii\framework\web\CController.php(782): ListingsController->renderPartial()
+#2 C:\wamp\www\protected\controllers\ListingsController.php(191): ListingsController->render()
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(49): ListingsController->actionManual()
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): ListingsController->runAction()
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): ListingsController->filterAccessControl()
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): ListingsController->runActionWithFilters()
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): ListingsController->run()
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/listings/manual
+in C:\wamp\www\protected\views\listings\manual.php (12)
+in C:\wamp\www\protected\controllers\ListingsController.php (191)
+in C:\wamp\www\index.php (13)
+2015/02/19 23:15:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:15:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:15:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:15:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:16:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:16:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:16:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:16:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:16:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:16:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:16:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:16:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:17:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:17:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:17:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:17:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update
+---
+2015/02/19 23:19:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\protected\controllers\ListingsController.php:250
+Stack trace:
+#0 C:\wamp\www\protected\controllers\ListingsController.php(114): ListingsController->loadModel('1')
+#1 [internal function]: ListingsController->actionManual_update('1')
+#2 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ListingsController), Array)
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ListingsController), Object(ReflectionMethod), Array)
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/listings/manual_update/1
+---
+2015/02/19 23:19:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\protected\controllers\ListingsController.php:250
+Stack trace:
+#0 C:\wamp\www\protected\controllers\ListingsController.php(114): ListingsController->loadModel('2')
+#1 [internal function]: ListingsController->actionManual_update('2')
+#2 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ListingsController), Array)
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ListingsController), Object(ReflectionMethod), Array)
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/listings/manual_update/2
+---
+2015/02/19 23:19:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\protected\controllers\ListingsController.php:250
+Stack trace:
+#0 C:\wamp\www\protected\controllers\ListingsController.php(114): ListingsController->loadModel('18')
+#1 [internal function]: ListingsController->actionManual_update('18')
+#2 C:\wamp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ListingsController), Array)
+#3 C:\wamp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ListingsController), Object(ReflectionMethod), Array)
+#4 C:\wamp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#13 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#14 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/listings/manual_update/18
+---
+2015/02/25 02:45:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#8 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#9 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/listings/manual_update/362
+---
+2015/02/25 02:46:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update/362
+---
+2015/02/25 02:46:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update/362
+---
+2015/02/25 02:46:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update/362
+---
+2015/02/25 02:46:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update/362
+---
+2015/02/25 02:46:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\yii\framework\web\CWebApplication.php(282): CController->run('manual_update')
+#9 C:\wamp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('listings/manual...')
+#10 C:\wamp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/listings/manual_update/362
+---

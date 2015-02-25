@@ -32,7 +32,7 @@ class ListingsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','not_on_ebay','upload_images','on_ebay','sold','not_sold','delete_old_images'),
+				'actions'=>array('create','update','not_on_ebay','upload_images','on_ebay','sold','not_sold','delete_old_images','manual_create','manual_update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -81,6 +81,58 @@ class ListingsController extends Controller
 	}
 
     /**
+     * Creates a new model.
+     * If creation is successful, the browser will be redirected to the 'view' page.
+     */
+    public function actionManual_create()
+    {
+        $model=new Listings;
+
+        //set required variables that are not used in a manual listing
+        //from
+        $model->from = 'Crib';
+        $model->manual = 1;
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+
+        if(isset($_POST['Listings']))
+        {
+            $model->attributes=$_POST['Listings'];
+            $model = $this->cleanModel($model);
+            if($model->save())
+                $this->redirect(array('upload_images','id'=>$model->ID));
+        }
+
+        $this->render('create_manual',array(
+            'model'=>$model,
+        ));
+    }
+
+
+    /**
+     * manual update
+     */
+    public function actionManual_update($id)
+    {
+        $model=$this->loadModel($id);
+
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+
+        if(isset($_POST['Listings']))
+        {
+            $model->attributes=$_POST['Listings'];
+            $model = $this->cleanModel($model);
+            if($model->save())
+                $this->redirect(array('upload_images','id'=>$model->ID));
+        }
+
+        $this->render('manual_update',array(
+            'model'=>$model,
+        ));
+    }
+
+    /**
     * Clean up info before going into the database
     *
     **/
@@ -119,9 +171,16 @@ class ListingsController extends Controller
 				$this->redirect(array('upload_images','id'=>$model->ID));
 		}
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
+        if($model->manual == 1){
+            $this->render('manual_update',array(
+                'model'=>$model,
+            ));
+        }else{
+            $this->render('update',array(
+                'model'=>$model,
+            ));
+        }
+
 	}
 
 	/**

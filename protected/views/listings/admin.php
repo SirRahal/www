@@ -12,7 +12,7 @@ $this->breadcrumbs=array(
 
 <div class="spacer"></div>
 
-<a href="/index.php/listings/create">Create Listing</a>
+<a href="/index.php/listings/create">Create Listing</a> | <a href="/index.php/listings/manual_create">Create Manual Listing</a>
 
 <?php
 $listings = Listings::model()->findAll();

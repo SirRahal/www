@@ -74,6 +74,16 @@ if($model['url'] != ''){ ?>
                 </td>
             </tr>
         <?php } ?>
+        <?php if($model->type != '' or $model->type != 0){ ?>
+            <tr>
+                <td>
+                    <b>Type:</b>
+                </td>
+                <td>
+                    <?php echo $model->type;?>
+                </td>
+            </tr>
+        <?php } ?>
         <?php if($model->model_number != '' or $model->model_number != 0){ ?>
             <tr>
                 <td>
@@ -81,6 +91,46 @@ if($model['url'] != ''){ ?>
                 </td>
                 <td>
                     <?php echo $model->model_number;?>
+                </td>
+            </tr>
+        <?php } ?>
+        <?php if($model->part != '' or $model->part != 0){ ?>
+            <tr>
+                <td>
+                    <b>Part #:</b>
+                </td>
+                <td>
+                    <?php echo $model->part;?>
+                </td>
+            </tr>
+        <?php } ?>
+        <?php if($model->publication != '' or $model->publication != 0){ ?>
+            <tr>
+                <td>
+                    <b>Publication:</b>
+                </td>
+                <td>
+                    <?php echo $model->publication;?>
+                </td>
+            </tr>
+        <?php } ?>
+        <?php if($model->table_of_contents != '' or $model->table_of_contents != 0){ ?>
+            <tr>
+                <td>
+                    <b>Table Of Contents:</b>
+                </td>
+                <td>
+                    <?php echo $model->table_of_contents;?>
+                </td>
+            </tr>
+        <?php } ?>
+        <?php if($model->copyright != '' or $model->copyright != 0){ ?>
+            <tr>
+                <td>
+                    <b>Copyright:</b>
+                </td>
+                <td>
+                    <?php echo $model->copyright;?>
                 </td>
             </tr>
         <?php } ?>
@@ -157,7 +207,16 @@ if($model['url'] != ''){ ?>
                 </td>
             </tr>
         <?php } ?>
-
+        <?php if($model->pages != '' or $model->pages != 0){ ?>
+            <tr>
+                <td>
+                    <b>Pages :</b>
+                </td>
+                <td>
+                    <?php echo $model->pages;?>  <b> (+/-) 7 Pages, seems complete and in generally  GOOD used condition!</b>
+                </td>
+            </tr>
+        <?php } ?>
         <?php if($model->dims_2 != '' AND $model->dims_2 != '0.00'){ ?>
             <tr>
                 <td>
@@ -194,7 +253,7 @@ if($model['url'] != ''){ ?>
                     ?>
                 </td>
             </tr>
-        <?php } ?>
+
 
             <tr>
                 <td>
@@ -244,6 +303,7 @@ if($model['url'] != ''){ ?>
                 <td><b>Note : </b>This Item is sold as is with a No Return Policy.</td>
             </tr>
         <?php  } ?>
+        <?php } ?>
     </table>
 
 <br/>
