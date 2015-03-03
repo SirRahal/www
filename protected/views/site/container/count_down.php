@@ -8,7 +8,7 @@
         $(document).ready(function() {
 
             $("#countdown").countdown({
-                date: "15 march 2015 11:00:00" // add the countdown's end date (i.e. 3 november 2012 12:00:00)
+                date: "19 march 2015 12:00:00" // add the countdown's end date (i.e. 3 november 2012 12:00:00)
             }, function() {
                 alert("Tournament Has Begun!");
             });

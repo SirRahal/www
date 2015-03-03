@@ -42,7 +42,7 @@ $this->breadcrumbs=array(
                 <h1>For Support</h1>
 
 
-                    <h4>Sari@BracketFanatic.com<br/>(313) 384-8369</h4>
+                    <h4>SirRahal55@Gmail.com<br/>(313) 384-8369</h4>
                 <!--
                 <div class="contact">
                 <h1>Direct Contacts</h1>
