@@ -88,7 +88,8 @@ $this->pageTitle=Yii::app()->name;
         </div>
         <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/contact">GET STARTED TODAY</a>-->
         <br/>
-    <div style="margin-left: -5px; margin-top: -5px;">
+
+    <div style="margin-left: -5px;">
         <img src="/images/home_page/fan_1.png" width="271"/>
         <img src="/images/home_page/fan_2.png" width="270"/>
         <img src="/images/home_page/fan_3.png" width="270"/><!--
