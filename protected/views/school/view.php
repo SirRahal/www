@@ -84,13 +84,29 @@ $this->breadcrumbs=array(
 <div class="clear"></div>
 <div id="accordion">
     <?php for($i=1;$i<6;$i++){
-        if($i < 5)
-        {
-            $round = 'rd_'.$i;
-            $header= "Final Round ".$i." Winners";
-        } else{
-            $round = 'total_points';
-            $header= "Final Round Winners";
+
+        switch ($i) {
+            case 1:
+                $header="Round of 64";
+                $round = 'rd_'.$i;
+                break;
+            case 2:
+                $header="Round of 32";
+                $round = 'rd_'.$i;
+                break;
+            case 3:
+                $header="Round of 16";
+                $round = 'rd_'.$i;
+                break;
+            case 4:
+                $header="Round of 8";
+                $round = 'rd_'.$i;
+                break;
+            case 5:
+                $round = 'total_points';
+                $header= "Total Points";
+                break;
+
         }
         $placement_round = $model->get_round_placements($model->ID, $round);
         ?>
@@ -130,7 +146,6 @@ $this->breadcrumbs=array(
                         </tr>
             <?php if($placement == 3){ ?>
             <tr><td colspan="8" style="height: 5px; background: black"></td></tr>
-
             <?php } ?> <tr>
                         <?php }
                      } $placement = 0; ?></tr>
