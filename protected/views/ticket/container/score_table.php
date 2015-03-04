@@ -5,6 +5,16 @@
  * Date: 6/23/14
  * Time: 3:44 PM
  */ ?>
+
+<style>
+    .button:hover{
+        border: 1px solid #59b4d4;
+        background: #59b4d4 url("/css/jquery-ui-custom/images/ui-bg_glass_40_0078a3_1x400.png") 50% 50% repeat-x;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+</style>
 <div>
     <?php
         $ticket_ID = $ticket['ID'];
@@ -23,7 +33,7 @@
         <b>League Placement : </b><?php echo $ticket['placement'];?>
         <div class="mobile_not_float_right button_arrangment">
             <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/school/<?php echo $school_ID; ?>" title="See how you rank up against other at <?php echo $school; ?>">My Ranking</a>
-            <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID']; ?>" title="Edit This entry up until March 5th 12pm EST">Edit Ticket</a>
+            <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID']; ?>" title="Edit This entry up until March 18th 12pm EST">Pick My Teams</a>
         </div>
         <?php if ($placement_difference > 0){
                     echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" />
