@@ -29,17 +29,26 @@ $string_exploded = explode("-", $ticket_code);
 $school_ID = $string_exploded[0];
 $school = School::model()->get_name_by_ID($school_ID);
 ?>
-
+<script>
+    $(function() {
+        $("#accordion").accordion({collapsible: true, active: false });
+    });
+</script>
+</script>
 <script src="/js/general.js"></script>
 <br/><br/>
-<h1>How To Play</h1>
-<h3>
-    <b>1)</b> To create your entry, please select a team from each seed (1 thru 16).<br/>
-    <b>2)</b> Simply click on the teams name you wish to choose for each seed.<br/>
-    <b>3)</b> Once all 16 teams are chosen, click the save button located at the bottom of your pick table.<br/>
-    <b>4)</b> Your picks can be changed any time before the entry window deadline <i><b>(3/19/15) @ 11a.m. EST.</b></i><br/>
-    <b>5)</b> For your convenience there is an easy pick button that auto populates your picks.
-</h3>
+<div id="accordion">
+    <h3>How To Play</h3>
+    <div style="background: #faf2e0;">
+        <h3>
+            <b>1)</b> To create your entry, please select a team from each seed (1 thru 16).<br/>
+            <b>2)</b> Simply click on the teams name you wish to choose for each seed.<br/>
+            <b>3)</b> Once all 16 teams are chosen, click the save button located at the bottom of your pick table.<br/>
+            <b>4)</b> Your picks can be changed any time before the entry window deadline <i><b>(3/19/15) @ 11a.m. EST.</b></i><br/>
+            <b>5)</b> For your convenience there is an easy pick button that auto populates your picks.
+        </h3>
+    </div>
+</div>
 <br/><br/>
 <!--centered info needs to be updated by the user table-->
 <div class="centered_div text_center">
