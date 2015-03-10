@@ -3,92 +3,55 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-
-<div class="main_title"><h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1></div>
-<!-- DataTables CSS -->
-<!--<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables2.css">
-
-<!-- DataTables -->
-<!--<script type="text/javascript" charset="utf8" src="/js/jquery.dataTables.js"></script>
 <script>
-    $(document).ready( function () {
-        $('#table_id').DataTable();
-    } );
-
-
-</script>-->
-
-<!--<div style="float: left; width: 950px;">
-    <img src="/images/bracket1.png" width="950">
-</div>
-<div style="float: left; width: 195px;margin-left: 5px;  padding-left: 5px; background: #efefef; border: solid 2px #9db2c9">
-    <?php /*if(Yii::app()->user->isGuest) {*/?>
-    <div class="display_box">
-        <h3>Register My Ticket</h3>
-        <p>Just bought your first ticket?  Create an account and get started</p>
-        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:175px;" href="/index.php/user/register">Sign-Up</a>
-    </div>
-    <?php /*} */?>
-    <div class="display_box">
-        <h3>Rgistered Schools</h3>
-        <table id="table_id" class="hover stripe row-border">
-            <thead>
-                <td>School</td>
-                <td>Tickets</td>
-            </thead>
-            <?php
-/*            $schools = School::model()->findAll();
-            foreach($schools as $school){ */?>
-                <tr data-href="/index.php/school/<?php /*echo $school->ID; */?>" class="link">
-                    <td><?php /*echo $school->name; */?></td>
-                    <td style="text-align: center;"><?php /*echo School::model()->get_ticket_count($school->ID); */?></td>
-                </tr>
-            <?php /*} */?>
-        </table>
-    </div>
-</div>-->
-<!--<script>
-    $('tr').on("click", function() {
-        if($(this).data('href') !== undefined){
-            document.location = $(this).data('href');
-        }
+    $(function() {
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            width: 1100,
+            modal: true,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+        $( "#opener" ).click(function() {
+            $( "#dialog" ).dialog( "open" );
+        });
     });
-</script>-->
+</script>
+<div id="dialog" title="Basic dialog">
+    <div class="">
+        <div class="video-div">
+            <iframe width="1000" height="700" src="https://www.youtube.com/embed/YQTW0t3gO4c" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
+<div class="main_title">
+    <h1>Welcome to
+        <i>
+            <?php echo CHtml::encode(Yii::app()->name); ?>
+        </i>
+    </h1>
+</div>
 <div class="homepage_container">
-
     <div style="padding:20px;">
         <?php echo $this->renderPartial('/site/container/count_down'); ?>
     </div>
-    <!--<div class="title_bar">For Ticket Holders</div>-->
     <div class="orange_text title bold">Fundraiser Sweepstakes</div>
     <div class="over_lap_buttons">
         <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/user/register">Register Now</a>
         <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/page?view=ticket_holder">How To Play</a>
+        <div style="padding: 10px;">
+            <a id="opener" class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:920px;">Watch Tutorial Video</a>
+        </div>
     </div>
     <img src="/images/join_the_madness.png" width="1100" />
-    <!--
-    <div>
-        <h2>Have a ticket and need to register?</h2>
-        <br/>
-        And start picking your teams!<br/>
-        Need to learn how to play?<br/><div class="orange_text bold">IT'S EASY!</div>Take a look at our 5 easy steps!<br/>
-        <br/><br/>
-    </div>-->
-
-    <!--<div class="title_bar">For Organizations</div>
-        <div class="orange_text title bold">RAISE $6,000</div>
-        <div class="title2 bold">SCHOOLS | SPORTS PROGRAMS | BOOSTERS</div>
-        <div class="mobile_padding" >
-            <div class="orange_text bold">Sweepstakes is based on the Men’sCollege Hoops Tournament in March.</div><br/>
-            <div style="width:70%; margin:0 auto; ">
-                Your group distributes tickets printed with individual access codes to pick the teams you think will score the most points throughout the tournament.<br/><br/>
-            </div>
-        <div class="orange_text bold">23 CASH PRIZES ARE AWARDED!!!</div><br/>
-        </div>
-        <a class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:450px;" href="/index.php/site/contact">GET STARTED TODAY</a>-->
-        <br/>
-
+    <br/>
     <div style="margin-left: -5px;">
         <img src="/images/home_page/fan_1.png" width="271"/>
         <img src="/images/home_page/fan_2.png" width="270"/>
