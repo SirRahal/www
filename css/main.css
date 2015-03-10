@@ -726,3 +726,8 @@ ul#countdown li{
     text-align: center;
     padding-bottom:20px;
 }
+.video-div{
+    text-align: center;
+    clear: both;
+    margin-bottom: 40px;
+}

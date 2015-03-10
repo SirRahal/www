@@ -46,6 +46,8 @@ $school = School::model()->get_name_by_ID($school_ID);
             <b>3)</b> Once all 16 teams are chosen, click the save button located at the bottom of your pick table.<br/>
             <b>4)</b> Your picks can be changed any time before the entry window deadline <i><b>(3/19/15) @ 11a.m. EST.</b></i><br/>
             <b>5)</b> For your convenience there is an easy pick button that auto populates your picks.
+            <br/><br/>
+            <div style="text-align: center;"><b>For More Information, Check Out Our <a href="/index.php/site/page?view=ticket_holder">Ticket Holders</a> Page</b></div>
         </h3>
     </div>
 </div>

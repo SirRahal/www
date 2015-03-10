@@ -2029,3 +2029,35 @@ Stack trace:
 REQUEST_URI=/index.php/user/ticket/mytickets
 HTTP_REFERER=http://localhost/index.php/user/register
 ---
+2015/03/10 00:02:26 [error] [php] Undefined index: id (C:\wamp\www\yii\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#1 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/site/page?view=ticket_holder
+in C:\wamp\www\index.php (13)
+2015/03/10 00:02:39 [error] [php] Undefined index: id (C:\wamp\www\yii\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#1 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): TicketController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): TicketController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TicketController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ticket/update/index.php/site/page?view=ticket_holder
+in C:\wamp\www\index.php (13)

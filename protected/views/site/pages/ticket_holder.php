@@ -13,6 +13,9 @@ $this->breadcrumbs=array(
 ?>
 
 <div class="main_title"><h1>How To Play</h1></div>
+<div class="video-div">
+    <iframe width="1000" height="700" src="https://www.youtube.com/embed/YQTW0t3gO4c" frameborder="0" allowfullscreen></iframe>
+</div>
 <div class="mobile_container">
     <div class="bold" style="font-size: 21px;">
         <img src="/images/ticket.png" width="100%" class="round_edges shadow"/>

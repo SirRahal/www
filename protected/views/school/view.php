@@ -167,12 +167,12 @@ $this->breadcrumbs=array(
                 <td class="text_center"><b>Place</b></td>
                 <td class="text_center"><b>Change</b></td>
                 <td class="text_center"><b>User</b></td>
-                <td class="text_center"><b>Round 1</b></td>
-                <td class="text_center"><b>Round 2</b></td>
-                <td class="text_center"><b>Round 3</b></td>
-                <td class="text_center"><b>Round 4</b></td>
-                <td class="text_center"><b>Round 5</b></td>
-                <td class="text_center"><b>Round 6</b></td>
+                <td class="text_center"><b>Round - 64</b></td>
+                <td class="text_center"><b>Round - 32</b></td>
+                <td class="text_center"><b>Round - 16</b></td>
+                <td class="text_center"><b>Round - 8</b></td>
+                <td class="text_center"><b>Round - 4</b></td>
+                <td class="text_center"><b>Round - 2</b></td>
                 <td class="text_center"><b>Final Total</b></td>
             </tr>
         </thead>

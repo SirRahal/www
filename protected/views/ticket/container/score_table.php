@@ -46,12 +46,12 @@
                 <tr style="background:#333333; color:#ffffff; font-weight: bold;">
                     <td>Seed</td>
                     <td style="width: 160px;;">Team</td>
-                    <td style="text-align: center;">Round 1</td>
-                    <td style="text-align: center;">Round 2</td>
-                    <td style="text-align: center;">Round 3</td>
-                    <td style="text-align: center;">Round 4</td>
-                    <td style="text-align: center;">Round 5</td>
-                    <td style="text-align: center;">Round 6</td>
+                    <td style="text-align: center;">Round - 64</td>
+                    <td style="text-align: center;">Round - 32</td>
+                    <td style="text-align: center;">Round - 16</td>
+                    <td style="text-align: center;">Round - 8</td>
+                    <td style="text-align: center;">Round - 4</td>
+                    <td style="text-align: center;">Round - 2</td>
                     <td style="text-align: center;">Total</td>
                 </tr>
                 <tr>
@@ -75,8 +75,8 @@
                             <td style="text-align: center;"><!--echo out round 2--><?php echo $score_2; ?></td>
                             <td style="text-align: center;"><!--echo out round 3--><?php echo $score_3; ?></td>
                             <td style="text-align: center;"><!--echo out round 4--><?php echo $score_4; ?></td>
-                            <td style="text-align: center;"><!--echo out round 5--><?php echo $score_5; ?></td>
-                            <td style="text-align: center;"><!--echo out round 6--><?php echo $score_6; ?></td>
+                            <td style="text-align: center; background: #666666; color: white; border-left: solid 1px #333333;"><!--echo out round 5--><?php echo $score_5; ?></td>
+                            <td style="text-align: center; background: #666666; color: white; border-right: solid 1px #333333;"><!--echo out round 6--><?php echo $score_6; ?></td>
                             <td style="text-align: center;"><!--echo out total  --><?php echo $total; ?></td>
                         </tr>
                 <?php } ?>
