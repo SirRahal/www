@@ -546,6 +546,7 @@ input[type=password]:focus, textarea:focus {
     border:none;
     z-index: 1000;
     margin-left: 30px;
+    background: none;
 }
 
 .display_box{
