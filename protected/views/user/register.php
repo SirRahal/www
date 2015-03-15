@@ -129,7 +129,7 @@ $isMobile = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows
                 </tbody>
             </table>
 
-            <img src="/images/ticket.png" width="500"/>
+            <img src="/images/ticket.png" width="500" class="mobile_image_sretch"/>
             <!-- Allow form submission with keyboard without duplicating the dialog button -->
             <input type="submit" tabindex="-1" style="position:absolute; top:-1000px" name="info" id="info" class="text ui-widget-content ui-corner-all">
         </fieldset>
