@@ -29,7 +29,7 @@ if(!isset($picks)){
 <div class="picks" >
     <div style="text-align: center; padding-bottom: 5px;">
         <h1 class="bold gray_text">
-            <?php if($region_ID == 1){ echo "South";}elseif($region_ID == 2){ echo "West";}elseif($region_ID == 3){ echo "East";}elseif($region_ID == 4){ echo "Midwest";};?> Region
+            <?php if($region_ID == 1){ echo "Midwest";}elseif($region_ID == 2){ echo "East";}elseif($region_ID == 3){ echo "West";}elseif($region_ID == 4){ echo "South";};?> Region
         </h1>
     </div>
     <?php
