@@ -51,6 +51,11 @@ input[type=text], textarea {
     width : 700px;
 }
 
+input[type=email] {
+    font-size: 60px;
+    width : 700px;
+}
+
 input[type=password] {
     font-size: 60px;
     width : 700px;
@@ -97,7 +102,7 @@ input[type='checkbox'] {
     border:2px solid #555;
 }
 input[type='checkbox']:checked {
-    background: #abd;
+    background: #f48a0d;
 }
 .countdown_text{
     width: 100%;
@@ -152,4 +157,13 @@ ul#countdown li{
 }
 .mobile-margin-top-button{
     margin-top: 10px;
+}
+select{
+    color: #494949;
+    padding: 6px 15px 6px 35px;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 #ccc inset;
+    transition: 500ms all ease;
+    outline: 0;
+    font-size: 20px;
 }

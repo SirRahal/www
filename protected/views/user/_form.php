@@ -447,9 +447,10 @@
 
             any claims or liabilities with respect to this Sweepstakes, including the development, execution and administration thereof.
             </div>
+            <br/>
             <div class="clear"></div>
             <?php echo $form->checkBox($model,'terms'); ?>
-            <div >I accept the Terms & Conditions listed above</div>
+            <div style="margin-left: 15px;">I accept the Terms & Conditions listed above</div>
             <?php echo $form->error($model,'terms'); ?>
         </div>
     </div>
