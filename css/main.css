@@ -439,7 +439,7 @@ input[type=password]:focus, textarea:focus {
 
 .display_bracket_button{
     position: absolute;
-    margin-left:-90px;
+    margin-left:-88px;
     position:fixed;
     top:20%;
     /* Safari */
@@ -545,8 +545,7 @@ input[type=password]:focus, textarea:focus {
 .mfp-with-zoom {
     border:none;
     z-index: 1000;
-    padding-left: 15%;
-    margin-right: 300px;
+    margin-left: 30px;
 }
 
 .display_box{

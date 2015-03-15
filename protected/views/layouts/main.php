@@ -112,13 +112,13 @@
                 closeBtnInside: false,
                 fixedContentPos: false,
                 showCloseBtn:false,
-                mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                mainClass: 'mfp-with-zoom', // class to remove default margin from left and right side
                 image: {
                     verticalFit: true
                 },
                 zoom: {
                     enabled: true,
-                    duration: 300, // don't foget to change the duration also in CSS
+                    duration: 400, // don't foget to change the duration also in CSS
                     easing: 'ease-in-out' // CSS transition easing function
                 }
             });

@@ -11,11 +11,11 @@ $this->pageTitle=Yii::app()->name;
             modal: true,
             show: {
                 effect: "blind",
-                duration: 1000
+                duration: 2000
             },
             hide: {
                 effect: "explode",
-                duration: 1000
+                duration: 2000
             }
         });
         $( "#opener" ).click(function() {
@@ -24,10 +24,8 @@ $this->pageTitle=Yii::app()->name;
     });
 </script>
 <div id="dialog" title="Basic dialog">
-    <div class="">
-        <div class="video-div">
-            <iframe width="1000" height="700" src="https://www.youtube.com/embed/YQTW0t3gO4c" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="video-div">
+        <iframe width="1000" height="700" src="https://www.youtube.com/embed/YQTW0t3gO4c" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 
