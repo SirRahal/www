@@ -53,7 +53,7 @@ $school = School::model()->get_name_by_ID($school_ID);
 </div>
 <br/><br/>
 <!--centered info needs to be updated by the user table-->
-<div class="centered_div text_center">
+<div class="centered_div text_center" style="margin-left: -20px;">
     <div style="margin-top: -10px;">
         <h2 class="orange_text">PICK YOUR FAVORITE TEAMS<br/>FROM EACH SEED TO<br/>CREATE YOUR ENTRY<h2/>
     </div>
