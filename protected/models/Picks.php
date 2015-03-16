@@ -102,19 +102,40 @@ class Picks extends CActiveRecord
 	}
 
     public static function find_tickets_by_ID($ticket_ID){
-
-        $my_picks = Picks::model()->findAllByAttributes(array('ticket_ID'=>$ticket_ID ),array('order' => 'ID ASC'));
+        //$my_picks_name = new array();
+        $my_picks = Picks::model()->findAllByAttributes(array('ticket_ID'=>$ticket_ID ));
         $i=0;
         foreach($my_picks as $pick){
             $team = Team::model()->findByAttributes(array('ID'=>$pick['team_ID']));
-            $my_picks_array[$i] =  $team['name'];
+            //$my_picks_array[$i][0] =  $team['name'];
+            $my_picks_array[$i][0] =  $team['name'];
+            //get the teams seed
+            $team_turnament_region = TeamTournamentRegion::model()->findByAttributes(array('team_ID'=>$pick['team_ID']));
+            $my_picks_array[$i][1] = $team_turnament_region->seed;
             $i++;
         }
         for ($j=$i; $j<16; $j++){
-            $my_picks_array[$j] = 'TBA';
+            $my_picks_array[$j][0] = 'TBA';
+            $my_picks_array[$j][1] =16;
         }
-        return $my_picks_array;
-
+        $i=0;
+        foreach($my_picks as $pick){
+            $team = Team::model()->findByAttributes(array('ID'=>$pick['team_ID']));
+            $my_picks_array[$i][0] =  $team['name'];
+            //get the teams seed
+            $team_turnament_region = TeamTournamentRegion::model()->findByAttributes(array('team_ID'=>$pick['team_ID']));
+            $my_picks_array[$i][1] = $team_turnament_region->seed;
+            $i++;
+        }
+        foreach ($my_picks_array as $key => $row) {
+            $name[$key]  = $row[0];
+            $seed[$key] = $row[1];
+        }
+        array_multisort( $seed, SORT_ASC, $name, SORT_DESC, $my_picks_array);
+        for ($j=0; $j<16; $j++){
+            $my_picks_name[$j] = $my_picks_array[$j][0];
+        }
+        return $my_picks_name;
     }
 
     public static function get_tickets_pick($team_ID){
