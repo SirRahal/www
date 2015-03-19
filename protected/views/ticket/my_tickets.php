@@ -25,52 +25,7 @@ $this->breadcrumbs=array(
                 heightStyle: "content"
             });
         });
-        $(function() {
-            var dialog, form,
-                ticket_code = $( "#ticket_code"),
-                allFields = $( [] ).add( ticket_code ),
-                    tips = $( ".validateTips" );
 
-            function addTicket() {
-                var valid = false;
-                $.ajax({
-                    type: "POST",
-                    url: '<?php echo Yii::app()->createUrl('ticket/addTicket'); ?>',
-                    data: {ticket_code : ticket_code.val()},
-                    success: function(){
-                        $("#freeow").freeow("Ticket Code Correct!", "The ticket will now be added to your ticket collection.  One Moment!");
-                        dialog.dialog( "close" );
-                        window.location.href='/index.php/ticket/mytickets';
-                    }, error : function(){
-                            $("#freeow").freeow("Ticket Code Incorrect!", "The ticket code entered is incorrect.  Please check the code and try again.", {classes : ["error"]});
-                        }
-                }
-            );
-            }
-            dialog = $( "#dialog-form" ).dialog({
-                autoOpen: false,
-                width: <?php if($isMobile) { echo '880';}else {echo '400';} ?>,
-                height: <?php if($isMobile) { echo '900';}else {echo '400';} ?>,
-                modal: true,
-                buttons: {
-                    "Add Ticket": addTicket,
-                    Cancel: function() {
-                        dialog.dialog( "close" );
-                    }
-                },
-                close: function() {
-                    form[ 0 ].reset();
-                }
-            });
-
-            form = dialog.find( "form" ).on( "submit", function( event ) {
-                addTicket();
-            });
-
-            $( "#add_ticket" ).button().on( "click", function() {
-                dialog.dialog( "open" );
-            });
-        });
     </script>
 </head>
 
@@ -81,9 +36,9 @@ $this->breadcrumbs=array(
         <?php echo $this->renderPartial('/site/container/count_down'); ?>
     </div>
     <div class="clear"></div>
-    <div class="row add_ticket_div">
+    <!--<div class="row add_ticket_div">
         <button id="add_ticket">Add Ticket</button>
-    </div>
+    </div>-->
     <div class="clear spacer"></div>
     <div id="accordion">
     <?php
@@ -95,15 +50,15 @@ $this->breadcrumbs=array(
             </div>
         <?php } ?>
     </div>
-<div id="dialog-form" title="Add a Ticket">
+<!--<div id="dialog-form" title="Add a Ticket">
     <p class="validateTips">Please Enter Ticket Number</p>
     <form>
         <fieldset>
             <label for="ticket_code">Ticket Code #</label>
             <input type="text" name="ticket_code" id="ticket_code" placeholder="0-0000" class="text ui-widget-content ui-corner-all" title="You can find this on the front side of your Ticket towards the bottom">
             <br/><br/>
-            <img src="/images/ticket.png" width="<?php if($isMobile){echo '720';}else{ echo'360'; } ?>";/>
+            <img src="/images/ticket.png" width="<?php /*if($isMobile){echo '720';}else{ echo'360'; } */?>";/>
             <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
         </fieldset>
     </form>
-</div>
+</div>-->
