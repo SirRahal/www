@@ -27,17 +27,17 @@ class TicketController extends Controller
     public function accessRules()
     {
         return array(
-            array('allow',
+            /*array('allow',
                 'actions'=>array('view','update','easypicks','update2'),
                 'users'=>array(Yii::app()->user->name),
                 'expression' => 'User::model()->ownsTicket($_GET[\'id\'])'
-            ),
+            ),*/
             array('allow',
                 'actions'=>array('myTickets','easypicks','addTicket','validateTicket'),
                 'users'=>array('*'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete','index','create','view','update','myTickets','easypicks'),
+                'actions'=>array('admin','delete','index','create','view','update','myTickets','easypicks','view','update','easypicks','update2'),
                 'users'=>array('admin'),
             ),
             array('deny',  // deny all users

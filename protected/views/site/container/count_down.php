@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<script type="text/javascript" src="/js/countdown.js"></script>
+<!--<!DOCTYPE html>
 <html>
 <head>
-    <title>jQuery countdown plugin - devingredients.com</title>
-    <script type="text/javascript" src="/js/countdown.js"></script>
+
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -47,4 +47,5 @@
     </ul>
 </div>
 </body>
-</html>
+</html>-->
+
