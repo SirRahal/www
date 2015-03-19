@@ -255,7 +255,7 @@ class UserController extends Controller
                             <br/>
                             <br/>
                             <br/>Thank you for playing Bracket Fanatic.
-                            <br/>Do you your request, we have reset your password.
+                            <br/>Do to your request, we have reset your password.
                             <br/>
                             <br/><b>Your account name is :</b> $user->user_name
                             <br/><b>your new password is :</b> $new_password
