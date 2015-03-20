@@ -50,6 +50,12 @@ $this->breadcrumbs=array(
             </div>
         <?php } ?>
     </div>
+<?php if(!isset($mytickets[0])){?>
+    <div>
+        Unfortunently you did not meet the deadline to fill out your ticket and it has been removed.
+    </div>
+<?php } ?>
+
 <!--<div id="dialog-form" title="Add a Ticket">
     <p class="validateTips">Please Enter Ticket Number</p>
     <form>
