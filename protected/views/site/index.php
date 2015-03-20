@@ -48,7 +48,8 @@ $this->pageTitle=Yii::app()->name;
             <a id="opener" class="tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="padding: 5px; width:920px;">Watch Tutorial Video</a>
         </div>
     </div>
-    <img src="/images/join_the_madness.png" width="1100" />
+    <!--<img src="/images/join_the_madness.png" width="1100" />-->
+    <img src="/images/madnes_begins.png" width="1100" />
     <br/>
     <div style="margin-left: -5px;">
         <img src="/images/home_page/fan_1.png" width="271"/>

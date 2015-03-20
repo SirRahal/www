@@ -7,6 +7,7 @@ $this->breadcrumbs=array(
 	'My Entries'=>array('ticket/mytickets'),
 	$model->name,
 );
+$isMobile = $_SESSION['isMobile'];
 ?>
 <head>
 
@@ -27,7 +28,7 @@ $this->breadcrumbs=array(
             $( "#ticket_view" ).dialog({
                 autoOpen: false,
                 draggable: false,
-                height:620,
+                height: <?php if($isMobile) { echo '1080, width: 500';}else {echo '620';} ?>,
                 show: {
                     effect: "drop",
                     duration: 1000
@@ -52,7 +53,7 @@ $this->breadcrumbs=array(
 </head>
 <h1>Organization : <i><?php echo $model->name; ?></i></h1>
 <div style="float: left; width: 400px;">
-    <div style="font-size: 20px;">
+    <div style="font-size: 22px;">
         <?php $this->widget('zii.widgets.CDetailView', array(
         'data'=>$model,
         'attributes'=>array(
@@ -155,13 +156,10 @@ $this->breadcrumbs=array(
     <?php } ?>
 
 </div>
-
 <br/>
 <h1>All Entries</h1>
 <div>
     <table id="table_id" class="hover stripe row-border">
-
-
         <thead>
             <tr>
                 <td class="text_center"><b>Place</b></td>
