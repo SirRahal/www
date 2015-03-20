@@ -28,7 +28,7 @@ $isMobile = $_SESSION['isMobile'];
             $( "#ticket_view" ).dialog({
                 autoOpen: false,
                 draggable: false,
-                height: <?php if($isMobile) { echo '1080, width: 500';}else {echo '620';} ?>,
+                height: <?php if($isMobile) { echo '1250, width: 500';}else {echo '620';} ?>,
                 show: {
                     effect: "drop",
                     duration: 1000
@@ -127,10 +127,15 @@ $isMobile = $_SESSION['isMobile'];
                         <td style="width:0px; background: black; border-style: none;"></td>
                     <?php }
                     $user_name = User::model()->findByAttributes(array('ID'=>$finalest['user_ID']));
-                    $user_name = $user_name['last_name'].', '.$user_name['first_name'];
+                    if($isMobile){
+                        $user_name = $user_name['last_name'];
+                    }else{
+                        $user_name = $user_name['last_name'].', '.$user_name['first_name'];
+                    }
+
                     $picks = Picks::model()->find_tickets_by_ID($finalest['ID']);
                     ?>
-                        <td>
+                        <td <?php if ($isMobile){ echo 'style="width:40%;"';} ?>>
                             <!--Ribbon-->
                             <div style="position:relative;">
                                 <div class="ribbon-wrapper">
