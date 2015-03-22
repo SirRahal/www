@@ -32,55 +32,46 @@
         <?php echo $form->error($model,'tournament_ID'); ?>
     </div>
 
-    <div class="row">
-        <?php echo $form->labelEx($model,'date'); ?>
-        <?php echo $form->dateField($model,'date'); ?>
-        <?php echo $form->error($model,'date'); ?>
-    </div>
+    <table>
+        <tr>
+            <td><div class="row">
+                    <?php echo $form->labelEx($model,'team_1_ID'); ?>
+                    <?php
+                    $role_list = CHtml::listData(Team::model()->findAll(array('order'=>'name ASC')), 'ID', 'name');
+                    $options = array(
+                        'tabindex' => '0',
+                        'empty' => '(Select a team)',
+                    );
+                    ?>
+                    <?php echo $form->dropDownList($model,'team_1_ID', $role_list, $options); ?>
+                    <?php echo $form->error($model,'team_1_ID'); ?>
 
-    <div class="row">
-        <?php echo $form->labelEx($model,'time'); ?>
-        <?php echo $form->timeField($model,'time'); ?>
-        <?php echo $form->error($model,'time'); ?>
-    </div>
+                </div></td>
+            <td>
+                <div class="row">
+                    <?php echo $form->labelEx($model,'team_1_score'); ?>
+                    <?php echo $form->textField($model,'team_1_score'); ?>
+                    <?php echo $form->error($model,'team_1_score'); ?>
+                </div></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="row">
+                    <?php echo $form->labelEx($model,'team_2_ID'); ?>
+                    <?php echo $form->dropDownList($model,'team_2_ID', $role_list, $options); ?>
+                    <?php echo $form->error($model,'team_2_ID'); ?>
+                </div>
+            </td>
+            <td>
+                <div class="row">
+                    <?php echo $form->labelEx($model,'team_2_score'); ?>
+                    <?php echo $form->textField($model,'team_2_score'); ?>
+                    <?php echo $form->error($model,'team_2_score'); ?>
+                </div>
+            </td>
+        </tr>
 
-    <div class="row">
-        <?php echo $form->labelEx($model,'location'); ?>
-        <?php echo $form->textField($model,'location',array('size'=>60,'maxlength'=>100)); ?>
-        <?php echo $form->error($model,'location'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'team_1_ID'); ?>
-        <?php
-        $role_list = CHtml::listData(Team::model()->findAll(array('order'=>'name ASC')), 'ID', 'name');
-        $options = array(
-            'tabindex' => '0',
-            'empty' => '(Select a team)',
-        );
-        ?>
-        <?php echo $form->dropDownList($model,'team_1_ID', $role_list, $options); ?>
-        <?php echo $form->error($model,'team_1_ID'); ?>
-
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'team_2_ID'); ?>
-        <?php echo $form->dropDownList($model,'team_2_ID', $role_list, $options); ?>
-        <?php echo $form->error($model,'team_2_ID'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'team_1_score'); ?>
-        <?php echo $form->textField($model,'team_1_score'); ?>
-        <?php echo $form->error($model,'team_1_score'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model,'team_2_score'); ?>
-        <?php echo $form->textField($model,'team_2_score'); ?>
-        <?php echo $form->error($model,'team_2_score'); ?>
-    </div>
+    </table>
 
     <div class="row">
         <?php echo $form->labelEx($model,'round'); ?>

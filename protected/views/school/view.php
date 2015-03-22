@@ -127,7 +127,7 @@ if(!isset($_SESSION['isMobile'])){
                     if($placement == 1 && $round=="total_points"){ ?>
                         <td style="background: black;">
                             <div>
-                                <img src="/images/pay_outs.png">
+                                <img src="/images/pay_outs.png" width="100%;">
                             </div>
                         </td>
                         <td style="width:0px; background: black; border-style: none;"></td>

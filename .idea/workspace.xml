@@ -23,27 +23,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="view.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/school/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="153" selection-end="555" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="4029">
+            <state line="144" column="41" selection-start="4749" selection-end="4749" vertical-scroll-proportion="0.38059703" vertical-offset="2091" max-vertical-offset="4029">
               <folding>
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_picks_div_round_display.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="my_picks_div_round_display.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/my_picks_div_round_display.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="955" selection-end="955" vertical-scroll-proportion="0.34434968" vertical-offset="0" max-vertical-offset="938">
-              <folding>
-                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="25" column="11" selection-start="907" selection-end="907" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="901">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/Game.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="104" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-22.23077" vertical-offset="102" max-vertical-offset="2567">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/game/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="55" selection-start="3015" selection-end="3015" vertical-scroll-proportion="-25.615385" vertical-offset="643" max-vertical-offset="1581">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,9 +87,11 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/protected/views/site/container/count_down.php" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/school/view.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/my_tickets.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/container/my_picks_div_round_display.php" />
+        <option value="$PROJECT_DIR$/protected/models/Game.php" />
+        <option value="$PROJECT_DIR$/protected/views/game/_form.php" />
+        <option value="$PROJECT_DIR$/protected/views/school/view.php" />
       </list>
     </option>
   </component>
@@ -113,6 +128,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -181,13 +197,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ticket" />
+              <option name="myItemId" value="school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,11 +293,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -264,16 +319,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/score_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="57" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/ticket/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="10" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0" vertical-offset="282" max-vertical-offset="2771" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/school/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="40" selection-start="2977" selection-end="2977" vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="3876" />
@@ -501,75 +546,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="94" selection-start="2272" selection-end="2584" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3400">
-          <folding />
-        </state>
+        <state line="39" column="94" selection-start="2272" selection-end="2584" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3400" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="1" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="2278">
-          <folding>
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{&quot;heightStyle&quot;: &quot;content&quot;...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{&quot;type&quot;: &quot;POST&quot;...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{&quot;autoOpen&quot;: false...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425384566086" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="67" column="1" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="2278" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/my_tickets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="781" selection-end="781" vertical-scroll-proportion="-5.3461537" vertical-offset="252" max-vertical-offset="1190">
+        <state line="28" column="13" selection-start="781" selection-end="781" vertical-scroll-proportion="-5.3461537" vertical-offset="252" max-vertical-offset="1190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/my_picks_div_round_display.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="11" selection-start="907" selection-end="907" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="104" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-22.23077" vertical-offset="102" max-vertical-offset="2567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/game/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="55" selection-start="3015" selection-end="3015" vertical-scroll-proportion="-25.615385" vertical-offset="643" max-vertical-offset="1581">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/school/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="153" selection-end="555" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="4029">
+        <state line="144" column="41" selection-start="4749" selection-end="4749" vertical-scroll-proportion="0.38059703" vertical-offset="2091" max-vertical-offset="4029">
           <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/my_picks_div_round_display.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="955" selection-end="955" vertical-scroll-proportion="0.34434968" vertical-offset="0" max-vertical-offset="938">
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
