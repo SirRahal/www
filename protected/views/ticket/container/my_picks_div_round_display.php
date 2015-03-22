@@ -23,7 +23,7 @@ if(!isset($_SESSION['isMobile'])){
         $team_ID = $team['ID'];
         $score_1 = Team::model()->get_scores($team_ID,$round);
         $ticket_total_points = Ticket::model()->find_ticket_by_ID($ticket_ID);
-        if(!$isMobile){
+        if($isMobile){
             $team_nme = $team['logo'];
         }else{
             $team_nme = $team['name'];
