@@ -26,10 +26,11 @@
       <file leaf-file-name="view.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/school/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="64" selection-start="4218" selection-end="4218" vertical-scroll-proportion="0.16311301" vertical-offset="2091" max-vertical-offset="4114">
+            <state line="130" column="34" selection-start="4100" selection-end="4100" vertical-scroll-proportion="0.34434968" vertical-offset="1887" max-vertical-offset="4097">
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -39,7 +40,7 @@
       <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="25" selection-start="2081" selection-end="2105" vertical-scroll-proportion="0.0" vertical-offset="2130" max-vertical-offset="3094">
+            <state line="93" column="10" selection-start="1135" selection-end="1144" vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="3094">
               <folding />
             </state>
           </provider>
@@ -602,17 +603,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="25" selection-start="2081" selection-end="2105" vertical-scroll-proportion="0.0" vertical-offset="2130" max-vertical-offset="3094">
+        <state line="93" column="10" selection-start="1135" selection-end="1144" vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="3094">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/school/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="64" selection-start="4218" selection-end="4218" vertical-scroll-proportion="0.16311301" vertical-offset="2091" max-vertical-offset="4114">
+        <state line="130" column="34" selection-start="4100" selection-end="4100" vertical-scroll-proportion="0.34434968" vertical-offset="1887" max-vertical-offset="4097">
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#5;n#!!top" expanded="true" />
           </folding>
         </state>
