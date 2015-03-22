@@ -126,6 +126,11 @@ if(!isset($_SESSION['isMobile'])){
                     $placement++;
                     if($placement == 1 && $round=="total_points"){ ?>
                         <td style="background: black;">
+                            <div class="mobile-margin-top-button"></div>
+                            <div>
+                                <img src="/images/bflogo2.png" width="245">
+                            </div>
+                            <div class="mobile-margin-top-button"></div>
                             <div>
                                 <img src="/images/pay_outs.png" width="100%;">
                             </div>
