@@ -82,9 +82,12 @@ if(!isset($_SESSION['isMobile'])){
     <img class="round_edges shadow" src="/images/23hor.png" >
 </div>
 <div class="clear"></div>
-    <div style="padding:20px;">
+    <div style="padding:20px; float: left">
         <h1>Please note that Winners are subject to change all the way up to the finals.</h1>
-        <div class="hint" style="margin-top:-15px;">Ties will be determined by the score in the previous round.  These placements are not final till the end of the tournament. </div>
+        <div class="hint" style="margin-top:-15px;">Ties will be determined by the score in the previous round.  These placements are not final till the end of the tournament. <br/>Dead last round winners must have at least one active team competing in that round.  All points scored count toward Final Totals.</div>
+    </div>
+    <div style="float: left;  padding: 40px;">
+        <a href="/index.php/team"><button class="ui-button ui-widget ui-state-default ui-corner-all" style="padding: 7px 10px;">Team Breakdown</button></a>
     </div>
 
 
