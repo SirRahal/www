@@ -155,11 +155,9 @@
                             array('label'=>'Games', 'url'=>array('/game/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Users', 'url'=>array('/user/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Tickets', 'url'=>array('/ticket/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
-                            array('label'=>'Bracket', 'url'=>array('/site/bracket'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Schools', 'url'=>array('/school'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Teams', 'url'=>array('/team/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
-                            array('label'=>'Team Placement', 'url'=>array('/tournamentresults/admin'), 'visible'=>Yii::app()->user->id == 'admin'),
-                            array('label'=>'Schools Results', 'url'=>array('/school/results'), 'visible'=>Yii::app()->user->id == 'admin'),
+                            array('label'=>'Team Knockout', 'url'=>array('/teamtournamentregion/teams'), 'visible'=>Yii::app()->user->id == 'admin'),
                             array('label'=>'Edit My Account', 'url'=>array('/user/update/'.User::model()->get_user_ID())),
                             array('label'=>'Log-out', 'url'=>array('/site/logout'))
                         ),

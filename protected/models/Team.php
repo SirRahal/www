@@ -127,4 +127,14 @@ class Team extends CActiveRecord
         $team = Team::model()->findByPk($ID);
         return $team['name'];
     }
+
+    public static function get_team_tournamet_region_info($ID){
+        $team_tournament_Region = TeamTournamentRegion::model()->findByAttributes(array('team_ID' => $ID));
+        return $team_tournament_Region;
+    }
+
+    public static function get_team_knockout_out($ID){
+        $team_tournament_region = TeamTournamentRegion::model()->findByAttributes(array('team_ID' => $ID));
+        return ($team_tournament_region['knocked_out']);
+    }
 }

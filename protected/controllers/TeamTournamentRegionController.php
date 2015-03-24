@@ -28,7 +28,7 @@ class TeamTournamentRegionController extends Controller
 	{
         return array(
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete','index','view','create','update'),
+                'actions'=>array('admin','delete','index','view','create','update','updateknockout','teams'),
                 'users'=>array('admin'),
             ),
             array('deny',  // deny all users
@@ -162,4 +162,23 @@ class TeamTournamentRegionController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionUpdateknockout($id)
+    {
+        $model=TeamTournamentRegion::model()->findByAttributes(array('team_ID' => $id));
+        if($model->knocked_out){
+            $model->knocked_out = 0;
+
+        }else{
+            $model->knocked_out = 1;
+        }
+        $model->save();
+        $this->redirect('/index.php/teamtournamentregion/teams');
+
+    }
+
+
+    public function actionTeams(){
+        $this->render('teams');
+    }
 }
