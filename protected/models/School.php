@@ -172,7 +172,7 @@ class School extends CActiveRecord
         } elseif($round=="total_points" && $placement ==6){
             return '6th';
         }else{
-            return 'Dead Last';
+            return 'Last';
         }
     }
 

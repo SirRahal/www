@@ -30,7 +30,6 @@ $teams = Team::model()->findAll();
     <thead>
     <tr>
         <td>Seed</td>
-        <td>Region Seed</td>
         <td>Name</td>
         <td>Rd 64</td>
         <td>Rd 32</td>
@@ -47,8 +46,6 @@ $teams = Team::model()->findAll();
         $seed_info = $team->get_team_tournamet_region_info($team['ID']);
         ?>
         <tr>
-
-            <td><?php echo $seed_info['overall_seed'];?></td>
             <td><?php echo $seed_info['seed'];?></td>
             <!--Team-->
             <td><?php echo $team['name'];?></td>
