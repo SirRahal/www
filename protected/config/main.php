@@ -57,7 +57,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=bracket',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'G00342899',
 			'charset' => 'utf8',
 		),
 
