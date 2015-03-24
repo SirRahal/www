@@ -27,5 +27,6 @@ $this->menu=array(
 		'seed',
 		'overall_seed',
 		'starting_placement',
+        'knocked_out'
 	),
 )); ?>

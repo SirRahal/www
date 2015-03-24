@@ -11,6 +11,7 @@
  * @property integer $overall_seed
  * @property integer $starting_placement
  * @property integer $total_points
+ * @property integer $knocked_out
  *
  * The followings are the available model relations:
  * @property Team $team
@@ -70,6 +71,7 @@ class TeamTournamentRegion extends CActiveRecord
 			'overall_seed' => 'Overall Seed',
 			'starting_placement' => 'Starting Placement',
 			'total_points' => 'Total Points',
+            'knocked_out' => 'Knocked Out',
 		);
 	}
 

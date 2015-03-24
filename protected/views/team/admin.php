@@ -38,31 +38,34 @@ $teams = Team::model()->findAll();
     <tr>
         <td>ID</td>
         <td>Name</td>
-        <td>Rd_1</td>
-        <td>Rd_2</td>
-        <td>Rd_3</td>
-        <td>Rd_4</td>
-        <td>Rd_5</td>
-        <td>Rd_6</td>
+        <td>Rd 64</td>
+        <td>Rd 32</td>
+        <td>Rd 16</td>
+        <td>Rd 8</td>
+        <td>Rd 4</td>
+        <td>Rd 2</td>
         <td>Total</td>
         <td></td>
     </tr>
     </thead>
     <tbody>
-    <?php foreach($teams as $team){ ?>
+    <?php foreach($teams as $team){
+        $total_points = 0;
+        ?>
         <tr>
             <!--ID-->
             <td><?php echo $team['ID'];?></td>
             <!--Team-->
             <td><?php echo $team['name'];?></td>
 
-            <td>Rd_1</td>
-            <td>Rd_2</td>
-            <td>Rd_3</td>
-            <td>Rd_4</td>
-            <td>Rd_5</td>
-            <td>Rd_6</td>
-            <td>total</td>
+            <td><?php $total_points+= $team->get_scores($team['ID'],1); echo $team->get_scores($team['ID'],1);?></td>
+            <td><?php $total_points+= $team->get_scores($team['ID'],2); echo $team->get_scores($team['ID'],2);?></td>
+            <td><?php $total_points+= $team->get_scores($team['ID'],3); echo $team->get_scores($team['ID'],3);?></td>
+            <td><?php $total_points+= $team->get_scores($team['ID'],4); echo $team->get_scores($team['ID'],4);?></td>
+            <td><?php $total_points+= $team->get_scores($team['ID'],5); echo $team->get_scores($team['ID'],5);?></td>
+            <td><?php $total_points+= $team->get_scores($team['ID'],6); echo $team->get_scores($team['ID'],6);?></td>
+
+            <td><?php echo $total_points; ?></td>
             <!--edit-->
             <td><a href="update/<?php echo $team['ID']; ?>">Edit</a></td>
         </tr>

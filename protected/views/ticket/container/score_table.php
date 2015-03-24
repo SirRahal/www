@@ -66,8 +66,18 @@
                         $score_5 = Team::model()->get_scores($team_ID,5);
                         $score_6 = Team::model()->get_scores($team_ID,6);
                         $total = $score_1 + $score_2 + $score_3 + $score_4 + $score_5 + $score_6;
-                        ?>
-                        <tr <?php if ($i%2 == 0){echo 'style="background : #cdd2db;"';} else { echo 'style="background : #f9f1e0;"';} ?>>
+                        $style = '';
+                        if($team->get_team_knockout_out($team['ID'])){
+                            $style = $style. ' color:red !important; ';
+                        }
+                        if ($i%2 == 0)
+                        {
+                            $style = $style. 'background : #cdd2db;';
+                        }else {
+                            $style = $style. 'background : #f9f1e0;';
+                        }
+                    ?>
+                        <tr style="<?php echo $style; ?>">
                         <!--echo out the selected radio buttons-->
                             <td style="width: 20px; text-align: center;"><b><?php echo $i; ?></b></td>
                             <td Style="width: 130px;"><?php echo $picks[$i-1]; ?></td>

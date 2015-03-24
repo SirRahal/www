@@ -37,7 +37,20 @@ if(!isset($_SESSION['isMobile'])){
         }
         $total_points = $ticket_total_points[$round_title];
         if($total_points == 0) {$total_points = '';}   ?>
-        <tr <?php if ($i%2 == 0){echo 'style="background : #cdd2db;"';} else { echo 'style="background : #f9f1e0;"'; } ?>>
+        <?php
+        $style = '';
+        if($team->get_team_knockout_out($team['ID'])){
+            $style = $style. ' color:red !important; ';
+        }
+        if ($i%2 == 0)
+        {
+            $style = $style. 'background : #cdd2db;';
+        }else {
+            $style = $style. 'background : #f9f1e0;';
+        }
+        ?>
+
+        <tr style="<?php echo $style; ?>">
             <!--echo out the selected radio buttons-->
             <td style="width: 20px; text-align: center;"><?php echo $i; ?></td>
             <td id="radio<?php echo $i;?>" team_ID='<?php echo $team_ID;?>' ticket_ID='<?php echo $ticket_ID;?>' style="width:230px;"><?php echo $team_nme; ?></td>
