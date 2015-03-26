@@ -54,8 +54,11 @@ $this->pageTitle=Yii::app()->name;
     <div style="margin-left: -5px;">
         <img src="/images/home_page/fan_1.png" width="271"/>
         <img src="/images/home_page/fan_2.png" width="270"/>
-        <img src="/images/home_page/fan_3.png" width="270"/><!--
-        <img src="/images/home_page/fan_4.png" width="200"/>-->
+        <img src="/images/home_page/fan_3.png" width="270"/>
+        <!--<img src="/images/home_page/fan_4.png" width="200"/>-->
         <img src="/images/home_page/fan_5.png" width="271"/>
+    </div>
+    <div>
+        <?php echo $this->renderPartial('/site/container/banner_footer'); ?>
     </div>
 </div>

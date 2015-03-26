@@ -230,9 +230,10 @@ if(!isset($_SESSION['isMobile'])){
         </tbody>
     </table>
 </div>
+<br/>
+<?php echo $this->renderPartial('/site/container/banner_footer'); ?>
 
 
 <div id="ticket_view" title="Entry Preview">
     <p>This is not available yet</p>
-    
 </div>
