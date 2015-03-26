@@ -78,7 +78,7 @@
                         <tr style="background : <?php echo $style; ?>">
                         <!--echo out the selected radio buttons-->
                             <td style="width: 20px; text-align: center;"><b><?php echo $i; ?></b></td>
-                            <td Style="width: 130px;<?php if($team->get_team_knockout_out($team['ID'])){ echo 'color: red; ';} ?>"><?php echo $picks[$i-1]; ?></td>
+                            <td Style="width: 130px;" class="<?php if($team->get_team_knockout_out($team['ID'])){ echo 'knocked_out';} ?>"><?php echo $picks[$i-1]; ?></td>
                             <td style="text-align: center;"><!--echo out round 1--><?php echo $score_1; ?></td>
                             <td style="text-align: center;"><!--echo out round 2--><?php echo $score_2; ?></td>
                             <td style="text-align: center;"><!--echo out round 3--><?php echo $score_3; ?></td>

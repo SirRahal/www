@@ -731,3 +731,7 @@ ul#countdown li{
     clear: both;
     margin-bottom: 40px;
 }
+.knocked_out{
+    color: #f5921e;
+    text-decoration: line-through;
+}
