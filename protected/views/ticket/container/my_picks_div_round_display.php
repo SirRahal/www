@@ -49,7 +49,7 @@ if(!isset($_SESSION['isMobile'])){
         <tr style="background :<?php echo $style; ?>">
             <!--echo out the selected radio buttons-->
             <td style="width: 20px; text-align: center;"><?php echo $i; ?></td>
-            <td id="radio<?php echo $i;?>" team_ID='<?php echo $team_ID;?>' ticket_ID='<?php echo $ticket_ID;?>' style="width:230px; <?php if($team->get_team_knockout_out($team['ID'])){ echo 'color: red;';}?>"><?php echo $team_nme; ?></td>
+            <td id="radio<?php echo $i;?>" team_ID='<?php echo $team_ID;?>' ticket_ID='<?php echo $ticket_ID;?>' style="width:230px; " class="<?php if($team->get_team_knockout_out($team['ID'])){ echo 'knocked_out';} ?>"><?php echo $team_nme; ?></td>
             <td style="text-align: center; width:30px;"><b><?php echo $score_1;?></b></td>
         </tr>
     <?php } ?>

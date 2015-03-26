@@ -7,7 +7,7 @@
  */ ?>
 
 <div class="align_center">
-    <a class="link" style="width: 100%;">
+    <a class="link" style="width: 100%;" href="https://www.lmcu.org/mortgage/" target="_blank">
         <img src="/images/Michigan.jpg"  style="width:95%;">
     </a>
 </div>
