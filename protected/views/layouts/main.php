@@ -62,15 +62,17 @@
     <!--once they chose what they want and finalized, move to js folder -->
     <script>
 
-        $(function() {
-            $( ".tooltip" ).tooltip({
-                show: null,
-                position: {
-                    my: "left top",
-                    at: "left bottom"
+        $(document).ready(function () {
+            var du = 2000;
+            $(document).tooltip({
+                show: {
+                    effect: 'slideDown'
                 },
-                open: function( event, ui ) {
-                    ui.tooltip.animate({ top: ui.tooltip.position().top + 10 }, "fast" );
+                track: true,
+                open: function (event, ui) {
+                    setTimeout(function () {
+                        $(ui.tooltip).hide('explode');
+                    }, du);
                 }
             });
         });
