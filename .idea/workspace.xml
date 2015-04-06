@@ -23,19 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="737" column="0" selection-start="13449" selection-end="13449" vertical-scroll-proportion="0.0" vertical-offset="11633" max-vertical-offset="12631">
+            <state line="103" column="99" selection-start="5241" selection-end="5241" vertical-scroll-proportion="0.59808105" vertical-offset="1190" max-vertical-offset="3400">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="736" column="1" selection-start="13448" selection-end="13448" vertical-scroll-proportion="0.0" vertical-offset="11650" max-vertical-offset="12614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="17" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.87655604" vertical-offset="2215" max-vertical-offset="3179">
+            <state line="175" column="16" selection-start="2407" selection-end="2407" vertical-scroll-proportion="0.0" vertical-offset="2215" max-vertical-offset="3179">
               <folding />
             </state>
           </provider>
@@ -44,7 +53,7 @@
       <file leaf-file-name="jquery-ui.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/jquery-ui-custom/jquery-ui.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="986" column="0" selection-start="21028" selection-end="21120" vertical-scroll-proportion="-11.846154" vertical-offset="16454" max-vertical-offset="21080">
+            <state line="986" column="0" selection-start="21028" selection-end="21120" vertical-scroll-proportion="0.0" vertical-offset="16454" max-vertical-offset="21080">
               <folding />
             </state>
           </provider>
@@ -93,9 +102,9 @@
         <option value="$PROJECT_DIR$/protected/views/site/container/banner_footer.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/container/score_table.php" />
         <option value="$PROJECT_DIR$/protected/views/ticket/container/my_picks_div_round_display.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
       </list>
     </option>
   </component>
@@ -150,114 +159,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery-ui-custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery-ui-custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -294,8 +195,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -408,11 +309,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/runtime/application.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="385" column="54" selection-start="33632" selection-end="33632" vertical-scroll-proportion="0.33333334" vertical-offset="6345" max-vertical-offset="53261" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="385" column="54" selection-start="33632" selection-end="33632" vertical-scroll-proportion="0.33333334" vertical-offset="6345" max-vertical-offset="53261" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/seed_button.php">
@@ -557,56 +458,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/score_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="54" selection-start="4225" selection-end="4309" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1921">
-          <folding />
-        </state>
+        <state line="80" column="54" selection-start="4225" selection-end="4309" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1921" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/ticket/container/my_picks_div_round_display.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="54" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1173">
-          <folding />
-        </state>
+        <state line="49" column="54" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1173" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/school/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="0" selection-start="9406" selection-end="9406" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="4165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="17" selection-start="3781" selection-end="3781" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3400">
-          <folding />
-        </state>
+        <state line="233" column="0" selection-start="9406" selection-end="9406" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="4165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery-ui-custom/jquery-ui.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21917" selection-start="23667" selection-end="23667" vertical-scroll-proportion="0.11027027" vertical-offset="0" max-vertical-offset="925">
-          <folding />
-        </state>
+        <state line="6" column="21917" selection-start="23667" selection-end="23667" vertical-scroll-proportion="0.11027027" vertical-offset="0" max-vertical-offset="925" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery-ui-custom/jquery-ui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="986" column="0" selection-start="21028" selection-end="21120" vertical-scroll-proportion="-11.846154" vertical-offset="16454" max-vertical-offset="21080">
+        <state line="986" column="0" selection-start="21028" selection-end="21120" vertical-scroll-proportion="0.0" vertical-offset="16454" max-vertical-offset="21080">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="737" column="0" selection-start="13449" selection-end="13449" vertical-scroll-proportion="0.0" vertical-offset="11633" max-vertical-offset="12631">
+        <state line="736" column="1" selection-start="13448" selection-end="13448" vertical-scroll-proportion="0.0" vertical-offset="11650" max-vertical-offset="12614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="17" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.87655604" vertical-offset="2215" max-vertical-offset="3179">
+        <state line="175" column="16" selection-start="2407" selection-end="2407" vertical-scroll-proportion="0.0" vertical-offset="2215" max-vertical-offset="3179">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="99" selection-start="5241" selection-end="5241" vertical-scroll-proportion="0.59808105" vertical-offset="1190" max-vertical-offset="3400">
           <folding />
         </state>
       </provider>
