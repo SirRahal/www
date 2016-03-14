@@ -33,7 +33,7 @@
         <b>League Placement : </b><?php echo $ticket['placement'];?>
         <div class="mobile_not_float_right button_arrangment">
             <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only mobile-margin-top-button" style="padding: 5px 81px 5px 81px;" href="/index.php/school/<?php echo $school_ID; ?>" title="See how you rank up against other at <?php echo $school; ?>">My Ranking</a>
-            <!--<a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only mobile-margin-top-button" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php /*echo $ticket['ID']; */?>" title="Edit This entry up until March 19th 11am EST">Pick My Teams</a>-->
+            <a class="button tooltip ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only mobile-margin-top-button" style="padding: 5px 81px 5px 81px;" href="/index.php/ticket/update/<?php echo $ticket['ID']; ?>" title="Edit This entry up until March 19th 11am EST">Pick My Teams</a>
         </div>
         <?php if ($placement_difference > 0){
                     echo '+'.$placement_difference; ?> <img src="/images/600px-Green_Arrow_Up.png" />
