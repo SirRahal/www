@@ -3,18 +3,29 @@
 /* @var $model User */
 
 $this->breadcrumbs=array(
-	'Users'=>array('index'),
-	$model->ID,
+    'Users'=>array('index'),
+    $model->ID,
 );
-
+$notOnEbay = false;
+if(isset($_GET['userlistings'])){
+    if($_GET['userlistings'] == 'notonebay'){
+        $notOnEbay = true;
+    }
+}
 
 $listings = array();
 if($model->permission > 1){
     $lister = array('ebay_lister'=>$model->ID);
-    $criteria = new CDbCriteria(array('order'=>'ebay_date ASC'));
-    $listings = Listings::model()->findAllByAttributes($lister, $criteria);
+
+    $criteria = new CDbCriteria();
+    $criteria->addCondition("list_by = ".$model->ID);
+    if($notOnEbay){
+        $criteria->addCondition("ebay_listed = '0'");
+    }
+
+    $criteria->order = 'ebay_date ASC';
+    $listings = Listings::model()->findAll($criteria);
 }
-    $listings = array_merge ($listings,$model->listings);
 ?>
 
 <!-- DataTables CSS -->
@@ -24,7 +35,13 @@ if($model->permission > 1){
 <h1>View User <?php echo $model->first_name . ' '. $model->last_name; ?></h1>
 
 <h3>Recent Activity</h3>
-<a href="/index.php/listings/create">Create Listing</a> | <a href="/index.php/listings/manual_create">Create Manual Listing</a>
+<a href="/index.php/listings/create">Create Listing</a> | <a href="/index.php/listings/manual_create">Create Manual Listing</a> |
+<?php if($notOnEbay){ ?>
+    <a href="/index.php/user/<?php echo $model->ID ?>"> All <?php echo $model->first_name ?> Listings</a>
+<?php } else { ?>
+    <a href="/index.php/user/<?php echo $model->ID ?>?userlistings=notonebay"><?php echo $model->first_name ?> Listings Not On eBay</a>
+<?php } ?>
+
 <style>
     tbody{
         color:black;

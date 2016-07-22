@@ -58,9 +58,9 @@ if( strpos( $url, 'create/' ) !== false ) {
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textField($model,'description',array('size'=>60,'maxlength'=>1000)); ?>
-		<?php echo $form->error($model,'description'); ?>
+		<?php echo $form->labelEx($model,'title'); ?>
+		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>1000)); ?>
+		<?php echo $form->error($model,'title'); ?>
 	</div>
 
     <?php
@@ -85,28 +85,16 @@ if( strpos( $url, 'create/' ) !== false ) {
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'more_info'); ?>
-		<?php echo $form->textField($model,'more_info',array('size'=>60,'maxlength'=>1000)); ?>
-		<?php echo $form->error($model,'more_info'); ?>
+		<?php echo $form->labelEx($model,'description'); ?>
+		<?php echo $form->textField($model,'description',array('size'=>60,'maxlength'=>1000)); ?>
+		<?php echo $form->error($model,'description'); ?>
 	</div>
 
-
-
-    <?php
-
-    $role_list = array('0 - No Condition','1 - Very Poor', '2 - Poor','3 - Fair','4 - Good','5 - Like New');
-    $options = array(
-        'tabindex' => '0',
-        'empty' => '(Select Condition)',
-    );
-    ?>
-
     <div class="row">
-        <?php echo $form->labelEx($model,'condition'); ?>
-        <?php echo $form->dropDownList($model,'condition',$role_list, $options); ?>
-        <?php echo $form->error($model,'condition'); ?>
+        <?php echo $form->labelEx($model,'quantity'); ?>
+        <?php echo $form->textField($model,'quantity',array('size'=>60,'maxlength'=>1000)); ?>
+        <?php echo $form->error($model,'quantity'); ?>
     </div>
-
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

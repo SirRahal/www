@@ -38,7 +38,9 @@
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
-
+<script>
+    $(document).ready(function(){$(".content").hide().fadeIn(1000);});
+</script>
 <body>
 
 <div class="container" >
@@ -118,20 +120,16 @@
         </div>
         <!-- /.container -->
     </nav>
-    <div class="container">
-
-        <?php echo $content; ?>
-
+    <div class="content">
+        <div class="container">
+            <?php echo $content; ?>
+        </div>
+        <div class="clear"></div>
+        <div id="footer">
+            Copyright &copy; <?php echo date('Y'); ?> by Sari Rahal.<br/>
+            All Rights Reserved.<br/>
+        </div><!-- footer -->
     </div>
-
-
-	<div class="clear"></div>
-
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by Sari Rahal.<br/>
-		All Rights Reserved.<br/>
-	</div><!-- footer -->
-
 </div><!-- page -->
 
 

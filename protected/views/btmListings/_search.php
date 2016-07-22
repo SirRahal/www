@@ -27,8 +27,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'description'); ?>
-		<?php echo $form->textField($model,'description',array('size'=>60,'maxlength'=>1000)); ?>
+		<?php echo $form->label($model,'title'); ?>
+		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>1000)); ?>
 	</div>
 
 	<div class="row">
@@ -42,13 +42,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'more_info'); ?>
-		<?php echo $form->textField($model,'more_info',array('size'=>60,'maxlength'=>1000)); ?>
+		<?php echo $form->label($model,'description'); ?>
+		<?php echo $form->textField($model,'description',array('size'=>60,'maxlength'=>1000)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'condition'); ?>
-		<?php echo $form->textField($model,'condition',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->label($model,'quantity'); ?>
+		<?php echo $form->textField($model,'quantity',array('size'=>10,'maxlength'=>10)); ?>
 	</div>
 
 	<div class="row buttons">

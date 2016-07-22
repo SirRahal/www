@@ -7,7 +7,7 @@
  * @property integer $ID
  * @property integer $auction_ID
  * @property string $lot
- * @property string $description
+ * @property string $title
  * @property string $manufacturer
  * @property string $model
  * @property string $more_info
@@ -35,14 +35,15 @@ class Btmlistings extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('auction_ID, lot, description', 'required'),
+			array('auction_ID, lot, title', 'required'),
 			array('auction_ID', 'numerical', 'integerOnly'=>true),
-			array('lot, condition', 'length', 'max'=>10),
-			array('description, more_info', 'length', 'max'=>1000),
+			array('lot, quantity', 'length', 'max'=>10),
+			array('title, description', 'length', 'max'=>1000),
 			array('manufacturer, model', 'length', 'max'=>100),
+            array('quantity', 'default','value'=>1),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, auction_ID, lot, description, manufacturer, model, more_info, condition', 'safe', 'on'=>'search'),
+			array('ID, auction_ID, lot, title, manufacturer, model, description, quantity', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,16 +69,16 @@ class Btmlistings extends CActiveRecord
 			'ID' => 'ID',
 			'auction_ID' => 'Auction',
 			'lot' => 'Lot',
-			'description' => 'Description',
+			'title' => 'Title',
 			'manufacturer' => 'Manufacturer',
 			'model' => 'Model',
-			'more_info' => 'More Info',
-			'condition' => 'Condition',
+			'description' => 'Description',
+			'quantity' => 'Quantity',
 		);
 	}
 
 	/**
-	 * Retrieves a list of models based on the current search/filter conditions.
+	 * Retrieves a list of models based on the current search/filter quantitys.
 	 *
 	 * Typical usecase:
 	 * - Initialize the model fields with values from filter form.
@@ -86,7 +87,7 @@ class Btmlistings extends CActiveRecord
 	 * - Pass data provider to CGridView, CListView or any similar widget.
 	 *
 	 * @return CActiveDataProvider the data provider that can return the models
-	 * based on the search/filter conditions.
+	 * based on the search/filter quantitys.
 	 */
 	public function search()
 	{
@@ -97,11 +98,11 @@ class Btmlistings extends CActiveRecord
 		$criteria->compare('ID',$this->ID);
 		$criteria->compare('auction_ID',$this->auction_ID);
 		$criteria->compare('lot',$this->lot,true);
-		$criteria->compare('description',$this->description,true);
+		$criteria->compare('title',$this->title,true);
 		$criteria->compare('manufacturer',$this->manufacturer,true);
 		$criteria->compare('model',$this->model,true);
-		$criteria->compare('more_info',$this->more_info,true);
-		$criteria->compare('condition',$this->condition,true);
+		$criteria->compare('description',$this->description,true);
+		$criteria->compare('quantity',$this->quantity,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

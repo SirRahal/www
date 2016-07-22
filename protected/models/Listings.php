@@ -65,7 +65,7 @@ class Listings extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('list_by, date, manufacturer, model_number, condition, weight, length_1, width_1, height_1, from', 'required'),
+			array('list_by, date, manufacturer, inventory, model_number, condition, weight, length_1, width_1, height_1, from', 'required'),
 			array('list_by, condition, ebay_listed, ebay_lister, sold, pages', 'numerical', 'integerOnly'=>true),
 			array('inventory', 'length', 'max'=>45),
 			array('description', 'length', 'max'=>1000),

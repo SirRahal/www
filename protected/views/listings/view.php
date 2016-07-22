@@ -29,6 +29,7 @@ if($model['ebay_listed'] == 1){ ?>
         color:black;
     }
     td{
+        padding:2px;
         padding-right:20px;
     }
     img:hover{
@@ -120,7 +121,7 @@ if($model['url'] != ''){ ?>
                     <b>Table Of Contents:</b>
                 </td>
                 <td>
-                    <?php echo $model->table_of_contents;?>
+                    <?php echo nl2br($model->table_of_contents);?>
                 </td>
             </tr>
         <?php } ?>
@@ -170,22 +171,20 @@ if($model['url'] != ''){ ?>
                     <b>Description:</b>
                 </td>
                 <td>
-                    <?php echo $model->description;?>
+                    <?php echo nl2br($model->description);?>
                 </td>
             </tr>
         <?php } ?>
-
         <?php if($model->more_info != '' or $model->more_info != 0){ ?>
             <tr>
-                <td>
+                <td style="vertical-align:top;">
                     <b>More Info:</b>
                 </td>
                 <td>
-                    <?php echo $model->more_info;?>
+                    <?php echo nl2br($model->more_info);?>
                 </td>
             </tr>
         <?php } ?>
-
         <?php if($model->weight > 0){ ?>
             <tr>
                 <td>
@@ -196,7 +195,6 @@ if($model['url'] != ''){ ?>
                 </td>
             </tr>
         <?php } ?>
-
         <?php if($model->width_1 > 0){ ?>
             <tr>
                 <td>
@@ -213,7 +211,12 @@ if($model['url'] != ''){ ?>
                     <b>Pages :</b>
                 </td>
                 <td>
-                    <?php echo $model->pages;?>  <b> (+/-) 7 Pages, seems complete and in generally  GOOD used condition!</b>
+                    <?php echo $model->pages;?>  <b> (+/-) Pages, seems complete and in generally  <?php if($model->condition == 1) { echo "Very Poor"; }
+                        elseif($model->condition == 2) { echo "Poor"; }
+                        elseif($model->condition == 3) { echo "Fair"; }
+                        elseif($model->condition == 4) { echo "Good"; }
+                        elseif($model->condition == 5) { echo "Like New Condition"; }
+                        ?> used condition!</b>
                 </td>
             </tr>
         <?php } ?>
@@ -227,7 +230,6 @@ if($model['url'] != ''){ ?>
                 </td>
             </tr>
         <?php } ?>
-
         <?php if($model->width_2 > 0){ ?>
             <tr>
                 <td>
@@ -266,13 +268,18 @@ if($model['url'] != ''){ ?>
 
         <?php if($model->from != 'As Is'){ ?>
             <tr>
-                <td>
-
+                <td style="vertical-align:top;">
+                    <b>Condition Breakdown:</b>
                 </td>
                 <td>
                     <b>Note:</b>  This is solely a cosmetic description of the item.<br/>
-                    This item was removed from a <b><?php if($model->from == 'Working Machine'){echo 'Working Machine';}else { echo 'Fortune 500 Crib'; } ?></b>, and is being<br/>
-                    sold in good condition unless otherwise stated!
+                    <?php if($model->pages > 0) { ?>
+                        The manuals rating (Very Poor, Poor, Fair, Good & Like New Condition) is based solely on its cosmetic condition!  If you aren't sure this manual will work for you, please don't buy it.  If there are any obvious deficiencies, we will always strive to let you know, but things can get overlooked.
+                    <?php }else { ?>
+                        This item was removed from a <b><?php if($model->from == 'Working Machine'){echo 'Working Machine';}else { echo 'Fortune 500 Crib'; } ?></b>, and is being<br/>
+                        sold in good condition unless otherwise stated!
+                    <?php } ?>
+
                     <table style="background:white;">
                         <tr>
                             <td>1)</td>
@@ -304,6 +311,7 @@ if($model['url'] != ''){ ?>
             </tr>
         <?php  } ?>
         <?php } ?>
+
     </table>
 
 <br/>

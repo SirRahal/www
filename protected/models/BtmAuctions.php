@@ -103,4 +103,13 @@ class Btmauctions extends CActiveRecord
             ));
         return $listings;
     }
+
+    public function get_export_list($auction_ID){
+        $criteria=new CDbCriteria;
+        $criteria->select='lot, title, manufacturer, model, more_info, condition';  // only select the 'title' column
+        $criteria->condition='auction_ID='.$auction_ID;
+        $criteria->params=array(':postID'=>10);
+        $lots = BtmListings::model()->findAll($criteria);
+        return $lots;
+    }
 }

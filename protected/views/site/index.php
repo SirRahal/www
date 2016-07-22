@@ -16,19 +16,17 @@ $this->pageTitle=Yii::app()->name;
         right:10px;
     }
 </style>
-<img src="/images/giphy.gif" style="" />
+<img src="/images/Bird_Is_The_Word.gif" style="" />
 <br/>
 <div>
     <div class="container">
         <!--Lister site breakdown-->
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <h6>Back Listers</h6>
                 <ul>
                     <li>Create listings</li>
-                    <li>Create Manual Listings</li>
                     <li>Edit Listings</li>
-                    <li>Edit Manual Listings</li>
                     <li>Add Images</li>
                     <li>Copy Listings</li>
                     <li>View Listings</li>
@@ -51,13 +49,13 @@ $this->pageTitle=Yii::app()->name;
                     <li>Leave Notes</li>
                 </ul>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <h6>Admin</h6>
                 <ul>
                     <li>Create Users</li>
                     <li>Edit Users</li>
                     <li>Delete Users</li>
-                    <li>User Permissions</li>
+                    <li>Change Permissions</li>
                     <li>View User Activity</li>
                     <li>Delete Old Images</li>
                 </ul>
@@ -75,7 +73,7 @@ $this->pageTitle=Yii::app()->name;
         </div>
         <!--BTM Lister Breakdown-->
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <h6>BTM Listers</h6>
                 <ul>
                     <li>Create Auction</li>

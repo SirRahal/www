@@ -17,7 +17,7 @@
 	<?php echo CHtml::encode($data->lot); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
 	<?php echo CHtml::encode($data->description); ?>
 	<br />
 
@@ -29,7 +29,7 @@
 	<?php echo CHtml::encode($data->model); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('more_info')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
 	<?php echo CHtml::encode($data->more_info); ?>
 	<br />
 

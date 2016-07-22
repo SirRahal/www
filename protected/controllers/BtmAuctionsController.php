@@ -232,10 +232,9 @@ class BtmauctionsController extends Controller
         Yii::import('protected/components/ECSVExport');
         $auction = Btmauctions::model()->findByPk($id);
         $listings = $auction->btmListings;
-        // for use with array of arrays
-        $data = $listings;
+        //$listings = Btmauctions::model()->get_export_list($id);
         $filename = 'last_lot_export.csv';
-        $csv = new ECSVExport($data);
+        $csv = new ECSVExport($listings);
         $csv->toCSV($filename); // returns string by default
         Yii::app()->getRequest()->sendFile( $auction->name.'_lots.csv' , file_get_contents( $filename ) );
     }

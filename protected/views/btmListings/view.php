@@ -34,21 +34,21 @@ $this->breadcrumbs=array(
     <tr>
         <td>ID</td>
         <td>Lot</td>
-        <td>Description</td>
+        <td>Title</td>
         <td>Manufacturer</td>
         <td>Model</td>
-        <td>More Info</td>
-        <td>Condition</td>
+        <td>Description</td>
+        <td>Quantity</td>
     </tr>
     </thead>
     <tr style="background: #f7f7f7; color: black;">
         <td><?php echo $model->ID; ?></td>
         <td><?php echo $model->lot; ?></td>
-        <td><?php echo $model->description; ?></td>
+        <td><?php echo $model->title; ?></td>
         <td><?php echo $model->manufacturer; ?></td>
         <td><?php echo $model->model; ?></td>
-        <td><?php echo $model->more_info; ?></td>
-        <td><?php echo $model->condition; ?></td>
+        <td><?php echo $model->description; ?></td>
+        <td><?php echo $model->quantity; ?></td>
     </tr>
 </table>
 <br/>
