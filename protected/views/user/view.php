@@ -47,32 +47,74 @@ if($model->permission > 1){
         color:black;
     }
 </style>
-<table id="myTable" class="hover stripe row-border">
-    <thead>
-    <tr style="text-align: center">
-        <td>ID</td>
-        <td>Inventory</td>
-        <td>Manufacturer</td>
-        <td>Model #</td>
-        <td>Date</td>
-        <td style="width:45px;">Img</td>
-        <td style="width:152px;">Options</td>
-    </tr>
-    </thead>
-    <tbody>
-    <?php foreach($listings as $item){ ?>
-        <tr>
-            <td><?php echo $item->ID; ?></td>
-            <td><?php echo $item->inventory; ?></td>
-            <td><?php echo $item->manufacturer; ?></td>
-            <td><?php echo $item->model_number; ?></td>
-            <td style="text-align: center;"><?php echo date("M d/y",strtotime($item->date)); ?></td>
-            <td style="text-align: center;"><img src="/images/<?php if($item->images){ echo 'green';}else { echo 'red';} ?>thumb.jpg" /></td>
-            <td style="text-align: center;"><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a> | <a class="link" href="/index.php/listings/view/<?php echo $item->ID; ?>">View</a> | <a class="link" href="/index.php/listings/create/<?php echo $item->ID; ?>">Copy</a> | <a class="link" style="cursor: pointer;" onclick="delete_listing(<?php echo $item->ID; ?>)">Delete</a></td>
+<?php if( User::model()->findByPk(User::model()->get_user_ID())->permission > 2) { ?>
+
+    <table id="myTable" class="hover stripe row-border">
+        <thead>
+        <tr style="text-align: center">
+            <td>ID</td>
+            <td>Inventory</td>
+            <td>Manufacturer</td>
+            <td>Model #</td>
+            <td>Date</td>
+            <td>Total Time</td>
+            <td style="width:45px;">Img</td>
+            <td style="width:152px;">Options</td>
         </tr>
-    <?php } ?>
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+        <?php foreach($listings as $item){ ?>
+            <tr>
+                <td><?php echo $item->ID; ?></td>
+                <td><?php echo $item->inventory; ?></td>
+                <td><?php echo $item->manufacturer; ?></td>
+                <td><?php echo $item->model_number; ?></td>
+                <td style="text-align: center;"><?php echo date("M d/y",strtotime($item->date)); ?></td>
+                <td>
+                    <?php
+                    $date1 = new DateTime(strval($item->date));
+                    $date2 = new DateTime(strval($item->endAt));
+                    echo $date2->diff($date1)->format("%H:%I:%S"); ; ?>
+                </td>
+                <td style="text-align: center;"><img src="/images/<?php if($item->images){ echo 'green';}else { echo 'red';} ?>thumb.jpg" /></td>
+                <td style="text-align: center;"><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a> | <a class="link" href="/index.php/listings/view/<?php echo $item->ID; ?>">View</a> | <a class="link" href="/index.php/listings/create/<?php echo $item->ID; ?>">Copy</a> | <a class="link" style="cursor: pointer;" onclick="delete_listing(<?php echo $item->ID; ?>)">Delete</a></td>
+            </tr>
+        <?php } ?>
+        </tbody>
+    </table>
+
+<?php } else { ?>
+    <table id="myTable" class="hover stripe row-border">
+        <thead>
+        <tr style="text-align: center">
+            <td>ID</td>
+            <td>Inventory</td>
+            <td>Manufacturer</td>
+            <td>Model #</td>
+            <td>Date</td>
+            <td style="width:45px;">Img</td>
+            <td style="width:152px;">Options</td>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach($listings as $item){ ?>
+            <tr>
+                <td><?php echo $item->ID; ?></td>
+                <td><?php echo $item->inventory; ?></td>
+                <td><?php echo $item->manufacturer; ?></td>
+                <td><?php echo $item->model_number; ?></td>
+                <td style="text-align: center;"><?php echo date("M d/y",strtotime($item->date)); ?></td>
+                <td style="text-align: center;"><img src="/images/<?php if($item->images){ echo 'green';}else { echo 'red';} ?>thumb.jpg" /></td>
+                <td style="text-align: center;"><a class="link" href="/index.php/listings/update/<?php echo $item->ID; ?>">Edit</a> | <a class="link" href="/index.php/listings/view/<?php echo $item->ID; ?>">View</a> | <a class="link" href="/index.php/listings/create/<?php echo $item->ID; ?>">Copy</a> | <a class="link" style="cursor: pointer;" onclick="delete_listing(<?php echo $item->ID; ?>)">Delete</a></td>
+            </tr>
+        <?php } ?>
+        </tbody>
+    </table>
+<?php  } ?>
+
+
+
+
 <script>
     $(document).ready(function(){
         $('#myTable').DataTable();

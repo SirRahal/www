@@ -2,6 +2,9 @@
 /* @var $this ListingsController */
 /* @var $model Listings */
 /* @var $form CActiveForm */
+
+
+
 ?>
 
 <div class="form">
@@ -28,7 +31,7 @@
         $list_by = $model->list_by;
     }else{
         /*if it is a new item*/
-        $date = date("y-m-d");
+        $date = date('Y-m-d H:i:s');
         $list_by = $user_ID;
     }
 
@@ -89,20 +92,26 @@
         </div>
 
         <div class="row">
-        <?php
-        $manufacturers = Manufacturer::model()->findAll(array(
-            "order" => "name ",
-        ));
-        $manufacturer_list = array();
-        $options = array('empty'=>'Select One');
-        foreach($manufacturers as $manufacturer){
-            $manufacturer_list[$manufacturer->name] = $manufacturer->name;
-            $options[$manufacturer->name] = $manufacturer->name;
-        }
-        ?>
-        <?php echo $form->labelEx($model,'manufacturer'); ?>
-        <?php echo $form->dropDownList($model,'manufacturer',$manufacturer_list, $options); ?>
-        <?php echo $form->error($model,'manufacturer'); ?>
+            <?php
+            echo $form->labelEx($model,'manufacturer');
+            $manufacturers = Manufacturer::model()->findAll(array(
+                "order" => "name ",
+            ));
+            $manufacturersName = array();
+            foreach($manufacturers as $manufacturer){
+                array_push($manufacturersName,$manufacturer->name);
+            }
+
+            $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
+                'model'=>$model,
+                'attribute'=>'manufacturer',
+                'name'=>'manufacturer',
+                'source'=>$manufacturersName,
+                'options'=>array(
+                    'minLength'=>'1',
+                ),
+            ));
+            echo $form->error($model,'manufacturer'); ?>
         </div>
 
         <div class="row">
