@@ -20,6 +20,7 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -39,6 +40,7 @@ AppAsset::register($this);
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Books', 'url' => ['/book']],
             ['label' => 'Pages', 'url' => ['/pages']],
+            ['label' => 'upload', 'url' => ['/upload']],
 
 
 
@@ -76,5 +78,6 @@ AppAsset::register($this);
 
 <?php $this->endBody() ?>
 </body>
+
 </html>
 <?php $this->endPage() ?>

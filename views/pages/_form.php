@@ -13,17 +13,12 @@ use app\models\Book;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?/*= $form->field($model, 'book_ID')->textInput() */?>
-
-
     <?=
     $form->field($model, 'book_ID')
         ->dropDownList(
             ArrayHelper::map(Book::find()->all(), 'ID', 'name')
         )
     ?>
-
-
 
     <?= $form->field($model, 'position')->textInput() ?>
 

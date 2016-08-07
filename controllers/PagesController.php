@@ -121,4 +121,10 @@ class PagesController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    public function actionUpload()
+    {
+        return $this->render('upload');
+    }
+    
 }

@@ -31,7 +31,7 @@ class Pages extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['book_ID', 'position', 'path', 'notes'], 'required'],
+            [['book_ID', 'path'], 'required'],
             [['book_ID', 'position'], 'integer'],
             [['path'], 'string', 'max' => 200],
             [['notes'], 'string', 'max' => 500],

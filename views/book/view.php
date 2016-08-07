@@ -34,4 +34,8 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
 
+    <?php 
+        $pages = $model->getPages();
+        print_r($pages);
+    ?>
 </div>
