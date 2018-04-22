@@ -504,6 +504,59 @@ form#contactform input[type="text"] {
 
 }
 
+
+form#contactform input[type="email"] {
+	width: 100%;
+	border: 1px solid #333333;
+	min-height: 40px;
+	padding-left:20px;
+	font-size:13px;
+	padding-right:20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+form#contactform input[type="number"] {
+	width: 100%;
+	border: 1px solid #333333;
+	min-height: 40px;
+	padding-left:20px;
+	font-size:13px;
+	padding-right:20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+form#contactform input[type="date"] {
+	width: 100%;
+	border: 1px solid #333333;
+	min-height: 40px;
+	padding-left:20px;
+	font-size:13px;
+	padding-right:20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+form#contactform input[type="tel"] {
+	width: 100%;
+	border: 1px solid #333333;
+	min-height: 40px;
+	padding-left:20px;
+	font-size:13px;
+	padding-right:20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
 form#contactform textarea {
 border: 1px solid #333333;
   width: 100%;
@@ -1987,4 +2040,11 @@ h2 div.hint{
 
 .move-up{
     margin-top: -30px;
+}
+.applicationSectionHeader{
+	font-weight:bold;
+	background:#494949;
+	Width:100%;
+	padding: 5px 5px 5px 10px;
+	color:white;
 }

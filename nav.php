@@ -37,9 +37,10 @@ if($isMobile){ ?>
                 <ul class="nav navbar-nav">
                     <li class="<?php if (strpos($url, "index")!==false){ echo "active"; } ?>"><a href="index.php">Home</a></li>
                     <li class="<?php if (strpos($url, "about_us")!==false){ echo "active"; } ?>"><a href="about_us.php">About Us</a></li>
-                    <li class="<?php if (strpos($url, "recent_work")!==false){ echo "active"; } ?>"><a href="recent_work.php">Recent Work</a></li>
+                    <!--<li class="<?php /*if (strpos($url, "recent_work")!==false){ echo "active"; } */?>"><a href="recent_work.php">Recent Work</a></li>-->
                     <li class="<?php if (strpos($url, "pricing")!==false){ echo "active"; } ?>"><a href="pricing.php">Pricing</a></li>
                     <li class="<?php if (strpos($url, "contact")!==false){ echo "active"; } ?>"><a href="contact.php">Contact</a></li>
+                    <li class="<?php if (strpos($url, "employmentOpportunities")!==false){ echo "active"; } ?>"><a href="employmentOpportunities.php">Employment Opportunities</a></li>
                 </ul>
             </div>
 

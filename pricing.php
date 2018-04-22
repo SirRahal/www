@@ -56,53 +56,45 @@
             <div class="col-lg-12">
                 <h2>Moving & Rigging Packages<br/></h2>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="pricing-box-alt special">
                     <div class="pricing-heading">
                         <h3><strong>Winter Special</strong></h3>
+                        <h4 style="color:white;">Dec 1st - Feb 28th</h4>
                     </div>
                     <div class="pricing-terms" style="padding:5px;">
-                        Special Rate Includes Tractor, Lift Truck & Operator
+                        Special Rate Includes Tractor, Lift Truck & 2 Operators
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li><i class="icon-ok"></i>Great West Insured</li>
-                            <li><i class="icon-ok"></i>Hyster 15,000 Lb Unit - &#36;95.00 Per Hour</li>
-                            <li><i class="icon-ok"></i>80,000 Lb Lift Truck - &#36;175.00 / Hour</li>
-                            <li><i class="icon-ok"></i>40 Miles Included - Additional Mileage &#36;1.00 / Mile</li>
-                            <li><i class="icon-ok"></i>Additional Rigger &#36;40.00 / Hour</li>
-                            <li><i class="icon-ok"></i>No hidden fees</li>
+                            <li><i class="icon-ok"></i>Additional Rigger &#36;50.00 / Hour</li>
                         </ul>
                     </div>
                     <div class="pricing-terms">
                         <ul style="list-style: none;">
                             <li>3 Hour Minimum Billing Time (Port to Port)</li>
-                            <li>Facility mush be appropriate for easy load and unload of equipment</li>
-                            <li>Exact Mileage used starting from our warehouse / Zip : 49534</li>
+                            <li>Facility mush be appropriate<br/>for easy load and unload of equipment</li>
+                            <li>Exact Mileage used starting from our warehouse. Zip : 49534</li>
                         </ul>
                     </div>
-                    <div class="pricing-action">
+                    <div class="pricing-action" style="padding:35px">
                         <a href="contact.php" class="btn btn-medium btn-theme"><i class="icon-bolt"></i>GET A FULL QUOTE</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-6">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
                         <h3><strong>Normal Package</strong></h3>
                     </div>
                     <div class="pricing-terms" style="padding:5px;">
-                        15,000 Lb with Certified Rigger
+                        15,000 Lb with 2 Certified Riggers
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li>Great West Insured</li>
                             <li>Hyster 15,000 Lb Unit</li>
-                            <li>500 Miles or Less</li>
-                            <li>&#36;145.00 / Hour</li>
-                            <li>&#36;2.00 / Mile</li>
-                            <li>Additional Rigger &#36;50.00 / Hour</li>
-                            <li>No hidden fees</li>
+                            <li>&#36;225.00 / Hour</li>
+                            <li>Additional Rigger &#36;60.00 / Hour</li>
                         </ul>
                     </div>
                     <div class="pricing-terms">
@@ -113,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5">
+            <!--<div class="col-lg-5">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
                         <h3><strong>Insurance Provider</strong></h3>
@@ -132,7 +124,7 @@
                         </blockquote>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
         <!-- end divider -->
         <div class="row">
@@ -140,7 +132,7 @@
                 <h2><strong>Forklift Rental</strong> Prices <br/>
                 <div class="hint">(Prices do not include Pickup / Delivery Charges)</div></h2>
             </div>
-            <div class="col-lg-2">
+            <!--<div class="col-lg-2">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
                         <h3><strong>Light</strong></h3>
@@ -190,8 +182,8 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="col-lg-2">
+            </div>-->
+            <div class="col-lg-4">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
                         <h3>Semi-<strong>Basic</strong></h3>
@@ -201,14 +193,14 @@
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li>&#36;600.00 / week</li>
-                            <li>&#36;1,800.00 / Month</li>
+                            <li>&#36;900.00 / week</li>
+                            <li>&#36;2,400.00 / Month</li>
                         </ul>
                     </div>
 
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-4">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
                         <h3><strong>Heavy</strong></h3>
@@ -218,14 +210,14 @@
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li>&#36;800.00 / week</li>
-                            <li>&#36;2,400.00 / Month</li>
+                            <li>&#36;1,200.00 / Week</li>
+                            <li>&#36;3,000.00 / Month</li>
                         </ul>
                     </div>
 
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-4">
                 <div class="pricing-box-alt">
                     <div class="pricing-heading">
                         <h3><strong>Heavy</strong>-Pro</h3>
@@ -235,8 +227,8 @@
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li>&#36;1,100.00 / week</li>
-                            <li>&#36;3,300.00 / Month</li>
+                            <li>&#36;1,500.00 / week</li>
+                            <li>&#36;4,250.00 / Month</li>
                         </ul>
                     </div>
 
